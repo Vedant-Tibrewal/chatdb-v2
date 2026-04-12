@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 
 from app.api.deps import get_session_manager
 from app.core.llm import get_available_models
+from app.core.security import RateLimiter, get_rate_limiter
 from app.db.session import SessionManager
 from app.models.query import (
     QueryExecuteRequest,
@@ -15,6 +16,11 @@ from app.models.query import (
 )
 from app.models.session import DBType
 from app.services.query_generator import generate_query
+from app.services.query_validator import (
+    QueryValidationError,
+    validate_mongo,
+    validate_sql,
+)
 from app.services.schema_inspector import get_schema
 
 router = APIRouter()
@@ -33,9 +39,11 @@ async def generate(
     body: QueryGenerateRequest,
     request: Request,
     sm: SessionManager = Depends(get_session_manager),
+    limiter: RateLimiter = Depends(get_rate_limiter),
 ):
     """Generate a database query from natural language input."""
     session = sm.get_session(body.session_id)
+    limiter.check(body.session_id)
 
     pg = request.app.state.pg
     mongo = request.app.state.mongo
@@ -61,9 +69,26 @@ async def execute(
     body: QueryExecuteRequest,
     request: Request,
     sm: SessionManager = Depends(get_session_manager),
+    limiter: RateLimiter = Depends(get_rate_limiter),
 ):
     """Execute a confirmed query against the session-scoped database."""
     session = sm.get_session(body.session_id)
+    limiter.check(body.session_id)
+
+    # Validate query before execution
+    if session.db_type == DBType.POSTGRESQL:
+        try:
+            validate_sql(body.query)
+        except QueryValidationError as e:
+            raise HTTPException(status_code=400, detail=f"Query rejected: {e.reason}")
+    else:
+        try:
+            op = json.loads(body.query)
+            validate_mongo(op)
+        except json.JSONDecodeError as e:
+            raise HTTPException(status_code=400, detail=f"Invalid MongoDB query JSON: {e}")
+        except QueryValidationError as e:
+            raise HTTPException(status_code=400, detail=f"Query rejected: {e.reason}")
 
     pg = request.app.state.pg
     mongo = request.app.state.mongo

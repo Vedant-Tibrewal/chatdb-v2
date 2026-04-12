@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import session, query, schema, upload, analytics
 from app.core.config import settings
+from app.core.security import RateLimiter
 from app.db.mongodb import MongoDB
 from app.db.postgres import PostgresDB
 from app.db.session import SessionManager
@@ -34,6 +35,7 @@ async def lifespan(app: FastAPI):
     app.state.session_manager = sm
     app.state.pg = pg
     app.state.mongo = mongo
+    app.state.rate_limiter = RateLimiter(max_per_minute=settings.max_queries_per_minute)
     await sm.start_cleanup_task()
 
     yield
