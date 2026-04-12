@@ -1,8 +1,22 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import session, query, schema, upload, analytics
 from app.core.config import settings
+from app.db.session import SessionManager
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    sm = SessionManager()
+    app.state.session_manager = sm
+    await sm.start_cleanup_task()
+    yield
+    # Shutdown
+    await sm.stop_cleanup_task()
 
 
 def create_app() -> FastAPI:
@@ -10,6 +24,7 @@ def create_app() -> FastAPI:
         title="ChatDB API",
         version="0.1.0",
         description="Natural language database query interface",
+        lifespan=lifespan,
     )
 
     app.add_middleware(
