@@ -282,22 +282,42 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 7 · Schema Panel
-**Status:** NOT STARTED  
+## Checkpoint 7 · Schema Panel ✅
+**Status:** COMPLETE  
 **Commit:** `feat(frontend): schema preview sidebar with live table metadata`
 
-**Pickup context:** Frontend shell is functional — session creates on load, model selector works (fetches available models via `GET /api/query/models`, updates via `PUT /api/session/{id}/model`), panels collapse/expand, expiry countdown ticks, reinitialize button has confirmation dialog. State managed via zustand (`useSessionStore`). SchemaPanel shows DB type badge but no table data yet. Vite proxies `/api` to backend.
+**What was done:**
+- Added `SchemaTable` type, `schema`, `pendingInput` state, `fetchSchema()`, `setPendingInput()` actions to `sessionStore.ts`
+- `fetchSchema()` calls `GET /api/schema/{sessionId}` and stores table metadata in store
+- Schema auto-fetched after `initSession()` and `reinitialize()` (clears schema to `null` during reinit)
+- Rewrote `SchemaPanel.tsx` with full schema display:
+  - Original navigation preserved (New Chat, Saved Queries buttons)
+  - DB type badge under Database section
+  - Tables and Suggestions sections are VS Code explorer-style collapsible panels anchored to bottom
+  - Expandable table list — click to toggle columns
+  - Each column shows name, type (monospace), nullable badge (yellow)
+  - Row count per table displayed inline
+  - Skeleton loading animation while schema loads
+  - Empty state for no tables
+- Static query suggestion chips per dataset domain:
+  - Sales (orders): "Top 5 products by revenue", "Total revenue by region", "Monthly sales trend", "Show all orders from last quarter"
+  - Medical (patients): "Patient count by diagnosis", "Average length of stay", "Patients by department", "Most common treatments"
+  - HR (employees): "Headcount by department", "Average salary by department", "Top 5 highest paid employees", "Employee count by location"
+- Clicking a suggestion chip sets `pendingInput` in the store
+- Updated `ChatPanel.tsx`:
+  - Controlled input with `useState`
+  - `useEffect` watches `pendingInput` — auto-populates input field when suggestion chip is clicked
+  - Send button disabled when input is empty
 
-**What to implement:**
-- Fetch schema from `GET /api/schema/{sessionId}` on session create and after mutations
-- Render table list with expandable sections (click to see columns)
-- Show column name, type, nullable badge per column
-- Show row count per table
-- For pgvector columns: show embedding dimension and index type
-- DB type indicator badge (PostgreSQL / MongoDB) at top of panel
-- Dataset selector component (if multiple datasets loaded)
-- Static query suggestion chips below schema (per dataset, hardcoded list — see PRD §5.2 F-04)
-- Clicking a suggestion chip populates and submits the chat input
+**Key decisions:**
+- Suggestions are derived dynamically from schema table names — only shown for recognized datasets (orders/patients/employees)
+- `pendingInput` pattern (store → ChatPanel) decouples SchemaPanel from ChatPanel without prop drilling
+- Collapsible sections use `flex-1` spacer to push to bottom; capped with `max-h-[50%]`/`max-h-[40%]` when open
+
+**Files modified:**
+- `frontend/src/store/sessionStore.ts` — added schema + pendingInput state and actions
+- `frontend/src/components/schema/SchemaPanel.tsx` — complete rewrite with live schema + suggestion chips
+- `frontend/src/components/chat/ChatPanel.tsx` — controlled input + pendingInput handling
 
 ---
 

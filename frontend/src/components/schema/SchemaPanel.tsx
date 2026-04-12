@@ -1,7 +1,45 @@
+import { useState } from 'react';
 import { useSessionStore } from '../../store/sessionStore';
 
+const SUGGESTIONS: Record<string, string[]> = {
+  orders: [
+    'Top 5 products by revenue',
+    'Total revenue by region',
+    'Monthly sales trend',
+    'Show all orders from last quarter',
+  ],
+  patients: [
+    'Patient count by diagnosis',
+    'Average length of stay',
+    'Patients by department',
+    'Most common treatments',
+  ],
+  employees: [
+    'Headcount by department',
+    'Average salary by department',
+    'Top 5 highest paid employees',
+    'Employee count by location',
+  ],
+};
+
 export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
-  const { session } = useSessionStore();
+  const { session, schema, setPendingInput } = useSessionStore();
+  const [expandedTables, setExpandedTables] = useState<Set<string>>(new Set());
+  const [schemaOpen, setSchemaOpen] = useState(true);
+  const [suggestionsOpen, setSuggestionsOpen] = useState(true);
+
+  const toggleTable = (name: string) => {
+    setExpandedTables((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  };
+
+  const suggestions = schema
+    ? schema.flatMap((t) => SUGGESTIONS[t.name] ?? [])
+    : [];
 
   return (
     <aside className="w-60 border-r border-gray-200 bg-white flex flex-col">
@@ -16,21 +54,13 @@ export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 px-2 py-1 space-y-0.5 overflow-y-auto">
+      <nav className="px-2 py-1 space-y-0.5">
         {/* New Chat */}
         <button className="w-full flex items-center gap-2.5 px-2.5 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">
           <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
           New chat
-        </button>
-
-        {/* Schema */}
-        <button className="w-full flex items-center gap-2.5 px-2.5 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">
-          <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 0v1.5c0 .621-.504 1.125-1.125 1.125" />
-          </svg>
-          Schema
         </button>
 
         {/* Saved Queries */}
@@ -40,9 +70,12 @@ export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
           </svg>
           Saved queries
         </button>
+      </nav>
 
-        <div className="!mt-4 px-2.5">
-          <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-1">Database</p>
+      {/* Database section */}
+      <div className="px-2 mt-3">
+        <div className="px-2.5 mb-1">
+          <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">Database</p>
         </div>
 
         {/* DB type badge */}
@@ -60,12 +93,114 @@ export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
             </span>
           </div>
         )}
-      </nav>
-
-      {/* Footer — Schema placeholder */}
-      <div className="px-3 py-3 border-t border-gray-100">
-        <p className="text-[11px] text-gray-400">Schema details in Checkpoint 7</p>
       </div>
+
+      {/* Spacer — pushes collapsible sections to bottom */}
+      <div className="flex-1" />
+
+      {/* Schema section — collapsible, bottom-anchored */}
+      <div className={`flex flex-col border-t border-gray-200 ${schemaOpen ? 'min-h-0 max-h-[50%]' : ''}`}>
+        <button
+          onClick={() => setSchemaOpen(!schemaOpen)}
+          className="flex items-center gap-1 px-3 py-1.5 hover:bg-gray-100 transition-colors shrink-0"
+        >
+          <svg
+            className={`w-3 h-3 text-gray-500 transition-transform ${schemaOpen ? 'rotate-90' : ''}`}
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">
+            {session?.db_type === 'mongodb' ? 'Collections' : 'Tables'}
+          </span>
+        </button>
+
+        {schemaOpen && (
+          <div className="overflow-y-auto px-2 pb-2">
+            {!schema ? (
+              <div className="px-2.5 space-y-2">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="h-7 bg-gray-100 rounded-md animate-pulse" />
+                ))}
+              </div>
+            ) : schema.length === 0 ? (
+              <p className="text-xs text-gray-400 px-2.5">No tables found</p>
+            ) : (
+              <div className="space-y-0.5">
+                {schema.map((table) => (
+                  <div key={table.name}>
+                    <button
+                      onClick={() => toggleTable(table.name)}
+                      className="w-full flex items-center gap-1.5 px-2.5 py-1.5 text-sm rounded-md hover:bg-gray-50 transition-colors"
+                    >
+                      <svg
+                        className={`w-3 h-3 text-gray-400 transition-transform ${
+                          expandedTables.has(table.name) ? 'rotate-90' : ''
+                        }`}
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      <span className="text-gray-700 font-medium truncate">{table.name}</span>
+                      <span className="ml-auto text-[10px] text-gray-400 tabular-nums">{table.row_count} rows</span>
+                    </button>
+
+                    {expandedTables.has(table.name) && (
+                      <div className="ml-5 pl-2 border-l border-gray-100 mb-1">
+                        {table.columns.map((col) => (
+                          <div key={col.name} className="flex items-center gap-1.5 py-0.5 px-1 text-xs">
+                            <span className="text-gray-600 truncate">{col.name}</span>
+                            <span className="text-gray-400 font-mono text-[10px]">{col.type}</span>
+                            {col.nullable && (
+                              <span className="text-[9px] text-yellow-600 bg-yellow-50 px-1 rounded">null</span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Suggestions section — collapsible, bottom-anchored */}
+      {suggestions.length > 0 && (
+        <div className={`flex flex-col border-t border-gray-200 ${suggestionsOpen ? 'min-h-0 max-h-[40%]' : ''}`}>
+          <button
+            onClick={() => setSuggestionsOpen(!suggestionsOpen)}
+            className="flex items-center gap-1 px-3 py-1.5 hover:bg-gray-100 transition-colors shrink-0"
+          >
+            <svg
+              className={`w-3 h-3 text-gray-500 transition-transform ${suggestionsOpen ? 'rotate-90' : ''}`}
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">
+              Suggestions
+            </span>
+          </button>
+
+          {suggestionsOpen && (
+            <div className="px-3 pb-3 overflow-y-auto">
+              <div className="flex flex-wrap gap-1.5">
+                {suggestions.map((s, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setPendingInput(s)}
+                    className="px-2.5 py-1 text-xs text-blue-700 bg-blue-50 rounded-full hover:bg-blue-100 transition-colors"
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </aside>
   );
 }
