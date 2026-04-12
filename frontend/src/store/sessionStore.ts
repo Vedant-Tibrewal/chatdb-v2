@@ -27,6 +27,7 @@ interface SessionStore {
   fetchSchema: () => Promise<void>;
   setDbType: (dbType: 'postgresql' | 'mongodb') => void;
   setPendingInput: (input: string | null) => void;
+  setError: (error: string) => void;
   clearError: () => void;
 }
 
@@ -112,6 +113,7 @@ export const useSessionStore = create<SessionStore>((set, get) => ({
 
   setDbType: (dbType) => set({ dbType }),
   setPendingInput: (input) => set({ pendingInput: input }),
+  setError: (error) => set({ error }),
 
   clearError: () => set({ error: null }),
 }));

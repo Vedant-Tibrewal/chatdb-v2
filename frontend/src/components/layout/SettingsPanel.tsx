@@ -1,6 +1,7 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useSessionStore } from '../../store/sessionStore';
 import { useChatStore } from '../../store/chatStore';
+import { api } from '../../services/api';
 
 const PROVIDER_DISPLAY: Record<string, string> = {
   openai: 'OpenAI',
@@ -9,9 +10,12 @@ const PROVIDER_DISPLAY: Record<string, string> = {
 };
 
 export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
-  const { session, models, reinitialize, updateModel, loading, initSession } = useSessionStore();
+  const { session, models, reinitialize, updateModel, loading, initSession, fetchSchema } = useSessionStore();
   const [showConfirm, setShowConfirm] = useState(false);
   const [countdown, setCountdown] = useState('');
+  const [uploading, setUploading] = useState(false);
+  const [uploadResult, setUploadResult] = useState<{ table_name: string; row_count: number } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const updateCountdown = useCallback(() => {
     if (!session) return;
@@ -130,6 +134,61 @@ export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
             ))}
           </div>
           <p className="text-[10px] text-gray-400 mt-1">Switching creates a new session</p>
+        </div>
+
+        {/* File Upload */}
+        <div>
+          <label className="block text-xs font-medium text-gray-500 mb-1.5">Upload Dataset</label>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".csv,.json"
+            className="hidden"
+            onChange={async (e) => {
+              const file = e.target.files?.[0];
+              if (!file || !session) return;
+              setUploading(true);
+              setUploadResult(null);
+              try {
+                const formData = new FormData();
+                formData.append('file', file);
+                const result = await api.uploadDataset(session.id, formData);
+                setUploadResult({ table_name: result.table_name, row_count: result.row_count });
+                fetchSchema();
+              } catch (err) {
+                setUploadResult(null);
+                useSessionStore.getState().setError((err as Error).message || 'Upload failed');
+              } finally {
+                setUploading(false);
+                if (fileInputRef.current) fileInputRef.current.value = '';
+              }
+            }}
+          />
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            disabled={!session || uploading || loading}
+            className="w-full px-3 py-2 text-xs font-medium text-gray-700 bg-gray-50 rounded-lg hover:bg-gray-100 border border-gray-200 disabled:opacity-50 transition-colors flex items-center justify-center gap-1.5"
+          >
+            {uploading ? (
+              <>
+                <div className="w-3 h-3 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
+                Uploading...
+              </>
+            ) : (
+              <>
+                <svg className="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                </svg>
+                Upload CSV / JSON
+              </>
+            )}
+          </button>
+          {uploadResult && (
+            <p className="text-[10px] text-green-600 mt-1">
+              Loaded {uploadResult.row_count} rows into "{uploadResult.table_name}"
+            </p>
+          )}
+          <p className="text-[10px] text-gray-400 mt-1">Creates or replaces a table in your session</p>
         </div>
       </div>
 

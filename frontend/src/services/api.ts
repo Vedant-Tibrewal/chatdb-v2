@@ -55,8 +55,14 @@ export const api = {
     request<{ db_type: string; tables: { name: string; columns: { name: string; type: string; nullable: boolean }[]; row_count: number }[] }>(`/schema/${sessionId}`),
 
   // Upload
-  uploadDataset: (sessionId: string, formData: FormData) =>
-    fetch(`${API_BASE}/upload/${sessionId}`, { method: 'POST', body: formData }).then(r => r.json()),
+  uploadDataset: async (sessionId: string, formData: FormData) => {
+    const res = await fetch(`${API_BASE}/upload/${sessionId}`, { method: 'POST', body: formData });
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({ detail: res.statusText }));
+      throw new Error(body.detail || `Upload error: ${res.status}`);
+    }
+    return res.json() as Promise<{ table_name: string; columns: { name: string; type: string }[]; row_count: number }>;
+  },
 
   // Analytics
   getAnalytics: (sessionId: string) => request(`/analytics/${sessionId}`),

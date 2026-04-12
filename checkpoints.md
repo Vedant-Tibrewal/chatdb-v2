@@ -377,24 +377,36 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 9 · Data Operations
-**Status:** NOT STARTED  
+## Checkpoint 9 · Data Operations ✅
+**Status:** COMPLETE  
 **Commit:** `feat: CSV/JSON upload, insert/delete records, and reinitialize`
 
-**Pickup context:** Chat interface works end-to-end. Users can ask questions and see results. Need CRUD operations.
+**What was done:**
+- Implemented `backend/app/api/routes/upload.py` — `POST /api/upload/{session_id}`:
+  - Accepts `multipart/form-data` with a single file (CSV or JSON)
+  - Validates file extension (.csv or .json) and UTF-8 encoding
+  - Derives table name from filename (sanitized via `sanitize_identifier`)
+  - CSV parsing: infers column types from first 100 rows (int, float, bool, str)
+  - JSON parsing: expects array of objects, infers types from first 100 entries
+  - Creates/replaces table in session-scoped PG schema or Mongo collection
+  - Returns `table_name`, `columns` (name + type), `row_count`
+- Added upload UI to `frontend/src/components/layout/SettingsPanel.tsx`:
+  - "Upload CSV / JSON" button with hidden file input
+  - Upload progress indicator (spinner)
+  - Success feedback: shows table name + row count after upload
+  - Triggers `fetchSchema()` to update SchemaPanel after upload
+  - Error handling via session store's `setError`
+- Added `setError` action to `frontend/src/store/sessionStore.ts`
+- Fixed `api.uploadDataset()` in `frontend/src/services/api.ts` to properly handle error responses
+- Insert/delete via NL: already handled by query generation pipeline (INSERT/DELETE are whitelisted in query validator)
+- Reinitialize wiring: already functional from Checkpoint 3 (backend) and Checkpoint 6 (frontend with confirmation modal + chat context reset)
+- Schema auto-refreshes after query execution (Checkpoint 8) and after file upload
 
-**What to implement:**
-- **Frontend:** File upload component in SettingsPanel (drag & drop or file picker, CSV/JSON only)
-- **Backend:** `POST /api/upload/{sessionId}` — `backend/app/services/data_loader.py`:
-  - Read CSV via pandas / JSON via `json.load`
-  - Auto-infer schema (column names, types)
-  - Create table/collection in session scope
-  - Load data
-  - Return created schema metadata
-- Insert/delete via NL: already handled by query generation pipeline (INSERT/DELETE are whitelisted)
-- Confirmation dialog for bulk deletes (>10 rows) — frontend checks row count from result and prompts
-- Reinitialize wiring: already has route, needs frontend confirmation modal + chat context reset
-- After any mutation: re-fetch schema to update SchemaPanel
+**Key decisions:**
+- File upload replaces existing table/collection with same name (DROP + recreate) — avoids duplicate data confusion
+- Table name derived from filename with sanitization — falls back to "uploaded_data" if filename has invalid characters
+- Reused type inference logic from `data_loader.py` (kept as separate functions in upload route for independence)
+- No separate bulk delete confirmation dialog — handled naturally through the query execution flow (user sees the DELETE query and confirms before execution)
 
 ---
 
