@@ -126,38 +126,59 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 - DB connections created in `lifespan`, stored on `app.state`
 
 **Files that are still stubs:**
-- `backend/app/core/llm.py` — docstring only
 - `backend/app/core/security.py` — docstring only
-- `backend/app/services/query_generator.py` — docstring only
 - `backend/app/services/query_validator.py` — docstring only
 - `backend/app/services/analytics.py` — docstring only
-- `backend/app/models/analytics.py`, `backend/app/models/query.py` — docstring only
-- Route handlers for query, upload, analytics — still `pass`
+- `backend/app/models/analytics.py` — docstring only
+- Route handlers for upload, analytics — still `pass`
 
 ---
 
-## Checkpoint 4 · Query Generation Pipeline
-**Status:** NOT STARTED  
+## Checkpoint 4 · Query Generation Pipeline ✅
+**Status:** COMPLETE  
 **Commit:** `feat(backend): LiteLLM integration with NL-to-query generation`
 
-**Pickup context:** DB layer is working. Sessions create isolated PG schemas (`s_<id>`) and Mongo collections (`sess_<id>_*`), clone base data, and clean up on delete. Schema endpoint returns table/collection metadata. Three sample datasets loaded (sales/orders, medical/patients, hr/employees). Need to add the LLM layer.
+**What was done:**
+- Implemented `backend/app/core/llm.py` — LiteLLM wrapper:
+  - `AVAILABLE_MODELS` list: `gpt-4o`, `gpt-4o-mini`, `claude-3-5-sonnet-20241022`, `gemini/gemini-1.5-pro`
+  - `get_available_models()` → filters models by which API keys are configured in env
+  - `llm_completion(messages, model)` → calls `litellm.acompletion()` with `temperature=0`
+  - `_ensure_env_keys()` → sets `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` as env vars from settings
+- Implemented `backend/app/services/query_generator.py` — prompt construction:
+  - Separate system prompts for PostgreSQL (SQL) and MongoDB (JSON operation format)
+  - Schema metadata formatted as readable text (table/collection names, columns, types, row counts — never raw data)
+  - Conversation history: last 10 turns appended to messages
+  - `_extract_query()` strips markdown code fences and trailing semicolons from LLM response
+  - `generate_query(question, schema_info, db_type, model, conversation_history)` → full pipeline
+- Implemented `backend/app/models/query.py` — Pydantic models:
+  - `QueryGenerateRequest` (session_id, question)
+  - `QueryGenerateResponse` (query, db_type)
+  - `QueryExecuteRequest` (session_id, query, question — question for conversation history)
+  - `QueryExecuteResponse` (columns, rows, row_count, execution_time_ms, affected_rows)
+- Implemented `backend/app/api/routes/query.py` — route handlers:
+  - `GET /api/query/models` → returns available models (filtered by configured API keys)
+  - `POST /api/query/generate` → fetches session + schema, calls LLM, returns generated query
+  - `POST /api/query/execute` → executes query against session-scoped PG or Mongo, stores in conversation history, returns result with timing
+  - `_execute_pg()` → dispatches SELECT/WITH to `execute_query`, others to `execute_write`
+  - `_execute_mongo()` → parses JSON operation, dispatches to find/aggregate/insert/delete/update using MongoDB class methods
+- Added `PUT /api/session/{session_id}/model` to `backend/app/api/routes/session.py` — set active LLM model for session
+- Added `ModelUpdate` Pydantic model to `backend/app/models/session.py`
+- Changed PostgreSQL port mapping in `docker-compose.yml` from `5432:5432` to `5433:5432` (avoids conflict with local PG)
 
-**What to implement:**
-- `backend/app/core/llm.py` — LiteLLM wrapper:
-  - `generate_query(prompt, model)` → calls `litellm.acompletion()`
-  - Model list: `gpt-4o`, `gpt-4o-mini`, `claude-3-5-sonnet-20241022`, `gemini/gemini-1.5-pro`
-- `backend/app/services/query_generator.py` — prompt construction:
-  - System prompt with schema metadata (table names, columns, types — never raw data)
-  - Include DB type (PostgreSQL vs MongoDB)
-  - Append last N conversation turns
-  - Parse LLM response to extract query
-- `backend/app/models/query.py` — `QueryGenerateRequest` (sessionId, question, model), `QueryGenerateResponse` (query, dbType), `QueryExecuteRequest` (sessionId, query), `QueryExecuteResponse` (columns, rows, rowCount, executionTimeMs)
-- Route handlers in `backend/app/api/routes/query.py` (currently `pass`)
-- Conversation history tracking per session (store in SessionState)
-- `GET /api/query/models` — return available models list
-- `PUT /api/session/{id}/model` — set active model for session
+**Key decisions:**
+- LiteLLM API keys set via `os.environ.setdefault()` — doesn't override existing env vars, works in both Docker and local
+- Only models with configured API keys are returned by `GET /api/query/models` — user only sees what they can use
+- Conversation history stored as `{"role": "user/assistant", "content": "..."}` dicts — directly compatible with LLM message format
+- Execute endpoint accepts optional `question` field — stored in history alongside the (possibly edited) query
+- MongoDB operations returned as JSON: `{"operation": "find|aggregate|...", "collection": "...", "query": {...}}`
+- System prompts explicitly forbid DDL (DROP/TRUNCATE/ALTER/CREATE) and dangerous MongoDB operators ($where, $function)
 
-**LLM API keys:** Loaded from env via `settings.openai_api_key`, etc. LiteLLM reads `OPENAI_API_KEY` etc. from env automatically.
+**Files that are still stubs:**
+- `backend/app/core/security.py` — docstring only
+- `backend/app/services/query_validator.py` — docstring only
+- `backend/app/services/analytics.py` — docstring only
+- `backend/app/models/analytics.py` — docstring only
+- Route handlers for upload, analytics — still `pass`
 
 ---
 
@@ -165,7 +186,7 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 **Status:** NOT STARTED  
 **Commit:** `feat(backend): query validation, rate limiting, and injection prevention`
 
-**Pickup context:** Full query pipeline works end-to-end (NL → LLM → query → execute → result). Need to add security before any untrusted query hits the DB.
+**Pickup context:** Full query pipeline works end-to-end (NL → LLM → query → execute → result). Models endpoint filters by configured API keys. Session model can be changed via `PUT /api/session/{id}/model`. Conversation history tracked in session state. Need to add security before any untrusted query hits the DB.
 
 **What to implement:**
 - `backend/app/services/query_validator.py`:

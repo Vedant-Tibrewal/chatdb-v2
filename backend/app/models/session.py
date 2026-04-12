@@ -24,6 +24,10 @@ class SessionCreate(BaseModel):
     db_type: DBType = DBType.POSTGRESQL
 
 
+class ModelUpdate(BaseModel):
+    model: str
+
+
 class SessionResponse(BaseModel):
     id: str
     db_type: DBType

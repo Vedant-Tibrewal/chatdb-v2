@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 
 from app.api.deps import get_session_manager
 from app.db.session import SessionManager
-from app.models.session import SessionCreate, SessionResponse
+from app.models.session import ModelUpdate, SessionCreate, SessionResponse
 
 router = APIRouter()
 
@@ -61,3 +61,21 @@ async def reinitialize_session(
         "detail": "Session reinitialized",
         "expires_at": sm.get_expiry(session).isoformat(),
     }
+
+
+@router.put("/{session_id}/model", response_model=SessionResponse)
+async def update_model(
+    session_id: str,
+    body: ModelUpdate,
+    sm: SessionManager = Depends(get_session_manager),
+):
+    """Set the active LLM model for a session."""
+    session = sm.get_session(session_id)
+    session.model = body.model
+    return SessionResponse(
+        id=session.id,
+        db_type=session.db_type,
+        model=session.model,
+        created_at=session.created_at,
+        expires_at=sm.get_expiry(session),
+    )
