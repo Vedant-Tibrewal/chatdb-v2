@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Highlight, themes } from 'prism-react-renderer';
 import { useSessionStore } from '../../store/sessionStore';
 import { useChatStore, type ChatMessage } from '../../store/chatStore';
 
@@ -20,10 +21,10 @@ function ResultTable({ columns, rows, rowCount, executionTimeMs, affectedRows }:
   if (columns.length === 1 && rows.length === 1) {
     const value = rows[0][columns[0]];
     return (
-      <div className="rounded-lg border border-gray-200 bg-white p-4 inline-block">
-        <p className="text-xs text-gray-400 mb-1">{columns[0]}</p>
-        <p className="text-2xl font-semibold text-gray-800">{String(value)}</p>
-        <p className="text-[10px] text-gray-400 mt-1">{executionTimeMs.toFixed(0)}ms</p>
+      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
+        <p className="text-[11px] text-gray-400 uppercase tracking-wide mb-1">{columns[0]}</p>
+        <p className="text-3xl font-bold text-gray-900">{String(value)}</p>
+        <p className="text-[10px] text-gray-400 mt-2">{executionTimeMs.toFixed(0)}ms</p>
       </div>
     );
   }
@@ -31,41 +32,51 @@ function ResultTable({ columns, rows, rowCount, executionTimeMs, affectedRows }:
   // Write operation result
   if (columns.length === 0 && affectedRows !== undefined) {
     return (
-      <div className="rounded-lg border border-gray-200 bg-white p-4 inline-block">
-        <p className="text-sm text-gray-700">{affectedRows} row{affectedRows !== 1 ? 's' : ''} affected</p>
+      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
+        <p className="text-sm font-medium text-gray-700">{affectedRows} row{affectedRows !== 1 ? 's' : ''} affected</p>
+        <p className="text-[10px] text-gray-400 mt-1">{executionTimeMs.toFixed(0)}ms</p>
+      </div>
+    );
+  }
+
+  // Empty result set (e.g. find with no matches)
+  if (columns.length === 0 && rows.length === 0) {
+    return (
+      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
+        <p className="text-sm font-medium text-gray-500">No results found</p>
         <p className="text-[10px] text-gray-400 mt-1">{executionTimeMs.toFixed(0)}ms</p>
       </div>
     );
   }
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-white overflow-hidden">
+    <div className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="px-3 py-1.5 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-        <span className="text-xs text-gray-500">{rowCount} row{rowCount !== 1 ? 's' : ''} · {executionTimeMs.toFixed(0)}ms</span>
+      <div className="px-4 py-2 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+        <span className="text-xs text-gray-500 font-medium">{rowCount} row{rowCount !== 1 ? 's' : ''} · {executionTimeMs.toFixed(0)}ms</span>
         {totalPages > 1 && (
-          <div className="flex items-center gap-1">
-            <button disabled={page === 0} onClick={() => setPage(page - 1)} className="px-1.5 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded disabled:opacity-30">‹</button>
-            <span className="text-[10px] text-gray-400">{page + 1}/{totalPages}</span>
-            <button disabled={page >= totalPages - 1} onClick={() => setPage(page + 1)} className="px-1.5 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded disabled:opacity-30">›</button>
+          <div className="flex items-center gap-1.5">
+            <button disabled={page === 0} onClick={() => setPage(page - 1)} className="px-2 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded-md disabled:opacity-30 transition-colors">‹</button>
+            <span className="text-[11px] text-gray-400 tabular-nums">{page + 1} / {totalPages}</span>
+            <button disabled={page >= totalPages - 1} onClick={() => setPage(page + 1)} className="px-2 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded-md disabled:opacity-30 transition-colors">›</button>
           </div>
         )}
       </div>
       {/* Table */}
-      <div className="overflow-x-auto max-h-80">
-        <table className="w-full text-xs">
-          <thead className="bg-gray-50 sticky top-0">
+      <div className="overflow-x-auto max-h-96">
+        <table className="w-full text-[13px]">
+          <thead className="bg-gray-50/80 sticky top-0 z-10">
             <tr>
               {columns.map((col) => (
-                <th key={col} className="text-left px-3 py-1.5 font-medium text-gray-500 border-b border-gray-200 whitespace-nowrap">{col}</th>
+                <th key={col} className="text-left px-4 py-2 font-semibold text-gray-600 border-b border-gray-200 whitespace-nowrap">{col}</th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-gray-100">
             {pageRows.map((row, i) => (
-              <tr key={i} className="border-b border-gray-100 hover:bg-gray-50">
+              <tr key={i} className={`hover:bg-blue-50/40 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
                 {columns.map((col) => (
-                  <td key={col} className="px-3 py-1.5 text-gray-700 whitespace-nowrap max-w-[300px] truncate">{row[col] == null ? <span className="text-gray-300">null</span> : String(row[col])}</td>
+                  <td key={col} className="px-4 py-2 text-gray-700 whitespace-nowrap max-w-[300px] truncate font-mono text-xs">{row[col] == null ? <span className="text-gray-300 italic">null</span> : String(row[col])}</td>
                 ))}
               </tr>
             ))}
@@ -101,60 +112,72 @@ function QueryBlock({ msg, onConfirm, onCancel, onEdit, onUpdateText, onSetStatu
   const isCancelled = msg.status === 'cancelled';
 
   return (
-    <div className={`rounded-lg border ${isPending || isEditing ? 'border-blue-200 bg-blue-50/30' : isCancelled ? 'border-gray-200 bg-gray-50 opacity-60' : 'border-gray-200 bg-gray-50'}`}>
+    <div className={`rounded-xl overflow-hidden border border-gray-200 shadow-sm ${isPending || isEditing ? 'ring-1 ring-blue-300' : isCancelled ? 'opacity-50' : ''}`}>
       {/* Header */}
-      <div className="flex items-center justify-between px-3 py-1.5 border-b border-gray-200/60">
+      <div className="flex items-center justify-between px-4 py-2 bg-gray-50 border-b border-gray-200">
         <div className="flex items-center gap-2">
-          <button onClick={() => setCollapsed(!collapsed)} className="text-gray-400 hover:text-gray-600">
+          <button onClick={() => setCollapsed(!collapsed)} className="text-gray-400 hover:text-gray-600 transition-colors">
             <svg className={`w-3 h-3 transition-transform ${collapsed ? '' : 'rotate-90'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          <span className="text-[11px] font-medium text-gray-500 uppercase">
+          <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-500">
             {msg.dbType === 'postgresql' ? 'SQL' : 'MongoDB'}
           </span>
-          {isConfirmed && <span className="text-[10px] text-green-600">✓ Executed</span>}
+          {isConfirmed && <span className="text-[10px] text-green-600 font-medium">✓ Executed</span>}
           {isCancelled && <span className="text-[10px] text-gray-400">Cancelled</span>}
         </div>
-        <div className="flex items-center gap-1">
-          <button onClick={handleCopy} className="px-1.5 py-0.5 text-[10px] text-gray-400 hover:text-gray-600 hover:bg-gray-200/60 rounded" title="Copy">
-            {copied ? '✓' : 'Copy'}
-          </button>
-        </div>
+        <button onClick={handleCopy} className="px-2 py-0.5 text-[11px] text-gray-400 hover:text-gray-700 hover:bg-gray-200 rounded-md transition-colors" title="Copy">
+          {copied ? '✓ Copied' : 'Copy'}
+        </button>
       </div>
 
       {/* Query content */}
       {!collapsed && (
-        <div className="px-3 py-2">
+        <div className="bg-white">
           {isEditing ? (
-            <textarea
-              value={msg.content}
-              onChange={(e) => onUpdateText(e.target.value)}
-              className="w-full font-mono text-xs bg-white border border-gray-200 rounded-md p-2 focus:outline-none focus:ring-1 focus:ring-blue-400 resize-y min-h-[60px]"
-              rows={Math.min(msg.content.split('\n').length + 1, 12)}
-            />
+            <div className="px-4 py-3">
+              <textarea
+                value={msg.content}
+                onChange={(e) => onUpdateText(e.target.value)}
+                className="w-full font-mono text-sm bg-gray-50 text-gray-800 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-y min-h-[60px]"
+                rows={Math.min(msg.content.split('\n').length + 1, 12)}
+              />
+            </div>
           ) : (
-            <pre className="font-mono text-xs text-gray-800 whitespace-pre-wrap break-words">{msg.content}</pre>
+            <Highlight theme={themes.github} code={msg.content.trim()} language={msg.dbType === 'postgresql' ? 'sql' : 'javascript'}>
+              {({ style, tokens, getLineProps, getTokenProps }) => (
+                <pre className="font-mono text-sm whitespace-pre-wrap break-words leading-relaxed px-4 py-3 overflow-x-auto" style={{ ...style, background: 'transparent' }}>
+                  {tokens.map((line, i) => (
+                    <div key={i} {...getLineProps({ line })}>
+                      {line.map((token, key) => (
+                        <span key={key} {...getTokenProps({ token })} />
+                      ))}
+                    </div>
+                  ))}
+                </pre>
+              )}
+            </Highlight>
           )}
         </div>
       )}
 
       {/* Action buttons */}
       {(isPending || isEditing) && (
-        <div className="flex items-center gap-2 px-3 py-2 border-t border-gray-200/60">
-          <button onClick={onConfirm} className="px-3 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-            Run
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border-t border-gray-200">
+          <button onClick={onConfirm} className="px-4 py-1.5 text-xs font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors shadow-sm">
+            ▶ Run
           </button>
           {isEditing ? (
-            <button onClick={() => onSetStatus('pending')} className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 transition-colors">
+            <button onClick={() => onSetStatus('pending')} className="px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
               Cancel edit
             </button>
           ) : (
-            <button onClick={onEdit} className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 transition-colors">
+            <button onClick={onEdit} className="px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
               Edit
             </button>
           )}
-          <button onClick={onCancel} className="px-3 py-1 text-xs font-medium text-red-600 bg-red-50 rounded-md hover:bg-red-100 transition-colors">
+          <button onClick={onCancel} className="px-3 py-1.5 text-xs font-medium text-red-600 bg-white border border-gray-200 rounded-lg hover:bg-red-50 transition-colors">
             Cancel
           </button>
         </div>
@@ -219,7 +242,7 @@ export function ChatPanel() {
   const hasMessages = messages.length > 0;
 
   return (
-    <div className="flex-1 flex flex-col min-w-0">
+    <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
       {/* Chat thread */}
       <div className="flex-1 overflow-y-auto p-4">
         {!hasMessages && !generating ? (

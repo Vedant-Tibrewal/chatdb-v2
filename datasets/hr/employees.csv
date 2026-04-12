@@ -1,26 +1,501 @@
-employee_id,first_name,last_name,department,job_title,hire_date,salary,status,manager_name,location
-1,Alice,Johnson,Engineering,Software Engineer,2020-03-15,95000,Active,Bob Smith,New York
-2,Bob,Smith,Engineering,Engineering Manager,2018-06-01,130000,Active,,New York
-3,Carol,White,Marketing,Marketing Specialist,2021-01-10,72000,Active,David Brown,Chicago
-4,David,Brown,Marketing,Marketing Director,2017-09-20,140000,Active,,Chicago
-5,Eve,Davis,Sales,Sales Representative,2022-05-01,65000,Active,Frank Miller,San Francisco
-6,Frank,Miller,Sales,Sales Manager,2019-02-14,110000,Active,,San Francisco
-7,Grace,Wilson,HR,HR Coordinator,2021-07-01,68000,Active,Henry Moore,New York
-8,Henry,Moore,HR,HR Director,2016-11-30,125000,Active,,New York
-9,Ivy,Taylor,Engineering,Senior Software Engineer,2019-08-15,115000,Active,Bob Smith,New York
-10,Jack,Anderson,Finance,Financial Analyst,2020-10-01,82000,Active,Karen Thomas,Chicago
-11,Karen,Thomas,Finance,Finance Manager,2017-04-15,120000,Active,,Chicago
-12,Leo,Jackson,Engineering,DevOps Engineer,2021-03-20,98000,Active,Bob Smith,San Francisco
-13,Mia,Harris,Sales,Sales Representative,2023-01-15,62000,Active,Frank Miller,San Francisco
-14,Nathan,Clark,Marketing,Content Writer,2022-08-01,58000,Inactive,David Brown,Chicago
-15,Olivia,Lewis,Engineering,QA Engineer,2020-12-01,85000,Active,Bob Smith,New York
-16,Peter,Walker,Finance,Senior Analyst,2019-05-10,95000,Active,Karen Thomas,Chicago
-17,Quinn,Hall,HR,Recruiter,2022-03-15,65000,Active,Henry Moore,New York
-18,Rachel,Allen,Engineering,Data Engineer,2021-09-01,105000,Active,Bob Smith,San Francisco
-19,Sam,Young,Sales,Account Executive,2020-06-20,78000,Inactive,Frank Miller,New York
-20,Tina,King,Marketing,Social Media Manager,2023-04-01,60000,Active,David Brown,Chicago
-21,Uma,Wright,Engineering,Frontend Developer,2022-11-15,92000,Active,Bob Smith,New York
-22,Victor,Scott,Finance,Accountant,2021-02-01,75000,Active,Karen Thomas,San Francisco
-23,Wendy,Green,HR,Training Specialist,2020-08-10,70000,Active,Henry Moore,Chicago
-24,Xavier,Adams,Engineering,Backend Developer,2019-12-01,108000,Active,Bob Smith,San Francisco
-25,Yara,Baker,Sales,Sales Representative,2023-06-01,60000,Active,Frank Miller,Chicago
+employee_id,first_name,last_name,department,job_title,hire_date,salary,status,location,employment_type,manager_id
+1,Clara,Allen,Design,Senior Design Specialist,2017-01-12,191692.24,Terminated,Austin,Full-Time,
+2,Victor,Martin,Operations,Operations Specialist,2015-03-07,113728.14,Active,Boston,Full-Time,30
+3,Clara,Brown,Operations,Senior Operations Analyst,2015-02-01,157215.75,Terminated,San Francisco,Contract,14
+4,Derek,Hall,Operations,Senior Operations Manager,2019-08-11,112318.65,Active,Denver,Part-Time,5
+5,Eve,Lee,Legal,Legal Analyst,2023-02-20,53056.39,Terminated,New York,Contract,25
+6,Megan,Davis,Operations,Operations Analyst,2021-01-22,116961.32,Active,Miami,Part-Time,
+7,Rachel,Williams,Sales,Sales Manager,2021-10-06,66714.82,Terminated,Atlanta,Part-Time,
+8,Ben,Anderson,Finance,Senior Finance Analyst,2016-06-24,153681.95,On Leave,Austin,Full-Time,9
+9,Rachel,Garcia,Data Science,Data Science Manager,2018-11-26,145121.54,Terminated,San Francisco,Contract,30
+10,Uma,Williams,Data Science,Data Science Manager,2021-12-01,86999.87,Terminated,Denver,Part-Time,
+11,Ben,Jones,Sales,Sales Manager,2018-11-08,117283.52,Terminated,Chicago,Full-Time,20
+12,Olivia,Walker,Finance,Senior Finance Specialist,2017-11-12,183492.9,Active,Seattle,Part-Time,
+13,Leon,Johnson,Engineering,Engineering Analyst,2022-11-13,118113.66,On Leave,Boston,Contract,
+14,Jack,Taylor,Legal,Legal Specialist,2018-11-27,153326.92,Terminated,Portland,Part-Time,
+15,Grace,Brown,Sales,Senior Sales Specialist,2021-05-09,185409.77,On Leave,New York,Contract,12
+16,Yara,Walker,Sales,Sales Specialist,2018-10-13,53808.31,Active,Boston,Contract,29
+17,Anna,Lee,Product,Product Specialist,2021-07-30,80322.43,Terminated,Miami,Full-Time,
+18,Jack,Hall,Legal,Legal Manager,2017-03-19,51686.46,Terminated,Seattle,Full-Time,5
+19,Derek,Davis,Data Science,Data Science Analyst,2022-01-29,51261.33,Terminated,Miami,Contract,24
+20,Rachel,Moore,Sales,Senior Sales Specialist,2023-08-11,144418.48,Terminated,Chicago,Contract,
+21,Eve,Lee,Engineering,Senior Engineering Specialist,2018-08-05,174718.44,Active,New York,Part-Time,3
+22,Victor,Taylor,Engineering,Engineering Analyst,2019-11-03,113877.61,Active,Chicago,Contract,15
+23,Xavier,Anderson,Operations,Senior Operations Specialist,2018-08-22,183869.73,Terminated,Miami,Full-Time,18
+24,Eve,Hall,Operations,Operations Specialist,2021-02-23,136719.36,On Leave,San Francisco,Contract,25
+25,Kate,Garcia,HR,HR Manager,2022-12-09,122543.5,On Leave,Portland,Part-Time,9
+26,Jack,Jackson,Legal,Legal Analyst,2022-12-15,192001.24,Active,Denver,Contract,21
+27,Clara,Wilson,Finance,Senior Finance Analyst,2018-01-28,149944.12,On Leave,San Francisco,Part-Time,9
+28,Peter,Martin,Finance,Finance Manager,2021-05-25,49801.81,On Leave,Portland,Part-Time,22
+29,Frank,Thomas,Data Science,Data Science Manager,2021-09-23,49585.94,Active,Austin,Contract,16
+30,Zach,Miller,Engineering,Senior Engineering Specialist,2022-01-29,172587.54,Terminated,San Francisco,Contract,29
+31,Ben,Jones,Design,Senior Design Manager,2020-03-16,192087.01,Active,Austin,Full-Time,22
+32,Jack,Garcia,Product,Senior Product Analyst,2016-01-29,149688.07,On Leave,Atlanta,Full-Time,24
+33,Olivia,Johnson,Sales,Senior Sales Specialist,2019-08-08,155543.05,On Leave,Denver,Contract,
+34,Noah,Jackson,Legal,Senior Legal Analyst,2019-05-19,75021.24,Active,Chicago,Contract,
+35,Henry,Davis,Engineering,Engineering Specialist,2021-03-06,68539.28,Terminated,Atlanta,Part-Time,
+36,Noah,Young,Engineering,Senior Engineering Specialist,2016-05-01,169582.34,Terminated,Denver,Contract,
+37,Clara,Taylor,Sales,Sales Manager,2020-04-04,45369.68,Active,Boston,Part-Time,0
+38,Alice,Jones,Design,Design Manager,2020-12-14,89865.48,Terminated,Miami,Part-Time,8
+39,Frank,Lee,Product,Product Analyst,2019-04-30,128820.74,Terminated,Boston,Part-Time,
+40,Wendy,Lee,Design,Design Specialist,2019-11-20,103065.76,On Leave,Denver,Contract,
+41,Henry,Brown,Operations,Senior Operations Analyst,2018-08-24,101026.36,On Leave,Boston,Contract,
+42,Eve,Moore,Finance,Finance Specialist,2020-06-25,88543.35,On Leave,Miami,Full-Time,
+43,Yara,Smith,Product,Product Specialist,2016-02-26,70507.87,On Leave,Portland,Contract,
+44,Alice,Williams,Sales,Sales Analyst,2022-02-28,57867.9,On Leave,Atlanta,Full-Time,11
+45,Xavier,Martin,Sales,Sales Specialist,2017-10-28,138381.92,On Leave,Seattle,Part-Time,20
+46,Yara,Lee,Marketing,Senior Marketing Specialist,2022-06-22,161491.83,Terminated,Austin,Full-Time,25
+47,Rachel,Smith,Engineering,Senior Engineering Analyst,2021-01-05,159920.3,Active,Portland,Full-Time,17
+48,Frank,Garcia,Operations,Senior Operations Analyst,2023-05-02,96337.76,Active,San Francisco,Full-Time,2
+49,Megan,Martin,Data Science,Data Science Specialist,2023-01-27,125552.18,On Leave,New York,Full-Time,12
+50,Eve,Jones,Marketing,Senior Marketing Analyst,2019-10-13,126504.9,On Leave,New York,Contract,18
+51,Noah,Davis,Legal,Legal Manager,2016-02-23,160195.97,Active,Portland,Full-Time,8
+52,Victor,Walker,Sales,Senior Sales Analyst,2017-01-29,174740.18,Terminated,Seattle,Contract,
+53,Victor,Wilson,Product,Product Analyst,2017-12-06,170467.31,On Leave,Austin,Full-Time,7
+54,Rachel,Jones,Engineering,Engineering Specialist,2015-12-24,129926.66,Active,New York,Contract,13
+55,Kate,Moore,Engineering,Engineering Analyst,2015-03-29,103519.26,On Leave,Boston,Part-Time,0
+56,Clara,Martin,Legal,Legal Specialist,2017-04-18,140396.8,Active,Portland,Full-Time,9
+57,Tina,Anderson,Data Science,Senior Data Science Manager,2020-07-28,132114.86,On Leave,New York,Contract,21
+58,Grace,Williams,Data Science,Data Science Manager,2020-08-12,193240.54,Active,Chicago,Contract,20
+59,Clara,Young,Finance,Senior Finance Specialist,2021-07-29,86930.62,On Leave,Miami,Part-Time,
+60,Frank,Hall,Finance,Senior Finance Analyst,2016-10-07,151401.46,On Leave,Boston,Full-Time,20
+61,Alice,Williams,Product,Senior Product Manager,2020-02-22,127276.51,Active,Seattle,Contract,22
+62,Ben,Moore,Sales,Senior Sales Specialist,2021-07-09,146271.34,Active,Chicago,Part-Time,
+63,Kate,Jones,HR,HR Manager,2017-05-26,134321.73,Active,Portland,Part-Time,28
+64,Leon,Thomas,Data Science,Data Science Analyst,2022-05-18,104339.52,Terminated,Atlanta,Part-Time,
+65,Megan,Taylor,Legal,Legal Specialist,2015-09-18,159748.34,Active,Denver,Part-Time,2
+66,Xavier,Smith,Finance,Senior Finance Manager,2016-07-25,172767.95,Active,Miami,Full-Time,30
+67,Yara,Johnson,Operations,Operations Manager,2020-05-21,138465.63,Terminated,Chicago,Full-Time,
+68,Tina,Taylor,Data Science,Data Science Analyst,2023-04-16,111692.85,Active,New York,Part-Time,21
+69,Anna,Lee,Design,Design Manager,2021-08-20,190526.29,On Leave,Boston,Full-Time,
+70,Henry,Hall,Finance,Senior Finance Manager,2020-10-16,188414.77,On Leave,New York,Contract,24
+71,Leon,Anderson,Data Science,Senior Data Science Analyst,2022-11-23,160884.35,Terminated,Denver,Contract,
+72,Bob,Davis,Finance,Finance Manager,2017-06-16,156002.35,Terminated,Portland,Contract,0
+73,Victor,Johnson,HR,HR Manager,2024-08-21,178719.85,Terminated,Atlanta,Full-Time,8
+74,Eve,Jones,Data Science,Data Science Analyst,2016-04-21,94997.09,Terminated,San Francisco,Part-Time,17
+75,Clara,Allen,Legal,Senior Legal Analyst,2020-08-09,111158.19,Terminated,Portland,Part-Time,
+76,Ben,Johnson,Engineering,Senior Engineering Specialist,2018-12-22,161216.83,Active,New York,Full-Time,30
+77,Olivia,Miller,HR,HR Specialist,2018-12-25,179740.55,Terminated,Atlanta,Contract,
+78,Peter,Young,Product,Product Analyst,2017-06-09,115318.73,Active,Atlanta,Contract,20
+79,Frank,Walker,Product,Senior Product Analyst,2023-07-01,84470.88,Terminated,Portland,Contract,26
+80,Kate,Jones,Product,Senior Product Manager,2020-06-28,169587.44,Active,Miami,Contract,1
+81,Tina,Jackson,HR,HR Analyst,2022-03-14,171245.49,Active,Portland,Full-Time,
+82,Frank,Walker,Marketing,Marketing Manager,2015-02-02,66382.06,On Leave,Denver,Contract,2
+83,Alice,Walker,Marketing,Marketing Specialist,2018-04-15,141275.65,Terminated,Chicago,Part-Time,
+84,Henry,Smith,Engineering,Engineering Manager,2023-02-16,54144.26,Terminated,Chicago,Contract,28
+85,Noah,Hall,Legal,Legal Manager,2021-01-08,129692.81,Active,Atlanta,Full-Time,21
+86,Bob,Davis,Operations,Operations Analyst,2019-04-09,101319.81,Terminated,Seattle,Full-Time,
+87,Quinn,Johnson,Marketing,Marketing Manager,2020-03-19,87352.67,On Leave,Denver,Contract,
+88,Xavier,Anderson,Engineering,Engineering Analyst,2018-05-05,62515.55,Active,Denver,Full-Time,17
+89,Grace,Davis,Finance,Finance Analyst,2022-10-10,178183.88,Active,Atlanta,Contract,18
+90,Yara,Allen,Marketing,Senior Marketing Analyst,2024-02-08,107717.48,Active,Chicago,Part-Time,29
+91,Quinn,Wilson,Design,Senior Design Specialist,2018-03-24,48583.23,Terminated,Portland,Contract,22
+92,Eve,Smith,Operations,Operations Analyst,2019-03-01,70303.65,Active,Seattle,Contract,4
+93,Dan,Walker,Legal,Legal Analyst,2016-05-13,125043.55,Terminated,Denver,Part-Time,
+94,Ben,Johnson,Legal,Senior Legal Analyst,2023-06-21,105145.99,On Leave,Chicago,Part-Time,8
+95,Dan,Garcia,Product,Product Manager,2019-04-03,100487.1,On Leave,Seattle,Contract,23
+96,Dan,Moore,Engineering,Engineering Manager,2024-06-26,146966.56,On Leave,Seattle,Full-Time,
+97,Anna,Anderson,Data Science,Data Science Analyst,2020-07-24,167530.35,Active,Chicago,Part-Time,4
+98,Grace,Hall,Engineering,Senior Engineering Analyst,2024-05-20,83486.13,Terminated,Miami,Full-Time,
+99,Olivia,Miller,Finance,Finance Specialist,2019-10-05,115202.5,Terminated,Atlanta,Full-Time,23
+100,Carol,Jones,Data Science,Data Science Specialist,2020-01-19,172144.93,On Leave,San Francisco,Full-Time,15
+101,Xavier,Walker,Product,Senior Product Manager,2024-03-01,179686.8,On Leave,San Francisco,Part-Time,0
+102,Henry,Anderson,Marketing,Marketing Specialist,2023-05-09,96850.87,Active,San Francisco,Full-Time,30
+103,Bob,Garcia,Data Science,Senior Data Science Manager,2016-01-27,178057.97,Terminated,Austin,Contract,
+104,Zach,Young,Sales,Sales Manager,2016-04-24,71152.76,Terminated,Boston,Part-Time,11
+105,Victor,Walker,Product,Product Analyst,2015-12-18,161796.71,On Leave,Denver,Contract,
+106,Alice,Hall,Marketing,Senior Marketing Specialist,2020-07-21,68883.53,Terminated,Seattle,Contract,20
+107,Anna,Smith,Finance,Finance Analyst,2023-11-02,80753.54,Active,Portland,Full-Time,14
+108,Kate,Williams,Sales,Sales Specialist,2022-02-06,177072.21,Active,Austin,Full-Time,
+109,Rachel,Jackson,Legal,Senior Legal Specialist,2020-12-27,166490.73,Active,Miami,Contract,1
+110,Rachel,Allen,Design,Design Specialist,2024-04-10,126655.51,On Leave,Portland,Part-Time,0
+111,Quinn,Martin,Product,Senior Product Specialist,2015-04-25,192779.25,On Leave,Chicago,Part-Time,0
+112,Olivia,Brown,Design,Senior Design Manager,2018-04-30,134569.29,On Leave,Portland,Contract,
+113,Yara,Taylor,Design,Senior Design Analyst,2021-01-27,158683.6,Active,Denver,Part-Time,21
+114,Rachel,Jones,Engineering,Senior Engineering Manager,2022-11-02,130091.57,Active,Chicago,Full-Time,0
+115,Xavier,Jackson,Sales,Sales Analyst,2021-04-04,172490.34,Terminated,San Francisco,Contract,2
+116,Henry,Smith,Design,Senior Design Manager,2015-07-06,162774.45,Terminated,Miami,Contract,7
+117,Ben,Wilson,Finance,Senior Finance Analyst,2021-12-13,102198.29,Terminated,Boston,Contract,28
+118,Sam,Miller,Design,Senior Design Specialist,2019-11-20,156252.09,Terminated,San Francisco,Contract,11
+119,Alice,Davis,HR,HR Analyst,2018-02-15,171761.69,Active,San Francisco,Full-Time,1
+120,Noah,Brown,Product,Product Specialist,2024-08-04,147797.83,On Leave,Atlanta,Part-Time,
+121,Xavier,Thomas,Operations,Operations Manager,2021-09-21,53272.37,On Leave,New York,Full-Time,
+122,Frank,Lee,Data Science,Data Science Manager,2022-07-27,167180.93,Terminated,Seattle,Contract,12
+123,Anna,Walker,Engineering,Senior Engineering Analyst,2020-10-25,125686.81,Active,Denver,Contract,30
+124,Noah,Martin,Sales,Sales Specialist,2024-05-31,178006.95,Active,San Francisco,Full-Time,17
+125,Henry,Garcia,Product,Senior Product Specialist,2023-07-05,161896.47,Terminated,Portland,Part-Time,24
+126,Olivia,Lee,Product,Product Analyst,2023-10-29,158912.76,Active,Portland,Contract,24
+127,Grace,Davis,Finance,Senior Finance Specialist,2022-02-04,95616.22,On Leave,Denver,Contract,28
+128,Olivia,Garcia,Finance,Senior Finance Manager,2019-07-08,172503.19,Active,Miami,Part-Time,19
+129,Tina,Walker,Operations,Operations Specialist,2024-10-02,116618.65,Terminated,San Francisco,Part-Time,8
+130,Henry,Johnson,Data Science,Senior Data Science Manager,2017-07-17,67494.59,On Leave,Miami,Contract,6
+131,Noah,Moore,Product,Senior Product Analyst,2020-01-06,53670.44,On Leave,Atlanta,Contract,0
+132,Wendy,Jackson,Finance,Finance Specialist,2022-08-26,154852.0,On Leave,Austin,Part-Time,
+133,Noah,Brown,Data Science,Data Science Analyst,2019-08-23,89504.81,Active,Seattle,Part-Time,9
+134,Tina,Moore,Engineering,Senior Engineering Analyst,2018-07-19,81813.41,Active,Chicago,Contract,
+135,Wendy,Smith,Sales,Senior Sales Specialist,2021-01-23,159528.2,Active,Atlanta,Full-Time,0
+136,Uma,Martin,HR,Senior HR Analyst,2023-06-30,88961.77,On Leave,Chicago,Full-Time,17
+137,Alice,Jones,Data Science,Data Science Specialist,2022-10-09,126712.86,Terminated,Seattle,Part-Time,9
+138,Alice,Moore,HR,Senior HR Manager,2016-08-25,140521.17,Active,New York,Contract,8
+139,Rachel,Taylor,Product,Product Analyst,2022-08-15,168100.11,On Leave,Boston,Full-Time,1
+140,Henry,Brown,Legal,Legal Manager,2016-05-27,86127.21,Active,Portland,Contract,9
+141,Grace,Martin,Operations,Operations Analyst,2021-08-01,178982.14,On Leave,Denver,Contract,30
+142,Dan,Martin,Operations,Operations Analyst,2016-08-24,96409.06,On Leave,Austin,Full-Time,14
+143,Bob,Anderson,Operations,Senior Operations Analyst,2020-10-03,186733.71,Terminated,Austin,Part-Time,20
+144,Frank,Walker,Operations,Senior Operations Analyst,2018-06-20,77813.35,Terminated,Chicago,Part-Time,10
+145,Kate,Young,Operations,Senior Operations Specialist,2015-09-16,174034.83,Terminated,Miami,Part-Time,
+146,Derek,Anderson,Marketing,Senior Marketing Analyst,2021-07-01,176982.22,Terminated,Seattle,Full-Time,18
+147,Jack,Young,HR,HR Analyst,2024-03-23,144813.73,Active,Austin,Contract,
+148,Clara,Thomas,HR,HR Analyst,2017-06-26,155947.03,Terminated,Boston,Contract,
+149,Quinn,Martin,Engineering,Engineering Analyst,2021-05-16,188547.87,On Leave,Chicago,Part-Time,1
+150,Frank,Hall,Data Science,Senior Data Science Specialist,2018-10-24,127793.74,Terminated,Portland,Contract,25
+151,Henry,Wilson,Legal,Legal Manager,2024-08-12,107314.18,Terminated,San Francisco,Contract,
+152,Sam,Walker,Data Science,Data Science Manager,2016-03-19,165891.79,On Leave,San Francisco,Part-Time,6
+153,Carol,Taylor,Operations,Senior Operations Manager,2017-09-05,56783.4,On Leave,Boston,Part-Time,
+154,Carol,Wilson,Sales,Sales Manager,2016-08-16,166133.15,On Leave,Portland,Contract,25
+155,Jack,Anderson,Engineering,Engineering Analyst,2024-07-03,193688.63,Terminated,Miami,Contract,13
+156,Uma,Taylor,Marketing,Marketing Specialist,2017-11-25,188560.29,Terminated,Chicago,Full-Time,
+157,Quinn,Smith,Sales,Sales Manager,2023-09-27,109418.68,On Leave,San Francisco,Full-Time,
+158,Yara,Johnson,HR,Senior HR Analyst,2019-07-09,168281.8,Terminated,Denver,Part-Time,6
+159,Grace,Garcia,Operations,Senior Operations Analyst,2018-09-08,101686.46,Active,Seattle,Full-Time,
+160,Anna,Brown,Sales,Senior Sales Analyst,2015-07-13,112453.4,On Leave,Chicago,Full-Time,5
+161,Rachel,Moore,Sales,Sales Analyst,2019-08-23,113629.1,On Leave,Miami,Part-Time,
+162,Victor,Brown,Data Science,Data Science Analyst,2018-10-24,140871.82,On Leave,Boston,Contract,10
+163,Rachel,Anderson,Design,Senior Design Manager,2019-09-09,107262.12,Active,New York,Full-Time,22
+164,Sam,Johnson,Design,Design Manager,2017-10-27,180236.61,On Leave,Chicago,Part-Time,30
+165,Frank,Brown,Marketing,Marketing Manager,2023-01-20,118295.01,Active,Portland,Contract,
+166,Jack,Hall,Finance,Finance Manager,2018-02-06,196777.92,Terminated,Portland,Part-Time,2
+167,Jack,Thomas,Sales,Sales Manager,2019-01-08,163915.78,Terminated,Austin,Contract,
+168,Jack,Wilson,Finance,Finance Manager,2020-06-04,196510.16,Active,Seattle,Full-Time,
+169,Iris,Walker,Product,Product Specialist,2020-02-17,67715.46,On Leave,Chicago,Part-Time,13
+170,Olivia,Anderson,Operations,Senior Operations Specialist,2016-05-27,131842.88,Terminated,Denver,Contract,
+171,Noah,Jackson,Product,Product Manager,2022-06-15,116239.65,On Leave,Austin,Full-Time,2
+172,Clara,Young,Marketing,Marketing Specialist,2022-08-18,49224.84,Active,New York,Full-Time,
+173,Jack,Garcia,Operations,Operations Specialist,2023-09-30,81695.72,Terminated,Chicago,Part-Time,
+174,Uma,Young,Data Science,Data Science Specialist,2023-12-21,190217.32,Active,Miami,Part-Time,25
+175,Jack,Davis,Finance,Finance Analyst,2024-10-23,59883.81,Terminated,Chicago,Contract,16
+176,Yara,Davis,Design,Design Analyst,2023-05-29,86479.72,Terminated,Austin,Contract,
+177,Iris,Hall,Marketing,Marketing Analyst,2022-12-30,61019.56,Active,New York,Full-Time,2
+178,Iris,Taylor,Marketing,Marketing Analyst,2016-05-11,190870.11,Terminated,Boston,Part-Time,
+179,Derek,Smith,HR,HR Specialist,2022-03-13,82467.42,Terminated,Denver,Full-Time,3
+180,Uma,Jones,HR,HR Manager,2021-08-31,169598.36,Active,Atlanta,Full-Time,8
+181,Peter,Taylor,Legal,Legal Analyst,2021-09-04,96160.63,Terminated,New York,Full-Time,17
+182,Wendy,Davis,Finance,Finance Specialist,2022-12-28,106511.35,Active,New York,Part-Time,
+183,Zach,Jones,Product,Product Analyst,2017-01-08,146018.84,Terminated,Seattle,Part-Time,20
+184,Iris,Walker,Marketing,Senior Marketing Analyst,2024-06-03,151605.11,On Leave,Portland,Part-Time,19
+185,Henry,Young,Product,Product Specialist,2018-11-22,154628.41,On Leave,Seattle,Part-Time,
+186,Clara,Taylor,Data Science,Senior Data Science Manager,2022-11-19,69204.58,On Leave,Austin,Part-Time,16
+187,Derek,Brown,Operations,Senior Operations Specialist,2017-10-29,196912.92,Terminated,San Francisco,Contract,
+188,Xavier,Garcia,Product,Product Manager,2017-06-04,71473.64,Terminated,Seattle,Full-Time,22
+189,Jack,Jones,Marketing,Marketing Manager,2018-06-17,66581.41,Active,Chicago,Contract,20
+190,Peter,Lee,Marketing,Senior Marketing Analyst,2020-05-03,139243.68,On Leave,Seattle,Part-Time,19
+191,Noah,Williams,Engineering,Engineering Analyst,2015-06-14,153035.52,Terminated,Seattle,Contract,24
+192,Wendy,Smith,HR,HR Manager,2018-08-03,156044.19,On Leave,Austin,Full-Time,29
+193,Anna,Martin,Design,Senior Design Analyst,2017-08-02,190660.19,Terminated,Portland,Part-Time,
+194,Anna,Hall,Legal,Senior Legal Specialist,2020-03-29,175912.46,On Leave,Boston,Contract,11
+195,Olivia,Taylor,Product,Senior Product Specialist,2015-01-10,104533.96,Terminated,Portland,Contract,28
+196,Alice,Jackson,Marketing,Marketing Specialist,2022-11-12,175901.89,Terminated,Chicago,Contract,22
+197,Henry,Young,Engineering,Senior Engineering Analyst,2021-04-19,180508.33,Terminated,San Francisco,Part-Time,17
+198,Uma,Brown,Marketing,Marketing Specialist,2024-12-14,91099.01,On Leave,Seattle,Full-Time,21
+199,Olivia,Lee,Legal,Legal Specialist,2023-10-07,148006.86,On Leave,Austin,Contract,27
+200,Zach,Wilson,Sales,Senior Sales Analyst,2024-03-31,113593.8,Terminated,Atlanta,Contract,4
+201,Wendy,Allen,HR,Senior HR Specialist,2015-10-10,58239.02,On Leave,Austin,Full-Time,
+202,Kate,Miller,Data Science,Data Science Specialist,2023-04-07,117360.05,Active,Boston,Part-Time,15
+203,Henry,Brown,Sales,Sales Manager,2024-11-17,197797.27,Active,Denver,Full-Time,1
+204,Peter,Lee,HR,HR Manager,2017-07-14,158406.03,Active,Boston,Full-Time,7
+205,Anna,Jones,Operations,Operations Manager,2015-12-28,76769.5,On Leave,Atlanta,Part-Time,10
+206,Noah,Martin,Marketing,Senior Marketing Analyst,2024-08-03,94972.94,Terminated,Denver,Contract,17
+207,Wendy,Thomas,Finance,Senior Finance Specialist,2023-01-10,139189.26,Active,Atlanta,Contract,
+208,Yara,Young,Finance,Senior Finance Manager,2015-12-24,133149.96,Active,Austin,Contract,11
+209,Derek,Taylor,Operations,Operations Analyst,2021-02-17,76659.94,Terminated,Denver,Part-Time,0
+210,Clara,Brown,Product,Senior Product Manager,2024-12-01,121369.49,Terminated,Atlanta,Full-Time,23
+211,Derek,Moore,HR,Senior HR Analyst,2022-09-28,160172.17,Terminated,Denver,Contract,5
+212,Dan,Lee,Operations,Senior Operations Manager,2016-05-12,97543.42,Active,Seattle,Part-Time,21
+213,Eve,Jackson,Engineering,Engineering Specialist,2015-08-28,148570.31,On Leave,Denver,Contract,1
+214,Dan,Martin,Sales,Sales Manager,2021-07-25,123866.02,Active,San Francisco,Contract,17
+215,Eve,Walker,Engineering,Senior Engineering Analyst,2016-02-12,131579.95,On Leave,New York,Contract,28
+216,Henry,Taylor,Legal,Senior Legal Specialist,2022-11-20,158614.03,On Leave,Portland,Contract,0
+217,Henry,Young,Design,Design Manager,2022-04-04,188067.46,Active,New York,Full-Time,4
+218,Eve,Miller,Design,Senior Design Specialist,2020-09-13,161657.61,Terminated,Portland,Contract,
+219,Kate,Allen,Product,Senior Product Specialist,2017-12-10,101796.64,Active,San Francisco,Part-Time,28
+220,Anna,Davis,Product,Senior Product Specialist,2015-06-11,191841.96,Active,Seattle,Part-Time,7
+221,Clara,Miller,Legal,Senior Legal Analyst,2023-06-10,141150.91,On Leave,Chicago,Contract,
+222,Carol,Martin,Data Science,Data Science Analyst,2020-05-21,117279.0,On Leave,Portland,Full-Time,2
+223,Eve,Lee,HR,Senior HR Specialist,2022-01-18,137662.3,Active,San Francisco,Contract,1
+224,Clara,Davis,Finance,Finance Analyst,2022-01-26,102736.85,Active,Portland,Part-Time,
+225,Eve,Moore,Operations,Senior Operations Specialist,2018-09-26,86480.06,On Leave,New York,Part-Time,22
+226,Uma,Moore,Sales,Senior Sales Analyst,2016-11-23,72467.76,Terminated,Denver,Contract,0
+227,Wendy,Young,Design,Design Manager,2021-10-28,149597.11,On Leave,Boston,Part-Time,4
+228,Leon,Martin,Finance,Senior Finance Analyst,2020-11-04,163722.93,On Leave,Chicago,Contract,
+229,Derek,Thomas,Sales,Sales Specialist,2022-10-06,60667.19,Active,Portland,Part-Time,
+230,Leon,Smith,Data Science,Senior Data Science Specialist,2016-11-20,150491.26,Active,Miami,Part-Time,
+231,Jack,Allen,Operations,Operations Manager,2015-02-11,52125.1,Active,Denver,Full-Time,
+232,Leon,Hall,Sales,Sales Specialist,2023-03-18,158791.29,On Leave,Atlanta,Full-Time,26
+233,Bob,Walker,Engineering,Senior Engineering Manager,2024-04-14,125256.09,On Leave,San Francisco,Contract,
+234,Bob,Anderson,Sales,Sales Specialist,2023-06-22,70018.15,Terminated,New York,Full-Time,12
+235,Grace,Smith,Marketing,Senior Marketing Analyst,2016-04-30,165020.98,Terminated,Miami,Part-Time,20
+236,Henry,Smith,Marketing,Senior Marketing Analyst,2019-10-31,73359.11,Terminated,Denver,Contract,8
+237,Yara,Thomas,Data Science,Senior Data Science Manager,2016-12-09,134002.41,On Leave,New York,Part-Time,10
+238,Zach,Lee,HR,HR Specialist,2021-01-03,96106.74,Terminated,San Francisco,Part-Time,12
+239,Henry,Smith,Design,Design Analyst,2016-08-12,157240.85,Active,Chicago,Contract,0
+240,Wendy,Moore,Legal,Legal Specialist,2017-02-28,163262.16,Active,Seattle,Full-Time,
+241,Carol,Moore,HR,Senior HR Specialist,2023-05-14,151092.98,Terminated,Chicago,Contract,25
+242,Frank,Lee,Engineering,Senior Engineering Specialist,2023-02-04,166551.86,Active,Denver,Part-Time,15
+243,Zach,Jones,Data Science,Senior Data Science Manager,2017-02-27,197700.82,Terminated,Chicago,Part-Time,25
+244,Sam,Miller,Engineering,Senior Engineering Analyst,2018-08-14,120509.24,On Leave,Miami,Contract,20
+245,Tina,Lee,Product,Senior Product Analyst,2020-10-06,80961.0,Active,Miami,Full-Time,
+246,Grace,Smith,Finance,Finance Specialist,2022-05-31,191633.0,Terminated,Boston,Part-Time,13
+247,Peter,Jackson,Legal,Legal Manager,2017-11-04,178190.47,Terminated,Portland,Part-Time,15
+248,Kate,Taylor,Sales,Sales Specialist,2020-01-16,193724.33,On Leave,Miami,Part-Time,
+249,Olivia,Johnson,Product,Product Specialist,2020-05-23,91872.69,On Leave,Boston,Contract,24
+250,Peter,Garcia,Engineering,Senior Engineering Specialist,2018-05-26,177502.69,Terminated,Chicago,Part-Time,
+251,Carol,Jackson,Product,Product Specialist,2022-02-07,71873.32,Terminated,Austin,Contract,
+252,Ben,Smith,Legal,Senior Legal Manager,2022-07-14,46550.57,On Leave,San Francisco,Contract,13
+253,Grace,Smith,Finance,Finance Analyst,2017-12-16,81861.95,On Leave,Atlanta,Part-Time,22
+254,Grace,Moore,Operations,Operations Analyst,2016-09-09,117436.98,On Leave,Miami,Part-Time,
+255,Xavier,Brown,Marketing,Senior Marketing Specialist,2017-12-22,100347.52,On Leave,Boston,Contract,21
+256,Derek,Moore,Legal,Legal Manager,2017-07-25,184291.48,Terminated,Denver,Part-Time,21
+257,Zach,Garcia,Sales,Senior Sales Manager,2019-05-26,142897.67,On Leave,Seattle,Full-Time,1
+258,Bob,Davis,Legal,Legal Specialist,2019-03-12,116764.8,On Leave,Atlanta,Part-Time,
+259,Dan,Anderson,Sales,Sales Manager,2015-06-15,191860.32,On Leave,Seattle,Part-Time,17
+260,Victor,Miller,Design,Design Analyst,2019-05-11,81852.31,Active,Denver,Full-Time,10
+261,Frank,Miller,Engineering,Senior Engineering Analyst,2022-09-16,91399.57,On Leave,Chicago,Contract,
+262,Iris,Walker,Product,Product Analyst,2022-10-03,169910.34,Active,Seattle,Contract,
+263,Noah,Young,Design,Design Specialist,2021-05-18,198961.18,Terminated,Seattle,Full-Time,3
+264,Xavier,Wilson,Design,Design Manager,2016-08-19,168156.89,Terminated,New York,Contract,12
+265,Noah,Hall,Data Science,Data Science Specialist,2015-07-07,108109.23,On Leave,Seattle,Full-Time,16
+266,Leon,Wilson,Product,Senior Product Manager,2019-03-28,126997.13,On Leave,Chicago,Full-Time,20
+267,Clara,Davis,Product,Product Analyst,2019-08-17,171876.35,On Leave,Chicago,Full-Time,
+268,Frank,Smith,Data Science,Senior Data Science Specialist,2015-05-01,128879.71,Terminated,New York,Full-Time,23
+269,Clara,Johnson,Data Science,Data Science Specialist,2016-09-10,161082.56,Terminated,Denver,Full-Time,16
+270,Leon,Anderson,Engineering,Engineering Specialist,2024-08-06,111164.21,Terminated,Chicago,Contract,4
+271,Peter,Anderson,Engineering,Engineering Specialist,2018-05-01,94484.3,On Leave,Portland,Full-Time,19
+272,Peter,Miller,HR,Senior HR Specialist,2016-09-12,136517.88,On Leave,Portland,Full-Time,
+273,Leon,Hall,Legal,Legal Analyst,2016-08-24,170574.43,Active,Atlanta,Part-Time,
+274,Peter,Moore,HR,HR Manager,2015-10-21,105930.75,On Leave,Austin,Full-Time,21
+275,Eve,Miller,Marketing,Marketing Manager,2020-05-30,93081.14,On Leave,Chicago,Part-Time,29
+276,Tina,Garcia,HR,Senior HR Specialist,2023-04-08,82081.07,On Leave,Chicago,Full-Time,
+277,Sam,Brown,Sales,Sales Analyst,2017-07-18,170011.46,On Leave,Chicago,Contract,16
+278,Frank,Miller,Finance,Finance Analyst,2022-06-01,73047.13,On Leave,Miami,Part-Time,
+279,Ben,Johnson,HR,Senior HR Specialist,2019-09-15,121981.08,Terminated,Boston,Contract,
+280,Sam,Martin,Design,Design Specialist,2022-06-01,141352.78,Terminated,Portland,Contract,4
+281,Rachel,Smith,Data Science,Data Science Specialist,2018-10-23,199178.35,On Leave,New York,Part-Time,7
+282,Sam,Jones,Finance,Finance Manager,2015-10-10,96131.65,Terminated,San Francisco,Full-Time,10
+283,Uma,Brown,Finance,Senior Finance Specialist,2016-03-31,175979.05,Terminated,Chicago,Full-Time,28
+284,Peter,Jones,Legal,Legal Analyst,2023-03-20,151553.25,Terminated,San Francisco,Contract,11
+285,Jack,Thomas,Marketing,Marketing Manager,2018-02-10,66903.43,Active,Portland,Full-Time,3
+286,Xavier,Walker,Operations,Senior Operations Manager,2016-02-21,71368.93,Active,Austin,Full-Time,26
+287,Ben,Lee,Legal,Senior Legal Manager,2019-08-04,160727.48,On Leave,Austin,Part-Time,
+288,Peter,Lee,Marketing,Senior Marketing Analyst,2022-09-17,141642.9,On Leave,Portland,Part-Time,29
+289,Zach,Moore,HR,HR Specialist,2023-09-24,151027.16,Active,Chicago,Part-Time,17
+290,Megan,Williams,Legal,Legal Specialist,2023-11-25,151507.74,On Leave,Miami,Contract,12
+291,Alice,Walker,Data Science,Senior Data Science Specialist,2017-09-27,157251.83,Active,Miami,Full-Time,
+292,Victor,Lee,Legal,Legal Manager,2024-03-04,124718.56,Terminated,New York,Contract,21
+293,Anna,Martin,HR,HR Specialist,2024-05-09,83151.6,Terminated,Miami,Part-Time,
+294,Jack,Anderson,Engineering,Senior Engineering Analyst,2024-07-12,88263.33,Terminated,Portland,Full-Time,16
+295,Ben,Lee,Marketing,Senior Marketing Manager,2021-03-24,108048.62,On Leave,Portland,Full-Time,
+296,Sam,Brown,Finance,Finance Analyst,2016-03-15,138929.07,On Leave,Seattle,Contract,24
+297,Ben,Johnson,Legal,Legal Manager,2021-02-01,128663.03,Terminated,Atlanta,Part-Time,24
+298,Uma,Allen,Design,Senior Design Manager,2016-07-05,159431.32,Active,Atlanta,Full-Time,7
+299,Carol,Wilson,Sales,Sales Specialist,2016-08-21,139001.72,Active,Austin,Full-Time,23
+300,Jack,Thomas,Legal,Legal Analyst,2017-05-28,52978.41,Active,Atlanta,Contract,
+301,Henry,Wilson,Operations,Senior Operations Analyst,2016-07-16,195295.32,On Leave,Denver,Full-Time,
+302,Xavier,Smith,Marketing,Marketing Manager,2022-01-13,127095.36,Terminated,Portland,Part-Time,
+303,Bob,Young,Legal,Senior Legal Manager,2019-11-02,113869.83,Active,Atlanta,Part-Time,24
+304,Victor,Brown,Sales,Sales Specialist,2017-10-28,169767.09,Active,San Francisco,Full-Time,
+305,Clara,Martin,HR,HR Manager,2024-11-11,107986.67,Active,Seattle,Full-Time,
+306,Iris,Lee,HR,Senior HR Specialist,2015-03-23,174596.89,On Leave,Seattle,Part-Time,
+307,Bob,Walker,HR,HR Manager,2019-01-11,81640.64,On Leave,Denver,Contract,29
+308,Quinn,Taylor,Marketing,Marketing Analyst,2018-07-19,144765.44,On Leave,Boston,Full-Time,0
+309,Ben,Martin,Sales,Sales Manager,2019-03-16,123982.56,On Leave,Atlanta,Part-Time,
+310,Alice,Young,Engineering,Engineering Analyst,2016-01-17,175491.28,On Leave,Seattle,Full-Time,3
+311,Derek,Smith,Legal,Legal Analyst,2021-11-12,133839.49,Active,Boston,Contract,
+312,Bob,Martin,Sales,Sales Analyst,2018-08-24,135139.43,Terminated,Austin,Full-Time,28
+313,Megan,Thomas,Sales,Senior Sales Manager,2016-05-19,165625.16,Terminated,Atlanta,Contract,15
+314,Grace,Smith,Operations,Operations Specialist,2018-03-09,194283.31,Terminated,Portland,Contract,23
+315,Xavier,Thomas,HR,HR Analyst,2022-12-27,148135.46,Terminated,Portland,Part-Time,18
+316,Frank,Davis,Sales,Sales Manager,2023-06-12,176520.98,Terminated,Austin,Part-Time,11
+317,Jack,Smith,Design,Design Specialist,2020-10-10,183600.25,On Leave,San Francisco,Full-Time,21
+318,Peter,Young,Legal,Legal Analyst,2019-08-19,64600.55,Terminated,San Francisco,Part-Time,
+319,Iris,Garcia,Engineering,Senior Engineering Specialist,2020-11-18,199694.73,Active,San Francisco,Full-Time,
+320,Yara,Taylor,Legal,Legal Analyst,2015-02-14,91316.61,Active,New York,Full-Time,5
+321,Noah,Moore,Data Science,Data Science Specialist,2015-09-29,192294.9,Terminated,Seattle,Full-Time,
+322,Kate,Young,Product,Product Manager,2015-07-10,155837.61,Active,Portland,Contract,
+323,Yara,Johnson,Product,Senior Product Analyst,2017-11-08,160286.28,On Leave,Denver,Part-Time,20
+324,Noah,Johnson,HR,HR Analyst,2019-03-02,144185.67,Terminated,Seattle,Full-Time,4
+325,Bob,Thomas,Legal,Legal Analyst,2018-07-05,103515.47,Active,Chicago,Contract,24
+326,Uma,Anderson,Data Science,Senior Data Science Manager,2021-05-22,152638.14,Active,New York,Contract,15
+327,Alice,Miller,Data Science,Data Science Manager,2023-09-10,56362.78,Terminated,Boston,Part-Time,23
+328,Anna,Moore,Marketing,Marketing Manager,2021-12-26,89430.97,Active,Denver,Part-Time,
+329,Anna,Davis,Data Science,Senior Data Science Specialist,2021-03-11,64066.91,On Leave,Chicago,Full-Time,
+330,Alice,Miller,Engineering,Engineering Manager,2015-11-04,195108.67,On Leave,Boston,Full-Time,19
+331,Carol,Wilson,Sales,Senior Sales Specialist,2024-09-22,172814.34,On Leave,Chicago,Full-Time,
+332,Wendy,Brown,Data Science,Senior Data Science Manager,2023-12-21,62662.64,On Leave,San Francisco,Part-Time,
+333,Rachel,Martin,HR,Senior HR Manager,2015-01-04,65447.31,On Leave,Boston,Full-Time,16
+334,Leon,Brown,Design,Design Analyst,2019-07-26,70870.13,On Leave,Boston,Full-Time,
+335,Rachel,Walker,Legal,Legal Specialist,2015-12-03,96860.05,Active,Boston,Full-Time,25
+336,Dan,Jackson,Data Science,Data Science Specialist,2023-03-21,199858.77,On Leave,New York,Part-Time,0
+337,Yara,Jackson,Product,Senior Product Analyst,2024-06-27,137766.68,Active,Austin,Full-Time,6
+338,Quinn,Hall,Operations,Senior Operations Specialist,2016-09-23,46272.46,On Leave,Chicago,Contract,
+339,Alice,Martin,Engineering,Engineering Manager,2019-08-17,162152.98,On Leave,San Francisco,Contract,8
+340,Iris,Thomas,Engineering,Senior Engineering Analyst,2020-10-17,146069.99,On Leave,Seattle,Contract,
+341,Leon,Garcia,HR,HR Manager,2015-02-03,177739.83,Active,Atlanta,Full-Time,19
+342,Bob,Anderson,HR,Senior HR Analyst,2017-11-10,140214.46,Terminated,Denver,Full-Time,22
+343,Leon,Hall,Data Science,Senior Data Science Analyst,2020-11-05,67066.1,On Leave,Seattle,Contract,
+344,Uma,Davis,Engineering,Engineering Specialist,2019-08-13,62079.13,Terminated,Boston,Full-Time,6
+345,Frank,Lee,Engineering,Senior Engineering Manager,2024-07-15,66226.94,On Leave,New York,Contract,1
+346,Noah,Walker,Design,Senior Design Analyst,2019-12-22,102855.61,Terminated,Seattle,Full-Time,
+347,Eve,Walker,Design,Design Specialist,2020-01-15,118611.11,On Leave,Miami,Part-Time,
+348,Anna,Miller,Finance,Finance Manager,2016-07-25,186310.73,On Leave,Denver,Contract,22
+349,Zach,Wilson,Product,Senior Product Analyst,2021-07-05,55031.02,On Leave,Seattle,Contract,11
+350,Wendy,Wilson,Product,Product Specialist,2017-06-22,123725.76,Active,Miami,Full-Time,
+351,Frank,Taylor,Legal,Senior Legal Specialist,2015-06-27,193898.48,On Leave,Atlanta,Full-Time,
+352,Dan,Martin,Legal,Senior Legal Specialist,2021-03-24,109480.17,Terminated,Atlanta,Part-Time,27
+353,Leon,Jones,Engineering,Engineering Manager,2021-10-08,110835.53,Terminated,Denver,Contract,18
+354,Noah,Miller,Operations,Senior Operations Manager,2023-08-21,46020.1,Active,Chicago,Full-Time,
+355,Dan,Brown,Sales,Sales Analyst,2018-05-18,101870.77,Active,Seattle,Contract,8
+356,Eve,Allen,Finance,Senior Finance Analyst,2018-07-19,186019.64,On Leave,Denver,Contract,28
+357,Megan,Jones,Product,Product Analyst,2024-02-02,187810.48,Terminated,Denver,Contract,5
+358,Kate,Young,Design,Design Manager,2022-04-18,197433.71,Terminated,Miami,Part-Time,4
+359,Henry,Garcia,Product,Senior Product Specialist,2016-04-11,142201.37,Terminated,Atlanta,Contract,22
+360,Clara,Thomas,HR,HR Specialist,2019-02-02,57931.37,Terminated,Seattle,Full-Time,28
+361,Yara,Young,Marketing,Marketing Analyst,2015-09-08,82443.35,Active,Atlanta,Contract,
+362,Derek,Anderson,Legal,Senior Legal Analyst,2019-08-10,61893.91,On Leave,Chicago,Contract,8
+363,Rachel,Davis,HR,HR Analyst,2023-07-06,55174.52,On Leave,Boston,Full-Time,27
+364,Rachel,Davis,Product,Product Analyst,2023-11-24,53369.74,Terminated,Atlanta,Full-Time,22
+365,Eve,Lee,Sales,Senior Sales Analyst,2018-01-30,108645.43,Terminated,Seattle,Full-Time,20
+366,Uma,Davis,HR,HR Manager,2023-06-16,46568.87,Terminated,Denver,Contract,7
+367,Alice,Taylor,HR,Senior HR Manager,2023-07-16,80449.25,Active,San Francisco,Part-Time,8
+368,Quinn,Anderson,Data Science,Senior Data Science Specialist,2017-02-10,130995.16,Active,New York,Part-Time,7
+369,Peter,Williams,Engineering,Engineering Specialist,2023-12-20,109970.89,On Leave,San Francisco,Full-Time,
+370,Frank,Hall,Finance,Senior Finance Analyst,2021-08-17,58036.93,On Leave,Denver,Part-Time,1
+371,Victor,Allen,Product,Product Manager,2017-05-28,88083.38,Terminated,Austin,Contract,
+372,Yara,Thomas,Marketing,Marketing Manager,2020-11-14,105683.98,On Leave,Boston,Part-Time,7
+373,Tina,Smith,Marketing,Senior Marketing Manager,2021-10-28,135003.31,On Leave,Seattle,Contract,7
+374,Clara,Miller,Design,Design Specialist,2020-07-26,145537.59,Active,Miami,Part-Time,15
+375,Anna,Wilson,Product,Product Specialist,2016-12-28,81854.01,Active,Seattle,Part-Time,15
+376,Frank,Johnson,Sales,Senior Sales Specialist,2015-09-28,129291.83,Terminated,Chicago,Full-Time,17
+377,Kate,Jackson,Legal,Legal Specialist,2018-11-17,127378.65,Terminated,New York,Full-Time,10
+378,Uma,Walker,Operations,Senior Operations Specialist,2024-11-23,50024.26,Terminated,Austin,Part-Time,
+379,Eve,Williams,Finance,Finance Analyst,2016-03-04,99718.31,Active,Atlanta,Contract,
+380,Megan,Jones,HR,HR Analyst,2022-05-09,51292.11,Terminated,New York,Full-Time,14
+381,Dan,Moore,Finance,Finance Manager,2021-04-30,97092.82,Active,Seattle,Part-Time,
+382,Megan,Jones,HR,HR Specialist,2017-12-28,174755.63,Active,Atlanta,Part-Time,15
+383,Megan,Brown,Finance,Senior Finance Analyst,2019-12-12,144657.66,Active,Boston,Contract,
+384,Sam,Brown,Finance,Senior Finance Specialist,2024-04-15,70556.44,Terminated,Boston,Full-Time,21
+385,Carol,Miller,Design,Senior Design Analyst,2015-02-17,189647.96,Terminated,Atlanta,Full-Time,6
+386,Bob,Williams,Product,Product Specialist,2016-10-12,55653.52,Terminated,Miami,Full-Time,
+387,Wendy,Walker,Sales,Senior Sales Specialist,2016-10-27,168273.5,Terminated,Denver,Contract,8
+388,Iris,Smith,Design,Design Analyst,2017-07-07,96812.01,On Leave,San Francisco,Full-Time,0
+389,Iris,Martin,HR,HR Analyst,2022-09-06,121051.31,Active,Atlanta,Part-Time,21
+390,Clara,Walker,Legal,Legal Analyst,2020-01-01,84486.55,Terminated,Austin,Full-Time,29
+391,Rachel,Moore,Engineering,Senior Engineering Specialist,2021-07-23,60922.48,Terminated,Portland,Full-Time,2
+392,Grace,Thomas,Design,Design Specialist,2016-06-14,52560.65,On Leave,Chicago,Full-Time,14
+393,Zach,Moore,Marketing,Senior Marketing Manager,2015-04-27,150854.94,Active,Denver,Full-Time,22
+394,Carol,Moore,Operations,Senior Operations Manager,2021-03-29,50208.17,Active,Denver,Part-Time,24
+395,Victor,Martin,Product,Senior Product Specialist,2021-03-22,68487.12,Terminated,Denver,Part-Time,
+396,Ben,Williams,Design,Design Manager,2023-04-12,45536.48,Terminated,Boston,Contract,14
+397,Iris,Wilson,Legal,Senior Legal Analyst,2016-12-27,181088.96,Active,Atlanta,Contract,3
+398,Noah,Smith,Legal,Senior Legal Manager,2018-03-03,190879.27,Terminated,Portland,Contract,
+399,Tina,Brown,Design,Design Analyst,2021-06-27,71375.17,Active,San Francisco,Full-Time,9
+400,Quinn,Davis,Legal,Legal Analyst,2021-03-01,136495.92,On Leave,Austin,Contract,14
+401,Zach,Anderson,Design,Senior Design Specialist,2016-01-16,94895.55,Terminated,San Francisco,Part-Time,
+402,Noah,Thomas,Legal,Legal Analyst,2021-07-01,116278.46,Active,Miami,Part-Time,10
+403,Megan,Martin,Marketing,Marketing Manager,2021-09-09,71705.24,Terminated,Denver,Full-Time,8
+404,Xavier,Allen,Finance,Senior Finance Manager,2016-08-08,149679.17,Terminated,Austin,Full-Time,9
+405,Anna,Thomas,Engineering,Senior Engineering Specialist,2019-05-12,78742.38,Active,Portland,Contract,14
+406,Zach,Lee,Engineering,Senior Engineering Specialist,2022-04-13,194677.59,On Leave,New York,Contract,
+407,Henry,Jackson,Operations,Operations Specialist,2015-12-01,148713.94,Terminated,Portland,Part-Time,6
+408,Uma,Johnson,Operations,Senior Operations Manager,2018-05-19,108307.98,Active,Denver,Full-Time,22
+409,Noah,Davis,Legal,Legal Manager,2019-01-30,107113.17,Terminated,Denver,Contract,
+410,Iris,Williams,Engineering,Engineering Analyst,2016-01-28,96375.86,Terminated,Seattle,Part-Time,
+411,Grace,Williams,Sales,Sales Manager,2019-05-11,88771.27,Terminated,Atlanta,Contract,5
+412,Henry,Williams,Data Science,Data Science Manager,2020-12-20,195533.03,Terminated,Boston,Full-Time,
+413,Henry,Davis,Design,Senior Design Analyst,2023-08-03,122279.49,Terminated,Chicago,Part-Time,
+414,Megan,Williams,Sales,Sales Manager,2019-01-12,148959.46,Terminated,Miami,Contract,
+415,Anna,Thomas,Design,Design Analyst,2019-01-28,178326.24,Active,Miami,Full-Time,17
+416,Derek,Miller,Data Science,Data Science Analyst,2015-10-12,134186.61,Active,San Francisco,Part-Time,11
+417,Wendy,Walker,Sales,Sales Specialist,2023-02-05,186780.55,Terminated,Boston,Part-Time,19
+418,Sam,Allen,Operations,Senior Operations Manager,2020-01-12,159731.77,Active,Portland,Full-Time,30
+419,Victor,Anderson,Marketing,Marketing Specialist,2023-02-07,138873.06,On Leave,Austin,Full-Time,22
+420,Frank,Young,Sales,Senior Sales Analyst,2021-03-22,48658.16,On Leave,San Francisco,Contract,30
+421,Eve,Davis,Finance,Finance Analyst,2020-08-22,57096.79,On Leave,Seattle,Part-Time,4
+422,Jack,Moore,Finance,Finance Specialist,2024-01-07,98018.03,Active,Atlanta,Full-Time,12
+423,Carol,Wilson,Legal,Legal Specialist,2024-10-30,143365.24,Terminated,Portland,Part-Time,28
+424,Henry,Martin,Finance,Senior Finance Specialist,2019-04-09,54233.6,Terminated,Boston,Part-Time,3
+425,Kate,Moore,Operations,Operations Analyst,2016-05-22,134345.85,Active,Atlanta,Contract,0
+426,Bob,Lee,HR,Senior HR Manager,2019-02-23,76148.68,Active,Seattle,Full-Time,17
+427,Henry,Miller,Engineering,Senior Engineering Manager,2015-03-19,161265.14,On Leave,New York,Full-Time,24
+428,Tina,Taylor,Sales,Sales Manager,2020-01-26,161556.72,Active,Denver,Part-Time,17
+429,Xavier,Hall,Engineering,Senior Engineering Specialist,2016-08-02,148804.08,Terminated,Chicago,Full-Time,18
+430,Noah,Anderson,Finance,Finance Analyst,2023-04-02,88741.66,On Leave,Miami,Full-Time,30
+431,Henry,Martin,Finance,Finance Specialist,2019-03-04,185787.29,On Leave,Miami,Part-Time,
+432,Uma,Smith,Sales,Senior Sales Analyst,2024-03-12,152756.2,Active,Portland,Full-Time,21
+433,Noah,Walker,Operations,Operations Analyst,2018-06-30,99087.43,On Leave,Denver,Contract,12
+434,Tina,Brown,Marketing,Senior Marketing Manager,2018-05-16,58928.82,On Leave,Chicago,Full-Time,0
+435,Uma,Lee,Engineering,Engineering Specialist,2015-12-31,98477.18,On Leave,Austin,Contract,13
+436,Dan,Martin,HR,HR Specialist,2022-03-25,60566.14,Active,Denver,Full-Time,18
+437,Eve,Thomas,Marketing,Marketing Specialist,2021-05-16,67390.05,On Leave,Boston,Contract,
+438,Clara,Young,HR,Senior HR Specialist,2023-02-21,184188.44,Terminated,Atlanta,Contract,
+439,Yara,Hall,Engineering,Engineering Manager,2017-06-11,185814.22,Active,Miami,Full-Time,19
+440,Kate,Johnson,Operations,Senior Operations Manager,2017-02-07,96507.69,On Leave,Atlanta,Full-Time,
+441,Sam,Williams,Data Science,Senior Data Science Specialist,2019-03-04,173531.5,On Leave,Denver,Part-Time,24
+442,Yara,Allen,Legal,Senior Legal Analyst,2018-11-05,85598.93,Active,New York,Contract,22
+443,Victor,Williams,Operations,Senior Operations Specialist,2015-03-22,100650.85,Active,Denver,Contract,25
+444,Carol,Hall,Finance,Finance Analyst,2016-03-27,115022.65,Terminated,San Francisco,Part-Time,24
+445,Noah,Walker,Engineering,Senior Engineering Specialist,2015-06-08,99281.81,On Leave,Denver,Contract,20
+446,Wendy,Smith,HR,Senior HR Specialist,2015-05-24,183409.52,On Leave,New York,Part-Time,
+447,Megan,Brown,Engineering,Senior Engineering Analyst,2024-08-16,100856.08,On Leave,Austin,Part-Time,
+448,Victor,Davis,Operations,Operations Manager,2019-05-07,45378.62,Active,Austin,Full-Time,16
+449,Victor,Miller,Finance,Finance Specialist,2020-03-20,88444.31,On Leave,Miami,Part-Time,
+450,Olivia,Jackson,Data Science,Senior Data Science Specialist,2015-10-29,188476.36,On Leave,San Francisco,Full-Time,25
+451,Anna,Anderson,Legal,Legal Specialist,2018-05-17,111390.05,Active,Seattle,Contract,19
+452,Olivia,Brown,Operations,Senior Operations Specialist,2023-06-17,132057.1,On Leave,Boston,Contract,22
+453,Anna,Miller,Sales,Sales Specialist,2019-01-26,102196.39,On Leave,Chicago,Contract,25
+454,Dan,Davis,Data Science,Data Science Manager,2019-04-07,99525.51,Terminated,Seattle,Contract,10
+455,Eve,Young,Finance,Senior Finance Analyst,2020-03-20,158744.19,Active,Seattle,Part-Time,
+456,Ben,Smith,HR,Senior HR Analyst,2023-11-24,46507.72,Terminated,New York,Contract,
+457,Megan,Jones,Marketing,Senior Marketing Specialist,2018-05-13,149942.16,On Leave,Seattle,Part-Time,25
+458,Derek,Moore,Operations,Senior Operations Analyst,2019-02-15,92793.44,Terminated,Chicago,Part-Time,18
+459,Eve,Jackson,Product,Product Analyst,2023-01-10,124651.24,On Leave,Boston,Part-Time,
+460,Grace,Miller,Product,Product Manager,2020-12-14,93198.3,Active,Denver,Full-Time,
+461,Noah,Smith,HR,HR Specialist,2024-09-21,47168.07,On Leave,Austin,Contract,
+462,Frank,Walker,Design,Design Analyst,2015-12-09,177532.03,Terminated,Austin,Contract,
+463,Megan,Williams,Data Science,Senior Data Science Manager,2021-04-18,118005.24,On Leave,Miami,Contract,
+464,Dan,Taylor,Design,Senior Design Manager,2022-12-15,106184.95,On Leave,Boston,Full-Time,22
+465,Clara,Taylor,Finance,Senior Finance Manager,2024-04-05,66303.72,Active,San Francisco,Full-Time,
+466,Carol,Lee,Marketing,Senior Marketing Analyst,2018-07-08,63648.41,On Leave,Austin,Part-Time,0
+467,Ben,Brown,Sales,Sales Manager,2016-07-22,68143.99,Terminated,Atlanta,Contract,16
+468,Eve,Walker,Operations,Senior Operations Specialist,2023-07-05,167206.68,Terminated,Seattle,Contract,
+469,Henry,Young,Product,Product Analyst,2022-02-27,81811.64,Active,San Francisco,Contract,
+470,Sam,Jackson,Engineering,Engineering Analyst,2019-10-14,125360.52,Terminated,Boston,Full-Time,
+471,Olivia,Jackson,Operations,Senior Operations Specialist,2015-12-11,193929.59,Terminated,Seattle,Full-Time,
+472,Zach,Lee,Marketing,Marketing Specialist,2022-03-23,162451.72,On Leave,Chicago,Full-Time,
+473,Megan,Thomas,Operations,Senior Operations Specialist,2015-08-02,159027.74,Active,New York,Part-Time,12
+474,Clara,Young,Marketing,Marketing Specialist,2019-04-23,55557.8,Active,Portland,Contract,2
+475,Quinn,Allen,Sales,Senior Sales Specialist,2018-01-20,45693.97,On Leave,Denver,Contract,18
+476,Ben,Davis,Sales,Sales Specialist,2017-01-19,158951.2,Active,Seattle,Full-Time,
+477,Rachel,Anderson,Engineering,Engineering Manager,2021-11-22,188049.85,On Leave,Chicago,Contract,10
+478,Frank,Garcia,Product,Senior Product Analyst,2021-09-23,116582.73,On Leave,Portland,Contract,22
+479,Victor,Smith,Legal,Senior Legal Manager,2016-06-16,109363.69,Terminated,Miami,Part-Time,
+480,Iris,Lee,Engineering,Senior Engineering Analyst,2016-10-24,166153.07,On Leave,Chicago,Full-Time,
+481,Tina,Johnson,Design,Design Analyst,2018-08-13,48139.34,Terminated,San Francisco,Part-Time,5
+482,Leon,Allen,Finance,Senior Finance Specialist,2019-04-30,189668.15,On Leave,Austin,Contract,14
+483,Alice,Brown,Operations,Operations Specialist,2020-08-21,129348.03,Active,Miami,Full-Time,11
+484,Quinn,Young,Sales,Senior Sales Analyst,2017-06-15,115655.41,On Leave,New York,Contract,20
+485,Jack,Hall,Product,Product Specialist,2017-09-16,111624.5,On Leave,Boston,Contract,21
+486,Sam,Jones,Design,Senior Design Specialist,2016-08-19,67634.55,On Leave,Seattle,Part-Time,1
+487,Henry,Johnson,Data Science,Data Science Manager,2021-05-06,182228.87,Terminated,San Francisco,Full-Time,26
+488,Clara,Brown,Data Science,Data Science Manager,2016-12-30,144652.16,Active,Chicago,Part-Time,
+489,Frank,Lee,Data Science,Data Science Analyst,2024-02-20,189614.95,Active,Denver,Full-Time,26
+490,Alice,Brown,Marketing,Marketing Analyst,2016-05-16,128423.18,On Leave,Portland,Contract,26
+491,Uma,Walker,Product,Product Analyst,2015-02-28,115437.38,Terminated,Atlanta,Full-Time,1
+492,Kate,Davis,Operations,Senior Operations Analyst,2017-03-11,140200.83,On Leave,Chicago,Part-Time,25
+493,Noah,Wilson,Legal,Senior Legal Specialist,2018-06-16,47825.09,On Leave,Miami,Part-Time,7
+494,Henry,Jackson,Legal,Senior Legal Analyst,2023-12-12,90356.05,Active,Atlanta,Part-Time,
+495,Noah,Davis,Legal,Senior Legal Manager,2018-01-23,180979.78,On Leave,Atlanta,Full-Time,30
+496,Alice,Williams,Marketing,Senior Marketing Analyst,2019-04-06,106413.8,On Leave,Denver,Contract,22
+497,Anna,Taylor,Legal,Senior Legal Manager,2018-06-25,90411.15,Terminated,New York,Full-Time,8
+498,Peter,Moore,HR,HR Specialist,2022-02-02,191430.11,Active,Miami,Full-Time,1
+499,Iris,Moore,Engineering,Engineering Specialist,2015-01-13,179472.67,Terminated,Atlanta,Full-Time,23
+500,Eve,Allen,Legal,Senior Legal Manager,2019-07-04,186364.55,Terminated,San Francisco,Full-Time,21

@@ -1,0 +1,1001 @@
+review_id,employee_id,review_period,rating,assessment,action_taken
+1,37,2024-Q1,1.9,Meets Expectations,Raise
+2,315,2024-Q4,2.3,Below Expectations,Raise
+3,482,2024-Q2,3.6,Exceeds Expectations,Raise
+4,189,2023-Q3,1.1,Below Expectations,PIP
+5,226,2024-Q1,4.0,Outstanding,Promoted
+6,230,2024-Q1,3.3,Below Expectations,No Action
+7,371,2024-Q2,3.3,Exceeds Expectations,PIP
+8,85,2025-Q1,1.2,Exceeds Expectations,Bonus
+9,355,2024-Q4,2.8,Meets Expectations,Raise
+10,239,2024-Q4,1.1,Below Expectations,Bonus
+11,16,2025-Q1,3.9,Exceeds Expectations,Promoted
+12,209,2024-Q1,4.7,Meets Expectations,No Action
+13,161,2024-Q2,3.4,Below Expectations,No Action
+14,164,2023-Q1,1.0,Outstanding,Raise
+15,472,2024-Q1,4.2,Outstanding,Promoted
+16,327,2025-Q1,1.3,Exceeds Expectations,PIP
+17,196,2024-Q4,1.7,Exceeds Expectations,No Action
+18,7,2024-Q3,4.3,Exceeds Expectations,PIP
+19,139,2023-Q4,1.8,Meets Expectations,Raise
+20,140,2023-Q1,3.3,Exceeds Expectations,No Action
+21,173,2024-Q1,3.7,Meets Expectations,No Action
+22,211,2025-Q1,3.5,Exceeds Expectations,Raise
+23,216,2023-Q1,3.4,Exceeds Expectations,PIP
+24,304,2024-Q3,4.2,Meets Expectations,Promoted
+25,189,2024-Q2,3.3,Outstanding,PIP
+26,29,2024-Q2,2.3,Outstanding,No Action
+27,274,2025-Q1,4.9,Below Expectations,Bonus
+28,265,2023-Q3,3.2,Outstanding,PIP
+29,270,2023-Q4,2.9,Meets Expectations,Bonus
+30,458,2024-Q1,1.7,Meets Expectations,Bonus
+31,289,2024-Q1,1.4,Below Expectations,No Action
+32,259,2024-Q4,3.2,Exceeds Expectations,No Action
+33,469,2025-Q1,4.2,Exceeds Expectations,Bonus
+34,330,2024-Q3,2.9,Outstanding,No Action
+35,235,2024-Q2,1.1,Exceeds Expectations,Promoted
+36,478,2024-Q1,1.5,Exceeds Expectations,Raise
+37,206,2023-Q4,3.4,Outstanding,No Action
+38,170,2024-Q4,1.1,Exceeds Expectations,Raise
+39,389,2024-Q4,1.4,Meets Expectations,Bonus
+40,266,2024-Q4,2.1,Meets Expectations,Bonus
+41,339,2023-Q4,4.0,Outstanding,No Action
+42,367,2023-Q1,4.7,Outstanding,Promoted
+43,121,2024-Q1,1.0,Outstanding,PIP
+44,118,2024-Q1,3.7,Meets Expectations,PIP
+45,157,2024-Q2,1.9,Outstanding,Raise
+46,284,2023-Q1,3.0,Below Expectations,PIP
+47,383,2023-Q4,2.3,Below Expectations,Promoted
+48,74,2024-Q2,1.7,Meets Expectations,Raise
+49,494,2023-Q3,3.4,Below Expectations,Bonus
+50,31,2024-Q3,4.4,Meets Expectations,Raise
+51,88,2023-Q4,3.2,Below Expectations,Bonus
+52,298,2023-Q2,1.8,Outstanding,Raise
+53,311,2023-Q3,2.5,Below Expectations,PIP
+54,334,2024-Q2,4.5,Exceeds Expectations,No Action
+55,113,2023-Q1,2.5,Exceeds Expectations,PIP
+56,287,2024-Q1,1.1,Outstanding,Bonus
+57,409,2023-Q1,4.5,Exceeds Expectations,Promoted
+58,394,2025-Q1,3.4,Exceeds Expectations,Bonus
+59,472,2025-Q1,3.8,Exceeds Expectations,Promoted
+60,243,2024-Q2,2.0,Exceeds Expectations,Bonus
+61,358,2023-Q1,4.5,Meets Expectations,PIP
+62,341,2025-Q1,3.7,Meets Expectations,Promoted
+63,327,2024-Q3,4.5,Exceeds Expectations,Bonus
+64,261,2024-Q2,2.8,Outstanding,Promoted
+65,237,2023-Q2,2.8,Exceeds Expectations,No Action
+66,383,2024-Q2,2.5,Exceeds Expectations,PIP
+67,53,2024-Q3,2.0,Exceeds Expectations,Bonus
+68,338,2024-Q2,1.6,Exceeds Expectations,Raise
+69,482,2023-Q4,4.1,Exceeds Expectations,PIP
+70,402,2024-Q4,4.4,Outstanding,No Action
+71,128,2025-Q1,3.3,Exceeds Expectations,No Action
+72,86,2024-Q2,1.4,Exceeds Expectations,Bonus
+73,224,2024-Q2,3.7,Outstanding,Raise
+74,124,2023-Q4,4.5,Below Expectations,Raise
+75,99,2023-Q1,4.3,Exceeds Expectations,No Action
+76,325,2023-Q1,3.5,Below Expectations,No Action
+77,52,2024-Q3,3.4,Meets Expectations,No Action
+78,459,2023-Q1,3.6,Meets Expectations,Promoted
+79,95,2023-Q4,1.3,Meets Expectations,PIP
+80,146,2023-Q2,4.1,Outstanding,PIP
+81,353,2023-Q1,4.0,Outstanding,No Action
+82,336,2025-Q1,3.8,Exceeds Expectations,Promoted
+83,454,2024-Q2,1.4,Below Expectations,No Action
+84,420,2023-Q4,2.8,Below Expectations,No Action
+85,255,2023-Q1,4.3,Exceeds Expectations,PIP
+86,425,2023-Q4,4.4,Exceeds Expectations,No Action
+87,490,2023-Q1,2.8,Exceeds Expectations,Raise
+88,70,2024-Q1,3.3,Exceeds Expectations,Promoted
+89,454,2023-Q1,3.3,Exceeds Expectations,Raise
+90,177,2024-Q4,4.0,Meets Expectations,Raise
+91,346,2024-Q4,4.0,Outstanding,Promoted
+92,408,2024-Q3,2.9,Below Expectations,Promoted
+93,73,2023-Q4,2.2,Meets Expectations,Promoted
+94,327,2023-Q3,3.3,Outstanding,Raise
+95,213,2024-Q1,1.8,Below Expectations,Promoted
+96,383,2024-Q1,3.6,Outstanding,No Action
+97,135,2025-Q1,1.3,Below Expectations,Bonus
+98,448,2024-Q2,2.4,Outstanding,No Action
+99,125,2023-Q4,5.0,Outstanding,Promoted
+100,318,2024-Q2,3.9,Exceeds Expectations,Promoted
+101,373,2024-Q1,3.5,Below Expectations,Promoted
+102,260,2023-Q3,1.7,Exceeds Expectations,Bonus
+103,430,2023-Q4,3.0,Outstanding,Promoted
+104,31,2024-Q2,2.6,Outstanding,PIP
+105,176,2023-Q4,3.6,Meets Expectations,PIP
+106,35,2023-Q3,2.0,Exceeds Expectations,No Action
+107,370,2023-Q2,2.4,Outstanding,Bonus
+108,260,2023-Q1,2.2,Meets Expectations,PIP
+109,217,2023-Q4,2.7,Below Expectations,Bonus
+110,472,2023-Q1,2.5,Outstanding,PIP
+111,37,2024-Q4,3.1,Exceeds Expectations,Promoted
+112,454,2023-Q3,1.3,Outstanding,Promoted
+113,266,2024-Q3,3.1,Outstanding,Raise
+114,307,2023-Q4,3.5,Below Expectations,Promoted
+115,65,2023-Q3,1.3,Outstanding,Bonus
+116,288,2023-Q3,2.4,Outstanding,Bonus
+117,161,2025-Q1,4.8,Meets Expectations,Bonus
+118,317,2024-Q4,4.8,Outstanding,No Action
+119,200,2024-Q4,2.0,Outstanding,Bonus
+120,283,2023-Q1,3.9,Exceeds Expectations,Raise
+121,97,2023-Q1,4.5,Exceeds Expectations,No Action
+122,350,2024-Q2,2.9,Exceeds Expectations,PIP
+123,479,2024-Q4,2.1,Exceeds Expectations,Bonus
+124,103,2023-Q2,3.1,Below Expectations,No Action
+125,367,2024-Q4,4.1,Exceeds Expectations,PIP
+126,485,2024-Q2,2.7,Exceeds Expectations,Bonus
+127,245,2023-Q2,2.2,Meets Expectations,Raise
+128,4,2025-Q1,2.6,Below Expectations,PIP
+129,51,2023-Q3,3.9,Outstanding,PIP
+130,451,2023-Q4,1.2,Exceeds Expectations,Promoted
+131,4,2023-Q2,2.3,Meets Expectations,PIP
+132,131,2023-Q3,4.2,Meets Expectations,Raise
+133,285,2024-Q2,4.1,Below Expectations,Promoted
+134,284,2024-Q3,1.6,Below Expectations,Raise
+135,169,2023-Q3,4.7,Outstanding,PIP
+136,96,2023-Q2,3.1,Exceeds Expectations,PIP
+137,481,2023-Q2,2.2,Outstanding,Bonus
+138,255,2023-Q1,1.5,Outstanding,Raise
+139,70,2023-Q2,3.9,Below Expectations,Promoted
+140,458,2024-Q2,2.2,Exceeds Expectations,Promoted
+141,347,2023-Q2,1.9,Meets Expectations,Promoted
+142,366,2024-Q3,1.4,Outstanding,PIP
+143,371,2024-Q1,2.3,Meets Expectations,Raise
+144,273,2024-Q2,1.4,Meets Expectations,No Action
+145,195,2023-Q1,3.0,Below Expectations,Raise
+146,474,2024-Q1,3.7,Below Expectations,Raise
+147,341,2024-Q1,4.3,Meets Expectations,Raise
+148,172,2025-Q1,3.5,Below Expectations,Raise
+149,27,2025-Q1,4.2,Below Expectations,No Action
+150,206,2023-Q2,2.2,Meets Expectations,Raise
+151,277,2024-Q2,3.5,Outstanding,Raise
+152,111,2023-Q3,1.0,Exceeds Expectations,No Action
+153,337,2023-Q4,4.5,Meets Expectations,No Action
+154,105,2023-Q3,4.0,Meets Expectations,Promoted
+155,421,2023-Q3,1.3,Below Expectations,No Action
+156,484,2023-Q4,3.1,Exceeds Expectations,Promoted
+157,99,2024-Q3,1.9,Exceeds Expectations,Bonus
+158,416,2024-Q1,4.1,Below Expectations,PIP
+159,315,2024-Q2,4.5,Meets Expectations,Bonus
+160,469,2025-Q1,4.5,Exceeds Expectations,PIP
+161,497,2025-Q1,1.2,Below Expectations,Bonus
+162,478,2024-Q3,1.9,Below Expectations,Raise
+163,215,2024-Q3,4.4,Exceeds Expectations,Bonus
+164,55,2024-Q1,4.8,Below Expectations,No Action
+165,3,2024-Q1,4.9,Below Expectations,Bonus
+166,298,2023-Q1,3.1,Below Expectations,Raise
+167,410,2025-Q1,4.2,Meets Expectations,Bonus
+168,383,2025-Q1,4.9,Below Expectations,PIP
+169,25,2023-Q4,2.2,Outstanding,No Action
+170,349,2024-Q4,2.3,Below Expectations,Promoted
+171,363,2024-Q3,2.0,Exceeds Expectations,PIP
+172,158,2023-Q4,1.7,Outstanding,No Action
+173,139,2023-Q2,4.4,Meets Expectations,Raise
+174,287,2023-Q2,2.1,Outstanding,Promoted
+175,55,2025-Q1,3.9,Below Expectations,Promoted
+176,92,2023-Q4,3.8,Outstanding,Bonus
+177,301,2023-Q1,2.4,Meets Expectations,Raise
+178,26,2023-Q3,3.9,Meets Expectations,PIP
+179,276,2023-Q1,2.2,Meets Expectations,Raise
+180,30,2023-Q2,1.2,Meets Expectations,Raise
+181,439,2024-Q1,1.7,Outstanding,PIP
+182,331,2024-Q3,4.6,Below Expectations,Promoted
+183,405,2023-Q3,1.5,Outstanding,No Action
+184,384,2025-Q1,2.3,Exceeds Expectations,Promoted
+185,366,2025-Q1,2.1,Meets Expectations,Bonus
+186,131,2023-Q3,2.4,Exceeds Expectations,No Action
+187,7,2023-Q3,1.3,Below Expectations,Promoted
+188,370,2024-Q2,2.6,Meets Expectations,PIP
+189,195,2024-Q1,1.6,Outstanding,PIP
+190,23,2024-Q3,3.3,Below Expectations,Raise
+191,326,2023-Q3,4.6,Outstanding,Bonus
+192,47,2023-Q3,4.2,Exceeds Expectations,Raise
+193,327,2023-Q3,4.4,Exceeds Expectations,Bonus
+194,175,2024-Q1,4.3,Below Expectations,PIP
+195,223,2023-Q3,2.8,Exceeds Expectations,Promoted
+196,425,2023-Q1,4.7,Meets Expectations,Raise
+197,34,2023-Q2,1.9,Meets Expectations,Raise
+198,164,2023-Q1,3.1,Meets Expectations,No Action
+199,284,2023-Q3,4.1,Below Expectations,No Action
+200,386,2023-Q4,2.6,Outstanding,PIP
+201,326,2024-Q4,4.6,Below Expectations,Bonus
+202,364,2024-Q2,4.5,Meets Expectations,Bonus
+203,191,2024-Q4,4.1,Below Expectations,PIP
+204,443,2023-Q2,2.4,Below Expectations,Promoted
+205,491,2024-Q4,4.0,Outstanding,PIP
+206,96,2024-Q2,4.0,Exceeds Expectations,Raise
+207,410,2024-Q3,2.5,Outstanding,No Action
+208,246,2024-Q1,4.8,Meets Expectations,No Action
+209,360,2024-Q3,3.7,Outstanding,Promoted
+210,76,2023-Q2,3.2,Meets Expectations,Raise
+211,415,2023-Q2,2.9,Exceeds Expectations,No Action
+212,45,2024-Q4,2.0,Outstanding,No Action
+213,171,2025-Q1,4.5,Meets Expectations,Bonus
+214,184,2023-Q2,4.1,Below Expectations,PIP
+215,482,2024-Q4,1.1,Meets Expectations,PIP
+216,443,2024-Q1,2.3,Exceeds Expectations,Bonus
+217,41,2023-Q2,2.0,Exceeds Expectations,Bonus
+218,271,2023-Q4,4.6,Exceeds Expectations,Promoted
+219,398,2023-Q3,3.2,Exceeds Expectations,Raise
+220,6,2023-Q2,4.7,Below Expectations,PIP
+221,235,2024-Q1,2.4,Outstanding,No Action
+222,121,2023-Q2,3.0,Outstanding,PIP
+223,340,2023-Q1,3.5,Meets Expectations,PIP
+224,278,2024-Q3,2.3,Outstanding,Bonus
+225,410,2025-Q1,4.5,Meets Expectations,Promoted
+226,50,2023-Q1,3.6,Exceeds Expectations,PIP
+227,219,2024-Q2,3.5,Meets Expectations,PIP
+228,474,2023-Q2,3.1,Below Expectations,Bonus
+229,415,2024-Q1,2.1,Outstanding,Promoted
+230,108,2024-Q3,4.4,Below Expectations,Bonus
+231,59,2024-Q1,3.9,Meets Expectations,PIP
+232,265,2024-Q3,3.1,Outstanding,Bonus
+233,201,2023-Q4,1.7,Outstanding,PIP
+234,339,2023-Q2,1.2,Meets Expectations,Bonus
+235,421,2024-Q4,3.7,Meets Expectations,PIP
+236,479,2023-Q1,1.3,Exceeds Expectations,PIP
+237,89,2025-Q1,4.2,Below Expectations,Promoted
+238,305,2024-Q1,3.0,Below Expectations,Raise
+239,46,2023-Q3,2.9,Outstanding,Promoted
+240,17,2024-Q2,1.2,Meets Expectations,Promoted
+241,69,2024-Q1,2.4,Below Expectations,PIP
+242,346,2023-Q3,3.5,Exceeds Expectations,PIP
+243,29,2024-Q1,4.8,Below Expectations,Raise
+244,87,2023-Q2,2.7,Outstanding,Bonus
+245,308,2024-Q4,1.8,Below Expectations,No Action
+246,42,2025-Q1,3.5,Below Expectations,Promoted
+247,445,2023-Q2,1.4,Outstanding,Raise
+248,336,2023-Q2,2.6,Below Expectations,PIP
+249,461,2023-Q1,4.3,Meets Expectations,Promoted
+250,158,2023-Q3,4.8,Below Expectations,Promoted
+251,393,2023-Q2,4.4,Below Expectations,PIP
+252,354,2023-Q3,1.7,Meets Expectations,PIP
+253,170,2023-Q3,1.2,Below Expectations,No Action
+254,379,2024-Q4,3.6,Outstanding,Promoted
+255,57,2024-Q3,4.9,Below Expectations,No Action
+256,6,2023-Q4,1.4,Outstanding,No Action
+257,277,2024-Q1,2.1,Exceeds Expectations,Promoted
+258,446,2024-Q4,2.3,Below Expectations,No Action
+259,62,2023-Q2,3.3,Exceeds Expectations,No Action
+260,17,2023-Q1,4.1,Exceeds Expectations,Raise
+261,341,2023-Q2,2.1,Meets Expectations,Bonus
+262,367,2025-Q1,4.8,Exceeds Expectations,Bonus
+263,136,2023-Q3,3.5,Below Expectations,Promoted
+264,382,2024-Q1,4.8,Exceeds Expectations,Raise
+265,367,2024-Q4,4.7,Outstanding,No Action
+266,200,2023-Q4,2.0,Outstanding,Promoted
+267,206,2025-Q1,4.3,Below Expectations,PIP
+268,289,2024-Q2,4.4,Outstanding,No Action
+269,475,2024-Q3,3.3,Meets Expectations,PIP
+270,333,2023-Q2,2.9,Meets Expectations,Raise
+271,321,2024-Q1,1.3,Meets Expectations,Bonus
+272,302,2023-Q3,5.0,Meets Expectations,Raise
+273,311,2023-Q1,1.3,Below Expectations,Promoted
+274,450,2023-Q4,4.3,Below Expectations,Promoted
+275,177,2024-Q4,2.9,Meets Expectations,No Action
+276,432,2024-Q1,2.5,Exceeds Expectations,Promoted
+277,96,2025-Q1,3.9,Exceeds Expectations,Raise
+278,241,2024-Q2,1.8,Exceeds Expectations,No Action
+279,240,2023-Q3,3.5,Meets Expectations,Raise
+280,88,2024-Q3,4.6,Exceeds Expectations,Raise
+281,483,2023-Q4,2.0,Outstanding,Bonus
+282,48,2024-Q1,3.3,Outstanding,No Action
+283,370,2023-Q4,4.2,Exceeds Expectations,PIP
+284,327,2023-Q2,3.0,Below Expectations,Bonus
+285,273,2025-Q1,2.6,Outstanding,PIP
+286,170,2024-Q2,3.2,Exceeds Expectations,No Action
+287,375,2023-Q3,3.2,Below Expectations,Promoted
+288,466,2023-Q4,4.8,Exceeds Expectations,PIP
+289,358,2025-Q1,3.5,Exceeds Expectations,Promoted
+290,285,2024-Q1,2.3,Below Expectations,No Action
+291,461,2023-Q1,3.9,Exceeds Expectations,Promoted
+292,250,2025-Q1,1.1,Below Expectations,Raise
+293,338,2023-Q1,4.1,Exceeds Expectations,Raise
+294,2,2024-Q1,2.3,Below Expectations,Raise
+295,230,2024-Q4,4.9,Exceeds Expectations,Raise
+296,402,2024-Q2,1.8,Outstanding,No Action
+297,368,2024-Q2,1.3,Below Expectations,No Action
+298,161,2023-Q3,2.7,Exceeds Expectations,Promoted
+299,390,2025-Q1,2.8,Below Expectations,Promoted
+300,197,2024-Q4,1.0,Meets Expectations,PIP
+301,289,2024-Q4,2.8,Outstanding,Raise
+302,94,2023-Q1,2.3,Below Expectations,Promoted
+303,96,2024-Q3,3.7,Outstanding,Promoted
+304,130,2023-Q2,4.9,Outstanding,Raise
+305,419,2024-Q2,4.3,Meets Expectations,PIP
+306,333,2024-Q3,3.1,Meets Expectations,PIP
+307,369,2025-Q1,4.7,Below Expectations,Bonus
+308,274,2023-Q4,2.9,Meets Expectations,Bonus
+309,315,2024-Q3,2.0,Outstanding,Raise
+310,113,2024-Q1,3.2,Below Expectations,Raise
+311,486,2024-Q2,4.5,Meets Expectations,Raise
+312,282,2024-Q1,4.7,Exceeds Expectations,No Action
+313,185,2023-Q3,4.8,Below Expectations,PIP
+314,206,2025-Q1,1.6,Below Expectations,Bonus
+315,252,2025-Q1,2.5,Below Expectations,Promoted
+316,184,2023-Q2,4.5,Outstanding,PIP
+317,325,2024-Q1,2.3,Exceeds Expectations,Raise
+318,318,2025-Q1,1.7,Outstanding,Raise
+319,161,2023-Q2,4.2,Below Expectations,Raise
+320,58,2024-Q3,4.4,Outstanding,Raise
+321,400,2025-Q1,3.7,Exceeds Expectations,PIP
+322,329,2024-Q4,3.7,Outstanding,Bonus
+323,303,2024-Q1,2.5,Meets Expectations,PIP
+324,157,2025-Q1,3.6,Exceeds Expectations,No Action
+325,452,2024-Q1,2.0,Below Expectations,No Action
+326,175,2023-Q3,1.0,Exceeds Expectations,No Action
+327,95,2023-Q4,4.0,Exceeds Expectations,PIP
+328,116,2023-Q1,4.0,Below Expectations,Promoted
+329,177,2024-Q4,2.2,Below Expectations,Raise
+330,278,2023-Q4,1.8,Below Expectations,Raise
+331,460,2023-Q2,3.1,Meets Expectations,Promoted
+332,458,2023-Q1,2.9,Below Expectations,Raise
+333,305,2023-Q1,2.0,Meets Expectations,PIP
+334,264,2024-Q1,4.5,Exceeds Expectations,Raise
+335,468,2024-Q2,1.9,Outstanding,PIP
+336,345,2023-Q4,4.6,Outstanding,PIP
+337,81,2023-Q3,2.7,Meets Expectations,Raise
+338,338,2024-Q4,2.3,Below Expectations,Bonus
+339,113,2024-Q3,1.9,Exceeds Expectations,PIP
+340,95,2023-Q2,1.9,Exceeds Expectations,PIP
+341,23,2024-Q3,4.5,Below Expectations,PIP
+342,344,2023-Q4,2.9,Outstanding,Raise
+343,363,2025-Q1,4.8,Outstanding,Raise
+344,174,2023-Q2,4.7,Below Expectations,Bonus
+345,103,2023-Q2,1.6,Outstanding,Raise
+346,172,2024-Q4,4.9,Outstanding,Bonus
+347,374,2024-Q4,2.6,Meets Expectations,Raise
+348,20,2023-Q1,3.7,Meets Expectations,Promoted
+349,304,2023-Q3,1.7,Outstanding,Bonus
+350,373,2024-Q3,3.1,Exceeds Expectations,Promoted
+351,98,2023-Q3,1.5,Outstanding,Raise
+352,101,2024-Q3,1.3,Exceeds Expectations,Raise
+353,333,2023-Q3,2.5,Meets Expectations,Bonus
+354,395,2025-Q1,1.9,Exceeds Expectations,Bonus
+355,83,2024-Q1,3.8,Meets Expectations,Raise
+356,359,2024-Q1,2.6,Meets Expectations,Bonus
+357,1,2024-Q3,3.7,Exceeds Expectations,PIP
+358,120,2025-Q1,2.6,Meets Expectations,Bonus
+359,461,2024-Q2,1.5,Outstanding,PIP
+360,181,2023-Q2,2.5,Meets Expectations,Bonus
+361,371,2024-Q1,3.7,Exceeds Expectations,Bonus
+362,438,2025-Q1,2.8,Below Expectations,PIP
+363,427,2024-Q3,2.9,Exceeds Expectations,Promoted
+364,457,2023-Q3,2.9,Below Expectations,No Action
+365,492,2024-Q4,1.3,Below Expectations,Raise
+366,154,2024-Q4,3.3,Meets Expectations,Raise
+367,472,2023-Q3,3.6,Exceeds Expectations,Raise
+368,97,2024-Q2,3.3,Exceeds Expectations,PIP
+369,268,2024-Q3,3.0,Outstanding,Promoted
+370,446,2025-Q1,2.8,Meets Expectations,No Action
+371,389,2024-Q3,3.9,Exceeds Expectations,Promoted
+372,477,2024-Q1,2.5,Below Expectations,PIP
+373,452,2023-Q4,3.4,Outstanding,Promoted
+374,218,2024-Q1,2.6,Meets Expectations,PIP
+375,136,2024-Q4,4.1,Meets Expectations,Promoted
+376,429,2023-Q2,1.8,Below Expectations,PIP
+377,174,2023-Q3,2.6,Below Expectations,Promoted
+378,178,2024-Q1,4.1,Outstanding,PIP
+379,234,2023-Q2,1.2,Below Expectations,Raise
+380,21,2023-Q1,4.2,Meets Expectations,Promoted
+381,252,2025-Q1,2.1,Meets Expectations,Raise
+382,10,2023-Q3,2.1,Below Expectations,Raise
+383,225,2025-Q1,1.1,Meets Expectations,Bonus
+384,100,2024-Q2,1.7,Meets Expectations,Raise
+385,338,2024-Q1,3.4,Exceeds Expectations,Promoted
+386,355,2024-Q4,4.5,Outstanding,Promoted
+387,92,2023-Q3,4.2,Meets Expectations,Bonus
+388,422,2023-Q3,3.2,Meets Expectations,Promoted
+389,145,2025-Q1,1.9,Meets Expectations,Raise
+390,392,2024-Q1,1.2,Meets Expectations,PIP
+391,333,2023-Q3,1.8,Meets Expectations,No Action
+392,402,2024-Q3,4.1,Meets Expectations,Bonus
+393,486,2023-Q2,4.6,Meets Expectations,Raise
+394,400,2024-Q4,3.1,Below Expectations,Promoted
+395,140,2024-Q4,2.3,Meets Expectations,No Action
+396,88,2024-Q3,2.2,Exceeds Expectations,No Action
+397,288,2024-Q1,3.9,Below Expectations,PIP
+398,436,2023-Q1,2.9,Meets Expectations,PIP
+399,362,2023-Q1,2.1,Below Expectations,PIP
+400,357,2023-Q1,1.5,Outstanding,Bonus
+401,158,2023-Q3,4.1,Meets Expectations,Bonus
+402,30,2024-Q3,4.3,Outstanding,Bonus
+403,349,2024-Q3,4.9,Exceeds Expectations,Promoted
+404,358,2025-Q1,1.5,Meets Expectations,Raise
+405,234,2024-Q4,1.5,Meets Expectations,Bonus
+406,273,2023-Q3,3.6,Outstanding,Raise
+407,203,2023-Q4,2.0,Outstanding,No Action
+408,492,2023-Q2,2.3,Meets Expectations,PIP
+409,20,2023-Q4,1.8,Outstanding,Raise
+410,168,2025-Q1,3.1,Meets Expectations,PIP
+411,160,2024-Q2,1.4,Exceeds Expectations,No Action
+412,109,2023-Q3,2.4,Meets Expectations,Raise
+413,93,2024-Q3,1.6,Outstanding,Bonus
+414,172,2024-Q3,2.1,Exceeds Expectations,PIP
+415,380,2024-Q4,4.0,Meets Expectations,No Action
+416,119,2023-Q1,1.7,Meets Expectations,Bonus
+417,197,2024-Q1,4.3,Below Expectations,Promoted
+418,74,2024-Q4,4.8,Below Expectations,Raise
+419,15,2023-Q3,2.3,Below Expectations,Promoted
+420,418,2024-Q2,2.9,Meets Expectations,Promoted
+421,106,2023-Q3,3.3,Exceeds Expectations,Raise
+422,12,2023-Q2,4.2,Exceeds Expectations,No Action
+423,351,2024-Q3,3.0,Exceeds Expectations,No Action
+424,493,2023-Q3,4.7,Outstanding,Raise
+425,237,2024-Q1,1.2,Meets Expectations,Promoted
+426,87,2023-Q4,2.5,Below Expectations,Bonus
+427,193,2024-Q3,2.6,Outstanding,Raise
+428,123,2023-Q4,2.7,Exceeds Expectations,Bonus
+429,3,2023-Q3,4.7,Below Expectations,Raise
+430,213,2023-Q4,4.8,Meets Expectations,PIP
+431,111,2023-Q2,2.6,Below Expectations,Bonus
+432,89,2025-Q1,1.5,Exceeds Expectations,Raise
+433,480,2024-Q3,4.7,Outstanding,PIP
+434,402,2023-Q4,1.5,Outstanding,No Action
+435,46,2024-Q2,3.3,Below Expectations,Raise
+436,228,2024-Q2,3.9,Exceeds Expectations,Promoted
+437,86,2025-Q1,2.2,Meets Expectations,No Action
+438,368,2023-Q2,3.9,Exceeds Expectations,PIP
+439,229,2024-Q1,1.0,Exceeds Expectations,Bonus
+440,24,2023-Q3,3.0,Exceeds Expectations,No Action
+441,441,2023-Q4,2.6,Meets Expectations,PIP
+442,463,2024-Q1,1.8,Exceeds Expectations,Raise
+443,280,2023-Q4,2.9,Meets Expectations,Raise
+444,339,2023-Q3,2.3,Outstanding,Raise
+445,466,2024-Q1,2.8,Outstanding,Bonus
+446,178,2023-Q4,2.9,Outstanding,Bonus
+447,235,2023-Q1,4.1,Outstanding,No Action
+448,267,2023-Q4,4.2,Meets Expectations,No Action
+449,131,2024-Q1,2.0,Meets Expectations,No Action
+450,58,2023-Q2,4.6,Below Expectations,No Action
+451,346,2024-Q4,4.5,Below Expectations,No Action
+452,316,2023-Q4,5.0,Below Expectations,Promoted
+453,399,2023-Q3,1.9,Exceeds Expectations,PIP
+454,152,2023-Q3,2.1,Outstanding,Raise
+455,135,2023-Q2,4.1,Exceeds Expectations,Bonus
+456,82,2024-Q4,1.3,Exceeds Expectations,PIP
+457,399,2023-Q4,3.9,Outstanding,Bonus
+458,181,2024-Q4,3.0,Below Expectations,PIP
+459,196,2023-Q2,3.1,Outstanding,Raise
+460,452,2023-Q1,1.9,Exceeds Expectations,Promoted
+461,61,2025-Q1,1.2,Exceeds Expectations,Raise
+462,329,2025-Q1,3.9,Outstanding,Promoted
+463,252,2024-Q2,4.8,Exceeds Expectations,Bonus
+464,8,2025-Q1,2.2,Below Expectations,Bonus
+465,203,2024-Q3,2.4,Exceeds Expectations,Bonus
+466,113,2025-Q1,1.9,Exceeds Expectations,Bonus
+467,387,2023-Q3,2.8,Meets Expectations,PIP
+468,331,2024-Q4,2.6,Exceeds Expectations,No Action
+469,415,2023-Q1,3.5,Exceeds Expectations,PIP
+470,208,2023-Q1,4.7,Exceeds Expectations,Bonus
+471,26,2024-Q4,3.7,Meets Expectations,Raise
+472,127,2023-Q2,4.4,Exceeds Expectations,No Action
+473,216,2024-Q2,1.7,Outstanding,Raise
+474,195,2023-Q3,1.7,Exceeds Expectations,PIP
+475,183,2025-Q1,2.3,Meets Expectations,Promoted
+476,294,2023-Q1,2.5,Meets Expectations,PIP
+477,462,2024-Q3,3.1,Meets Expectations,Raise
+478,270,2023-Q4,3.5,Outstanding,Raise
+479,440,2023-Q2,4.8,Outstanding,No Action
+480,399,2025-Q1,4.6,Exceeds Expectations,PIP
+481,298,2023-Q4,1.1,Exceeds Expectations,No Action
+482,95,2024-Q2,4.9,Below Expectations,No Action
+483,24,2024-Q1,4.1,Below Expectations,Promoted
+484,444,2023-Q1,2.9,Below Expectations,Bonus
+485,352,2023-Q4,4.2,Meets Expectations,No Action
+486,241,2024-Q2,4.6,Outstanding,Promoted
+487,252,2025-Q1,4.7,Meets Expectations,Promoted
+488,70,2024-Q1,4.9,Exceeds Expectations,Promoted
+489,157,2024-Q1,2.9,Below Expectations,Raise
+490,84,2023-Q4,3.6,Meets Expectations,No Action
+491,232,2023-Q1,3.0,Below Expectations,Promoted
+492,356,2023-Q2,3.3,Outstanding,PIP
+493,102,2023-Q3,4.6,Exceeds Expectations,Bonus
+494,327,2023-Q2,2.1,Exceeds Expectations,PIP
+495,370,2024-Q4,1.0,Outstanding,Raise
+496,8,2025-Q1,3.6,Exceeds Expectations,Promoted
+497,498,2025-Q1,3.0,Below Expectations,No Action
+498,14,2024-Q3,3.0,Exceeds Expectations,Raise
+499,199,2025-Q1,2.9,Below Expectations,Bonus
+500,57,2023-Q3,2.9,Meets Expectations,Raise
+501,71,2024-Q1,2.7,Outstanding,Bonus
+502,409,2023-Q2,3.8,Below Expectations,PIP
+503,293,2024-Q1,2.0,Meets Expectations,PIP
+504,166,2023-Q3,1.6,Meets Expectations,No Action
+505,41,2024-Q1,4.5,Exceeds Expectations,Bonus
+506,27,2023-Q1,2.7,Meets Expectations,Raise
+507,332,2024-Q2,4.8,Outstanding,No Action
+508,80,2024-Q3,3.1,Below Expectations,Bonus
+509,443,2024-Q2,3.5,Below Expectations,Promoted
+510,420,2024-Q1,2.0,Meets Expectations,Bonus
+511,446,2023-Q1,4.3,Below Expectations,No Action
+512,250,2024-Q1,3.3,Below Expectations,Bonus
+513,399,2023-Q2,3.3,Below Expectations,Bonus
+514,61,2023-Q3,4.8,Outstanding,Promoted
+515,377,2023-Q2,3.7,Meets Expectations,PIP
+516,396,2023-Q1,1.8,Outstanding,Raise
+517,309,2023-Q2,1.5,Below Expectations,PIP
+518,232,2024-Q1,1.7,Below Expectations,No Action
+519,113,2025-Q1,2.1,Meets Expectations,Bonus
+520,193,2024-Q2,1.4,Exceeds Expectations,Raise
+521,50,2023-Q1,4.9,Outstanding,No Action
+522,435,2023-Q1,4.2,Exceeds Expectations,Bonus
+523,450,2023-Q4,3.9,Below Expectations,PIP
+524,83,2023-Q3,1.0,Below Expectations,Bonus
+525,169,2024-Q4,3.4,Exceeds Expectations,PIP
+526,89,2023-Q4,5.0,Meets Expectations,Raise
+527,435,2024-Q3,5.0,Below Expectations,Bonus
+528,371,2024-Q2,2.2,Meets Expectations,Raise
+529,449,2023-Q2,4.4,Outstanding,Bonus
+530,230,2023-Q3,4.9,Meets Expectations,No Action
+531,481,2024-Q3,4.5,Exceeds Expectations,Bonus
+532,5,2024-Q3,3.5,Outstanding,Promoted
+533,207,2024-Q3,4.1,Meets Expectations,Bonus
+534,87,2025-Q1,5.0,Meets Expectations,Raise
+535,81,2024-Q1,4.6,Meets Expectations,Raise
+536,419,2023-Q2,4.1,Below Expectations,Promoted
+537,291,2023-Q2,4.7,Below Expectations,Bonus
+538,53,2025-Q1,2.6,Below Expectations,PIP
+539,132,2023-Q3,1.1,Outstanding,No Action
+540,259,2023-Q4,1.9,Meets Expectations,No Action
+541,137,2025-Q1,2.4,Outstanding,No Action
+542,13,2023-Q1,4.0,Exceeds Expectations,PIP
+543,270,2024-Q4,2.3,Exceeds Expectations,Raise
+544,417,2024-Q2,1.9,Below Expectations,Raise
+545,351,2023-Q2,1.0,Meets Expectations,Raise
+546,93,2024-Q3,1.7,Exceeds Expectations,Raise
+547,22,2023-Q3,1.3,Meets Expectations,PIP
+548,363,2025-Q1,2.7,Below Expectations,No Action
+549,203,2024-Q2,5.0,Meets Expectations,Promoted
+550,169,2024-Q2,3.7,Outstanding,Raise
+551,227,2023-Q2,2.0,Exceeds Expectations,No Action
+552,33,2024-Q3,4.8,Below Expectations,Promoted
+553,426,2023-Q1,3.9,Below Expectations,PIP
+554,423,2023-Q2,4.9,Below Expectations,PIP
+555,248,2024-Q2,2.2,Below Expectations,PIP
+556,10,2024-Q4,1.1,Below Expectations,PIP
+557,200,2023-Q2,3.0,Exceeds Expectations,Bonus
+558,339,2024-Q4,4.8,Meets Expectations,No Action
+559,268,2023-Q1,3.6,Below Expectations,Bonus
+560,336,2024-Q3,1.9,Meets Expectations,Promoted
+561,14,2023-Q1,1.6,Outstanding,No Action
+562,284,2024-Q1,4.9,Exceeds Expectations,Bonus
+563,126,2023-Q3,4.9,Outstanding,Promoted
+564,11,2024-Q4,4.8,Meets Expectations,Raise
+565,222,2024-Q4,2.9,Exceeds Expectations,No Action
+566,215,2023-Q2,3.0,Meets Expectations,Raise
+567,336,2025-Q1,4.5,Outstanding,Promoted
+568,100,2023-Q3,4.7,Exceeds Expectations,Bonus
+569,165,2023-Q2,2.2,Meets Expectations,Promoted
+570,200,2024-Q3,2.9,Below Expectations,Raise
+571,496,2023-Q2,4.2,Exceeds Expectations,Bonus
+572,315,2024-Q2,4.8,Outstanding,PIP
+573,407,2025-Q1,2.2,Meets Expectations,Bonus
+574,342,2023-Q4,3.9,Below Expectations,PIP
+575,462,2024-Q3,1.2,Exceeds Expectations,PIP
+576,445,2024-Q2,4.8,Outstanding,Raise
+577,309,2023-Q1,4.5,Below Expectations,PIP
+578,460,2023-Q1,4.1,Outstanding,No Action
+579,268,2023-Q3,3.4,Exceeds Expectations,PIP
+580,445,2024-Q3,3.9,Meets Expectations,Bonus
+581,161,2023-Q4,2.8,Exceeds Expectations,Promoted
+582,29,2023-Q3,1.5,Meets Expectations,No Action
+583,368,2024-Q4,3.7,Meets Expectations,Promoted
+584,424,2024-Q1,3.9,Meets Expectations,No Action
+585,349,2023-Q1,2.1,Exceeds Expectations,No Action
+586,175,2024-Q1,4.0,Exceeds Expectations,PIP
+587,305,2023-Q4,3.2,Below Expectations,Raise
+588,406,2023-Q2,1.3,Exceeds Expectations,No Action
+589,231,2023-Q2,4.8,Below Expectations,No Action
+590,194,2023-Q4,1.0,Outstanding,PIP
+591,416,2023-Q1,3.0,Outstanding,Bonus
+592,86,2023-Q4,2.8,Below Expectations,No Action
+593,48,2023-Q4,4.0,Below Expectations,Promoted
+594,20,2023-Q2,2.1,Meets Expectations,PIP
+595,224,2024-Q4,3.0,Exceeds Expectations,Raise
+596,201,2023-Q3,1.7,Meets Expectations,Raise
+597,357,2023-Q4,1.8,Meets Expectations,Bonus
+598,164,2023-Q1,2.9,Exceeds Expectations,PIP
+599,74,2024-Q4,3.6,Meets Expectations,PIP
+600,150,2023-Q2,3.2,Below Expectations,No Action
+601,371,2023-Q1,1.2,Below Expectations,No Action
+602,170,2023-Q4,1.3,Meets Expectations,No Action
+603,274,2024-Q2,4.3,Below Expectations,Promoted
+604,415,2025-Q1,4.7,Exceeds Expectations,Promoted
+605,487,2023-Q1,3.6,Below Expectations,Promoted
+606,255,2024-Q3,3.8,Meets Expectations,No Action
+607,260,2023-Q4,4.9,Below Expectations,PIP
+608,59,2025-Q1,2.4,Outstanding,PIP
+609,197,2023-Q2,1.6,Exceeds Expectations,Promoted
+610,54,2023-Q4,3.1,Outstanding,Promoted
+611,226,2024-Q4,2.8,Exceeds Expectations,Bonus
+612,254,2024-Q2,2.3,Exceeds Expectations,Promoted
+613,155,2023-Q4,4.7,Below Expectations,No Action
+614,169,2024-Q4,2.5,Outstanding,Promoted
+615,169,2023-Q2,3.5,Outstanding,Raise
+616,438,2023-Q4,2.5,Outstanding,Raise
+617,129,2023-Q4,1.1,Below Expectations,Raise
+618,117,2025-Q1,2.7,Exceeds Expectations,Bonus
+619,250,2024-Q2,1.2,Meets Expectations,Raise
+620,373,2024-Q4,3.8,Outstanding,PIP
+621,99,2023-Q2,2.9,Below Expectations,Promoted
+622,69,2024-Q4,3.1,Below Expectations,Bonus
+623,489,2023-Q2,4.4,Exceeds Expectations,PIP
+624,96,2023-Q1,2.7,Exceeds Expectations,No Action
+625,144,2023-Q2,3.3,Meets Expectations,No Action
+626,437,2025-Q1,4.0,Outstanding,Bonus
+627,117,2025-Q1,2.6,Below Expectations,PIP
+628,400,2024-Q2,1.3,Exceeds Expectations,Raise
+629,75,2025-Q1,4.9,Outstanding,Raise
+630,214,2024-Q4,2.2,Exceeds Expectations,Raise
+631,169,2023-Q1,3.8,Below Expectations,Raise
+632,254,2024-Q3,1.6,Exceeds Expectations,No Action
+633,362,2023-Q4,1.8,Exceeds Expectations,Promoted
+634,487,2023-Q2,4.9,Exceeds Expectations,PIP
+635,203,2023-Q2,3.8,Below Expectations,No Action
+636,268,2025-Q1,4.8,Meets Expectations,PIP
+637,333,2025-Q1,3.0,Exceeds Expectations,No Action
+638,53,2024-Q3,1.8,Exceeds Expectations,Bonus
+639,82,2023-Q3,2.5,Below Expectations,PIP
+640,337,2024-Q1,4.0,Below Expectations,Raise
+641,38,2024-Q2,1.6,Below Expectations,PIP
+642,285,2024-Q1,2.0,Exceeds Expectations,No Action
+643,52,2024-Q2,3.7,Below Expectations,Raise
+644,402,2024-Q1,1.3,Exceeds Expectations,No Action
+645,101,2025-Q1,3.4,Meets Expectations,Promoted
+646,468,2025-Q1,4.0,Meets Expectations,Raise
+647,200,2024-Q3,1.6,Exceeds Expectations,PIP
+648,259,2025-Q1,1.9,Below Expectations,No Action
+649,461,2023-Q3,4.8,Meets Expectations,Bonus
+650,205,2023-Q4,3.4,Meets Expectations,Bonus
+651,39,2023-Q1,2.6,Outstanding,No Action
+652,45,2024-Q4,3.2,Exceeds Expectations,No Action
+653,398,2023-Q1,3.3,Exceeds Expectations,Bonus
+654,94,2024-Q1,3.3,Below Expectations,Promoted
+655,17,2023-Q1,4.8,Exceeds Expectations,Promoted
+656,142,2024-Q3,5.0,Outstanding,No Action
+657,432,2024-Q3,4.7,Below Expectations,Bonus
+658,217,2025-Q1,4.8,Below Expectations,Bonus
+659,63,2023-Q3,1.8,Outstanding,Promoted
+660,181,2024-Q2,1.9,Exceeds Expectations,Raise
+661,443,2025-Q1,4.8,Outstanding,PIP
+662,413,2024-Q4,2.5,Exceeds Expectations,Promoted
+663,39,2023-Q1,1.5,Exceeds Expectations,Bonus
+664,45,2023-Q1,4.6,Outstanding,PIP
+665,304,2023-Q4,1.8,Exceeds Expectations,Bonus
+666,216,2023-Q2,3.4,Meets Expectations,Raise
+667,275,2024-Q3,1.6,Outstanding,No Action
+668,218,2023-Q1,3.3,Meets Expectations,PIP
+669,13,2025-Q1,2.1,Outstanding,Raise
+670,110,2024-Q1,2.4,Meets Expectations,Raise
+671,330,2023-Q3,2.8,Below Expectations,Bonus
+672,489,2024-Q4,4.2,Outstanding,Bonus
+673,496,2024-Q2,3.5,Exceeds Expectations,No Action
+674,426,2024-Q1,1.5,Exceeds Expectations,Raise
+675,371,2024-Q2,2.8,Outstanding,Raise
+676,382,2024-Q3,3.1,Meets Expectations,No Action
+677,89,2023-Q2,3.6,Below Expectations,No Action
+678,61,2024-Q4,1.5,Outstanding,No Action
+679,428,2025-Q1,4.9,Below Expectations,Promoted
+680,213,2024-Q3,2.6,Outstanding,No Action
+681,258,2024-Q2,2.6,Outstanding,Promoted
+682,474,2024-Q2,3.4,Meets Expectations,Raise
+683,28,2023-Q2,3.5,Below Expectations,No Action
+684,493,2024-Q2,5.0,Meets Expectations,Promoted
+685,80,2023-Q1,1.9,Outstanding,PIP
+686,190,2023-Q1,2.7,Outstanding,Raise
+687,472,2025-Q1,3.0,Meets Expectations,Bonus
+688,145,2023-Q3,2.0,Below Expectations,Raise
+689,227,2024-Q4,3.7,Meets Expectations,No Action
+690,91,2024-Q3,3.5,Meets Expectations,Bonus
+691,292,2025-Q1,1.7,Below Expectations,No Action
+692,387,2025-Q1,2.1,Outstanding,PIP
+693,72,2025-Q1,3.3,Exceeds Expectations,No Action
+694,47,2024-Q2,2.9,Below Expectations,Raise
+695,241,2023-Q2,4.5,Below Expectations,No Action
+696,428,2024-Q4,1.5,Exceeds Expectations,Bonus
+697,345,2023-Q4,1.4,Outstanding,Promoted
+698,243,2024-Q1,3.5,Meets Expectations,Raise
+699,157,2023-Q2,4.9,Outstanding,Bonus
+700,357,2024-Q2,4.0,Meets Expectations,PIP
+701,94,2023-Q4,3.6,Meets Expectations,Bonus
+702,234,2024-Q3,3.0,Outstanding,Bonus
+703,428,2023-Q1,1.9,Below Expectations,Bonus
+704,244,2023-Q1,3.5,Meets Expectations,Promoted
+705,150,2023-Q1,4.5,Meets Expectations,Raise
+706,166,2024-Q1,1.1,Outstanding,Raise
+707,283,2025-Q1,2.9,Exceeds Expectations,Bonus
+708,377,2024-Q3,3.6,Outstanding,PIP
+709,234,2023-Q3,4.6,Meets Expectations,PIP
+710,386,2023-Q3,3.7,Below Expectations,Bonus
+711,78,2024-Q1,1.5,Meets Expectations,No Action
+712,298,2023-Q1,2.0,Outstanding,Raise
+713,189,2023-Q3,2.2,Below Expectations,Raise
+714,349,2024-Q2,3.6,Outstanding,Bonus
+715,82,2024-Q2,3.3,Meets Expectations,Promoted
+716,108,2024-Q3,1.3,Exceeds Expectations,Bonus
+717,401,2023-Q4,4.5,Exceeds Expectations,PIP
+718,282,2023-Q1,3.0,Below Expectations,Raise
+719,458,2023-Q2,4.2,Below Expectations,Promoted
+720,459,2024-Q3,1.9,Outstanding,No Action
+721,128,2024-Q4,4.9,Outstanding,Raise
+722,211,2023-Q2,4.0,Meets Expectations,No Action
+723,305,2023-Q1,2.9,Exceeds Expectations,Promoted
+724,217,2023-Q2,2.9,Below Expectations,Raise
+725,60,2024-Q1,3.6,Below Expectations,Bonus
+726,383,2023-Q2,2.1,Below Expectations,PIP
+727,106,2024-Q4,2.5,Outstanding,Raise
+728,28,2024-Q4,4.6,Meets Expectations,PIP
+729,176,2023-Q3,2.5,Exceeds Expectations,PIP
+730,188,2023-Q1,4.3,Meets Expectations,Raise
+731,491,2024-Q1,3.5,Below Expectations,Bonus
+732,478,2023-Q2,2.0,Outstanding,PIP
+733,388,2024-Q2,2.4,Outstanding,No Action
+734,434,2024-Q4,1.4,Meets Expectations,No Action
+735,75,2023-Q4,2.6,Meets Expectations,PIP
+736,108,2023-Q2,3.4,Outstanding,Bonus
+737,372,2025-Q1,4.3,Meets Expectations,No Action
+738,257,2024-Q4,1.1,Below Expectations,Raise
+739,86,2024-Q3,3.5,Below Expectations,Raise
+740,204,2024-Q2,4.0,Meets Expectations,No Action
+741,52,2023-Q1,2.1,Exceeds Expectations,Bonus
+742,198,2023-Q2,1.2,Meets Expectations,Promoted
+743,199,2024-Q3,2.0,Outstanding,PIP
+744,194,2023-Q1,4.1,Meets Expectations,Bonus
+745,122,2024-Q4,3.4,Exceeds Expectations,Bonus
+746,141,2024-Q2,2.4,Meets Expectations,PIP
+747,334,2024-Q1,4.2,Outstanding,PIP
+748,494,2023-Q3,3.2,Below Expectations,No Action
+749,451,2024-Q1,2.2,Outstanding,PIP
+750,79,2023-Q2,3.3,Exceeds Expectations,Bonus
+751,147,2023-Q4,2.2,Exceeds Expectations,PIP
+752,133,2023-Q3,2.7,Below Expectations,PIP
+753,145,2023-Q2,3.3,Outstanding,Promoted
+754,26,2024-Q2,3.3,Meets Expectations,Bonus
+755,79,2024-Q4,4.0,Below Expectations,Bonus
+756,393,2024-Q3,4.9,Meets Expectations,PIP
+757,81,2023-Q2,4.4,Meets Expectations,No Action
+758,262,2023-Q1,2.0,Meets Expectations,Promoted
+759,37,2023-Q4,1.9,Exceeds Expectations,No Action
+760,244,2025-Q1,1.5,Outstanding,PIP
+761,138,2024-Q1,5.0,Exceeds Expectations,Raise
+762,317,2024-Q4,3.3,Outstanding,Promoted
+763,271,2024-Q1,3.4,Meets Expectations,PIP
+764,107,2023-Q1,3.4,Below Expectations,Bonus
+765,384,2023-Q1,1.8,Meets Expectations,Raise
+766,136,2023-Q4,3.6,Exceeds Expectations,Raise
+767,166,2024-Q2,2.8,Outstanding,PIP
+768,111,2023-Q4,3.7,Meets Expectations,Raise
+769,477,2024-Q1,5.0,Outstanding,Bonus
+770,209,2024-Q1,4.6,Outstanding,Raise
+771,259,2024-Q2,1.1,Outstanding,No Action
+772,242,2025-Q1,2.7,Outstanding,PIP
+773,77,2024-Q1,2.0,Exceeds Expectations,PIP
+774,254,2024-Q1,4.5,Outstanding,Bonus
+775,63,2023-Q1,2.6,Below Expectations,Raise
+776,415,2024-Q1,2.0,Meets Expectations,Promoted
+777,120,2023-Q4,3.8,Below Expectations,No Action
+778,2,2024-Q2,4.3,Meets Expectations,PIP
+779,392,2024-Q3,4.5,Exceeds Expectations,Bonus
+780,392,2024-Q2,2.0,Below Expectations,Promoted
+781,274,2024-Q4,2.6,Outstanding,No Action
+782,121,2023-Q4,2.9,Meets Expectations,PIP
+783,419,2024-Q1,3.5,Exceeds Expectations,Raise
+784,304,2025-Q1,2.5,Meets Expectations,PIP
+785,305,2025-Q1,3.4,Exceeds Expectations,Raise
+786,111,2024-Q1,4.6,Meets Expectations,No Action
+787,357,2024-Q4,1.0,Outstanding,No Action
+788,50,2023-Q1,2.9,Meets Expectations,Bonus
+789,416,2023-Q1,1.0,Outstanding,No Action
+790,182,2023-Q4,1.5,Meets Expectations,PIP
+791,199,2023-Q2,1.4,Outstanding,Promoted
+792,161,2024-Q2,3.2,Exceeds Expectations,No Action
+793,187,2024-Q1,1.2,Meets Expectations,No Action
+794,419,2024-Q2,3.5,Meets Expectations,PIP
+795,85,2024-Q1,1.3,Exceeds Expectations,Raise
+796,443,2023-Q3,3.3,Outstanding,Bonus
+797,59,2023-Q2,2.0,Meets Expectations,Promoted
+798,263,2024-Q3,1.5,Exceeds Expectations,PIP
+799,360,2024-Q4,4.4,Below Expectations,Raise
+800,54,2024-Q2,4.7,Exceeds Expectations,No Action
+801,124,2023-Q4,2.1,Meets Expectations,Promoted
+802,251,2025-Q1,4.6,Meets Expectations,Bonus
+803,304,2024-Q3,1.8,Meets Expectations,Promoted
+804,271,2023-Q1,2.0,Below Expectations,PIP
+805,405,2023-Q4,3.3,Outstanding,Bonus
+806,315,2024-Q4,4.5,Outstanding,PIP
+807,318,2024-Q3,3.9,Exceeds Expectations,No Action
+808,366,2024-Q1,3.4,Meets Expectations,Promoted
+809,290,2023-Q1,2.6,Exceeds Expectations,Raise
+810,212,2024-Q2,1.9,Exceeds Expectations,PIP
+811,180,2025-Q1,3.4,Below Expectations,Promoted
+812,290,2024-Q2,2.6,Below Expectations,PIP
+813,185,2023-Q3,5.0,Meets Expectations,Raise
+814,306,2024-Q4,4.8,Meets Expectations,Raise
+815,338,2023-Q1,1.8,Outstanding,Promoted
+816,452,2023-Q1,3.5,Outstanding,Raise
+817,262,2024-Q3,1.4,Meets Expectations,PIP
+818,449,2023-Q1,2.3,Exceeds Expectations,PIP
+819,160,2024-Q4,2.1,Meets Expectations,No Action
+820,262,2024-Q4,1.2,Meets Expectations,Promoted
+821,222,2023-Q1,1.7,Below Expectations,No Action
+822,24,2023-Q3,4.7,Below Expectations,Promoted
+823,475,2024-Q3,1.1,Exceeds Expectations,Bonus
+824,179,2025-Q1,1.7,Outstanding,Bonus
+825,34,2024-Q3,2.2,Outstanding,Raise
+826,23,2024-Q3,2.3,Exceeds Expectations,Bonus
+827,224,2024-Q4,3.4,Exceeds Expectations,No Action
+828,283,2023-Q4,1.8,Meets Expectations,PIP
+829,74,2024-Q4,2.1,Below Expectations,No Action
+830,51,2024-Q4,4.6,Meets Expectations,No Action
+831,328,2024-Q2,2.4,Exceeds Expectations,No Action
+832,398,2023-Q2,3.5,Meets Expectations,Promoted
+833,348,2023-Q3,3.6,Exceeds Expectations,PIP
+834,164,2025-Q1,4.4,Outstanding,Promoted
+835,294,2023-Q3,4.0,Below Expectations,PIP
+836,142,2024-Q2,1.7,Below Expectations,PIP
+837,282,2025-Q1,2.1,Exceeds Expectations,Promoted
+838,98,2024-Q2,3.1,Below Expectations,Promoted
+839,342,2024-Q4,4.1,Exceeds Expectations,Raise
+840,260,2023-Q4,4.3,Outstanding,PIP
+841,186,2024-Q4,4.0,Below Expectations,Raise
+842,421,2024-Q3,2.6,Exceeds Expectations,PIP
+843,74,2023-Q4,4.1,Exceeds Expectations,Raise
+844,491,2023-Q3,1.9,Meets Expectations,Raise
+845,111,2023-Q3,3.2,Below Expectations,PIP
+846,439,2025-Q1,2.1,Outstanding,Bonus
+847,478,2023-Q1,4.1,Exceeds Expectations,PIP
+848,248,2025-Q1,4.5,Below Expectations,No Action
+849,131,2024-Q1,1.1,Below Expectations,Raise
+850,87,2023-Q3,1.6,Meets Expectations,Bonus
+851,260,2025-Q1,3.5,Below Expectations,Raise
+852,399,2024-Q1,2.9,Below Expectations,Promoted
+853,67,2023-Q1,1.9,Outstanding,Promoted
+854,94,2024-Q4,3.9,Outstanding,Promoted
+855,49,2024-Q4,3.3,Below Expectations,PIP
+856,211,2023-Q4,3.0,Outstanding,Bonus
+857,397,2024-Q3,4.9,Meets Expectations,Raise
+858,255,2024-Q3,1.5,Meets Expectations,Raise
+859,113,2023-Q3,2.0,Exceeds Expectations,Promoted
+860,302,2023-Q4,1.1,Meets Expectations,Promoted
+861,252,2024-Q3,2.5,Below Expectations,PIP
+862,402,2024-Q1,2.6,Outstanding,Promoted
+863,212,2023-Q3,2.7,Below Expectations,Raise
+864,396,2024-Q1,1.1,Below Expectations,Bonus
+865,359,2023-Q3,3.9,Outstanding,Bonus
+866,195,2023-Q3,4.3,Below Expectations,Promoted
+867,315,2024-Q3,3.9,Meets Expectations,Raise
+868,53,2024-Q1,2.1,Meets Expectations,No Action
+869,257,2024-Q3,2.6,Meets Expectations,Raise
+870,210,2023-Q1,3.5,Outstanding,Promoted
+871,448,2023-Q1,3.9,Meets Expectations,PIP
+872,346,2023-Q2,4.2,Meets Expectations,Raise
+873,147,2024-Q3,3.9,Exceeds Expectations,No Action
+874,287,2025-Q1,5.0,Exceeds Expectations,Raise
+875,352,2024-Q4,1.6,Below Expectations,Bonus
+876,471,2023-Q1,4.1,Meets Expectations,Raise
+877,492,2024-Q4,3.2,Meets Expectations,Promoted
+878,321,2024-Q1,4.1,Below Expectations,Bonus
+879,490,2024-Q3,1.4,Outstanding,Promoted
+880,454,2023-Q3,3.7,Below Expectations,Bonus
+881,16,2024-Q2,4.6,Below Expectations,No Action
+882,453,2025-Q1,2.3,Meets Expectations,Promoted
+883,131,2025-Q1,1.8,Meets Expectations,Bonus
+884,145,2023-Q2,1.3,Outstanding,Promoted
+885,371,2024-Q4,2.3,Below Expectations,Bonus
+886,15,2025-Q1,2.8,Outstanding,No Action
+887,122,2023-Q1,1.7,Exceeds Expectations,No Action
+888,260,2023-Q3,4.9,Exceeds Expectations,Promoted
+889,65,2023-Q3,3.6,Meets Expectations,Raise
+890,2,2023-Q4,2.1,Below Expectations,Promoted
+891,219,2023-Q4,2.3,Meets Expectations,Bonus
+892,180,2025-Q1,2.1,Outstanding,PIP
+893,129,2023-Q3,3.7,Exceeds Expectations,Bonus
+894,346,2023-Q1,2.9,Outstanding,Raise
+895,81,2023-Q4,2.9,Exceeds Expectations,Raise
+896,25,2025-Q1,1.2,Meets Expectations,PIP
+897,20,2024-Q3,2.0,Meets Expectations,Promoted
+898,423,2024-Q2,4.4,Meets Expectations,PIP
+899,220,2024-Q4,3.2,Meets Expectations,Raise
+900,46,2023-Q2,4.1,Exceeds Expectations,Raise
+901,406,2025-Q1,4.8,Below Expectations,PIP
+902,442,2024-Q4,3.2,Below Expectations,PIP
+903,379,2025-Q1,1.1,Outstanding,No Action
+904,232,2024-Q3,4.5,Meets Expectations,Raise
+905,66,2023-Q2,4.9,Meets Expectations,PIP
+906,335,2023-Q2,2.8,Outstanding,Raise
+907,358,2023-Q2,4.0,Exceeds Expectations,Raise
+908,300,2025-Q1,1.6,Exceeds Expectations,Promoted
+909,476,2024-Q2,4.9,Below Expectations,Bonus
+910,431,2025-Q1,4.6,Meets Expectations,Bonus
+911,116,2023-Q3,2.8,Below Expectations,Promoted
+912,51,2024-Q4,1.5,Exceeds Expectations,Raise
+913,331,2023-Q3,3.6,Meets Expectations,PIP
+914,100,2023-Q1,3.8,Below Expectations,No Action
+915,22,2025-Q1,1.4,Below Expectations,Bonus
+916,135,2024-Q3,1.5,Outstanding,Promoted
+917,19,2024-Q4,3.5,Exceeds Expectations,Bonus
+918,58,2024-Q4,4.9,Below Expectations,Raise
+919,357,2024-Q2,3.2,Below Expectations,Raise
+920,444,2024-Q3,4.4,Below Expectations,Promoted
+921,257,2025-Q1,4.2,Outstanding,No Action
+922,118,2024-Q2,1.5,Exceeds Expectations,No Action
+923,17,2024-Q3,2.6,Meets Expectations,Bonus
+924,316,2024-Q3,4.2,Exceeds Expectations,Bonus
+925,106,2024-Q1,1.7,Outstanding,Raise
+926,309,2023-Q4,1.7,Meets Expectations,No Action
+927,177,2023-Q4,3.6,Exceeds Expectations,Raise
+928,426,2023-Q3,4.5,Exceeds Expectations,Bonus
+929,328,2024-Q2,2.7,Outstanding,PIP
+930,105,2023-Q1,2.4,Outstanding,No Action
+931,113,2024-Q2,4.8,Meets Expectations,Raise
+932,196,2023-Q1,4.3,Exceeds Expectations,Raise
+933,213,2023-Q3,3.2,Exceeds Expectations,Promoted
+934,425,2024-Q2,5.0,Below Expectations,Bonus
+935,25,2023-Q2,1.5,Below Expectations,No Action
+936,207,2023-Q3,1.0,Meets Expectations,Promoted
+937,471,2023-Q3,3.2,Below Expectations,Raise
+938,184,2024-Q4,2.3,Outstanding,Raise
+939,132,2024-Q1,3.6,Below Expectations,Bonus
+940,351,2024-Q4,2.0,Meets Expectations,No Action
+941,365,2024-Q2,4.7,Exceeds Expectations,PIP
+942,472,2024-Q4,4.7,Below Expectations,Raise
+943,195,2024-Q1,3.1,Meets Expectations,PIP
+944,154,2023-Q4,1.2,Exceeds Expectations,Raise
+945,245,2024-Q4,1.3,Meets Expectations,Bonus
+946,158,2024-Q3,3.2,Outstanding,Promoted
+947,173,2025-Q1,4.1,Below Expectations,Raise
+948,497,2024-Q3,1.6,Below Expectations,PIP
+949,318,2023-Q1,4.8,Below Expectations,No Action
+950,239,2023-Q4,1.6,Outstanding,Bonus
+951,18,2023-Q3,3.9,Outstanding,Promoted
+952,29,2024-Q1,3.0,Below Expectations,Bonus
+953,415,2023-Q3,2.1,Outstanding,No Action
+954,208,2023-Q3,1.9,Exceeds Expectations,Raise
+955,411,2024-Q4,3.1,Exceeds Expectations,PIP
+956,497,2024-Q1,1.4,Exceeds Expectations,No Action
+957,351,2024-Q1,4.6,Meets Expectations,PIP
+958,436,2023-Q2,2.3,Outstanding,No Action
+959,23,2023-Q3,2.2,Outstanding,No Action
+960,60,2023-Q4,3.5,Below Expectations,No Action
+961,186,2023-Q4,1.5,Outstanding,No Action
+962,285,2024-Q4,2.2,Outstanding,PIP
+963,97,2025-Q1,1.2,Outstanding,PIP
+964,78,2023-Q4,4.5,Meets Expectations,PIP
+965,133,2023-Q3,1.4,Meets Expectations,PIP
+966,384,2023-Q3,3.6,Below Expectations,Bonus
+967,456,2023-Q4,4.1,Meets Expectations,Bonus
+968,459,2024-Q3,2.6,Below Expectations,No Action
+969,8,2025-Q1,3.6,Outstanding,Promoted
+970,386,2024-Q3,1.9,Below Expectations,No Action
+971,67,2023-Q1,4.2,Below Expectations,PIP
+972,263,2024-Q1,4.5,Below Expectations,No Action
+973,135,2024-Q1,2.1,Meets Expectations,Raise
+974,394,2023-Q4,3.1,Exceeds Expectations,Bonus
+975,458,2024-Q2,2.8,Exceeds Expectations,Raise
+976,78,2024-Q1,2.3,Below Expectations,No Action
+977,361,2024-Q3,1.9,Below Expectations,Bonus
+978,408,2023-Q4,5.0,Exceeds Expectations,PIP
+979,219,2023-Q2,2.5,Exceeds Expectations,Raise
+980,141,2024-Q3,2.3,Outstanding,PIP
+981,114,2023-Q1,1.1,Below Expectations,Bonus
+982,271,2024-Q4,4.0,Outstanding,Raise
+983,417,2023-Q4,3.5,Below Expectations,Bonus
+984,86,2023-Q1,2.3,Meets Expectations,PIP
+985,138,2024-Q3,2.9,Exceeds Expectations,No Action
+986,96,2024-Q1,4.3,Exceeds Expectations,Bonus
+987,218,2023-Q3,2.5,Outstanding,Bonus
+988,248,2023-Q1,3.1,Meets Expectations,No Action
+989,172,2023-Q2,2.3,Outstanding,PIP
+990,408,2024-Q1,2.5,Exceeds Expectations,Bonus
+991,494,2023-Q1,1.7,Meets Expectations,Raise
+992,228,2023-Q3,4.3,Below Expectations,Promoted
+993,179,2024-Q1,4.7,Meets Expectations,Promoted
+994,441,2024-Q4,3.9,Exceeds Expectations,PIP
+995,211,2023-Q4,4.2,Outstanding,No Action
+996,93,2024-Q4,3.9,Below Expectations,PIP
+997,277,2024-Q3,4.2,Below Expectations,Promoted
+998,367,2025-Q1,2.2,Outstanding,Raise
+999,275,2025-Q1,1.6,Outstanding,Bonus
+1000,117,2024-Q1,1.6,Below Expectations,Promoted

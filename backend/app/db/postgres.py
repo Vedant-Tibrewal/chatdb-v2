@@ -98,6 +98,11 @@ class PostgresDB:
                 count_row = await conn.fetchval(
                     f'SELECT COUNT(*) FROM "{schema}"."{table}"'
                 )
+                # Fetch sample rows to help LLM understand column content
+                sample_rows = await conn.fetch(
+                    f'SELECT * FROM "{schema}"."{table}" LIMIT 3'
+                )
+                sample_data = [dict(r) for r in sample_rows]
                 result.append({
                     "name": table,
                     "columns": [
@@ -109,6 +114,7 @@ class PostgresDB:
                         for c in columns
                     ],
                     "row_count": count_row,
+                    "sample_rows": sample_data,
                 })
             return result
 

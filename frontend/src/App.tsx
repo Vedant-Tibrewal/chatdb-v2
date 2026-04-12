@@ -8,7 +8,7 @@ import { useSessionStore } from './store/sessionStore'
 type ActiveView = 'chat' | 'dashboard'
 
 function App() {
-  const { session, loading, error, initSession, clearError } = useSessionStore()
+  const { loading, error, initSession, clearError } = useSessionStore()
   const [leftCollapsed, setLeftCollapsed] = useState(false)
   const [rightCollapsed, setRightCollapsed] = useState(false)
   const [activeView, setActiveView] = useState<ActiveView>('chat')
@@ -23,7 +23,7 @@ function App() {
       {!leftCollapsed && <SchemaPanel onCollapse={() => setLeftCollapsed(true)} />}
 
       {/* Main content */}
-      <main className="flex-1 flex flex-col min-w-0 relative">
+      <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Top bar */}
         <header className="flex items-center justify-between border-b border-gray-200 bg-white px-3 py-1.5">
           {/* Left: sidebar toggle */}

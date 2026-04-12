@@ -1,0 +1,2001 @@
+event_id,asset_id,event_type,severity,event_timestamp,source_ip,status,detection_source
+1,130,Data Exfiltration,Medium,2024-06-17 13:47:19,216.14.162.233,False Positive,SIEM
+2,183,Policy Violation,High,2024-12-05 19:52:45,108.45.97.172,Open,Firewall
+3,6,Phishing,High,2024-05-13 14:48:10,200.95.166.187,Investigating,Manual
+4,165,Phishing,Medium,2024-03-09 02:24:06,153.148.115.139,Escalated,IDS
+5,75,Phishing,Critical,2024-03-14 11:44:05,18.240.87.124,Investigating,IDS
+6,184,Port Scan,Medium,2025-01-09 15:31:35,157.101.28.154,Resolved,SIEM
+7,169,DDoS,Critical,2025-01-07 12:32:08,31.202.104.12,Resolved,SIEM
+8,13,Policy Violation,Medium,2023-10-03 17:14:52,160.247.135.71,Resolved,EDR
+9,184,Privilege Escalation,Medium,2023-04-19 18:58:37,170.142.49.106,Resolved,IDS
+10,89,DDoS,Medium,2025-02-07 05:36:56,13.211.196.252,Investigating,SIEM
+11,170,Brute Force,High,2024-08-07 03:51:46,225.237.195.143,Investigating,WAF
+12,161,Intrusion Attempt,High,2024-09-21 19:20:36,179.184.73.49,False Positive,Manual
+13,141,Anomalous Traffic,Medium,2023-09-26 23:37:09,138.58.235.231,Resolved,SIEM
+14,39,Malware Detected,High,2023-08-15 17:22:04,171.0.217.175,Resolved,IDS
+15,73,Phishing,High,2024-07-12 00:41:38,194.38.26.32,Investigating,IDS
+16,195,Brute Force,Low,2023-07-27 18:05:51,41.85.5.54,Resolved,IDS
+17,169,Phishing,Critical,2024-07-12 20:53:01,216.81.166.249,False Positive,IDS
+18,48,Privilege Escalation,Medium,2024-11-02 19:45:22,64.9.150.16,Resolved,IDS
+19,184,Policy Violation,Medium,2025-02-01 08:22:19,133.230.206.231,Resolved,SIEM
+20,67,Policy Violation,High,2023-02-28 08:54:00,156.219.116.49,Investigating,Firewall
+21,152,DDoS,Critical,2024-05-20 15:37:48,103.233.150.161,Escalated,Manual
+22,50,Anomalous Traffic,Medium,2023-01-07 09:58:43,220.66.181.131,Open,Manual
+23,90,Phishing,High,2024-06-23 19:43:30,143.95.21.71,Escalated,EDR
+24,10,Malware Detected,Low,2024-02-17 21:08:04,116.12.190.43,Open,Firewall
+25,50,Phishing,Medium,2023-05-22 21:46:23,225.62.7.224,Investigating,SIEM
+26,127,Data Exfiltration,Medium,2025-03-11 09:56:12,101.14.93.70,Open,Firewall
+27,104,Policy Violation,Medium,2024-05-31 09:13:08,45.234.252.36,Escalated,IDS
+28,85,Failed Login,Critical,2024-04-26 23:21:57,129.186.86.253,Investigating,SIEM
+29,147,Privilege Escalation,Medium,2024-02-09 00:31:40,152.9.213.101,Escalated,SIEM
+30,138,Privilege Escalation,Low,2024-06-19 00:48:14,80.117.13.86,Resolved,EDR
+31,49,Data Exfiltration,Critical,2024-08-18 16:22:13,117.186.130.218,False Positive,WAF
+32,144,Anomalous Traffic,Medium,2023-07-24 01:48:45,214.103.39.136,Open,IDS
+33,79,Failed Login,Low,2023-06-07 23:13:21,199.223.48.212,Open,SIEM
+34,103,Lateral Movement,Critical,2024-08-28 10:49:24,74.151.17.24,False Positive,SIEM
+35,144,Policy Violation,Low,2024-04-23 09:49:27,219.74.82.95,Resolved,EDR
+36,33,DDoS,Low,2023-10-15 09:25:23,90.0.25.240,Escalated,Firewall
+37,65,Port Scan,Low,2023-08-15 05:10:18,140.93.113.113,Open,SIEM
+38,1,Phishing,Low,2023-09-22 12:11:59,95.195.183.106,False Positive,SIEM
+39,132,DDoS,Medium,2024-11-22 02:42:28,222.74.60.47,Investigating,IDS
+40,54,Privilege Escalation,Medium,2023-07-01 19:53:52,190.136.203.196,Resolved,IDS
+41,154,Port Scan,Low,2024-06-29 10:06:05,40.2.4.61,Investigating,EDR
+42,165,Anomalous Traffic,Low,2024-04-05 15:13:01,107.26.123.94,False Positive,Manual
+43,25,Privilege Escalation,Low,2024-04-21 09:46:32,72.133.46.190,Escalated,IDS
+44,185,Failed Login,Medium,2024-09-05 06:53:17,227.121.66.224,Open,Manual
+45,197,DDoS,High,2024-05-01 03:06:00,103.111.186.175,False Positive,SIEM
+46,24,Privilege Escalation,High,2024-12-30 14:53:42,250.132.227.241,Open,WAF
+47,7,DDoS,Low,2023-03-09 01:17:46,68.101.199.43,Investigating,IDS
+48,1,DDoS,Medium,2024-08-04 18:09:01,132.60.238.202,Investigating,EDR
+49,149,Phishing,Medium,2025-02-07 04:46:21,38.93.90.107,Escalated,IDS
+50,195,DDoS,Low,2024-10-28 00:23:30,103.183.85.30,Escalated,IDS
+51,167,Intrusion Attempt,Low,2025-02-15 19:16:17,233.245.73.216,Escalated,WAF
+52,181,Privilege Escalation,Medium,2023-12-19 17:21:42,165.235.239.165,Investigating,WAF
+53,89,DDoS,Low,2024-12-29 23:19:33,147.128.103.236,Resolved,EDR
+54,144,Phishing,High,2024-07-31 09:39:25,106.115.177.211,Open,Firewall
+55,14,Phishing,Critical,2024-09-28 06:34:32,96.74.168.224,Escalated,SIEM
+56,156,Anomalous Traffic,High,2023-07-10 13:06:07,177.188.250.143,Open,EDR
+57,23,Data Exfiltration,Low,2024-12-07 20:35:44,67.222.31.136,Open,IDS
+58,29,Privilege Escalation,High,2024-07-10 18:01:00,156.72.137.160,False Positive,WAF
+59,24,Lateral Movement,Critical,2023-10-06 05:47:27,11.53.240.218,False Positive,Firewall
+60,60,Privilege Escalation,Low,2023-12-20 04:18:37,64.179.1.122,Resolved,IDS
+61,183,Privilege Escalation,Medium,2023-08-12 06:08:38,57.144.103.232,Open,IDS
+62,180,Phishing,Medium,2024-12-11 20:29:53,137.197.26.62,Investigating,Firewall
+63,45,DDoS,Medium,2024-09-06 07:57:11,194.16.132.242,Investigating,SIEM
+64,174,Phishing,Low,2024-06-14 12:46:08,216.33.86.105,Escalated,Manual
+65,175,Lateral Movement,Low,2024-01-11 04:25:24,75.203.164.9,Open,Firewall
+66,129,DDoS,High,2023-05-21 02:38:30,2.93.207.112,Resolved,WAF
+67,75,Privilege Escalation,Critical,2025-01-25 16:48:19,121.229.98.227,Escalated,Manual
+68,42,Data Exfiltration,Medium,2023-06-09 07:18:48,253.139.134.229,Escalated,Firewall
+69,138,Malware Detected,Medium,2023-06-26 14:00:05,99.172.37.33,Escalated,EDR
+70,162,Failed Login,Low,2023-04-17 11:21:34,5.78.185.219,Resolved,EDR
+71,44,DDoS,Low,2023-06-12 23:17:14,223.32.43.41,Resolved,Manual
+72,180,Brute Force,High,2023-12-09 07:24:26,133.71.227.115,Escalated,WAF
+73,176,Malware Detected,Low,2023-04-29 08:40:17,87.210.242.202,Open,SIEM
+74,17,DDoS,High,2023-07-28 22:51:43,81.204.78.11,Escalated,WAF
+75,112,Policy Violation,Medium,2023-03-14 21:19:19,210.24.236.34,Open,EDR
+76,170,Phishing,High,2024-09-30 16:30:25,162.71.251.43,False Positive,SIEM
+77,36,Port Scan,High,2023-05-21 16:01:12,50.115.69.50,False Positive,Firewall
+78,62,Failed Login,Medium,2023-05-17 10:21:11,82.162.241.19,Escalated,Firewall
+79,33,Data Exfiltration,Low,2024-01-12 01:22:16,50.246.21.244,Escalated,Firewall
+80,16,Brute Force,High,2023-06-14 13:29:39,132.251.6.233,Open,SIEM
+81,97,Malware Detected,Medium,2023-11-24 20:38:48,213.187.124.10,Resolved,Manual
+82,118,Privilege Escalation,High,2023-01-10 08:27:33,110.95.28.27,Open,IDS
+83,93,Failed Login,Low,2024-06-03 08:18:49,93.116.121.93,Investigating,EDR
+84,124,Data Exfiltration,High,2024-08-30 04:10:06,121.143.138.18,False Positive,SIEM
+85,158,Intrusion Attempt,Medium,2024-08-02 06:01:20,8.10.78.78,False Positive,IDS
+86,80,Failed Login,Medium,2023-11-10 19:31:56,205.160.244.213,False Positive,WAF
+87,150,DDoS,High,2023-01-03 13:33:55,249.220.7.196,False Positive,IDS
+88,158,Failed Login,Medium,2023-12-22 19:18:13,224.255.108.73,Open,Firewall
+89,157,Data Exfiltration,High,2023-10-02 14:32:26,188.60.74.119,Resolved,SIEM
+90,131,Intrusion Attempt,Medium,2024-09-24 09:11:51,168.95.60.88,Open,Manual
+91,132,Brute Force,Medium,2024-03-13 04:12:55,191.185.187.218,Resolved,Firewall
+92,97,Intrusion Attempt,High,2023-06-16 22:40:27,146.141.232.48,Escalated,Manual
+93,194,Malware Detected,High,2023-02-08 11:47:00,142.234.19.115,Escalated,Firewall
+94,86,Anomalous Traffic,High,2023-01-18 21:30:13,110.54.233.94,Resolved,Manual
+95,4,Data Exfiltration,Medium,2024-08-22 15:13:53,54.219.126.20,Escalated,Firewall
+96,45,Failed Login,High,2024-06-18 11:09:04,243.214.105.113,Escalated,SIEM
+97,3,Phishing,Medium,2024-09-30 01:27:28,174.253.83.87,Resolved,Manual
+98,24,Policy Violation,High,2023-06-29 10:23:57,22.71.34.16,Open,IDS
+99,136,Data Exfiltration,Critical,2023-04-06 19:46:39,254.163.49.227,Resolved,Firewall
+100,103,Malware Detected,Medium,2023-03-07 06:42:54,139.156.169.92,Resolved,SIEM
+101,24,Lateral Movement,Medium,2023-06-10 14:40:48,125.158.174.220,Resolved,SIEM
+102,41,Data Exfiltration,Low,2025-01-23 20:20:02,2.154.230.201,Escalated,EDR
+103,12,Data Exfiltration,Medium,2023-05-22 09:54:06,217.120.48.87,Open,EDR
+104,148,Port Scan,Low,2024-03-12 08:40:14,92.1.214.81,Open,SIEM
+105,197,Data Exfiltration,Low,2025-03-30 00:04:26,38.134.112.132,False Positive,Firewall
+106,83,Intrusion Attempt,High,2024-08-22 10:57:04,74.164.252.7,Investigating,Manual
+107,98,Phishing,High,2023-07-02 04:49:09,118.11.225.61,Open,WAF
+108,153,DDoS,Medium,2023-12-20 22:51:44,242.183.1.205,Resolved,Manual
+109,120,Intrusion Attempt,Low,2024-09-11 12:56:39,147.100.167.50,Investigating,SIEM
+110,15,Port Scan,Medium,2024-08-26 22:25:48,182.20.208.186,Open,WAF
+111,38,Failed Login,High,2023-09-16 02:16:20,146.185.0.106,Resolved,Manual
+112,139,Phishing,Medium,2025-02-16 11:06:32,53.186.30.131,Resolved,SIEM
+113,90,Privilege Escalation,High,2023-11-06 18:44:07,73.44.102.130,Escalated,Manual
+114,36,Privilege Escalation,Low,2023-01-04 14:55:55,184.253.22.102,Resolved,SIEM
+115,192,Lateral Movement,Critical,2023-11-23 17:19:16,210.143.105.47,Escalated,Firewall
+116,91,Malware Detected,Medium,2024-04-07 19:51:37,225.68.80.248,Investigating,SIEM
+117,11,Port Scan,Low,2023-06-07 06:01:33,45.146.2.22,Resolved,EDR
+118,31,Data Exfiltration,High,2024-09-06 01:42:37,42.226.122.68,Open,WAF
+119,70,Intrusion Attempt,Low,2023-08-27 15:29:57,34.175.15.96,Investigating,WAF
+120,172,Brute Force,Low,2024-06-17 21:48:15,98.97.9.148,Resolved,Manual
+121,75,Brute Force,Critical,2024-02-08 16:00:03,182.40.5.132,False Positive,Manual
+122,19,Privilege Escalation,Medium,2023-01-15 23:44:52,34.120.193.140,False Positive,Firewall
+123,177,Data Exfiltration,High,2023-02-15 16:24:52,248.218.42.177,Escalated,WAF
+124,159,Port Scan,Medium,2024-06-06 10:37:53,17.94.212.137,False Positive,IDS
+125,123,Port Scan,Medium,2023-11-09 23:48:31,182.241.165.13,Escalated,IDS
+126,9,Failed Login,Medium,2024-01-09 05:33:28,12.121.128.249,Escalated,Manual
+127,37,Privilege Escalation,Low,2023-06-18 02:20:18,14.243.203.253,Open,EDR
+128,93,Lateral Movement,Medium,2024-01-08 08:23:33,34.11.134.2,False Positive,Manual
+129,65,Policy Violation,Critical,2024-03-22 12:22:59,43.76.246.135,Resolved,Manual
+130,88,Data Exfiltration,Medium,2024-01-19 08:01:59,142.207.133.125,Escalated,EDR
+131,74,Phishing,High,2024-06-27 09:10:53,120.103.193.217,Investigating,Firewall
+132,50,Phishing,Low,2024-06-23 19:19:17,187.217.184.95,Escalated,IDS
+133,123,Intrusion Attempt,Medium,2025-01-29 07:14:25,65.228.33.50,Investigating,Firewall
+134,94,Anomalous Traffic,Low,2024-07-25 20:44:54,244.177.146.195,Escalated,WAF
+135,66,Brute Force,High,2024-12-05 04:18:33,199.39.40.218,Investigating,Firewall
+136,122,Brute Force,Low,2024-06-16 12:27:13,88.54.59.134,Open,EDR
+137,75,Failed Login,Medium,2024-03-18 08:37:21,100.106.6.129,Resolved,Firewall
+138,33,Lateral Movement,High,2025-02-12 00:06:34,159.164.25.189,Investigating,Firewall
+139,117,Malware Detected,High,2023-08-30 01:31:31,45.119.42.104,Resolved,IDS
+140,13,Port Scan,High,2024-04-07 05:10:46,200.18.167.244,Escalated,EDR
+141,56,Malware Detected,Medium,2025-01-15 03:42:14,230.34.145.87,Escalated,IDS
+142,91,DDoS,High,2023-05-30 15:51:05,91.6.42.223,Escalated,WAF
+143,195,Intrusion Attempt,Medium,2024-11-21 14:11:11,105.171.161.228,Resolved,WAF
+144,140,Phishing,Medium,2023-05-17 22:29:49,221.84.119.127,Open,WAF
+145,39,Malware Detected,Medium,2023-08-19 13:58:43,191.240.42.30,Resolved,IDS
+146,142,Policy Violation,Medium,2024-05-27 05:04:07,82.72.216.194,Investigating,WAF
+147,64,Port Scan,Low,2024-10-26 04:33:20,167.249.66.96,Investigating,Manual
+148,7,Phishing,Low,2023-06-17 18:25:13,215.5.28.228,Investigating,EDR
+149,116,Malware Detected,Critical,2025-01-23 22:51:00,29.58.49.175,Investigating,Firewall
+150,119,Port Scan,Low,2023-12-29 12:12:40,214.220.13.64,False Positive,IDS
+151,120,Data Exfiltration,Low,2024-07-10 23:38:43,209.70.185.150,Resolved,Manual
+152,26,Malware Detected,Critical,2024-05-17 05:27:18,149.13.203.22,Open,SIEM
+153,167,Data Exfiltration,Medium,2023-01-05 14:56:11,69.109.176.226,Escalated,WAF
+154,124,Policy Violation,Medium,2023-12-02 05:26:57,216.2.160.218,Open,Manual
+155,160,Privilege Escalation,Low,2025-01-24 02:13:29,172.74.121.27,Investigating,IDS
+156,88,Brute Force,High,2024-02-24 19:14:50,162.195.138.75,Investigating,WAF
+157,167,Lateral Movement,Low,2023-01-01 19:34:19,249.132.154.101,Resolved,EDR
+158,30,Data Exfiltration,Medium,2024-11-01 18:35:33,245.98.238.127,Investigating,Firewall
+159,141,Lateral Movement,Medium,2024-07-30 04:53:13,188.56.175.180,Escalated,Manual
+160,110,Privilege Escalation,Low,2023-04-09 12:31:21,64.15.255.236,Escalated,SIEM
+161,176,Privilege Escalation,Medium,2024-07-06 10:38:15,144.111.134.213,Investigating,EDR
+162,81,Lateral Movement,Medium,2024-04-03 13:56:24,107.108.16.147,False Positive,Firewall
+163,20,Malware Detected,High,2023-01-25 13:04:38,140.199.207.87,Escalated,SIEM
+164,196,Brute Force,High,2024-12-21 07:14:05,19.227.129.40,Escalated,EDR
+165,39,Privilege Escalation,High,2024-05-24 00:37:48,72.133.117.220,Open,Firewall
+166,130,Intrusion Attempt,High,2025-03-31 08:48:53,223.250.240.50,Open,Manual
+167,65,Intrusion Attempt,High,2023-08-20 11:59:24,102.210.216.208,False Positive,EDR
+168,63,Brute Force,Critical,2024-07-09 22:10:45,111.15.30.159,False Positive,Firewall
+169,194,Phishing,Medium,2023-07-13 23:31:05,52.138.123.65,Resolved,Manual
+170,116,Privilege Escalation,Medium,2024-05-08 02:20:05,183.120.225.134,Open,WAF
+171,116,Malware Detected,Low,2024-04-29 16:15:13,171.220.3.105,False Positive,Manual
+172,126,DDoS,Medium,2025-03-14 05:34:26,244.94.3.83,Escalated,Manual
+173,117,Privilege Escalation,Low,2024-04-21 10:19:23,104.45.104.33,Open,IDS
+174,29,Phishing,Low,2023-12-10 01:48:17,18.194.48.8,Open,WAF
+175,67,Lateral Movement,Medium,2024-10-25 07:34:59,28.93.203.142,Investigating,IDS
+176,67,Intrusion Attempt,Medium,2024-08-09 08:40:21,125.243.155.199,Investigating,EDR
+177,197,Intrusion Attempt,Critical,2023-10-26 02:38:27,16.145.27.57,Investigating,EDR
+178,91,Privilege Escalation,High,2023-07-06 11:04:16,239.232.92.239,Open,Firewall
+179,150,Data Exfiltration,Medium,2023-04-29 13:43:10,196.189.187.100,False Positive,EDR
+180,83,Lateral Movement,High,2025-02-21 13:32:53,171.146.227.1,Resolved,IDS
+181,124,Policy Violation,Low,2023-11-12 02:57:01,149.200.110.228,False Positive,EDR
+182,144,DDoS,High,2025-02-26 15:50:30,226.69.52.218,Investigating,IDS
+183,111,Brute Force,Low,2024-10-09 15:50:07,1.132.232.241,Resolved,Manual
+184,138,Failed Login,Medium,2023-04-15 12:39:50,75.19.39.235,Investigating,IDS
+185,188,DDoS,Low,2023-01-07 04:58:13,61.43.172.173,Investigating,SIEM
+186,182,Phishing,Low,2023-09-21 10:25:28,130.71.227.115,Investigating,WAF
+187,104,Phishing,Medium,2024-01-09 05:47:53,71.110.255.91,Investigating,Manual
+188,44,DDoS,Low,2023-11-23 17:04:27,230.53.199.131,Escalated,Firewall
+189,155,DDoS,Medium,2023-08-14 15:50:15,229.54.26.72,Investigating,WAF
+190,176,Failed Login,Medium,2023-12-12 01:26:15,135.210.218.202,Investigating,WAF
+191,135,Malware Detected,Low,2023-05-05 08:10:20,4.245.8.68,Resolved,Manual
+192,194,Privilege Escalation,High,2024-02-10 08:07:35,46.59.189.56,Escalated,EDR
+193,165,Brute Force,Medium,2023-01-08 13:44:03,236.41.184.72,Escalated,Manual
+194,76,Intrusion Attempt,Low,2024-08-24 10:34:19,65.36.64.94,False Positive,IDS
+195,17,Lateral Movement,Medium,2025-03-24 12:56:45,104.11.3.197,Investigating,WAF
+196,162,Anomalous Traffic,Medium,2024-06-29 09:43:46,10.130.94.161,Investigating,SIEM
+197,63,Port Scan,Medium,2024-07-09 14:07:18,91.65.133.20,Open,IDS
+198,175,Intrusion Attempt,Low,2024-04-11 02:12:28,215.221.138.18,Investigating,Manual
+199,142,DDoS,Medium,2023-03-25 06:34:13,47.166.26.121,Resolved,EDR
+200,86,Phishing,Low,2024-07-22 01:32:35,14.81.146.40,Open,WAF
+201,40,Anomalous Traffic,Medium,2023-11-19 07:54:15,18.179.7.69,Resolved,SIEM
+202,94,Port Scan,Medium,2025-02-02 14:13:59,101.196.127.26,Open,SIEM
+203,195,Policy Violation,High,2025-02-24 05:54:03,214.248.28.142,False Positive,WAF
+204,131,Lateral Movement,High,2024-08-25 15:37:42,40.181.205.154,Investigating,IDS
+205,177,DDoS,High,2023-04-16 14:22:51,33.17.130.44,False Positive,EDR
+206,62,Intrusion Attempt,High,2024-04-30 05:13:06,97.16.86.187,Open,SIEM
+207,118,Lateral Movement,Critical,2024-10-19 03:21:38,143.157.240.124,Open,IDS
+208,107,DDoS,Critical,2024-01-28 07:44:20,241.143.63.41,False Positive,Manual
+209,197,Anomalous Traffic,Medium,2023-04-22 18:46:07,16.37.96.42,Investigating,WAF
+210,113,Policy Violation,Low,2023-10-29 04:15:35,222.128.132.214,Investigating,WAF
+211,133,Phishing,Medium,2024-01-24 16:02:43,89.236.28.30,Open,Manual
+212,30,Data Exfiltration,Medium,2023-09-29 04:41:37,180.169.103.98,Escalated,WAF
+213,14,DDoS,Medium,2023-08-28 03:27:32,154.245.211.47,Open,Firewall
+214,104,Phishing,Low,2023-10-14 15:01:15,6.144.128.43,Open,Firewall
+215,13,Port Scan,High,2024-08-07 05:41:46,74.134.75.48,False Positive,WAF
+216,67,Privilege Escalation,Low,2024-09-10 05:55:47,218.47.86.92,Open,Manual
+217,198,Malware Detected,Medium,2023-06-07 10:28:20,38.71.109.152,Open,IDS
+218,25,DDoS,Medium,2024-02-24 10:15:25,183.234.186.188,Investigating,EDR
+219,197,DDoS,High,2023-04-06 03:33:35,186.141.99.3,Investigating,WAF
+220,15,Privilege Escalation,Critical,2024-06-21 20:53:59,199.34.92.167,Open,Firewall
+221,55,Brute Force,Low,2023-12-24 08:46:25,58.140.89.128,Open,Firewall
+222,142,Lateral Movement,Critical,2023-04-14 17:48:00,148.218.61.208,Escalated,EDR
+223,9,Failed Login,High,2024-05-23 06:02:04,73.39.56.191,Resolved,SIEM
+224,164,Phishing,Critical,2023-11-02 18:17:19,56.18.6.189,Resolved,Firewall
+225,14,Phishing,Medium,2023-10-01 07:26:27,122.36.198.199,Open,WAF
+226,90,Intrusion Attempt,Medium,2023-07-22 00:56:06,219.66.16.137,Escalated,SIEM
+227,115,Policy Violation,Low,2024-03-31 08:52:35,12.13.237.224,Open,SIEM
+228,127,Anomalous Traffic,Critical,2024-10-01 12:21:54,198.221.255.13,Open,WAF
+229,58,DDoS,Medium,2023-07-03 20:16:01,245.194.200.66,False Positive,IDS
+230,80,Failed Login,High,2024-10-09 11:05:15,210.32.42.157,Investigating,Manual
+231,199,Lateral Movement,Medium,2023-05-15 11:56:30,29.193.203.70,Escalated,EDR
+232,156,Policy Violation,High,2024-02-01 08:44:12,14.153.58.130,Investigating,Manual
+233,198,Anomalous Traffic,High,2023-01-31 19:23:42,207.224.129.160,Open,SIEM
+234,105,Port Scan,Medium,2023-03-19 01:30:26,160.203.120.43,Escalated,SIEM
+235,54,Brute Force,Critical,2024-01-31 15:10:13,209.255.149.104,Resolved,SIEM
+236,32,Privilege Escalation,High,2024-01-28 16:54:30,181.232.73.44,Investigating,SIEM
+237,73,Anomalous Traffic,Medium,2025-01-30 14:07:16,163.167.167.63,Resolved,SIEM
+238,170,Anomalous Traffic,High,2024-09-25 05:51:03,224.15.24.59,Investigating,Manual
+239,64,DDoS,Medium,2023-08-29 07:18:02,49.139.124.191,Resolved,SIEM
+240,74,Intrusion Attempt,Medium,2024-04-28 17:44:57,112.159.203.128,Escalated,IDS
+241,65,Phishing,Medium,2024-05-12 10:35:54,79.82.188.191,False Positive,Manual
+242,18,Anomalous Traffic,Medium,2025-01-16 21:02:47,235.73.196.205,Open,IDS
+243,88,Phishing,Low,2023-02-26 00:11:25,126.9.207.130,Open,SIEM
+244,46,Data Exfiltration,Critical,2024-07-19 05:52:49,240.52.85.251,Open,Manual
+245,183,Brute Force,Medium,2024-08-23 17:15:08,1.74.39.152,Investigating,WAF
+246,57,Anomalous Traffic,Low,2024-06-24 04:53:50,32.97.110.77,Investigating,Firewall
+247,78,Policy Violation,Low,2023-04-05 02:37:26,111.68.144.132,Investigating,SIEM
+248,170,Port Scan,Medium,2025-03-30 12:37:25,242.46.171.224,Investigating,WAF
+249,100,Data Exfiltration,Low,2023-02-03 09:26:52,12.138.134.4,Investigating,Manual
+250,163,Anomalous Traffic,Medium,2023-12-08 05:01:19,79.16.52.177,Escalated,SIEM
+251,165,DDoS,High,2024-09-08 11:10:49,223.173.255.131,Resolved,Firewall
+252,180,DDoS,Medium,2023-06-03 02:59:49,22.5.74.254,Resolved,Manual
+253,156,Brute Force,Medium,2023-09-05 11:03:12,105.140.147.242,Open,IDS
+254,59,DDoS,High,2023-06-21 17:50:20,247.31.165.136,Investigating,WAF
+255,77,Brute Force,Low,2024-08-18 04:08:10,143.234.56.243,Resolved,SIEM
+256,152,Privilege Escalation,High,2023-04-28 23:42:36,113.153.202.210,Investigating,Firewall
+257,38,Lateral Movement,High,2024-02-01 08:32:04,251.104.249.95,Investigating,Manual
+258,134,Port Scan,High,2023-06-27 06:38:49,248.209.96.126,Resolved,SIEM
+259,73,Malware Detected,High,2023-10-14 20:47:37,132.135.155.50,Investigating,WAF
+260,92,Anomalous Traffic,Medium,2023-12-03 14:45:06,213.141.251.36,False Positive,Manual
+261,137,Brute Force,Low,2025-01-08 14:52:40,158.52.201.119,Investigating,WAF
+262,10,Anomalous Traffic,Low,2024-08-27 04:41:14,82.17.29.132,Resolved,WAF
+263,102,Phishing,Medium,2023-03-21 09:39:06,15.139.137.159,Resolved,SIEM
+264,102,Anomalous Traffic,Low,2023-10-26 08:03:58,140.232.2.127,Resolved,Manual
+265,140,Intrusion Attempt,High,2024-10-14 17:51:07,117.183.184.86,Investigating,Manual
+266,3,Privilege Escalation,Medium,2024-01-08 20:23:25,139.13.137.235,Open,Firewall
+267,114,Failed Login,Medium,2024-05-19 12:42:10,107.98.60.248,Escalated,Manual
+268,61,Lateral Movement,High,2024-05-05 14:50:39,87.165.192.172,Escalated,Firewall
+269,70,Privilege Escalation,High,2024-07-03 19:01:39,129.149.110.11,Open,EDR
+270,5,Port Scan,Medium,2024-08-07 08:30:08,142.49.190.254,Open,WAF
+271,121,Malware Detected,Medium,2024-04-02 23:06:49,211.223.250.67,Investigating,Firewall
+272,57,Phishing,High,2023-08-14 00:04:21,43.252.19.16,Escalated,Manual
+273,123,Lateral Movement,Low,2023-11-28 11:58:32,250.48.203.26,Resolved,EDR
+274,39,Policy Violation,Medium,2023-12-30 10:00:09,88.83.170.72,False Positive,IDS
+275,33,Malware Detected,Medium,2023-07-10 12:50:38,41.227.89.102,Open,SIEM
+276,154,Intrusion Attempt,Low,2023-10-11 14:52:41,22.89.29.7,Investigating,EDR
+277,155,Phishing,Medium,2023-06-20 05:44:05,229.223.102.14,Investigating,WAF
+278,35,Lateral Movement,Low,2023-03-24 09:35:08,112.245.143.141,Escalated,Manual
+279,54,Failed Login,Medium,2024-04-01 16:41:50,240.170.71.172,Open,WAF
+280,151,Malware Detected,Medium,2024-01-14 14:04:33,142.201.25.247,Investigating,SIEM
+281,104,Port Scan,Low,2024-11-01 12:23:24,86.217.77.58,Investigating,IDS
+282,74,Policy Violation,Low,2025-02-15 19:31:06,214.5.17.69,Resolved,Manual
+283,158,Data Exfiltration,Low,2024-02-14 05:19:36,225.97.52.33,Open,EDR
+284,80,Failed Login,Medium,2023-12-11 12:26:09,107.206.39.216,False Positive,Firewall
+285,81,Data Exfiltration,Low,2023-08-11 14:46:45,169.229.45.124,Escalated,IDS
+286,64,Privilege Escalation,Low,2024-01-17 14:34:13,80.193.179.81,False Positive,EDR
+287,42,Data Exfiltration,Medium,2025-01-30 04:39:37,88.212.100.232,Resolved,SIEM
+288,83,Intrusion Attempt,Medium,2025-01-25 17:28:27,220.160.206.198,Escalated,Firewall
+289,111,Anomalous Traffic,High,2023-12-31 18:18:33,50.166.83.237,Resolved,EDR
+290,191,Policy Violation,Medium,2023-05-31 06:53:06,208.94.50.196,Escalated,WAF
+291,124,Failed Login,High,2023-02-25 05:09:18,217.167.193.7,Investigating,WAF
+292,10,Privilege Escalation,Low,2025-01-12 01:38:43,220.132.12.236,Open,IDS
+293,96,Lateral Movement,High,2024-04-06 03:26:26,39.92.142.201,Resolved,Firewall
+294,87,Data Exfiltration,Medium,2025-03-21 02:49:51,160.174.82.185,False Positive,EDR
+295,107,Lateral Movement,High,2023-02-16 20:36:37,66.84.151.20,Resolved,SIEM
+296,151,Lateral Movement,Medium,2024-12-15 19:28:12,201.25.84.163,Resolved,IDS
+297,31,Brute Force,Low,2024-09-30 19:26:45,60.69.140.7,Escalated,EDR
+298,23,Intrusion Attempt,Medium,2023-03-30 07:10:11,74.234.35.94,False Positive,Firewall
+299,57,Failed Login,Medium,2025-02-24 11:59:05,168.66.201.226,Escalated,EDR
+300,54,Policy Violation,High,2024-10-24 17:24:06,164.27.85.218,Escalated,IDS
+301,159,Data Exfiltration,High,2024-04-23 02:48:15,133.192.15.130,False Positive,EDR
+302,144,Policy Violation,Medium,2023-09-01 09:01:16,82.15.101.15,Escalated,EDR
+303,10,Port Scan,Low,2023-10-24 15:56:02,149.139.33.77,Open,IDS
+304,68,Lateral Movement,Medium,2024-10-04 08:22:19,32.21.69.92,Investigating,WAF
+305,120,Data Exfiltration,Low,2024-05-01 03:41:45,76.146.164.48,Open,Manual
+306,103,Privilege Escalation,High,2023-02-24 05:12:47,7.80.57.11,Escalated,WAF
+307,198,Failed Login,Medium,2024-05-22 02:00:58,2.226.207.43,Investigating,SIEM
+308,82,Privilege Escalation,Medium,2025-01-09 18:36:01,67.99.219.30,Resolved,Manual
+309,86,Malware Detected,High,2023-09-10 10:39:16,91.42.106.91,Investigating,WAF
+310,77,DDoS,Low,2024-08-22 12:37:11,5.179.160.122,Escalated,SIEM
+311,156,Malware Detected,Low,2023-04-23 18:18:50,19.242.243.110,Escalated,SIEM
+312,109,Failed Login,Low,2024-08-11 03:10:55,132.239.130.22,False Positive,Firewall
+313,17,Privilege Escalation,High,2024-10-27 09:22:21,224.92.184.146,Investigating,WAF
+314,45,Data Exfiltration,Medium,2023-10-16 09:09:19,70.84.1.7,False Positive,WAF
+315,158,Malware Detected,Low,2025-03-05 21:13:57,152.116.146.86,Escalated,Firewall
+316,130,DDoS,Medium,2024-08-16 03:18:49,237.73.72.84,Escalated,Firewall
+317,87,Phishing,Low,2023-01-29 08:45:13,136.210.19.147,Resolved,Manual
+318,10,Port Scan,Low,2023-05-29 12:20:17,223.8.168.244,Open,SIEM
+319,101,Lateral Movement,Low,2023-12-16 23:45:19,124.57.12.52,Escalated,IDS
+320,108,Brute Force,Low,2023-11-24 21:11:02,54.229.61.63,Resolved,IDS
+321,176,Brute Force,High,2024-02-27 03:21:03,113.200.128.134,Investigating,IDS
+322,62,Intrusion Attempt,Medium,2023-01-09 19:25:29,117.174.4.82,Resolved,Firewall
+323,8,Policy Violation,Low,2023-06-19 09:52:39,145.175.84.65,Escalated,Firewall
+324,85,Failed Login,Medium,2025-02-09 19:30:13,1.30.29.148,Escalated,IDS
+325,95,Failed Login,High,2023-10-05 04:38:55,132.246.197.131,Investigating,IDS
+326,76,Phishing,High,2023-07-16 22:15:39,188.204.184.166,Open,EDR
+327,43,Failed Login,Critical,2023-01-28 07:42:55,120.123.235.127,False Positive,WAF
+328,73,Lateral Movement,Medium,2024-08-11 18:23:33,24.27.24.10,Investigating,Manual
+329,6,DDoS,Medium,2023-06-23 03:35:29,36.179.209.133,Resolved,Manual
+330,5,Port Scan,High,2023-10-16 15:43:28,26.102.179.151,Investigating,IDS
+331,139,Anomalous Traffic,Medium,2024-04-16 03:37:36,101.142.211.109,Investigating,IDS
+332,25,Data Exfiltration,High,2024-04-29 08:16:30,4.138.242.159,Resolved,Manual
+333,14,Data Exfiltration,High,2024-08-25 00:52:19,82.4.230.99,Open,Manual
+334,131,Privilege Escalation,Medium,2024-07-09 07:38:17,185.239.55.126,Investigating,SIEM
+335,59,Phishing,Medium,2024-02-15 22:17:44,56.37.237.136,Resolved,Firewall
+336,164,Privilege Escalation,Medium,2023-03-18 06:50:02,29.162.39.250,Resolved,IDS
+337,37,Policy Violation,Medium,2023-08-17 07:43:08,191.253.190.199,Resolved,EDR
+338,140,Anomalous Traffic,Medium,2023-11-16 12:23:26,93.244.205.248,Escalated,WAF
+339,26,Policy Violation,High,2023-10-15 09:14:02,180.32.182.242,Escalated,IDS
+340,163,Data Exfiltration,Medium,2024-11-18 21:00:28,79.39.113.151,Investigating,IDS
+341,139,Privilege Escalation,Low,2025-02-09 03:13:19,206.194.77.193,False Positive,WAF
+342,189,Privilege Escalation,Medium,2024-08-24 12:09:32,9.180.153.250,False Positive,EDR
+343,111,Policy Violation,Medium,2023-12-21 07:22:33,80.124.46.157,False Positive,EDR
+344,181,Lateral Movement,High,2024-09-04 09:34:03,97.144.141.43,Open,IDS
+345,183,Brute Force,Medium,2025-03-30 06:01:44,95.187.147.111,Open,Manual
+346,126,Intrusion Attempt,Low,2023-02-20 17:15:54,184.183.22.199,Escalated,EDR
+347,9,Data Exfiltration,Medium,2023-07-03 15:07:05,1.21.26.103,Investigating,SIEM
+348,154,Brute Force,Medium,2025-03-18 22:53:58,195.154.157.248,False Positive,IDS
+349,199,Intrusion Attempt,Low,2023-04-04 20:46:20,63.248.8.104,Investigating,SIEM
+350,193,Lateral Movement,Medium,2024-07-27 22:53:05,6.249.97.148,Investigating,Firewall
+351,142,Brute Force,High,2023-02-22 04:27:17,60.167.239.252,Investigating,EDR
+352,180,Privilege Escalation,Low,2025-01-07 04:15:03,157.74.72.194,Escalated,IDS
+353,100,Brute Force,Critical,2024-10-29 12:06:52,199.106.49.57,Open,IDS
+354,128,Phishing,Medium,2023-12-25 19:20:50,171.122.213.213,Open,Manual
+355,190,Malware Detected,Low,2025-01-18 18:38:24,95.234.232.152,Investigating,SIEM
+356,179,Malware Detected,Low,2025-03-09 18:46:09,24.218.158.190,False Positive,SIEM
+357,110,Anomalous Traffic,High,2024-02-25 11:45:59,107.180.251.219,Investigating,WAF
+358,113,Intrusion Attempt,Low,2023-09-16 16:37:01,102.120.123.139,Investigating,SIEM
+359,38,DDoS,Medium,2024-10-13 10:03:44,97.29.191.107,False Positive,WAF
+360,33,Lateral Movement,Low,2023-01-21 10:59:13,210.171.109.22,Resolved,IDS
+361,114,Data Exfiltration,High,2023-09-13 12:49:25,113.214.175.193,Investigating,Firewall
+362,161,DDoS,Low,2023-08-09 20:33:14,102.186.45.10,Escalated,Firewall
+363,165,DDoS,Medium,2025-03-24 05:17:20,176.24.126.143,False Positive,EDR
+364,7,DDoS,Critical,2023-08-01 20:28:05,216.245.159.146,Escalated,EDR
+365,120,Brute Force,High,2024-02-06 01:20:25,215.97.110.61,Resolved,IDS
+366,189,Phishing,Critical,2024-07-04 21:10:09,218.63.178.23,Open,EDR
+367,150,Failed Login,Medium,2023-05-23 12:57:39,183.83.83.110,Escalated,Firewall
+368,32,Anomalous Traffic,Low,2025-03-04 19:39:33,108.150.232.240,Open,WAF
+369,35,Port Scan,Medium,2023-10-03 23:43:00,133.136.230.254,Investigating,EDR
+370,94,Malware Detected,Medium,2024-08-02 06:28:19,106.89.85.196,Investigating,WAF
+371,84,Failed Login,Medium,2023-04-12 22:41:52,97.230.237.35,False Positive,IDS
+372,184,Brute Force,Medium,2023-05-13 10:34:33,69.157.208.5,Investigating,WAF
+373,36,Malware Detected,Critical,2023-09-18 12:40:48,227.111.35.67,Open,EDR
+374,132,Privilege Escalation,Low,2023-01-27 22:44:06,11.118.144.71,Open,SIEM
+375,48,Data Exfiltration,Medium,2024-03-12 12:39:13,45.2.219.174,Open,Manual
+376,99,Lateral Movement,Low,2024-01-04 17:04:34,177.113.66.206,Resolved,WAF
+377,50,Lateral Movement,Low,2024-05-31 05:09:55,54.204.28.88,False Positive,Manual
+378,127,Policy Violation,High,2024-10-28 14:46:10,60.83.23.26,Resolved,Manual
+379,81,Policy Violation,Medium,2024-12-30 07:27:59,242.210.18.82,Escalated,IDS
+380,114,Port Scan,High,2024-06-04 10:44:01,76.121.81.9,Resolved,WAF
+381,72,Brute Force,Low,2024-09-26 11:57:09,226.240.17.181,Open,Manual
+382,128,Privilege Escalation,Medium,2023-07-12 15:24:13,22.206.67.43,Open,IDS
+383,182,Malware Detected,High,2023-04-29 16:43:24,84.34.234.51,Investigating,EDR
+384,57,Privilege Escalation,Low,2023-05-15 21:29:38,169.75.168.11,Open,IDS
+385,135,Policy Violation,Low,2023-06-08 03:28:42,124.56.224.19,Open,IDS
+386,48,Intrusion Attempt,Medium,2024-05-14 22:20:41,205.186.191.236,False Positive,SIEM
+387,128,Policy Violation,Low,2024-08-01 13:05:44,217.35.214.38,Investigating,Manual
+388,48,Data Exfiltration,Critical,2024-09-18 07:22:08,190.40.16.68,Investigating,SIEM
+389,29,Lateral Movement,Low,2023-11-17 04:48:32,192.139.101.30,Investigating,WAF
+390,121,Intrusion Attempt,Critical,2023-11-13 08:06:29,105.78.220.207,Escalated,SIEM
+391,2,Port Scan,Medium,2023-06-03 05:37:44,64.78.219.115,Open,WAF
+392,107,Lateral Movement,High,2023-05-24 00:34:57,164.10.6.156,Open,Firewall
+393,73,Port Scan,Medium,2024-02-13 08:16:52,136.4.130.24,Resolved,SIEM
+394,191,Lateral Movement,Low,2024-04-25 17:11:44,30.204.214.191,Investigating,EDR
+395,200,Privilege Escalation,Medium,2024-12-30 11:43:45,63.103.250.127,Investigating,EDR
+396,68,Failed Login,Medium,2023-11-12 12:19:41,31.73.30.33,Open,SIEM
+397,20,Lateral Movement,Medium,2024-07-04 21:45:00,60.61.204.67,Investigating,EDR
+398,184,Policy Violation,Critical,2024-11-27 08:24:11,78.108.85.137,Resolved,WAF
+399,98,Malware Detected,Medium,2023-09-19 11:21:25,28.250.255.146,Resolved,EDR
+400,162,DDoS,Medium,2024-09-17 11:45:39,145.217.34.250,Escalated,EDR
+401,118,Intrusion Attempt,Low,2023-09-23 06:44:10,167.191.235.145,Investigating,Firewall
+402,138,Phishing,Low,2024-07-24 06:23:42,46.230.135.200,Escalated,Firewall
+403,77,Anomalous Traffic,Low,2024-04-06 16:14:54,204.63.189.187,Investigating,IDS
+404,79,Privilege Escalation,Low,2023-06-13 02:58:55,96.23.141.114,Escalated,IDS
+405,12,Phishing,Low,2024-02-16 21:14:06,47.0.223.58,Resolved,WAF
+406,50,Privilege Escalation,Medium,2024-11-01 10:29:41,125.18.214.188,Escalated,Firewall
+407,40,DDoS,Low,2025-01-23 23:03:29,98.248.223.46,Resolved,Manual
+408,7,Anomalous Traffic,Low,2024-06-02 08:08:10,236.182.30.34,Escalated,SIEM
+409,35,Policy Violation,Low,2025-01-16 18:19:39,61.89.132.154,Resolved,Firewall
+410,35,Intrusion Attempt,Medium,2024-11-09 14:28:05,229.195.59.161,Resolved,IDS
+411,47,Policy Violation,Low,2025-02-26 18:50:53,97.171.167.181,Escalated,IDS
+412,29,Brute Force,Low,2023-07-24 11:54:12,2.70.252.223,Resolved,IDS
+413,101,Phishing,Medium,2025-02-27 01:30:07,114.167.67.180,Investigating,Manual
+414,117,Port Scan,High,2023-08-04 15:07:28,145.137.181.240,Open,WAF
+415,72,Intrusion Attempt,Low,2023-11-17 03:34:52,153.228.64.13,Investigating,EDR
+416,18,Failed Login,High,2023-09-03 06:39:50,12.110.81.9,Investigating,Manual
+417,25,Lateral Movement,High,2024-12-15 05:38:43,252.62.211.174,Investigating,WAF
+418,99,Phishing,Critical,2023-04-07 00:18:01,93.42.133.101,False Positive,Firewall
+419,112,DDoS,Low,2025-02-01 11:57:49,162.148.213.241,Escalated,SIEM
+420,171,Port Scan,Medium,2023-05-20 15:04:10,42.60.12.91,Open,IDS
+421,117,Anomalous Traffic,High,2024-07-03 08:41:14,183.44.108.123,False Positive,SIEM
+422,127,Anomalous Traffic,Low,2024-01-02 03:09:19,51.200.96.165,Open,EDR
+423,124,Lateral Movement,High,2023-06-22 21:18:03,53.122.188.72,Resolved,WAF
+424,31,Policy Violation,High,2024-04-05 11:25:57,36.161.56.47,Open,Manual
+425,166,Failed Login,Medium,2023-11-01 07:09:01,166.156.35.206,Investigating,SIEM
+426,125,Data Exfiltration,Medium,2024-01-09 00:17:00,60.166.192.2,Investigating,Firewall
+427,33,Port Scan,Medium,2023-04-28 12:05:13,27.56.72.162,Escalated,SIEM
+428,81,Port Scan,Critical,2023-07-31 09:07:02,182.59.116.214,Resolved,Manual
+429,88,Privilege Escalation,High,2024-07-12 07:59:05,78.3.140.123,Escalated,Manual
+430,144,Malware Detected,Medium,2023-10-29 01:20:58,78.33.89.53,Open,WAF
+431,187,Data Exfiltration,Medium,2023-08-20 11:56:40,80.225.129.38,Open,Manual
+432,189,Anomalous Traffic,High,2024-02-10 15:08:07,7.145.225.236,Open,Manual
+433,36,Anomalous Traffic,Medium,2024-10-24 11:33:22,16.35.43.180,False Positive,SIEM
+434,187,Policy Violation,High,2023-07-20 06:41:27,213.19.67.153,False Positive,Firewall
+435,176,Lateral Movement,Medium,2024-05-21 05:08:29,120.198.59.237,Open,Firewall
+436,79,Intrusion Attempt,Medium,2023-04-23 16:25:29,165.147.103.212,Investigating,EDR
+437,182,Anomalous Traffic,Medium,2023-01-09 14:42:24,26.95.225.136,Open,Firewall
+438,185,Brute Force,Low,2023-07-14 20:07:22,22.163.78.36,Escalated,WAF
+439,154,Anomalous Traffic,Medium,2023-05-21 11:28:08,64.37.253.190,Escalated,Firewall
+440,143,Malware Detected,Medium,2024-01-25 18:36:57,166.122.212.229,Open,Firewall
+441,182,Port Scan,Medium,2023-03-02 22:05:57,245.49.48.112,Open,Firewall
+442,21,Port Scan,Low,2023-05-17 08:01:55,142.228.212.177,False Positive,SIEM
+443,89,Data Exfiltration,High,2025-02-11 15:32:02,161.246.100.50,Investigating,Manual
+444,159,Policy Violation,Critical,2024-03-31 06:01:01,248.225.85.28,Investigating,SIEM
+445,140,Intrusion Attempt,Medium,2025-01-30 14:59:01,4.119.88.126,Open,EDR
+446,10,Lateral Movement,High,2023-05-28 16:03:12,121.59.235.181,Escalated,SIEM
+447,39,Anomalous Traffic,Medium,2023-04-04 04:28:50,234.179.229.150,Open,SIEM
+448,87,DDoS,Medium,2023-11-19 19:46:56,186.218.199.243,Investigating,WAF
+449,153,Policy Violation,High,2024-04-23 18:31:03,198.195.0.120,False Positive,Firewall
+450,53,Failed Login,Medium,2023-06-08 17:07:35,1.3.234.203,Open,Firewall
+451,200,Privilege Escalation,Medium,2024-08-02 01:45:00,55.144.68.175,False Positive,EDR
+452,47,Failed Login,Medium,2024-06-05 08:42:44,172.119.222.60,Investigating,SIEM
+453,74,Privilege Escalation,High,2023-06-27 15:55:56,135.8.72.154,Resolved,Manual
+454,70,Brute Force,High,2023-02-06 14:32:45,64.44.212.22,False Positive,SIEM
+455,33,Privilege Escalation,Medium,2023-11-07 10:20:40,48.132.235.18,False Positive,EDR
+456,199,Failed Login,Low,2024-06-25 22:50:07,227.235.110.175,Open,Firewall
+457,48,Phishing,Critical,2025-01-25 19:47:15,102.223.50.246,False Positive,SIEM
+458,66,Malware Detected,High,2023-09-01 18:08:10,215.18.238.115,Escalated,WAF
+459,188,Lateral Movement,Medium,2024-10-13 20:49:13,31.52.55.129,Escalated,IDS
+460,182,Intrusion Attempt,Medium,2024-04-02 02:28:44,6.53.127.253,Escalated,SIEM
+461,169,Data Exfiltration,Low,2023-05-24 18:31:08,249.4.178.2,Open,IDS
+462,64,Anomalous Traffic,High,2024-03-19 13:58:12,254.233.181.231,Resolved,WAF
+463,147,Brute Force,Medium,2024-06-21 00:18:20,101.69.191.21,False Positive,IDS
+464,112,Policy Violation,High,2023-05-21 16:53:48,155.66.60.63,Resolved,IDS
+465,101,Phishing,Critical,2023-12-18 23:34:10,76.50.4.98,Open,WAF
+466,48,Malware Detected,Medium,2025-03-12 01:45:33,118.251.167.62,False Positive,SIEM
+467,77,Failed Login,Low,2024-02-08 06:15:23,98.148.135.175,False Positive,EDR
+468,15,DDoS,Medium,2023-10-19 06:22:08,4.247.153.254,Resolved,Firewall
+469,194,Port Scan,Medium,2023-05-28 13:03:31,204.105.72.114,Open,WAF
+470,51,Phishing,Critical,2024-09-08 05:04:05,235.120.50.44,Escalated,WAF
+471,32,Lateral Movement,Low,2024-10-17 05:35:46,150.168.145.247,Investigating,IDS
+472,85,Malware Detected,Medium,2023-06-21 02:05:52,161.107.37.218,Resolved,WAF
+473,196,Phishing,Low,2023-06-12 03:45:18,195.69.230.177,Resolved,EDR
+474,92,Intrusion Attempt,High,2023-07-02 20:51:11,247.105.108.168,Open,EDR
+475,155,DDoS,Critical,2024-06-21 01:38:11,116.150.234.1,Investigating,EDR
+476,49,Malware Detected,High,2024-10-30 09:49:22,220.73.235.57,False Positive,Manual
+477,123,Privilege Escalation,Medium,2023-03-10 10:51:56,82.247.32.3,Resolved,IDS
+478,31,Policy Violation,High,2023-12-22 19:21:12,206.76.125.25,Escalated,Firewall
+479,20,DDoS,Medium,2024-12-05 13:07:50,66.9.248.239,False Positive,Manual
+480,166,Privilege Escalation,Medium,2023-11-27 20:21:01,62.188.231.65,Open,IDS
+481,47,Data Exfiltration,Medium,2023-05-19 17:15:02,40.233.242.219,Open,EDR
+482,85,Lateral Movement,Medium,2025-01-17 10:40:32,73.201.225.21,Investigating,EDR
+483,131,Port Scan,High,2023-06-28 10:57:23,142.8.26.23,Investigating,Manual
+484,178,Anomalous Traffic,Medium,2024-01-17 05:13:48,101.80.127.251,Investigating,SIEM
+485,14,Brute Force,Medium,2023-08-22 18:41:01,169.160.124.70,Resolved,Manual
+486,91,Failed Login,Medium,2023-09-17 06:07:26,60.13.173.8,Escalated,IDS
+487,171,Lateral Movement,Low,2024-01-10 13:20:33,211.191.114.212,False Positive,WAF
+488,77,Policy Violation,High,2024-12-01 06:24:50,135.162.113.103,Escalated,SIEM
+489,39,Port Scan,Critical,2024-07-13 07:11:43,10.63.147.187,Resolved,Manual
+490,25,Privilege Escalation,High,2025-02-04 01:25:43,210.175.59.193,Escalated,WAF
+491,49,Lateral Movement,High,2024-09-18 12:01:02,24.117.12.204,Investigating,SIEM
+492,47,Brute Force,Medium,2023-10-06 13:12:14,214.89.179.203,False Positive,EDR
+493,38,Data Exfiltration,Low,2024-08-15 22:22:02,4.0.173.23,Investigating,Firewall
+494,21,Intrusion Attempt,Medium,2024-12-09 09:41:04,103.203.106.248,Escalated,IDS
+495,48,Policy Violation,Medium,2023-12-25 08:01:32,10.179.178.118,Escalated,SIEM
+496,155,Port Scan,Critical,2024-04-07 23:41:08,95.166.149.33,False Positive,Firewall
+497,110,DDoS,Low,2025-01-23 22:54:11,102.83.218.179,Escalated,Manual
+498,98,Malware Detected,Medium,2023-10-06 02:50:09,130.206.62.78,Resolved,WAF
+499,183,Intrusion Attempt,Critical,2023-09-14 10:13:53,55.74.208.209,False Positive,Manual
+500,78,Phishing,Medium,2023-04-11 11:26:23,187.141.182.150,False Positive,SIEM
+501,78,Anomalous Traffic,Medium,2024-09-24 21:10:34,166.119.111.176,Escalated,IDS
+502,53,DDoS,Critical,2023-05-04 00:07:44,227.209.164.69,Escalated,EDR
+503,90,Phishing,High,2024-02-19 04:04:42,11.102.55.202,False Positive,EDR
+504,164,Port Scan,Low,2023-02-28 15:17:28,206.120.121.85,Investigating,Manual
+505,100,Brute Force,High,2023-10-17 20:00:37,14.139.209.62,Open,SIEM
+506,52,Anomalous Traffic,Medium,2024-06-10 00:24:09,37.229.40.127,Open,Manual
+507,38,Malware Detected,Medium,2024-06-03 23:04:38,5.115.202.29,Open,WAF
+508,165,Failed Login,Medium,2024-01-14 11:52:46,246.150.24.200,Resolved,IDS
+509,59,Port Scan,Medium,2023-06-19 17:21:43,61.203.248.84,False Positive,WAF
+510,100,Lateral Movement,High,2024-10-20 01:22:56,201.191.136.223,False Positive,Firewall
+511,21,Failed Login,Critical,2025-02-22 06:38:39,51.4.84.157,Escalated,EDR
+512,53,Policy Violation,Low,2023-11-05 11:54:38,82.121.86.178,Escalated,Firewall
+513,192,Lateral Movement,Low,2024-07-16 00:35:13,11.118.249.146,Escalated,WAF
+514,15,Lateral Movement,Medium,2024-04-07 15:37:48,85.172.32.160,False Positive,Firewall
+515,30,Privilege Escalation,Medium,2024-01-12 16:03:25,86.27.194.37,Resolved,WAF
+516,28,Lateral Movement,Medium,2025-01-10 09:47:19,173.85.29.207,False Positive,WAF
+517,156,Data Exfiltration,High,2024-03-20 17:04:12,66.45.1.90,Resolved,Firewall
+518,194,Intrusion Attempt,Medium,2023-08-27 18:32:53,186.24.84.59,Investigating,SIEM
+519,176,Malware Detected,Critical,2024-06-06 07:20:59,220.207.86.209,Resolved,Manual
+520,139,Malware Detected,Low,2023-09-26 12:53:14,92.252.120.61,Investigating,SIEM
+521,5,Anomalous Traffic,Medium,2024-06-26 21:15:08,161.58.246.15,Escalated,EDR
+522,113,Anomalous Traffic,Low,2024-03-27 00:56:44,119.142.210.36,Escalated,Firewall
+523,153,Privilege Escalation,Medium,2023-09-22 12:02:12,212.9.192.200,Investigating,SIEM
+524,141,Policy Violation,High,2024-07-06 06:18:16,192.101.202.41,Open,WAF
+525,197,Privilege Escalation,High,2024-12-30 14:31:22,170.218.93.91,Investigating,SIEM
+526,26,Intrusion Attempt,Low,2024-06-21 23:45:37,112.220.47.154,False Positive,Firewall
+527,84,Policy Violation,High,2023-08-21 03:05:56,16.21.14.123,Investigating,Manual
+528,174,Anomalous Traffic,Medium,2023-01-14 23:13:44,160.213.35.192,Escalated,SIEM
+529,14,Anomalous Traffic,Medium,2024-03-10 21:40:35,76.217.51.6,Investigating,WAF
+530,186,Brute Force,Medium,2023-08-13 20:47:43,67.21.252.248,Resolved,WAF
+531,57,Port Scan,Medium,2024-08-09 14:46:10,245.239.69.121,Escalated,IDS
+532,71,Policy Violation,Critical,2023-10-21 09:20:00,38.125.249.84,Investigating,WAF
+533,136,Failed Login,Low,2023-08-10 21:58:32,211.106.74.208,False Positive,EDR
+534,157,Port Scan,Medium,2023-09-17 11:51:04,10.119.240.44,Investigating,IDS
+535,7,Lateral Movement,High,2024-11-25 17:09:44,78.246.12.214,Open,Manual
+536,38,Malware Detected,Medium,2024-03-22 02:11:27,144.26.158.169,Investigating,EDR
+537,190,Lateral Movement,Critical,2023-08-29 10:20:29,71.152.253.129,Investigating,Firewall
+538,43,Port Scan,Medium,2024-06-02 11:06:19,189.22.17.47,Resolved,SIEM
+539,63,Malware Detected,Medium,2023-10-22 17:26:48,175.96.54.112,Open,IDS
+540,175,Policy Violation,Medium,2023-08-11 07:15:40,227.28.156.199,Open,Manual
+541,104,Anomalous Traffic,Critical,2023-02-05 23:00:57,144.144.75.117,Escalated,WAF
+542,83,Phishing,Medium,2025-02-21 00:33:45,137.75.161.211,False Positive,EDR
+543,166,Failed Login,High,2025-02-23 12:12:29,112.162.197.193,Escalated,WAF
+544,63,Phishing,High,2024-01-22 23:40:00,232.102.114.7,False Positive,SIEM
+545,182,Phishing,Medium,2023-09-29 19:20:58,182.65.90.129,False Positive,EDR
+546,128,Malware Detected,Medium,2023-07-21 08:34:21,158.17.3.124,False Positive,IDS
+547,180,Lateral Movement,Medium,2024-11-12 05:58:49,49.90.85.1,Open,IDS
+548,58,Privilege Escalation,Low,2024-08-20 21:12:00,185.229.173.149,Resolved,IDS
+549,58,Port Scan,High,2023-10-30 17:30:39,196.30.46.221,Investigating,IDS
+550,182,DDoS,Low,2025-01-20 07:41:49,58.143.180.153,Resolved,WAF
+551,36,Anomalous Traffic,High,2023-06-19 13:45:02,144.61.106.68,Resolved,IDS
+552,15,Lateral Movement,Low,2024-08-26 14:52:51,211.78.216.174,Resolved,Firewall
+553,125,Port Scan,Medium,2023-09-08 22:25:53,13.176.52.37,Escalated,SIEM
+554,154,Lateral Movement,Medium,2023-11-02 18:42:41,33.137.29.149,Resolved,WAF
+555,7,Brute Force,Medium,2023-01-12 18:42:36,32.102.234.10,Escalated,SIEM
+556,78,Lateral Movement,Low,2023-04-23 01:19:19,238.21.79.94,False Positive,WAF
+557,136,Anomalous Traffic,Low,2024-02-15 20:50:19,213.81.99.223,Escalated,IDS
+558,139,Failed Login,High,2024-05-19 16:41:44,125.75.246.110,Escalated,WAF
+559,11,Privilege Escalation,Low,2024-11-18 11:28:17,51.128.90.42,Escalated,WAF
+560,81,Anomalous Traffic,High,2023-01-24 07:08:21,213.136.130.36,Open,EDR
+561,165,Malware Detected,Low,2023-08-28 23:17:21,54.1.195.17,Investigating,SIEM
+562,45,Failed Login,Medium,2023-05-14 19:28:08,85.139.19.167,False Positive,Manual
+563,170,Intrusion Attempt,Low,2024-03-29 17:20:57,194.30.62.218,Open,IDS
+564,187,Data Exfiltration,Medium,2023-10-12 01:58:17,141.212.57.39,Resolved,SIEM
+565,167,Lateral Movement,Low,2023-02-21 10:24:27,97.219.39.70,Escalated,Manual
+566,54,Phishing,Low,2025-01-23 23:59:14,78.39.207.174,Open,WAF
+567,65,Malware Detected,Medium,2025-01-13 14:33:08,143.182.188.249,False Positive,Firewall
+568,198,Malware Detected,Medium,2024-03-31 17:42:49,82.62.220.244,False Positive,SIEM
+569,23,Intrusion Attempt,High,2023-10-12 07:47:50,214.63.163.87,False Positive,SIEM
+570,78,DDoS,High,2025-01-29 02:54:52,216.154.194.197,False Positive,EDR
+571,140,Malware Detected,Medium,2023-12-05 10:11:21,30.41.144.127,Escalated,WAF
+572,191,Port Scan,Low,2024-03-12 20:03:26,90.41.166.216,Investigating,WAF
+573,92,Malware Detected,Medium,2024-06-21 17:52:31,38.201.121.53,Escalated,Manual
+574,75,Data Exfiltration,Low,2023-09-04 02:12:41,216.224.211.19,False Positive,IDS
+575,82,Intrusion Attempt,Critical,2024-02-20 11:29:24,26.184.51.86,Investigating,SIEM
+576,94,Intrusion Attempt,Medium,2025-02-23 16:36:31,157.236.20.69,False Positive,Manual
+577,57,Policy Violation,Low,2023-09-04 04:18:05,148.168.1.224,Investigating,EDR
+578,49,Privilege Escalation,Medium,2023-05-09 09:58:32,128.1.252.93,Open,EDR
+579,18,Phishing,High,2023-11-21 07:16:32,101.116.160.194,Resolved,IDS
+580,12,Data Exfiltration,Low,2023-05-02 23:29:56,198.152.7.8,Resolved,Firewall
+581,77,Policy Violation,High,2024-05-10 12:53:06,32.206.11.55,False Positive,Firewall
+582,189,Failed Login,Medium,2023-08-10 12:47:07,134.199.96.24,Escalated,Firewall
+583,1,Data Exfiltration,High,2023-06-10 13:11:04,140.187.21.75,Escalated,WAF
+584,199,Failed Login,Critical,2025-01-29 14:30:34,16.219.71.70,Escalated,EDR
+585,44,Data Exfiltration,High,2025-02-26 00:46:23,121.112.100.27,Escalated,EDR
+586,183,Policy Violation,Critical,2024-02-04 17:11:58,99.112.221.71,Resolved,EDR
+587,198,Policy Violation,Medium,2024-08-15 20:15:52,189.73.106.218,Resolved,IDS
+588,150,Lateral Movement,Medium,2023-07-20 01:13:15,5.144.219.121,Investigating,Firewall
+589,181,Malware Detected,Low,2023-01-31 10:18:00,248.228.84.38,Open,SIEM
+590,137,Failed Login,Medium,2023-08-22 11:53:35,86.162.9.111,Open,Firewall
+591,77,Intrusion Attempt,Low,2024-08-03 08:35:47,217.135.155.148,Escalated,Firewall
+592,30,Malware Detected,Low,2024-04-23 17:50:23,65.233.13.13,Investigating,Manual
+593,150,DDoS,Low,2024-10-26 17:47:51,145.188.70.48,Escalated,WAF
+594,44,Malware Detected,Medium,2023-09-24 03:19:31,211.101.144.211,False Positive,SIEM
+595,73,Policy Violation,High,2024-11-14 03:20:24,184.180.197.107,Investigating,SIEM
+596,37,Intrusion Attempt,Medium,2024-11-23 20:54:38,39.73.230.34,Investigating,Manual
+597,112,DDoS,Low,2025-02-18 00:57:06,161.228.200.46,False Positive,Firewall
+598,166,Anomalous Traffic,Critical,2023-03-15 07:52:06,34.36.112.143,Open,Manual
+599,13,Failed Login,Medium,2023-02-13 09:17:24,65.4.93.40,Escalated,EDR
+600,155,Brute Force,High,2024-09-19 13:49:28,110.167.98.209,Investigating,Manual
+601,100,Lateral Movement,High,2024-05-14 01:33:37,135.44.255.211,False Positive,SIEM
+602,127,Lateral Movement,Low,2023-08-23 00:14:11,226.229.53.30,False Positive,IDS
+603,82,Lateral Movement,Low,2023-07-27 07:28:06,81.163.140.36,Escalated,EDR
+604,115,Port Scan,High,2023-06-09 08:17:22,26.76.28.173,Investigating,IDS
+605,80,Failed Login,High,2024-12-27 01:59:20,60.68.90.80,Resolved,IDS
+606,59,DDoS,Medium,2024-08-21 23:03:59,237.173.50.111,Open,WAF
+607,69,Policy Violation,Medium,2023-04-29 15:57:51,68.105.50.75,Escalated,IDS
+608,34,Brute Force,High,2024-05-02 00:10:43,124.172.171.22,Investigating,Manual
+609,101,Port Scan,Critical,2023-11-19 17:58:33,136.107.253.67,Resolved,SIEM
+610,66,Brute Force,Medium,2024-07-20 01:49:54,115.39.207.114,Open,IDS
+611,152,Policy Violation,Low,2023-02-13 23:20:39,235.37.137.90,False Positive,IDS
+612,27,DDoS,Medium,2024-11-23 23:04:25,224.22.12.48,False Positive,SIEM
+613,22,Data Exfiltration,Low,2023-01-22 03:18:10,221.116.103.40,Resolved,SIEM
+614,161,DDoS,Critical,2023-11-09 20:50:57,87.135.35.100,Escalated,Manual
+615,117,Failed Login,Critical,2023-11-15 10:38:13,107.157.77.229,Investigating,SIEM
+616,16,Brute Force,Low,2025-01-12 08:37:14,226.218.118.200,False Positive,WAF
+617,10,Brute Force,Medium,2024-07-31 02:56:27,93.231.142.139,Investigating,Firewall
+618,80,Intrusion Attempt,Medium,2024-05-19 07:07:05,135.150.59.74,Investigating,SIEM
+619,148,Intrusion Attempt,Low,2023-08-25 14:49:39,183.185.105.178,False Positive,EDR
+620,35,Failed Login,Low,2024-09-14 14:03:51,105.30.144.21,Investigating,SIEM
+621,21,Malware Detected,Low,2023-09-15 23:29:04,94.77.55.11,False Positive,EDR
+622,61,Malware Detected,Medium,2023-04-19 20:24:24,198.254.214.101,Resolved,IDS
+623,15,Phishing,Critical,2025-02-23 14:14:49,182.136.128.29,Escalated,Firewall
+624,20,Data Exfiltration,Low,2025-01-25 21:35:25,115.50.166.176,Escalated,EDR
+625,145,Phishing,Medium,2023-07-09 02:19:13,111.137.154.140,False Positive,Manual
+626,113,Policy Violation,Low,2023-01-07 01:15:44,210.190.162.155,Escalated,Firewall
+627,155,Malware Detected,Medium,2024-04-23 20:14:27,105.221.214.158,False Positive,WAF
+628,175,Privilege Escalation,Medium,2024-01-15 16:48:27,241.240.166.240,Escalated,SIEM
+629,198,Lateral Movement,Medium,2023-06-13 07:09:25,25.10.38.122,Open,Firewall
+630,108,Malware Detected,Medium,2024-06-24 21:23:50,193.34.49.97,Resolved,Firewall
+631,154,DDoS,High,2023-08-28 20:43:39,68.115.51.208,False Positive,Firewall
+632,36,DDoS,High,2025-02-01 02:58:38,32.231.184.172,False Positive,WAF
+633,166,Malware Detected,Low,2023-07-27 18:13:38,130.121.239.147,Investigating,Manual
+634,79,DDoS,Low,2023-01-28 19:29:29,205.226.161.13,Investigating,SIEM
+635,41,Privilege Escalation,High,2024-11-12 01:45:07,59.155.104.63,Resolved,WAF
+636,89,Brute Force,Critical,2023-05-01 11:17:05,50.190.165.180,Open,EDR
+637,182,DDoS,Critical,2023-09-01 11:20:22,246.17.210.169,False Positive,IDS
+638,4,Privilege Escalation,High,2023-04-23 21:25:28,28.60.96.50,Escalated,SIEM
+639,145,Data Exfiltration,High,2024-09-07 03:33:17,88.242.89.7,Resolved,IDS
+640,40,Intrusion Attempt,Low,2025-02-28 04:33:55,89.89.135.22,Resolved,WAF
+641,162,Anomalous Traffic,Low,2023-02-12 10:17:31,200.157.24.97,False Positive,EDR
+642,186,Policy Violation,Critical,2023-04-29 20:41:31,117.24.150.219,Open,IDS
+643,135,Privilege Escalation,High,2024-07-31 08:39:05,187.146.86.228,Open,EDR
+644,189,DDoS,Critical,2023-08-07 22:56:18,223.141.236.93,False Positive,EDR
+645,80,Anomalous Traffic,High,2023-07-07 22:14:48,58.192.245.222,Investigating,Firewall
+646,179,Brute Force,Low,2025-03-22 02:29:57,5.109.76.207,Open,SIEM
+647,151,Phishing,Medium,2024-07-14 15:00:40,154.46.60.218,False Positive,WAF
+648,192,Intrusion Attempt,Low,2024-05-07 07:37:11,16.19.24.142,Open,IDS
+649,199,Port Scan,Medium,2025-01-06 18:03:36,232.135.31.178,Open,Firewall
+650,106,Port Scan,Medium,2024-04-29 10:51:53,217.90.40.107,Open,IDS
+651,119,DDoS,Medium,2025-01-20 04:43:17,57.253.178.184,Investigating,WAF
+652,179,Intrusion Attempt,High,2023-12-25 11:08:24,113.123.16.109,Resolved,Firewall
+653,107,Failed Login,Critical,2023-04-07 15:39:41,71.238.250.220,Resolved,WAF
+654,24,Lateral Movement,Low,2023-11-23 21:19:49,125.97.243.68,Investigating,EDR
+655,69,Policy Violation,Medium,2024-11-12 15:56:49,210.54.80.159,Open,IDS
+656,24,Phishing,Low,2025-03-30 05:00:25,242.143.133.21,Resolved,Firewall
+657,118,Phishing,Critical,2024-07-19 06:37:15,215.242.39.162,Investigating,WAF
+658,143,Intrusion Attempt,Medium,2024-09-15 19:05:25,240.239.122.68,False Positive,WAF
+659,6,Phishing,High,2025-01-04 19:45:51,85.78.213.67,False Positive,Firewall
+660,86,Brute Force,Critical,2024-06-27 08:45:53,144.244.35.249,Investigating,Manual
+661,175,Port Scan,Low,2025-03-02 23:42:11,21.168.93.75,False Positive,IDS
+662,85,Phishing,High,2024-01-31 04:10:57,54.112.243.79,Open,IDS
+663,85,Lateral Movement,Critical,2023-07-16 05:25:54,109.213.150.50,False Positive,Manual
+664,111,Failed Login,Medium,2023-09-12 01:57:25,33.59.51.62,Escalated,SIEM
+665,121,Port Scan,Medium,2023-05-13 09:18:59,216.199.80.227,Escalated,Manual
+666,148,Anomalous Traffic,Medium,2023-06-18 22:27:12,113.16.160.131,Escalated,SIEM
+667,14,Failed Login,Medium,2024-05-28 09:37:59,235.38.3.243,Investigating,IDS
+668,141,Phishing,Low,2023-12-08 23:17:16,244.255.165.82,Escalated,SIEM
+669,72,Malware Detected,Medium,2023-04-30 17:29:26,25.172.237.227,Investigating,EDR
+670,131,Policy Violation,Critical,2023-01-16 16:32:30,188.141.132.144,Investigating,WAF
+671,56,Lateral Movement,Low,2025-03-07 03:58:07,251.36.80.48,Investigating,EDR
+672,193,Policy Violation,High,2023-02-13 07:02:43,187.204.109.72,False Positive,EDR
+673,72,Policy Violation,Medium,2024-10-08 07:03:18,1.33.38.94,Investigating,EDR
+674,66,Phishing,Low,2024-09-13 13:05:04,159.55.65.77,Resolved,SIEM
+675,121,Port Scan,High,2023-04-12 16:31:57,174.132.139.209,Resolved,SIEM
+676,73,Data Exfiltration,High,2024-10-02 01:39:15,21.221.69.54,Resolved,Firewall
+677,103,Lateral Movement,Medium,2024-06-05 06:08:13,168.64.201.245,Escalated,Manual
+678,77,Privilege Escalation,Medium,2025-03-10 04:22:06,39.243.66.171,Investigating,WAF
+679,178,Malware Detected,Low,2023-11-26 07:53:33,115.187.244.24,Investigating,IDS
+680,141,Failed Login,High,2023-07-27 13:11:09,40.106.84.158,False Positive,SIEM
+681,88,Port Scan,Medium,2024-07-22 05:43:03,165.84.193.221,Resolved,Firewall
+682,29,Data Exfiltration,Medium,2024-06-01 22:47:46,174.242.7.50,False Positive,Firewall
+683,124,Data Exfiltration,Low,2023-08-06 15:36:54,69.57.13.51,Open,Manual
+684,102,Data Exfiltration,Critical,2023-01-12 18:43:31,154.33.22.148,False Positive,Manual
+685,59,Malware Detected,High,2024-04-29 21:36:28,57.18.209.64,False Positive,SIEM
+686,16,DDoS,Medium,2024-03-26 06:25:29,212.2.192.99,False Positive,EDR
+687,55,Phishing,Low,2024-01-08 00:40:49,157.253.7.5,Open,WAF
+688,57,Brute Force,Medium,2023-12-17 13:50:52,113.201.44.100,Investigating,Manual
+689,39,Data Exfiltration,Critical,2024-08-26 08:05:31,246.112.223.251,Resolved,Manual
+690,108,Brute Force,Medium,2024-01-10 00:34:57,184.220.162.73,Open,Manual
+691,141,Data Exfiltration,Critical,2023-06-07 09:24:30,191.205.30.248,Open,Manual
+692,185,Anomalous Traffic,High,2025-03-23 03:35:36,110.32.81.197,Open,WAF
+693,27,Intrusion Attempt,Medium,2023-04-11 04:59:16,64.247.204.185,False Positive,WAF
+694,104,Brute Force,High,2023-06-06 23:11:01,104.41.116.253,Open,Firewall
+695,199,Phishing,High,2023-03-14 09:30:43,76.150.25.199,Investigating,WAF
+696,3,Brute Force,Medium,2023-12-11 04:59:32,251.52.56.83,Escalated,Manual
+697,166,Malware Detected,Medium,2025-03-16 11:53:17,196.190.205.241,Investigating,WAF
+698,96,Privilege Escalation,Low,2024-07-28 21:27:25,254.24.251.170,Open,WAF
+699,144,Lateral Movement,High,2024-03-14 14:11:37,130.211.6.53,Resolved,WAF
+700,138,Policy Violation,High,2024-09-20 17:08:04,37.153.7.29,Open,IDS
+701,167,Intrusion Attempt,Medium,2024-04-15 23:04:33,222.134.6.82,Escalated,Manual
+702,27,Lateral Movement,High,2024-08-28 15:38:49,14.219.139.209,Escalated,Manual
+703,15,Lateral Movement,Low,2023-08-21 16:08:03,76.20.18.212,Open,SIEM
+704,79,Phishing,Low,2023-08-17 02:38:46,78.7.154.1,Resolved,EDR
+705,56,Intrusion Attempt,High,2024-03-08 00:44:49,120.135.75.72,Investigating,SIEM
+706,137,Phishing,High,2024-07-17 06:24:41,182.68.22.135,Investigating,IDS
+707,153,Failed Login,High,2023-11-19 03:39:06,46.197.158.33,False Positive,Manual
+708,51,Data Exfiltration,High,2023-07-18 01:19:08,86.136.43.68,Resolved,IDS
+709,9,Policy Violation,High,2024-12-25 08:15:14,82.162.203.56,False Positive,Firewall
+710,65,Intrusion Attempt,High,2023-01-28 20:04:16,129.205.76.4,Investigating,SIEM
+711,29,Policy Violation,Medium,2024-06-25 14:48:10,82.168.125.168,False Positive,SIEM
+712,61,Port Scan,Medium,2025-01-03 17:20:48,60.171.19.184,Escalated,IDS
+713,179,Data Exfiltration,Medium,2024-07-26 18:05:49,43.26.70.91,Resolved,EDR
+714,185,Lateral Movement,Low,2023-05-30 11:05:06,232.165.61.243,Investigating,WAF
+715,143,DDoS,Low,2023-12-26 22:01:28,185.250.55.209,Investigating,IDS
+716,8,Lateral Movement,Medium,2023-03-08 10:26:34,106.68.19.10,Open,IDS
+717,73,Anomalous Traffic,Medium,2024-04-23 12:42:50,177.225.59.83,Escalated,WAF
+718,136,Port Scan,Medium,2024-11-18 02:38:36,58.177.150.115,Open,WAF
+719,171,Privilege Escalation,Low,2023-11-06 10:45:10,45.49.51.144,Open,EDR
+720,192,Data Exfiltration,Critical,2023-02-13 09:46:40,77.154.113.172,False Positive,IDS
+721,88,Intrusion Attempt,Medium,2024-07-01 23:06:38,199.74.181.165,Escalated,SIEM
+722,136,Policy Violation,Medium,2024-07-08 02:31:01,175.247.7.37,Investigating,WAF
+723,27,Policy Violation,Medium,2024-03-15 00:01:23,6.160.4.138,Investigating,IDS
+724,176,Failed Login,High,2023-12-14 11:09:08,5.151.214.95,False Positive,Manual
+725,41,DDoS,High,2023-04-01 06:30:10,121.142.24.78,Investigating,SIEM
+726,82,Brute Force,Medium,2023-05-22 00:38:26,125.91.72.34,Escalated,IDS
+727,140,Anomalous Traffic,Medium,2024-11-17 23:06:25,33.183.129.243,Escalated,Firewall
+728,102,Port Scan,Low,2023-09-16 00:53:15,254.87.232.206,Escalated,IDS
+729,95,Anomalous Traffic,Medium,2023-07-03 04:48:18,39.150.31.24,Resolved,WAF
+730,41,Malware Detected,Low,2023-10-24 14:13:12,12.239.146.161,Escalated,SIEM
+731,115,Anomalous Traffic,Medium,2024-11-10 21:10:51,40.209.217.162,Open,WAF
+732,39,Brute Force,Low,2024-06-20 10:43:54,92.180.70.245,Investigating,WAF
+733,134,Brute Force,Medium,2025-03-02 15:08:12,65.34.228.64,Investigating,Firewall
+734,175,Anomalous Traffic,Low,2024-06-13 01:41:01,218.5.85.254,Open,EDR
+735,127,Port Scan,Low,2024-06-30 08:40:17,10.197.161.41,Investigating,Firewall
+736,133,Data Exfiltration,High,2023-06-04 08:23:43,233.161.172.57,False Positive,WAF
+737,199,Data Exfiltration,High,2024-04-06 18:25:30,240.165.195.251,Investigating,EDR
+738,4,Intrusion Attempt,Medium,2024-08-18 14:43:30,5.175.28.137,Escalated,WAF
+739,29,Brute Force,Low,2024-07-08 12:23:42,151.126.169.7,Investigating,Manual
+740,27,DDoS,Medium,2024-04-09 02:01:37,107.70.8.227,Investigating,IDS
+741,141,DDoS,High,2025-02-21 16:35:31,67.51.0.193,Investigating,Manual
+742,18,Anomalous Traffic,Low,2024-09-13 03:52:31,55.224.67.175,False Positive,WAF
+743,158,Malware Detected,Low,2024-05-22 22:09:54,17.57.53.214,Escalated,Firewall
+744,106,Policy Violation,Low,2024-02-23 21:18:11,158.234.241.1,Investigating,SIEM
+745,133,Lateral Movement,Low,2023-05-11 10:39:15,60.142.60.193,Open,Manual
+746,190,Failed Login,High,2023-03-02 05:22:34,94.4.177.133,False Positive,Manual
+747,95,Failed Login,Medium,2025-03-31 17:46:05,21.252.197.16,Escalated,Manual
+748,75,DDoS,Medium,2023-08-13 13:15:56,111.103.238.20,Resolved,Firewall
+749,138,Intrusion Attempt,Medium,2023-03-21 22:28:31,39.131.193.157,Resolved,Firewall
+750,90,DDoS,Medium,2024-04-25 15:33:54,187.20.92.20,Escalated,EDR
+751,139,DDoS,Medium,2024-12-20 20:20:17,14.176.6.47,Escalated,IDS
+752,145,Anomalous Traffic,Medium,2023-10-29 03:13:49,246.230.7.25,Open,SIEM
+753,71,Lateral Movement,High,2023-03-24 00:13:11,135.115.135.244,Escalated,WAF
+754,126,Lateral Movement,High,2024-04-21 15:10:10,80.63.21.116,False Positive,EDR
+755,11,DDoS,High,2023-12-21 06:15:48,195.40.219.41,Escalated,Manual
+756,27,Brute Force,Low,2025-01-01 04:28:48,69.145.237.51,Investigating,Firewall
+757,33,Intrusion Attempt,Medium,2023-04-25 21:12:29,178.140.247.106,Investigating,WAF
+758,78,Data Exfiltration,Medium,2024-07-15 01:17:02,63.169.109.208,False Positive,IDS
+759,79,Port Scan,High,2024-04-15 21:02:49,71.214.212.160,Escalated,Firewall
+760,113,DDoS,Medium,2023-11-24 00:56:47,226.116.90.234,Resolved,EDR
+761,93,Intrusion Attempt,Medium,2023-03-04 03:20:15,112.100.181.119,False Positive,EDR
+762,45,Brute Force,High,2024-11-04 15:51:37,74.60.182.212,Resolved,Firewall
+763,192,Port Scan,Medium,2023-05-28 00:16:26,216.13.249.73,Escalated,EDR
+764,138,Data Exfiltration,Medium,2023-02-24 08:34:57,167.202.99.107,Investigating,IDS
+765,144,Brute Force,Medium,2024-09-27 13:27:07,250.5.163.69,Resolved,EDR
+766,107,Malware Detected,Medium,2024-03-21 02:35:31,195.254.172.160,Escalated,IDS
+767,25,Brute Force,Low,2023-06-10 11:23:07,109.228.89.175,Investigating,SIEM
+768,27,Malware Detected,Medium,2024-03-30 01:27:41,233.215.26.235,Resolved,Manual
+769,128,DDoS,Medium,2023-06-12 02:35:02,7.106.4.188,Resolved,Manual
+770,8,Port Scan,High,2023-10-12 21:13:05,61.24.157.187,Escalated,EDR
+771,63,Anomalous Traffic,Critical,2025-01-07 04:33:45,217.64.183.200,Open,SIEM
+772,187,Policy Violation,Critical,2024-07-23 21:54:26,194.178.40.199,Investigating,WAF
+773,14,Brute Force,High,2024-12-05 19:06:38,74.57.213.215,Investigating,Firewall
+774,132,Data Exfiltration,Medium,2024-11-03 19:52:04,195.199.9.224,False Positive,SIEM
+775,194,Policy Violation,Medium,2023-04-23 22:26:21,53.50.31.175,Escalated,Firewall
+776,108,Failed Login,Low,2024-08-22 10:55:20,138.53.226.154,Open,WAF
+777,88,Intrusion Attempt,High,2024-04-27 20:56:38,78.168.51.48,False Positive,SIEM
+778,19,Data Exfiltration,Medium,2023-11-10 01:03:40,117.3.97.194,Open,SIEM
+779,141,Data Exfiltration,High,2023-12-08 01:29:16,140.93.219.130,Open,WAF
+780,20,Lateral Movement,High,2024-01-17 05:55:21,219.231.51.73,Escalated,IDS
+781,119,Malware Detected,High,2024-06-16 00:23:17,250.214.24.155,Escalated,Firewall
+782,12,Data Exfiltration,Low,2024-09-15 17:01:33,187.38.201.216,False Positive,WAF
+783,86,DDoS,Low,2023-08-26 13:10:30,195.207.96.41,Investigating,WAF
+784,181,Phishing,Critical,2023-07-03 09:48:33,196.226.65.67,Resolved,EDR
+785,193,Brute Force,Medium,2024-11-16 02:05:55,9.182.171.247,False Positive,Manual
+786,14,DDoS,High,2024-03-18 09:24:41,167.245.124.22,False Positive,IDS
+787,115,Failed Login,Critical,2024-03-30 16:40:42,243.145.58.94,Resolved,EDR
+788,19,Privilege Escalation,Medium,2023-01-05 11:41:15,134.225.11.27,Investigating,WAF
+789,71,Lateral Movement,Medium,2024-11-19 07:41:26,32.246.84.230,False Positive,Manual
+790,80,Malware Detected,Low,2023-11-21 04:02:01,89.38.110.154,Open,Manual
+791,141,DDoS,Medium,2024-06-27 03:30:17,11.5.236.22,Open,IDS
+792,15,Data Exfiltration,High,2025-02-23 12:20:16,202.12.74.207,Open,SIEM
+793,3,Anomalous Traffic,High,2025-03-26 12:13:25,165.129.95.201,Investigating,IDS
+794,82,Intrusion Attempt,High,2024-05-28 06:02:45,100.6.173.39,Resolved,EDR
+795,78,Intrusion Attempt,High,2024-05-26 15:35:44,50.64.72.22,Escalated,IDS
+796,67,Port Scan,High,2023-07-19 09:57:55,8.84.177.155,Escalated,IDS
+797,173,Anomalous Traffic,Low,2023-12-07 18:08:20,11.30.210.55,False Positive,Firewall
+798,51,Failed Login,High,2024-04-10 14:31:03,114.218.211.35,Resolved,SIEM
+799,164,Phishing,Low,2023-06-30 19:58:29,44.6.41.33,Open,WAF
+800,112,Data Exfiltration,Low,2024-01-23 08:41:10,254.113.222.36,Escalated,Firewall
+801,47,Intrusion Attempt,Medium,2023-04-03 18:03:18,96.196.166.121,Open,EDR
+802,76,Phishing,High,2025-01-10 23:32:32,225.208.1.179,False Positive,Firewall
+803,111,Anomalous Traffic,Medium,2024-11-25 09:28:24,231.88.146.218,Escalated,Firewall
+804,62,Policy Violation,Medium,2024-05-01 11:16:39,35.95.215.235,Resolved,IDS
+805,198,Anomalous Traffic,Medium,2023-06-21 07:21:52,173.154.133.4,False Positive,WAF
+806,42,Intrusion Attempt,Low,2023-01-10 08:41:38,250.55.192.131,Open,SIEM
+807,53,Failed Login,Medium,2024-03-31 10:02:08,182.217.44.83,Investigating,EDR
+808,56,Policy Violation,Low,2023-08-13 15:56:02,218.100.12.216,Investigating,Firewall
+809,189,Failed Login,Low,2025-02-23 06:02:05,138.106.209.21,Open,WAF
+810,82,Brute Force,Critical,2023-04-29 04:46:11,77.208.216.252,Open,SIEM
+811,179,Lateral Movement,High,2023-02-11 17:07:17,247.199.154.65,Open,IDS
+812,132,Lateral Movement,Medium,2023-02-16 23:03:17,125.48.21.90,Open,Manual
+813,161,Failed Login,Medium,2023-12-30 12:05:51,14.131.184.75,Investigating,EDR
+814,140,Port Scan,Medium,2024-04-28 10:26:33,113.190.97.254,Escalated,EDR
+815,73,Privilege Escalation,Low,2024-07-07 11:10:24,201.145.17.215,False Positive,SIEM
+816,195,Data Exfiltration,High,2023-07-25 18:49:26,136.76.182.108,False Positive,SIEM
+817,80,Phishing,Low,2023-06-06 00:23:29,47.128.56.125,False Positive,Firewall
+818,99,Failed Login,High,2024-02-09 07:03:37,89.204.160.32,Escalated,Manual
+819,35,Phishing,Medium,2024-11-26 03:02:14,101.83.179.79,Open,Firewall
+820,55,DDoS,High,2023-02-21 22:34:30,10.92.63.123,Investigating,Firewall
+821,9,Policy Violation,Low,2023-11-18 05:27:15,113.100.38.70,Investigating,Manual
+822,81,Malware Detected,High,2023-10-05 10:31:39,202.221.78.162,False Positive,WAF
+823,27,Phishing,Medium,2023-01-02 21:52:44,254.76.213.191,False Positive,SIEM
+824,77,Lateral Movement,Low,2023-01-28 08:51:26,143.133.249.225,Investigating,IDS
+825,39,Data Exfiltration,Medium,2024-10-09 13:19:16,15.54.70.154,Escalated,WAF
+826,91,DDoS,Low,2023-07-17 13:58:47,8.140.180.112,False Positive,IDS
+827,45,Phishing,Medium,2023-04-25 18:28:52,234.115.218.242,Resolved,EDR
+828,20,Port Scan,Medium,2023-11-07 17:01:13,206.99.48.87,Escalated,WAF
+829,180,Phishing,Medium,2024-05-22 22:35:35,72.87.149.18,Investigating,Manual
+830,47,DDoS,Low,2024-06-28 22:40:58,123.37.150.142,Open,WAF
+831,3,DDoS,Medium,2023-12-16 00:52:53,31.151.205.127,Investigating,WAF
+832,115,DDoS,Medium,2023-01-18 01:22:47,229.42.72.163,Escalated,SIEM
+833,77,Port Scan,Low,2023-02-07 03:54:42,104.75.213.142,Resolved,WAF
+834,160,Intrusion Attempt,Medium,2023-04-21 03:44:25,63.11.0.137,Investigating,WAF
+835,154,DDoS,Medium,2025-03-10 23:44:01,207.226.40.47,Open,WAF
+836,160,Anomalous Traffic,Medium,2025-02-09 13:02:49,97.144.234.78,False Positive,WAF
+837,55,Anomalous Traffic,Medium,2023-08-09 16:16:45,115.231.243.249,Investigating,IDS
+838,115,Lateral Movement,Medium,2024-06-26 20:00:27,163.238.210.233,False Positive,Firewall
+839,159,Anomalous Traffic,Low,2025-03-21 18:47:35,123.166.7.4,False Positive,IDS
+840,183,Anomalous Traffic,High,2023-07-24 16:49:40,138.142.123.248,Open,WAF
+841,41,Intrusion Attempt,Medium,2024-01-20 19:21:31,111.183.121.226,False Positive,SIEM
+842,18,Policy Violation,Medium,2025-02-22 19:29:25,212.3.137.247,Investigating,Firewall
+843,140,DDoS,Critical,2023-02-22 09:41:51,144.19.163.217,Open,Manual
+844,151,Malware Detected,Low,2025-03-26 18:53:27,117.214.30.142,Escalated,Manual
+845,116,Data Exfiltration,Low,2023-12-09 03:28:09,240.28.51.220,Escalated,WAF
+846,181,DDoS,Critical,2024-02-18 00:24:09,76.40.197.182,False Positive,SIEM
+847,84,Brute Force,Low,2025-03-06 19:46:09,205.163.248.242,Open,Firewall
+848,58,Malware Detected,Medium,2023-08-28 00:30:10,253.153.72.183,Investigating,WAF
+849,87,Malware Detected,Low,2023-11-19 21:53:28,123.118.139.97,Escalated,SIEM
+850,140,Malware Detected,Low,2023-07-20 02:19:27,149.107.27.108,False Positive,WAF
+851,68,Port Scan,Medium,2023-10-05 02:41:52,187.140.62.227,False Positive,IDS
+852,36,Brute Force,Low,2023-06-02 22:46:02,35.76.5.88,Resolved,Manual
+853,59,Malware Detected,Medium,2024-12-27 15:28:33,64.30.210.244,Open,SIEM
+854,147,Anomalous Traffic,Medium,2024-08-08 19:37:09,63.27.113.146,False Positive,WAF
+855,158,Malware Detected,Medium,2024-04-16 15:19:26,184.98.182.31,False Positive,Manual
+856,20,Anomalous Traffic,High,2023-04-03 07:22:39,88.173.149.195,Open,SIEM
+857,39,Anomalous Traffic,Critical,2025-02-26 21:07:26,106.98.208.40,Resolved,SIEM
+858,40,Phishing,Medium,2024-08-17 20:47:12,102.94.84.28,Escalated,SIEM
+859,57,Phishing,Low,2023-02-21 08:29:27,109.78.163.120,Investigating,WAF
+860,61,Anomalous Traffic,Medium,2024-12-30 21:42:38,157.177.58.55,Resolved,EDR
+861,130,Data Exfiltration,High,2024-07-03 07:55:06,249.61.119.114,Open,SIEM
+862,177,Policy Violation,High,2025-02-04 02:20:29,197.68.165.149,Resolved,SIEM
+863,124,DDoS,Medium,2023-06-29 06:57:49,221.30.86.190,Investigating,WAF
+864,11,Phishing,Medium,2024-09-21 07:46:55,92.24.0.72,Resolved,WAF
+865,54,DDoS,High,2023-09-20 12:27:39,14.241.210.129,Open,SIEM
+866,65,Policy Violation,Low,2024-03-27 21:39:53,113.210.105.17,Resolved,SIEM
+867,92,Data Exfiltration,High,2024-08-29 14:11:32,85.171.189.208,Resolved,Firewall
+868,143,Phishing,High,2023-09-22 01:36:56,128.160.187.134,False Positive,Manual
+869,51,Malware Detected,Low,2025-03-17 08:07:29,217.68.125.66,False Positive,EDR
+870,133,Malware Detected,High,2023-05-28 10:57:39,197.78.231.251,Investigating,EDR
+871,65,Port Scan,High,2023-03-14 05:32:12,108.160.201.197,Investigating,IDS
+872,40,Anomalous Traffic,Low,2023-02-18 09:11:00,60.166.4.176,Escalated,Firewall
+873,107,DDoS,Critical,2024-10-14 03:26:12,135.246.16.144,Investigating,SIEM
+874,139,Policy Violation,Low,2024-04-05 19:11:04,120.255.119.24,Investigating,IDS
+875,150,Lateral Movement,Medium,2023-06-21 05:40:15,68.110.246.184,Open,Manual
+876,183,DDoS,Medium,2023-08-02 20:21:35,153.163.118.61,Investigating,SIEM
+877,32,Privilege Escalation,Medium,2024-08-20 05:11:30,127.7.68.228,Escalated,SIEM
+878,58,Phishing,Medium,2024-04-02 15:07:09,233.39.18.23,Escalated,EDR
+879,162,Intrusion Attempt,Medium,2023-03-04 14:55:39,103.14.186.206,Resolved,SIEM
+880,179,Anomalous Traffic,High,2023-07-21 11:10:05,66.63.142.97,False Positive,WAF
+881,78,Data Exfiltration,High,2024-01-19 03:41:46,181.125.30.37,Investigating,IDS
+882,92,Policy Violation,High,2024-12-10 20:30:09,137.111.119.142,Investigating,SIEM
+883,191,Intrusion Attempt,Medium,2024-07-05 14:58:54,200.209.187.91,False Positive,Firewall
+884,174,Lateral Movement,High,2023-04-01 10:44:16,77.117.228.42,Open,Firewall
+885,107,Privilege Escalation,Critical,2023-05-14 14:17:10,150.34.107.218,Escalated,SIEM
+886,1,Brute Force,Medium,2024-08-20 00:29:53,251.75.64.157,False Positive,SIEM
+887,23,Policy Violation,Low,2023-10-19 01:38:12,194.157.205.57,Open,Manual
+888,198,Policy Violation,Low,2025-01-30 04:11:17,196.185.33.14,Investigating,EDR
+889,129,Policy Violation,High,2024-04-07 12:01:48,32.238.168.129,Escalated,Manual
+890,172,Malware Detected,High,2024-03-29 23:40:17,48.66.140.27,False Positive,WAF
+891,170,Failed Login,High,2024-03-13 11:50:15,197.66.205.189,Open,WAF
+892,59,DDoS,Medium,2025-01-05 01:45:38,97.103.149.157,Resolved,IDS
+893,156,Lateral Movement,Medium,2024-12-20 23:49:39,142.139.129.65,Open,SIEM
+894,183,DDoS,Medium,2023-04-11 05:07:07,87.242.39.138,False Positive,WAF
+895,194,Anomalous Traffic,Medium,2024-06-10 03:23:08,125.82.181.195,Resolved,EDR
+896,66,Phishing,Critical,2023-07-11 14:18:50,131.121.99.207,Investigating,IDS
+897,154,Anomalous Traffic,Medium,2024-03-29 15:32:47,220.22.84.237,Open,EDR
+898,60,Intrusion Attempt,Low,2024-08-17 00:54:31,36.220.198.16,Resolved,EDR
+899,108,Policy Violation,High,2024-03-25 10:45:05,212.138.88.152,Investigating,EDR
+900,101,Malware Detected,Medium,2024-11-08 05:37:04,90.97.159.31,Resolved,Manual
+901,9,Intrusion Attempt,Low,2025-02-21 03:11:14,202.233.78.49,False Positive,Firewall
+902,150,Data Exfiltration,Critical,2023-10-11 10:02:29,113.89.135.134,False Positive,IDS
+903,119,Malware Detected,Critical,2024-10-30 20:09:30,133.163.34.98,Resolved,IDS
+904,194,Privilege Escalation,Low,2024-10-25 20:00:35,67.2.220.110,Open,WAF
+905,158,Failed Login,Low,2023-12-05 11:01:58,35.37.31.120,Resolved,SIEM
+906,100,Intrusion Attempt,High,2024-08-03 00:07:56,56.149.87.16,Resolved,WAF
+907,53,Anomalous Traffic,Medium,2023-08-31 20:31:57,111.109.232.7,Open,IDS
+908,10,Lateral Movement,Medium,2024-05-22 23:50:02,109.20.196.6,Open,SIEM
+909,176,Anomalous Traffic,Medium,2024-12-10 06:40:00,23.149.239.5,Resolved,IDS
+910,24,Malware Detected,Medium,2023-12-20 20:50:44,176.93.67.50,Open,SIEM
+911,183,Malware Detected,Medium,2023-06-08 08:02:05,141.38.161.40,Escalated,IDS
+912,72,Failed Login,Low,2024-04-17 10:01:58,254.7.139.127,Resolved,Firewall
+913,40,Failed Login,Medium,2023-06-03 06:44:24,251.214.222.249,Open,SIEM
+914,121,Malware Detected,High,2024-07-06 18:58:21,102.35.177.145,Resolved,SIEM
+915,109,Intrusion Attempt,Medium,2023-10-27 04:45:02,35.94.117.96,Escalated,Firewall
+916,80,Port Scan,Low,2024-11-05 21:39:49,156.156.49.212,Open,WAF
+917,123,Malware Detected,Medium,2025-03-18 14:21:21,211.8.184.239,Resolved,IDS
+918,192,Failed Login,Medium,2023-08-09 18:47:14,30.137.107.60,Escalated,Firewall
+919,4,Intrusion Attempt,High,2023-01-05 05:21:43,128.20.9.193,Open,Firewall
+920,5,Phishing,Low,2023-04-30 18:23:25,139.8.225.1,Escalated,Manual
+921,91,Intrusion Attempt,Critical,2024-08-22 04:29:09,119.49.181.197,Escalated,Manual
+922,166,Brute Force,High,2023-08-31 00:37:06,38.27.236.124,Open,Firewall
+923,149,Lateral Movement,Low,2023-01-21 18:29:44,13.15.44.8,Escalated,WAF
+924,167,Anomalous Traffic,Low,2024-09-11 08:07:53,253.188.64.241,Escalated,EDR
+925,38,Malware Detected,Critical,2024-07-11 12:31:14,253.212.15.194,Escalated,Firewall
+926,67,Anomalous Traffic,Low,2023-10-03 06:43:14,45.240.11.77,Investigating,IDS
+927,80,Privilege Escalation,Low,2024-01-16 14:01:55,219.157.148.242,Resolved,SIEM
+928,195,Privilege Escalation,Medium,2024-07-16 08:32:23,16.193.108.71,Investigating,EDR
+929,103,Policy Violation,Critical,2024-05-13 07:28:49,62.155.115.103,Escalated,Firewall
+930,4,Failed Login,Medium,2023-01-05 10:48:35,147.192.212.117,Open,SIEM
+931,105,Malware Detected,Low,2024-12-06 11:56:50,217.23.108.243,Investigating,WAF
+932,129,Privilege Escalation,Medium,2023-04-29 00:01:17,53.117.137.3,Open,SIEM
+933,47,Data Exfiltration,High,2024-04-06 09:43:20,34.136.22.230,Resolved,WAF
+934,132,Anomalous Traffic,Low,2024-02-18 14:56:21,2.120.27.2,Resolved,SIEM
+935,26,Port Scan,Medium,2024-09-04 03:44:38,209.249.92.242,Open,EDR
+936,152,DDoS,High,2023-07-25 04:00:59,77.93.251.89,Escalated,SIEM
+937,132,DDoS,Low,2023-12-09 15:10:23,74.183.205.233,Investigating,SIEM
+938,12,Lateral Movement,High,2023-06-14 04:17:34,99.27.90.135,Resolved,Manual
+939,157,Data Exfiltration,Medium,2024-12-23 04:32:41,158.21.51.120,Escalated,Firewall
+940,105,Policy Violation,High,2024-10-03 00:30:35,131.73.69.165,Resolved,SIEM
+941,123,Data Exfiltration,Medium,2025-02-08 11:32:36,239.100.50.53,Open,IDS
+942,51,Port Scan,Low,2024-03-31 03:03:30,209.95.195.47,Escalated,Manual
+943,57,Privilege Escalation,High,2024-11-12 14:25:59,29.22.85.143,Escalated,IDS
+944,196,Failed Login,High,2025-03-17 00:21:07,110.2.17.211,Escalated,SIEM
+945,157,Lateral Movement,Medium,2023-08-06 01:42:54,198.188.87.184,Resolved,EDR
+946,44,Malware Detected,Medium,2023-05-21 00:51:53,226.74.44.121,Resolved,Firewall
+947,132,DDoS,Low,2024-01-28 07:05:45,53.126.113.79,False Positive,WAF
+948,7,Data Exfiltration,Medium,2023-07-12 10:44:54,52.200.167.252,Resolved,WAF
+949,173,Intrusion Attempt,Low,2024-09-20 19:53:48,75.146.17.77,Escalated,EDR
+950,55,Data Exfiltration,High,2023-08-12 06:28:49,163.224.200.19,Open,IDS
+951,96,Port Scan,Medium,2024-11-26 13:55:34,125.166.239.16,Escalated,SIEM
+952,52,Malware Detected,Medium,2023-11-26 20:21:57,173.35.44.8,False Positive,WAF
+953,181,Failed Login,Medium,2024-01-05 07:08:22,144.46.157.5,Investigating,Firewall
+954,159,Intrusion Attempt,High,2024-07-01 00:03:32,237.186.170.79,Resolved,SIEM
+955,143,Failed Login,Low,2025-02-20 13:58:46,71.30.117.83,Open,Firewall
+956,16,Data Exfiltration,High,2023-05-13 17:30:59,129.110.137.147,Escalated,Firewall
+957,132,Failed Login,Critical,2023-04-04 04:05:04,101.160.65.121,Escalated,Firewall
+958,121,Malware Detected,Medium,2023-08-03 00:21:39,135.205.48.236,Investigating,WAF
+959,192,Privilege Escalation,Medium,2023-12-08 07:17:28,33.130.57.124,Investigating,Firewall
+960,134,Data Exfiltration,Low,2023-11-27 20:23:32,56.142.91.239,Open,EDR
+961,72,Port Scan,Medium,2024-10-21 03:40:39,91.109.111.77,Escalated,Manual
+962,184,Phishing,Low,2024-01-27 03:42:41,235.70.107.131,Investigating,Firewall
+963,88,Phishing,High,2024-10-27 04:28:12,65.64.195.154,Open,EDR
+964,79,DDoS,Medium,2024-10-15 23:11:10,142.76.220.38,Open,SIEM
+965,80,Brute Force,Low,2024-09-27 07:37:16,14.159.65.75,Investigating,EDR
+966,83,Phishing,Low,2024-07-13 22:09:19,153.177.204.152,Open,IDS
+967,95,Lateral Movement,Low,2023-03-04 19:13:16,145.93.112.69,False Positive,EDR
+968,161,Data Exfiltration,Critical,2023-10-19 12:34:27,80.103.216.138,Resolved,EDR
+969,48,Policy Violation,Medium,2023-09-25 07:04:01,209.138.93.59,Escalated,Manual
+970,82,Brute Force,Medium,2024-12-14 04:07:56,117.67.56.107,Resolved,IDS
+971,46,Anomalous Traffic,High,2024-04-08 00:33:14,207.31.142.39,False Positive,Manual
+972,95,Port Scan,Low,2024-12-29 17:33:16,4.65.202.76,False Positive,EDR
+973,163,Anomalous Traffic,High,2023-08-25 18:17:40,138.53.222.165,Investigating,Manual
+974,188,Anomalous Traffic,Medium,2023-09-15 21:14:12,240.118.152.28,False Positive,WAF
+975,161,Failed Login,Low,2023-07-03 20:39:24,124.158.176.209,False Positive,IDS
+976,88,Anomalous Traffic,Low,2023-06-24 12:56:13,7.159.218.82,Resolved,IDS
+977,103,Port Scan,Low,2024-01-06 06:46:24,207.216.102.251,Resolved,WAF
+978,44,Phishing,High,2023-08-31 12:40:09,240.198.134.202,Resolved,WAF
+979,27,Privilege Escalation,Low,2024-11-06 15:41:07,227.75.184.210,Resolved,IDS
+980,100,Phishing,High,2024-02-25 17:31:11,46.16.203.130,Investigating,WAF
+981,175,Data Exfiltration,High,2023-03-19 21:43:56,39.9.171.160,False Positive,Firewall
+982,33,Data Exfiltration,Medium,2025-02-20 21:27:13,19.217.161.5,Escalated,Firewall
+983,41,Policy Violation,Medium,2023-02-11 17:44:40,131.47.206.162,Investigating,IDS
+984,172,Intrusion Attempt,Medium,2024-07-01 01:00:18,70.60.18.221,Investigating,Manual
+985,62,Phishing,Medium,2024-07-17 13:22:25,36.78.122.84,Investigating,EDR
+986,162,Privilege Escalation,High,2023-11-10 09:56:22,50.31.186.238,False Positive,WAF
+987,79,Malware Detected,Medium,2023-02-08 14:09:14,43.13.241.206,False Positive,WAF
+988,34,Port Scan,Low,2024-10-21 00:22:13,60.117.45.148,Escalated,IDS
+989,95,Anomalous Traffic,Low,2023-09-21 23:57:56,170.140.73.234,Open,WAF
+990,15,DDoS,Low,2024-05-09 16:20:31,127.143.93.9,Escalated,WAF
+991,136,Brute Force,Medium,2024-12-04 23:28:07,85.14.253.118,Resolved,IDS
+992,186,Phishing,Critical,2024-01-11 05:16:43,141.240.201.81,Resolved,WAF
+993,86,Data Exfiltration,Critical,2023-06-07 13:16:34,248.140.245.220,Investigating,IDS
+994,94,Failed Login,Critical,2023-05-30 03:45:25,147.24.82.218,Resolved,Manual
+995,120,Intrusion Attempt,Low,2024-01-18 13:40:37,91.138.71.108,False Positive,IDS
+996,184,Policy Violation,High,2023-02-03 14:08:45,78.72.219.23,Open,Firewall
+997,104,Data Exfiltration,Medium,2024-07-20 06:41:16,133.241.227.48,Escalated,Manual
+998,65,Malware Detected,Medium,2023-03-30 03:35:59,222.238.202.155,Resolved,Firewall
+999,148,Lateral Movement,High,2023-06-07 02:45:39,32.85.81.133,Resolved,IDS
+1000,84,Port Scan,Low,2024-07-23 06:52:18,117.101.49.98,Escalated,EDR
+1001,77,Brute Force,Medium,2023-11-26 19:39:08,85.22.17.7,Open,SIEM
+1002,93,Data Exfiltration,High,2024-07-16 01:09:16,132.86.33.109,Escalated,SIEM
+1003,10,Failed Login,Medium,2023-10-02 17:18:13,54.251.161.159,Open,WAF
+1004,47,Malware Detected,Medium,2023-06-15 20:35:38,162.122.236.1,Investigating,Firewall
+1005,66,Phishing,Medium,2023-07-03 14:29:07,86.185.202.112,Escalated,EDR
+1006,72,Malware Detected,High,2025-03-19 21:50:41,115.224.97.221,Resolved,Manual
+1007,51,Anomalous Traffic,Critical,2024-03-08 06:56:29,27.77.224.69,Investigating,IDS
+1008,163,Port Scan,High,2023-05-09 10:37:54,88.44.10.221,False Positive,Manual
+1009,108,Failed Login,Medium,2023-05-04 10:50:35,127.82.114.177,Escalated,Manual
+1010,138,Failed Login,Medium,2025-02-03 16:41:30,89.117.209.7,Investigating,WAF
+1011,131,Lateral Movement,Medium,2025-01-28 12:27:19,252.212.21.146,Investigating,EDR
+1012,190,Lateral Movement,Medium,2023-06-03 05:08:38,172.193.228.179,Open,SIEM
+1013,13,Policy Violation,High,2024-08-29 02:38:26,64.9.138.220,Open,WAF
+1014,119,Intrusion Attempt,High,2023-08-09 12:17:03,73.1.16.185,Investigating,Firewall
+1015,152,Brute Force,Medium,2023-12-24 12:37:57,206.234.82.145,Investigating,Manual
+1016,103,Failed Login,Low,2023-08-02 23:56:01,62.91.208.112,Resolved,Firewall
+1017,51,Phishing,High,2023-06-17 04:02:53,5.198.37.157,Escalated,WAF
+1018,6,DDoS,Low,2025-01-31 06:12:36,244.205.97.124,Escalated,EDR
+1019,25,Port Scan,Medium,2024-10-21 07:58:48,156.53.101.40,Open,EDR
+1020,59,Malware Detected,High,2023-02-03 09:23:52,200.98.169.116,Open,IDS
+1021,199,Anomalous Traffic,Medium,2024-08-07 23:21:35,61.94.23.194,Resolved,WAF
+1022,32,Anomalous Traffic,High,2023-07-20 13:52:54,71.155.76.50,Open,Manual
+1023,168,Privilege Escalation,Medium,2024-08-08 08:31:22,213.187.157.119,Open,Manual
+1024,153,Failed Login,Medium,2024-10-31 14:02:09,76.111.135.234,Open,Firewall
+1025,30,Failed Login,Medium,2024-03-27 12:44:47,76.217.84.46,Investigating,IDS
+1026,43,Phishing,Medium,2025-02-24 21:51:04,76.218.216.65,False Positive,WAF
+1027,109,Privilege Escalation,Medium,2023-01-17 01:52:27,121.200.167.193,Resolved,Firewall
+1028,88,DDoS,Medium,2024-04-29 04:35:06,233.210.179.174,Resolved,SIEM
+1029,143,Brute Force,Medium,2024-03-29 17:13:27,189.124.210.156,Escalated,WAF
+1030,185,Data Exfiltration,Low,2024-12-09 10:08:59,64.234.216.109,False Positive,IDS
+1031,20,Policy Violation,Medium,2023-01-22 22:31:20,56.150.208.223,Investigating,Manual
+1032,98,Lateral Movement,High,2024-04-12 16:45:45,85.54.231.160,Investigating,WAF
+1033,85,Port Scan,Medium,2023-05-11 00:15:43,132.239.180.21,Investigating,WAF
+1034,164,Failed Login,Low,2024-07-18 17:07:11,146.115.184.26,Open,EDR
+1035,126,Port Scan,Medium,2024-06-22 18:06:34,45.214.180.19,False Positive,Manual
+1036,138,Intrusion Attempt,Low,2024-01-24 04:15:38,9.238.207.45,Resolved,WAF
+1037,25,Policy Violation,High,2024-09-11 23:23:58,203.42.44.152,Resolved,EDR
+1038,64,DDoS,High,2023-01-05 14:50:33,158.255.100.240,Resolved,WAF
+1039,102,Port Scan,High,2023-08-14 23:43:30,103.171.17.202,False Positive,WAF
+1040,112,Port Scan,Medium,2024-11-08 03:49:39,234.155.144.228,Open,IDS
+1041,152,Port Scan,High,2024-02-03 22:08:44,65.236.248.227,Investigating,EDR
+1042,190,Privilege Escalation,Medium,2023-10-22 03:13:38,115.89.80.107,False Positive,IDS
+1043,158,Data Exfiltration,Low,2024-10-21 09:34:33,126.107.179.41,Investigating,WAF
+1044,86,Intrusion Attempt,High,2024-06-28 00:01:46,192.103.125.150,Investigating,SIEM
+1045,91,Port Scan,High,2024-05-04 21:39:41,58.212.170.187,False Positive,Manual
+1046,12,DDoS,Medium,2023-01-09 13:32:34,205.14.246.134,Investigating,SIEM
+1047,115,Malware Detected,Low,2024-06-30 14:12:29,208.195.248.40,Resolved,Firewall
+1048,132,Malware Detected,Medium,2023-11-04 04:32:11,31.33.121.246,Investigating,Firewall
+1049,190,Data Exfiltration,Low,2024-06-19 13:25:13,237.181.98.161,Escalated,IDS
+1050,112,Data Exfiltration,Low,2023-07-03 01:41:01,244.105.62.235,Open,Manual
+1051,182,Phishing,High,2024-11-17 09:20:56,165.57.61.120,Resolved,WAF
+1052,25,Malware Detected,Medium,2024-06-08 02:19:48,17.68.32.254,False Positive,Manual
+1053,24,Port Scan,High,2023-12-01 19:06:59,150.52.146.229,Escalated,Firewall
+1054,42,Malware Detected,Low,2023-08-13 17:50:34,225.58.186.155,Open,WAF
+1055,26,Port Scan,Low,2023-11-29 03:24:42,23.114.92.45,Resolved,Firewall
+1056,137,Brute Force,Low,2024-03-02 22:27:40,71.211.227.206,Escalated,Manual
+1057,10,Lateral Movement,High,2024-12-28 04:25:15,88.243.185.214,Escalated,SIEM
+1058,100,DDoS,High,2024-05-20 23:26:07,27.127.100.189,False Positive,SIEM
+1059,60,Brute Force,Low,2023-01-04 16:25:19,251.144.141.168,Escalated,EDR
+1060,140,Phishing,High,2023-12-07 13:31:45,208.244.20.154,False Positive,EDR
+1061,122,Failed Login,Medium,2024-06-06 09:21:43,128.255.235.223,Investigating,WAF
+1062,11,Lateral Movement,Medium,2024-11-30 15:51:15,164.169.174.105,Escalated,IDS
+1063,30,Policy Violation,Medium,2024-07-19 09:28:19,17.198.247.249,Escalated,Manual
+1064,164,Failed Login,Medium,2024-06-28 10:32:19,126.35.207.97,Resolved,Firewall
+1065,158,Data Exfiltration,Medium,2024-07-03 20:54:30,158.44.27.92,Resolved,SIEM
+1066,188,Policy Violation,Medium,2023-07-06 14:17:19,217.9.21.206,Investigating,Manual
+1067,9,Port Scan,High,2024-12-28 17:53:57,243.31.252.171,Escalated,EDR
+1068,22,Lateral Movement,High,2025-02-16 03:20:55,200.199.246.192,Investigating,SIEM
+1069,39,Data Exfiltration,Critical,2025-03-23 11:36:36,54.162.154.36,Investigating,Manual
+1070,31,Data Exfiltration,High,2023-01-01 17:32:44,92.210.138.145,Open,WAF
+1071,52,Malware Detected,Critical,2024-07-09 04:41:32,163.81.236.59,Open,IDS
+1072,101,Phishing,Low,2023-06-30 10:05:49,90.183.38.51,Investigating,IDS
+1073,197,Lateral Movement,Medium,2023-09-20 21:27:09,179.222.30.155,Resolved,EDR
+1074,124,Brute Force,High,2025-03-07 10:47:26,13.166.74.144,Resolved,Firewall
+1075,118,Phishing,Medium,2023-09-28 01:48:14,79.41.50.247,Escalated,SIEM
+1076,163,Phishing,Medium,2025-03-24 12:26:55,197.209.110.180,Open,EDR
+1077,109,Lateral Movement,Medium,2023-08-25 06:59:37,195.9.248.192,Open,IDS
+1078,40,Brute Force,Low,2025-01-05 11:46:29,107.255.213.192,Investigating,WAF
+1079,88,Data Exfiltration,Medium,2024-10-23 00:37:51,77.126.57.250,False Positive,Manual
+1080,35,Anomalous Traffic,Low,2024-04-02 03:04:53,216.136.243.233,Escalated,SIEM
+1081,107,Failed Login,High,2024-12-12 22:37:53,121.195.199.119,Resolved,IDS
+1082,134,Policy Violation,High,2024-08-12 01:51:55,47.78.67.152,Open,IDS
+1083,127,Port Scan,Critical,2023-11-11 20:29:48,221.96.251.188,False Positive,WAF
+1084,87,Data Exfiltration,Critical,2023-09-20 14:05:15,162.185.211.75,Resolved,EDR
+1085,31,Data Exfiltration,Medium,2025-02-18 21:27:48,86.248.191.162,Open,EDR
+1086,142,Phishing,Medium,2023-01-10 16:11:38,188.55.225.78,Open,Manual
+1087,12,Policy Violation,High,2023-09-27 18:20:05,30.176.55.225,Resolved,WAF
+1088,186,Phishing,High,2023-10-24 09:23:59,94.119.15.22,Open,WAF
+1089,161,Intrusion Attempt,Medium,2024-07-12 06:48:39,82.110.101.15,Open,IDS
+1090,164,Data Exfiltration,Medium,2024-06-28 17:00:45,8.156.85.200,Investigating,EDR
+1091,128,DDoS,Critical,2025-03-01 02:58:11,185.190.238.77,Open,Firewall
+1092,193,Brute Force,High,2023-08-16 16:30:13,168.147.49.8,Escalated,EDR
+1093,1,Phishing,Critical,2023-01-16 07:50:14,145.95.237.250,Investigating,WAF
+1094,44,Intrusion Attempt,Medium,2023-01-29 06:43:02,170.240.191.168,False Positive,WAF
+1095,173,Anomalous Traffic,Low,2025-01-03 19:30:54,72.213.95.25,Resolved,EDR
+1096,41,Data Exfiltration,High,2024-09-20 12:25:08,80.155.153.169,Resolved,Manual
+1097,177,Malware Detected,Low,2023-11-15 10:05:39,176.175.153.187,Open,EDR
+1098,162,Lateral Movement,Medium,2025-03-14 14:15:01,58.45.147.206,Investigating,WAF
+1099,161,Phishing,Critical,2024-04-23 06:45:23,83.129.35.126,Open,SIEM
+1100,29,Intrusion Attempt,Low,2023-10-16 01:07:08,135.55.30.142,Escalated,EDR
+1101,85,Port Scan,Medium,2023-07-29 05:11:35,38.98.185.191,Investigating,Manual
+1102,30,Data Exfiltration,High,2023-10-02 07:55:24,162.135.89.145,Open,IDS
+1103,13,Failed Login,Low,2024-08-23 20:47:17,17.162.204.219,Escalated,Manual
+1104,193,Privilege Escalation,Medium,2024-02-26 15:41:20,69.91.111.88,Open,EDR
+1105,41,Privilege Escalation,Medium,2023-02-03 14:15:27,94.229.127.65,False Positive,EDR
+1106,73,Lateral Movement,High,2023-07-27 18:26:25,36.44.109.80,Open,SIEM
+1107,34,Port Scan,Low,2023-05-28 11:24:53,37.53.68.191,False Positive,IDS
+1108,100,Anomalous Traffic,Medium,2024-06-22 17:37:57,63.79.46.55,Investigating,SIEM
+1109,78,Anomalous Traffic,Critical,2024-11-08 16:27:19,241.34.24.228,Investigating,IDS
+1110,80,Phishing,Low,2023-12-06 20:48:15,254.84.1.88,Investigating,Manual
+1111,21,DDoS,Low,2023-06-16 17:23:30,105.107.238.40,Investigating,IDS
+1112,120,Data Exfiltration,Medium,2024-12-03 15:12:24,17.97.57.96,Open,Firewall
+1113,185,Malware Detected,High,2023-02-13 18:19:17,237.21.163.45,Open,Manual
+1114,198,Malware Detected,Medium,2023-06-06 08:23:10,202.31.255.198,Resolved,Manual
+1115,178,Privilege Escalation,Medium,2025-01-17 08:48:16,1.133.253.196,False Positive,WAF
+1116,82,Phishing,Critical,2024-03-16 11:09:14,179.96.13.131,False Positive,WAF
+1117,101,Malware Detected,Low,2023-12-29 12:19:48,239.22.205.6,Resolved,EDR
+1118,191,Privilege Escalation,Medium,2024-04-13 03:03:35,152.52.123.16,False Positive,IDS
+1119,67,Malware Detected,Critical,2024-06-23 23:06:07,41.16.203.68,Resolved,EDR
+1120,131,Lateral Movement,Critical,2023-02-28 02:37:43,123.70.197.191,Escalated,IDS
+1121,166,Brute Force,Low,2023-07-19 19:39:10,186.0.41.159,Open,SIEM
+1122,20,Port Scan,Medium,2023-08-18 02:39:06,66.17.76.127,False Positive,Firewall
+1123,21,Failed Login,Medium,2023-10-15 11:43:02,165.17.89.254,Escalated,WAF
+1124,112,Phishing,High,2023-04-12 13:14:22,134.20.24.247,False Positive,WAF
+1125,37,Malware Detected,Low,2024-12-02 21:24:46,126.75.214.135,Open,EDR
+1126,198,DDoS,Critical,2024-06-06 07:35:36,223.211.70.65,Resolved,WAF
+1127,108,DDoS,Medium,2024-07-08 09:57:05,232.148.124.4,Resolved,Firewall
+1128,39,Anomalous Traffic,Medium,2025-03-09 00:36:48,208.90.255.58,Resolved,SIEM
+1129,119,Failed Login,Low,2024-03-03 05:39:16,122.94.23.73,Escalated,IDS
+1130,12,Malware Detected,High,2023-10-21 13:23:07,212.193.20.205,Resolved,SIEM
+1131,50,Brute Force,Medium,2024-05-04 02:15:15,120.243.111.61,Open,EDR
+1132,129,Lateral Movement,Medium,2024-04-06 21:36:32,40.203.167.139,Open,SIEM
+1133,160,Privilege Escalation,Low,2023-10-23 22:44:05,212.41.139.104,Escalated,WAF
+1134,56,Phishing,Medium,2023-06-05 03:02:32,82.209.61.136,Open,Firewall
+1135,46,Anomalous Traffic,Low,2024-09-13 05:38:03,64.197.48.64,Investigating,Firewall
+1136,16,Malware Detected,Low,2023-10-08 16:10:39,66.166.255.155,Escalated,Manual
+1137,200,Port Scan,High,2024-06-26 15:08:15,38.230.39.140,Investigating,SIEM
+1138,113,Privilege Escalation,High,2024-02-12 21:32:20,62.11.48.200,Investigating,Firewall
+1139,97,Failed Login,Medium,2024-07-21 07:03:18,77.220.120.207,Open,SIEM
+1140,159,Failed Login,Low,2024-08-13 07:02:32,223.188.214.232,Resolved,IDS
+1141,131,Lateral Movement,High,2025-02-21 14:43:27,72.173.178.82,Resolved,WAF
+1142,151,Brute Force,Medium,2025-02-05 14:04:11,153.159.188.88,Investigating,WAF
+1143,22,Malware Detected,High,2023-09-12 17:49:22,9.242.214.183,Investigating,IDS
+1144,200,Port Scan,Low,2024-05-27 19:37:11,41.198.33.138,Escalated,Firewall
+1145,91,DDoS,Critical,2024-12-04 04:12:08,68.242.144.47,Investigating,WAF
+1146,69,Anomalous Traffic,Low,2024-09-12 00:29:48,99.136.216.25,False Positive,EDR
+1147,74,Port Scan,Medium,2024-09-12 20:31:45,205.109.99.60,False Positive,IDS
+1148,66,Malware Detected,High,2024-05-17 19:53:00,60.206.144.188,Resolved,SIEM
+1149,88,Brute Force,Medium,2023-02-19 12:49:25,54.212.162.56,Resolved,Firewall
+1150,84,Data Exfiltration,Low,2024-06-04 11:51:23,224.141.110.56,Resolved,EDR
+1151,51,Port Scan,Medium,2024-02-17 18:30:15,158.110.159.163,Open,WAF
+1152,104,Port Scan,Medium,2024-02-02 17:37:13,147.149.190.176,Open,WAF
+1153,50,DDoS,Medium,2024-02-02 08:53:10,2.83.221.51,Resolved,EDR
+1154,116,Intrusion Attempt,High,2024-08-28 12:14:58,111.212.144.159,Resolved,Firewall
+1155,140,Data Exfiltration,Low,2023-03-11 01:58:55,143.71.78.117,Investigating,WAF
+1156,125,Data Exfiltration,Critical,2024-02-07 15:38:48,13.24.18.214,False Positive,Firewall
+1157,99,Port Scan,Medium,2024-09-21 10:59:15,154.53.52.29,Resolved,WAF
+1158,102,Phishing,Critical,2023-09-07 13:02:12,155.159.127.148,Resolved,Firewall
+1159,184,Brute Force,Medium,2025-03-25 09:39:24,11.57.134.39,Escalated,WAF
+1160,128,Brute Force,High,2023-03-12 23:49:55,123.172.102.128,Resolved,Manual
+1161,128,Policy Violation,Low,2024-09-13 09:11:03,201.62.84.232,False Positive,SIEM
+1162,94,Data Exfiltration,High,2024-06-12 14:00:54,238.69.19.97,Resolved,EDR
+1163,140,Port Scan,Critical,2025-02-10 15:06:42,71.95.235.84,Open,EDR
+1164,76,Phishing,Medium,2024-02-09 22:12:43,145.32.6.74,Resolved,IDS
+1165,24,Policy Violation,High,2023-05-07 05:33:02,92.30.231.38,Open,WAF
+1166,7,Anomalous Traffic,Medium,2023-04-07 02:09:48,240.173.79.160,Escalated,Manual
+1167,56,Brute Force,Medium,2025-02-02 12:04:13,148.149.128.82,Investigating,WAF
+1168,132,Lateral Movement,High,2023-07-23 04:46:07,220.198.183.241,Resolved,Firewall
+1169,51,Failed Login,Low,2023-09-28 23:51:07,166.83.35.60,Open,IDS
+1170,154,Intrusion Attempt,Medium,2025-01-07 16:36:24,57.72.188.163,False Positive,SIEM
+1171,112,Data Exfiltration,Medium,2025-02-03 19:00:46,171.240.215.56,Open,SIEM
+1172,88,Malware Detected,High,2024-01-12 23:05:46,232.28.21.137,Open,Manual
+1173,76,Brute Force,Medium,2023-12-20 04:02:02,232.204.206.223,False Positive,Manual
+1174,19,Intrusion Attempt,High,2023-08-22 15:58:44,72.197.245.229,Escalated,IDS
+1175,97,Malware Detected,High,2023-01-25 03:54:19,209.110.216.176,Investigating,EDR
+1176,111,Intrusion Attempt,Medium,2024-08-05 21:05:24,219.130.30.187,False Positive,IDS
+1177,101,Intrusion Attempt,Low,2023-09-29 01:56:24,166.240.219.3,Open,EDR
+1178,12,Data Exfiltration,Low,2023-10-19 02:49:44,198.143.82.212,Investigating,SIEM
+1179,152,Policy Violation,Low,2023-11-08 03:18:31,213.173.120.236,Resolved,IDS
+1180,146,Malware Detected,Low,2023-01-02 11:13:11,136.237.140.249,Resolved,SIEM
+1181,156,Brute Force,Low,2024-03-06 09:19:50,235.177.120.224,Investigating,Manual
+1182,42,DDoS,Medium,2024-07-01 01:39:55,125.135.24.245,False Positive,IDS
+1183,66,DDoS,Low,2023-05-20 01:57:32,42.13.228.201,Escalated,Firewall
+1184,75,Privilege Escalation,Medium,2024-04-10 17:12:18,235.216.35.88,Open,SIEM
+1185,35,Phishing,High,2023-06-07 07:35:18,135.57.25.39,Escalated,WAF
+1186,144,Intrusion Attempt,Critical,2024-06-04 06:22:39,167.21.19.83,False Positive,Manual
+1187,40,DDoS,Medium,2024-03-23 15:12:09,102.192.189.121,Investigating,WAF
+1188,122,Data Exfiltration,High,2023-02-25 22:04:40,169.52.218.128,Escalated,Firewall
+1189,144,Lateral Movement,Medium,2023-11-28 10:16:44,126.41.48.189,Open,SIEM
+1190,91,Phishing,Low,2024-10-03 07:58:45,183.193.194.96,False Positive,EDR
+1191,110,Port Scan,Medium,2025-01-27 01:11:55,117.25.25.253,Investigating,EDR
+1192,193,Policy Violation,Critical,2025-02-03 13:08:02,45.224.49.71,Open,IDS
+1193,64,Data Exfiltration,Medium,2023-09-08 11:13:39,6.234.85.205,Open,WAF
+1194,108,Lateral Movement,Critical,2024-01-29 07:25:37,158.54.115.38,Resolved,SIEM
+1195,169,Port Scan,Medium,2023-12-22 16:42:04,66.214.110.202,Resolved,WAF
+1196,169,Anomalous Traffic,Medium,2023-05-27 15:16:48,196.144.16.187,False Positive,SIEM
+1197,54,DDoS,High,2025-01-04 21:43:10,102.186.203.124,Escalated,Firewall
+1198,4,Policy Violation,Critical,2023-04-19 08:43:17,10.164.54.128,False Positive,Manual
+1199,59,Phishing,High,2024-12-04 17:36:16,171.187.58.34,Resolved,IDS
+1200,29,Phishing,Critical,2024-10-29 17:48:09,111.21.19.114,Investigating,EDR
+1201,30,Failed Login,Critical,2023-05-11 11:16:26,234.223.9.182,False Positive,SIEM
+1202,33,Phishing,Low,2023-09-25 13:50:05,174.31.49.178,False Positive,IDS
+1203,92,Policy Violation,Critical,2023-02-21 12:30:55,50.92.29.231,Resolved,Firewall
+1204,171,Policy Violation,Low,2023-09-20 21:45:26,174.39.162.28,Open,Firewall
+1205,163,Phishing,Medium,2024-01-26 21:09:00,229.103.160.84,Resolved,SIEM
+1206,84,Policy Violation,Low,2024-06-27 17:02:22,179.196.96.92,Escalated,WAF
+1207,86,Port Scan,High,2024-05-08 08:20:07,212.56.122.142,Escalated,Firewall
+1208,96,Failed Login,High,2023-08-15 21:25:57,100.1.151.111,False Positive,Firewall
+1209,180,Failed Login,Medium,2024-02-17 05:59:46,30.0.112.56,Open,IDS
+1210,37,Malware Detected,Medium,2024-02-20 05:13:07,155.80.229.25,Resolved,SIEM
+1211,89,Data Exfiltration,High,2025-02-27 20:42:22,231.137.184.96,False Positive,SIEM
+1212,101,Intrusion Attempt,Medium,2024-02-02 19:45:23,246.65.172.116,Escalated,IDS
+1213,66,Policy Violation,Medium,2024-10-30 21:41:07,54.16.154.193,Resolved,SIEM
+1214,65,Malware Detected,High,2025-01-18 02:27:03,135.158.237.156,Resolved,SIEM
+1215,129,Lateral Movement,Medium,2023-07-17 09:26:39,90.77.230.95,Investigating,IDS
+1216,100,Privilege Escalation,Low,2023-03-08 07:41:24,86.1.17.12,Resolved,Manual
+1217,188,Anomalous Traffic,High,2025-02-09 18:41:22,198.129.229.236,Resolved,WAF
+1218,157,Anomalous Traffic,Medium,2023-03-14 22:48:31,198.37.150.217,Open,SIEM
+1219,17,Data Exfiltration,Low,2024-10-17 20:11:42,216.34.86.9,Resolved,Manual
+1220,117,Port Scan,Low,2024-12-01 12:28:08,243.32.248.43,Open,SIEM
+1221,70,Anomalous Traffic,High,2024-10-15 01:37:18,56.136.157.100,Escalated,Firewall
+1222,155,Phishing,Critical,2023-08-03 02:21:06,217.9.205.160,Resolved,SIEM
+1223,15,Lateral Movement,High,2025-02-17 04:09:45,208.60.245.168,Escalated,Manual
+1224,162,DDoS,Medium,2023-05-02 06:15:44,76.248.123.99,Investigating,Manual
+1225,104,Lateral Movement,Low,2024-03-16 14:28:42,17.155.53.61,Open,Manual
+1226,150,Intrusion Attempt,High,2024-03-06 17:36:14,7.78.14.211,False Positive,IDS
+1227,95,Malware Detected,Medium,2023-01-27 01:54:37,206.30.148.6,Resolved,SIEM
+1228,123,Intrusion Attempt,High,2023-11-13 02:11:32,99.28.13.215,Investigating,SIEM
+1229,85,Brute Force,Medium,2023-10-11 19:24:29,159.187.215.104,False Positive,IDS
+1230,141,Privilege Escalation,High,2024-03-12 22:22:03,66.47.221.53,Open,EDR
+1231,29,Privilege Escalation,Low,2025-03-14 09:26:55,112.240.175.152,False Positive,Manual
+1232,157,Policy Violation,Critical,2024-11-28 23:11:49,190.156.240.64,False Positive,SIEM
+1233,125,DDoS,Medium,2024-10-20 15:42:40,208.104.153.28,Investigating,WAF
+1234,78,Failed Login,Low,2023-11-10 13:37:58,83.27.222.156,Investigating,SIEM
+1235,70,DDoS,Critical,2024-06-30 07:07:11,224.42.244.81,False Positive,IDS
+1236,29,Malware Detected,Critical,2024-02-06 08:32:16,123.154.26.158,Resolved,Manual
+1237,96,Intrusion Attempt,Low,2023-04-20 19:28:46,83.242.19.1,Resolved,WAF
+1238,17,Failed Login,Critical,2024-12-12 15:12:32,75.105.167.218,Resolved,WAF
+1239,24,Lateral Movement,High,2024-07-09 18:24:00,9.208.216.122,Resolved,IDS
+1240,125,Intrusion Attempt,Low,2023-06-30 09:22:51,142.76.197.64,Open,WAF
+1241,100,Privilege Escalation,Low,2023-11-10 17:57:27,248.99.134.13,Investigating,Firewall
+1242,115,Port Scan,Low,2024-08-28 17:14:31,19.20.181.204,Resolved,WAF
+1243,51,Privilege Escalation,Medium,2023-08-14 23:54:50,7.152.44.233,Investigating,Firewall
+1244,29,Failed Login,Low,2023-09-26 08:22:39,168.169.174.11,False Positive,WAF
+1245,129,Privilege Escalation,Medium,2025-03-28 00:48:18,231.78.229.48,Open,SIEM
+1246,69,Policy Violation,Low,2023-07-29 00:26:33,228.21.219.189,Open,WAF
+1247,5,Malware Detected,High,2025-03-27 10:37:02,86.232.82.55,Escalated,Manual
+1248,174,Malware Detected,High,2024-10-12 09:30:38,206.130.126.210,Open,IDS
+1249,122,Anomalous Traffic,High,2023-05-15 07:36:24,91.119.236.226,Investigating,Manual
+1250,85,Port Scan,Low,2023-05-30 01:20:26,87.91.157.173,False Positive,IDS
+1251,104,Policy Violation,Medium,2023-04-17 08:30:43,81.152.202.29,Investigating,EDR
+1252,25,Intrusion Attempt,Low,2024-01-17 04:06:15,72.244.87.132,Open,Manual
+1253,151,Policy Violation,Medium,2023-09-08 18:49:00,15.236.101.121,Open,Manual
+1254,44,Privilege Escalation,Low,2024-01-16 04:28:26,117.61.234.226,False Positive,SIEM
+1255,135,Port Scan,Low,2024-01-17 11:39:06,59.196.122.150,Resolved,SIEM
+1256,150,Malware Detected,Medium,2024-10-12 05:59:20,14.132.130.148,Escalated,Manual
+1257,196,Failed Login,Low,2024-07-06 05:55:13,188.201.131.203,Open,EDR
+1258,47,Data Exfiltration,High,2025-03-04 20:05:24,158.141.17.26,False Positive,Manual
+1259,191,Data Exfiltration,Critical,2023-12-16 15:33:05,60.238.239.226,Open,IDS
+1260,17,Intrusion Attempt,Low,2023-06-01 23:16:07,207.127.79.239,Open,EDR
+1261,120,Failed Login,High,2023-08-06 09:59:11,119.176.27.126,Open,Firewall
+1262,97,Policy Violation,Low,2024-08-18 03:47:11,144.185.40.86,Open,Firewall
+1263,154,Brute Force,Medium,2023-07-11 04:19:18,8.149.175.220,Investigating,EDR
+1264,31,Intrusion Attempt,Medium,2024-04-18 03:02:59,77.113.196.205,False Positive,Firewall
+1265,123,Lateral Movement,Critical,2024-08-07 15:19:39,27.227.9.152,Investigating,Manual
+1266,144,Port Scan,Medium,2024-01-26 02:58:00,93.54.184.8,Investigating,Manual
+1267,87,Intrusion Attempt,Medium,2024-09-06 04:00:55,36.95.234.143,Escalated,EDR
+1268,171,Phishing,High,2024-10-31 10:06:52,228.226.133.58,Resolved,Manual
+1269,191,Data Exfiltration,Medium,2023-10-23 09:29:42,180.21.138.237,Open,Firewall
+1270,180,Port Scan,High,2024-03-24 04:58:54,121.134.178.218,Resolved,Manual
+1271,172,Failed Login,Medium,2024-11-08 14:48:42,175.27.95.238,False Positive,IDS
+1272,115,DDoS,Medium,2024-02-09 06:19:29,197.80.150.246,Escalated,Firewall
+1273,79,Intrusion Attempt,High,2024-03-12 05:46:12,117.192.167.201,Open,Manual
+1274,90,Malware Detected,Low,2024-11-04 05:31:57,166.5.221.64,Escalated,IDS
+1275,157,Port Scan,Low,2024-06-22 06:28:53,16.77.137.158,Investigating,IDS
+1276,167,Anomalous Traffic,Low,2024-09-17 12:20:44,174.224.166.62,False Positive,Manual
+1277,179,Intrusion Attempt,Low,2025-02-13 13:38:01,227.26.32.112,Resolved,Firewall
+1278,92,Malware Detected,High,2023-04-09 15:21:07,170.84.150.212,Resolved,EDR
+1279,103,Privilege Escalation,Low,2023-02-17 02:45:19,139.85.18.195,Resolved,Firewall
+1280,184,Port Scan,High,2023-03-21 09:32:57,161.107.174.63,Escalated,SIEM
+1281,47,Malware Detected,Critical,2023-01-30 23:08:47,74.166.79.119,Investigating,Firewall
+1282,41,Failed Login,Medium,2023-07-28 09:49:26,197.181.64.67,Escalated,IDS
+1283,135,Privilege Escalation,Medium,2025-01-18 08:16:01,217.242.67.147,Escalated,Manual
+1284,18,Data Exfiltration,Medium,2024-06-24 19:47:30,64.169.89.45,Resolved,Firewall
+1285,6,Anomalous Traffic,Low,2023-05-16 00:30:33,217.17.175.212,Open,Firewall
+1286,102,Policy Violation,High,2024-11-17 19:53:24,123.106.156.74,Escalated,WAF
+1287,74,Anomalous Traffic,Medium,2024-02-13 20:14:58,77.133.90.233,Resolved,IDS
+1288,123,Policy Violation,High,2023-05-01 06:29:54,108.207.56.149,False Positive,WAF
+1289,18,DDoS,Low,2024-07-21 08:32:43,61.51.12.67,False Positive,SIEM
+1290,48,Anomalous Traffic,Medium,2024-03-25 14:57:02,171.46.6.187,Escalated,IDS
+1291,103,Port Scan,Medium,2023-10-08 00:13:08,162.53.8.7,Investigating,Firewall
+1292,139,Brute Force,Medium,2023-12-24 00:06:54,101.249.225.26,False Positive,EDR
+1293,27,Brute Force,Medium,2023-04-26 08:49:12,92.224.213.250,False Positive,WAF
+1294,163,Policy Violation,Medium,2024-10-18 10:33:23,145.251.78.16,False Positive,IDS
+1295,13,DDoS,High,2023-01-15 00:45:31,137.178.188.155,Open,Manual
+1296,84,Lateral Movement,High,2023-10-02 18:02:53,237.211.186.60,Open,IDS
+1297,105,Brute Force,Medium,2023-05-11 08:39:16,99.110.71.44,Open,Firewall
+1298,81,Brute Force,Medium,2024-12-04 23:33:49,227.167.152.113,Investigating,WAF
+1299,126,Intrusion Attempt,Medium,2025-03-04 19:20:45,33.221.35.149,Investigating,EDR
+1300,122,Malware Detected,Critical,2024-06-05 23:51:20,252.187.20.19,Open,WAF
+1301,15,Phishing,High,2023-02-25 22:27:04,81.32.129.60,False Positive,SIEM
+1302,54,Malware Detected,Low,2023-10-15 18:46:16,153.223.199.30,Open,WAF
+1303,123,Malware Detected,Low,2025-03-05 01:00:04,143.30.227.131,Investigating,Manual
+1304,194,Intrusion Attempt,Medium,2024-11-11 16:05:39,230.55.180.75,Resolved,Firewall
+1305,83,Intrusion Attempt,Low,2023-12-05 23:20:24,9.72.193.251,Resolved,IDS
+1306,78,Malware Detected,Critical,2023-06-20 06:19:48,156.46.254.188,Resolved,Manual
+1307,122,Malware Detected,Critical,2025-01-23 10:28:00,213.54.194.79,Investigating,Manual
+1308,159,Failed Login,Low,2024-07-13 01:56:48,97.241.214.228,Escalated,EDR
+1309,88,Lateral Movement,Critical,2024-02-18 23:58:52,189.13.224.235,Open,WAF
+1310,24,Malware Detected,Medium,2023-02-06 06:58:38,167.24.207.193,Escalated,WAF
+1311,148,Privilege Escalation,Medium,2023-10-16 01:32:37,139.150.223.249,Open,EDR
+1312,155,Data Exfiltration,Low,2023-02-25 07:11:46,87.41.99.22,Resolved,IDS
+1313,156,Phishing,Low,2024-11-22 10:09:45,244.211.18.205,False Positive,Firewall
+1314,87,Failed Login,Medium,2023-05-30 07:10:05,169.172.90.162,Open,IDS
+1315,187,DDoS,High,2024-04-17 08:17:58,212.110.137.84,Escalated,SIEM
+1316,47,Brute Force,Low,2024-11-30 11:48:21,123.90.216.249,False Positive,EDR
+1317,183,Failed Login,Medium,2023-08-11 07:12:21,128.231.49.234,Open,Firewall
+1318,85,Privilege Escalation,High,2024-12-24 23:13:10,197.127.22.133,Resolved,Firewall
+1319,76,Brute Force,Low,2023-07-23 06:50:29,137.85.207.191,Open,Manual
+1320,172,Port Scan,Medium,2023-01-16 10:27:33,132.118.118.179,Escalated,Manual
+1321,144,Policy Violation,Medium,2023-11-20 03:07:34,243.86.139.100,Investigating,IDS
+1322,84,Port Scan,Medium,2024-04-21 08:19:14,99.226.59.138,Open,Manual
+1323,198,Failed Login,Low,2024-11-23 08:38:01,40.80.72.20,Open,Firewall
+1324,118,Phishing,Low,2024-08-16 20:38:50,88.157.38.117,Investigating,WAF
+1325,58,Lateral Movement,Low,2024-08-27 18:43:46,4.44.187.118,False Positive,SIEM
+1326,91,Failed Login,Critical,2024-11-05 02:00:56,210.2.163.150,Escalated,Firewall
+1327,124,Lateral Movement,Medium,2023-11-13 14:21:07,58.69.170.129,Investigating,Manual
+1328,8,Port Scan,Medium,2024-09-04 21:13:56,173.206.134.41,False Positive,Firewall
+1329,3,Phishing,Low,2023-09-25 01:34:25,159.14.126.246,Resolved,SIEM
+1330,94,Malware Detected,Low,2023-06-21 22:08:59,218.217.74.71,Escalated,EDR
+1331,149,Policy Violation,Critical,2024-12-20 14:57:13,60.10.55.6,False Positive,SIEM
+1332,19,Privilege Escalation,Medium,2023-02-19 01:56:53,217.32.217.2,Open,SIEM
+1333,195,Data Exfiltration,Medium,2023-03-17 14:08:40,247.194.66.141,Escalated,EDR
+1334,107,Anomalous Traffic,Medium,2024-09-15 19:30:23,75.172.72.85,False Positive,SIEM
+1335,91,Port Scan,Medium,2023-01-01 14:03:20,216.2.183.65,Escalated,WAF
+1336,189,Privilege Escalation,Low,2023-06-21 12:29:49,161.17.62.223,Resolved,WAF
+1337,145,Phishing,Low,2023-08-24 00:47:11,46.133.119.26,Escalated,Firewall
+1338,26,Anomalous Traffic,Low,2025-02-15 15:38:35,225.20.50.73,Investigating,WAF
+1339,1,Data Exfiltration,Medium,2024-11-28 07:20:33,237.181.113.69,Escalated,SIEM
+1340,162,Port Scan,Low,2023-05-08 21:04:53,14.146.19.118,Resolved,Firewall
+1341,87,Policy Violation,Low,2023-02-24 18:23:30,96.64.142.234,False Positive,SIEM
+1342,178,Phishing,High,2024-12-24 10:43:13,20.205.122.61,Investigating,WAF
+1343,184,Malware Detected,Medium,2024-05-16 07:41:24,52.105.86.81,Open,IDS
+1344,165,Brute Force,Medium,2023-02-11 13:06:40,105.232.136.2,False Positive,EDR
+1345,81,Privilege Escalation,High,2023-11-11 15:44:15,77.24.250.114,Escalated,IDS
+1346,200,Data Exfiltration,Low,2023-01-25 06:49:06,6.217.143.237,Escalated,WAF
+1347,74,Phishing,Medium,2024-02-11 11:35:28,122.0.160.30,Escalated,IDS
+1348,45,Malware Detected,Medium,2024-02-12 19:56:41,104.151.83.206,Resolved,Manual
+1349,135,Lateral Movement,Low,2024-04-28 14:00:12,185.26.51.120,Escalated,Manual
+1350,44,Data Exfiltration,High,2024-08-17 17:51:10,9.109.85.185,False Positive,Firewall
+1351,41,Port Scan,Medium,2025-01-01 13:29:47,240.30.197.68,Escalated,Manual
+1352,17,Brute Force,Critical,2024-08-26 09:34:27,57.177.111.251,Escalated,SIEM
+1353,170,Data Exfiltration,Low,2023-08-24 11:22:11,247.146.79.169,Resolved,WAF
+1354,54,Anomalous Traffic,Medium,2025-02-09 03:45:58,167.243.186.135,Escalated,WAF
+1355,12,Policy Violation,High,2023-10-16 07:34:37,91.11.225.231,Open,Manual
+1356,129,DDoS,Medium,2024-08-24 03:45:53,5.96.23.86,Escalated,IDS
+1357,31,Port Scan,High,2023-12-19 23:01:26,128.20.254.49,Investigating,EDR
+1358,28,Phishing,Low,2024-06-22 14:12:23,176.230.134.27,Investigating,Firewall
+1359,198,Lateral Movement,High,2023-02-07 12:13:09,94.188.138.168,Investigating,WAF
+1360,52,Malware Detected,Low,2024-03-22 11:52:44,203.44.153.126,Investigating,WAF
+1361,68,Malware Detected,Critical,2024-06-11 22:04:04,18.165.173.92,Resolved,WAF
+1362,6,Brute Force,Low,2023-07-06 13:33:47,196.120.249.46,Escalated,EDR
+1363,99,Anomalous Traffic,Medium,2023-04-25 15:30:14,221.60.218.82,Investigating,EDR
+1364,80,DDoS,Medium,2023-06-19 00:51:30,157.76.76.143,Investigating,SIEM
+1365,28,Failed Login,Medium,2024-09-01 21:11:16,49.69.109.107,Resolved,EDR
+1366,93,Data Exfiltration,Medium,2024-04-21 03:58:18,7.96.242.10,Escalated,EDR
+1367,175,Anomalous Traffic,Medium,2024-04-13 20:05:14,164.157.18.141,Investigating,IDS
+1368,190,Failed Login,Medium,2023-05-31 20:48:44,51.181.37.249,Investigating,IDS
+1369,103,Phishing,Medium,2023-11-10 14:23:47,31.3.123.128,Escalated,Firewall
+1370,135,Data Exfiltration,Low,2024-01-22 12:46:45,118.16.143.164,Investigating,WAF
+1371,188,DDoS,High,2023-02-17 02:39:25,84.89.176.183,Open,EDR
+1372,103,Port Scan,High,2023-01-27 03:01:54,17.6.165.173,Investigating,IDS
+1373,25,Data Exfiltration,High,2025-02-24 20:26:24,78.245.217.13,Open,Firewall
+1374,118,Lateral Movement,High,2023-11-13 06:37:08,209.129.228.148,Investigating,Firewall
+1375,131,Failed Login,Low,2023-08-17 20:13:04,254.2.243.253,Resolved,WAF
+1376,6,Lateral Movement,High,2025-02-03 20:34:42,241.179.163.107,Open,Firewall
+1377,2,Malware Detected,Critical,2023-10-09 01:49:19,133.37.198.109,Open,Firewall
+1378,121,Brute Force,High,2024-12-14 07:15:25,85.63.224.38,Resolved,SIEM
+1379,24,Privilege Escalation,Critical,2023-08-14 08:51:52,186.34.44.134,Resolved,Firewall
+1380,199,Lateral Movement,Low,2024-02-19 12:00:59,212.16.117.2,False Positive,SIEM
+1381,73,Port Scan,Low,2025-02-17 11:30:22,144.147.248.115,False Positive,EDR
+1382,49,Privilege Escalation,Medium,2023-07-16 12:49:36,103.41.119.84,Escalated,WAF
+1383,106,Phishing,High,2023-05-25 12:33:27,111.129.135.6,Open,IDS
+1384,185,Intrusion Attempt,Medium,2024-01-05 16:14:47,87.178.178.43,Investigating,Firewall
+1385,72,Intrusion Attempt,Low,2023-07-22 11:02:50,139.117.118.52,Investigating,Firewall
+1386,159,Intrusion Attempt,Medium,2023-12-02 22:55:22,80.17.94.13,Open,Manual
+1387,167,Intrusion Attempt,Low,2024-11-28 06:30:44,224.148.173.127,Investigating,Manual
+1388,70,Port Scan,Medium,2024-04-21 13:26:48,215.221.35.157,Escalated,SIEM
+1389,181,Anomalous Traffic,High,2023-07-15 21:52:25,235.11.11.149,Investigating,IDS
+1390,108,Phishing,Low,2023-05-07 01:03:52,109.6.248.129,Resolved,SIEM
+1391,168,Policy Violation,Critical,2024-01-16 22:18:37,204.79.125.31,False Positive,IDS
+1392,45,Malware Detected,Medium,2023-03-11 17:59:02,53.107.166.80,Escalated,EDR
+1393,158,Lateral Movement,Medium,2024-08-12 12:29:08,227.49.11.217,Escalated,Firewall
+1394,8,Malware Detected,Critical,2023-02-18 05:47:54,145.41.192.51,Resolved,Manual
+1395,11,Port Scan,Medium,2023-08-30 20:36:32,207.226.245.158,False Positive,EDR
+1396,199,Lateral Movement,High,2024-08-22 21:36:08,155.250.84.85,Resolved,SIEM
+1397,175,Failed Login,Critical,2023-11-28 10:26:30,179.155.17.221,Escalated,SIEM
+1398,75,Data Exfiltration,Low,2024-08-12 12:54:46,120.85.240.137,Investigating,Manual
+1399,89,Intrusion Attempt,Critical,2023-01-20 06:24:53,147.154.165.137,Escalated,SIEM
+1400,1,Intrusion Attempt,Medium,2024-06-16 17:34:25,243.215.171.56,Investigating,Firewall
+1401,127,Malware Detected,Medium,2024-08-15 16:02:12,84.77.221.136,False Positive,Manual
+1402,54,Malware Detected,Critical,2024-05-12 16:20:15,90.182.129.169,Open,WAF
+1403,142,Privilege Escalation,Critical,2023-02-07 04:22:55,79.166.78.254,Open,Firewall
+1404,20,Brute Force,Medium,2024-12-28 05:38:37,181.59.179.241,Resolved,SIEM
+1405,158,Brute Force,Medium,2024-09-20 11:30:04,218.110.91.132,False Positive,SIEM
+1406,181,Lateral Movement,Medium,2025-03-08 16:49:50,7.224.64.65,Open,Manual
+1407,159,Data Exfiltration,Medium,2025-03-22 08:29:23,200.146.65.81,False Positive,Manual
+1408,72,Policy Violation,Medium,2024-11-12 11:21:25,181.190.12.64,Investigating,EDR
+1409,168,Data Exfiltration,Medium,2024-07-18 21:50:22,145.58.183.143,Open,IDS
+1410,28,Phishing,High,2023-06-27 22:49:10,144.227.52.113,Resolved,IDS
+1411,35,Privilege Escalation,Medium,2025-02-13 05:01:23,176.91.251.159,Resolved,WAF
+1412,119,Lateral Movement,Low,2023-03-13 08:31:54,26.207.42.145,Escalated,SIEM
+1413,181,Privilege Escalation,Low,2024-10-27 20:20:12,153.161.87.193,Resolved,EDR
+1414,36,Malware Detected,High,2023-10-09 10:13:16,9.71.214.109,Open,Firewall
+1415,141,Phishing,Medium,2023-09-29 10:23:09,131.73.72.56,Investigating,Manual
+1416,141,Port Scan,Low,2023-04-18 14:25:50,56.164.6.182,Investigating,IDS
+1417,73,Policy Violation,Critical,2024-03-17 20:37:28,83.146.130.130,Resolved,SIEM
+1418,59,Brute Force,Medium,2025-03-27 01:57:59,25.2.52.141,False Positive,EDR
+1419,155,Policy Violation,Medium,2023-07-14 06:27:09,160.78.127.148,Escalated,SIEM
+1420,56,DDoS,Medium,2023-10-13 20:10:01,58.196.17.57,Investigating,EDR
+1421,137,Port Scan,Medium,2023-07-23 08:04:05,98.248.31.64,Investigating,IDS
+1422,142,Lateral Movement,Medium,2023-04-12 05:25:23,114.140.224.93,Investigating,Firewall
+1423,146,Policy Violation,Medium,2024-03-20 13:12:59,88.131.195.29,Resolved,SIEM
+1424,92,Malware Detected,Medium,2023-01-29 13:14:23,174.94.13.223,Resolved,IDS
+1425,100,Lateral Movement,Low,2024-06-22 04:58:38,108.24.240.34,Escalated,IDS
+1426,26,Intrusion Attempt,Medium,2023-10-02 23:59:20,176.184.152.210,Resolved,WAF
+1427,5,Phishing,High,2023-01-04 02:34:49,76.190.245.130,False Positive,WAF
+1428,41,Malware Detected,Low,2023-12-19 09:35:58,35.106.133.120,Open,IDS
+1429,26,Phishing,High,2023-08-22 09:37:07,85.101.177.183,Resolved,EDR
+1430,131,Failed Login,High,2024-02-02 12:43:51,127.156.231.250,Investigating,SIEM
+1431,5,DDoS,Critical,2024-02-21 04:35:02,229.206.205.85,Open,Manual
+1432,91,Lateral Movement,Critical,2023-12-22 04:24:22,84.42.12.172,Escalated,Manual
+1433,102,Malware Detected,Medium,2024-12-20 07:31:26,3.57.132.17,Investigating,WAF
+1434,129,DDoS,Low,2024-10-11 02:00:16,231.87.197.125,Open,WAF
+1435,91,Intrusion Attempt,Low,2025-02-24 07:12:09,141.123.175.97,Escalated,EDR
+1436,183,Data Exfiltration,Medium,2023-07-22 04:39:17,96.252.60.190,Open,IDS
+1437,187,Data Exfiltration,High,2024-11-04 16:02:16,176.107.118.162,Open,WAF
+1438,163,Privilege Escalation,Medium,2024-11-24 10:13:55,61.195.164.196,False Positive,WAF
+1439,197,Policy Violation,Low,2025-02-25 07:17:33,139.204.82.104,Open,SIEM
+1440,128,Anomalous Traffic,Critical,2023-03-03 09:14:14,144.200.110.221,Investigating,SIEM
+1441,125,Lateral Movement,Critical,2023-03-30 07:52:36,200.156.37.146,Investigating,EDR
+1442,109,Phishing,Critical,2023-10-23 05:01:56,116.21.155.213,Escalated,Firewall
+1443,193,Malware Detected,Medium,2023-09-01 15:54:39,193.6.18.74,Open,WAF
+1444,74,Malware Detected,High,2023-11-03 02:50:53,142.5.252.53,Open,EDR
+1445,94,Malware Detected,Medium,2024-01-04 18:34:54,216.255.198.50,Open,EDR
+1446,154,Lateral Movement,Low,2024-02-03 20:51:29,184.84.82.39,Resolved,IDS
+1447,31,Anomalous Traffic,High,2024-02-05 03:07:21,16.64.148.220,Escalated,SIEM
+1448,128,Intrusion Attempt,Medium,2025-01-24 12:09:31,48.4.125.85,Resolved,IDS
+1449,66,Phishing,Low,2023-02-10 23:53:11,126.178.12.43,Resolved,Manual
+1450,150,Port Scan,Low,2023-08-14 05:17:33,157.141.43.44,Resolved,EDR
+1451,58,Policy Violation,Critical,2024-04-26 08:46:47,62.6.207.235,Escalated,IDS
+1452,152,Anomalous Traffic,Critical,2024-10-03 13:21:38,150.65.17.76,Escalated,WAF
+1453,15,Anomalous Traffic,Medium,2024-11-20 07:21:06,160.220.123.79,Investigating,WAF
+1454,104,Intrusion Attempt,High,2023-04-26 07:00:33,49.248.109.197,Investigating,EDR
+1455,54,Lateral Movement,Critical,2023-09-30 14:53:44,238.171.156.64,Escalated,EDR
+1456,39,Failed Login,Medium,2023-01-10 14:05:39,117.160.83.169,Escalated,SIEM
+1457,67,Malware Detected,Medium,2025-01-31 14:26:18,163.30.211.92,Investigating,EDR
+1458,32,Failed Login,High,2023-04-29 02:30:22,115.146.173.84,Investigating,IDS
+1459,137,Failed Login,High,2024-02-18 07:00:16,164.57.17.208,Resolved,SIEM
+1460,182,Failed Login,High,2023-01-09 16:31:16,68.150.29.60,Resolved,SIEM
+1461,129,Port Scan,Critical,2023-09-12 06:28:34,235.121.184.127,Escalated,Firewall
+1462,92,DDoS,Medium,2024-11-15 17:10:12,86.174.87.52,Open,Firewall
+1463,155,Brute Force,Medium,2024-03-16 20:00:09,81.208.136.171,False Positive,SIEM
+1464,1,Malware Detected,Low,2023-08-28 06:35:13,178.124.101.113,Resolved,WAF
+1465,4,Port Scan,Medium,2024-01-28 15:29:29,186.20.181.109,Open,EDR
+1466,147,Phishing,Critical,2023-12-26 09:04:36,131.159.69.177,Investigating,Firewall
+1467,144,Data Exfiltration,Medium,2024-10-10 04:57:24,11.109.233.93,Open,WAF
+1468,134,Failed Login,Medium,2024-01-05 10:36:36,46.194.92.87,Investigating,WAF
+1469,161,Brute Force,Medium,2024-03-09 21:10:49,236.52.109.6,False Positive,Firewall
+1470,154,Data Exfiltration,High,2023-05-19 09:03:39,22.123.128.197,Escalated,EDR
+1471,187,Anomalous Traffic,Medium,2024-01-12 09:23:49,228.160.36.142,Resolved,SIEM
+1472,197,Failed Login,Medium,2024-05-26 06:25:05,3.20.199.70,Resolved,Firewall
+1473,132,DDoS,High,2024-07-24 11:54:43,67.197.190.161,Resolved,WAF
+1474,44,Port Scan,Medium,2023-10-05 18:16:53,201.2.149.130,Open,IDS
+1475,43,Port Scan,Medium,2024-05-26 00:14:30,99.154.89.194,Investigating,Manual
+1476,161,Privilege Escalation,Low,2024-07-23 13:55:06,150.96.252.130,Resolved,Firewall
+1477,33,Policy Violation,Medium,2024-08-02 12:57:06,62.225.138.240,Open,WAF
+1478,85,Lateral Movement,Medium,2024-04-11 08:29:58,64.250.151.45,Escalated,Manual
+1479,11,Phishing,Low,2023-04-26 17:09:01,39.79.167.124,Escalated,Firewall
+1480,42,Phishing,High,2025-03-21 19:19:45,26.221.254.138,Escalated,WAF
+1481,85,Policy Violation,Critical,2023-02-06 05:34:58,54.37.109.42,Escalated,SIEM
+1482,46,Failed Login,Critical,2023-01-07 15:19:26,119.198.117.195,Escalated,SIEM
+1483,188,Brute Force,High,2024-11-10 09:59:23,221.173.155.78,Escalated,Firewall
+1484,196,Lateral Movement,Medium,2025-02-10 21:31:25,176.1.38.191,Resolved,IDS
+1485,45,Data Exfiltration,Low,2024-12-30 20:59:49,28.231.118.247,Resolved,Firewall
+1486,88,Lateral Movement,Low,2024-09-01 22:13:33,60.159.181.158,Investigating,Firewall
+1487,8,Brute Force,Medium,2024-04-15 17:27:39,168.212.22.242,Open,Manual
+1488,64,Port Scan,Medium,2023-02-12 01:40:27,46.103.97.67,Open,Manual
+1489,144,Privilege Escalation,Low,2024-06-05 19:03:29,157.171.157.150,Resolved,WAF
+1490,16,Phishing,Low,2023-03-15 11:01:04,74.156.73.240,Open,EDR
+1491,177,Policy Violation,Low,2024-01-07 11:42:00,90.217.210.102,Open,SIEM
+1492,175,Data Exfiltration,Low,2024-12-12 17:35:42,91.222.121.226,Resolved,IDS
+1493,9,Data Exfiltration,High,2023-05-29 01:14:44,36.21.54.73,Open,IDS
+1494,99,DDoS,High,2024-07-10 03:56:18,215.104.13.149,Investigating,WAF
+1495,95,Data Exfiltration,Medium,2024-03-15 09:15:44,208.3.154.225,Open,SIEM
+1496,138,Brute Force,High,2024-06-13 05:43:38,152.123.80.146,Escalated,EDR
+1497,59,Brute Force,Low,2025-03-02 14:23:57,130.75.187.66,False Positive,SIEM
+1498,28,Intrusion Attempt,Low,2023-11-25 06:03:41,9.191.231.9,False Positive,Firewall
+1499,117,Data Exfiltration,Medium,2024-06-23 01:03:30,111.155.196.250,Escalated,Manual
+1500,9,Failed Login,Medium,2024-06-16 13:40:59,97.82.99.140,Escalated,EDR
+1501,15,Brute Force,High,2024-09-29 01:48:11,118.92.248.115,Open,SIEM
+1502,143,Intrusion Attempt,Low,2023-08-05 03:04:59,181.128.34.92,Escalated,WAF
+1503,186,Intrusion Attempt,Medium,2023-06-08 03:16:49,19.160.243.200,Open,SIEM
+1504,97,Malware Detected,High,2023-05-12 17:05:38,95.215.159.212,Resolved,IDS
+1505,81,Port Scan,Medium,2025-01-08 22:15:39,214.238.149.141,False Positive,Manual
+1506,59,Brute Force,Low,2024-05-07 12:19:51,216.214.80.135,Open,WAF
+1507,113,Privilege Escalation,Medium,2024-09-23 09:48:16,120.92.206.250,False Positive,Manual
+1508,120,DDoS,Low,2024-11-14 13:53:05,31.138.190.175,Investigating,IDS
+1509,101,Lateral Movement,Low,2023-11-21 01:12:06,2.196.57.4,Open,SIEM
+1510,16,Policy Violation,High,2023-02-18 03:31:15,225.135.195.136,Escalated,EDR
+1511,171,Privilege Escalation,Medium,2024-07-08 09:48:13,165.117.16.82,False Positive,Firewall
+1512,93,Brute Force,Critical,2023-09-01 16:59:41,28.98.84.206,Open,Firewall
+1513,130,Anomalous Traffic,High,2024-11-26 11:46:30,208.106.99.102,Open,EDR
+1514,16,Port Scan,Critical,2023-02-23 04:12:33,151.238.231.41,Investigating,IDS
+1515,80,Anomalous Traffic,High,2024-05-17 08:16:21,16.167.8.59,Resolved,SIEM
+1516,60,Intrusion Attempt,Low,2024-07-04 08:23:27,249.166.88.65,Resolved,EDR
+1517,87,Privilege Escalation,Critical,2024-05-01 16:32:26,141.10.187.203,Investigating,EDR
+1518,149,Malware Detected,Critical,2023-07-02 15:36:27,104.17.73.29,Resolved,IDS
+1519,126,Brute Force,Critical,2023-03-13 01:07:20,10.201.122.138,Open,SIEM
+1520,15,Brute Force,High,2023-02-03 00:42:48,209.159.141.142,Resolved,Firewall
+1521,158,Lateral Movement,High,2023-07-22 00:29:15,226.181.187.165,Resolved,IDS
+1522,4,Failed Login,High,2023-07-08 23:34:50,202.98.200.231,Investigating,WAF
+1523,91,Intrusion Attempt,High,2023-02-09 20:37:03,204.225.245.100,Resolved,Manual
+1524,4,Port Scan,Medium,2024-12-05 05:22:56,108.8.183.218,False Positive,WAF
+1525,55,Phishing,Low,2024-12-19 20:35:15,93.254.212.115,False Positive,SIEM
+1526,122,Policy Violation,Critical,2024-12-19 13:37:26,177.230.249.227,Investigating,Firewall
+1527,116,Failed Login,High,2024-12-29 19:01:29,221.65.153.192,False Positive,Manual
+1528,83,Privilege Escalation,High,2023-03-29 21:43:09,50.71.127.65,Resolved,IDS
+1529,51,DDoS,Medium,2024-06-16 17:01:17,78.176.220.109,Investigating,Firewall
+1530,38,Malware Detected,High,2023-06-03 22:45:30,177.253.211.45,Escalated,SIEM
+1531,158,Malware Detected,Medium,2023-05-31 09:29:45,233.162.179.136,Resolved,Manual
+1532,189,Phishing,Medium,2025-01-25 09:04:12,60.232.187.115,Open,Manual
+1533,123,Privilege Escalation,High,2023-03-20 09:56:46,173.84.81.249,False Positive,IDS
+1534,170,Anomalous Traffic,High,2024-01-24 23:48:12,26.143.203.219,Open,WAF
+1535,67,Privilege Escalation,High,2023-12-08 18:35:32,94.217.52.21,Resolved,EDR
+1536,34,DDoS,High,2023-09-03 09:15:06,196.191.35.183,False Positive,WAF
+1537,33,Privilege Escalation,Medium,2023-09-09 15:02:46,215.231.47.94,Escalated,EDR
+1538,181,Lateral Movement,Low,2023-10-04 15:08:21,146.208.162.217,Open,Manual
+1539,145,Anomalous Traffic,Critical,2023-08-25 23:51:01,134.123.30.116,Investigating,Manual
+1540,196,Lateral Movement,Critical,2025-02-20 04:34:30,66.252.13.125,Investigating,SIEM
+1541,173,Brute Force,High,2023-01-05 06:54:58,121.189.56.172,Resolved,WAF
+1542,77,Privilege Escalation,High,2023-02-06 01:14:53,188.181.102.46,Open,SIEM
+1543,189,Data Exfiltration,Low,2023-11-02 06:08:13,87.228.7.178,Open,WAF
+1544,11,Data Exfiltration,Low,2023-04-15 08:21:02,191.175.139.45,Resolved,EDR
+1545,82,Policy Violation,Low,2023-04-24 11:42:29,51.16.214.117,Investigating,WAF
+1546,161,Port Scan,Medium,2024-06-26 16:06:12,144.250.226.131,Open,IDS
+1547,51,Privilege Escalation,Low,2024-07-23 20:51:25,169.65.69.11,Escalated,WAF
+1548,129,Malware Detected,Medium,2024-07-04 23:16:57,210.247.0.52,False Positive,IDS
+1549,197,Phishing,Critical,2024-10-31 02:07:48,79.186.171.169,Escalated,WAF
+1550,172,Policy Violation,Medium,2023-10-12 04:39:35,157.91.124.237,False Positive,Manual
+1551,55,Policy Violation,Low,2024-09-25 18:33:13,108.217.87.114,Open,SIEM
+1552,149,Malware Detected,High,2023-11-10 12:19:09,211.191.193.159,Investigating,WAF
+1553,76,Intrusion Attempt,Medium,2024-06-04 10:00:44,222.96.253.67,Resolved,EDR
+1554,197,Lateral Movement,High,2024-04-15 00:45:14,25.165.66.202,Open,WAF
+1555,188,DDoS,High,2025-02-14 03:06:29,165.183.69.116,Resolved,Firewall
+1556,76,Lateral Movement,High,2024-06-07 15:49:10,92.107.25.4,Escalated,SIEM
+1557,96,Failed Login,Medium,2024-12-12 00:15:53,25.88.178.155,Resolved,Firewall
+1558,139,Data Exfiltration,Low,2023-11-14 09:05:11,224.54.96.144,Escalated,WAF
+1559,56,Intrusion Attempt,Medium,2025-03-02 08:30:05,155.237.46.170,Open,EDR
+1560,27,Privilege Escalation,Critical,2023-03-23 23:20:00,108.181.66.229,False Positive,EDR
+1561,11,Brute Force,High,2023-01-12 10:59:34,191.64.129.70,Resolved,WAF
+1562,166,Lateral Movement,Medium,2023-08-15 23:18:07,76.252.100.84,False Positive,WAF
+1563,33,Brute Force,Low,2023-05-28 01:38:40,168.223.144.233,Escalated,IDS
+1564,198,Phishing,Medium,2025-02-10 22:00:54,36.205.12.177,False Positive,EDR
+1565,90,DDoS,Medium,2024-05-10 01:16:29,111.85.210.53,Resolved,Manual
+1566,26,Phishing,Critical,2023-05-02 06:21:33,164.26.251.229,False Positive,Firewall
+1567,46,Phishing,Medium,2024-08-07 18:28:41,78.130.240.182,Investigating,WAF
+1568,88,Failed Login,Medium,2025-02-02 12:56:27,229.229.232.149,False Positive,WAF
+1569,84,Data Exfiltration,Medium,2024-07-03 01:41:07,3.200.132.202,False Positive,IDS
+1570,164,Intrusion Attempt,Low,2024-04-09 02:16:36,148.249.151.215,Resolved,WAF
+1571,122,Failed Login,Low,2023-03-18 06:44:20,222.228.87.235,Open,EDR
+1572,56,Data Exfiltration,Critical,2023-11-27 09:17:11,87.87.214.16,False Positive,Manual
+1573,78,Phishing,Low,2023-10-28 02:39:07,59.155.251.5,False Positive,EDR
+1574,45,Privilege Escalation,Critical,2024-04-26 09:28:18,105.167.172.114,Resolved,SIEM
+1575,144,Malware Detected,Medium,2024-02-21 00:39:26,40.52.253.216,False Positive,Manual
+1576,50,Port Scan,High,2024-10-15 11:00:32,69.149.200.133,Open,SIEM
+1577,134,Privilege Escalation,Low,2024-04-29 20:20:31,82.205.237.209,Investigating,EDR
+1578,94,Port Scan,Low,2024-04-19 18:04:33,12.149.247.97,Investigating,IDS
+1579,177,Data Exfiltration,Medium,2025-01-29 18:24:50,146.6.156.100,Escalated,WAF
+1580,198,Intrusion Attempt,Low,2024-02-02 18:36:19,250.163.1.109,Escalated,IDS
+1581,48,Brute Force,Low,2023-01-21 22:37:42,25.234.9.210,Investigating,EDR
+1582,171,Brute Force,Medium,2024-01-26 12:02:57,242.80.95.85,False Positive,WAF
+1583,5,Brute Force,Medium,2024-07-21 19:05:29,90.44.112.80,Investigating,Manual
+1584,61,Policy Violation,High,2023-07-12 09:20:46,228.117.131.131,Open,WAF
+1585,141,Privilege Escalation,Medium,2024-12-24 13:34:37,118.128.61.253,Resolved,WAF
+1586,192,Brute Force,High,2024-06-04 06:32:16,43.176.172.15,False Positive,EDR
+1587,78,Anomalous Traffic,Medium,2023-10-03 21:04:08,221.194.97.235,Investigating,Firewall
+1588,65,Brute Force,Low,2024-08-07 09:16:20,249.254.207.79,Escalated,WAF
+1589,6,Brute Force,Low,2023-02-23 03:59:27,131.61.244.242,Resolved,Firewall
+1590,187,Malware Detected,High,2024-11-19 08:49:30,141.85.72.49,Resolved,EDR
+1591,155,Policy Violation,Medium,2025-03-26 18:51:01,119.132.184.9,Open,Manual
+1592,166,Policy Violation,High,2023-03-22 21:45:55,182.202.9.8,Open,IDS
+1593,154,Lateral Movement,Medium,2024-10-13 17:25:24,94.125.92.96,Escalated,Firewall
+1594,90,Intrusion Attempt,High,2023-10-15 11:13:50,234.64.146.154,Investigating,SIEM
+1595,124,Lateral Movement,High,2024-06-05 13:46:59,120.93.77.160,Resolved,IDS
+1596,49,Policy Violation,High,2024-05-17 00:27:48,242.190.152.59,Resolved,SIEM
+1597,166,Policy Violation,Critical,2023-02-22 10:42:35,8.63.190.51,Escalated,Manual
+1598,67,Brute Force,Critical,2023-07-15 19:11:38,120.131.170.62,Investigating,WAF
+1599,135,Port Scan,High,2024-01-06 02:23:40,70.83.215.190,Open,WAF
+1600,99,Malware Detected,Critical,2024-10-11 13:37:49,219.6.19.156,Open,WAF
+1601,102,Intrusion Attempt,Medium,2024-06-29 09:05:05,245.152.184.104,False Positive,SIEM
+1602,171,Phishing,Medium,2025-02-11 16:37:52,176.108.202.136,Resolved,IDS
+1603,172,DDoS,High,2023-02-28 16:45:43,182.133.79.203,Resolved,EDR
+1604,164,Failed Login,Medium,2023-02-28 22:43:05,119.37.133.117,Escalated,IDS
+1605,78,Phishing,Medium,2024-03-11 07:08:59,5.254.207.45,Open,WAF
+1606,18,Privilege Escalation,Medium,2024-11-09 09:14:52,65.209.99.60,Resolved,IDS
+1607,177,Intrusion Attempt,Medium,2024-02-04 03:33:51,117.60.201.68,Open,EDR
+1608,88,Malware Detected,High,2024-03-14 02:58:59,33.121.79.213,Open,Firewall
+1609,147,Policy Violation,Medium,2023-01-10 02:55:59,12.69.59.204,Investigating,Manual
+1610,92,Brute Force,Medium,2023-11-03 16:41:30,118.32.185.34,Open,Firewall
+1611,134,Privilege Escalation,Medium,2023-09-05 21:32:57,239.15.19.205,Investigating,EDR
+1612,173,Port Scan,Low,2023-06-07 10:38:14,165.220.226.237,Investigating,SIEM
+1613,85,Data Exfiltration,Critical,2024-05-09 13:40:42,6.14.249.124,False Positive,Firewall
+1614,107,Policy Violation,High,2023-03-02 17:32:00,48.162.69.64,False Positive,EDR
+1615,73,Malware Detected,Low,2023-01-07 16:21:58,66.44.102.252,Resolved,Manual
+1616,41,Port Scan,Low,2025-02-12 21:14:17,19.153.64.233,False Positive,SIEM
+1617,40,Failed Login,Low,2023-06-08 15:10:35,47.216.85.31,Investigating,WAF
+1618,129,Anomalous Traffic,Medium,2024-07-05 18:07:08,240.70.13.7,Open,EDR
+1619,154,Policy Violation,Critical,2024-08-14 15:50:54,128.130.236.131,False Positive,Manual
+1620,162,DDoS,High,2023-09-04 10:25:33,10.99.8.163,Open,Firewall
+1621,69,Privilege Escalation,Medium,2024-05-27 18:56:12,142.38.13.154,Escalated,WAF
+1622,166,Privilege Escalation,High,2024-02-02 17:51:06,174.4.34.66,Investigating,Manual
+1623,89,Failed Login,Medium,2023-12-31 17:45:32,35.135.101.85,Investigating,Firewall
+1624,107,Port Scan,Low,2024-03-07 21:06:12,123.81.101.10,False Positive,Manual
+1625,105,DDoS,Medium,2024-05-19 18:06:33,135.235.134.231,Resolved,WAF
+1626,138,DDoS,Low,2023-05-26 01:38:47,103.32.148.132,Escalated,IDS
+1627,26,Failed Login,Medium,2023-10-17 11:57:34,251.106.205.217,Investigating,Firewall
+1628,31,Policy Violation,Low,2023-03-20 13:15:48,120.232.206.84,Open,EDR
+1629,29,Phishing,Medium,2025-02-09 19:21:57,170.177.87.89,Escalated,WAF
+1630,64,Anomalous Traffic,High,2023-11-09 23:07:08,77.148.205.21,Open,WAF
+1631,24,Lateral Movement,High,2024-05-14 13:42:48,20.80.238.192,Resolved,Firewall
+1632,39,Port Scan,Low,2023-07-28 11:10:47,18.132.139.48,Investigating,SIEM
+1633,187,Port Scan,High,2024-02-17 23:24:34,167.105.72.87,Investigating,WAF
+1634,15,Malware Detected,High,2023-06-04 18:36:25,154.239.23.194,Escalated,IDS
+1635,175,Failed Login,Medium,2023-02-06 14:16:33,77.188.70.122,Resolved,SIEM
+1636,156,Policy Violation,Medium,2024-06-05 13:16:50,225.177.22.174,Escalated,Manual
+1637,68,Phishing,Critical,2023-03-24 23:49:48,147.73.29.185,Open,WAF
+1638,100,Lateral Movement,Low,2024-10-09 06:18:21,207.60.251.243,Resolved,SIEM
+1639,73,Anomalous Traffic,High,2023-01-19 07:41:24,126.85.83.96,Resolved,EDR
+1640,50,Malware Detected,Medium,2024-12-23 10:20:16,175.68.224.39,Open,Manual
+1641,26,Data Exfiltration,High,2024-11-15 00:44:53,121.25.165.82,Open,Firewall
+1642,166,Data Exfiltration,Critical,2025-03-04 04:32:28,39.27.109.8,False Positive,Firewall
+1643,185,Intrusion Attempt,Medium,2024-01-19 06:57:19,46.100.218.15,Escalated,EDR
+1644,94,Policy Violation,High,2024-10-10 05:10:07,157.0.136.208,Open,EDR
+1645,88,Policy Violation,Critical,2023-07-14 15:34:30,245.181.160.27,Resolved,IDS
+1646,20,Brute Force,Medium,2023-01-27 19:20:37,241.109.222.66,Escalated,WAF
+1647,35,Failed Login,Low,2023-06-12 07:45:13,212.214.194.254,Open,Manual
+1648,91,Data Exfiltration,High,2023-10-18 02:01:17,18.201.133.79,False Positive,IDS
+1649,36,Failed Login,High,2024-05-26 17:53:47,103.103.95.186,False Positive,Firewall
+1650,172,Intrusion Attempt,Medium,2024-01-31 10:33:12,157.241.254.77,False Positive,IDS
+1651,39,Intrusion Attempt,Medium,2024-12-21 22:52:36,174.27.80.25,Resolved,SIEM
+1652,69,Port Scan,Low,2024-06-11 13:32:05,10.24.7.59,Escalated,Manual
+1653,113,Privilege Escalation,High,2023-11-26 18:23:05,92.48.78.9,Resolved,Firewall
+1654,124,Port Scan,High,2024-07-01 06:51:07,62.197.193.35,Resolved,WAF
+1655,161,Failed Login,Medium,2024-08-05 12:28:22,106.53.243.109,False Positive,SIEM
+1656,183,Policy Violation,Medium,2024-07-18 15:51:20,156.214.208.250,Open,Manual
+1657,53,Port Scan,Low,2023-12-16 11:08:23,176.143.174.207,Escalated,Manual
+1658,123,Anomalous Traffic,High,2024-02-16 11:30:00,181.175.194.161,Resolved,Manual
+1659,21,Malware Detected,High,2024-03-23 08:51:51,242.209.158.244,False Positive,Manual
+1660,106,Failed Login,Low,2023-06-18 21:51:42,74.242.238.136,Escalated,IDS
+1661,197,Privilege Escalation,Low,2025-03-08 22:43:53,165.111.241.254,Escalated,Firewall
+1662,128,Malware Detected,Medium,2023-04-09 15:18:28,78.205.38.131,Open,IDS
+1663,184,Brute Force,Medium,2024-06-14 18:35:15,160.142.230.113,Resolved,EDR
+1664,17,Phishing,Low,2023-12-23 23:51:51,170.181.47.113,Investigating,SIEM
+1665,29,Malware Detected,Medium,2023-07-25 20:00:17,4.106.156.68,Open,IDS
+1666,105,Privilege Escalation,High,2023-12-04 18:39:10,234.15.94.23,Resolved,Firewall
+1667,179,Anomalous Traffic,High,2023-06-23 02:39:45,144.120.184.63,Open,SIEM
+1668,181,Privilege Escalation,Medium,2024-05-22 16:19:52,199.243.226.44,False Positive,Manual
+1669,6,Privilege Escalation,Medium,2024-01-30 11:53:34,40.131.119.145,Open,SIEM
+1670,191,Malware Detected,High,2023-01-09 08:40:30,27.134.245.32,Investigating,SIEM
+1671,174,Phishing,High,2023-12-13 08:52:13,2.35.14.159,Resolved,SIEM
+1672,68,Privilege Escalation,Medium,2024-06-10 23:58:33,29.186.0.133,Investigating,WAF
+1673,140,Privilege Escalation,Medium,2023-09-21 21:23:41,9.8.143.128,Investigating,Firewall
+1674,118,DDoS,Medium,2024-09-09 06:03:36,188.88.102.216,Open,Manual
+1675,17,Phishing,Low,2023-03-08 11:22:02,41.47.223.102,Resolved,Firewall
+1676,48,Privilege Escalation,Low,2023-01-10 04:43:25,43.142.187.190,Investigating,IDS
+1677,111,Anomalous Traffic,Medium,2024-03-15 17:22:53,4.233.84.32,Investigating,EDR
+1678,123,Brute Force,High,2024-12-06 06:14:11,32.6.151.63,Escalated,WAF
+1679,153,Intrusion Attempt,Critical,2025-03-17 00:47:17,202.231.228.81,Resolved,SIEM
+1680,166,Malware Detected,Medium,2023-07-06 07:45:50,89.215.99.49,Escalated,WAF
+1681,72,Port Scan,Medium,2023-09-24 13:26:43,108.126.162.137,Escalated,IDS
+1682,177,Data Exfiltration,Medium,2023-07-10 12:29:53,74.29.246.96,Escalated,SIEM
+1683,88,Malware Detected,High,2023-02-22 19:55:15,164.128.30.85,Escalated,IDS
+1684,44,Policy Violation,Low,2023-03-15 08:48:28,24.243.60.70,Escalated,EDR
+1685,157,Port Scan,Medium,2024-01-01 22:07:52,144.226.41.100,False Positive,WAF
+1686,134,Phishing,Low,2024-10-10 14:06:40,251.16.166.218,Resolved,IDS
+1687,183,Intrusion Attempt,Medium,2023-02-04 16:46:40,19.237.57.185,Resolved,SIEM
+1688,120,Phishing,Medium,2023-07-24 16:29:32,102.240.16.217,Escalated,IDS
+1689,123,Failed Login,Medium,2023-02-14 00:44:28,121.44.20.7,Open,Manual
+1690,95,Anomalous Traffic,Medium,2023-09-26 13:33:16,252.13.114.152,Investigating,EDR
+1691,198,Privilege Escalation,Critical,2024-07-31 21:07:23,95.253.80.156,Investigating,SIEM
+1692,29,Lateral Movement,High,2023-06-19 10:57:35,23.122.189.24,Investigating,EDR
+1693,170,Intrusion Attempt,High,2024-06-01 21:06:03,47.229.134.130,Open,EDR
+1694,135,Privilege Escalation,High,2024-03-10 00:08:40,42.35.39.131,Escalated,Manual
+1695,149,Malware Detected,High,2023-03-22 00:04:22,168.61.209.214,Resolved,Firewall
+1696,41,Policy Violation,Low,2023-08-17 22:44:42,171.122.239.16,Investigating,Manual
+1697,138,Malware Detected,Low,2023-11-24 14:40:15,193.94.92.82,False Positive,WAF
+1698,42,Port Scan,Medium,2023-04-22 06:10:32,181.203.158.109,Open,IDS
+1699,110,Intrusion Attempt,High,2024-08-27 08:12:44,46.52.11.1,Escalated,WAF
+1700,123,Lateral Movement,High,2024-12-27 10:17:01,133.250.191.90,Resolved,Firewall
+1701,158,DDoS,Medium,2024-01-01 09:49:30,220.139.247.219,False Positive,IDS
+1702,81,Privilege Escalation,Medium,2023-05-06 09:34:21,216.227.186.170,Investigating,IDS
+1703,112,Intrusion Attempt,Medium,2023-01-08 07:38:24,140.155.30.73,Investigating,WAF
+1704,121,Privilege Escalation,Critical,2024-09-10 02:04:27,74.75.152.96,Escalated,Manual
+1705,12,Data Exfiltration,Medium,2024-06-11 02:11:17,10.125.240.157,Escalated,WAF
+1706,138,Lateral Movement,Low,2024-06-07 00:04:42,220.127.179.184,False Positive,Manual
+1707,200,Failed Login,Low,2025-02-26 06:04:16,64.39.54.37,Open,Manual
+1708,120,Data Exfiltration,High,2025-02-21 18:26:25,227.8.92.108,Open,IDS
+1709,189,Brute Force,Critical,2024-10-07 06:05:18,40.237.103.143,False Positive,EDR
+1710,84,Data Exfiltration,Medium,2024-06-20 09:11:15,146.210.56.184,Investigating,Manual
+1711,184,Policy Violation,Critical,2023-06-06 09:59:38,140.255.190.196,Investigating,Manual
+1712,79,Malware Detected,High,2024-08-31 20:00:22,23.104.132.82,Resolved,WAF
+1713,35,Intrusion Attempt,High,2023-03-27 15:04:58,78.20.236.114,Escalated,EDR
+1714,20,Anomalous Traffic,Medium,2024-08-09 21:06:40,173.42.89.86,False Positive,Firewall
+1715,82,Malware Detected,Critical,2023-01-20 03:20:31,66.225.77.101,Investigating,WAF
+1716,100,DDoS,Medium,2024-10-27 11:39:30,187.161.72.24,Resolved,IDS
+1717,50,Port Scan,Critical,2025-01-28 21:00:10,59.83.45.236,Escalated,SIEM
+1718,102,DDoS,High,2025-02-16 17:11:09,80.154.251.202,Escalated,Manual
+1719,174,Brute Force,Medium,2023-11-23 11:02:49,241.246.120.149,Open,Firewall
+1720,17,Intrusion Attempt,Medium,2023-02-14 08:53:52,33.118.190.217,Investigating,Firewall
+1721,34,Policy Violation,Medium,2024-11-12 16:45:23,18.229.233.71,False Positive,Manual
+1722,116,Policy Violation,Low,2024-09-16 13:46:12,13.160.40.240,False Positive,Firewall
+1723,198,Policy Violation,High,2023-05-24 03:08:34,8.170.201.236,Open,Manual
+1724,174,Phishing,Medium,2024-04-14 05:12:07,41.3.55.112,Investigating,EDR
+1725,72,Malware Detected,Medium,2023-06-26 02:58:24,154.158.80.131,False Positive,WAF
+1726,56,Privilege Escalation,High,2024-01-20 13:00:42,124.153.111.231,False Positive,SIEM
+1727,26,Intrusion Attempt,Critical,2023-02-20 09:06:49,218.174.169.116,Open,IDS
+1728,190,Anomalous Traffic,Medium,2025-01-06 17:49:06,38.80.58.157,False Positive,EDR
+1729,58,Port Scan,Medium,2024-06-24 13:33:19,243.80.134.200,False Positive,SIEM
+1730,104,Port Scan,Medium,2023-01-08 19:44:36,184.213.185.167,Open,Manual
+1731,160,Brute Force,Critical,2023-10-27 12:45:31,126.247.21.119,Open,Manual
+1732,162,Brute Force,Low,2024-05-27 02:59:25,27.249.208.238,False Positive,SIEM
+1733,97,Failed Login,Medium,2023-11-08 20:29:53,200.9.214.103,Open,WAF
+1734,70,Lateral Movement,Low,2024-03-25 06:35:32,22.131.212.146,Escalated,EDR
+1735,130,Lateral Movement,High,2024-11-26 08:51:06,37.23.50.216,Escalated,WAF
+1736,35,Anomalous Traffic,High,2023-04-15 00:27:54,246.240.70.15,False Positive,Manual
+1737,22,Lateral Movement,Low,2025-01-17 15:45:08,84.184.53.83,Open,IDS
+1738,155,Malware Detected,High,2024-05-16 12:40:47,216.59.37.48,False Positive,Manual
+1739,60,Port Scan,Medium,2024-04-30 05:35:01,127.216.220.195,Resolved,WAF
+1740,4,Lateral Movement,Low,2023-09-09 00:52:01,195.134.161.136,Resolved,EDR
+1741,54,Privilege Escalation,Medium,2024-12-28 20:12:28,187.175.180.3,Escalated,EDR
+1742,25,Privilege Escalation,Critical,2024-07-02 13:31:15,234.15.78.223,False Positive,EDR
+1743,159,Intrusion Attempt,Low,2024-04-30 16:55:48,250.122.190.122,Open,EDR
+1744,95,Intrusion Attempt,Low,2023-05-07 18:42:36,229.130.156.155,Escalated,Manual
+1745,103,Intrusion Attempt,Low,2024-07-01 02:42:33,252.74.110.231,Investigating,Firewall
+1746,44,Intrusion Attempt,High,2025-01-09 10:52:02,142.98.115.234,Open,WAF
+1747,11,Privilege Escalation,Low,2025-03-17 12:36:11,193.116.89.181,Escalated,WAF
+1748,124,DDoS,Medium,2023-07-12 15:22:28,185.72.96.215,False Positive,Firewall
+1749,95,Failed Login,Critical,2024-04-17 18:04:33,148.80.135.46,Investigating,SIEM
+1750,141,DDoS,Low,2023-02-25 20:17:13,81.68.20.107,Open,IDS
+1751,14,Intrusion Attempt,Low,2024-04-04 05:26:51,58.235.177.201,Investigating,WAF
+1752,82,Failed Login,Low,2024-04-21 12:30:19,130.184.36.39,Resolved,Manual
+1753,126,Failed Login,Medium,2023-05-09 23:19:38,156.5.149.76,Open,Manual
+1754,66,Failed Login,High,2024-09-30 21:00:25,196.106.27.98,False Positive,WAF
+1755,154,Data Exfiltration,High,2024-03-04 09:20:59,8.69.109.207,Resolved,WAF
+1756,25,Data Exfiltration,High,2023-12-15 15:34:28,165.171.156.136,False Positive,Manual
+1757,135,DDoS,High,2024-10-01 12:29:26,215.117.170.82,False Positive,EDR
+1758,129,Brute Force,Low,2025-01-30 16:46:35,238.7.104.45,Resolved,WAF
+1759,103,Phishing,Critical,2024-04-15 08:43:24,227.172.238.248,Escalated,Firewall
+1760,123,Malware Detected,Medium,2024-04-18 17:25:38,35.35.249.141,Investigating,Manual
+1761,163,DDoS,High,2023-07-08 11:00:58,123.105.23.173,False Positive,IDS
+1762,163,Data Exfiltration,High,2023-01-16 18:19:09,38.34.32.217,False Positive,Manual
+1763,111,Failed Login,Low,2023-09-02 04:37:03,131.212.227.229,Investigating,SIEM
+1764,155,Anomalous Traffic,High,2025-03-28 12:02:58,122.97.114.103,Investigating,IDS
+1765,76,Privilege Escalation,High,2024-09-16 09:13:32,50.121.169.122,Escalated,SIEM
+1766,9,Malware Detected,Low,2025-02-06 07:05:45,223.194.155.245,Investigating,WAF
+1767,95,Anomalous Traffic,Critical,2024-11-24 13:56:18,32.86.204.251,False Positive,IDS
+1768,72,Intrusion Attempt,High,2025-01-01 22:41:52,134.2.210.206,Investigating,IDS
+1769,81,Privilege Escalation,High,2023-10-02 20:52:50,71.33.234.252,Resolved,SIEM
+1770,98,Brute Force,Medium,2025-03-18 01:25:37,47.92.4.168,Investigating,WAF
+1771,97,Policy Violation,Critical,2024-09-17 02:46:47,21.0.240.252,Escalated,EDR
+1772,169,Failed Login,Medium,2023-08-18 04:34:40,29.128.151.3,Investigating,IDS
+1773,114,Brute Force,Medium,2023-11-16 01:08:21,93.80.213.196,False Positive,IDS
+1774,136,Port Scan,Low,2024-03-04 06:13:15,210.201.225.35,Escalated,WAF
+1775,87,Lateral Movement,Medium,2024-03-09 04:50:23,4.66.91.56,False Positive,WAF
+1776,110,Failed Login,Medium,2024-03-09 03:09:49,152.76.186.49,Escalated,Manual
+1777,145,Phishing,Medium,2025-02-21 07:32:45,126.194.114.109,Escalated,Firewall
+1778,190,Malware Detected,Low,2024-08-01 08:49:19,152.247.78.105,False Positive,SIEM
+1779,131,Policy Violation,Low,2024-10-06 23:18:45,254.105.60.207,Escalated,SIEM
+1780,163,DDoS,Low,2024-11-11 16:24:39,249.68.216.161,Investigating,Manual
+1781,122,Brute Force,Critical,2023-03-21 03:12:55,163.6.99.151,Open,EDR
+1782,185,Intrusion Attempt,Medium,2024-05-20 04:39:04,70.210.115.21,Investigating,EDR
+1783,122,Policy Violation,High,2024-01-20 11:28:07,133.235.113.34,Escalated,SIEM
+1784,33,Failed Login,Low,2023-11-15 09:38:42,50.3.213.249,Escalated,WAF
+1785,22,Privilege Escalation,Critical,2023-09-15 00:11:36,113.213.224.181,Investigating,Manual
+1786,14,Privilege Escalation,Critical,2024-07-04 17:49:42,147.96.155.240,Investigating,WAF
+1787,35,Intrusion Attempt,High,2024-01-14 03:20:24,190.31.254.239,False Positive,Manual
+1788,4,Anomalous Traffic,Medium,2023-07-08 05:41:40,53.211.190.37,Resolved,IDS
+1789,158,Failed Login,Critical,2025-03-19 00:08:06,168.54.227.72,Escalated,EDR
+1790,33,Privilege Escalation,High,2023-05-02 15:19:59,202.242.59.204,Resolved,Firewall
+1791,125,Privilege Escalation,Medium,2024-05-08 06:13:39,184.237.228.47,False Positive,EDR
+1792,40,Malware Detected,Medium,2024-11-20 13:23:52,127.171.196.240,Escalated,SIEM
+1793,61,Lateral Movement,Medium,2023-11-23 08:57:53,159.155.149.229,False Positive,Manual
+1794,18,Anomalous Traffic,High,2023-11-03 17:37:44,240.146.50.82,Open,Firewall
+1795,2,Phishing,High,2024-08-25 08:15:06,242.175.201.133,Escalated,Manual
+1796,175,Policy Violation,Low,2023-07-25 10:41:16,199.165.10.222,Investigating,Manual
+1797,193,DDoS,Medium,2023-05-18 01:31:32,50.105.137.229,Open,EDR
+1798,70,Brute Force,Medium,2024-01-26 08:14:27,158.22.91.202,False Positive,SIEM
+1799,60,Brute Force,High,2024-04-10 19:38:33,207.100.51.213,Investigating,Firewall
+1800,165,Intrusion Attempt,Low,2024-03-31 07:15:11,148.4.173.128,Resolved,WAF
+1801,85,Policy Violation,Medium,2023-04-04 14:38:28,187.139.172.167,Escalated,EDR
+1802,17,Privilege Escalation,Medium,2023-09-12 08:25:47,64.168.182.212,Resolved,WAF
+1803,168,Lateral Movement,High,2023-10-17 00:09:43,122.39.138.229,Investigating,Firewall
+1804,57,Brute Force,Medium,2025-01-01 06:11:38,130.239.195.26,Resolved,IDS
+1805,99,Data Exfiltration,Medium,2024-07-07 23:45:41,113.123.161.118,Investigating,Firewall
+1806,163,Intrusion Attempt,Critical,2023-10-02 20:33:58,20.248.66.55,False Positive,IDS
+1807,191,Failed Login,Medium,2023-09-30 09:36:36,199.211.224.216,Investigating,Firewall
+1808,145,Data Exfiltration,Medium,2024-02-09 05:58:32,71.221.250.226,Escalated,SIEM
+1809,167,Lateral Movement,High,2025-01-25 04:20:30,121.190.73.200,Investigating,IDS
+1810,196,Data Exfiltration,Medium,2024-10-31 16:12:14,13.135.188.37,Investigating,IDS
+1811,36,Policy Violation,Medium,2024-10-22 18:47:22,32.73.122.222,False Positive,WAF
+1812,37,Failed Login,Medium,2023-03-18 13:47:56,169.103.215.190,False Positive,Firewall
+1813,25,Intrusion Attempt,Critical,2023-03-27 08:07:37,7.185.175.91,Resolved,WAF
+1814,177,Brute Force,Medium,2023-06-25 23:22:14,60.153.218.8,Investigating,Firewall
+1815,178,Privilege Escalation,Low,2025-03-11 16:03:53,194.56.11.38,Open,Firewall
+1816,6,Lateral Movement,Medium,2024-09-25 03:36:48,150.71.232.43,Investigating,SIEM
+1817,161,Anomalous Traffic,Critical,2023-08-09 12:17:07,20.53.253.132,False Positive,Firewall
+1818,59,Failed Login,Medium,2024-01-09 02:14:36,216.68.24.248,Open,Firewall
+1819,94,Lateral Movement,Critical,2023-05-05 23:33:14,206.180.221.159,False Positive,IDS
+1820,77,Failed Login,Medium,2024-11-24 03:52:55,38.111.101.7,False Positive,SIEM
+1821,75,Lateral Movement,High,2025-02-19 21:01:02,159.80.12.47,Investigating,IDS
+1822,92,Privilege Escalation,High,2024-04-29 18:51:19,190.22.132.68,Open,WAF
+1823,193,Intrusion Attempt,Medium,2023-04-14 11:03:12,136.118.165.191,Open,SIEM
+1824,120,Malware Detected,Medium,2023-08-23 11:38:48,53.78.221.180,Escalated,SIEM
+1825,30,Failed Login,Low,2024-02-12 23:14:38,202.62.88.116,Open,SIEM
+1826,37,Policy Violation,Critical,2023-03-03 06:34:54,202.197.94.26,Escalated,Manual
+1827,197,Anomalous Traffic,Low,2023-11-02 09:39:52,224.232.219.171,Investigating,SIEM
+1828,25,Brute Force,Low,2024-02-19 01:31:27,111.184.139.119,False Positive,EDR
+1829,179,Phishing,Medium,2023-08-10 16:04:13,160.215.251.153,Escalated,Manual
+1830,9,Malware Detected,Low,2024-12-27 16:12:41,93.4.108.62,Escalated,WAF
+1831,196,DDoS,Medium,2023-06-26 21:41:34,189.197.25.60,Investigating,Manual
+1832,114,Malware Detected,Critical,2024-01-17 10:21:41,31.185.208.159,Investigating,EDR
+1833,197,Data Exfiltration,Medium,2024-12-22 21:56:40,184.224.104.229,Escalated,SIEM
+1834,170,Data Exfiltration,High,2024-07-19 20:23:16,100.157.125.11,Escalated,Manual
+1835,38,Anomalous Traffic,High,2023-09-25 08:43:24,242.232.124.165,Open,SIEM
+1836,168,Port Scan,High,2025-03-22 20:11:00,209.253.199.139,Resolved,WAF
+1837,139,Malware Detected,High,2023-02-28 03:36:26,33.60.100.24,Escalated,WAF
+1838,95,Data Exfiltration,Critical,2024-09-12 00:34:43,78.204.222.229,Investigating,EDR
+1839,193,Policy Violation,Critical,2024-06-11 01:23:59,209.48.210.188,Escalated,SIEM
+1840,57,Phishing,Medium,2024-03-14 03:00:11,9.56.129.220,Investigating,Manual
+1841,153,Anomalous Traffic,High,2023-09-22 18:37:09,3.84.114.120,Escalated,Manual
+1842,59,Brute Force,High,2024-11-10 03:55:00,243.168.143.236,Investigating,SIEM
+1843,140,Anomalous Traffic,Low,2023-12-03 10:27:37,84.92.64.16,Open,EDR
+1844,51,Privilege Escalation,Low,2024-03-11 15:04:15,79.232.104.209,Open,EDR
+1845,197,Phishing,Low,2025-03-20 14:18:50,215.190.195.34,Investigating,WAF
+1846,174,Policy Violation,Critical,2023-03-27 04:10:37,213.67.220.103,Investigating,Manual
+1847,7,Privilege Escalation,Low,2024-10-25 03:00:32,180.102.106.40,Resolved,WAF
+1848,95,Failed Login,Medium,2023-09-03 04:38:47,183.255.172.111,False Positive,Firewall
+1849,73,Lateral Movement,Medium,2025-03-15 02:51:04,63.241.222.22,Investigating,SIEM
+1850,77,Anomalous Traffic,Low,2024-10-11 23:42:51,171.129.122.123,Resolved,Firewall
+1851,175,Phishing,Medium,2023-05-10 12:06:49,45.156.104.174,Investigating,Manual
+1852,42,Anomalous Traffic,Medium,2024-06-27 08:23:09,7.207.111.249,Resolved,EDR
+1853,181,Privilege Escalation,Critical,2023-07-18 10:48:34,69.44.156.39,False Positive,Manual
+1854,5,DDoS,High,2024-06-17 00:31:27,153.89.227.91,Open,IDS
+1855,124,Lateral Movement,Medium,2023-09-20 22:08:09,9.163.53.134,False Positive,WAF
+1856,197,Anomalous Traffic,Medium,2023-07-20 23:25:22,54.192.22.32,False Positive,IDS
+1857,100,Intrusion Attempt,Low,2023-12-30 00:22:47,230.173.197.221,Resolved,EDR
+1858,99,Malware Detected,Low,2023-06-26 20:53:07,241.165.2.153,Investigating,IDS
+1859,17,Brute Force,Medium,2023-06-15 09:47:43,149.248.95.18,Escalated,WAF
+1860,130,Brute Force,High,2024-06-18 11:09:20,53.162.189.43,Investigating,SIEM
+1861,120,Phishing,High,2023-05-03 09:36:31,216.254.34.150,Open,Manual
+1862,177,Brute Force,High,2024-11-11 10:34:54,75.78.65.137,False Positive,IDS
+1863,171,Failed Login,Medium,2024-03-28 07:39:02,217.171.54.209,Investigating,EDR
+1864,100,Brute Force,High,2025-03-11 18:51:21,240.134.107.11,Escalated,IDS
+1865,109,Lateral Movement,High,2024-05-26 18:00:38,17.87.33.48,Open,WAF
+1866,92,Anomalous Traffic,Medium,2025-02-13 22:33:40,244.101.109.182,Escalated,WAF
+1867,103,DDoS,Medium,2024-11-26 21:36:03,110.146.172.188,Investigating,Firewall
+1868,168,Malware Detected,Medium,2024-10-29 20:24:37,184.241.209.249,Investigating,EDR
+1869,196,Brute Force,High,2024-03-01 02:31:07,107.172.58.227,Escalated,EDR
+1870,111,Port Scan,High,2023-12-20 17:57:07,203.239.86.164,Resolved,EDR
+1871,197,DDoS,Low,2023-12-15 09:55:38,178.115.78.187,Investigating,Firewall
+1872,33,Malware Detected,High,2023-05-22 21:59:42,199.27.39.17,Open,Firewall
+1873,146,Anomalous Traffic,Low,2024-03-20 02:32:56,248.250.226.246,Resolved,EDR
+1874,130,Failed Login,High,2024-11-09 23:53:11,134.87.63.226,Escalated,EDR
+1875,124,Malware Detected,Medium,2024-05-21 20:22:41,47.88.202.140,Open,Manual
+1876,23,DDoS,Medium,2024-06-13 03:34:36,213.208.113.13,Open,Firewall
+1877,118,Data Exfiltration,Medium,2023-05-18 07:53:22,221.189.78.186,Open,SIEM
+1878,105,Anomalous Traffic,Medium,2025-02-22 06:57:51,77.246.40.173,False Positive,EDR
+1879,134,DDoS,Low,2023-12-21 09:10:20,199.66.126.249,Resolved,Manual
+1880,37,Data Exfiltration,Critical,2024-10-01 00:10:10,36.137.37.237,Investigating,SIEM
+1881,162,DDoS,Medium,2024-02-18 14:30:19,55.133.39.67,Open,Firewall
+1882,157,Port Scan,Critical,2024-03-08 14:51:35,217.234.27.158,Resolved,WAF
+1883,143,Lateral Movement,Medium,2024-03-18 13:57:08,146.91.92.156,Investigating,IDS
+1884,45,Policy Violation,Medium,2024-02-15 09:22:18,33.48.219.113,False Positive,Firewall
+1885,175,Phishing,Medium,2023-07-30 20:26:11,135.215.180.253,Open,WAF
+1886,103,Brute Force,Low,2023-04-22 08:47:47,50.92.77.27,False Positive,WAF
+1887,92,Phishing,Low,2023-10-21 05:08:17,238.255.164.222,Escalated,SIEM
+1888,3,Phishing,Medium,2023-09-11 15:59:58,65.142.123.19,False Positive,Manual
+1889,187,Policy Violation,High,2023-11-01 06:32:40,128.12.71.201,False Positive,IDS
+1890,101,Intrusion Attempt,High,2024-07-11 17:07:25,125.201.131.30,Investigating,EDR
+1891,64,Lateral Movement,High,2024-10-28 10:51:59,17.22.190.35,Investigating,Firewall
+1892,48,Phishing,Critical,2024-01-29 07:05:45,38.149.204.124,Investigating,Manual
+1893,65,Lateral Movement,Low,2023-07-30 02:39:25,152.51.255.141,Escalated,SIEM
+1894,162,Brute Force,Medium,2024-01-02 19:42:52,118.252.227.188,False Positive,SIEM
+1895,8,Policy Violation,Medium,2023-09-02 18:57:22,131.192.33.138,Resolved,IDS
+1896,35,Brute Force,High,2024-06-29 02:16:14,127.33.202.42,Resolved,WAF
+1897,117,Failed Login,Critical,2023-05-24 22:24:34,142.176.160.117,Escalated,SIEM
+1898,148,DDoS,High,2023-04-21 18:04:57,109.19.62.119,Resolved,IDS
+1899,33,Failed Login,Medium,2024-07-27 20:19:02,242.223.189.189,False Positive,EDR
+1900,103,Brute Force,High,2024-11-09 11:18:09,89.104.130.222,Investigating,Firewall
+1901,107,Intrusion Attempt,Low,2023-01-20 03:23:05,118.65.217.154,False Positive,SIEM
+1902,169,Anomalous Traffic,Low,2024-05-24 19:48:08,34.85.66.185,Open,Firewall
+1903,72,Phishing,Low,2023-01-18 01:26:37,83.171.50.178,Investigating,WAF
+1904,185,Intrusion Attempt,Medium,2023-05-27 06:21:16,177.133.230.254,Escalated,Firewall
+1905,22,Port Scan,Medium,2025-03-07 10:37:22,176.139.242.127,False Positive,WAF
+1906,5,DDoS,Medium,2024-05-22 21:36:33,91.84.247.226,Escalated,EDR
+1907,184,Port Scan,Medium,2024-04-17 22:52:24,176.101.111.207,Investigating,WAF
+1908,178,Intrusion Attempt,High,2023-04-05 18:51:20,51.154.121.134,Open,WAF
+1909,174,Brute Force,High,2023-05-31 12:07:25,13.243.52.155,Resolved,Firewall
+1910,116,Brute Force,High,2024-07-16 18:25:38,105.37.162.95,Investigating,WAF
+1911,142,Failed Login,Medium,2025-03-14 10:19:36,80.241.40.71,False Positive,WAF
+1912,77,Data Exfiltration,Low,2023-02-14 09:49:32,14.143.161.179,Investigating,SIEM
+1913,182,DDoS,Low,2024-12-20 06:46:37,52.203.10.68,Investigating,SIEM
+1914,168,DDoS,Medium,2024-02-24 20:11:16,200.177.156.205,Investigating,Firewall
+1915,158,Policy Violation,High,2023-07-28 07:36:41,81.117.166.185,Investigating,SIEM
+1916,191,Privilege Escalation,High,2025-01-03 13:47:51,214.158.204.59,Resolved,Firewall
+1917,182,Policy Violation,Critical,2024-02-14 06:24:49,233.84.115.123,Resolved,Firewall
+1918,10,Policy Violation,Critical,2023-05-31 00:54:30,68.208.135.70,Escalated,SIEM
+1919,146,Brute Force,Critical,2024-07-17 23:26:09,209.134.251.55,Investigating,Firewall
+1920,41,Failed Login,High,2023-03-23 06:54:40,86.219.248.15,Escalated,EDR
+1921,196,Anomalous Traffic,Medium,2024-04-28 21:33:58,109.239.173.204,Escalated,Manual
+1922,199,Privilege Escalation,Medium,2023-04-20 06:10:08,70.109.12.74,Resolved,WAF
+1923,14,Port Scan,Low,2024-02-18 04:04:55,192.178.254.143,Open,IDS
+1924,195,Anomalous Traffic,Critical,2023-04-14 12:23:02,32.246.189.192,Investigating,Firewall
+1925,196,DDoS,Medium,2024-05-13 05:16:29,1.195.229.114,False Positive,IDS
+1926,153,Malware Detected,Medium,2025-01-31 15:49:24,118.78.7.175,False Positive,IDS
+1927,65,Policy Violation,Medium,2024-07-11 14:53:46,127.12.49.52,Resolved,WAF
+1928,95,Privilege Escalation,High,2023-11-15 02:52:16,27.151.16.12,Escalated,Manual
+1929,24,Brute Force,High,2023-03-27 13:51:44,210.247.169.231,Resolved,Manual
+1930,62,Brute Force,Low,2023-12-10 21:56:38,138.63.249.186,False Positive,IDS
+1931,2,DDoS,Medium,2023-10-31 12:53:01,34.15.196.223,Open,Firewall
+1932,132,Brute Force,Medium,2024-11-26 04:08:48,68.218.160.217,False Positive,WAF
+1933,50,Data Exfiltration,High,2025-03-19 04:14:16,141.199.207.14,Escalated,SIEM
+1934,103,Data Exfiltration,High,2023-11-26 01:25:31,110.124.187.182,False Positive,IDS
+1935,30,Brute Force,High,2025-03-16 13:23:17,157.29.111.63,Open,EDR
+1936,159,Lateral Movement,Medium,2024-05-05 22:02:54,135.136.225.124,Escalated,Firewall
+1937,53,Policy Violation,Medium,2025-03-03 18:36:41,190.49.39.19,Open,Manual
+1938,119,Data Exfiltration,Low,2023-06-24 19:20:18,214.9.222.122,False Positive,SIEM
+1939,117,Intrusion Attempt,High,2023-02-15 19:31:58,104.88.166.101,Investigating,SIEM
+1940,173,Intrusion Attempt,Low,2023-09-10 18:15:23,144.222.89.241,Open,IDS
+1941,65,Malware Detected,Medium,2023-01-07 20:47:20,254.243.233.137,Open,Firewall
+1942,111,Brute Force,Medium,2023-03-04 05:18:16,30.151.165.175,Resolved,SIEM
+1943,178,Lateral Movement,High,2024-06-12 07:07:19,177.251.47.33,False Positive,IDS
+1944,26,Brute Force,Medium,2023-12-10 08:15:55,107.251.148.122,Investigating,WAF
+1945,49,Anomalous Traffic,Critical,2024-08-30 08:36:00,138.247.215.178,Investigating,Manual
+1946,194,Lateral Movement,Medium,2025-02-07 00:50:22,215.94.120.228,Resolved,Manual
+1947,182,Data Exfiltration,Medium,2023-11-23 04:32:42,101.39.75.12,Investigating,Firewall
+1948,112,Phishing,Medium,2023-07-04 02:38:23,64.208.243.194,Investigating,Firewall
+1949,52,Phishing,Medium,2024-05-23 03:36:28,13.164.169.172,Escalated,WAF
+1950,78,Brute Force,Medium,2023-03-06 08:11:52,110.180.171.252,Open,SIEM
+1951,158,Lateral Movement,Low,2024-04-29 18:40:32,6.20.241.23,False Positive,Manual
+1952,36,DDoS,Medium,2024-05-29 06:45:51,126.238.85.243,Investigating,WAF
+1953,140,Anomalous Traffic,Low,2023-04-15 05:52:19,239.68.72.33,Open,Firewall
+1954,183,Malware Detected,Medium,2024-12-05 10:53:30,112.143.137.181,Escalated,IDS
+1955,83,Lateral Movement,Medium,2023-05-20 03:15:58,42.127.143.239,False Positive,SIEM
+1956,11,Policy Violation,Medium,2024-10-14 05:50:30,75.71.149.124,False Positive,EDR
+1957,90,Data Exfiltration,Critical,2024-04-09 01:55:55,189.74.86.197,Escalated,IDS
+1958,162,Policy Violation,Low,2023-07-07 01:08:07,120.245.80.23,Escalated,Manual
+1959,11,Brute Force,Low,2024-11-13 13:35:54,243.255.181.100,Resolved,WAF
+1960,31,Privilege Escalation,High,2024-02-29 13:37:15,135.68.235.90,Escalated,EDR
+1961,185,Phishing,High,2024-02-07 09:32:45,215.196.172.250,Investigating,EDR
+1962,175,Phishing,High,2024-12-15 13:39:18,170.119.83.222,Escalated,Manual
+1963,63,Privilege Escalation,High,2025-03-17 00:12:56,241.105.107.166,Resolved,WAF
+1964,129,Data Exfiltration,Medium,2023-04-21 19:32:55,151.123.158.208,Resolved,WAF
+1965,99,Port Scan,High,2024-03-11 01:01:21,175.30.106.250,Resolved,Firewall
+1966,41,Phishing,Medium,2023-02-20 13:59:22,232.240.71.2,Resolved,Manual
+1967,101,Failed Login,Low,2023-05-10 12:20:35,123.113.137.122,Open,SIEM
+1968,184,Anomalous Traffic,Medium,2023-04-27 17:46:09,20.152.186.11,Open,EDR
+1969,122,Anomalous Traffic,Medium,2024-12-04 20:07:46,221.18.131.224,Investigating,EDR
+1970,187,Intrusion Attempt,High,2025-01-08 21:09:21,174.251.185.39,Resolved,EDR
+1971,54,Port Scan,High,2024-05-26 11:37:11,65.175.230.135,Investigating,Firewall
+1972,129,Malware Detected,Low,2023-08-30 09:14:43,166.63.7.153,Escalated,WAF
+1973,115,Data Exfiltration,High,2023-04-15 06:42:03,230.117.172.242,Open,Firewall
+1974,149,Privilege Escalation,Low,2024-11-24 02:57:32,239.123.220.78,Resolved,EDR
+1975,4,Data Exfiltration,Critical,2023-05-24 02:18:14,66.223.177.145,Escalated,Manual
+1976,138,Anomalous Traffic,Low,2024-02-16 23:07:02,220.209.130.176,False Positive,WAF
+1977,112,Brute Force,High,2023-09-24 16:52:16,21.163.241.163,Escalated,IDS
+1978,168,Intrusion Attempt,Medium,2023-01-04 14:41:07,224.44.226.54,Open,SIEM
+1979,20,Failed Login,Medium,2023-06-24 02:52:14,213.5.206.32,False Positive,SIEM
+1980,21,Malware Detected,Medium,2024-02-14 07:52:31,39.40.46.232,Open,Manual
+1981,126,DDoS,Critical,2024-10-16 22:37:42,146.197.213.247,False Positive,EDR
+1982,177,DDoS,Medium,2024-02-27 20:54:26,213.10.72.254,False Positive,Firewall
+1983,125,Port Scan,Low,2023-10-09 21:59:45,154.253.82.126,Escalated,EDR
+1984,48,DDoS,High,2023-07-28 19:03:32,232.72.54.249,Investigating,Manual
+1985,96,Malware Detected,High,2023-10-17 01:28:38,107.68.83.238,False Positive,Firewall
+1986,19,Data Exfiltration,High,2023-03-17 13:08:20,163.115.240.40,Resolved,SIEM
+1987,160,DDoS,Medium,2023-04-26 20:49:06,214.83.126.190,False Positive,WAF
+1988,98,Anomalous Traffic,Medium,2024-04-14 11:19:39,188.241.129.179,Escalated,EDR
+1989,188,Lateral Movement,Low,2024-11-15 16:57:22,249.81.6.246,False Positive,Manual
+1990,88,Data Exfiltration,Medium,2023-02-04 14:11:11,216.64.136.125,Open,Manual
+1991,79,DDoS,High,2024-05-04 12:38:27,207.177.255.40,Resolved,Firewall
+1992,10,Brute Force,Low,2023-09-03 04:53:49,171.252.127.106,Escalated,SIEM
+1993,150,Lateral Movement,Low,2024-04-21 17:45:31,112.113.173.158,Escalated,IDS
+1994,138,Anomalous Traffic,Medium,2024-11-09 14:31:21,8.52.253.64,Escalated,Manual
+1995,165,Intrusion Attempt,Medium,2023-10-09 05:03:12,12.187.121.70,Escalated,IDS
+1996,47,Policy Violation,Low,2024-06-25 00:28:21,202.130.107.101,Investigating,IDS
+1997,1,Malware Detected,Medium,2024-03-09 08:47:31,11.100.119.147,Investigating,WAF
+1998,15,Intrusion Attempt,Medium,2023-12-23 01:05:13,196.111.193.220,Escalated,Firewall
+1999,5,Phishing,Critical,2024-10-24 08:40:29,14.239.253.127,False Positive,Firewall
+2000,187,DDoS,Medium,2025-03-10 18:12:40,202.63.20.137,Escalated,EDR

@@ -1,30 +1,150 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useSessionStore } from '../../store/sessionStore';
 
 const SUGGESTIONS: Record<string, string[]> = {
+  // E-Commerce
+  customers: [
+    'Top 10 customers by total spend',
+    'Customer count by membership tier',
+    'New signups per month in 2024',
+  ],
+  products: [
+    'Top 5 highest rated products',
+    'Average price by category',
+    'Products with low stock (< 20)',
+  ],
   orders: [
-    'Top 5 products by revenue',
-    'Total revenue by region',
-    'Monthly sales trend',
-    'Show all orders from last quarter',
+    'Monthly revenue trend',
+    'Orders by payment method',
+    'Average order value by shipping method',
+  ],
+  order_items: [
+    'Best selling products by quantity',
+    'Revenue by product category',
+    'Average discount per order',
+  ],
+  // Sports
+  teams: [
+    'Teams in the Western conference',
+  ],
+  players: [
+    'Highest paid players by position',
+    'Average salary by team',
+    'Players with 10+ years experience',
+  ],
+  games: [
+    'Highest scoring games this season',
+    'Average attendance by team',
+    'Home win percentage per team',
+  ],
+  player_stats: [
+    'Top scorers this season',
+    'Players averaging 10+ assists',
+    'Points per game ranking',
+  ],
+  // Medical
+  doctors: [
+    'Doctors by specialization',
+    'Most experienced doctors',
   ],
   patients: [
     'Patient count by diagnosis',
-    'Average length of stay',
-    'Patients by department',
-    'Most common treatments',
+    'Age distribution of patients',
+    'Patients by insurance type',
   ],
+  visits: [
+    'Average length of stay by department',
+    'Total cost by visit type',
+    'Monthly admission trends',
+  ],
+  prescriptions: [
+    'Most prescribed medications',
+    'Prescriptions per doctor',
+  ],
+  // Sales
+  sales_reps: [
+    'Top reps by region',
+    'Rep count by seniority level',
+  ],
+  catalog: [
+    'Most expensive products in catalog',
+    'Products by category',
+  ],
+  deals: [
+    'Total pipeline value by stage',
+    'Win rate by deal source',
+    'Average deal size by product category',
+  ],
+  activities: [
+    'Activity count by type',
+    'Average call duration by rep',
+  ],
+  // Cybersecurity
+  assets: [
+    'Assets by criticality level',
+    'Online vs offline assets',
+  ],
+  vulnerabilities: [
+    'Critical vulnerabilities with exploits',
+    'Vulnerability count by severity',
+  ],
+  security_events: [
+    'Events by type this month',
+    'Top 10 source IPs by event count',
+    'Alert status breakdown',
+  ],
+  scan_results: [
+    'Open findings by severity',
+    'Remediation action distribution',
+  ],
+  // HR
   employees: [
     'Headcount by department',
-    'Average salary by department',
+    'Average salary by location',
     'Top 5 highest paid employees',
-    'Employee count by location',
+  ],
+  performance_reviews: [
+    'Average rating by department',
+    'Employees with Outstanding reviews',
+  ],
+  salary_history: [
+    'Biggest salary increases',
+    'Promotions per year',
   ],
 };
 
-export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
+const TABLE_DOMAINS: Record<string, string> = {
+  customers: 'E-Commerce',
+  products: 'E-Commerce',
+  orders: 'E-Commerce',
+  order_items: 'E-Commerce',
+  teams: 'Sports',
+  players: 'Sports',
+  games: 'Sports',
+  player_stats: 'Sports',
+  doctors: 'Medical',
+  patients: 'Medical',
+  visits: 'Medical',
+  prescriptions: 'Medical',
+  sales_reps: 'Sales',
+  catalog: 'Sales',
+  deals: 'Sales',
+  activities: 'Sales',
+  assets: 'Cybersecurity',
+  vulnerabilities: 'Cybersecurity',
+  security_events: 'Cybersecurity',
+  scan_results: 'Cybersecurity',
+  employees: 'HR',
+  performance_reviews: 'HR',
+  salary_history: 'HR',
+};
+
+const DOMAIN_ORDER = ['E-Commerce', 'Sports', 'Medical', 'Sales', 'Cybersecurity', 'HR'];
+
+export function SchemaPanel({ onCollapse: _onCollapse }: { onCollapse: () => void }) {
   const { session, schema, setPendingInput } = useSessionStore();
   const [expandedTables, setExpandedTables] = useState<Set<string>>(new Set());
+  const [expandedDomains, setExpandedDomains] = useState<Set<string>>(new Set(DOMAIN_ORDER));
   const [schemaOpen, setSchemaOpen] = useState(true);
   const [suggestionsOpen, setSuggestionsOpen] = useState(true);
 
@@ -36,6 +156,35 @@ export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
       return next;
     });
   };
+
+  const toggleDomain = (domain: string) => {
+    setExpandedDomains((prev) => {
+      const next = new Set(prev);
+      if (next.has(domain)) next.delete(domain);
+      else next.add(domain);
+      return next;
+    });
+  };
+
+  const groupedSchema = useMemo(() => {
+    if (!schema) return null;
+    const groups: Record<string, typeof schema> = {};
+    const ungrouped: typeof schema = [];
+    for (const table of schema) {
+      const domain = TABLE_DOMAINS[table.name];
+      if (domain) {
+        (groups[domain] ??= []).push(table);
+      } else {
+        ungrouped.push(table);
+      }
+    }
+    const ordered: { domain: string; tables: typeof schema }[] = [];
+    for (const d of DOMAIN_ORDER) {
+      if (groups[d]) ordered.push({ domain: d, tables: groups[d] });
+    }
+    if (ungrouped.length > 0) ordered.push({ domain: 'Other', tables: ungrouped });
+    return ordered;
+  }, [schema]);
 
   const suggestions = schema
     ? schema.flatMap((t) => SUGGESTIONS[t.name] ?? [])
@@ -117,42 +266,66 @@ export function SchemaPanel({ onCollapse }: { onCollapse: () => void }) {
 
         {schemaOpen && (
           <div className="overflow-y-auto px-2 pb-2">
-            {!schema ? (
+            {!groupedSchema ? (
               <div className="px-2.5 space-y-2">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="h-7 bg-gray-100 rounded-md animate-pulse" />
                 ))}
               </div>
-            ) : schema.length === 0 ? (
+            ) : groupedSchema.length === 0 ? (
               <p className="text-xs text-gray-400 px-2.5">No tables found</p>
             ) : (
-              <div className="space-y-0.5">
-                {schema.map((table) => (
-                  <div key={table.name}>
+              <div className="space-y-1">
+                {groupedSchema.map(({ domain, tables }) => (
+                  <div key={domain}>
                     <button
-                      onClick={() => toggleTable(table.name)}
-                      className="w-full flex items-center gap-1.5 px-2.5 py-1.5 text-sm rounded-md hover:bg-gray-50 transition-colors"
+                      onClick={() => toggleDomain(domain)}
+                      className="w-full flex items-center gap-1.5 px-2 py-1 text-[11px] font-semibold text-gray-500 uppercase tracking-wider rounded hover:bg-gray-50 transition-colors"
                     >
                       <svg
-                        className={`w-3 h-3 text-gray-400 transition-transform ${
-                          expandedTables.has(table.name) ? 'rotate-90' : ''
+                        className={`w-2.5 h-2.5 text-gray-400 transition-transform ${
+                          expandedDomains.has(domain) ? 'rotate-90' : ''
                         }`}
                         fill="none" stroke="currentColor" viewBox="0 0 24 24"
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                      <span className="text-gray-700 font-medium truncate">{table.name}</span>
-                      <span className="ml-auto text-[10px] text-gray-400 tabular-nums">{table.row_count} rows</span>
+                      {domain}
+                      <span className="ml-auto text-[10px] text-gray-400 font-normal normal-case">{tables.length}</span>
                     </button>
 
-                    {expandedTables.has(table.name) && (
-                      <div className="ml-5 pl-2 border-l border-gray-100 mb-1">
-                        {table.columns.map((col) => (
-                          <div key={col.name} className="flex items-center gap-1.5 py-0.5 px-1 text-xs">
-                            <span className="text-gray-600 truncate">{col.name}</span>
-                            <span className="text-gray-400 font-mono text-[10px]">{col.type}</span>
-                            {col.nullable && (
-                              <span className="text-[9px] text-yellow-600 bg-yellow-50 px-1 rounded">null</span>
+                    {expandedDomains.has(domain) && (
+                      <div className="ml-2 space-y-0.5">
+                        {tables.map((table) => (
+                          <div key={table.name}>
+                            <button
+                              onClick={() => toggleTable(table.name)}
+                              className="w-full flex items-center gap-1.5 px-2.5 py-1.5 text-sm rounded-md hover:bg-gray-50 transition-colors"
+                            >
+                              <svg
+                                className={`w-3 h-3 text-gray-400 transition-transform ${
+                                  expandedTables.has(table.name) ? 'rotate-90' : ''
+                                }`}
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                              <span className="text-gray-700 font-medium truncate">{table.name}</span>
+                              <span className="ml-auto text-[10px] text-gray-400 tabular-nums">{table.row_count} rows</span>
+                            </button>
+
+                            {expandedTables.has(table.name) && (
+                              <div className="ml-5 pl-2 border-l border-gray-100 mb-1">
+                                {table.columns.map((col) => (
+                                  <div key={col.name} className="flex items-center gap-1.5 py-0.5 px-1 text-xs">
+                                    <span className="text-gray-600 truncate">{col.name}</span>
+                                    <span className="text-gray-400 font-mono text-[10px]">{col.type}</span>
+                                    {col.nullable && (
+                                      <span className="text-[9px] text-yellow-600 bg-yellow-50 px-1 rounded">null</span>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
                             )}
                           </div>
                         ))}

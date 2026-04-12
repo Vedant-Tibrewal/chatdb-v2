@@ -1,26 +1,1001 @@
-patient_id,patient_name,age,gender,diagnosis,department,admission_date,discharge_date,treatment_type,doctor_name,total_cost
-1,John Adams,45,Male,Hypertension,Cardiology,2024-01-05,2024-01-08,OPD,Dr. Smith,1500.00
-2,Mary Baker,32,Female,Fracture,Orthopedics,2024-01-10,2024-01-20,IPD,Dr. Jones,8500.00
-3,Robert Clark,67,Male,Pneumonia,Pulmonology,2024-01-12,2024-01-22,IPD,Dr. Lee,12000.00
-4,Sarah Davis,28,Female,Migraine,Neurology,2024-01-15,,OPD,Dr. Patel,800.00
-5,James Evans,55,Male,Diabetes,Endocrinology,2024-01-20,,OPD,Dr. Smith,1200.00
-6,Linda Foster,41,Female,Appendicitis,Surgery,2024-02-01,2024-02-05,IPD,Dr. Kim,15000.00
-7,Michael Green,73,Male,Heart Attack,Cardiology,2024-02-05,2024-02-18,IPD,Dr. Smith,35000.00
-8,Emma Harris,36,Female,Pregnancy Checkup,OB-GYN,2024-02-10,,OPD,Dr. Martinez,600.00
-9,William Irving,50,Male,Back Pain,Orthopedics,2024-02-15,,OPD,Dr. Jones,900.00
-10,Jessica Johnson,29,Female,Anxiety,Psychiatry,2024-02-20,,OPD,Dr. Brown,500.00
-11,Thomas King,62,Male,Knee Replacement,Orthopedics,2024-03-01,2024-03-10,IPD,Dr. Jones,28000.00
-12,Amanda Lee,44,Female,Thyroid,Endocrinology,2024-03-05,,OPD,Dr. Smith,1100.00
-13,Christopher Moore,58,Male,Bypass Surgery,Cardiology,2024-03-10,2024-03-25,IPD,Dr. Smith,45000.00
-14,Rachel Nelson,35,Female,Asthma,Pulmonology,2024-03-15,,OPD,Dr. Lee,700.00
-15,Daniel Owen,48,Male,Gallstones,Surgery,2024-04-01,2024-04-05,IPD,Dr. Kim,18000.00
-16,Sofia Parker,52,Female,Diabetes,Endocrinology,2024-04-10,,OPD,Dr. Smith,1200.00
-17,Andrew Quinn,70,Male,Stroke,Neurology,2024-04-15,2024-05-01,IPD,Dr. Patel,42000.00
-18,Olivia Roberts,33,Female,Fracture,Orthopedics,2024-04-20,2024-04-28,IPD,Dr. Jones,7500.00
-19,Kevin Scott,46,Male,Hypertension,Cardiology,2024-05-01,,OPD,Dr. Smith,1500.00
-20,Natalie Turner,39,Female,Depression,Psychiatry,2024-05-10,,OPD,Dr. Brown,600.00
-21,Brian Underwood,61,Male,Hernia Surgery,Surgery,2024-05-15,2024-05-19,IPD,Dr. Kim,16000.00
-22,Diana Vance,27,Female,Pregnancy Checkup,OB-GYN,2024-06-01,,OPD,Dr. Martinez,600.00
-23,Edward Walsh,54,Male,Lung Cancer,Pulmonology,2024-06-10,2024-07-10,IPD,Dr. Lee,55000.00
-24,Fiona Xavier,43,Female,Migraine,Neurology,2024-06-15,,OPD,Dr. Patel,800.00
-25,George Young,66,Male,Hip Replacement,Orthopedics,2024-07-01,2024-07-12,IPD,Dr. Jones,32000.00
+patient_id,patient_name,age,gender,blood_type,primary_diagnosis,status,insurance_type
+1,Tara Harris,10,Female,B-,Hypothyroidism,Active,Medicare
+2,Noah Lee,28,Male,O+,Concussion,Transferred,Medicare
+3,Sam Lewis,86,Male,B-,Hypertension,Discharged,Medicaid
+4,Carol Clark,48,Female,O+,Anxiety,Discharged,Private Insurance
+5,Oscar Young,6,Male,B+,Anemia,Active,Uninsured
+6,Leon Brown,69,Male,O-,Atrial Fibrillation,Active,Uninsured
+7,Paula White,49,Female,A-,Depression,Discharged,Medicaid
+8,Kyle Chen,81,Male,B-,Atrial Fibrillation,Active,Uninsured
+9,Max Wilson,22,Male,B-,Type 2 Diabetes,Active,Self-Pay
+10,Laura Patel,16,Female,B+,Fracture,Transferred,Private Insurance
+11,Vera Walker,21,Female,A-,Arthritis,Active,Medicare
+12,Peter Robinson,36,Male,B+,Anemia,Active,Medicare
+13,Eve Robinson,57,Female,B-,Appendicitis,Active,Medicaid
+14,George Wilson,23,Male,B+,Hypothyroidism,Discharged,Private Insurance
+15,Julia Lewis,94,Female,O+,Kidney Stones,Active,Self-Pay
+16,George Harris,55,Male,O+,Heart Failure,Active,Medicaid
+17,Megan Martinez,22,Female,AB-,Migraine,Discharged,Private Insurance
+18,Tim Martinez,60,Male,AB-,Heart Failure,Discharged,Self-Pay
+19,Carl Scott,78,Male,AB-,Concussion,Discharged,Uninsured
+20,Carl Lee,26,Male,AB-,Type 2 Diabetes,Discharged,Self-Pay
+21,Iris Brown,25,Female,AB-,Cellulitis,Active,Medicare
+22,Megan Walker,71,Female,O-,Kidney Stones,Active,Medicaid
+23,Oscar Scott,63,Male,B-,Type 2 Diabetes,Discharged,Private Insurance
+24,Paula Thompson,17,Female,O+,Cellulitis,Transferred,Self-Pay
+25,Ian White,45,Male,B-,Heart Failure,Transferred,Private Insurance
+26,Kyle Kim,25,Male,A-,Hypertension,Active,Medicaid
+27,Diana Lewis,31,Female,AB+,Asthma,Transferred,Medicaid
+28,Kate Wilson,17,Female,B-,Chronic Back Pain,Active,Medicare
+29,Iris Brown,70,Female,B+,Migraine,Discharged,Medicaid
+30,Noah Chen,44,Male,A+,Pneumonia,Discharged,Private Insurance
+31,Alice Walker,23,Female,B-,Fracture,Transferred,Uninsured
+32,Julia Brown,70,Female,O-,Anemia,Transferred,Uninsured
+33,Sam Garcia,95,Male,A+,Chronic Back Pain,Transferred,Medicare
+34,Peter Kim,2,Male,B-,Migraine,Discharged,Medicare
+35,Brian Lewis,45,Male,B-,Cellulitis,Active,Medicare
+36,Kyle Scott,43,Male,O+,Type 2 Diabetes,Transferred,Medicare
+37,Julia Clark,63,Female,A+,Anemia,Discharged,Uninsured
+38,Xavier Clark,10,Male,O+,Pneumonia,Discharged,Private Insurance
+39,Jack Clark,53,Male,A-,Heart Failure,Discharged,Medicaid
+40,Grace Thompson,95,Female,B-,Arthritis,Transferred,Medicaid
+41,Walter Garcia,70,Male,B+,COPD,Active,Private Insurance
+42,Adam White,53,Male,B-,Atrial Fibrillation,Transferred,Self-Pay
+43,Vince Thompson,44,Male,O-,Fracture,Transferred,Uninsured
+44,Hannah Brown,7,Female,O+,Pneumonia,Discharged,Private Insurance
+45,Alice Thompson,10,Female,O+,Arthritis,Discharged,Uninsured
+46,Frank Brown,92,Male,AB-,Anemia,Active,Uninsured
+47,Carl Clark,2,Male,A+,Kidney Stones,Transferred,Self-Pay
+48,Grace Wilson,21,Female,A+,Hypothyroidism,Active,Self-Pay
+49,Quinn Clark,59,Male,B-,Pneumonia,Discharged,Self-Pay
+50,Nina Scott,52,Female,B+,COPD,Active,Medicare
+51,Quinn Patel,19,Male,AB+,Hypertension,Discharged,Private Insurance
+52,Fiona White,31,Female,B+,Pneumonia,Active,Uninsured
+53,Tara Lee,17,Female,A-,Appendicitis,Active,Medicaid
+54,Nina Patel,20,Female,O-,Appendicitis,Active,Medicare
+55,Derek Thompson,74,Male,AB-,Migraine,Transferred,Self-Pay
+56,Laura Lewis,48,Female,O-,Hypertension,Active,Medicare
+57,Max Brown,70,Male,B-,Depression,Transferred,Uninsured
+58,Derek Brown,32,Male,AB-,Concussion,Transferred,Medicaid
+59,Zach Patel,70,Male,A-,Asthma,Transferred,Self-Pay
+60,Kate Chen,63,Female,AB-,Concussion,Active,Uninsured
+61,Tara Scott,62,Female,B-,COPD,Transferred,Uninsured
+62,Walter Thompson,82,Male,AB+,Migraine,Discharged,Self-Pay
+63,Sam Allen,89,Male,A-,GERD,Transferred,Uninsured
+64,Beth Harris,30,Female,AB-,Pneumonia,Active,Medicare
+65,Olivia White,19,Female,B-,Heart Failure,Discharged,Medicaid
+66,Leon Harris,22,Male,A+,Hypothyroidism,Transferred,Private Insurance
+67,Sophia Young,41,Female,O-,Atrial Fibrillation,Active,Private Insurance
+68,Uri Chen,65,Male,AB-,Arthritis,Transferred,Private Insurance
+69,Megan Harris,77,Female,AB+,Hypertension,Active,Private Insurance
+70,Carol Thompson,81,Female,B-,Kidney Stones,Active,Uninsured
+71,Frank Clark,50,Male,AB-,Arthritis,Discharged,Uninsured
+72,Grace Kim,64,Female,O+,Migraine,Discharged,Self-Pay
+73,Carol Thompson,67,Female,B-,Migraine,Discharged,Self-Pay
+74,Walter Clark,94,Male,B+,Atrial Fibrillation,Active,Self-Pay
+75,Iris Scott,5,Female,A+,GERD,Transferred,Uninsured
+76,Brian Walker,80,Male,AB+,Hypothyroidism,Discharged,Self-Pay
+77,Wendy Scott,56,Female,A-,Chronic Back Pain,Discharged,Self-Pay
+78,Vince White,56,Male,A+,Arthritis,Active,Medicare
+79,Leon Brown,11,Male,O-,Appendicitis,Discharged,Uninsured
+80,Xavier Martinez,18,Male,A+,Pneumonia,Transferred,Self-Pay
+81,Xena White,66,Female,B+,Asthma,Transferred,Medicare
+82,Paula Patel,21,Female,O+,COPD,Transferred,Private Insurance
+83,Oscar White,85,Male,O+,Anxiety,Transferred,Self-Pay
+84,Grace Scott,70,Female,A+,Heart Failure,Discharged,Uninsured
+85,Ian King,15,Male,O+,Atrial Fibrillation,Transferred,Medicaid
+86,Tim Martinez,31,Male,A-,Depression,Active,Medicare
+87,Megan Lee,8,Female,O-,COPD,Transferred,Medicaid
+88,Sophia Chen,51,Female,B-,Fracture,Transferred,Private Insurance
+89,Xena Kim,58,Female,B-,Anxiety,Transferred,Private Insurance
+90,Sam Allen,86,Male,B-,GERD,Active,Medicaid
+91,Henry Robinson,71,Male,B-,Asthma,Active,Uninsured
+92,Vince Wright,68,Male,B-,Arthritis,Active,Medicaid
+93,Beth Allen,27,Female,AB+,Chronic Back Pain,Discharged,Medicaid
+94,Rita Robinson,69,Female,O+,Concussion,Active,Uninsured
+95,Sam Martinez,50,Male,O-,Migraine,Transferred,Medicare
+96,Quinn King,14,Female,AB+,Fracture,Transferred,Medicaid
+97,Fiona Lee,34,Female,B+,Arthritis,Transferred,Medicare
+98,Noah Young,8,Male,A+,Anxiety,Discharged,Uninsured
+99,Ian Brown,49,Male,A+,Anemia,Active,Medicaid
+100,Fiona Harris,11,Female,O+,Fracture,Discharged,Medicaid
+101,Vera Garcia,10,Female,AB+,Atrial Fibrillation,Transferred,Medicare
+102,Paula Patel,55,Female,AB-,Atrial Fibrillation,Active,Medicare
+103,Adam Lee,59,Male,AB+,COPD,Active,Private Insurance
+104,Zach Thompson,63,Male,A+,Concussion,Active,Medicaid
+105,Sam Martinez,87,Male,A+,Cellulitis,Active,Medicare
+106,Carol Walker,22,Female,AB+,Hypothyroidism,Active,Medicare
+107,Eric Garcia,48,Male,B+,Pneumonia,Transferred,Private Insurance
+108,Beth Patel,45,Female,B-,Anxiety,Active,Private Insurance
+109,Kate Lewis,30,Female,A+,Depression,Active,Uninsured
+110,Vera Patel,76,Female,B+,Appendicitis,Active,Private Insurance
+111,Walter Harris,75,Male,O+,Pneumonia,Transferred,Uninsured
+112,Noah Martinez,41,Male,B+,Appendicitis,Active,Uninsured
+113,Wendy Walker,27,Female,AB+,Depression,Active,Private Insurance
+114,Peter Young,5,Male,B-,Arthritis,Transferred,Medicaid
+115,Peter Chen,92,Male,O-,Atrial Fibrillation,Discharged,Self-Pay
+116,Sophia Clark,64,Female,O-,Hypertension,Discharged,Uninsured
+117,Frank Wilson,47,Male,O+,Anxiety,Active,Medicare
+118,Hannah Scott,9,Female,B+,Heart Failure,Discharged,Medicare
+119,Uma Scott,6,Female,O-,Depression,Discharged,Medicare
+120,Brian Robinson,65,Male,A-,Anemia,Transferred,Medicaid
+121,Vera White,85,Female,AB+,Hypothyroidism,Transferred,Medicaid
+122,Uri Lee,57,Male,O+,Chronic Back Pain,Discharged,Uninsured
+123,Derek King,76,Male,O-,Migraine,Active,Medicaid
+124,Max Clark,55,Male,AB-,GERD,Discharged,Medicaid
+125,Beth Wright,20,Female,B-,Hypertension,Active,Medicare
+126,Walter Young,2,Male,B-,Type 2 Diabetes,Transferred,Private Insurance
+127,Carol White,19,Female,AB+,Chronic Back Pain,Transferred,Self-Pay
+128,Diana Walker,60,Female,A+,Hypothyroidism,Discharged,Uninsured
+129,Laura Scott,82,Female,B+,Hypothyroidism,Transferred,Medicaid
+130,Beth Martinez,52,Female,A+,Appendicitis,Active,Private Insurance
+131,Quinn Brown,12,Female,B-,Anxiety,Discharged,Self-Pay
+132,Ray White,62,Male,AB+,Concussion,Active,Medicaid
+133,Quinn King,61,Male,AB+,Pneumonia,Discharged,Self-Pay
+134,Sophia Brown,56,Female,O-,Migraine,Transferred,Medicare
+135,Tim Patel,68,Male,AB+,Migraine,Discharged,Self-Pay
+136,Xavier Allen,29,Male,AB+,Depression,Discharged,Private Insurance
+137,Brian Clark,71,Male,B+,Fracture,Transferred,Self-Pay
+138,Ian King,3,Male,O+,COPD,Discharged,Self-Pay
+139,Nina King,38,Female,A+,Appendicitis,Active,Uninsured
+140,Carl Brown,56,Male,O+,Hypertension,Transferred,Private Insurance
+141,Ian White,8,Male,B-,Depression,Discharged,Private Insurance
+142,Laura Chen,18,Female,A+,Cellulitis,Active,Medicaid
+143,Fiona Thompson,31,Female,A-,Hypertension,Discharged,Private Insurance
+144,Ian Wilson,17,Male,O-,Fracture,Active,Uninsured
+145,Fiona Allen,13,Female,A+,Cellulitis,Active,Self-Pay
+146,Adam Garcia,21,Male,O-,Anxiety,Active,Self-Pay
+147,Ian Thompson,32,Male,O+,Arthritis,Transferred,Uninsured
+148,George Wright,38,Male,A-,Migraine,Transferred,Private Insurance
+149,Sam Young,55,Male,AB+,Hypertension,Discharged,Medicare
+150,Uri Harris,14,Male,AB-,Concussion,Discharged,Medicare
+151,Carl Harris,37,Male,A-,Appendicitis,Discharged,Medicaid
+152,Rita King,11,Female,B-,Type 2 Diabetes,Active,Private Insurance
+153,Quinn Garcia,7,Male,O+,Concussion,Transferred,Uninsured
+154,Henry Robinson,27,Male,O-,Hypertension,Active,Self-Pay
+155,Noah Martinez,19,Male,B-,Anemia,Transferred,Medicare
+156,Megan Martinez,74,Female,B-,Appendicitis,Transferred,Uninsured
+157,Iris Chen,82,Female,A+,Arthritis,Transferred,Private Insurance
+158,Uma Brown,48,Female,AB+,Anemia,Discharged,Uninsured
+159,Olivia Scott,77,Female,A-,Kidney Stones,Active,Self-Pay
+160,Frank Walker,22,Male,AB+,Asthma,Transferred,Uninsured
+161,Laura Lewis,19,Female,B+,Anemia,Discharged,Self-Pay
+162,Jack Martinez,11,Male,AB+,Arthritis,Discharged,Self-Pay
+163,Julia Allen,85,Female,O-,Migraine,Active,Private Insurance
+164,Paula Walker,31,Female,A+,Fracture,Transferred,Medicaid
+165,Ian Garcia,6,Male,AB-,COPD,Transferred,Uninsured
+166,Quinn Lewis,25,Male,B+,COPD,Discharged,Medicare
+167,Laura Wright,62,Female,AB-,Migraine,Active,Self-Pay
+168,Megan Martinez,51,Female,B+,Arthritis,Discharged,Uninsured
+169,Eve Chen,77,Female,B+,Depression,Transferred,Private Insurance
+170,Noah Patel,44,Male,O-,Cellulitis,Discharged,Uninsured
+171,Peter Patel,17,Male,B-,Kidney Stones,Transferred,Medicare
+172,Grace Thompson,28,Female,B+,Arthritis,Transferred,Private Insurance
+173,Olivia Robinson,29,Female,AB+,Hypothyroidism,Discharged,Self-Pay
+174,Ray Brown,50,Male,A-,Fracture,Discharged,Self-Pay
+175,Paula Scott,22,Female,O-,Arthritis,Discharged,Uninsured
+176,Tara King,49,Female,A+,Asthma,Discharged,Self-Pay
+177,Uma Clark,56,Female,B+,Depression,Transferred,Private Insurance
+178,Carol White,55,Female,O-,Hypothyroidism,Transferred,Private Insurance
+179,Kyle Chen,44,Male,B-,Concussion,Transferred,Private Insurance
+180,Megan Brown,13,Female,AB+,Migraine,Discharged,Uninsured
+181,Paula Clark,68,Female,A-,Migraine,Transferred,Self-Pay
+182,Noah Scott,85,Male,A+,Pneumonia,Discharged,Self-Pay
+183,Vince Robinson,15,Male,O-,Anxiety,Active,Self-Pay
+184,Jack Clark,70,Male,B-,Appendicitis,Active,Uninsured
+185,Hannah Martinez,42,Female,A-,Hypothyroidism,Discharged,Medicaid
+186,Alice Robinson,86,Female,A+,Pneumonia,Discharged,Medicaid
+187,Henry Young,73,Male,A-,Fracture,Transferred,Medicaid
+188,Tara Scott,64,Female,A+,Pneumonia,Active,Medicaid
+189,Wendy Thompson,72,Female,B+,Migraine,Active,Medicaid
+190,Vera Wright,61,Female,AB-,Appendicitis,Transferred,Uninsured
+191,Leon Lee,65,Male,AB+,Appendicitis,Discharged,Private Insurance
+192,Zach Harris,42,Male,AB-,Cellulitis,Active,Medicare
+193,Walter White,52,Male,B-,Arthritis,Transferred,Self-Pay
+194,Carl Robinson,17,Male,AB-,Cellulitis,Transferred,Medicare
+195,George Clark,8,Male,B-,Depression,Transferred,Medicare
+196,Henry Harris,76,Male,A-,Atrial Fibrillation,Transferred,Self-Pay
+197,Brian Walker,37,Male,O+,Chronic Back Pain,Discharged,Medicare
+198,Adam Robinson,16,Male,A-,Type 2 Diabetes,Discharged,Uninsured
+199,Kate Young,69,Female,B+,Cellulitis,Transferred,Medicaid
+200,Rita Young,62,Female,AB-,Anemia,Active,Self-Pay
+201,Quinn Kim,87,Male,A+,Depression,Discharged,Medicaid
+202,Ray White,30,Male,B+,Anxiety,Discharged,Medicaid
+203,Fiona Young,45,Female,AB-,Anemia,Discharged,Self-Pay
+204,Peter Patel,76,Male,A-,Atrial Fibrillation,Active,Self-Pay
+205,Ray Thompson,56,Male,A+,Cellulitis,Discharged,Medicaid
+206,Paula Clark,72,Female,A+,Appendicitis,Transferred,Medicaid
+207,Vince Chen,9,Male,B-,Anxiety,Transferred,Medicaid
+208,Oscar Harris,38,Male,A-,Asthma,Transferred,Medicare
+209,Jack Wilson,3,Male,B+,Hypothyroidism,Discharged,Medicaid
+210,Max Garcia,38,Male,A+,Hypothyroidism,Active,Uninsured
+211,Xavier Martinez,47,Male,A-,Migraine,Transferred,Private Insurance
+212,Jack Thompson,11,Male,B-,Heart Failure,Transferred,Private Insurance
+213,Olivia Martinez,56,Female,O-,Kidney Stones,Active,Private Insurance
+214,Wendy King,32,Female,B+,Chronic Back Pain,Transferred,Medicare
+215,Nina Wilson,13,Female,O+,Migraine,Discharged,Medicare
+216,Uri Allen,60,Male,A-,Appendicitis,Active,Uninsured
+217,Quinn Walker,71,Male,B-,Anxiety,Active,Self-Pay
+218,Xena Robinson,28,Female,O-,Pneumonia,Active,Private Insurance
+219,Beth Lee,51,Female,A-,Kidney Stones,Transferred,Medicare
+220,Alice White,58,Female,O-,GERD,Active,Self-Pay
+221,Fiona Allen,81,Female,B+,Hypertension,Transferred,Medicaid
+222,Tim Walker,40,Male,A+,Anemia,Transferred,Private Insurance
+223,Beth Walker,77,Female,A-,Cellulitis,Active,Medicaid
+224,Ian Clark,24,Male,AB+,Anemia,Discharged,Self-Pay
+225,Wendy Young,44,Female,B+,Asthma,Active,Uninsured
+226,Derek Wright,14,Male,AB+,Anxiety,Transferred,Uninsured
+227,Frank Chen,69,Male,O+,Kidney Stones,Active,Uninsured
+228,Zach Wright,14,Male,O+,Type 2 Diabetes,Transferred,Private Insurance
+229,Max King,74,Male,O-,Anemia,Active,Uninsured
+230,Grace Martinez,22,Female,O-,Hypertension,Transferred,Uninsured
+231,Laura Allen,22,Female,O-,Asthma,Transferred,Medicare
+232,Noah Young,56,Male,AB-,Migraine,Transferred,Medicaid
+233,Sam Wright,80,Male,O+,Chronic Back Pain,Transferred,Uninsured
+234,Zach Scott,16,Male,AB-,Cellulitis,Discharged,Self-Pay
+235,Xavier Thompson,51,Male,AB-,Concussion,Transferred,Self-Pay
+236,Oscar Clark,6,Male,O-,Hypertension,Active,Self-Pay
+237,Quinn Wilson,76,Male,O-,Anemia,Transferred,Uninsured
+238,Uri Lee,94,Male,A+,Hypothyroidism,Discharged,Medicaid
+239,Grace Wright,32,Female,A-,Depression,Discharged,Uninsured
+240,Vera Chen,92,Female,O-,Depression,Active,Self-Pay
+241,Vince White,60,Male,AB+,Anxiety,Active,Medicare
+242,Julia Young,32,Female,O+,Fracture,Transferred,Private Insurance
+243,Eric Robinson,87,Male,A-,Fracture,Transferred,Private Insurance
+244,Sophia Patel,6,Female,O-,Pneumonia,Discharged,Uninsured
+245,Diana Patel,10,Female,O-,Anemia,Active,Self-Pay
+246,Megan King,32,Female,AB+,Arthritis,Discharged,Uninsured
+247,Henry Clark,74,Male,A-,Asthma,Active,Private Insurance
+248,Carol Harris,22,Female,A+,GERD,Transferred,Uninsured
+249,Sam Brown,53,Male,AB-,Pneumonia,Active,Self-Pay
+250,Carl Lee,2,Male,AB+,Chronic Back Pain,Active,Medicaid
+251,Julia Lewis,77,Female,O+,Migraine,Active,Medicaid
+252,Frank Garcia,63,Male,O+,Kidney Stones,Discharged,Medicare
+253,Wendy Patel,42,Female,O-,Fracture,Transferred,Self-Pay
+254,Kate Martinez,1,Female,AB-,Hypothyroidism,Transferred,Medicare
+255,Yara White,52,Female,A+,Atrial Fibrillation,Discharged,Self-Pay
+256,Iris Patel,48,Female,A+,Chronic Back Pain,Discharged,Private Insurance
+257,George Lewis,75,Male,B+,Asthma,Discharged,Medicare
+258,Beth Lewis,39,Female,AB+,Migraine,Discharged,Medicare
+259,Adam Lee,34,Male,O+,Concussion,Transferred,Medicaid
+260,Quinn Wright,44,Male,AB+,Kidney Stones,Discharged,Private Insurance
+261,Yara Patel,34,Female,A+,COPD,Discharged,Medicare
+262,Rita Allen,34,Female,AB+,COPD,Discharged,Uninsured
+263,Eric White,52,Male,A-,Anemia,Discharged,Private Insurance
+264,Peter Martinez,73,Male,A+,Fracture,Transferred,Medicare
+265,George Wilson,71,Male,A-,Anxiety,Discharged,Medicaid
+266,Adam Garcia,73,Male,A+,Appendicitis,Transferred,Uninsured
+267,Walter Garcia,22,Male,AB-,Chronic Back Pain,Active,Uninsured
+268,Yara White,82,Female,AB+,Hypothyroidism,Transferred,Medicaid
+269,Yara Lewis,85,Female,O+,Asthma,Discharged,Medicare
+270,Quinn Harris,63,Female,B-,Chronic Back Pain,Discharged,Private Insurance
+271,Laura Kim,19,Female,AB+,Asthma,Transferred,Self-Pay
+272,Fiona White,43,Female,A+,Appendicitis,Active,Private Insurance
+273,Brian Kim,80,Male,AB-,Depression,Active,Uninsured
+274,Alice Martinez,39,Female,O-,Migraine,Discharged,Medicare
+275,Megan Garcia,91,Female,O+,Heart Failure,Transferred,Self-Pay
+276,Sam King,75,Male,A+,Chronic Back Pain,Discharged,Private Insurance
+277,Tim Thompson,61,Male,B+,Type 2 Diabetes,Discharged,Self-Pay
+278,Grace Lewis,70,Female,B+,Depression,Active,Uninsured
+279,Quinn Lee,24,Female,O+,Appendicitis,Discharged,Private Insurance
+280,Max Walker,46,Male,A-,Anxiety,Discharged,Medicare
+281,Tara Chen,62,Female,O+,COPD,Transferred,Medicaid
+282,Sophia Patel,8,Female,AB-,Anxiety,Transferred,Uninsured
+283,Uma Scott,62,Female,A+,Chronic Back Pain,Discharged,Private Insurance
+284,Xavier White,1,Male,AB-,Arthritis,Transferred,Uninsured
+285,Carol Wright,15,Female,AB+,Anemia,Transferred,Uninsured
+286,Tim Walker,4,Male,B+,Type 2 Diabetes,Discharged,Uninsured
+287,Quinn Lewis,28,Male,O+,Atrial Fibrillation,Active,Private Insurance
+288,Walter Wilson,30,Male,A+,Pneumonia,Active,Self-Pay
+289,Fiona Kim,46,Female,O+,Hypertension,Discharged,Self-Pay
+290,Hannah Harris,86,Female,B+,Atrial Fibrillation,Transferred,Private Insurance
+291,Carl White,65,Male,O-,COPD,Discharged,Uninsured
+292,Carol Wilson,76,Female,AB+,Kidney Stones,Discharged,Self-Pay
+293,Walter Garcia,66,Male,O-,Appendicitis,Active,Medicare
+294,Henry Clark,52,Male,A-,Type 2 Diabetes,Discharged,Private Insurance
+295,Peter Martinez,81,Male,O+,Hypothyroidism,Discharged,Self-Pay
+296,Tim Brown,13,Male,B+,Arthritis,Active,Private Insurance
+297,Tara White,27,Female,O-,Cellulitis,Discharged,Medicare
+298,Beth Thompson,53,Female,AB+,Fracture,Discharged,Uninsured
+299,Oscar Allen,58,Male,B-,Anemia,Transferred,Self-Pay
+300,Wendy King,24,Female,B-,Heart Failure,Active,Private Insurance
+301,Eve Walker,59,Female,O-,Fracture,Transferred,Medicare
+302,Ray King,13,Male,B+,Cellulitis,Transferred,Medicaid
+303,Eve Garcia,13,Female,A-,Heart Failure,Discharged,Self-Pay
+304,Beth Martinez,17,Female,O+,Kidney Stones,Transferred,Self-Pay
+305,Oscar Wright,10,Male,O+,Hypothyroidism,Discharged,Uninsured
+306,Rita Young,13,Female,A-,Depression,Discharged,Self-Pay
+307,Hannah King,49,Female,B+,Pneumonia,Discharged,Medicaid
+308,Leon Walker,56,Male,AB-,Cellulitis,Active,Uninsured
+309,Eve Kim,66,Female,B-,Anemia,Transferred,Medicare
+310,Sophia Kim,49,Female,A-,Heart Failure,Active,Medicare
+311,Nina Allen,12,Female,B+,GERD,Transferred,Medicare
+312,Laura Walker,52,Female,AB+,Appendicitis,Active,Medicare
+313,Brian Lewis,57,Male,B-,Concussion,Discharged,Self-Pay
+314,Leon Scott,84,Male,AB+,Type 2 Diabetes,Discharged,Medicare
+315,Yara Harris,46,Female,AB-,Migraine,Active,Self-Pay
+316,Carl Robinson,31,Male,AB+,Hypothyroidism,Transferred,Medicaid
+317,Henry Chen,23,Male,AB+,Cellulitis,Active,Self-Pay
+318,Zach Robinson,13,Male,B+,Concussion,Transferred,Uninsured
+319,Frank Young,42,Male,B-,Depression,Transferred,Self-Pay
+320,Max Kim,24,Male,A+,Anemia,Discharged,Uninsured
+321,Xavier Walker,51,Male,AB+,Pneumonia,Discharged,Self-Pay
+322,Uri Brown,40,Male,AB-,Chronic Back Pain,Transferred,Medicaid
+323,Nina Lee,3,Female,AB+,Fracture,Active,Private Insurance
+324,George Martinez,11,Male,AB+,Arthritis,Transferred,Medicare
+325,Ian Harris,86,Male,B-,Kidney Stones,Discharged,Private Insurance
+326,Walter Wilson,80,Male,A+,GERD,Active,Medicaid
+327,Diana Garcia,30,Female,B+,Depression,Discharged,Medicaid
+328,Paula King,28,Female,B-,Kidney Stones,Transferred,Medicare
+329,Alice King,51,Female,B-,Fracture,Transferred,Medicare
+330,Eve White,83,Female,O+,Pneumonia,Transferred,Medicare
+331,Carl Wilson,26,Male,B+,Hypertension,Transferred,Private Insurance
+332,Iris Martinez,52,Female,AB-,Hypertension,Active,Private Insurance
+333,Quinn White,55,Female,O-,GERD,Discharged,Medicaid
+334,Carol Robinson,72,Female,A-,Chronic Back Pain,Transferred,Medicare
+335,Uma Clark,33,Female,O-,Hypothyroidism,Active,Private Insurance
+336,Beth Clark,83,Female,B+,Anemia,Discharged,Medicare
+337,Max Garcia,47,Male,A+,Cellulitis,Active,Self-Pay
+338,Max Wright,8,Male,B-,Heart Failure,Transferred,Private Insurance
+339,Paula Lewis,31,Female,A+,GERD,Active,Self-Pay
+340,Quinn Thompson,28,Male,B-,Arthritis,Discharged,Medicaid
+341,Vince Walker,84,Male,A+,Concussion,Discharged,Private Insurance
+342,Julia Brown,80,Female,O-,Heart Failure,Active,Medicare
+343,Nina Wilson,85,Female,A-,Kidney Stones,Active,Uninsured
+344,Grace Clark,44,Female,O+,Anxiety,Active,Medicaid
+345,Uma Scott,25,Female,A+,Chronic Back Pain,Active,Uninsured
+346,Carol Chen,62,Female,O+,Pneumonia,Active,Uninsured
+347,Tim Harris,7,Male,AB+,Concussion,Active,Self-Pay
+348,Carl Martinez,76,Male,A+,Heart Failure,Active,Private Insurance
+349,Uma Walker,73,Female,A-,Chronic Back Pain,Active,Uninsured
+350,Eve Harris,95,Female,O-,Kidney Stones,Transferred,Medicaid
+351,George Allen,82,Male,B+,Chronic Back Pain,Discharged,Medicaid
+352,Tim Garcia,33,Male,AB-,Hypothyroidism,Discharged,Medicare
+353,Vera Robinson,48,Female,O-,Anemia,Discharged,Private Insurance
+354,Oscar Brown,6,Male,AB+,Chronic Back Pain,Active,Medicare
+355,Eric Chen,42,Male,AB-,Cellulitis,Discharged,Medicare
+356,Jack Wilson,2,Male,O+,Kidney Stones,Transferred,Uninsured
+357,Hannah Lee,18,Female,A+,GERD,Active,Private Insurance
+358,Xavier Lewis,83,Male,AB-,Arthritis,Active,Medicare
+359,Derek Garcia,21,Male,B-,Hypertension,Discharged,Medicare
+360,Julia Kim,36,Female,A-,Pneumonia,Active,Self-Pay
+361,Uri Lee,31,Male,B-,Cellulitis,Transferred,Medicare
+362,Grace Clark,71,Female,A-,Heart Failure,Active,Uninsured
+363,Adam Lee,54,Male,AB-,Concussion,Discharged,Private Insurance
+364,Oscar Clark,17,Male,A-,Asthma,Transferred,Self-Pay
+365,Max Wilson,15,Male,O-,Asthma,Transferred,Medicare
+366,Frank Lee,26,Male,A-,Atrial Fibrillation,Transferred,Uninsured
+367,Diana Wilson,52,Female,B-,Arthritis,Discharged,Private Insurance
+368,Julia Scott,18,Female,O-,Atrial Fibrillation,Transferred,Medicaid
+369,Max Patel,28,Male,AB-,Hypertension,Active,Uninsured
+370,Sophia Young,40,Female,AB+,Atrial Fibrillation,Active,Medicaid
+371,Kate Lee,18,Female,A+,Anxiety,Transferred,Medicaid
+372,Vince Harris,35,Male,A+,Appendicitis,Discharged,Medicaid
+373,Jack White,12,Male,O-,Concussion,Transferred,Private Insurance
+374,Peter Kim,93,Male,B+,Asthma,Active,Self-Pay
+375,Ian Scott,10,Male,B+,Anxiety,Transferred,Self-Pay
+376,Xavier Thompson,20,Male,A+,Asthma,Transferred,Uninsured
+377,Adam Robinson,78,Male,AB-,Chronic Back Pain,Discharged,Medicare
+378,Beth Lewis,12,Female,O+,Chronic Back Pain,Transferred,Private Insurance
+379,Iris Garcia,14,Female,AB-,Kidney Stones,Discharged,Medicare
+380,Ray Clark,18,Male,A-,Anxiety,Active,Uninsured
+381,Brian Lewis,52,Male,AB+,Kidney Stones,Discharged,Uninsured
+382,Xavier Walker,61,Male,O-,COPD,Discharged,Medicare
+383,Leon Wright,50,Male,B+,Asthma,Transferred,Private Insurance
+384,Paula Young,14,Female,O+,Kidney Stones,Active,Self-Pay
+385,Henry Martinez,39,Male,B+,Kidney Stones,Active,Private Insurance
+386,Kyle Allen,51,Male,B-,Type 2 Diabetes,Transferred,Medicare
+387,Wendy Patel,13,Female,AB-,COPD,Discharged,Private Insurance
+388,Leon Harris,28,Male,AB-,Anxiety,Active,Uninsured
+389,Jack Allen,49,Male,AB+,Kidney Stones,Transferred,Self-Pay
+390,Vera Garcia,36,Female,A-,Pneumonia,Active,Private Insurance
+391,Kyle King,57,Male,B+,Hypertension,Active,Uninsured
+392,Quinn Walker,21,Female,O+,Hypothyroidism,Active,Uninsured
+393,Diana Wright,59,Female,AB+,Anxiety,Discharged,Medicare
+394,Carol Martinez,10,Female,B-,Kidney Stones,Active,Medicaid
+395,Tara Kim,79,Female,B-,Arthritis,Active,Self-Pay
+396,Sophia White,10,Female,O+,Heart Failure,Transferred,Private Insurance
+397,Zach Kim,91,Male,AB-,Atrial Fibrillation,Transferred,Private Insurance
+398,Uri King,43,Male,A-,Asthma,Transferred,Self-Pay
+399,Uma Robinson,89,Female,AB+,Cellulitis,Discharged,Self-Pay
+400,Zach Kim,74,Male,O+,Asthma,Discharged,Private Insurance
+401,Jack Harris,49,Male,A-,Anemia,Discharged,Medicaid
+402,Uri Lewis,59,Male,A-,Anemia,Active,Uninsured
+403,Uri Martinez,55,Male,AB+,Depression,Discharged,Uninsured
+404,Frank Lewis,54,Male,AB+,Hypertension,Active,Uninsured
+405,Ian Wilson,62,Male,O+,Depression,Discharged,Self-Pay
+406,Eric Chen,12,Male,A+,Asthma,Transferred,Private Insurance
+407,Kate Scott,49,Female,O-,Heart Failure,Discharged,Uninsured
+408,Tim Lewis,52,Male,O-,Migraine,Discharged,Uninsured
+409,Grace Scott,57,Female,O+,Fracture,Discharged,Medicaid
+410,Julia Wright,34,Female,A-,Arthritis,Transferred,Medicaid
+411,Vince Walker,29,Male,A+,Kidney Stones,Transferred,Private Insurance
+412,Rita Clark,29,Female,AB-,Heart Failure,Active,Medicare
+413,Tim Allen,91,Male,A+,Hypertension,Active,Self-Pay
+414,Beth Kim,71,Female,A+,Cellulitis,Transferred,Uninsured
+415,Kyle Harris,72,Male,AB-,Cellulitis,Transferred,Self-Pay
+416,Uri Clark,46,Male,B-,Fracture,Discharged,Medicare
+417,Jack Walker,58,Male,A+,Hypertension,Transferred,Uninsured
+418,Quinn Robinson,28,Male,A+,Hypertension,Active,Medicare
+419,Vera Robinson,33,Female,O-,Hypothyroidism,Discharged,Uninsured
+420,Carl Martinez,19,Male,O-,Appendicitis,Transferred,Self-Pay
+421,Kate Lee,6,Female,A-,Kidney Stones,Discharged,Private Insurance
+422,Vince Scott,83,Male,B-,Hypothyroidism,Discharged,Self-Pay
+423,Nina Harris,22,Female,B-,Depression,Active,Uninsured
+424,Frank Clark,56,Male,A-,GERD,Active,Medicare
+425,Xavier Lewis,48,Male,O-,Atrial Fibrillation,Active,Private Insurance
+426,Alice Harris,70,Female,O-,Migraine,Discharged,Private Insurance
+427,Sam Martinez,26,Male,AB+,Asthma,Transferred,Self-Pay
+428,Xena Walker,35,Female,B+,Hypothyroidism,Discharged,Uninsured
+429,Kyle Lewis,81,Male,AB+,Asthma,Discharged,Medicaid
+430,Leon Walker,9,Male,AB+,GERD,Discharged,Medicaid
+431,Frank Martinez,81,Male,AB-,Hypothyroidism,Discharged,Medicare
+432,Adam Lewis,80,Male,AB+,Atrial Fibrillation,Discharged,Self-Pay
+433,Vera Chen,39,Female,A+,Anemia,Transferred,Self-Pay
+434,Zach King,68,Male,O+,Heart Failure,Transferred,Uninsured
+435,Uri Robinson,45,Male,AB-,Asthma,Discharged,Medicare
+436,Eve Patel,24,Female,B-,Heart Failure,Discharged,Private Insurance
+437,Vince Brown,19,Male,O+,Atrial Fibrillation,Transferred,Uninsured
+438,Noah Thompson,25,Male,A+,Depression,Active,Self-Pay
+439,Carl Young,86,Male,A-,Depression,Discharged,Medicare
+440,Max Thompson,60,Male,B+,Arthritis,Active,Medicaid
+441,Henry Scott,21,Male,B+,Fracture,Transferred,Uninsured
+442,Jack Wright,42,Male,B-,Concussion,Discharged,Self-Pay
+443,Henry Martinez,80,Male,A-,Hypothyroidism,Transferred,Uninsured
+444,Eric Thompson,20,Male,B-,Cellulitis,Discharged,Medicare
+445,Megan Wright,73,Female,AB-,COPD,Transferred,Private Insurance
+446,Eric Thompson,30,Male,B-,Heart Failure,Discharged,Self-Pay
+447,Max Young,28,Male,A+,GERD,Active,Self-Pay
+448,Henry Kim,60,Male,AB+,Asthma,Transferred,Uninsured
+449,Max Chen,39,Male,AB-,Appendicitis,Transferred,Private Insurance
+450,Derek Garcia,6,Male,B-,Fracture,Transferred,Uninsured
+451,Kate Clark,77,Female,O-,Atrial Fibrillation,Discharged,Uninsured
+452,Brian Lewis,23,Male,A+,GERD,Discharged,Medicaid
+453,Beth Patel,74,Female,O-,Kidney Stones,Discharged,Medicare
+454,Nina Thompson,34,Female,AB+,Concussion,Discharged,Uninsured
+455,Quinn Allen,54,Female,A+,GERD,Transferred,Self-Pay
+456,Noah Thompson,87,Male,AB-,Hypothyroidism,Discharged,Self-Pay
+457,Sam Robinson,33,Male,AB+,Kidney Stones,Discharged,Medicaid
+458,Leon Robinson,54,Male,A+,Type 2 Diabetes,Transferred,Self-Pay
+459,Kate Lee,59,Female,B-,Concussion,Transferred,Medicare
+460,Vera Patel,90,Female,AB-,Pneumonia,Transferred,Self-Pay
+461,Rita Wilson,4,Female,O-,Anxiety,Discharged,Uninsured
+462,Hannah King,49,Female,A-,Hypertension,Active,Medicaid
+463,Tara Robinson,38,Female,B-,Hypothyroidism,Transferred,Medicaid
+464,Derek Thompson,30,Male,B-,Kidney Stones,Discharged,Self-Pay
+465,Yara Wright,92,Female,A-,Atrial Fibrillation,Discharged,Medicare
+466,Ian Lee,79,Male,O-,Atrial Fibrillation,Active,Medicare
+467,Rita Garcia,11,Female,A-,Migraine,Discharged,Private Insurance
+468,Henry Allen,11,Male,AB+,Chronic Back Pain,Transferred,Self-Pay
+469,Laura Garcia,27,Female,AB+,Type 2 Diabetes,Discharged,Medicaid
+470,Derek Wilson,22,Male,AB-,Type 2 Diabetes,Discharged,Uninsured
+471,Sophia Kim,35,Female,O-,Atrial Fibrillation,Active,Medicaid
+472,Vince King,88,Male,AB+,Heart Failure,Active,Self-Pay
+473,Jack Wilson,31,Male,B-,Kidney Stones,Transferred,Uninsured
+474,Derek Thompson,25,Male,AB-,Anemia,Discharged,Private Insurance
+475,Iris White,44,Female,AB+,Appendicitis,Transferred,Medicaid
+476,Uri Harris,75,Male,O+,Chronic Back Pain,Transferred,Uninsured
+477,Ian Thompson,77,Male,B-,Cellulitis,Active,Medicare
+478,Peter Thompson,52,Male,O+,Hypothyroidism,Transferred,Self-Pay
+479,Wendy Patel,26,Female,B+,COPD,Transferred,Medicaid
+480,Ian Patel,45,Male,O-,COPD,Transferred,Uninsured
+481,Wendy Harris,77,Female,O+,COPD,Active,Medicare
+482,Frank Allen,5,Male,A-,COPD,Transferred,Private Insurance
+483,Kyle Lee,68,Male,AB-,Anxiety,Discharged,Private Insurance
+484,Ray White,54,Male,O-,COPD,Transferred,Self-Pay
+485,Uma Wilson,75,Female,B+,Hypothyroidism,Discharged,Medicaid
+486,Carol Harris,10,Female,A-,Arthritis,Active,Medicare
+487,Walter Wright,8,Male,AB-,Kidney Stones,Discharged,Private Insurance
+488,Frank Walker,10,Male,O-,Anemia,Discharged,Private Insurance
+489,George Walker,58,Male,B-,Depression,Transferred,Self-Pay
+490,Olivia Allen,81,Female,O+,Depression,Transferred,Self-Pay
+491,Frank Allen,34,Male,A+,Anemia,Discharged,Medicaid
+492,Eve Garcia,17,Female,O-,Depression,Transferred,Self-Pay
+493,Frank Young,69,Male,O+,Hypothyroidism,Transferred,Private Insurance
+494,Vince Garcia,15,Male,O+,Asthma,Transferred,Medicaid
+495,Grace King,84,Female,O-,Hypothyroidism,Discharged,Private Insurance
+496,Kate Allen,79,Female,B+,COPD,Discharged,Private Insurance
+497,Noah White,95,Male,B+,Pneumonia,Transferred,Private Insurance
+498,Iris Wilson,37,Female,AB-,GERD,Discharged,Medicare
+499,Noah Allen,49,Male,A+,Depression,Active,Medicaid
+500,Xavier Martinez,45,Male,A-,GERD,Discharged,Medicaid
+501,Wendy Wright,49,Female,AB+,Concussion,Transferred,Uninsured
+502,Diana Scott,78,Female,A-,Cellulitis,Discharged,Private Insurance
+503,Adam Kim,35,Male,AB-,Hypertension,Discharged,Private Insurance
+504,Wendy Kim,43,Female,A+,Kidney Stones,Active,Uninsured
+505,Tim Robinson,8,Male,O+,Migraine,Discharged,Medicaid
+506,Wendy Allen,18,Female,B+,Hypertension,Active,Self-Pay
+507,Laura Thompson,35,Female,A-,Type 2 Diabetes,Transferred,Uninsured
+508,Kyle Allen,47,Male,B+,Arthritis,Discharged,Medicaid
+509,Max Thompson,62,Male,A-,Appendicitis,Transferred,Uninsured
+510,Carl Martinez,92,Male,A-,Fracture,Transferred,Medicaid
+511,Carol Lewis,30,Female,A-,Type 2 Diabetes,Active,Private Insurance
+512,Brian Lee,25,Male,O-,Hypertension,Active,Medicaid
+513,Leon Clark,63,Male,AB-,GERD,Transferred,Self-Pay
+514,Xena Martinez,9,Female,B-,Kidney Stones,Transferred,Private Insurance
+515,Xavier Harris,50,Male,O-,Asthma,Discharged,Private Insurance
+516,Beth Walker,53,Female,O+,Cellulitis,Discharged,Uninsured
+517,Peter Allen,29,Male,O-,Chronic Back Pain,Discharged,Medicaid
+518,Quinn Chen,28,Male,O+,Pneumonia,Transferred,Medicare
+519,Brian Patel,60,Male,A-,Anemia,Discharged,Self-Pay
+520,Noah Chen,13,Male,AB-,Chronic Back Pain,Transferred,Uninsured
+521,Oscar Brown,24,Male,A+,Hypertension,Discharged,Uninsured
+522,Wendy Allen,63,Female,AB+,Concussion,Transferred,Uninsured
+523,Zach Patel,85,Male,O+,Hypothyroidism,Discharged,Self-Pay
+524,Fiona King,5,Female,O-,Anemia,Discharged,Medicare
+525,Derek White,23,Male,O+,Appendicitis,Transferred,Uninsured
+526,Olivia Wright,90,Female,B-,Concussion,Transferred,Medicare
+527,Diana Garcia,72,Female,A-,GERD,Transferred,Private Insurance
+528,Alice Clark,36,Female,AB-,Atrial Fibrillation,Transferred,Private Insurance
+529,Xavier Harris,80,Male,AB+,Type 2 Diabetes,Active,Uninsured
+530,Leon Lee,66,Male,B+,Appendicitis,Discharged,Medicare
+531,Noah Kim,16,Male,AB-,Pneumonia,Transferred,Self-Pay
+532,Sophia Harris,13,Female,B+,Chronic Back Pain,Active,Self-Pay
+533,Grace Lee,85,Female,B+,Migraine,Transferred,Private Insurance
+534,Wendy Wilson,74,Female,B+,Depression,Discharged,Medicaid
+535,Walter Lewis,33,Male,AB+,Depression,Active,Medicaid
+536,Noah King,58,Male,A+,Depression,Transferred,Private Insurance
+537,Max Young,43,Male,A+,Arthritis,Active,Private Insurance
+538,Ian Lewis,7,Male,O-,Atrial Fibrillation,Active,Self-Pay
+539,Eric Walker,33,Male,B+,COPD,Discharged,Private Insurance
+540,Ray Harris,31,Male,B-,Anxiety,Active,Private Insurance
+541,Frank Patel,6,Male,B+,Type 2 Diabetes,Transferred,Medicaid
+542,Adam Walker,49,Male,B-,Concussion,Active,Medicare
+543,Beth Martinez,78,Female,A-,Cellulitis,Discharged,Private Insurance
+544,Diana Allen,42,Female,O-,Heart Failure,Active,Medicaid
+545,Eve Young,89,Female,AB-,Concussion,Transferred,Private Insurance
+546,Quinn Kim,43,Male,AB+,Fracture,Discharged,Private Insurance
+547,George Kim,7,Male,B+,Pneumonia,Transferred,Self-Pay
+548,Derek Lewis,37,Male,A+,Appendicitis,Discharged,Medicaid
+549,Megan Lee,39,Female,A+,Hypertension,Active,Medicare
+550,Alice Scott,35,Female,AB+,Chronic Back Pain,Transferred,Uninsured
+551,Uma Walker,29,Female,A-,Appendicitis,Discharged,Uninsured
+552,Rita Harris,27,Female,B-,Appendicitis,Discharged,Self-Pay
+553,Henry Walker,10,Male,A-,Kidney Stones,Discharged,Self-Pay
+554,Hannah Wright,47,Female,B-,Arthritis,Transferred,Private Insurance
+555,Kyle Kim,28,Male,A+,Arthritis,Discharged,Medicaid
+556,Megan White,78,Female,AB-,Cellulitis,Transferred,Medicaid
+557,Eve Allen,59,Female,AB-,Asthma,Discharged,Medicare
+558,Eve Allen,94,Female,O+,Atrial Fibrillation,Active,Uninsured
+559,Walter Wilson,2,Male,B+,Cellulitis,Transferred,Uninsured
+560,Paula Martinez,19,Female,B-,Anemia,Discharged,Medicare
+561,Walter Robinson,87,Male,A+,Anemia,Active,Self-Pay
+562,Paula Patel,37,Female,B-,Hypertension,Transferred,Medicare
+563,Ray Clark,39,Male,AB-,Asthma,Discharged,Uninsured
+564,Ray Wilson,37,Male,O-,Appendicitis,Active,Medicare
+565,Noah Chen,81,Male,A+,Appendicitis,Active,Private Insurance
+566,Xavier Lee,60,Male,O-,GERD,Transferred,Private Insurance
+567,Carol Kim,35,Female,A-,Depression,Discharged,Medicare
+568,Sam Young,36,Male,O+,Appendicitis,Discharged,Uninsured
+569,Eve Garcia,64,Female,AB-,COPD,Transferred,Medicare
+570,Brian Thompson,25,Male,AB+,GERD,Discharged,Medicaid
+571,Adam Martinez,38,Male,B-,Cellulitis,Active,Uninsured
+572,Adam Clark,83,Male,B+,Pneumonia,Active,Medicaid
+573,Tara Wilson,65,Female,A+,Depression,Active,Medicaid
+574,Sophia Garcia,63,Female,A+,Pneumonia,Transferred,Self-Pay
+575,Iris Martinez,86,Female,A+,Concussion,Discharged,Medicaid
+576,Iris Patel,85,Female,B-,Pneumonia,Active,Private Insurance
+577,Zach Young,73,Male,AB-,Pneumonia,Active,Medicare
+578,Carl Young,27,Male,AB-,Anxiety,Discharged,Medicaid
+579,Carl Lewis,54,Male,AB-,Pneumonia,Transferred,Medicare
+580,Beth King,16,Female,A+,Heart Failure,Discharged,Medicare
+581,Tara Harris,14,Female,B+,GERD,Discharged,Self-Pay
+582,Henry Young,35,Male,A+,Hypothyroidism,Active,Self-Pay
+583,Kate Young,44,Female,O-,Asthma,Discharged,Uninsured
+584,Yara Walker,3,Female,A+,Heart Failure,Transferred,Medicare
+585,Diana Walker,33,Female,A-,Depression,Discharged,Uninsured
+586,Carl Allen,81,Male,B+,Arthritis,Active,Uninsured
+587,Diana Brown,92,Female,B-,COPD,Active,Private Insurance
+588,Kate Young,57,Female,AB-,Asthma,Transferred,Medicaid
+589,Olivia Lee,65,Female,B+,Hypothyroidism,Transferred,Medicaid
+590,Leon Allen,86,Male,A+,Kidney Stones,Active,Medicare
+591,Uri Young,45,Male,A+,Hypothyroidism,Active,Private Insurance
+592,Quinn Patel,80,Male,AB+,Kidney Stones,Transferred,Medicare
+593,Eve Chen,45,Female,A-,Kidney Stones,Discharged,Uninsured
+594,Fiona Lewis,26,Female,O-,GERD,Active,Medicare
+595,Kyle Harris,25,Male,B-,Kidney Stones,Active,Medicare
+596,Kyle Young,6,Male,B+,Cellulitis,Transferred,Medicaid
+597,Kyle Chen,74,Male,A-,Arthritis,Discharged,Private Insurance
+598,Henry Lee,63,Male,B-,Appendicitis,Transferred,Medicare
+599,Derek Robinson,3,Male,A-,Hypothyroidism,Active,Medicaid
+600,Brian Thompson,33,Male,AB-,Pneumonia,Discharged,Medicare
+601,Xavier Martinez,27,Male,B+,Heart Failure,Transferred,Private Insurance
+602,Oscar Garcia,15,Male,A+,Fracture,Active,Uninsured
+603,Laura Patel,17,Female,AB-,Hypothyroidism,Transferred,Medicare
+604,Uma White,56,Female,A-,COPD,Discharged,Medicare
+605,Julia Wilson,8,Female,B-,Hypertension,Active,Private Insurance
+606,Kyle Wright,78,Male,B+,Arthritis,Discharged,Private Insurance
+607,Tara Clark,63,Female,O+,Cellulitis,Discharged,Medicare
+608,Julia Chen,29,Female,O+,Depression,Discharged,Private Insurance
+609,Wendy Brown,30,Female,A+,Depression,Discharged,Private Insurance
+610,Hannah Wilson,5,Female,A+,Fracture,Active,Medicare
+611,Laura Chen,23,Female,AB-,Cellulitis,Active,Medicare
+612,Wendy Lee,68,Female,AB+,Chronic Back Pain,Discharged,Private Insurance
+613,Tara Garcia,14,Female,AB-,Atrial Fibrillation,Active,Self-Pay
+614,Yara Wilson,88,Female,B+,Chronic Back Pain,Discharged,Medicaid
+615,Henry King,18,Male,AB-,Chronic Back Pain,Discharged,Uninsured
+616,Vince Lewis,24,Male,O-,Asthma,Discharged,Uninsured
+617,Vince Scott,88,Male,O+,Migraine,Active,Uninsured
+618,Alice Brown,15,Female,O-,Kidney Stones,Active,Medicare
+619,Leon Thompson,33,Male,AB-,Appendicitis,Discharged,Private Insurance
+620,Julia Clark,16,Female,B+,Anemia,Transferred,Private Insurance
+621,Julia Harris,34,Female,B+,Depression,Active,Medicare
+622,Alice White,1,Female,A-,Asthma,Transferred,Medicare
+623,Tara Scott,63,Female,O+,Depression,Active,Medicaid
+624,Wendy Lewis,71,Female,O-,Fracture,Transferred,Private Insurance
+625,Kyle White,4,Male,AB+,Pneumonia,Transferred,Uninsured
+626,Uma Lee,75,Female,B+,Fracture,Active,Uninsured
+627,Quinn Harris,84,Male,B-,Fracture,Discharged,Private Insurance
+628,Peter Harris,2,Male,O-,Kidney Stones,Transferred,Medicare
+629,Sophia Wright,2,Female,A-,Hypertension,Transferred,Private Insurance
+630,Oscar Lewis,17,Male,O+,GERD,Transferred,Self-Pay
+631,Uri Chen,6,Male,A-,Hypertension,Transferred,Private Insurance
+632,Alice Wright,25,Female,O+,Fracture,Discharged,Private Insurance
+633,Ian Scott,69,Male,B+,Kidney Stones,Active,Medicaid
+634,Uri Wright,87,Male,AB+,Hypothyroidism,Discharged,Medicaid
+635,Xavier Wright,77,Male,AB+,Chronic Back Pain,Transferred,Uninsured
+636,Quinn Patel,37,Female,A-,Hypertension,Transferred,Private Insurance
+637,Nina Clark,39,Female,O+,GERD,Discharged,Medicaid
+638,Tim Scott,53,Male,O+,Chronic Back Pain,Discharged,Medicaid
+639,Xena Garcia,54,Female,O-,Migraine,Active,Self-Pay
+640,Alice Wilson,62,Female,O-,Type 2 Diabetes,Active,Uninsured
+641,Xavier Brown,29,Male,AB+,Chronic Back Pain,Transferred,Self-Pay
+642,Kate King,74,Female,A-,Depression,Active,Uninsured
+643,Carol Wright,59,Female,B+,Pneumonia,Discharged,Uninsured
+644,Megan Young,67,Female,AB+,Migraine,Transferred,Medicare
+645,Derek Harris,49,Male,A-,Asthma,Transferred,Medicare
+646,Ian King,40,Male,O+,GERD,Discharged,Private Insurance
+647,Ian Thompson,91,Male,O+,Hypothyroidism,Transferred,Private Insurance
+648,Quinn Kim,47,Male,O+,Chronic Back Pain,Active,Uninsured
+649,Derek Wilson,76,Male,B+,Migraine,Active,Medicare
+650,Tim Wilson,79,Male,A+,Heart Failure,Discharged,Self-Pay
+651,Megan Allen,92,Female,A+,Anxiety,Transferred,Private Insurance
+652,Uma Clark,53,Female,A-,Asthma,Active,Uninsured
+653,Vince White,95,Male,A+,Atrial Fibrillation,Active,Self-Pay
+654,Julia Wright,11,Female,O-,Hypothyroidism,Transferred,Medicaid
+655,Julia Robinson,66,Female,A-,Anemia,Transferred,Medicaid
+656,Megan Scott,53,Female,B+,COPD,Transferred,Self-Pay
+657,Vera Lewis,25,Female,A+,Hypothyroidism,Transferred,Uninsured
+658,Vera Lewis,93,Female,A-,Concussion,Transferred,Private Insurance
+659,Eric Chen,46,Male,B-,Type 2 Diabetes,Discharged,Medicaid
+660,Quinn Harris,65,Male,O-,Appendicitis,Discharged,Private Insurance
+661,Quinn Patel,4,Female,B-,Hypertension,Active,Medicaid
+662,Nina White,50,Female,A-,Asthma,Active,Medicare
+663,George Garcia,55,Male,A-,Atrial Fibrillation,Discharged,Uninsured
+664,Adam Young,81,Male,A-,Asthma,Transferred,Self-Pay
+665,Wendy Harris,66,Female,A+,Depression,Transferred,Private Insurance
+666,Ian Brown,85,Male,A+,Anxiety,Transferred,Private Insurance
+667,Sophia Clark,12,Female,B-,Asthma,Transferred,Private Insurance
+668,Peter Lewis,77,Male,B-,Migraine,Active,Private Insurance
+669,Derek Chen,3,Male,B+,Heart Failure,Discharged,Uninsured
+670,Kyle Walker,5,Male,A-,Pneumonia,Discharged,Medicare
+671,Vince Wright,61,Male,O+,Asthma,Active,Uninsured
+672,Vera Wright,8,Female,O+,Hypertension,Active,Self-Pay
+673,Fiona Scott,6,Female,O+,Arthritis,Transferred,Uninsured
+674,Ian Harris,12,Male,A+,Anemia,Transferred,Self-Pay
+675,Leon Thompson,85,Male,AB+,Appendicitis,Active,Uninsured
+676,Rita Patel,10,Female,AB-,Fracture,Transferred,Medicaid
+677,Derek Thompson,7,Male,A+,Appendicitis,Transferred,Private Insurance
+678,Vince Harris,2,Male,B-,Pneumonia,Discharged,Medicaid
+679,Beth Clark,71,Female,A+,Concussion,Active,Private Insurance
+680,Laura Harris,44,Female,A-,Hypothyroidism,Transferred,Private Insurance
+681,Ian Young,73,Male,AB+,Kidney Stones,Discharged,Self-Pay
+682,Megan Garcia,64,Female,O-,Arthritis,Active,Self-Pay
+683,Kate Kim,84,Female,O-,Pneumonia,Discharged,Medicare
+684,Jack Scott,31,Male,A-,Anemia,Active,Private Insurance
+685,Ian Wilson,18,Male,B-,GERD,Active,Self-Pay
+686,Ray Lee,51,Male,AB+,Arthritis,Transferred,Uninsured
+687,Kate Kim,41,Female,B-,Type 2 Diabetes,Discharged,Medicare
+688,Xavier Young,64,Male,B-,Migraine,Transferred,Private Insurance
+689,Vince Lee,94,Male,B+,Concussion,Active,Medicare
+690,Alice Lee,72,Female,B-,Atrial Fibrillation,Discharged,Medicare
+691,Vera Kim,12,Female,O-,Cellulitis,Active,Uninsured
+692,Kate Young,60,Female,O-,Pneumonia,Discharged,Medicaid
+693,Fiona Chen,50,Female,A+,Appendicitis,Active,Private Insurance
+694,Brian Scott,76,Male,AB-,Concussion,Discharged,Private Insurance
+695,Walter Wilson,42,Male,B-,Arthritis,Transferred,Medicare
+696,Megan Patel,27,Female,AB+,Concussion,Discharged,Self-Pay
+697,Adam Thompson,59,Male,B+,Hypothyroidism,Discharged,Self-Pay
+698,Frank Lewis,64,Male,O-,Depression,Transferred,Private Insurance
+699,Xena Brown,7,Female,A+,Cellulitis,Active,Private Insurance
+700,Iris Robinson,49,Female,A+,Kidney Stones,Transferred,Self-Pay
+701,Fiona Clark,41,Female,B-,Appendicitis,Transferred,Self-Pay
+702,Carl Lewis,71,Male,AB+,Pneumonia,Transferred,Uninsured
+703,Jack Chen,46,Male,O-,Depression,Discharged,Medicaid
+704,Julia Wilson,77,Female,O+,Hypothyroidism,Discharged,Medicare
+705,Kate Young,26,Female,AB+,Arthritis,Discharged,Self-Pay
+706,Brian Scott,78,Male,AB-,Concussion,Active,Medicare
+707,Leon Garcia,76,Male,A-,Appendicitis,Active,Self-Pay
+708,Peter Clark,80,Male,B+,Kidney Stones,Active,Private Insurance
+709,Olivia Wright,25,Female,AB+,Chronic Back Pain,Active,Medicare
+710,Xena Robinson,47,Female,AB+,Depression,Active,Medicare
+711,Max Kim,84,Male,O-,Fracture,Transferred,Self-Pay
+712,Ian Kim,76,Male,AB+,Chronic Back Pain,Discharged,Self-Pay
+713,Julia Harris,26,Female,O-,Hypertension,Transferred,Self-Pay
+714,Fiona Martinez,15,Female,AB-,Type 2 Diabetes,Transferred,Medicare
+715,Adam Lewis,43,Male,O+,Pneumonia,Active,Medicare
+716,Hannah Young,52,Female,A-,Hypothyroidism,Transferred,Uninsured
+717,Frank Wright,12,Male,O-,Cellulitis,Transferred,Uninsured
+718,Vince Allen,66,Male,B-,Cellulitis,Active,Self-Pay
+719,Wendy Robinson,57,Female,B+,Kidney Stones,Active,Self-Pay
+720,Carl Wright,72,Male,O-,Asthma,Discharged,Private Insurance
+721,Eric Patel,9,Male,AB+,Anemia,Transferred,Private Insurance
+722,Carol Thompson,78,Female,B+,Arthritis,Transferred,Uninsured
+723,Carl Thompson,11,Male,AB-,COPD,Transferred,Medicaid
+724,Leon Lee,14,Male,O-,Hypothyroidism,Discharged,Private Insurance
+725,Sophia Chen,66,Female,AB-,Atrial Fibrillation,Discharged,Private Insurance
+726,Laura Chen,37,Female,O+,COPD,Transferred,Medicaid
+727,Kate Kim,40,Female,B+,Arthritis,Active,Medicare
+728,Frank Wright,74,Male,A+,Kidney Stones,Transferred,Medicaid
+729,Diana Robinson,22,Female,O+,COPD,Transferred,Self-Pay
+730,Carol Martinez,22,Female,A+,Kidney Stones,Transferred,Private Insurance
+731,Frank Allen,45,Male,AB-,Fracture,Active,Medicare
+732,Henry Allen,44,Male,A-,Heart Failure,Active,Private Insurance
+733,Henry Garcia,18,Male,O-,Asthma,Transferred,Self-Pay
+734,Nina Lewis,36,Female,A-,Atrial Fibrillation,Active,Medicaid
+735,George Patel,81,Male,O-,Fracture,Active,Private Insurance
+736,Laura Thompson,91,Female,AB+,Fracture,Transferred,Private Insurance
+737,Hannah Lewis,9,Female,B+,Atrial Fibrillation,Active,Medicare
+738,Grace Wright,68,Female,B-,Anxiety,Discharged,Private Insurance
+739,Wendy Scott,29,Female,O+,Kidney Stones,Discharged,Self-Pay
+740,Grace Scott,69,Female,AB-,Kidney Stones,Active,Self-Pay
+741,Noah Patel,48,Male,O+,Asthma,Discharged,Private Insurance
+742,Henry White,9,Male,A-,Asthma,Transferred,Self-Pay
+743,Sam Wright,22,Male,AB+,Arthritis,Discharged,Private Insurance
+744,Nina Garcia,78,Female,O-,Migraine,Transferred,Private Insurance
+745,Henry Garcia,65,Male,B+,Concussion,Active,Self-Pay
+746,Diana Scott,60,Female,A-,Hypertension,Transferred,Medicare
+747,Yara Harris,10,Female,A-,Kidney Stones,Active,Uninsured
+748,Carl Robinson,74,Male,O-,Hypothyroidism,Transferred,Self-Pay
+749,Oscar Wright,71,Male,O-,Pneumonia,Transferred,Uninsured
+750,Sam Kim,91,Male,B+,Chronic Back Pain,Transferred,Uninsured
+751,Max Walker,50,Male,AB-,Anxiety,Active,Self-Pay
+752,Xavier Garcia,3,Male,A-,Appendicitis,Transferred,Uninsured
+753,Laura Walker,24,Female,AB+,Atrial Fibrillation,Transferred,Self-Pay
+754,Vera Lewis,68,Female,AB-,Type 2 Diabetes,Transferred,Private Insurance
+755,Fiona Robinson,9,Female,AB+,Fracture,Active,Medicaid
+756,Walter Wilson,32,Male,A+,Depression,Active,Medicaid
+757,Peter Clark,7,Male,AB+,Depression,Active,Private Insurance
+758,Alice Harris,94,Female,O-,Hypothyroidism,Discharged,Medicaid
+759,Alice Patel,80,Female,O+,Migraine,Transferred,Private Insurance
+760,Xavier Martinez,41,Male,AB+,Hypertension,Discharged,Self-Pay
+761,Paula Scott,1,Female,AB-,Anemia,Discharged,Uninsured
+762,Beth Wilson,41,Female,AB-,Appendicitis,Transferred,Uninsured
+763,Peter Patel,46,Male,O-,Hypothyroidism,Active,Medicare
+764,Leon Robinson,41,Male,AB-,Appendicitis,Discharged,Uninsured
+765,Paula Clark,43,Female,AB-,Hypothyroidism,Active,Medicare
+766,Max Chen,38,Male,AB+,GERD,Discharged,Medicare
+767,Henry Patel,84,Male,AB-,Heart Failure,Active,Private Insurance
+768,Fiona Young,19,Female,O-,Pneumonia,Active,Uninsured
+769,Adam Martinez,91,Male,O+,Hypothyroidism,Active,Self-Pay
+770,Laura Clark,70,Female,A+,GERD,Transferred,Uninsured
+771,Wendy Allen,89,Female,O-,Depression,Transferred,Private Insurance
+772,Adam Chen,24,Male,B-,Chronic Back Pain,Active,Medicaid
+773,Eric Lee,45,Male,B-,COPD,Discharged,Self-Pay
+774,Laura Wilson,38,Female,B+,Hypertension,Active,Medicare
+775,Henry Young,77,Male,A+,Fracture,Discharged,Self-Pay
+776,Sam Garcia,94,Male,O+,Pneumonia,Discharged,Uninsured
+777,Kate Young,56,Female,AB+,Asthma,Discharged,Uninsured
+778,Olivia Robinson,46,Female,A-,Migraine,Transferred,Private Insurance
+779,Carol Wilson,71,Female,A-,Depression,Transferred,Uninsured
+780,Carol Lewis,78,Female,AB+,COPD,Discharged,Medicaid
+781,Rita Wilson,18,Female,AB+,Chronic Back Pain,Active,Medicare
+782,Frank Chen,90,Male,O-,Pneumonia,Transferred,Medicaid
+783,Megan Martinez,75,Female,O+,Cellulitis,Active,Medicaid
+784,Fiona Kim,43,Female,A+,Fracture,Discharged,Medicare
+785,Ian Clark,10,Male,A+,Type 2 Diabetes,Transferred,Self-Pay
+786,Kyle Brown,2,Male,A+,Type 2 Diabetes,Discharged,Medicare
+787,Henry King,85,Male,O-,Hypertension,Active,Private Insurance
+788,Sophia Patel,11,Female,B-,Migraine,Transferred,Uninsured
+789,Beth Thompson,48,Female,B+,Hypertension,Discharged,Self-Pay
+790,Ray Walker,81,Male,AB+,Asthma,Transferred,Medicaid
+791,Tim Clark,38,Male,O-,Chronic Back Pain,Discharged,Uninsured
+792,Paula Garcia,32,Female,O-,COPD,Active,Uninsured
+793,Vera Kim,8,Female,AB+,Arthritis,Transferred,Uninsured
+794,Eric Brown,23,Male,O-,Chronic Back Pain,Discharged,Self-Pay
+795,Brian Garcia,29,Male,AB+,Fracture,Transferred,Medicare
+796,Derek King,21,Male,O-,Atrial Fibrillation,Transferred,Self-Pay
+797,Frank Thompson,92,Male,O+,Hypertension,Active,Uninsured
+798,Adam King,33,Male,AB+,Pneumonia,Transferred,Private Insurance
+799,Laura Martinez,20,Female,AB-,GERD,Discharged,Private Insurance
+800,Paula Robinson,70,Female,AB+,Depression,Transferred,Medicare
+801,Adam Kim,48,Male,AB+,GERD,Active,Medicaid
+802,Alice Harris,18,Female,AB+,GERD,Discharged,Medicaid
+803,Walter Wright,22,Male,O-,Concussion,Discharged,Medicare
+804,Carl Kim,66,Male,AB-,Asthma,Transferred,Medicare
+805,Uri Scott,94,Male,B-,Appendicitis,Transferred,Medicare
+806,Yara Lee,88,Female,O-,Fracture,Transferred,Medicaid
+807,Hannah Young,39,Female,B-,Chronic Back Pain,Discharged,Uninsured
+808,Jack Harris,91,Male,O+,Migraine,Transferred,Medicaid
+809,Henry Allen,57,Male,B-,Type 2 Diabetes,Discharged,Medicare
+810,Brian Brown,55,Male,AB+,COPD,Active,Self-Pay
+811,Laura Harris,90,Female,A+,Anemia,Discharged,Self-Pay
+812,Hannah Thompson,38,Female,B-,Chronic Back Pain,Discharged,Self-Pay
+813,Rita Allen,83,Female,A+,Arthritis,Active,Medicare
+814,Tara Lewis,83,Female,B+,Anemia,Discharged,Private Insurance
+815,Paula Lewis,93,Female,O+,Arthritis,Discharged,Uninsured
+816,Noah Young,62,Male,AB-,Anxiety,Transferred,Medicare
+817,Adam Chen,28,Male,AB+,Hypothyroidism,Discharged,Medicaid
+818,Tara Wilson,81,Female,A-,Chronic Back Pain,Active,Medicaid
+819,Iris Walker,81,Female,AB+,Type 2 Diabetes,Active,Private Insurance
+820,Nina Wilson,52,Female,A-,Fracture,Discharged,Self-Pay
+821,Quinn Walker,2,Female,O-,Type 2 Diabetes,Discharged,Uninsured
+822,Beth Allen,48,Female,B+,Arthritis,Active,Medicare
+823,Uma Brown,82,Female,B-,Hypothyroidism,Transferred,Private Insurance
+824,Adam Thompson,52,Male,B+,Anxiety,Transferred,Uninsured
+825,Xena Chen,50,Female,AB-,Type 2 Diabetes,Transferred,Medicaid
+826,Carl Chen,50,Male,A+,Hypothyroidism,Transferred,Self-Pay
+827,Leon Young,24,Male,B-,Chronic Back Pain,Discharged,Uninsured
+828,Julia Lewis,75,Female,A+,Hypertension,Transferred,Medicaid
+829,Rita Harris,73,Female,A-,Migraine,Active,Self-Pay
+830,Megan Martinez,53,Female,A+,Appendicitis,Active,Medicare
+831,Derek Walker,25,Male,O+,Migraine,Active,Medicare
+832,Olivia Allen,64,Female,AB+,Atrial Fibrillation,Transferred,Private Insurance
+833,Eve Brown,82,Female,AB+,Appendicitis,Transferred,Self-Pay
+834,Rita White,24,Female,B-,Fracture,Transferred,Medicare
+835,Noah Harris,52,Male,O-,Anemia,Discharged,Medicare
+836,Adam Harris,88,Male,B-,Heart Failure,Transferred,Medicaid
+837,Laura Wilson,24,Female,O-,Pneumonia,Active,Medicaid
+838,Brian Lee,62,Male,AB-,Appendicitis,Discharged,Medicaid
+839,Grace Thompson,11,Female,B+,Asthma,Active,Medicare
+840,Ian Patel,28,Male,O-,Depression,Active,Uninsured
+841,Walter Thompson,51,Male,O-,Asthma,Discharged,Self-Pay
+842,Quinn Lewis,45,Female,B-,Hypothyroidism,Discharged,Uninsured
+843,Uri Martinez,68,Male,B+,Concussion,Active,Medicare
+844,Quinn Garcia,30,Female,O+,Anemia,Active,Uninsured
+845,Quinn Thompson,63,Male,AB-,Chronic Back Pain,Transferred,Private Insurance
+846,Peter Brown,51,Male,B-,Pneumonia,Active,Medicare
+847,Xena Garcia,12,Female,A-,GERD,Discharged,Medicaid
+848,Tara Lewis,52,Female,B+,Chronic Back Pain,Active,Medicare
+849,Julia Scott,73,Female,AB-,Appendicitis,Discharged,Self-Pay
+850,Xena Robinson,15,Female,O+,Asthma,Discharged,Private Insurance
+851,Derek Clark,91,Male,B+,Migraine,Transferred,Self-Pay
+852,Ian Clark,50,Male,O-,Migraine,Active,Self-Pay
+853,Leon Patel,66,Male,B+,Migraine,Discharged,Uninsured
+854,Oscar Patel,83,Male,A-,Heart Failure,Active,Medicaid
+855,Julia Young,33,Female,O+,Asthma,Active,Uninsured
+856,Quinn Chen,67,Male,A-,Hypertension,Active,Self-Pay
+857,Vince Lewis,93,Male,O+,Cellulitis,Transferred,Medicare
+858,Alice Garcia,73,Female,B+,Hypertension,Active,Medicare
+859,Julia Garcia,10,Female,B-,Arthritis,Active,Medicaid
+860,Uma Wilson,26,Female,B+,Hypothyroidism,Active,Uninsured
+861,Xavier Lewis,31,Male,O+,Chronic Back Pain,Discharged,Self-Pay
+862,Oscar Chen,52,Male,A+,Hypothyroidism,Transferred,Medicare
+863,Megan Kim,22,Female,A+,Hypothyroidism,Discharged,Private Insurance
+864,Nina Wright,57,Female,A+,Anxiety,Active,Uninsured
+865,Iris Harris,39,Female,A+,Depression,Active,Self-Pay
+866,Vince Lee,75,Male,O-,Arthritis,Transferred,Uninsured
+867,Carl King,2,Male,A-,Cellulitis,Discharged,Medicare
+868,Rita Brown,56,Female,B-,Concussion,Active,Medicaid
+869,Eric Allen,71,Male,B+,Hypertension,Discharged,Uninsured
+870,Paula Lewis,27,Female,A+,Migraine,Active,Self-Pay
+871,Xena Robinson,48,Female,AB+,Migraine,Active,Self-Pay
+872,Frank Walker,50,Male,AB+,Asthma,Transferred,Uninsured
+873,Derek Wright,8,Male,O-,Fracture,Active,Medicare
+874,Vera Wilson,51,Female,A+,Appendicitis,Discharged,Medicare
+875,Leon Wilson,10,Male,AB+,Appendicitis,Discharged,Private Insurance
+876,Quinn Lee,54,Female,A-,Concussion,Discharged,Uninsured
+877,Sophia Walker,92,Female,B+,Migraine,Discharged,Private Insurance
+878,Peter White,78,Male,B+,COPD,Transferred,Self-Pay
+879,Ian King,30,Male,A+,Anemia,Transferred,Private Insurance
+880,Iris Clark,90,Female,O+,Heart Failure,Discharged,Medicare
+881,Uma Kim,79,Female,O-,Kidney Stones,Active,Medicare
+882,Eric Young,19,Male,O-,Asthma,Active,Self-Pay
+883,Tara Clark,13,Female,O-,Concussion,Discharged,Private Insurance
+884,Leon Allen,2,Male,A-,Type 2 Diabetes,Active,Self-Pay
+885,Jack Clark,50,Male,O+,Pneumonia,Discharged,Uninsured
+886,Yara Clark,31,Female,A-,Migraine,Discharged,Uninsured
+887,Vera Walker,56,Female,O-,Depression,Active,Private Insurance
+888,Derek Wright,55,Male,B+,Hypertension,Transferred,Self-Pay
+889,Alice Scott,69,Female,O-,Migraine,Active,Uninsured
+890,Tara Lewis,34,Female,A+,Anemia,Discharged,Medicare
+891,Leon Chen,50,Male,AB+,Atrial Fibrillation,Discharged,Uninsured
+892,Peter Young,27,Male,A-,Atrial Fibrillation,Active,Private Insurance
+893,Eve Walker,39,Female,B-,Arthritis,Transferred,Medicare
+894,Adam Kim,90,Male,AB+,COPD,Transferred,Medicare
+895,Iris Harris,84,Female,A-,Arthritis,Transferred,Medicaid
+896,Grace Lewis,90,Female,AB+,Hypothyroidism,Transferred,Medicaid
+897,Eric White,58,Male,AB-,GERD,Active,Medicare
+898,Sam Martinez,51,Male,AB+,Hypothyroidism,Transferred,Self-Pay
+899,Alice Kim,14,Female,A+,Chronic Back Pain,Discharged,Medicaid
+900,Eve Chen,22,Female,A+,Kidney Stones,Transferred,Medicaid
+901,Tara Wilson,34,Female,O-,Anxiety,Active,Medicare
+902,Walter Lewis,42,Male,B+,Type 2 Diabetes,Active,Uninsured
+903,Ian Scott,8,Male,O-,Atrial Fibrillation,Transferred,Self-Pay
+904,Alice Thompson,20,Female,O+,Hypothyroidism,Discharged,Private Insurance
+905,Nina Allen,1,Female,O+,Heart Failure,Discharged,Private Insurance
+906,Frank Wilson,94,Male,O+,Chronic Back Pain,Active,Medicare
+907,Julia Clark,47,Female,O+,Arthritis,Discharged,Medicaid
+908,Frank Lewis,46,Male,A+,Atrial Fibrillation,Active,Private Insurance
+909,Iris Kim,52,Female,O-,Depression,Transferred,Medicaid
+910,Kate Lee,47,Female,B+,Anemia,Discharged,Private Insurance
+911,Henry Lewis,77,Male,A-,Heart Failure,Transferred,Medicare
+912,Laura Patel,85,Female,O+,COPD,Transferred,Private Insurance
+913,Fiona Wright,66,Female,AB-,Appendicitis,Active,Medicare
+914,Xavier Scott,63,Male,AB-,Hypertension,Active,Uninsured
+915,Adam Lewis,78,Male,O-,Hypothyroidism,Active,Self-Pay
+916,Sophia Lewis,60,Female,O-,Anxiety,Active,Medicaid
+917,Rita Lee,20,Female,AB+,Type 2 Diabetes,Transferred,Medicare
+918,Ray Kim,25,Male,A-,Anemia,Active,Medicaid
+919,Zach Wright,36,Male,O-,Chronic Back Pain,Transferred,Medicare
+920,Brian Patel,53,Male,B-,Appendicitis,Active,Uninsured
+921,Brian Kim,22,Male,O-,Kidney Stones,Discharged,Private Insurance
+922,George Thompson,32,Male,A-,COPD,Discharged,Medicaid
+923,Laura Kim,11,Female,B-,Hypothyroidism,Active,Self-Pay
+924,Walter Lewis,2,Male,O-,Kidney Stones,Transferred,Private Insurance
+925,Carl Garcia,11,Male,AB+,Anxiety,Discharged,Self-Pay
+926,Eric Harris,56,Male,B-,GERD,Discharged,Medicare
+927,Xena Scott,23,Female,O+,Atrial Fibrillation,Discharged,Medicaid
+928,George Kim,42,Male,A-,Hypertension,Active,Private Insurance
+929,Xavier Young,53,Male,O-,Arthritis,Active,Private Insurance
+930,Oscar Lee,19,Male,O-,Depression,Active,Medicaid
+931,Walter Chen,27,Male,A+,Cellulitis,Discharged,Private Insurance
+932,Jack Walker,33,Male,A-,Depression,Discharged,Medicaid
+933,Hannah Lewis,48,Female,AB+,Depression,Discharged,Uninsured
+934,Kate Chen,72,Female,B-,Pneumonia,Active,Self-Pay
+935,Tara King,73,Female,AB-,Atrial Fibrillation,Active,Uninsured
+936,Jack Young,34,Male,A+,Migraine,Active,Private Insurance
+937,Fiona Brown,1,Female,B+,Migraine,Discharged,Uninsured
+938,Yara Garcia,53,Female,AB-,Hypothyroidism,Discharged,Medicare
+939,Sophia Brown,79,Female,O+,COPD,Active,Uninsured
+940,Xena Robinson,38,Female,B+,Arthritis,Transferred,Medicare
+941,Diana Young,34,Female,B-,Appendicitis,Discharged,Private Insurance
+942,Zach Robinson,88,Male,A-,Migraine,Transferred,Medicaid
+943,George Scott,32,Male,A-,Hypothyroidism,Transferred,Medicare
+944,Grace Wright,88,Female,B-,Fracture,Transferred,Medicaid
+945,Zach White,20,Male,O+,Anxiety,Active,Private Insurance
+946,Olivia Walker,75,Female,AB+,Hypertension,Transferred,Private Insurance
+947,Uma Wright,53,Female,A+,GERD,Transferred,Self-Pay
+948,George Wright,1,Male,O-,Heart Failure,Transferred,Medicare
+949,Diana Martinez,89,Female,B-,Heart Failure,Active,Private Insurance
+950,George Robinson,79,Male,O-,Appendicitis,Active,Uninsured
+951,Max Kim,79,Male,A+,Migraine,Transferred,Medicaid
+952,Eve Harris,54,Female,AB+,Cellulitis,Transferred,Self-Pay
+953,Paula White,66,Female,AB-,Hypothyroidism,Discharged,Medicare
+954,George Kim,59,Male,A+,COPD,Transferred,Uninsured
+955,Hannah Lewis,56,Female,AB+,COPD,Discharged,Self-Pay
+956,Xena Martinez,30,Female,A+,COPD,Active,Medicare
+957,Kyle Wilson,7,Male,A+,Type 2 Diabetes,Active,Private Insurance
+958,Kyle Lee,23,Male,AB-,Concussion,Active,Medicare
+959,Grace Garcia,13,Female,O-,Kidney Stones,Discharged,Medicare
+960,Carl Patel,81,Male,O-,Migraine,Transferred,Medicaid
+961,Quinn Lee,95,Female,A-,Appendicitis,Active,Medicare
+962,Julia White,93,Female,B-,Type 2 Diabetes,Discharged,Medicare
+963,Oscar Garcia,85,Male,B+,Depression,Active,Private Insurance
+964,Laura Kim,62,Female,O-,Appendicitis,Active,Medicaid
+965,Carl Young,7,Male,B-,Fracture,Transferred,Medicaid
+966,Uma Allen,9,Female,O-,Hypothyroidism,Discharged,Uninsured
+967,Ian Harris,24,Male,AB-,Arthritis,Active,Medicare
+968,Sam Garcia,87,Male,AB+,Asthma,Active,Medicaid
+969,Ray Allen,84,Male,A+,Migraine,Discharged,Self-Pay
+970,Paula Wilson,82,Female,O-,Cellulitis,Transferred,Medicaid
+971,Beth Harris,74,Female,A-,Chronic Back Pain,Transferred,Uninsured
+972,Grace Clark,84,Female,AB-,COPD,Active,Medicare
+973,Frank Walker,40,Male,B+,COPD,Active,Medicare
+974,Eve Brown,32,Female,B+,Type 2 Diabetes,Discharged,Uninsured
+975,Max Allen,55,Male,A+,Type 2 Diabetes,Transferred,Medicaid
+976,Tim Chen,25,Male,A+,Migraine,Transferred,Self-Pay
+977,Adam Brown,87,Male,AB+,Asthma,Transferred,Medicaid
+978,Eve Allen,16,Female,A-,Concussion,Transferred,Self-Pay
+979,Noah Scott,77,Male,B+,Kidney Stones,Discharged,Self-Pay
+980,Max Thompson,73,Male,AB+,Type 2 Diabetes,Transferred,Uninsured
+981,Max Wright,41,Male,O+,GERD,Active,Self-Pay
+982,Ian White,15,Male,A-,Fracture,Transferred,Medicaid
+983,Laura Scott,31,Female,A+,Hypertension,Discharged,Medicare
+984,Henry Allen,38,Male,AB+,GERD,Transferred,Uninsured
+985,Hannah Lee,33,Female,A-,Hypothyroidism,Active,Self-Pay
+986,Nina White,46,Female,A+,Pneumonia,Transferred,Self-Pay
+987,Beth Scott,59,Female,O-,Pneumonia,Discharged,Self-Pay
+988,Paula Wilson,88,Female,AB+,Depression,Active,Self-Pay
+989,Ian Thompson,76,Male,A-,Asthma,Transferred,Uninsured
+990,Max Brown,27,Male,A+,Fracture,Active,Medicare
+991,Laura Scott,39,Female,O+,Pneumonia,Transferred,Medicaid
+992,Grace Scott,87,Female,AB-,Chronic Back Pain,Active,Uninsured
+993,Peter Patel,44,Male,A-,Hypothyroidism,Active,Self-Pay
+994,Noah Wilson,31,Male,B+,Chronic Back Pain,Transferred,Private Insurance
+995,Tara Patel,62,Female,A+,Hypertension,Active,Medicaid
+996,Vince Thompson,42,Male,AB+,Pneumonia,Transferred,Medicaid
+997,Walter Lewis,26,Male,A-,COPD,Transferred,Self-Pay
+998,Quinn Clark,92,Male,B-,Depression,Transferred,Medicare
+999,Carl Wright,11,Male,O+,Chronic Back Pain,Transferred,Medicaid
+1000,Paula Young,51,Female,B+,Cellulitis,Active,Medicaid

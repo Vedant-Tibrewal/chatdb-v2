@@ -1,0 +1,1501 @@
+scan_id,asset_id,vuln_id,scan_date,finding_status,remediation_action
+1,189,180,2023-07-23,In Progress,N/A
+2,26,262,2023-03-05,In Progress,Upgrade
+3,65,182,2023-07-14,Open,Workaround
+4,99,31,2023-12-21,Open,Patch
+5,94,89,2023-10-03,Remediated,Workaround
+6,125,152,2023-02-04,Remediated,Config Change
+7,77,206,2024-06-13,Accepted Risk,Workaround
+8,47,228,2023-12-23,Remediated,Upgrade
+9,111,246,2023-06-08,Open,Workaround
+10,104,91,2023-10-18,Open,Patch
+11,104,256,2024-12-10,Open,Patch
+12,28,267,2024-02-11,Accepted Risk,Workaround
+13,176,246,2023-07-28,Open,Upgrade
+14,56,153,2023-01-23,In Progress,Patch
+15,5,218,2023-08-17,Remediated,Upgrade
+16,94,78,2023-09-10,Accepted Risk,Upgrade
+17,131,275,2023-07-27,Remediated,Upgrade
+18,145,154,2024-12-01,Open,Config Change
+19,174,184,2023-09-16,Remediated,N/A
+20,27,96,2023-11-20,In Progress,N/A
+21,160,290,2024-12-31,Remediated,Patch
+22,35,98,2023-03-14,Remediated,Upgrade
+23,197,292,2024-07-05,In Progress,Config Change
+24,178,126,2023-07-05,Accepted Risk,Config Change
+25,132,45,2023-06-13,Remediated,N/A
+26,39,234,2024-06-05,Open,Workaround
+27,117,95,2025-02-28,Accepted Risk,Config Change
+28,16,67,2024-03-16,In Progress,Workaround
+29,66,77,2023-02-27,Remediated,N/A
+30,76,243,2024-12-25,In Progress,Config Change
+31,193,226,2024-06-01,Remediated,Config Change
+32,73,88,2023-12-18,Open,Upgrade
+33,83,67,2023-04-03,Accepted Risk,Workaround
+34,108,113,2025-02-23,Accepted Risk,Workaround
+35,5,243,2024-10-10,Accepted Risk,N/A
+36,156,109,2024-05-08,Remediated,Workaround
+37,2,94,2023-08-05,Remediated,Patch
+38,110,27,2025-02-20,Open,Config Change
+39,124,219,2023-07-25,In Progress,N/A
+40,156,203,2024-11-29,Accepted Risk,Workaround
+41,148,295,2024-07-09,Accepted Risk,Upgrade
+42,132,128,2023-08-28,Accepted Risk,Workaround
+43,8,42,2023-05-09,Open,N/A
+44,50,62,2024-09-10,Open,Upgrade
+45,102,162,2024-11-05,In Progress,Config Change
+46,174,142,2023-07-23,In Progress,Upgrade
+47,146,213,2025-01-20,Remediated,N/A
+48,170,20,2025-03-25,Open,Config Change
+49,184,192,2023-06-12,In Progress,Upgrade
+50,146,194,2023-03-12,In Progress,Config Change
+51,177,140,2023-03-15,Open,Upgrade
+52,99,73,2024-12-29,Remediated,Patch
+53,143,212,2024-02-24,Open,Upgrade
+54,14,98,2024-04-26,Open,Config Change
+55,85,222,2024-07-12,Accepted Risk,N/A
+56,168,256,2024-11-15,In Progress,Workaround
+57,140,265,2023-12-18,In Progress,Config Change
+58,54,153,2023-03-09,Remediated,N/A
+59,111,110,2023-03-28,In Progress,Upgrade
+60,49,243,2023-07-14,Open,Config Change
+61,192,231,2025-02-18,Accepted Risk,Config Change
+62,67,83,2025-01-22,In Progress,Workaround
+63,122,230,2024-01-16,In Progress,N/A
+64,161,149,2024-08-17,Remediated,Workaround
+65,26,162,2023-03-18,In Progress,Workaround
+66,81,208,2023-05-02,Open,Upgrade
+67,130,250,2024-12-05,Remediated,Upgrade
+68,166,159,2024-06-07,In Progress,Workaround
+69,119,39,2024-07-20,Accepted Risk,Config Change
+70,17,286,2025-03-02,Accepted Risk,Workaround
+71,18,141,2023-03-10,Accepted Risk,Upgrade
+72,124,5,2023-10-07,Accepted Risk,Upgrade
+73,12,275,2023-03-05,Remediated,Upgrade
+74,118,39,2023-08-10,In Progress,Patch
+75,41,262,2023-09-30,Remediated,Config Change
+76,47,41,2023-03-25,Remediated,Upgrade
+77,30,190,2023-12-06,Accepted Risk,Patch
+78,94,257,2025-02-15,Open,Upgrade
+79,79,141,2023-06-16,Accepted Risk,Workaround
+80,69,85,2025-01-03,Remediated,Workaround
+81,139,282,2025-02-07,Accepted Risk,N/A
+82,49,278,2025-01-18,Open,Upgrade
+83,193,5,2023-10-03,In Progress,Config Change
+84,30,47,2023-04-19,Open,N/A
+85,156,78,2024-06-09,In Progress,Workaround
+86,191,268,2025-01-28,In Progress,Patch
+87,30,31,2025-02-26,Open,Config Change
+88,185,292,2024-07-23,Accepted Risk,Patch
+89,28,122,2023-05-25,In Progress,N/A
+90,116,243,2024-11-12,Open,Patch
+91,145,299,2024-12-04,Accepted Risk,Config Change
+92,86,131,2024-09-30,In Progress,Config Change
+93,70,18,2025-01-01,Accepted Risk,Workaround
+94,153,290,2023-12-07,Remediated,Workaround
+95,32,176,2024-06-20,Accepted Risk,Config Change
+96,26,26,2023-01-06,Open,N/A
+97,179,3,2023-12-16,Accepted Risk,Workaround
+98,191,122,2024-06-19,In Progress,Patch
+99,117,170,2023-04-21,Accepted Risk,Patch
+100,17,66,2024-11-03,Remediated,Workaround
+101,26,96,2024-04-04,Accepted Risk,Config Change
+102,164,277,2023-01-10,Open,Upgrade
+103,178,95,2025-03-05,Open,Patch
+104,180,247,2023-12-31,Accepted Risk,Patch
+105,109,223,2023-12-05,Remediated,Config Change
+106,140,300,2023-07-20,Accepted Risk,Workaround
+107,6,71,2024-11-04,In Progress,Config Change
+108,151,178,2024-05-03,Accepted Risk,Config Change
+109,128,148,2024-02-07,In Progress,N/A
+110,118,165,2023-04-27,Open,N/A
+111,92,159,2023-11-08,Accepted Risk,Workaround
+112,126,116,2023-10-05,Accepted Risk,Upgrade
+113,64,191,2023-03-08,In Progress,N/A
+114,107,119,2023-04-06,Accepted Risk,Patch
+115,62,111,2025-03-13,Open,N/A
+116,91,4,2023-05-17,In Progress,Upgrade
+117,84,179,2023-06-13,Accepted Risk,Patch
+118,21,85,2025-03-02,In Progress,Upgrade
+119,131,37,2024-03-12,Open,Upgrade
+120,125,57,2023-11-07,In Progress,Patch
+121,104,147,2023-09-04,Accepted Risk,Patch
+122,19,86,2023-02-20,Remediated,N/A
+123,69,80,2023-01-22,Open,Upgrade
+124,156,62,2024-01-22,Remediated,Patch
+125,177,294,2024-05-17,Remediated,Patch
+126,99,67,2023-05-23,In Progress,Workaround
+127,127,109,2024-04-15,In Progress,N/A
+128,13,88,2024-10-06,In Progress,N/A
+129,79,278,2023-06-13,In Progress,Config Change
+130,180,120,2023-03-19,Open,Patch
+131,191,192,2024-11-02,Remediated,Config Change
+132,200,33,2023-01-15,Remediated,Workaround
+133,14,17,2023-11-25,Accepted Risk,Upgrade
+134,7,246,2024-11-16,Accepted Risk,Upgrade
+135,148,47,2024-09-21,Remediated,Patch
+136,25,139,2023-01-25,Remediated,Upgrade
+137,9,25,2023-10-12,In Progress,Config Change
+138,40,13,2024-06-16,Open,Upgrade
+139,135,75,2023-12-08,Open,Workaround
+140,135,80,2023-03-25,In Progress,Patch
+141,112,40,2025-03-03,Accepted Risk,Workaround
+142,109,290,2024-07-03,Open,Workaround
+143,59,97,2023-01-28,In Progress,Config Change
+144,157,189,2023-01-06,Remediated,Upgrade
+145,115,65,2023-12-05,In Progress,N/A
+146,188,238,2024-12-28,Accepted Risk,Upgrade
+147,2,67,2024-06-09,Accepted Risk,Config Change
+148,126,215,2024-03-05,Accepted Risk,N/A
+149,24,167,2025-02-10,In Progress,Patch
+150,61,83,2025-01-23,In Progress,Patch
+151,31,30,2024-06-08,Remediated,N/A
+152,176,138,2023-04-14,Remediated,N/A
+153,98,229,2024-01-18,Open,Upgrade
+154,2,2,2023-07-02,Open,Patch
+155,189,61,2024-09-04,Accepted Risk,Workaround
+156,76,275,2023-03-19,Accepted Risk,Config Change
+157,170,227,2024-10-20,Open,N/A
+158,50,33,2023-03-02,Open,Config Change
+159,189,294,2024-01-02,Open,Config Change
+160,76,139,2023-06-05,Accepted Risk,Upgrade
+161,175,215,2023-11-03,Remediated,N/A
+162,10,154,2025-01-21,Accepted Risk,Config Change
+163,159,147,2024-03-11,Accepted Risk,N/A
+164,30,76,2023-02-04,Accepted Risk,Upgrade
+165,163,243,2023-03-03,Accepted Risk,Config Change
+166,112,219,2023-09-25,Open,Workaround
+167,109,117,2024-11-13,Remediated,N/A
+168,15,293,2024-05-11,Open,N/A
+169,131,110,2025-03-06,Accepted Risk,Workaround
+170,74,144,2023-02-23,In Progress,Workaround
+171,158,60,2023-01-27,Remediated,N/A
+172,65,42,2024-05-30,Accepted Risk,N/A
+173,192,107,2024-01-06,Accepted Risk,Patch
+174,2,30,2025-01-15,In Progress,N/A
+175,135,166,2024-10-17,Remediated,Upgrade
+176,156,238,2023-06-02,Open,Upgrade
+177,78,105,2024-09-24,Remediated,Config Change
+178,182,96,2023-12-26,Remediated,Workaround
+179,110,257,2024-01-11,Remediated,Workaround
+180,24,119,2024-02-11,Open,Upgrade
+181,142,32,2025-03-06,Remediated,Upgrade
+182,189,121,2023-03-13,Open,Upgrade
+183,132,62,2023-12-05,Open,Workaround
+184,102,55,2024-11-21,Accepted Risk,Config Change
+185,152,240,2024-02-15,In Progress,Config Change
+186,134,134,2025-01-09,Remediated,Workaround
+187,55,182,2024-07-11,In Progress,Config Change
+188,25,244,2024-08-27,Accepted Risk,Upgrade
+189,56,163,2024-09-30,Remediated,Config Change
+190,59,236,2024-01-28,Accepted Risk,N/A
+191,115,151,2024-06-10,Remediated,N/A
+192,157,22,2025-01-08,Remediated,Config Change
+193,168,173,2024-10-19,In Progress,Upgrade
+194,138,240,2024-06-21,In Progress,Upgrade
+195,192,290,2024-04-27,Accepted Risk,Patch
+196,61,8,2024-08-11,Remediated,Config Change
+197,74,111,2024-08-26,Open,Workaround
+198,129,184,2023-02-05,Remediated,Workaround
+199,179,222,2023-05-26,Remediated,Patch
+200,179,156,2023-03-29,In Progress,N/A
+201,147,245,2023-09-27,Accepted Risk,N/A
+202,46,180,2023-04-12,Accepted Risk,Workaround
+203,15,99,2024-08-27,In Progress,Upgrade
+204,158,90,2025-01-24,In Progress,N/A
+205,106,273,2023-03-30,Open,Patch
+206,43,19,2025-03-10,Open,Upgrade
+207,1,273,2024-08-13,Open,Config Change
+208,28,120,2024-02-11,In Progress,Patch
+209,35,221,2024-11-17,Accepted Risk,Patch
+210,116,36,2024-02-18,Open,Config Change
+211,13,5,2024-03-25,In Progress,Workaround
+212,31,259,2023-10-02,In Progress,Workaround
+213,187,104,2025-03-11,Remediated,Config Change
+214,100,18,2023-09-13,Remediated,Upgrade
+215,37,242,2024-10-12,Accepted Risk,Upgrade
+216,131,107,2024-09-09,Remediated,Patch
+217,51,155,2023-08-07,Accepted Risk,N/A
+218,32,64,2023-09-17,Remediated,Workaround
+219,164,263,2023-12-04,In Progress,Patch
+220,90,110,2023-03-26,Accepted Risk,Upgrade
+221,177,269,2024-06-10,In Progress,N/A
+222,80,296,2023-03-18,Remediated,Config Change
+223,14,193,2024-12-23,Remediated,Workaround
+224,53,280,2024-10-25,In Progress,Workaround
+225,195,196,2023-04-01,Remediated,Config Change
+226,114,170,2023-10-26,Remediated,N/A
+227,10,156,2023-04-01,In Progress,N/A
+228,95,253,2023-02-17,Accepted Risk,Workaround
+229,66,190,2023-12-08,In Progress,Upgrade
+230,113,142,2024-08-03,In Progress,Config Change
+231,176,35,2023-08-19,Remediated,Workaround
+232,131,266,2023-02-25,In Progress,Patch
+233,35,113,2023-03-25,Remediated,Patch
+234,11,100,2023-12-21,In Progress,Patch
+235,84,283,2024-01-20,Remediated,N/A
+236,70,85,2023-03-01,Open,Upgrade
+237,197,109,2024-09-19,Open,Upgrade
+238,71,81,2025-03-16,Accepted Risk,Workaround
+239,184,181,2024-04-12,Remediated,N/A
+240,96,190,2025-03-08,Remediated,Patch
+241,111,201,2023-08-14,Accepted Risk,N/A
+242,145,232,2023-03-05,Remediated,Workaround
+243,144,255,2024-06-26,Open,Workaround
+244,58,259,2024-02-28,Remediated,Patch
+245,69,137,2023-05-12,Accepted Risk,Patch
+246,63,227,2025-03-12,In Progress,Patch
+247,33,195,2024-03-12,Open,Patch
+248,117,291,2024-07-25,Open,Upgrade
+249,110,53,2025-01-24,Remediated,Upgrade
+250,129,91,2024-06-23,Open,Config Change
+251,109,19,2024-06-01,In Progress,Patch
+252,57,101,2023-08-13,In Progress,Config Change
+253,152,288,2025-01-15,Remediated,Workaround
+254,33,40,2025-02-02,Open,Patch
+255,55,78,2024-05-23,Open,N/A
+256,47,221,2024-07-21,In Progress,Config Change
+257,71,243,2023-03-30,In Progress,Workaround
+258,168,28,2023-11-23,Open,Config Change
+259,28,266,2023-01-14,In Progress,N/A
+260,91,202,2024-01-23,Open,Workaround
+261,54,6,2024-11-10,Accepted Risk,Patch
+262,192,288,2024-04-05,In Progress,N/A
+263,11,50,2024-02-07,Accepted Risk,Workaround
+264,55,234,2023-11-06,Open,N/A
+265,3,111,2025-02-13,Remediated,Config Change
+266,59,241,2023-06-02,Remediated,Upgrade
+267,130,25,2023-06-01,In Progress,Patch
+268,152,84,2023-07-18,Accepted Risk,N/A
+269,175,57,2023-12-31,Accepted Risk,N/A
+270,120,154,2023-07-30,Open,Config Change
+271,196,231,2024-09-03,Accepted Risk,Config Change
+272,107,51,2024-01-26,Open,Patch
+273,86,75,2025-01-22,Accepted Risk,Patch
+274,157,299,2024-11-15,In Progress,Patch
+275,37,85,2024-12-31,Accepted Risk,Config Change
+276,65,98,2024-06-08,Accepted Risk,Workaround
+277,179,291,2024-05-25,Open,Workaround
+278,37,185,2023-09-01,Accepted Risk,Workaround
+279,181,191,2024-01-25,Accepted Risk,Patch
+280,136,209,2024-04-09,Remediated,Config Change
+281,102,206,2024-03-18,Accepted Risk,Workaround
+282,123,215,2023-05-21,Open,Config Change
+283,95,47,2023-12-13,Remediated,Upgrade
+284,121,300,2023-10-19,Open,Config Change
+285,197,224,2023-10-13,Open,Patch
+286,142,206,2024-10-07,Open,Workaround
+287,44,219,2024-10-10,Accepted Risk,Upgrade
+288,85,199,2023-07-06,Open,Workaround
+289,105,38,2024-12-17,In Progress,Upgrade
+290,24,82,2023-10-27,Accepted Risk,Upgrade
+291,41,221,2023-10-31,Open,Config Change
+292,126,26,2024-10-12,Accepted Risk,Workaround
+293,71,159,2024-02-16,In Progress,Workaround
+294,86,203,2024-09-10,Remediated,Config Change
+295,94,10,2023-01-15,Open,Config Change
+296,164,273,2023-10-01,Accepted Risk,Workaround
+297,73,160,2023-04-25,Open,Workaround
+298,68,226,2024-04-02,Remediated,Config Change
+299,146,5,2023-06-24,Remediated,Patch
+300,71,94,2024-10-02,In Progress,Config Change
+301,128,8,2024-04-16,Open,Config Change
+302,134,39,2024-06-01,Remediated,Upgrade
+303,146,4,2023-01-29,Remediated,Workaround
+304,76,157,2023-12-18,Accepted Risk,N/A
+305,45,25,2023-05-26,Accepted Risk,N/A
+306,33,247,2023-06-12,Remediated,Workaround
+307,3,18,2023-12-12,Open,N/A
+308,106,276,2025-02-05,Accepted Risk,Patch
+309,9,79,2024-04-17,In Progress,Workaround
+310,105,263,2024-07-28,Open,Workaround
+311,134,259,2024-07-21,In Progress,N/A
+312,132,130,2024-08-23,Open,Config Change
+313,148,111,2023-10-17,Remediated,Patch
+314,183,226,2023-05-12,In Progress,Upgrade
+315,83,208,2023-06-10,Open,Upgrade
+316,155,238,2023-01-11,Open,Config Change
+317,4,64,2025-01-10,Open,Workaround
+318,31,34,2024-05-22,Accepted Risk,Patch
+319,168,255,2024-03-09,Remediated,Patch
+320,10,249,2023-02-03,In Progress,Upgrade
+321,186,168,2023-06-26,Open,Config Change
+322,116,68,2023-09-29,Accepted Risk,Config Change
+323,179,289,2024-08-12,Accepted Risk,N/A
+324,41,57,2023-03-13,Accepted Risk,Upgrade
+325,59,51,2023-05-27,Remediated,Config Change
+326,50,37,2023-09-30,Accepted Risk,Config Change
+327,147,300,2024-05-15,Accepted Risk,Config Change
+328,191,286,2024-05-31,Open,Workaround
+329,141,41,2024-02-12,Accepted Risk,N/A
+330,115,135,2025-01-10,Accepted Risk,Upgrade
+331,94,86,2023-11-25,Open,Upgrade
+332,68,231,2024-05-15,Remediated,Workaround
+333,153,124,2023-09-16,Accepted Risk,Upgrade
+334,142,209,2024-07-19,Open,Workaround
+335,75,1,2023-08-14,In Progress,Workaround
+336,47,289,2024-11-15,Accepted Risk,Config Change
+337,56,173,2024-09-17,Open,Upgrade
+338,33,184,2024-05-23,In Progress,Workaround
+339,73,219,2024-02-07,Accepted Risk,N/A
+340,137,145,2023-07-12,In Progress,Workaround
+341,158,297,2023-05-19,Open,N/A
+342,65,5,2025-01-30,Accepted Risk,N/A
+343,18,7,2024-01-26,Accepted Risk,Upgrade
+344,68,1,2024-02-07,Accepted Risk,Upgrade
+345,78,234,2023-01-15,Open,Patch
+346,189,95,2023-05-21,Open,Config Change
+347,47,255,2023-08-20,Open,N/A
+348,6,260,2024-08-16,Open,Workaround
+349,75,22,2023-07-18,Remediated,Workaround
+350,146,259,2024-12-16,Open,Patch
+351,48,175,2023-04-19,Accepted Risk,Workaround
+352,8,159,2025-02-05,In Progress,Upgrade
+353,73,204,2024-06-18,In Progress,Config Change
+354,90,31,2025-01-09,Open,Patch
+355,30,38,2025-03-19,Open,N/A
+356,6,173,2024-06-13,Accepted Risk,N/A
+357,172,139,2024-04-28,Accepted Risk,Config Change
+358,109,19,2024-09-28,Open,Workaround
+359,68,17,2024-06-05,In Progress,Upgrade
+360,58,139,2024-11-05,In Progress,Workaround
+361,124,6,2025-01-11,Accepted Risk,Config Change
+362,167,97,2023-07-01,Open,Patch
+363,45,65,2023-03-11,Accepted Risk,Config Change
+364,19,286,2024-01-26,Open,Config Change
+365,44,152,2023-12-31,Remediated,Patch
+366,149,272,2023-03-24,In Progress,Config Change
+367,139,99,2024-04-14,In Progress,Patch
+368,104,29,2025-02-06,Accepted Risk,Config Change
+369,11,273,2024-03-02,In Progress,Config Change
+370,34,98,2024-11-10,Remediated,Patch
+371,120,279,2025-02-08,Accepted Risk,Config Change
+372,11,14,2024-11-14,Open,Patch
+373,165,196,2023-11-04,In Progress,N/A
+374,88,208,2024-04-10,Open,N/A
+375,21,162,2023-02-05,In Progress,Config Change
+376,4,284,2023-01-13,Open,Workaround
+377,126,47,2023-01-25,In Progress,Patch
+378,91,202,2023-08-31,In Progress,Patch
+379,161,176,2024-02-29,In Progress,Upgrade
+380,43,238,2024-11-07,In Progress,Config Change
+381,2,100,2024-11-15,Open,Config Change
+382,192,134,2023-07-31,In Progress,Config Change
+383,195,11,2023-10-01,Accepted Risk,N/A
+384,26,25,2024-03-26,Remediated,Upgrade
+385,142,129,2023-09-25,Open,N/A
+386,19,177,2023-08-16,In Progress,Patch
+387,174,2,2023-02-13,Remediated,Upgrade
+388,99,198,2023-03-03,Accepted Risk,Upgrade
+389,135,29,2023-10-02,In Progress,Patch
+390,187,247,2023-04-22,Accepted Risk,Config Change
+391,58,80,2023-04-02,Remediated,Patch
+392,78,157,2024-01-11,Accepted Risk,Upgrade
+393,46,221,2024-02-20,Remediated,Config Change
+394,4,200,2024-08-20,Remediated,Workaround
+395,42,163,2024-10-18,Accepted Risk,N/A
+396,130,29,2023-07-29,Accepted Risk,Patch
+397,46,81,2024-12-06,Remediated,Config Change
+398,193,86,2024-03-26,Remediated,Upgrade
+399,35,23,2023-06-23,Open,Config Change
+400,165,94,2024-05-13,In Progress,Patch
+401,196,236,2023-08-16,In Progress,Patch
+402,83,170,2024-05-25,In Progress,Workaround
+403,38,14,2024-05-05,Open,N/A
+404,34,54,2024-04-10,Accepted Risk,N/A
+405,97,17,2023-07-07,Accepted Risk,N/A
+406,37,182,2024-01-09,In Progress,Patch
+407,112,22,2023-09-28,In Progress,Config Change
+408,63,195,2025-01-28,Open,Workaround
+409,197,229,2024-07-07,Open,N/A
+410,108,44,2023-05-01,Open,Workaround
+411,48,179,2024-12-02,Accepted Risk,Patch
+412,35,109,2024-08-24,Remediated,N/A
+413,146,47,2024-01-05,In Progress,Config Change
+414,90,244,2024-01-12,Accepted Risk,Workaround
+415,43,151,2024-07-01,Open,Config Change
+416,58,223,2023-11-06,Remediated,Upgrade
+417,85,202,2023-09-29,Accepted Risk,Workaround
+418,36,180,2024-06-05,Open,Config Change
+419,169,259,2023-05-12,Remediated,Workaround
+420,27,61,2024-01-21,Accepted Risk,Config Change
+421,71,225,2024-04-29,Remediated,Workaround
+422,9,202,2025-02-16,Accepted Risk,Upgrade
+423,169,124,2024-10-06,In Progress,N/A
+424,40,56,2023-08-18,In Progress,Config Change
+425,117,2,2023-05-24,In Progress,Config Change
+426,23,210,2023-02-02,Open,Config Change
+427,97,92,2024-01-15,Remediated,Workaround
+428,83,213,2024-01-05,Open,Workaround
+429,174,99,2024-11-20,Open,Upgrade
+430,24,72,2024-02-05,Open,Upgrade
+431,50,260,2023-06-20,Remediated,N/A
+432,21,208,2023-05-16,Open,Config Change
+433,77,97,2024-07-02,Open,Patch
+434,175,291,2024-03-29,Accepted Risk,Config Change
+435,50,258,2023-10-13,Remediated,N/A
+436,95,45,2025-03-18,Remediated,Config Change
+437,91,213,2024-09-19,Accepted Risk,Upgrade
+438,108,54,2024-12-01,Open,Workaround
+439,121,232,2023-07-01,Remediated,Upgrade
+440,49,177,2023-11-03,Accepted Risk,Patch
+441,56,187,2023-06-02,Remediated,N/A
+442,148,181,2023-11-07,Accepted Risk,Upgrade
+443,39,100,2025-02-17,Accepted Risk,Upgrade
+444,40,293,2023-08-16,Accepted Risk,Config Change
+445,15,76,2024-07-30,Open,N/A
+446,45,120,2023-03-15,Open,Workaround
+447,87,6,2024-10-01,Remediated,N/A
+448,95,208,2023-06-24,Open,Config Change
+449,116,46,2024-08-02,Open,Upgrade
+450,186,270,2025-01-11,Remediated,Upgrade
+451,94,217,2023-03-23,In Progress,Config Change
+452,111,98,2024-04-26,Remediated,Workaround
+453,162,250,2024-09-26,Remediated,N/A
+454,14,20,2023-01-18,In Progress,Upgrade
+455,188,286,2024-08-22,In Progress,Patch
+456,108,216,2023-08-26,Remediated,Workaround
+457,170,46,2023-10-29,In Progress,Patch
+458,63,204,2024-09-30,Remediated,Upgrade
+459,136,243,2024-09-05,Accepted Risk,Upgrade
+460,94,25,2025-03-20,In Progress,Workaround
+461,188,244,2024-05-31,Remediated,Workaround
+462,161,6,2023-11-16,Accepted Risk,N/A
+463,137,170,2023-02-14,Accepted Risk,N/A
+464,79,283,2024-11-24,In Progress,Config Change
+465,78,58,2023-05-27,Open,Config Change
+466,127,68,2024-10-30,Open,Upgrade
+467,28,202,2024-09-18,Open,N/A
+468,102,196,2023-10-11,Remediated,Workaround
+469,80,213,2023-03-24,Accepted Risk,Config Change
+470,96,198,2023-11-19,Accepted Risk,N/A
+471,102,188,2023-03-23,In Progress,Workaround
+472,130,272,2024-08-01,Remediated,Upgrade
+473,172,193,2025-02-08,Open,Config Change
+474,123,63,2023-04-21,Remediated,Workaround
+475,107,127,2023-02-02,Accepted Risk,Upgrade
+476,70,79,2024-09-10,Accepted Risk,N/A
+477,35,190,2024-07-16,Accepted Risk,Config Change
+478,8,113,2024-09-28,Open,Config Change
+479,69,11,2023-06-23,Open,Workaround
+480,160,1,2023-09-14,Open,Patch
+481,98,220,2024-05-16,Open,Upgrade
+482,62,289,2025-02-23,Accepted Risk,Config Change
+483,188,201,2024-02-29,In Progress,Patch
+484,66,159,2024-07-09,Remediated,Upgrade
+485,119,163,2025-02-20,Accepted Risk,Patch
+486,149,73,2024-05-09,Open,Patch
+487,105,215,2023-11-17,Accepted Risk,N/A
+488,54,285,2023-09-01,In Progress,N/A
+489,36,279,2025-02-12,In Progress,Workaround
+490,99,141,2023-10-06,In Progress,Workaround
+491,155,280,2023-01-28,Open,Upgrade
+492,28,176,2023-08-10,Accepted Risk,N/A
+493,116,174,2023-08-22,Open,Config Change
+494,152,245,2025-02-16,Accepted Risk,Patch
+495,57,60,2024-05-27,Accepted Risk,Config Change
+496,160,179,2024-01-26,In Progress,Upgrade
+497,137,152,2024-10-16,Open,Patch
+498,81,92,2024-09-19,In Progress,Patch
+499,55,233,2023-03-26,In Progress,Upgrade
+500,79,281,2023-12-02,In Progress,Workaround
+501,36,285,2023-02-20,Remediated,Workaround
+502,172,196,2025-01-27,Accepted Risk,Upgrade
+503,12,223,2023-03-17,Remediated,N/A
+504,84,8,2024-06-28,Remediated,Workaround
+505,127,153,2023-03-08,Open,Upgrade
+506,193,250,2023-06-11,Open,N/A
+507,120,232,2023-03-30,Accepted Risk,Workaround
+508,88,215,2023-07-21,Remediated,Upgrade
+509,72,209,2023-07-04,Accepted Risk,Upgrade
+510,11,118,2024-12-25,Remediated,Workaround
+511,124,170,2023-08-28,Remediated,Config Change
+512,191,53,2023-03-11,Remediated,Config Change
+513,76,148,2023-10-10,Accepted Risk,Upgrade
+514,176,44,2024-10-17,Accepted Risk,Workaround
+515,6,200,2025-02-24,Open,Workaround
+516,153,170,2023-10-15,Remediated,Workaround
+517,103,96,2025-02-19,Open,Upgrade
+518,190,33,2024-06-04,Accepted Risk,Patch
+519,34,59,2023-04-18,Accepted Risk,Workaround
+520,153,270,2024-01-16,Remediated,Workaround
+521,114,179,2023-12-15,Open,N/A
+522,99,228,2023-05-07,Open,Patch
+523,79,173,2023-09-29,Open,N/A
+524,124,234,2023-05-25,Accepted Risk,N/A
+525,16,270,2023-02-01,In Progress,Workaround
+526,65,77,2024-05-17,Open,Upgrade
+527,108,32,2024-10-25,Accepted Risk,Patch
+528,86,275,2025-02-12,Remediated,Upgrade
+529,128,139,2024-01-31,Remediated,Patch
+530,200,80,2024-10-02,Remediated,Upgrade
+531,27,269,2024-02-25,Open,N/A
+532,116,117,2024-04-17,Accepted Risk,N/A
+533,141,78,2023-07-19,Accepted Risk,Upgrade
+534,81,243,2024-09-03,In Progress,Workaround
+535,20,167,2024-12-21,Remediated,N/A
+536,145,115,2024-10-24,Remediated,Config Change
+537,179,181,2024-02-13,Remediated,N/A
+538,69,153,2023-03-03,Open,Patch
+539,92,245,2023-11-02,Open,Upgrade
+540,163,5,2024-07-30,In Progress,Config Change
+541,154,215,2023-01-24,Open,Upgrade
+542,115,78,2023-07-28,Accepted Risk,Workaround
+543,8,249,2025-02-03,In Progress,N/A
+544,149,211,2025-01-11,In Progress,Workaround
+545,149,147,2024-05-08,Accepted Risk,Config Change
+546,129,290,2023-12-13,Accepted Risk,Patch
+547,66,277,2024-09-27,Open,Patch
+548,114,21,2024-05-09,Remediated,Upgrade
+549,152,159,2023-07-31,In Progress,Config Change
+550,195,117,2025-03-21,Accepted Risk,Config Change
+551,173,282,2024-11-18,In Progress,Workaround
+552,68,81,2023-12-09,Remediated,Patch
+553,10,270,2025-01-16,Remediated,Workaround
+554,81,198,2024-05-22,Open,Config Change
+555,51,175,2023-04-30,Remediated,Workaround
+556,71,285,2024-01-04,Open,Config Change
+557,76,31,2023-10-26,In Progress,Patch
+558,31,237,2024-01-10,Open,Patch
+559,60,268,2023-01-31,Open,Patch
+560,2,208,2024-08-09,In Progress,Upgrade
+561,11,124,2024-08-25,Open,Upgrade
+562,24,277,2025-03-26,Accepted Risk,Upgrade
+563,39,114,2023-05-09,Accepted Risk,Upgrade
+564,136,139,2023-10-04,In Progress,Workaround
+565,105,221,2024-11-11,Remediated,Patch
+566,31,25,2024-01-08,Accepted Risk,Upgrade
+567,123,248,2023-07-05,Open,Patch
+568,155,248,2024-11-05,Open,Upgrade
+569,101,281,2023-12-17,Accepted Risk,Patch
+570,4,159,2023-03-31,Accepted Risk,Workaround
+571,141,259,2024-10-23,Remediated,Patch
+572,78,264,2024-07-27,In Progress,Workaround
+573,93,25,2023-01-13,In Progress,Config Change
+574,48,58,2023-11-29,Open,N/A
+575,192,138,2024-05-17,In Progress,Patch
+576,28,198,2023-08-15,Remediated,Workaround
+577,4,285,2024-10-25,Remediated,Upgrade
+578,111,81,2023-07-14,Remediated,Upgrade
+579,102,22,2024-07-24,Remediated,N/A
+580,12,241,2024-09-01,In Progress,Patch
+581,120,7,2023-05-28,Remediated,Patch
+582,74,221,2023-12-27,In Progress,Config Change
+583,93,270,2024-04-10,Accepted Risk,Config Change
+584,165,214,2024-04-25,Open,Upgrade
+585,129,99,2024-04-08,Remediated,Config Change
+586,43,24,2023-12-05,In Progress,Upgrade
+587,166,214,2024-03-06,Open,Workaround
+588,5,51,2024-05-10,Open,N/A
+589,13,143,2024-10-18,Remediated,Workaround
+590,75,126,2024-04-20,Open,Workaround
+591,97,69,2024-07-02,Accepted Risk,Workaround
+592,13,241,2023-07-27,Open,Upgrade
+593,137,18,2024-03-30,Accepted Risk,N/A
+594,141,288,2023-06-19,Accepted Risk,Patch
+595,22,249,2024-07-09,Accepted Risk,Workaround
+596,177,146,2024-05-13,In Progress,Config Change
+597,43,227,2023-08-14,Open,Upgrade
+598,149,81,2023-08-16,In Progress,Patch
+599,183,52,2023-03-30,Open,Upgrade
+600,32,233,2023-01-20,Remediated,Config Change
+601,173,155,2024-08-14,In Progress,Config Change
+602,104,39,2024-06-14,Open,Workaround
+603,70,169,2025-02-14,Accepted Risk,Upgrade
+604,130,227,2024-06-12,In Progress,Config Change
+605,194,63,2024-02-21,Open,Workaround
+606,3,38,2023-12-14,In Progress,Config Change
+607,55,249,2023-01-13,Accepted Risk,Workaround
+608,186,68,2025-02-28,In Progress,Upgrade
+609,152,189,2025-01-19,Open,Patch
+610,191,156,2023-06-09,In Progress,Config Change
+611,88,141,2025-01-08,Open,Config Change
+612,77,175,2024-12-11,Accepted Risk,N/A
+613,4,169,2023-10-20,Remediated,Workaround
+614,197,126,2024-02-10,Open,Patch
+615,172,80,2023-03-15,In Progress,Config Change
+616,58,42,2023-11-23,Remediated,Workaround
+617,185,7,2024-06-12,Remediated,Workaround
+618,14,197,2023-08-03,Remediated,Workaround
+619,134,20,2024-05-26,In Progress,Config Change
+620,75,115,2024-10-26,Open,Workaround
+621,185,111,2024-05-14,In Progress,Workaround
+622,32,159,2024-11-25,In Progress,N/A
+623,119,89,2024-09-27,Remediated,Config Change
+624,12,134,2023-08-15,Open,Workaround
+625,180,283,2024-01-22,Accepted Risk,Patch
+626,135,197,2023-01-05,In Progress,N/A
+627,194,85,2024-11-12,Remediated,N/A
+628,36,38,2023-05-15,Accepted Risk,Workaround
+629,57,221,2024-04-05,Open,Workaround
+630,95,45,2023-03-13,Open,Config Change
+631,20,11,2023-03-02,Open,Workaround
+632,54,47,2023-12-17,In Progress,Config Change
+633,74,41,2025-01-06,Open,N/A
+634,123,77,2025-03-30,Remediated,Upgrade
+635,63,2,2024-07-30,In Progress,Upgrade
+636,10,27,2023-09-08,Remediated,N/A
+637,155,57,2025-02-08,In Progress,Patch
+638,72,279,2023-09-08,Open,Config Change
+639,93,207,2023-04-21,In Progress,Workaround
+640,182,169,2024-11-05,In Progress,Patch
+641,155,231,2024-08-15,In Progress,Config Change
+642,149,235,2023-10-27,In Progress,Upgrade
+643,19,113,2023-01-25,Accepted Risk,N/A
+644,106,161,2024-07-08,Remediated,Patch
+645,62,17,2023-03-26,Accepted Risk,Config Change
+646,70,101,2024-06-30,Accepted Risk,Workaround
+647,168,195,2023-03-13,Remediated,Patch
+648,106,50,2024-01-22,Remediated,Patch
+649,124,197,2024-09-26,In Progress,Upgrade
+650,61,194,2023-08-31,Open,Patch
+651,21,245,2023-03-15,Remediated,Patch
+652,77,270,2023-08-15,Remediated,Upgrade
+653,22,231,2024-05-27,Remediated,Patch
+654,85,89,2024-01-11,Open,Config Change
+655,148,237,2025-01-17,Open,Patch
+656,78,48,2023-01-01,Remediated,Upgrade
+657,95,167,2024-02-17,Remediated,Patch
+658,129,258,2023-02-11,In Progress,Upgrade
+659,68,245,2025-01-11,Remediated,Config Change
+660,40,76,2023-12-15,Open,Upgrade
+661,183,15,2024-04-02,Remediated,Upgrade
+662,109,89,2023-08-25,Open,Upgrade
+663,165,18,2024-08-16,Accepted Risk,N/A
+664,142,213,2024-01-10,Accepted Risk,Upgrade
+665,38,112,2023-02-16,Open,Config Change
+666,36,191,2023-09-15,Accepted Risk,Upgrade
+667,145,23,2023-09-03,Accepted Risk,Patch
+668,27,8,2024-04-27,Open,Config Change
+669,41,255,2024-09-09,Accepted Risk,Workaround
+670,38,99,2023-04-12,Open,Config Change
+671,94,161,2024-10-17,Open,N/A
+672,133,36,2025-04-01,Open,Config Change
+673,143,34,2023-04-24,Accepted Risk,Config Change
+674,143,282,2023-02-01,Remediated,Config Change
+675,144,131,2023-08-28,In Progress,Config Change
+676,143,205,2024-11-10,Accepted Risk,Config Change
+677,64,197,2024-08-27,Open,Config Change
+678,180,22,2024-02-24,Remediated,N/A
+679,34,24,2023-02-19,Open,Upgrade
+680,42,70,2023-04-18,Remediated,Workaround
+681,116,59,2024-11-15,Open,Config Change
+682,101,51,2024-01-28,Remediated,N/A
+683,77,269,2024-05-22,Open,Config Change
+684,77,103,2023-07-01,In Progress,Upgrade
+685,131,234,2023-05-07,Accepted Risk,Workaround
+686,127,285,2024-10-10,Remediated,Config Change
+687,200,220,2024-10-28,Accepted Risk,N/A
+688,8,142,2023-10-10,Remediated,Patch
+689,30,241,2024-03-07,Accepted Risk,Workaround
+690,96,157,2024-10-25,Accepted Risk,Config Change
+691,141,185,2023-03-09,Remediated,Workaround
+692,179,10,2023-07-24,Remediated,N/A
+693,161,77,2024-03-30,Open,Workaround
+694,8,96,2024-04-21,Remediated,Upgrade
+695,47,240,2024-06-21,Remediated,N/A
+696,22,220,2024-10-01,Remediated,N/A
+697,65,20,2024-04-06,Open,Workaround
+698,161,259,2024-06-15,Open,N/A
+699,59,189,2023-11-30,In Progress,N/A
+700,36,17,2023-05-23,Remediated,Config Change
+701,13,254,2023-03-28,Accepted Risk,Patch
+702,161,127,2023-01-11,Open,Upgrade
+703,161,43,2024-06-01,In Progress,Config Change
+704,158,28,2024-07-11,Accepted Risk,Workaround
+705,62,95,2023-09-27,Open,Config Change
+706,93,227,2023-02-11,Open,Config Change
+707,50,3,2025-01-21,Open,Config Change
+708,40,147,2024-09-28,Accepted Risk,Upgrade
+709,2,108,2024-02-09,In Progress,Config Change
+710,125,78,2024-10-06,Remediated,Upgrade
+711,57,260,2024-05-16,Accepted Risk,Patch
+712,152,73,2023-08-02,Open,Config Change
+713,196,158,2024-07-15,Open,N/A
+714,24,260,2023-07-13,Remediated,Config Change
+715,189,256,2024-02-16,Remediated,Patch
+716,22,250,2023-03-22,Open,Workaround
+717,80,158,2023-02-15,Remediated,Config Change
+718,17,157,2024-12-08,In Progress,Workaround
+719,162,150,2023-11-15,In Progress,Patch
+720,164,244,2024-05-11,In Progress,Upgrade
+721,55,121,2023-05-05,Accepted Risk,Config Change
+722,102,114,2024-10-29,Open,Patch
+723,92,45,2024-03-08,Open,Workaround
+724,34,143,2024-09-27,In Progress,Patch
+725,109,239,2023-06-17,Remediated,Patch
+726,120,190,2023-04-13,In Progress,Config Change
+727,109,269,2023-05-09,In Progress,Patch
+728,155,183,2024-09-11,Open,Patch
+729,133,120,2024-04-03,In Progress,Patch
+730,45,251,2024-06-23,Accepted Risk,Config Change
+731,22,14,2023-06-25,Open,Workaround
+732,76,242,2024-09-27,Accepted Risk,Patch
+733,174,59,2024-02-25,Remediated,Workaround
+734,31,42,2024-07-19,Remediated,Workaround
+735,93,51,2023-05-28,Accepted Risk,Config Change
+736,32,279,2023-04-21,Remediated,N/A
+737,83,115,2024-11-27,Remediated,Patch
+738,149,249,2023-01-27,Accepted Risk,N/A
+739,28,14,2024-03-05,In Progress,N/A
+740,113,47,2024-06-02,Open,Workaround
+741,193,269,2023-07-02,Accepted Risk,Patch
+742,47,207,2025-03-13,Accepted Risk,N/A
+743,149,12,2023-08-18,Accepted Risk,Upgrade
+744,78,4,2023-04-10,Open,N/A
+745,100,187,2023-04-30,Accepted Risk,Config Change
+746,13,260,2024-03-27,Open,Patch
+747,63,175,2023-12-21,In Progress,Upgrade
+748,155,65,2023-04-20,Remediated,N/A
+749,121,300,2023-12-03,Accepted Risk,Upgrade
+750,195,147,2023-04-10,In Progress,Patch
+751,31,257,2023-08-21,Accepted Risk,N/A
+752,157,1,2024-11-17,In Progress,Upgrade
+753,62,96,2024-07-05,Remediated,Config Change
+754,33,22,2024-08-15,Remediated,Config Change
+755,152,21,2024-09-05,Open,Patch
+756,67,162,2025-03-10,Open,Patch
+757,64,119,2023-11-03,Open,N/A
+758,63,234,2023-04-15,Accepted Risk,Config Change
+759,51,253,2023-12-20,Remediated,Config Change
+760,26,26,2023-12-21,In Progress,Config Change
+761,46,36,2025-01-06,Open,N/A
+762,184,113,2024-12-12,Remediated,N/A
+763,7,253,2023-09-19,In Progress,Upgrade
+764,67,176,2024-11-10,In Progress,Upgrade
+765,77,110,2023-10-31,Remediated,N/A
+766,37,154,2024-02-01,Accepted Risk,Workaround
+767,153,76,2023-08-19,In Progress,Workaround
+768,115,230,2023-03-23,Remediated,Config Change
+769,53,247,2023-03-15,In Progress,Workaround
+770,14,265,2025-02-13,Remediated,Workaround
+771,142,223,2023-12-23,Open,N/A
+772,65,260,2023-04-15,In Progress,Workaround
+773,55,94,2023-02-19,In Progress,Patch
+774,48,206,2023-12-25,In Progress,Workaround
+775,126,240,2024-05-17,Accepted Risk,Patch
+776,196,136,2023-02-23,In Progress,Patch
+777,159,212,2023-07-17,Remediated,Workaround
+778,104,55,2023-01-16,Open,Config Change
+779,102,181,2023-08-12,Accepted Risk,Workaround
+780,12,87,2024-11-28,Open,Workaround
+781,3,10,2023-11-18,Accepted Risk,Config Change
+782,142,259,2024-10-18,Remediated,Config Change
+783,21,183,2024-12-08,Accepted Risk,Workaround
+784,120,144,2024-01-23,Remediated,Config Change
+785,149,225,2023-03-02,Open,Patch
+786,27,265,2024-12-08,Accepted Risk,Config Change
+787,25,115,2024-09-09,Remediated,Patch
+788,162,147,2024-03-13,Accepted Risk,Upgrade
+789,10,74,2024-11-24,Remediated,Patch
+790,53,296,2024-06-30,Remediated,Upgrade
+791,27,209,2023-05-14,In Progress,Upgrade
+792,124,276,2023-09-30,Remediated,Config Change
+793,82,255,2023-07-24,Remediated,Patch
+794,154,146,2024-03-10,In Progress,Workaround
+795,92,241,2023-04-09,Remediated,Workaround
+796,111,233,2025-03-04,Remediated,Config Change
+797,49,149,2023-08-27,Open,Config Change
+798,60,214,2023-09-09,Remediated,Workaround
+799,130,60,2023-07-21,Remediated,Config Change
+800,187,300,2024-08-23,Remediated,Upgrade
+801,109,180,2023-12-25,In Progress,Upgrade
+802,137,48,2025-03-18,In Progress,Patch
+803,69,130,2023-04-15,In Progress,Patch
+804,108,153,2024-02-13,Open,Config Change
+805,19,141,2024-01-04,Open,Config Change
+806,142,125,2024-08-08,Remediated,Config Change
+807,133,144,2023-12-25,In Progress,Config Change
+808,36,96,2024-04-29,In Progress,Config Change
+809,195,192,2025-03-07,In Progress,Patch
+810,84,297,2024-07-17,Remediated,N/A
+811,15,121,2025-01-09,Remediated,Workaround
+812,153,235,2023-05-31,In Progress,Workaround
+813,99,270,2024-08-11,Open,N/A
+814,147,179,2024-06-22,Open,N/A
+815,113,296,2023-05-22,Open,Upgrade
+816,15,188,2024-05-21,Accepted Risk,Workaround
+817,186,206,2023-09-16,Open,Config Change
+818,8,3,2024-02-08,In Progress,Workaround
+819,172,191,2023-07-23,Accepted Risk,Upgrade
+820,174,97,2024-04-18,Open,Upgrade
+821,70,3,2024-11-28,Remediated,Config Change
+822,172,55,2024-07-14,Accepted Risk,Workaround
+823,82,204,2025-02-08,Open,Workaround
+824,85,272,2025-02-05,Open,Config Change
+825,162,237,2023-02-10,Accepted Risk,N/A
+826,130,142,2023-10-15,Open,N/A
+827,183,182,2025-01-06,Remediated,Upgrade
+828,67,62,2023-02-12,Open,Config Change
+829,173,249,2025-03-09,Open,Config Change
+830,151,262,2023-08-18,In Progress,Upgrade
+831,149,225,2023-05-10,Open,Workaround
+832,71,280,2023-02-13,Open,Upgrade
+833,78,143,2023-12-24,Accepted Risk,N/A
+834,34,261,2023-12-07,Open,N/A
+835,114,200,2024-02-10,Remediated,Workaround
+836,9,276,2025-02-21,Open,Workaround
+837,151,74,2023-02-05,Accepted Risk,N/A
+838,66,213,2023-06-17,Accepted Risk,Workaround
+839,120,16,2023-12-29,Remediated,Workaround
+840,17,103,2025-01-26,Accepted Risk,Patch
+841,133,215,2023-01-24,Remediated,Patch
+842,79,186,2025-03-11,In Progress,Workaround
+843,163,242,2023-12-10,Remediated,Workaround
+844,110,132,2023-01-21,In Progress,N/A
+845,68,115,2024-10-11,Accepted Risk,Workaround
+846,176,9,2024-09-29,Remediated,Workaround
+847,44,250,2024-06-26,Accepted Risk,N/A
+848,155,172,2023-06-06,In Progress,Config Change
+849,137,246,2023-10-08,Open,Upgrade
+850,92,121,2024-03-29,In Progress,Patch
+851,113,54,2025-01-14,Remediated,Upgrade
+852,11,222,2024-10-07,In Progress,Patch
+853,136,203,2023-01-03,Accepted Risk,N/A
+854,38,208,2024-12-30,In Progress,Upgrade
+855,108,43,2023-12-03,Open,N/A
+856,88,164,2024-05-02,Accepted Risk,Upgrade
+857,22,255,2023-07-25,Open,Upgrade
+858,40,173,2024-11-01,Accepted Risk,Upgrade
+859,132,177,2024-08-11,Accepted Risk,Workaround
+860,120,261,2024-06-25,Accepted Risk,Patch
+861,165,279,2023-03-12,Accepted Risk,Patch
+862,45,178,2024-01-04,In Progress,Workaround
+863,102,282,2023-11-15,Open,Patch
+864,162,283,2023-08-26,Accepted Risk,Config Change
+865,90,129,2023-04-28,Open,Patch
+866,187,144,2024-06-24,Accepted Risk,Workaround
+867,87,221,2024-11-24,Open,Patch
+868,60,240,2024-10-17,In Progress,Upgrade
+869,142,31,2023-03-12,Open,Patch
+870,91,78,2024-08-07,Remediated,N/A
+871,77,47,2023-11-13,Accepted Risk,Config Change
+872,67,106,2024-03-27,Accepted Risk,Workaround
+873,65,71,2024-02-25,Remediated,Upgrade
+874,137,55,2024-06-20,In Progress,N/A
+875,101,154,2024-07-11,Open,Upgrade
+876,194,11,2023-02-20,Open,N/A
+877,179,283,2023-04-15,Remediated,N/A
+878,3,155,2023-10-20,Remediated,Config Change
+879,17,259,2024-01-31,Accepted Risk,Upgrade
+880,109,142,2024-02-06,Open,Config Change
+881,143,50,2023-10-15,Open,Config Change
+882,32,108,2024-03-27,Accepted Risk,Config Change
+883,95,53,2023-10-01,Open,Patch
+884,22,57,2023-06-11,Open,Workaround
+885,46,300,2024-01-22,Open,Upgrade
+886,8,85,2025-02-04,In Progress,Upgrade
+887,194,172,2023-12-07,In Progress,Patch
+888,116,177,2025-02-21,Accepted Risk,Workaround
+889,12,81,2024-06-09,Open,Patch
+890,5,123,2024-01-06,Remediated,Patch
+891,47,156,2024-06-07,In Progress,Upgrade
+892,127,294,2023-07-30,Accepted Risk,Patch
+893,124,162,2025-02-08,Open,Config Change
+894,53,207,2023-01-24,Remediated,Config Change
+895,79,199,2023-08-13,Accepted Risk,Workaround
+896,28,202,2024-03-13,Open,N/A
+897,156,135,2024-12-12,Open,Config Change
+898,3,211,2025-02-26,In Progress,Upgrade
+899,117,185,2023-10-23,Accepted Risk,Upgrade
+900,153,10,2024-11-18,In Progress,N/A
+901,92,138,2024-06-27,In Progress,Upgrade
+902,151,68,2023-06-25,Remediated,Config Change
+903,41,285,2024-03-13,Accepted Risk,N/A
+904,51,122,2023-04-20,Remediated,Patch
+905,124,48,2023-04-11,Accepted Risk,Workaround
+906,18,105,2024-08-23,Open,Upgrade
+907,47,46,2024-05-01,Remediated,Workaround
+908,82,44,2025-01-31,Accepted Risk,N/A
+909,46,131,2025-03-25,Accepted Risk,Config Change
+910,143,8,2023-03-23,Open,Workaround
+911,159,160,2024-12-13,Open,Workaround
+912,200,7,2023-11-05,Remediated,Patch
+913,105,44,2024-12-05,Open,N/A
+914,18,242,2024-12-23,Remediated,Patch
+915,83,272,2024-07-18,In Progress,Workaround
+916,104,69,2023-10-05,Remediated,Patch
+917,29,204,2024-12-04,Open,N/A
+918,112,23,2023-10-29,In Progress,Config Change
+919,7,190,2024-12-16,Accepted Risk,Workaround
+920,127,137,2024-05-05,In Progress,Workaround
+921,13,176,2025-01-03,Open,Config Change
+922,177,142,2024-12-01,Remediated,Upgrade
+923,196,98,2024-11-12,Accepted Risk,Workaround
+924,67,11,2023-06-06,Remediated,Patch
+925,109,1,2024-07-22,In Progress,Upgrade
+926,86,112,2023-10-05,Accepted Risk,Upgrade
+927,29,127,2024-03-15,Remediated,N/A
+928,47,116,2023-09-18,Accepted Risk,Upgrade
+929,2,70,2023-08-05,In Progress,Patch
+930,175,124,2024-12-18,Open,Config Change
+931,16,163,2023-10-26,In Progress,Workaround
+932,180,39,2023-12-22,Accepted Risk,Patch
+933,7,49,2024-09-03,Accepted Risk,Config Change
+934,172,74,2024-12-10,Accepted Risk,N/A
+935,173,156,2024-01-30,Accepted Risk,Patch
+936,128,242,2024-12-03,Open,Patch
+937,113,270,2025-01-15,Open,Workaround
+938,42,192,2024-12-20,Remediated,Workaround
+939,156,193,2024-05-29,Open,Config Change
+940,183,207,2024-03-25,In Progress,Upgrade
+941,196,234,2024-03-02,Accepted Risk,Workaround
+942,141,209,2023-06-17,Open,Upgrade
+943,159,178,2025-02-06,Accepted Risk,Config Change
+944,54,251,2024-01-10,Remediated,Config Change
+945,63,97,2024-09-19,Accepted Risk,Workaround
+946,86,113,2025-03-09,Open,Config Change
+947,128,160,2024-08-11,In Progress,Workaround
+948,71,43,2023-12-11,Open,N/A
+949,149,287,2024-08-23,Remediated,Upgrade
+950,117,197,2023-06-12,In Progress,Config Change
+951,49,58,2023-03-26,Remediated,Workaround
+952,157,35,2024-07-01,In Progress,Config Change
+953,114,118,2025-02-14,Accepted Risk,Workaround
+954,135,67,2023-08-17,Accepted Risk,Config Change
+955,97,47,2023-09-06,Accepted Risk,Workaround
+956,56,297,2023-08-15,Remediated,Upgrade
+957,147,90,2024-03-31,Accepted Risk,Config Change
+958,86,78,2024-04-29,Remediated,Patch
+959,194,99,2025-01-03,Open,N/A
+960,122,224,2025-02-06,Accepted Risk,Patch
+961,16,212,2024-02-28,Accepted Risk,Workaround
+962,113,228,2024-04-06,Open,Upgrade
+963,76,240,2024-06-14,Open,Upgrade
+964,32,294,2024-11-11,Accepted Risk,Upgrade
+965,69,54,2023-10-02,Accepted Risk,Patch
+966,26,256,2024-12-12,Open,N/A
+967,141,54,2023-08-26,In Progress,Config Change
+968,180,289,2024-02-27,Accepted Risk,N/A
+969,132,247,2024-07-18,Open,Workaround
+970,2,101,2023-09-01,Remediated,N/A
+971,156,240,2025-01-31,In Progress,Patch
+972,36,87,2023-06-12,Remediated,N/A
+973,163,236,2023-06-26,Accepted Risk,Config Change
+974,78,118,2023-06-30,Accepted Risk,Patch
+975,47,66,2023-06-08,Remediated,N/A
+976,74,272,2023-03-16,Open,Upgrade
+977,190,143,2024-03-14,Accepted Risk,Patch
+978,187,7,2023-06-25,Remediated,Patch
+979,154,37,2025-01-28,Remediated,N/A
+980,17,9,2023-02-08,In Progress,Workaround
+981,182,268,2023-12-28,Open,Workaround
+982,40,155,2024-03-08,Open,Upgrade
+983,28,165,2023-03-03,Accepted Risk,Upgrade
+984,2,190,2023-04-19,Open,N/A
+985,81,281,2023-11-26,Remediated,Workaround
+986,34,279,2023-05-04,Open,Config Change
+987,142,35,2023-08-13,Open,N/A
+988,174,131,2024-02-23,In Progress,Workaround
+989,63,295,2023-01-23,Accepted Risk,Workaround
+990,124,124,2023-08-08,Remediated,N/A
+991,187,96,2025-01-13,Open,Patch
+992,68,271,2024-01-03,Open,N/A
+993,98,232,2023-04-17,Accepted Risk,Config Change
+994,126,272,2023-12-04,Accepted Risk,Upgrade
+995,22,53,2023-04-18,Accepted Risk,N/A
+996,53,32,2024-08-31,Remediated,N/A
+997,163,257,2025-03-17,In Progress,Upgrade
+998,4,152,2024-04-01,In Progress,Patch
+999,27,243,2024-09-07,In Progress,Config Change
+1000,127,123,2024-08-18,Accepted Risk,Patch
+1001,114,116,2024-09-05,Accepted Risk,Config Change
+1002,138,75,2024-10-30,Accepted Risk,Patch
+1003,44,146,2024-04-20,Open,Workaround
+1004,122,73,2024-12-29,Open,Workaround
+1005,132,79,2024-06-28,Remediated,Upgrade
+1006,127,134,2023-04-03,Open,N/A
+1007,173,76,2024-10-25,In Progress,Config Change
+1008,194,99,2024-07-01,Remediated,Workaround
+1009,98,116,2023-06-11,In Progress,Workaround
+1010,70,257,2023-09-15,Accepted Risk,Config Change
+1011,51,35,2024-03-08,Remediated,Patch
+1012,144,297,2024-07-19,Remediated,Patch
+1013,66,22,2024-01-13,In Progress,Config Change
+1014,191,246,2023-12-06,Open,Config Change
+1015,32,55,2024-11-28,Open,Workaround
+1016,75,89,2024-01-13,In Progress,Upgrade
+1017,114,135,2024-01-24,Open,Workaround
+1018,69,237,2024-05-07,Accepted Risk,Workaround
+1019,74,168,2024-08-19,Open,Workaround
+1020,1,64,2024-10-12,In Progress,Upgrade
+1021,157,276,2024-07-22,Open,Workaround
+1022,77,131,2023-08-01,In Progress,Upgrade
+1023,166,2,2023-10-03,Open,Patch
+1024,154,245,2024-03-31,Open,Upgrade
+1025,23,30,2023-05-10,Accepted Risk,Upgrade
+1026,103,279,2024-09-26,Accepted Risk,N/A
+1027,75,269,2023-03-21,Remediated,Upgrade
+1028,175,29,2024-12-03,Open,Upgrade
+1029,135,7,2023-11-23,Accepted Risk,Workaround
+1030,29,58,2024-05-15,Remediated,Upgrade
+1031,165,91,2025-02-06,In Progress,Upgrade
+1032,26,196,2024-07-20,Open,Workaround
+1033,20,2,2023-02-20,Open,Patch
+1034,179,56,2023-05-31,In Progress,Workaround
+1035,102,162,2024-10-29,Open,Config Change
+1036,133,71,2024-10-05,Accepted Risk,Workaround
+1037,56,14,2024-10-02,Open,Config Change
+1038,197,123,2023-09-24,Accepted Risk,Patch
+1039,52,70,2024-08-22,Remediated,N/A
+1040,2,223,2025-03-08,In Progress,Patch
+1041,195,41,2024-12-17,Remediated,Patch
+1042,161,100,2023-01-31,Remediated,N/A
+1043,91,289,2023-11-15,Remediated,Config Change
+1044,4,250,2024-09-10,Open,Workaround
+1045,81,186,2023-06-20,Accepted Risk,N/A
+1046,141,275,2024-06-07,In Progress,Config Change
+1047,115,111,2024-02-08,In Progress,Upgrade
+1048,168,272,2025-03-11,Accepted Risk,Patch
+1049,4,71,2023-04-15,Accepted Risk,N/A
+1050,1,1,2023-04-21,Remediated,N/A
+1051,107,294,2023-03-27,Accepted Risk,Upgrade
+1052,144,247,2023-10-13,In Progress,N/A
+1053,193,103,2024-03-31,Open,Config Change
+1054,117,75,2023-04-27,Remediated,Config Change
+1055,35,234,2024-12-31,Remediated,Patch
+1056,153,110,2023-03-18,In Progress,Workaround
+1057,80,62,2025-03-25,In Progress,N/A
+1058,123,186,2023-10-27,Remediated,Upgrade
+1059,85,133,2023-01-29,In Progress,Workaround
+1060,191,137,2024-10-18,Remediated,Upgrade
+1061,67,288,2023-11-19,Remediated,Workaround
+1062,167,22,2023-11-17,In Progress,N/A
+1063,74,10,2023-03-03,Accepted Risk,Config Change
+1064,114,38,2023-02-18,Remediated,Patch
+1065,142,205,2024-06-04,Accepted Risk,N/A
+1066,175,291,2024-07-01,Accepted Risk,Patch
+1067,70,220,2024-12-04,In Progress,Patch
+1068,50,41,2024-08-31,Open,Patch
+1069,89,6,2024-02-27,Open,N/A
+1070,61,203,2024-04-16,Remediated,N/A
+1071,179,227,2025-01-28,Accepted Risk,Workaround
+1072,134,158,2024-05-21,Open,N/A
+1073,55,183,2023-09-15,Open,N/A
+1074,42,63,2024-04-04,Remediated,N/A
+1075,177,226,2023-11-23,Accepted Risk,Config Change
+1076,154,203,2024-09-22,Open,N/A
+1077,116,176,2024-08-27,Remediated,Workaround
+1078,38,288,2023-06-20,In Progress,Config Change
+1079,100,298,2023-03-29,Open,Patch
+1080,200,139,2024-09-21,In Progress,Workaround
+1081,110,257,2024-07-28,Remediated,N/A
+1082,112,151,2024-12-01,Open,Config Change
+1083,22,199,2023-08-13,Remediated,Patch
+1084,38,1,2025-02-11,Open,Patch
+1085,118,16,2023-05-18,In Progress,Upgrade
+1086,180,191,2024-04-05,In Progress,Upgrade
+1087,148,86,2024-03-12,Accepted Risk,N/A
+1088,37,208,2023-06-17,Accepted Risk,N/A
+1089,152,273,2023-10-05,Remediated,Upgrade
+1090,143,196,2023-06-22,Accepted Risk,Patch
+1091,165,199,2023-09-22,Remediated,Patch
+1092,59,139,2025-01-23,Accepted Risk,N/A
+1093,186,229,2024-12-26,Accepted Risk,Patch
+1094,16,271,2025-02-27,Remediated,Upgrade
+1095,185,135,2024-08-01,In Progress,Patch
+1096,119,298,2024-10-01,Remediated,Workaround
+1097,27,181,2024-06-17,Open,N/A
+1098,126,141,2023-09-13,Open,Config Change
+1099,166,185,2024-05-27,In Progress,Config Change
+1100,80,38,2023-01-22,In Progress,Patch
+1101,189,202,2024-05-06,Remediated,Patch
+1102,23,237,2023-11-12,Open,N/A
+1103,166,280,2024-01-20,In Progress,N/A
+1104,192,134,2024-12-06,Open,N/A
+1105,137,135,2024-01-16,In Progress,N/A
+1106,33,290,2023-09-07,Remediated,Workaround
+1107,115,141,2024-02-12,Open,Patch
+1108,141,106,2024-07-02,In Progress,Patch
+1109,164,300,2024-03-16,Accepted Risk,Patch
+1110,108,151,2024-10-12,Open,Patch
+1111,86,106,2024-07-02,Remediated,Upgrade
+1112,62,136,2023-04-11,Accepted Risk,N/A
+1113,132,157,2023-04-20,Accepted Risk,Config Change
+1114,165,152,2024-02-19,Accepted Risk,Workaround
+1115,39,75,2024-10-05,Open,Upgrade
+1116,192,42,2024-02-15,Remediated,Workaround
+1117,140,180,2024-12-01,In Progress,Upgrade
+1118,179,276,2024-04-27,Accepted Risk,Workaround
+1119,53,235,2023-05-26,In Progress,Workaround
+1120,75,246,2023-02-11,Accepted Risk,Workaround
+1121,60,226,2023-03-15,Remediated,N/A
+1122,73,247,2024-11-20,Remediated,Config Change
+1123,33,130,2023-01-21,Open,Workaround
+1124,10,300,2025-01-12,In Progress,N/A
+1125,31,52,2023-08-08,Accepted Risk,Patch
+1126,4,94,2024-03-19,Open,Workaround
+1127,145,34,2024-08-13,Accepted Risk,Upgrade
+1128,125,87,2023-01-11,Remediated,Workaround
+1129,176,126,2024-11-26,Remediated,N/A
+1130,57,67,2023-07-31,In Progress,N/A
+1131,152,1,2023-03-09,Accepted Risk,Upgrade
+1132,14,223,2023-03-13,In Progress,Upgrade
+1133,29,7,2023-11-10,Accepted Risk,Workaround
+1134,115,230,2024-03-02,In Progress,Workaround
+1135,47,42,2024-12-14,Open,N/A
+1136,143,111,2023-07-28,Open,N/A
+1137,46,156,2024-03-07,Remediated,Patch
+1138,144,249,2024-04-22,In Progress,Patch
+1139,87,51,2024-12-30,Remediated,Upgrade
+1140,103,229,2025-01-28,In Progress,Workaround
+1141,131,161,2024-03-29,Remediated,Config Change
+1142,138,180,2023-06-01,Accepted Risk,Workaround
+1143,160,65,2024-07-02,In Progress,Upgrade
+1144,199,234,2023-09-13,Remediated,Config Change
+1145,156,151,2025-03-10,In Progress,Config Change
+1146,48,134,2023-07-29,In Progress,Patch
+1147,36,247,2023-12-15,Remediated,N/A
+1148,126,62,2023-07-22,Remediated,Config Change
+1149,181,180,2024-12-15,In Progress,Upgrade
+1150,170,38,2023-06-05,Accepted Risk,Upgrade
+1151,86,237,2025-02-18,Remediated,Patch
+1152,39,41,2024-11-27,In Progress,Patch
+1153,146,185,2023-05-24,In Progress,Patch
+1154,140,3,2025-01-21,Remediated,Upgrade
+1155,93,38,2024-08-09,Remediated,Config Change
+1156,120,105,2023-10-06,Remediated,Workaround
+1157,173,149,2024-01-15,Remediated,N/A
+1158,147,261,2024-07-26,Open,Patch
+1159,116,270,2025-03-06,Open,Patch
+1160,106,126,2024-09-28,Accepted Risk,Patch
+1161,168,113,2023-03-27,Open,Upgrade
+1162,138,184,2023-02-06,Open,Upgrade
+1163,133,162,2024-11-13,Remediated,N/A
+1164,185,299,2023-11-08,Accepted Risk,N/A
+1165,128,11,2023-05-03,Remediated,N/A
+1166,4,64,2023-11-28,Remediated,Config Change
+1167,172,43,2023-04-12,In Progress,Upgrade
+1168,66,260,2024-11-04,Accepted Risk,Workaround
+1169,122,23,2023-08-18,Remediated,Upgrade
+1170,19,294,2024-08-03,Accepted Risk,Workaround
+1171,36,37,2023-06-29,Remediated,N/A
+1172,59,121,2024-02-29,In Progress,Upgrade
+1173,3,253,2024-02-19,Accepted Risk,N/A
+1174,166,297,2024-12-28,Remediated,N/A
+1175,33,86,2024-03-20,Remediated,Config Change
+1176,39,165,2023-03-26,Remediated,Upgrade
+1177,59,224,2023-01-21,Accepted Risk,Config Change
+1178,129,234,2024-12-14,Accepted Risk,N/A
+1179,118,248,2024-06-08,In Progress,Upgrade
+1180,186,191,2024-06-18,Remediated,Workaround
+1181,147,291,2024-10-27,In Progress,Config Change
+1182,26,291,2024-10-24,Remediated,Upgrade
+1183,121,93,2024-05-29,Open,Config Change
+1184,161,58,2023-08-01,In Progress,Workaround
+1185,36,52,2023-01-27,Remediated,Patch
+1186,142,291,2024-05-15,Remediated,Upgrade
+1187,176,127,2024-11-12,Accepted Risk,Config Change
+1188,86,64,2023-04-13,In Progress,N/A
+1189,136,175,2025-03-17,Accepted Risk,Upgrade
+1190,13,54,2024-09-26,Remediated,Patch
+1191,195,21,2023-01-16,In Progress,Config Change
+1192,10,235,2024-06-24,Accepted Risk,Config Change
+1193,139,181,2023-10-17,Open,Patch
+1194,56,165,2024-05-25,Open,N/A
+1195,17,33,2024-05-02,Remediated,Workaround
+1196,47,116,2025-03-01,In Progress,Config Change
+1197,123,34,2023-06-14,In Progress,Config Change
+1198,186,1,2023-06-10,Open,Upgrade
+1199,49,145,2024-05-10,Remediated,Patch
+1200,75,204,2023-12-05,Open,Workaround
+1201,193,51,2025-01-08,Remediated,N/A
+1202,123,289,2024-06-27,In Progress,Patch
+1203,137,2,2023-05-03,In Progress,Upgrade
+1204,81,7,2023-11-07,Accepted Risk,Config Change
+1205,152,104,2025-02-22,Remediated,Config Change
+1206,8,290,2024-08-26,Open,Upgrade
+1207,93,202,2024-10-26,In Progress,N/A
+1208,124,19,2024-09-07,Remediated,Upgrade
+1209,59,245,2024-08-01,Open,Config Change
+1210,79,196,2023-12-02,Accepted Risk,N/A
+1211,82,116,2024-09-04,Open,Upgrade
+1212,123,106,2023-04-07,Open,Patch
+1213,186,215,2024-12-11,In Progress,Patch
+1214,189,238,2023-07-21,Open,Patch
+1215,160,280,2024-10-04,Open,N/A
+1216,5,230,2023-09-13,Open,Patch
+1217,85,264,2024-12-07,Accepted Risk,N/A
+1218,156,273,2025-01-12,Accepted Risk,N/A
+1219,93,30,2023-12-17,Remediated,Upgrade
+1220,166,54,2024-06-04,Open,Patch
+1221,85,266,2024-11-09,Open,Workaround
+1222,26,47,2024-10-04,Open,N/A
+1223,16,270,2024-07-23,Accepted Risk,Workaround
+1224,180,271,2023-02-17,Accepted Risk,N/A
+1225,175,64,2023-11-02,Accepted Risk,Workaround
+1226,121,97,2024-02-08,Remediated,N/A
+1227,183,189,2024-06-10,Open,Config Change
+1228,174,269,2024-04-07,In Progress,Upgrade
+1229,24,126,2025-02-21,Remediated,N/A
+1230,18,175,2023-06-26,Accepted Risk,Upgrade
+1231,75,68,2024-05-14,In Progress,Upgrade
+1232,129,188,2023-02-03,Accepted Risk,Upgrade
+1233,129,16,2023-07-13,Accepted Risk,Upgrade
+1234,187,121,2023-08-08,Remediated,Upgrade
+1235,116,13,2024-07-03,Accepted Risk,Workaround
+1236,52,31,2023-09-12,In Progress,Upgrade
+1237,82,280,2024-10-24,Accepted Risk,Workaround
+1238,118,245,2023-05-24,In Progress,Upgrade
+1239,149,58,2024-03-30,Open,Config Change
+1240,129,219,2024-12-06,Open,Config Change
+1241,187,34,2023-12-19,Remediated,Upgrade
+1242,129,187,2023-09-01,Accepted Risk,N/A
+1243,123,86,2024-11-13,Accepted Risk,Workaround
+1244,6,149,2024-12-15,Accepted Risk,N/A
+1245,144,271,2023-09-18,Open,Patch
+1246,117,7,2023-12-21,Open,Upgrade
+1247,79,122,2024-10-06,Open,Patch
+1248,128,174,2023-07-08,In Progress,Upgrade
+1249,56,232,2024-12-14,Accepted Risk,Upgrade
+1250,118,292,2023-11-27,In Progress,Patch
+1251,142,95,2023-09-12,Remediated,Workaround
+1252,30,213,2023-02-06,Open,Upgrade
+1253,125,133,2023-09-07,Remediated,Upgrade
+1254,65,262,2024-01-11,In Progress,Patch
+1255,116,44,2024-03-21,Remediated,Config Change
+1256,173,48,2023-06-26,Open,Upgrade
+1257,28,287,2024-05-31,Accepted Risk,Workaround
+1258,79,192,2023-06-22,Remediated,Upgrade
+1259,138,219,2023-07-08,In Progress,Upgrade
+1260,21,86,2024-11-28,Open,Workaround
+1261,42,248,2023-03-12,Open,Workaround
+1262,19,9,2023-02-26,Accepted Risk,Workaround
+1263,189,12,2023-10-15,Open,Upgrade
+1264,6,71,2025-03-19,Open,Patch
+1265,185,94,2025-01-13,Accepted Risk,Config Change
+1266,143,276,2025-01-14,Remediated,Upgrade
+1267,14,4,2024-06-09,In Progress,N/A
+1268,42,10,2024-12-15,Open,Workaround
+1269,109,12,2025-01-26,In Progress,N/A
+1270,3,282,2023-04-18,Remediated,Config Change
+1271,99,118,2023-02-01,In Progress,N/A
+1272,146,109,2024-11-06,In Progress,Patch
+1273,94,169,2024-10-24,Accepted Risk,N/A
+1274,88,260,2024-06-27,Open,Config Change
+1275,81,215,2023-02-06,Remediated,Patch
+1276,82,7,2024-11-20,Remediated,Patch
+1277,165,269,2023-03-23,Open,Config Change
+1278,55,184,2024-02-27,Remediated,Upgrade
+1279,193,264,2024-07-26,Open,Workaround
+1280,121,260,2023-05-27,Open,Config Change
+1281,75,76,2024-08-31,Remediated,Patch
+1282,77,204,2023-11-21,Remediated,N/A
+1283,171,265,2023-12-01,Accepted Risk,Workaround
+1284,199,58,2024-05-12,Remediated,Workaround
+1285,139,95,2023-01-16,In Progress,Config Change
+1286,131,80,2023-01-11,In Progress,Config Change
+1287,196,277,2023-08-06,In Progress,N/A
+1288,116,93,2024-01-05,Accepted Risk,Config Change
+1289,22,58,2025-03-31,Remediated,Upgrade
+1290,58,82,2023-02-14,Remediated,Workaround
+1291,95,218,2023-01-21,Remediated,Upgrade
+1292,126,178,2023-11-29,In Progress,N/A
+1293,50,187,2024-02-11,Open,Patch
+1294,10,280,2024-08-03,Open,Workaround
+1295,168,281,2024-07-20,In Progress,Workaround
+1296,144,34,2024-03-29,In Progress,Upgrade
+1297,180,200,2024-09-19,Accepted Risk,Upgrade
+1298,131,149,2025-01-19,Remediated,Workaround
+1299,176,74,2023-02-01,Accepted Risk,Config Change
+1300,198,157,2024-06-10,Accepted Risk,Config Change
+1301,122,101,2023-07-12,Remediated,Upgrade
+1302,35,162,2024-03-03,Open,Patch
+1303,189,154,2023-07-09,In Progress,Patch
+1304,64,260,2024-09-08,Open,Patch
+1305,21,228,2024-09-24,Open,Upgrade
+1306,154,209,2023-09-24,Remediated,Patch
+1307,63,45,2024-08-25,Accepted Risk,Patch
+1308,63,281,2024-11-06,Open,Patch
+1309,94,184,2023-06-20,In Progress,Config Change
+1310,113,257,2025-01-18,In Progress,Workaround
+1311,45,249,2023-04-14,In Progress,Workaround
+1312,141,265,2024-03-26,Accepted Risk,N/A
+1313,51,49,2023-11-13,Accepted Risk,Upgrade
+1314,21,124,2024-04-08,Remediated,Workaround
+1315,16,298,2023-12-09,Open,Workaround
+1316,70,216,2024-07-05,Open,Upgrade
+1317,79,6,2023-10-28,In Progress,Workaround
+1318,109,218,2024-11-20,Accepted Risk,Patch
+1319,110,138,2025-02-24,Remediated,Workaround
+1320,20,16,2025-03-04,Open,N/A
+1321,199,173,2024-07-22,Open,Patch
+1322,42,180,2024-06-08,Open,Upgrade
+1323,165,242,2024-01-27,Remediated,Upgrade
+1324,73,3,2025-01-22,In Progress,Workaround
+1325,138,81,2023-09-04,In Progress,Workaround
+1326,115,238,2024-04-29,Remediated,N/A
+1327,107,222,2023-12-03,Remediated,Config Change
+1328,41,240,2024-01-27,Open,N/A
+1329,168,181,2023-03-03,Open,Workaround
+1330,105,220,2023-05-02,In Progress,N/A
+1331,107,249,2024-11-09,In Progress,Config Change
+1332,171,219,2025-01-21,Remediated,Workaround
+1333,179,86,2024-08-10,Remediated,N/A
+1334,128,35,2023-12-04,Remediated,Workaround
+1335,177,160,2024-02-21,In Progress,Config Change
+1336,116,51,2025-02-10,In Progress,Patch
+1337,116,26,2023-02-04,Open,Config Change
+1338,66,294,2025-03-12,Remediated,Patch
+1339,128,171,2023-07-19,Remediated,Upgrade
+1340,22,141,2024-07-13,Accepted Risk,Config Change
+1341,74,74,2023-07-30,Remediated,Patch
+1342,105,193,2024-06-12,Remediated,Config Change
+1343,10,8,2024-11-15,In Progress,N/A
+1344,193,194,2024-01-11,Remediated,Upgrade
+1345,4,220,2023-07-24,Remediated,Patch
+1346,197,227,2024-11-03,Open,N/A
+1347,27,218,2023-07-22,In Progress,Workaround
+1348,136,95,2025-02-25,Accepted Risk,Config Change
+1349,126,281,2024-10-01,Accepted Risk,Patch
+1350,183,272,2023-06-12,Remediated,Upgrade
+1351,140,79,2023-09-30,In Progress,Patch
+1352,61,230,2024-04-03,Accepted Risk,N/A
+1353,12,287,2024-03-27,In Progress,Workaround
+1354,18,107,2023-07-15,Remediated,Upgrade
+1355,91,83,2024-03-16,Remediated,Config Change
+1356,64,88,2024-04-29,Accepted Risk,Workaround
+1357,141,267,2024-10-31,Accepted Risk,N/A
+1358,60,139,2023-11-28,Remediated,Patch
+1359,128,35,2023-10-12,In Progress,Patch
+1360,112,55,2023-12-07,Accepted Risk,Upgrade
+1361,145,39,2023-12-10,In Progress,Workaround
+1362,120,143,2023-05-31,In Progress,Config Change
+1363,57,38,2024-08-13,In Progress,N/A
+1364,88,120,2023-07-19,Remediated,Upgrade
+1365,122,284,2025-03-02,In Progress,Workaround
+1366,127,140,2023-04-07,Open,Workaround
+1367,75,226,2023-09-30,Open,Patch
+1368,35,144,2024-06-23,Open,N/A
+1369,178,191,2024-11-15,Open,Workaround
+1370,5,290,2024-01-08,Remediated,Workaround
+1371,163,53,2023-10-17,Remediated,Upgrade
+1372,154,194,2024-12-17,Accepted Risk,Upgrade
+1373,130,190,2023-03-06,In Progress,N/A
+1374,18,232,2024-02-02,Remediated,Patch
+1375,100,112,2024-02-14,In Progress,Workaround
+1376,166,208,2024-01-19,Open,Patch
+1377,101,106,2024-09-29,Open,Upgrade
+1378,7,140,2023-08-04,In Progress,Workaround
+1379,37,29,2024-04-30,In Progress,Config Change
+1380,82,85,2025-03-21,Open,N/A
+1381,122,71,2023-08-19,In Progress,Patch
+1382,143,237,2024-12-12,Remediated,N/A
+1383,45,223,2025-02-25,Open,Config Change
+1384,120,51,2023-01-19,Open,Patch
+1385,50,133,2023-06-06,Open,Workaround
+1386,1,22,2023-08-23,Accepted Risk,Upgrade
+1387,131,148,2024-10-30,Accepted Risk,N/A
+1388,179,6,2024-02-10,In Progress,Patch
+1389,88,275,2024-12-15,Remediated,Upgrade
+1390,157,197,2023-09-10,Accepted Risk,Patch
+1391,69,272,2023-09-26,Open,Upgrade
+1392,125,206,2023-09-18,In Progress,Upgrade
+1393,120,180,2023-10-23,In Progress,N/A
+1394,141,56,2023-04-06,In Progress,Upgrade
+1395,112,233,2023-11-21,Accepted Risk,Config Change
+1396,150,59,2024-06-16,Accepted Risk,Patch
+1397,170,159,2023-11-14,Accepted Risk,Patch
+1398,200,225,2024-01-28,In Progress,Patch
+1399,138,243,2023-08-24,Open,Patch
+1400,189,216,2024-08-17,In Progress,Upgrade
+1401,48,83,2025-01-24,Open,Patch
+1402,136,290,2024-04-01,Open,Upgrade
+1403,8,57,2023-09-27,Open,Workaround
+1404,16,126,2024-07-12,Remediated,Workaround
+1405,2,258,2024-11-14,Accepted Risk,Config Change
+1406,194,77,2024-01-24,In Progress,Workaround
+1407,93,26,2023-04-18,In Progress,Upgrade
+1408,122,99,2023-11-15,Remediated,N/A
+1409,25,162,2024-01-09,Open,Patch
+1410,22,275,2023-10-28,Remediated,Workaround
+1411,200,118,2024-03-18,Remediated,Config Change
+1412,103,257,2023-05-23,Accepted Risk,Upgrade
+1413,113,112,2024-01-29,Open,N/A
+1414,73,40,2023-05-09,Open,N/A
+1415,172,69,2025-03-25,Remediated,Config Change
+1416,37,134,2024-05-29,Remediated,Upgrade
+1417,18,236,2024-06-09,In Progress,N/A
+1418,25,158,2025-01-15,Remediated,N/A
+1419,82,154,2024-11-19,In Progress,Patch
+1420,168,203,2023-12-30,Accepted Risk,Patch
+1421,139,11,2024-08-17,Remediated,N/A
+1422,124,281,2023-03-31,In Progress,Workaround
+1423,179,256,2024-02-24,Remediated,N/A
+1424,73,250,2023-04-20,In Progress,N/A
+1425,11,153,2024-12-18,Accepted Risk,Patch
+1426,43,46,2023-10-26,Open,Workaround
+1427,33,91,2023-11-28,Remediated,Upgrade
+1428,102,200,2024-02-01,In Progress,Workaround
+1429,45,247,2023-06-21,Open,Patch
+1430,141,237,2023-01-18,Accepted Risk,Upgrade
+1431,28,261,2023-12-14,Accepted Risk,N/A
+1432,12,73,2024-09-21,In Progress,Upgrade
+1433,145,110,2025-02-10,Accepted Risk,N/A
+1434,165,73,2024-10-15,Remediated,Patch
+1435,129,59,2023-08-07,In Progress,Config Change
+1436,164,131,2025-01-02,In Progress,Config Change
+1437,126,62,2024-05-08,Open,N/A
+1438,37,270,2024-06-21,In Progress,Upgrade
+1439,43,69,2025-03-22,In Progress,Config Change
+1440,40,26,2025-01-27,Open,Upgrade
+1441,23,59,2024-12-29,Open,Patch
+1442,85,144,2023-10-27,Open,Config Change
+1443,71,194,2023-06-08,Open,Patch
+1444,80,255,2023-05-02,In Progress,Patch
+1445,118,270,2023-09-28,Remediated,Workaround
+1446,191,249,2025-03-19,Remediated,Upgrade
+1447,110,72,2023-06-03,Remediated,N/A
+1448,159,106,2025-03-16,Remediated,Upgrade
+1449,155,297,2024-04-28,Accepted Risk,N/A
+1450,193,125,2024-12-23,Accepted Risk,Patch
+1451,165,137,2024-11-23,Accepted Risk,Patch
+1452,126,148,2024-10-08,Accepted Risk,Patch
+1453,63,186,2023-02-17,Open,N/A
+1454,37,4,2024-05-15,Open,Upgrade
+1455,151,196,2023-08-25,Open,Patch
+1456,93,239,2023-02-14,Remediated,Workaround
+1457,60,135,2024-09-10,Accepted Risk,Patch
+1458,6,17,2023-01-15,In Progress,Workaround
+1459,67,60,2024-04-29,Accepted Risk,Config Change
+1460,20,199,2025-02-18,Open,Workaround
+1461,78,28,2023-08-20,Open,Config Change
+1462,8,212,2025-02-20,Accepted Risk,Patch
+1463,180,271,2023-01-26,In Progress,Upgrade
+1464,139,238,2024-05-21,Open,N/A
+1465,24,250,2025-02-05,Open,Workaround
+1466,170,215,2025-02-21,Remediated,Workaround
+1467,194,101,2024-01-26,Accepted Risk,Patch
+1468,197,109,2023-09-27,Open,Patch
+1469,138,14,2024-09-26,In Progress,Patch
+1470,55,76,2023-12-09,Accepted Risk,Patch
+1471,23,221,2023-08-16,Remediated,N/A
+1472,116,253,2023-04-15,Open,Upgrade
+1473,97,123,2023-08-23,Open,N/A
+1474,2,114,2024-06-05,Remediated,N/A
+1475,93,276,2024-12-01,Accepted Risk,Workaround
+1476,174,225,2023-04-22,In Progress,Patch
+1477,3,176,2023-05-18,Open,Upgrade
+1478,43,105,2023-08-16,Open,Upgrade
+1479,84,180,2023-10-31,Remediated,Workaround
+1480,196,256,2023-01-16,Open,Workaround
+1481,166,33,2024-11-03,Open,Config Change
+1482,185,259,2024-04-28,Accepted Risk,Upgrade
+1483,113,2,2024-10-22,Open,Workaround
+1484,195,113,2025-03-30,Open,Workaround
+1485,85,150,2023-05-08,Remediated,Workaround
+1486,35,262,2023-01-11,Remediated,Config Change
+1487,13,50,2023-12-29,Remediated,N/A
+1488,89,97,2023-03-31,In Progress,Patch
+1489,64,85,2023-01-01,Open,Config Change
+1490,28,88,2024-01-07,Remediated,Config Change
+1491,37,72,2024-01-13,Open,N/A
+1492,172,269,2023-05-26,Accepted Risk,Workaround
+1493,60,203,2023-12-11,In Progress,Config Change
+1494,149,288,2024-07-09,Remediated,Workaround
+1495,87,244,2023-01-19,In Progress,Patch
+1496,151,2,2023-01-06,Accepted Risk,N/A
+1497,78,194,2023-01-14,In Progress,Upgrade
+1498,104,97,2024-10-16,Open,Config Change
+1499,200,247,2023-06-28,Accepted Risk,N/A
+1500,148,211,2023-08-11,Open,Patch

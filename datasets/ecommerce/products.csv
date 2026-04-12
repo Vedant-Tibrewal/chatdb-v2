@@ -1,0 +1,76 @@
+product_id,product_name,category,price,cost,stock_quantity,avg_rating,review_count
+1,Wireless Headphones,Electronics,259.38,10.5,51,1.6,1013
+2,Bluetooth Speaker,Electronics,180.97,39.64,493,2.7,1150
+3,USB-C Hub,Electronics,81.85,65.17,127,3.2,4920
+4,Webcam,Electronics,219.13,29.92,481,3.8,2476
+5,Mechanical Keyboard,Electronics,69.57,61.48,96,4.0,2426
+6,Gaming Mouse,Electronics,197.38,78.81,406,4.8,4059
+7,Monitor Stand,Electronics,121.9,25.63,326,3.4,4332
+8,Laptop Stand,Electronics,267.72,3.18,184,4.7,1086
+9,Power Bank,Electronics,122.17,84.22,215,2.5,1420
+10,Smart Watch,Electronics,231.18,95.54,394,1.3,4816
+11,Tablet,Electronics,29.57,27.69,20,4.7,3265
+12,E-Reader,Electronics,156.91,63.6,256,4.1,3474
+13,Streaming Stick,Electronics,213.52,10.08,274,3.2,1255
+14,WiFi Router,Electronics,90.46,32.37,261,4.7,1277
+15,External SSD,Electronics,165.54,40.29,324,4.1,546
+16,Cotton T-Shirt,Clothing,99.94,44.87,488,4.4,479
+17,Denim Jeans,Clothing,80.89,92.61,59,2.8,4992
+18,Hoodie,Clothing,25.95,67.28,336,4.0,983
+19,Running Shoes,Clothing,13.66,15.45,5,1.7,2845
+20,Winter Jacket,Clothing,161.66,78.73,369,2.0,3051
+21,Polo Shirt,Clothing,46.8,78.55,137,3.9,972
+22,Chino Pants,Clothing,233.7,4.88,413,2.7,4296
+23,Sneakers,Clothing,28.51,71.81,295,3.5,4069
+24,Baseball Cap,Clothing,142.0,37.29,255,4.4,1372
+25,Wool Sweater,Clothing,116.62,27.0,52,4.6,949
+26,Dress Shirt,Clothing,76.23,51.86,22,4.4,105
+27,Cargo Shorts,Clothing,80.91,48.23,196,4.7,1471
+28,Rain Jacket,Clothing,280.03,86.03,283,4.2,3440
+29,Leather Belt,Clothing,75.1,26.33,468,3.9,2227
+30,Silk Scarf,Clothing,249.53,58.01,61,3.0,436
+31,Coffee Maker,Home & Kitchen,62.0,80.83,23,4.8,569
+32,Blender,Home & Kitchen,264.32,86.87,396,4.4,2686
+33,Air Fryer,Home & Kitchen,35.04,46.76,188,1.8,4623
+34,Toaster,Home & Kitchen,237.5,74.48,124,2.9,4852
+35,Knife Set,Home & Kitchen,291.83,99.78,397,1.8,4482
+36,Cutting Board,Home & Kitchen,230.53,26.02,3,4.7,200
+37,Cast Iron Pan,Home & Kitchen,77.56,35.95,429,3.8,83
+38,Mixing Bowl Set,Home & Kitchen,285.78,2.14,336,2.5,2524
+39,Food Processor,Home & Kitchen,40.14,53.92,121,2.7,495
+40,Electric Kettle,Home & Kitchen,292.03,15.95,143,1.4,1901
+41,Dish Rack,Home & Kitchen,270.2,52.94,358,4.6,3760
+42,Spice Rack,Home & Kitchen,292.61,10.32,48,3.0,3235
+43,Water Filter,Home & Kitchen,31.69,57.65,222,3.6,1075
+44,Vacuum Sealer,Home & Kitchen,78.65,27.58,161,4.7,3224
+45,Rice Cooker,Home & Kitchen,213.2,74.06,162,2.8,1918
+46,Python Programming,Books,31.65,21.87,399,4.1,897
+47,Data Science Handbook,Books,55.06,18.11,238,2.3,994
+48,Machine Learning Basics,Books,165.41,96.53,106,2.8,3800
+49,Web Development,Books,86.84,13.75,80,4.2,2497
+50,Cloud Architecture,Books,249.64,70.29,20,1.9,2690
+51,Algorithm Design,Books,53.0,71.69,495,2.4,4211
+52,System Design,Books,24.19,31.29,419,5.0,259
+53,Clean Code,Books,286.1,85.75,284,4.0,2051
+54,Design Patterns,Books,37.46,11.99,406,1.6,102
+55,Database Internals,Books,27.87,78.53,113,1.5,3286
+56,Distributed Systems,Books,117.94,63.77,330,1.3,4806
+57,Security Engineering,Books,85.05,81.65,11,5.0,1624
+58,DevOps Handbook,Books,271.71,45.46,65,1.4,2721
+59,Statistics For All,Books,45.52,94.34,25,1.7,4706
+60,AI Ethics,Books,135.61,72.99,254,1.1,3500
+61,Yoga Mat,Sports,60.1,23.04,95,2.1,3658
+62,Resistance Bands,Sports,266.18,5.4,317,3.5,2422
+63,Jump Rope,Sports,154.67,88.51,245,1.2,2296
+64,Foam Roller,Sports,121.06,43.09,329,4.5,4312
+65,Water Bottle,Sports,82.24,99.42,278,4.2,3138
+66,Running Belt,Sports,236.75,37.19,278,4.1,2823
+67,Gym Bag,Sports,274.67,51.23,198,2.1,218
+68,Wrist Wraps,Sports,102.46,23.46,458,4.2,2306
+69,Pull-Up Bar,Sports,26.98,99.17,271,2.4,4789
+70,Ab Roller,Sports,299.88,97.45,51,2.0,1980
+71,Dumbbell Set,Sports,87.28,82.0,469,3.9,1802
+72,Kettlebell,Sports,176.94,98.3,198,2.4,1428
+73,Exercise Ball,Sports,61.06,60.07,412,4.0,2944
+74,Ankle Weights,Sports,275.04,4.76,358,2.4,4655
+75,Boxing Gloves,Sports,173.44,57.18,96,4.3,4037

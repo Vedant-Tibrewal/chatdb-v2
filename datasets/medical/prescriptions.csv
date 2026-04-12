@@ -1,0 +1,3001 @@
+prescription_id,visit_id,patient_id,doctor_id,medication,dosage,frequency,duration_days,prescribed_date
+1,762,805,79,Albuterol,25mg,Once daily,65,2025-04-30
+2,472,712,33,Furosemide,250mg,As needed,60,2025-06-10
+3,1560,653,23,Acetaminophen,100mg,Once daily,22,2025-05-19
+4,1663,357,58,Atorvastatin,250mg,As needed,84,2025-06-28
+5,1494,304,76,Clopidogrel,500mg,Once daily,61,2024-07-26
+6,1210,341,66,Lisinopril,250mg,Twice daily,75,2025-03-25
+7,1924,334,26,Sertraline,500mg,Twice daily,61,2024-06-02
+8,49,984,73,Gabapentin,500mg,Three times daily,72,2024-12-24
+9,879,842,44,Sertraline,25mg,Once daily,72,2025-01-14
+10,1424,166,11,Levothyroxine,5mg,Twice daily,29,2023-12-09
+11,963,379,20,Sertraline,25mg,Twice daily,88,2024-07-29
+12,1308,521,5,Metformin,10mg,Three times daily,90,2025-06-13
+13,1960,408,13,Albuterol,20mg,As needed,26,2025-05-29
+14,633,461,35,Lisinopril,250mg,Twice daily,45,2024-08-30
+15,650,24,17,Omeprazole,10mg,As needed,40,2024-10-02
+16,92,928,20,Amlodipine,20mg,Twice daily,69,2025-06-11
+17,85,844,68,Metformin,50mg,Twice daily,68,2024-10-24
+18,1289,582,75,Lisinopril,50mg,As needed,45,2024-05-17
+19,1347,694,71,Furosemide,250mg,Twice daily,57,2025-02-03
+20,1159,914,47,Acetaminophen,500mg,Once daily,47,2024-11-26
+21,336,431,21,Clopidogrel,100mg,Twice daily,62,2025-04-16
+22,1823,38,76,Lisinopril,25mg,Once daily,11,2023-11-12
+23,1683,676,76,Warfarin,50mg,Three times daily,42,2025-02-02
+24,1397,242,64,Omeprazole,20mg,Three times daily,22,2024-06-04
+25,1672,719,69,Losartan,100mg,Three times daily,88,2025-01-05
+26,689,475,9,Hydrochlorothiazide,250mg,Once daily,68,2025-05-09
+27,1038,145,51,Warfarin,50mg,Three times daily,84,2023-11-16
+28,204,719,71,Omeprazole,25mg,Twice daily,80,2025-02-24
+29,253,398,36,Insulin,50mg,As needed,42,2024-06-13
+30,1396,442,56,Amlodipine,10mg,Once daily,19,2025-03-18
+31,1789,652,39,Levothyroxine,250mg,Twice daily,73,2024-08-31
+32,1305,503,46,Clopidogrel,10mg,Three times daily,26,2025-01-26
+33,964,571,45,Gabapentin,25mg,Twice daily,27,2024-06-01
+34,500,747,73,Metformin,500mg,Twice daily,42,2025-02-01
+35,333,106,9,Amlodipine,50mg,Three times daily,13,2025-04-25
+36,1725,277,39,Amlodipine,500mg,Three times daily,67,2024-11-23
+37,775,207,66,Hydrochlorothiazide,25mg,Twice daily,77,2025-03-16
+38,1152,240,27,Metformin,20mg,Twice daily,15,2024-02-18
+39,495,380,46,Amoxicillin,250mg,Once daily,38,2024-11-22
+40,1730,222,57,Levothyroxine,20mg,As needed,72,2025-02-03
+41,970,125,20,Levothyroxine,100mg,Twice daily,68,2025-05-15
+42,1547,732,26,Metformin,25mg,Once daily,83,2025-06-11
+43,422,526,32,Sertraline,20mg,Twice daily,14,2024-10-25
+44,51,964,29,Levothyroxine,50mg,As needed,14,2023-03-29
+45,1351,706,51,Prednisone,250mg,Twice daily,65,2025-06-09
+46,784,766,10,Acetaminophen,500mg,Once daily,30,2024-09-04
+47,466,854,20,Lisinopril,5mg,Twice daily,86,2024-03-06
+48,386,443,79,Omeprazole,10mg,Three times daily,48,2024-06-13
+49,409,377,73,Warfarin,100mg,Three times daily,8,2025-04-14
+50,631,38,32,Clopidogrel,25mg,Three times daily,63,2025-06-11
+51,258,943,39,Furosemide,500mg,As needed,34,2025-03-20
+52,1901,417,66,Furosemide,10mg,As needed,79,2025-06-09
+53,1483,247,46,Metformin,25mg,Once daily,46,2023-10-13
+54,871,20,5,Lisinopril,500mg,Twice daily,53,2024-10-02
+55,511,784,38,Insulin,50mg,Once daily,62,2024-12-28
+56,1188,486,68,Hydrochlorothiazide,50mg,Twice daily,52,2023-12-23
+57,1829,104,40,Levothyroxine,20mg,As needed,40,2024-11-16
+58,511,784,38,Amlodipine,5mg,As needed,36,2025-03-29
+59,978,141,56,Metformin,10mg,Three times daily,8,2024-10-31
+60,1732,974,58,Warfarin,5mg,Twice daily,13,2024-09-29
+61,197,891,78,Acetaminophen,10mg,Three times daily,70,2024-08-14
+62,1296,64,38,Omeprazole,100mg,Three times daily,40,2025-06-20
+63,1078,380,68,Amlodipine,5mg,Twice daily,66,2025-03-03
+64,1235,766,77,Furosemide,250mg,As needed,72,2024-04-05
+65,743,467,54,Atorvastatin,100mg,Once daily,89,2024-10-22
+66,817,539,44,Amlodipine,250mg,Twice daily,83,2025-03-10
+67,92,928,20,Hydrochlorothiazide,25mg,Twice daily,87,2025-02-20
+68,1073,391,19,Ibuprofen,500mg,As needed,45,2024-08-11
+69,1151,802,6,Prednisone,100mg,As needed,7,2023-10-02
+70,438,465,73,Amoxicillin,50mg,Once daily,20,2025-01-11
+71,1864,797,75,Amlodipine,250mg,Twice daily,54,2025-03-29
+72,345,709,67,Amlodipine,500mg,Three times daily,77,2025-06-14
+73,1767,911,66,Amoxicillin,10mg,Once daily,82,2024-08-02
+74,97,469,50,Metformin,50mg,As needed,20,2024-05-01
+75,696,671,59,Hydrochlorothiazide,5mg,As needed,15,2024-05-11
+76,762,805,79,Lisinopril,25mg,Three times daily,72,2024-07-04
+77,790,101,36,Warfarin,50mg,Twice daily,78,2024-04-22
+78,139,495,57,Lisinopril,5mg,Three times daily,34,2024-07-12
+79,1548,902,77,Amlodipine,10mg,Once daily,56,2024-10-18
+80,1835,636,4,Ibuprofen,250mg,As needed,51,2025-06-07
+81,1741,535,17,Furosemide,100mg,Three times daily,37,2023-04-08
+82,1963,805,71,Levothyroxine,250mg,Twice daily,13,2025-02-24
+83,1188,486,68,Furosemide,20mg,Twice daily,63,2024-01-08
+84,1041,906,56,Sertraline,20mg,Once daily,47,2024-09-05
+85,808,409,61,Lisinopril,50mg,Twice daily,73,2024-04-17
+86,882,991,77,Amlodipine,10mg,Three times daily,83,2024-08-13
+87,1848,840,56,Amoxicillin,25mg,Once daily,25,2025-04-10
+88,1749,156,8,Insulin,250mg,Twice daily,35,2024-05-01
+89,1450,711,63,Amoxicillin,250mg,Twice daily,51,2024-10-12
+90,1892,628,28,Clopidogrel,500mg,Twice daily,53,2025-02-08
+91,369,608,66,Gabapentin,50mg,Three times daily,26,2025-02-22
+92,16,334,63,Levothyroxine,250mg,As needed,72,2025-03-25
+93,1204,213,66,Metoprolol,20mg,Twice daily,70,2024-09-25
+94,1634,889,12,Atorvastatin,20mg,As needed,79,2023-10-05
+95,1646,128,44,Acetaminophen,250mg,As needed,25,2025-06-24
+96,1809,279,47,Clopidogrel,25mg,Three times daily,85,2024-09-07
+97,168,893,24,Levothyroxine,5mg,As needed,18,2025-06-17
+98,418,693,26,Warfarin,25mg,As needed,31,2024-10-11
+99,732,593,55,Metformin,50mg,Three times daily,30,2025-05-02
+100,1997,997,15,Atorvastatin,20mg,Twice daily,75,2025-02-05
+101,447,988,31,Prednisone,50mg,Twice daily,48,2024-07-15
+102,1904,546,42,Warfarin,500mg,As needed,25,2024-12-30
+103,408,65,25,Clopidogrel,50mg,As needed,83,2025-05-28
+104,1708,129,77,Atorvastatin,500mg,Once daily,86,2025-06-02
+105,624,180,32,Metformin,50mg,As needed,25,2025-03-06
+106,1845,638,65,Lisinopril,500mg,Twice daily,19,2024-09-15
+107,836,454,2,Omeprazole,20mg,As needed,75,2024-12-30
+108,1329,969,48,Albuterol,25mg,Twice daily,65,2024-11-26
+109,1952,589,77,Metformin,10mg,Twice daily,63,2025-01-18
+110,771,888,32,Furosemide,5mg,Twice daily,25,2025-02-27
+111,355,756,38,Amoxicillin,100mg,As needed,17,2025-03-23
+112,1689,59,16,Metoprolol,500mg,Three times daily,9,2024-12-10
+113,148,490,8,Hydrochlorothiazide,50mg,As needed,90,2024-10-09
+114,1085,327,70,Acetaminophen,500mg,As needed,54,2025-03-19
+115,545,36,10,Ibuprofen,500mg,As needed,43,2024-06-02
+116,196,663,39,Sertraline,25mg,As needed,40,2025-03-10
+117,765,209,68,Albuterol,25mg,As needed,49,2024-09-15
+118,119,194,73,Sertraline,20mg,Twice daily,65,2025-03-19
+119,1758,778,15,Amoxicillin,100mg,Three times daily,84,2023-07-01
+120,1871,814,26,Lisinopril,25mg,Once daily,18,2025-03-11
+121,1462,574,46,Amlodipine,500mg,Three times daily,8,2023-10-04
+122,718,990,22,Metoprolol,10mg,Once daily,30,2024-01-23
+123,1955,400,75,Gabapentin,20mg,Once daily,22,2025-01-29
+124,1972,841,44,Levothyroxine,500mg,Three times daily,54,2024-07-09
+125,1859,393,40,Losartan,250mg,Three times daily,13,2024-03-11
+126,1428,958,21,Insulin,50mg,Twice daily,71,2025-03-09
+127,1819,347,73,Metformin,25mg,Three times daily,64,2025-03-07
+128,185,925,65,Losartan,50mg,As needed,31,2024-11-11
+129,98,158,10,Levothyroxine,250mg,Once daily,35,2024-08-31
+130,1620,624,17,Furosemide,50mg,As needed,31,2024-07-29
+131,83,366,80,Metoprolol,50mg,Once daily,52,2023-10-06
+132,1851,651,73,Losartan,10mg,Three times daily,43,2025-06-22
+133,816,66,8,Clopidogrel,100mg,Twice daily,59,2024-08-01
+134,1888,817,18,Amlodipine,20mg,Twice daily,63,2025-04-15
+135,415,514,1,Acetaminophen,20mg,Twice daily,55,2025-02-21
+136,698,563,57,Amoxicillin,100mg,Three times daily,30,2025-01-11
+137,1659,216,30,Amoxicillin,20mg,Once daily,86,2024-06-05
+138,470,471,54,Omeprazole,500mg,Three times daily,74,2024-04-14
+139,1604,191,14,Hydrochlorothiazide,10mg,Three times daily,87,2024-05-17
+140,520,782,46,Amlodipine,250mg,Twice daily,35,2025-06-10
+141,650,24,17,Lisinopril,10mg,Twice daily,61,2024-04-05
+142,1481,959,7,Acetaminophen,5mg,Three times daily,90,2024-06-11
+143,682,695,79,Prednisone,25mg,As needed,79,2025-03-15
+144,1361,987,72,Amoxicillin,500mg,Twice daily,68,2025-01-28
+145,905,133,26,Acetaminophen,50mg,As needed,60,2025-05-12
+146,1760,162,7,Atorvastatin,10mg,Twice daily,87,2025-06-07
+147,979,236,43,Clopidogrel,50mg,Twice daily,28,2024-11-05
+148,641,721,19,Insulin,50mg,Three times daily,8,2024-11-01
+149,1244,182,13,Metoprolol,250mg,Once daily,34,2025-05-07
+150,560,353,27,Warfarin,25mg,As needed,17,2025-05-28
+151,869,629,31,Lisinopril,20mg,As needed,85,2024-12-25
+152,1165,280,55,Albuterol,100mg,Once daily,61,2025-02-07
+153,188,2,24,Albuterol,10mg,As needed,16,2025-02-05
+154,184,698,34,Warfarin,100mg,Three times daily,21,2025-02-19
+155,1350,970,34,Ibuprofen,25mg,Twice daily,81,2024-10-16
+156,569,69,13,Ibuprofen,25mg,As needed,24,2024-01-04
+157,490,640,80,Lisinopril,100mg,Three times daily,68,2024-08-04
+158,361,931,41,Ibuprofen,20mg,As needed,47,2025-04-21
+159,1097,270,80,Prednisone,250mg,Once daily,85,2025-04-07
+160,194,75,41,Hydrochlorothiazide,250mg,Twice daily,19,2025-01-14
+161,1874,57,18,Levothyroxine,500mg,Three times daily,70,2025-01-14
+162,1192,254,7,Clopidogrel,20mg,Three times daily,56,2023-10-22
+163,1289,582,75,Losartan,500mg,Three times daily,22,2024-06-16
+164,1534,275,24,Metoprolol,5mg,Three times daily,87,2025-05-30
+165,873,638,60,Furosemide,25mg,Three times daily,30,2024-11-04
+166,852,405,69,Sertraline,25mg,Once daily,40,2025-02-13
+167,1194,461,63,Warfarin,5mg,Twice daily,61,2025-02-03
+168,1143,8,59,Gabapentin,50mg,Three times daily,38,2024-10-27
+169,1151,802,6,Insulin,100mg,Once daily,89,2024-10-04
+170,245,768,10,Omeprazole,25mg,As needed,10,2025-04-10
+171,1752,232,66,Warfarin,10mg,Twice daily,38,2024-08-04
+172,1460,570,11,Gabapentin,25mg,Twice daily,23,2025-03-12
+173,1261,791,23,Metformin,250mg,Once daily,74,2024-05-05
+174,1243,498,25,Atorvastatin,250mg,Three times daily,80,2024-04-25
+175,1488,161,59,Gabapentin,250mg,Twice daily,72,2024-10-23
+176,339,746,24,Amlodipine,25mg,As needed,17,2023-12-23
+177,1164,145,3,Clopidogrel,5mg,Once daily,87,2024-05-06
+178,1858,413,11,Amlodipine,50mg,Once daily,68,2024-11-30
+179,1502,261,25,Insulin,250mg,Once daily,31,2024-12-16
+180,1265,649,31,Insulin,25mg,Twice daily,67,2024-12-14
+181,145,521,69,Losartan,250mg,As needed,84,2024-03-09
+182,672,63,65,Lisinopril,25mg,Twice daily,22,2023-11-11
+183,421,904,36,Atorvastatin,5mg,As needed,49,2024-04-12
+184,1527,749,80,Levothyroxine,100mg,As needed,87,2025-03-13
+185,562,170,72,Insulin,500mg,Three times daily,49,2025-03-05
+186,1066,952,24,Hydrochlorothiazide,20mg,Three times daily,84,2025-06-11
+187,1055,620,37,Metoprolol,25mg,As needed,64,2023-06-07
+188,210,710,61,Gabapentin,5mg,Twice daily,14,2025-05-10
+189,1882,717,50,Albuterol,20mg,As needed,17,2024-07-29
+190,632,539,5,Omeprazole,10mg,As needed,49,2024-05-22
+191,137,29,79,Amlodipine,250mg,Twice daily,75,2025-03-19
+192,1501,658,13,Metformin,100mg,As needed,68,2023-12-25
+193,100,637,66,Sertraline,20mg,Three times daily,43,2025-06-25
+194,388,749,53,Amlodipine,25mg,Three times daily,65,2024-10-09
+195,1627,614,18,Acetaminophen,100mg,Once daily,34,2025-02-01
+196,192,220,12,Metoprolol,10mg,Once daily,14,2024-02-06
+197,1756,807,13,Warfarin,20mg,Once daily,70,2025-03-09
+198,1301,113,69,Sertraline,5mg,As needed,67,2024-07-31
+199,1853,14,39,Omeprazole,10mg,As needed,58,2024-01-23
+200,227,686,22,Furosemide,50mg,As needed,71,2024-10-22
+201,967,191,21,Acetaminophen,10mg,As needed,68,2023-09-11
+202,710,724,21,Metoprolol,20mg,Three times daily,25,2025-02-03
+203,1097,270,80,Levothyroxine,10mg,Twice daily,50,2025-03-18
+204,1828,773,65,Albuterol,25mg,Once daily,9,2025-01-10
+205,679,678,16,Atorvastatin,250mg,Three times daily,22,2024-02-09
+206,906,862,15,Losartan,25mg,Twice daily,42,2024-10-24
+207,1105,458,27,Insulin,5mg,Twice daily,56,2025-05-03
+208,1233,500,13,Metoprolol,20mg,Once daily,57,2024-03-14
+209,642,296,75,Prednisone,10mg,Once daily,67,2025-06-21
+210,1888,817,18,Amoxicillin,10mg,Three times daily,44,2025-06-29
+211,444,876,23,Atorvastatin,500mg,Three times daily,90,2024-09-06
+212,1524,747,50,Clopidogrel,250mg,Three times daily,14,2025-05-29
+213,663,528,37,Metoprolol,250mg,Three times daily,14,2025-01-15
+214,657,942,21,Acetaminophen,20mg,Three times daily,14,2024-12-19
+215,427,153,35,Atorvastatin,5mg,As needed,47,2023-04-25
+216,1426,460,45,Furosemide,20mg,Three times daily,65,2025-03-14
+217,1140,601,34,Albuterol,250mg,Three times daily,82,2025-05-22
+218,1346,245,37,Amoxicillin,100mg,Twice daily,45,2025-01-14
+219,1451,850,2,Lisinopril,25mg,Three times daily,69,2024-04-03
+220,975,122,27,Hydrochlorothiazide,25mg,As needed,71,2024-03-07
+221,1300,389,43,Furosemide,20mg,Once daily,53,2023-06-17
+222,747,170,67,Amlodipine,10mg,Twice daily,74,2024-02-12
+223,1917,328,32,Levothyroxine,10mg,Once daily,47,2025-04-28
+224,317,456,26,Sertraline,10mg,As needed,66,2025-03-14
+225,1254,233,78,Sertraline,250mg,Three times daily,20,2023-12-01
+226,1239,516,34,Furosemide,500mg,Once daily,36,2024-08-02
+227,613,939,32,Insulin,25mg,Three times daily,21,2025-06-22
+228,1469,757,78,Losartan,50mg,As needed,23,2023-09-29
+229,1779,687,63,Clopidogrel,5mg,Once daily,27,2024-08-14
+230,378,313,14,Metoprolol,50mg,Once daily,53,2023-07-18
+231,864,730,48,Gabapentin,500mg,As needed,43,2024-04-28
+232,1403,712,11,Metformin,25mg,As needed,27,2023-09-25
+233,730,469,40,Sertraline,5mg,As needed,79,2024-04-16
+234,645,622,78,Furosemide,10mg,As needed,52,2025-06-29
+235,835,940,47,Insulin,500mg,As needed,69,2025-05-16
+236,1244,182,13,Atorvastatin,25mg,Three times daily,19,2025-04-15
+237,1661,836,5,Hydrochlorothiazide,20mg,Three times daily,24,2025-04-11
+238,216,45,32,Metoprolol,20mg,As needed,48,2023-04-15
+239,1977,19,39,Hydrochlorothiazide,10mg,Twice daily,15,2025-06-12
+240,745,179,30,Losartan,500mg,Twice daily,83,2025-05-08
+241,639,91,61,Sertraline,25mg,Twice daily,36,2025-05-20
+242,1332,581,34,Prednisone,50mg,As needed,26,2024-11-17
+243,740,702,27,Amoxicillin,10mg,Three times daily,75,2024-01-08
+244,1726,358,58,Ibuprofen,25mg,As needed,21,2024-01-23
+245,1567,448,46,Albuterol,50mg,Three times daily,39,2024-06-24
+246,1082,585,20,Lisinopril,500mg,Twice daily,11,2023-07-06
+247,1855,852,70,Metformin,50mg,As needed,58,2025-05-28
+248,723,676,75,Furosemide,5mg,Three times daily,38,2025-02-07
+249,1550,734,65,Ibuprofen,25mg,Twice daily,48,2024-06-25
+250,762,805,79,Amlodipine,10mg,As needed,17,2024-10-06
+251,762,805,79,Lisinopril,10mg,Twice daily,63,2024-07-21
+252,531,407,14,Metformin,5mg,As needed,42,2024-07-20
+253,455,144,14,Amlodipine,25mg,Once daily,32,2024-12-14
+254,1735,154,53,Levothyroxine,10mg,Once daily,51,2025-06-24
+255,688,661,53,Insulin,10mg,Twice daily,79,2025-01-22
+256,1045,44,65,Clopidogrel,100mg,As needed,80,2025-06-07
+257,1817,662,76,Acetaminophen,500mg,Once daily,45,2025-02-06
+258,339,746,24,Ibuprofen,5mg,As needed,49,2023-11-06
+259,1475,311,2,Hydrochlorothiazide,5mg,Once daily,53,2023-05-30
+260,1078,380,68,Albuterol,25mg,Once daily,19,2025-03-23
+261,1738,254,55,Lisinopril,5mg,Once daily,57,2024-05-21
+262,1888,817,18,Warfarin,100mg,Once daily,89,2024-10-03
+263,1399,561,78,Lisinopril,5mg,As needed,43,2025-06-10
+264,879,842,44,Hydrochlorothiazide,50mg,As needed,72,2025-03-01
+265,1901,417,66,Omeprazole,500mg,Three times daily,8,2025-02-21
+266,1273,611,19,Amoxicillin,100mg,As needed,52,2024-05-27
+267,1159,914,47,Ibuprofen,10mg,As needed,73,2024-03-23
+268,799,957,20,Gabapentin,20mg,Three times daily,34,2025-04-17
+269,925,507,25,Hydrochlorothiazide,250mg,Three times daily,13,2025-06-15
+270,812,363,48,Lisinopril,10mg,As needed,28,2025-04-17
+271,159,764,78,Prednisone,25mg,As needed,30,2024-04-20
+272,904,477,75,Albuterol,100mg,Once daily,79,2025-03-22
+273,1470,893,4,Omeprazole,250mg,As needed,11,2025-04-16
+274,394,582,16,Insulin,250mg,As needed,23,2024-07-27
+275,1474,518,47,Gabapentin,250mg,As needed,11,2025-04-23
+276,1035,970,4,Metformin,20mg,As needed,70,2025-06-08
+277,860,897,49,Omeprazole,20mg,As needed,28,2025-01-16
+278,1001,767,7,Prednisone,20mg,As needed,53,2024-02-23
+279,220,28,12,Amoxicillin,100mg,As needed,50,2024-05-06
+280,67,311,8,Losartan,50mg,Three times daily,51,2024-04-05
+281,1270,572,9,Atorvastatin,100mg,Twice daily,18,2025-04-09
+282,939,136,79,Hydrochlorothiazide,250mg,Once daily,28,2024-09-11
+283,736,693,70,Clopidogrel,50mg,As needed,48,2024-09-07
+284,790,101,36,Lisinopril,20mg,Twice daily,36,2024-12-08
+285,42,405,44,Furosemide,100mg,Three times daily,66,2025-05-18
+286,172,116,17,Acetaminophen,5mg,As needed,25,2024-07-03
+287,669,851,79,Ibuprofen,100mg,Twice daily,71,2025-06-10
+288,1739,544,7,Lisinopril,5mg,Three times daily,48,2025-05-31
+289,1129,46,38,Warfarin,20mg,Once daily,70,2024-10-27
+290,291,637,75,Amoxicillin,20mg,Three times daily,8,2023-04-28
+291,1246,203,69,Acetaminophen,500mg,As needed,8,2025-04-05
+292,325,865,80,Gabapentin,50mg,Once daily,42,2024-12-12
+293,1448,609,4,Omeprazole,250mg,As needed,23,2025-06-14
+294,510,328,77,Prednisone,50mg,Once daily,14,2025-04-07
+295,356,127,68,Prednisone,250mg,Once daily,41,2025-06-26
+296,1789,652,39,Amoxicillin,5mg,Once daily,86,2024-11-23
+297,699,224,69,Gabapentin,250mg,As needed,69,2025-01-08
+298,163,459,29,Albuterol,10mg,Once daily,50,2023-09-18
+299,490,640,80,Metformin,100mg,Once daily,13,2025-05-30
+300,1155,72,70,Ibuprofen,10mg,As needed,78,2024-11-01
+301,365,970,21,Lisinopril,10mg,As needed,73,2025-05-30
+302,1891,474,57,Sertraline,500mg,Three times daily,9,2025-03-25
+303,1387,769,62,Clopidogrel,25mg,Twice daily,90,2024-08-06
+304,817,539,44,Furosemide,250mg,Three times daily,20,2025-03-31
+305,1497,115,14,Prednisone,5mg,Twice daily,10,2024-11-25
+306,1909,630,49,Amoxicillin,250mg,Three times daily,48,2025-05-04
+307,995,552,32,Furosemide,5mg,Twice daily,80,2024-05-25
+308,874,578,17,Metoprolol,100mg,As needed,80,2023-09-28
+309,1931,712,4,Prednisone,25mg,Three times daily,40,2025-03-06
+310,344,338,21,Levothyroxine,25mg,Twice daily,58,2024-09-28
+311,1807,396,10,Metformin,50mg,Three times daily,48,2024-09-11
+312,1501,658,13,Gabapentin,25mg,Twice daily,10,2025-03-13
+313,1956,529,54,Hydrochlorothiazide,50mg,As needed,68,2024-05-20
+314,430,740,21,Insulin,500mg,Once daily,62,2025-06-14
+315,1055,620,37,Metoprolol,100mg,As needed,56,2025-04-18
+316,557,786,49,Sertraline,5mg,Twice daily,19,2024-08-24
+317,850,544,6,Albuterol,250mg,As needed,14,2025-03-24
+318,1764,408,25,Albuterol,250mg,Twice daily,22,2025-05-22
+319,1947,127,39,Sertraline,20mg,Three times daily,12,2025-04-15
+320,1574,135,41,Amlodipine,20mg,Twice daily,55,2025-01-12
+321,1708,129,77,Amoxicillin,500mg,Twice daily,23,2025-05-04
+322,180,55,72,Sertraline,100mg,Once daily,22,2024-02-07
+323,1576,999,53,Gabapentin,20mg,Three times daily,69,2024-11-19
+324,1161,265,29,Losartan,5mg,As needed,86,2025-01-06
+325,69,756,19,Furosemide,25mg,Twice daily,73,2025-06-18
+326,1680,733,6,Furosemide,20mg,Twice daily,63,2025-06-05
+327,1976,821,24,Lisinopril,5mg,As needed,45,2024-12-03
+328,915,185,53,Metoprolol,250mg,Once daily,86,2025-01-20
+329,25,322,7,Amoxicillin,5mg,Three times daily,25,2024-07-09
+330,1580,609,73,Levothyroxine,500mg,Three times daily,47,2024-07-18
+331,464,861,52,Furosemide,50mg,As needed,57,2024-08-25
+332,1448,609,4,Insulin,250mg,Twice daily,19,2024-08-18
+333,1741,535,17,Lisinopril,50mg,As needed,62,2024-08-23
+334,1016,89,76,Hydrochlorothiazide,50mg,As needed,38,2024-09-10
+335,1735,154,53,Clopidogrel,5mg,Twice daily,65,2025-04-08
+336,573,273,21,Gabapentin,10mg,Once daily,60,2024-12-29
+337,228,192,67,Losartan,5mg,As needed,68,2024-11-02
+338,240,625,11,Omeprazole,10mg,Three times daily,31,2025-06-13
+339,1317,735,47,Gabapentin,500mg,Once daily,24,2024-06-18
+340,1604,191,14,Ibuprofen,5mg,Once daily,34,2024-10-03
+341,452,819,18,Sertraline,100mg,Twice daily,84,2024-03-23
+342,1261,791,23,Furosemide,100mg,Twice daily,14,2024-05-17
+343,511,784,38,Ibuprofen,25mg,Once daily,28,2025-03-29
+344,277,337,73,Furosemide,500mg,As needed,15,2024-02-14
+345,117,163,78,Omeprazole,250mg,Once daily,90,2025-01-29
+346,1243,498,25,Furosemide,250mg,Three times daily,41,2024-05-14
+347,1906,508,13,Acetaminophen,250mg,Three times daily,38,2025-04-21
+348,924,289,5,Amlodipine,5mg,As needed,42,2025-06-18
+349,1386,191,52,Metoprolol,50mg,Three times daily,37,2025-03-29
+350,1981,649,28,Hydrochlorothiazide,100mg,As needed,15,2025-03-09
+351,1278,363,51,Gabapentin,100mg,Twice daily,71,2025-04-20
+352,302,254,26,Atorvastatin,5mg,Three times daily,31,2025-06-04
+353,507,790,78,Amlodipine,250mg,As needed,22,2023-06-24
+354,129,922,35,Amlodipine,5mg,Twice daily,74,2024-09-19
+355,371,811,26,Acetaminophen,250mg,Three times daily,11,2024-03-24
+356,1924,334,26,Warfarin,5mg,Once daily,37,2025-04-04
+357,183,444,58,Hydrochlorothiazide,10mg,Once daily,22,2024-05-25
+358,1976,821,24,Amlodipine,500mg,Three times daily,73,2025-01-20
+359,790,101,36,Omeprazole,250mg,Twice daily,80,2025-04-10
+360,28,529,2,Metoprolol,50mg,Three times daily,75,2025-06-04
+361,693,197,52,Insulin,100mg,As needed,55,2025-04-03
+362,1319,637,14,Levothyroxine,20mg,As needed,21,2025-05-21
+363,1893,956,70,Hydrochlorothiazide,50mg,Three times daily,14,2023-07-05
+364,231,188,40,Levothyroxine,20mg,As needed,18,2025-03-29
+365,1506,977,5,Atorvastatin,250mg,Three times daily,77,2024-05-29
+366,185,925,65,Gabapentin,10mg,As needed,68,2024-03-25
+367,1499,369,39,Furosemide,25mg,Three times daily,29,2024-06-11
+368,1996,228,5,Ibuprofen,5mg,Three times daily,59,2025-05-09
+369,237,43,17,Lisinopril,500mg,Three times daily,25,2025-06-29
+370,224,7,43,Levothyroxine,20mg,Twice daily,61,2025-04-09
+371,564,701,13,Hydrochlorothiazide,5mg,As needed,18,2024-03-31
+372,674,968,64,Insulin,10mg,Once daily,56,2024-12-13
+373,1674,397,55,Levothyroxine,10mg,As needed,14,2024-05-06
+374,885,426,37,Metoprolol,20mg,Once daily,90,2025-04-21
+375,1684,354,18,Prednisone,500mg,Twice daily,80,2024-10-13
+376,1942,310,50,Hydrochlorothiazide,5mg,Twice daily,60,2025-05-13
+377,1660,779,12,Insulin,25mg,Three times daily,28,2025-01-10
+378,290,593,14,Furosemide,25mg,Once daily,34,2024-10-01
+379,660,5,51,Clopidogrel,500mg,Twice daily,46,2024-06-16
+380,1856,473,57,Insulin,100mg,Once daily,7,2024-04-01
+381,1208,150,64,Amlodipine,50mg,As needed,66,2024-11-19
+382,842,704,29,Metoprolol,25mg,Once daily,87,2024-10-13
+383,444,876,23,Metformin,25mg,Twice daily,71,2024-03-20
+384,619,159,49,Omeprazole,10mg,Three times daily,75,2025-01-02
+385,1500,542,32,Amoxicillin,25mg,Three times daily,22,2025-06-24
+386,1872,968,50,Prednisone,100mg,As needed,31,2025-06-18
+387,1576,999,53,Lisinopril,20mg,Twice daily,23,2024-09-17
+388,496,183,73,Levothyroxine,50mg,As needed,18,2025-03-23
+389,1021,683,59,Metoprolol,250mg,Twice daily,86,2025-01-02
+390,212,180,64,Sertraline,10mg,Three times daily,17,2024-03-22
+391,1438,283,27,Insulin,25mg,As needed,27,2024-11-12
+392,1793,843,38,Clopidogrel,10mg,Once daily,55,2025-03-19
+393,77,996,25,Metformin,500mg,As needed,76,2024-05-29
+394,147,71,10,Acetaminophen,25mg,As needed,79,2025-06-24
+395,1647,207,57,Sertraline,50mg,Three times daily,9,2025-04-17
+396,123,740,75,Atorvastatin,50mg,Three times daily,62,2024-07-06
+397,1730,222,57,Lisinopril,20mg,Three times daily,52,2025-05-29
+398,173,284,50,Sertraline,250mg,Once daily,84,2025-05-28
+399,1565,270,76,Losartan,5mg,Once daily,56,2025-02-27
+400,43,185,24,Insulin,100mg,Three times daily,35,2025-02-12
+401,28,529,2,Warfarin,25mg,Three times daily,86,2025-06-09
+402,1019,337,48,Hydrochlorothiazide,5mg,As needed,81,2024-11-07
+403,751,985,26,Ibuprofen,50mg,Once daily,35,2025-06-30
+404,599,401,18,Hydrochlorothiazide,500mg,Twice daily,60,2024-03-24
+405,1485,268,55,Omeprazole,25mg,Three times daily,34,2025-04-05
+406,1223,679,78,Metoprolol,100mg,Three times daily,39,2024-08-05
+407,250,803,49,Furosemide,100mg,Once daily,72,2023-08-31
+408,1970,460,60,Amlodipine,20mg,As needed,28,2024-10-20
+409,63,506,7,Clopidogrel,500mg,As needed,13,2025-03-12
+410,1157,154,4,Omeprazole,50mg,Twice daily,63,2025-05-27
+411,144,497,53,Levothyroxine,20mg,Three times daily,20,2025-01-26
+412,1623,341,60,Hydrochlorothiazide,20mg,Once daily,47,2024-03-26
+413,713,389,44,Furosemide,20mg,Once daily,56,2025-02-15
+414,373,758,6,Insulin,5mg,As needed,35,2024-07-09
+415,797,58,2,Omeprazole,10mg,Three times daily,28,2024-11-19
+416,1017,767,13,Metoprolol,100mg,Once daily,26,2024-12-29
+417,1586,872,69,Clopidogrel,50mg,Once daily,15,2025-03-28
+418,189,2,37,Sertraline,250mg,As needed,17,2024-07-18
+419,1726,358,58,Sertraline,25mg,Three times daily,29,2024-09-04
+420,1651,23,29,Amoxicillin,5mg,Once daily,89,2024-04-03
+421,1566,687,68,Omeprazole,250mg,As needed,75,2023-06-18
+422,1156,140,14,Losartan,25mg,Twice daily,88,2025-05-08
+423,496,183,73,Atorvastatin,5mg,Once daily,22,2024-10-19
+424,1020,230,46,Clopidogrel,50mg,Once daily,20,2024-12-22
+425,535,366,17,Ibuprofen,25mg,Three times daily,35,2024-07-27
+426,513,178,29,Warfarin,500mg,As needed,37,2024-12-19
+427,58,556,8,Hydrochlorothiazide,20mg,As needed,71,2024-04-29
+428,1464,504,70,Levothyroxine,20mg,As needed,66,2025-06-19
+429,231,188,40,Losartan,5mg,Three times daily,60,2024-07-19
+430,1182,700,42,Furosemide,100mg,As needed,63,2023-07-19
+431,246,546,65,Prednisone,100mg,Once daily,53,2025-06-11
+432,342,290,22,Insulin,20mg,Twice daily,7,2024-11-03
+433,184,698,34,Hydrochlorothiazide,10mg,As needed,90,2025-03-15
+434,846,514,63,Metformin,10mg,Three times daily,63,2024-05-28
+435,894,132,24,Losartan,10mg,Twice daily,78,2024-11-28
+436,49,984,73,Ibuprofen,20mg,Three times daily,33,2025-04-25
+437,1816,617,79,Omeprazole,20mg,As needed,88,2025-05-10
+438,1744,433,60,Metoprolol,100mg,Twice daily,28,2025-06-22
+439,1451,850,2,Amoxicillin,250mg,Three times daily,42,2025-04-13
+440,1720,162,61,Metformin,50mg,Three times daily,39,2024-07-25
+441,1347,694,71,Insulin,25mg,Three times daily,34,2024-06-12
+442,1529,680,69,Hydrochlorothiazide,50mg,Once daily,63,2023-10-06
+443,1424,166,11,Albuterol,20mg,Once daily,79,2024-01-03
+444,141,372,37,Atorvastatin,500mg,As needed,28,2023-08-09
+445,377,324,19,Metformin,5mg,As needed,75,2024-09-11
+446,1013,877,68,Hydrochlorothiazide,10mg,Three times daily,69,2025-04-02
+447,1795,214,47,Clopidogrel,500mg,As needed,14,2025-05-05
+448,687,539,25,Omeprazole,5mg,Once daily,43,2025-02-03
+449,167,72,31,Prednisone,500mg,As needed,55,2025-05-12
+450,663,528,37,Insulin,50mg,Twice daily,51,2025-04-11
+451,1529,680,69,Atorvastatin,25mg,Once daily,38,2023-10-18
+452,1034,742,42,Gabapentin,10mg,As needed,76,2025-03-06
+453,440,584,49,Prednisone,5mg,As needed,60,2024-06-01
+454,171,667,39,Hydrochlorothiazide,50mg,Once daily,23,2024-11-15
+455,249,711,44,Insulin,25mg,Once daily,45,2024-06-30
+456,739,763,40,Sertraline,500mg,Once daily,86,2023-10-23
+457,335,984,80,Insulin,50mg,As needed,72,2024-10-22
+458,934,719,15,Hydrochlorothiazide,10mg,Twice daily,77,2023-10-21
+459,142,210,58,Losartan,500mg,Three times daily,33,2025-06-13
+460,1546,34,37,Prednisone,500mg,Once daily,48,2024-10-29
+461,209,233,23,Atorvastatin,5mg,Three times daily,85,2024-10-26
+462,786,679,49,Prednisone,500mg,Twice daily,83,2023-09-15
+463,1938,618,19,Metoprolol,250mg,Twice daily,87,2025-02-15
+464,1496,239,42,Amoxicillin,20mg,Twice daily,49,2024-04-01
+465,947,246,72,Amoxicillin,500mg,Three times daily,22,2024-06-03
+466,1430,421,23,Albuterol,500mg,Twice daily,27,2025-05-27
+467,948,495,43,Amoxicillin,5mg,Once daily,84,2025-04-21
+468,1705,800,17,Prednisone,100mg,Three times daily,81,2024-10-16
+469,829,302,58,Furosemide,20mg,As needed,87,2025-04-30
+470,1636,46,65,Prednisone,5mg,Three times daily,69,2024-11-21
+471,1610,730,23,Furosemide,50mg,As needed,77,2025-05-04
+472,9,352,15,Furosemide,500mg,Twice daily,81,2024-03-22
+473,572,986,62,Acetaminophen,20mg,Three times daily,18,2025-02-21
+474,1275,974,7,Lisinopril,250mg,Three times daily,71,2024-12-31
+475,200,613,70,Insulin,10mg,As needed,43,2024-10-25
+476,1342,379,62,Gabapentin,20mg,Twice daily,87,2025-01-15
+477,630,283,63,Sertraline,100mg,Twice daily,25,2025-02-13
+478,1894,82,46,Metoprolol,500mg,Once daily,85,2024-04-15
+479,45,392,29,Acetaminophen,20mg,Twice daily,52,2025-05-28
+480,143,854,67,Levothyroxine,10mg,Once daily,12,2025-04-27
+481,1786,963,63,Atorvastatin,500mg,Once daily,88,2024-08-15
+482,817,539,44,Acetaminophen,25mg,Three times daily,7,2025-06-29
+483,296,800,19,Prednisone,50mg,Twice daily,15,2025-03-05
+484,1248,167,5,Acetaminophen,100mg,Twice daily,50,2025-03-25
+485,1689,59,16,Metoprolol,10mg,Twice daily,72,2024-08-27
+486,39,984,59,Lisinopril,25mg,As needed,78,2025-06-16
+487,1362,260,37,Omeprazole,500mg,Three times daily,18,2024-06-22
+488,1322,385,3,Sertraline,25mg,As needed,53,2024-07-03
+489,433,916,8,Furosemide,250mg,Once daily,64,2024-11-18
+490,1046,466,74,Furosemide,20mg,Twice daily,75,2024-10-21
+491,862,222,75,Atorvastatin,25mg,Twice daily,89,2024-11-12
+492,63,506,7,Amlodipine,50mg,Once daily,11,2024-05-09
+493,772,909,15,Metoprolol,10mg,As needed,16,2025-06-25
+494,1255,685,29,Losartan,25mg,Twice daily,79,2024-12-16
+495,295,109,69,Prednisone,50mg,Twice daily,36,2025-04-27
+496,392,615,57,Albuterol,5mg,As needed,8,2024-04-23
+497,1693,96,65,Hydrochlorothiazide,20mg,Once daily,39,2025-05-26
+498,923,465,29,Prednisone,20mg,Once daily,62,2025-02-12
+499,1424,166,11,Atorvastatin,5mg,Twice daily,72,2024-04-06
+500,992,482,26,Albuterol,250mg,Three times daily,36,2024-06-11
+501,1982,202,69,Gabapentin,5mg,Twice daily,60,2023-10-05
+502,1778,231,37,Amlodipine,500mg,Twice daily,35,2024-09-10
+503,426,198,49,Metoprolol,250mg,Twice daily,86,2023-08-30
+504,905,133,26,Insulin,10mg,Three times daily,27,2023-12-03
+505,883,911,22,Prednisone,20mg,Three times daily,67,2024-11-18
+506,1436,116,70,Furosemide,50mg,Once daily,50,2025-05-18
+507,1322,385,3,Clopidogrel,25mg,Once daily,54,2025-06-17
+508,1763,410,63,Omeprazole,5mg,As needed,13,2023-08-27
+509,21,689,5,Amoxicillin,50mg,Twice daily,48,2024-09-29
+510,789,647,71,Levothyroxine,25mg,As needed,35,2025-03-29
+511,824,180,33,Atorvastatin,500mg,Once daily,71,2024-03-20
+512,1716,58,46,Prednisone,25mg,Once daily,60,2024-08-18
+513,1058,427,31,Sertraline,5mg,Twice daily,39,2025-05-08
+514,1253,978,38,Clopidogrel,250mg,Three times daily,59,2025-06-17
+515,564,701,13,Sertraline,50mg,Three times daily,74,2024-04-25
+516,573,273,21,Lisinopril,100mg,As needed,66,2025-04-25
+517,1870,278,28,Lisinopril,20mg,Once daily,83,2023-10-12
+518,478,856,18,Albuterol,50mg,As needed,78,2024-11-25
+519,260,789,73,Prednisone,20mg,Once daily,57,2025-06-10
+520,1237,759,44,Hydrochlorothiazide,500mg,Once daily,20,2023-04-02
+521,151,134,1,Amlodipine,250mg,Three times daily,40,2024-07-22
+522,1294,488,45,Prednisone,50mg,Three times daily,56,2024-08-16
+523,1698,527,30,Warfarin,10mg,As needed,32,2025-01-16
+524,1385,551,55,Amoxicillin,25mg,Twice daily,51,2024-06-05
+525,817,539,44,Atorvastatin,50mg,As needed,84,2025-05-19
+526,158,468,77,Omeprazole,5mg,As needed,62,2024-10-09
+527,698,563,57,Insulin,50mg,Three times daily,57,2024-10-29
+528,1698,527,30,Amlodipine,500mg,Three times daily,73,2024-01-01
+529,1273,611,19,Ibuprofen,20mg,As needed,10,2025-05-21
+530,711,175,17,Ibuprofen,250mg,As needed,89,2025-06-15
+531,1005,346,59,Atorvastatin,20mg,As needed,60,2025-04-03
+532,770,938,3,Insulin,100mg,Once daily,85,2025-03-12
+533,1456,141,26,Prednisone,500mg,As needed,63,2024-12-12
+534,1763,410,63,Lisinopril,500mg,Once daily,45,2023-08-12
+535,405,29,53,Acetaminophen,500mg,Twice daily,89,2025-03-31
+536,1444,83,20,Levothyroxine,500mg,Twice daily,49,2025-05-24
+537,934,719,15,Clopidogrel,500mg,Once daily,87,2024-10-31
+538,303,465,80,Gabapentin,500mg,As needed,77,2024-08-06
+539,1203,948,16,Albuterol,25mg,Once daily,12,2025-01-17
+540,911,399,15,Albuterol,10mg,Once daily,42,2025-03-23
+541,781,746,2,Lisinopril,250mg,As needed,89,2024-10-06
+542,1247,66,53,Albuterol,50mg,Three times daily,14,2024-09-07
+543,1386,191,52,Amlodipine,50mg,As needed,81,2025-02-12
+544,922,107,60,Albuterol,25mg,Three times daily,69,2025-06-13
+545,855,277,62,Losartan,25mg,Twice daily,89,2024-06-09
+546,1920,657,31,Ibuprofen,10mg,Three times daily,20,2025-01-01
+547,35,385,70,Losartan,250mg,As needed,22,2024-08-28
+548,1887,643,44,Metformin,20mg,Twice daily,86,2024-03-07
+549,708,990,56,Albuterol,25mg,Twice daily,49,2024-04-28
+550,903,605,48,Albuterol,10mg,Twice daily,60,2025-04-14
+551,1521,72,49,Metformin,50mg,Three times daily,13,2025-04-10
+552,61,605,9,Hydrochlorothiazide,5mg,As needed,72,2025-05-02
+553,1790,556,65,Metoprolol,250mg,Three times daily,61,2025-04-10
+554,1964,476,74,Amlodipine,10mg,Three times daily,18,2024-03-20
+555,1836,968,10,Amlodipine,5mg,Once daily,10,2025-05-01
+556,1360,461,27,Furosemide,20mg,Once daily,14,2025-06-12
+557,287,823,14,Clopidogrel,500mg,Twice daily,35,2024-08-02
+558,1792,321,69,Ibuprofen,250mg,Three times daily,55,2024-09-28
+559,1291,431,49,Acetaminophen,50mg,Once daily,72,2025-02-22
+560,1195,614,30,Acetaminophen,50mg,Twice daily,52,2023-10-13
+561,879,842,44,Levothyroxine,5mg,Twice daily,36,2025-03-31
+562,1370,248,39,Hydrochlorothiazide,100mg,Three times daily,50,2023-12-15
+563,296,800,19,Ibuprofen,5mg,Twice daily,13,2025-02-26
+564,1878,681,27,Lisinopril,250mg,Three times daily,82,2024-06-21
+565,2,154,5,Clopidogrel,10mg,Three times daily,31,2025-04-10
+566,600,793,50,Gabapentin,20mg,Three times daily,87,2025-05-22
+567,1888,817,18,Omeprazole,10mg,Three times daily,36,2025-01-15
+568,391,938,9,Insulin,100mg,Twice daily,26,2025-05-23
+569,1405,282,54,Acetaminophen,250mg,Three times daily,48,2025-03-11
+570,158,468,77,Insulin,100mg,As needed,63,2024-05-27
+571,452,819,18,Amoxicillin,5mg,Once daily,87,2025-06-19
+572,167,72,31,Amlodipine,25mg,Three times daily,45,2025-03-20
+573,1052,814,7,Insulin,25mg,As needed,53,2024-01-24
+574,1654,866,45,Hydrochlorothiazide,250mg,Three times daily,80,2024-11-11
+575,680,881,43,Furosemide,500mg,As needed,47,2025-06-04
+576,1545,642,42,Prednisone,20mg,Three times daily,82,2025-06-11
+577,460,200,20,Clopidogrel,100mg,As needed,69,2025-05-31
+578,1172,600,54,Prednisone,10mg,Three times daily,16,2023-12-19
+579,1559,362,32,Losartan,250mg,As needed,21,2025-05-16
+580,1448,609,4,Metoprolol,100mg,As needed,27,2024-09-08
+581,600,793,50,Warfarin,250mg,As needed,16,2025-02-13
+582,612,789,29,Furosemide,25mg,Once daily,41,2025-05-20
+583,216,45,32,Prednisone,20mg,Three times daily,83,2025-05-05
+584,639,91,61,Clopidogrel,50mg,Twice daily,25,2025-03-16
+585,1195,614,30,Insulin,5mg,Three times daily,63,2023-09-24
+586,1688,504,16,Hydrochlorothiazide,500mg,Three times daily,71,2025-05-21
+587,317,456,26,Omeprazole,20mg,Once daily,74,2025-02-09
+588,775,207,66,Warfarin,20mg,Twice daily,77,2023-08-29
+589,234,526,11,Omeprazole,50mg,Twice daily,83,2024-03-07
+590,239,285,30,Hydrochlorothiazide,25mg,Once daily,49,2024-03-16
+591,1195,614,30,Albuterol,50mg,As needed,58,2023-07-12
+592,1357,785,59,Insulin,25mg,Once daily,85,2025-06-27
+593,565,348,42,Furosemide,100mg,As needed,68,2025-06-15
+594,1039,913,45,Hydrochlorothiazide,10mg,Twice daily,15,2023-03-11
+595,453,349,65,Levothyroxine,50mg,Once daily,44,2025-05-07
+596,1607,908,28,Amlodipine,10mg,As needed,87,2025-01-26
+597,210,710,61,Ibuprofen,5mg,Once daily,60,2025-04-16
+598,640,369,74,Omeprazole,10mg,Twice daily,9,2023-03-31
+599,258,943,39,Gabapentin,5mg,Three times daily,51,2025-01-22
+600,786,679,49,Metformin,10mg,As needed,48,2024-08-30
+601,1331,642,60,Atorvastatin,20mg,As needed,13,2025-04-27
+602,1546,34,37,Warfarin,50mg,Once daily,48,2025-06-22
+603,1807,396,10,Hydrochlorothiazide,50mg,Twice daily,80,2025-05-15
+604,1391,245,40,Albuterol,20mg,Three times daily,52,2024-11-20
+605,1209,497,78,Insulin,50mg,Once daily,47,2023-04-30
+606,571,928,41,Amoxicillin,50mg,Three times daily,36,2025-04-22
+607,1360,461,27,Prednisone,25mg,Three times daily,56,2024-11-24
+608,1286,694,73,Amlodipine,250mg,Three times daily,56,2024-12-18
+609,997,280,5,Lisinopril,20mg,Twice daily,34,2024-11-05
+610,1948,283,54,Hydrochlorothiazide,5mg,Three times daily,62,2024-07-15
+611,807,564,11,Metformin,100mg,As needed,47,2024-07-01
+612,1596,935,39,Omeprazole,500mg,As needed,68,2025-06-10
+613,1666,558,43,Lisinopril,10mg,Three times daily,27,2025-05-17
+614,1980,176,32,Atorvastatin,10mg,Three times daily,8,2025-06-21
+615,1895,517,4,Losartan,20mg,Three times daily,89,2025-01-23
+616,903,605,48,Sertraline,100mg,Once daily,43,2025-04-13
+617,1574,135,41,Omeprazole,250mg,Three times daily,72,2025-03-12
+618,99,89,56,Metoprolol,5mg,Twice daily,34,2024-04-28
+619,1555,401,53,Ibuprofen,100mg,As needed,54,2025-01-07
+620,559,547,67,Clopidogrel,500mg,Once daily,41,2024-08-11
+621,550,971,23,Lisinopril,25mg,Three times daily,30,2024-11-09
+622,649,598,68,Insulin,500mg,As needed,41,2025-06-22
+623,687,539,25,Furosemide,5mg,Three times daily,33,2024-12-12
+624,1886,7,10,Metformin,10mg,Twice daily,77,2025-03-21
+625,1324,630,67,Levothyroxine,100mg,As needed,71,2025-04-11
+626,1275,974,7,Acetaminophen,50mg,As needed,28,2024-11-21
+627,77,996,25,Lisinopril,250mg,As needed,59,2025-01-19
+628,1906,508,13,Amoxicillin,10mg,Once daily,26,2024-10-12
+629,1732,974,58,Gabapentin,50mg,Once daily,56,2024-04-15
+630,1588,212,58,Lisinopril,25mg,Twice daily,32,2025-01-23
+631,708,990,56,Atorvastatin,50mg,Three times daily,32,2025-03-02
+632,1335,962,4,Atorvastatin,25mg,As needed,17,2024-05-21
+633,591,412,77,Metoprolol,250mg,Three times daily,7,2025-04-01
+634,950,671,74,Warfarin,250mg,Once daily,25,2025-01-10
+635,1586,872,69,Gabapentin,5mg,As needed,59,2023-02-24
+636,502,167,33,Atorvastatin,500mg,Three times daily,24,2023-11-16
+637,1375,972,12,Sertraline,20mg,As needed,68,2025-06-13
+638,940,415,47,Losartan,25mg,As needed,79,2024-08-12
+639,301,147,78,Losartan,20mg,Three times daily,17,2024-08-28
+640,1093,630,41,Acetaminophen,50mg,Three times daily,84,2025-06-06
+641,1367,868,57,Acetaminophen,20mg,Once daily,73,2025-05-26
+642,1819,347,73,Levothyroxine,20mg,As needed,29,2024-11-26
+643,1311,373,37,Metformin,500mg,Twice daily,33,2023-08-02
+644,1725,277,39,Clopidogrel,100mg,Three times daily,81,2024-07-11
+645,1190,914,72,Lisinopril,25mg,Once daily,8,2025-05-24
+646,382,726,64,Metoprolol,5mg,As needed,83,2024-12-14
+647,1181,620,51,Clopidogrel,5mg,Once daily,9,2025-04-11
+648,567,133,60,Clopidogrel,25mg,Once daily,79,2024-07-01
+649,633,461,35,Sertraline,25mg,Twice daily,62,2024-05-25
+650,336,431,21,Losartan,50mg,Three times daily,72,2024-08-23
+651,246,546,65,Furosemide,5mg,Once daily,34,2025-05-10
+652,1516,234,69,Omeprazole,10mg,Three times daily,64,2025-06-14
+653,226,923,28,Insulin,250mg,Once daily,14,2025-02-24
+654,1519,778,26,Albuterol,50mg,Twice daily,74,2025-02-21
+655,188,2,24,Amoxicillin,10mg,Twice daily,56,2025-06-20
+656,1191,997,63,Insulin,500mg,Twice daily,30,2025-03-11
+657,936,771,60,Amoxicillin,250mg,Twice daily,32,2025-04-08
+658,1789,652,39,Prednisone,100mg,Twice daily,43,2024-09-05
+659,780,472,38,Ibuprofen,10mg,As needed,39,2025-05-31
+660,1511,457,51,Sertraline,10mg,As needed,37,2024-11-22
+661,753,572,68,Insulin,100mg,Twice daily,49,2024-08-14
+662,72,818,36,Insulin,500mg,Three times daily,84,2024-04-01
+663,1372,508,6,Levothyroxine,10mg,Once daily,25,2025-04-27
+664,1290,746,19,Clopidogrel,10mg,Twice daily,19,2025-06-28
+665,1925,135,76,Albuterol,500mg,Three times daily,9,2025-06-09
+666,603,409,5,Furosemide,500mg,Twice daily,86,2024-12-24
+667,144,497,53,Lisinopril,100mg,As needed,52,2025-03-26
+668,982,198,36,Metformin,20mg,Twice daily,84,2024-09-04
+669,1645,713,79,Prednisone,100mg,Three times daily,57,2024-02-25
+670,223,791,32,Ibuprofen,20mg,Three times daily,41,2025-03-27
+671,481,711,10,Hydrochlorothiazide,5mg,Three times daily,12,2025-01-13
+672,566,535,16,Sertraline,50mg,Once daily,25,2024-09-15
+673,1741,535,17,Losartan,250mg,Three times daily,18,2023-10-13
+674,1601,536,33,Metformin,5mg,Three times daily,89,2025-05-09
+675,900,586,74,Warfarin,500mg,As needed,64,2024-06-16
+676,167,72,31,Sertraline,500mg,Once daily,55,2024-10-29
+677,152,648,53,Amoxicillin,25mg,Once daily,16,2025-02-10
+678,1372,508,6,Hydrochlorothiazide,100mg,Twice daily,13,2025-02-24
+679,1727,22,14,Sertraline,250mg,Once daily,14,2024-07-02
+680,65,702,18,Metformin,50mg,Twice daily,39,2024-07-16
+681,1430,421,23,Amlodipine,20mg,Once daily,9,2025-05-08
+682,1296,64,38,Warfarin,250mg,Three times daily,47,2023-07-27
+683,1947,127,39,Albuterol,50mg,Three times daily,48,2024-12-05
+684,823,169,32,Acetaminophen,100mg,Once daily,59,2024-12-23
+685,649,598,68,Hydrochlorothiazide,250mg,Twice daily,49,2025-01-09
+686,1983,821,16,Acetaminophen,100mg,As needed,64,2025-05-15
+687,853,784,79,Metoprolol,250mg,Three times daily,40,2024-06-06
+688,682,695,79,Warfarin,50mg,Once daily,41,2024-05-14
+689,1281,602,19,Metformin,50mg,As needed,47,2024-04-04
+690,232,738,64,Insulin,5mg,As needed,66,2025-06-14
+691,271,36,52,Acetaminophen,5mg,Three times daily,50,2025-06-03
+692,1187,804,48,Insulin,500mg,Twice daily,52,2024-11-03
+693,1910,912,49,Atorvastatin,50mg,As needed,8,2024-06-24
+694,1982,202,69,Metformin,25mg,As needed,30,2024-06-19
+695,248,383,7,Albuterol,5mg,Twice daily,67,2024-06-27
+696,1699,82,64,Atorvastatin,50mg,Once daily,58,2025-06-13
+697,1889,178,31,Metoprolol,10mg,Once daily,28,2024-10-16
+698,763,643,64,Metformin,5mg,Three times daily,66,2024-07-29
+699,1297,666,37,Ibuprofen,5mg,As needed,9,2024-11-28
+700,1005,346,59,Metoprolol,500mg,As needed,20,2025-06-02
+701,320,214,12,Sertraline,20mg,Once daily,81,2024-01-13
+702,1415,973,63,Hydrochlorothiazide,500mg,Three times daily,8,2024-08-31
+703,1980,176,32,Lisinopril,10mg,Twice daily,22,2025-02-12
+704,955,912,60,Albuterol,50mg,Once daily,31,2025-04-30
+705,1567,448,46,Metoprolol,500mg,Three times daily,23,2024-01-07
+706,1778,231,37,Prednisone,5mg,Once daily,84,2025-02-11
+707,1283,380,36,Losartan,500mg,Three times daily,52,2024-10-11
+708,147,71,10,Metformin,500mg,Three times daily,65,2025-04-17
+709,618,487,10,Omeprazole,25mg,As needed,68,2025-06-10
+710,830,241,33,Prednisone,250mg,As needed,68,2023-06-27
+711,994,785,75,Losartan,20mg,As needed,55,2023-12-15
+712,277,337,73,Lisinopril,20mg,As needed,69,2024-10-05
+713,584,481,71,Prednisone,100mg,Three times daily,19,2024-10-09
+714,1907,72,6,Amoxicillin,20mg,Twice daily,69,2024-06-16
+715,183,444,58,Furosemide,10mg,Once daily,57,2024-10-08
+716,1349,212,25,Ibuprofen,500mg,Three times daily,77,2025-04-18
+717,547,523,45,Acetaminophen,5mg,Once daily,63,2024-03-30
+718,467,518,49,Acetaminophen,500mg,As needed,77,2023-10-12
+719,1628,531,40,Prednisone,50mg,Once daily,16,2023-02-27
+720,282,298,47,Losartan,250mg,Once daily,76,2024-10-05
+721,1142,242,73,Amoxicillin,20mg,As needed,58,2024-08-25
+722,1773,862,64,Hydrochlorothiazide,500mg,Three times daily,35,2025-04-17
+723,664,531,31,Amoxicillin,20mg,Three times daily,18,2024-01-07
+724,27,39,76,Acetaminophen,20mg,Once daily,12,2025-02-13
+725,1638,584,35,Sertraline,100mg,Once daily,57,2025-05-22
+726,1897,206,73,Gabapentin,100mg,Twice daily,65,2024-08-28
+727,350,863,76,Clopidogrel,50mg,Three times daily,68,2025-03-04
+728,1578,29,77,Clopidogrel,20mg,As needed,51,2025-02-19
+729,1527,749,80,Metoprolol,5mg,Twice daily,44,2024-04-01
+730,43,185,24,Metformin,250mg,Twice daily,48,2024-12-25
+731,608,234,7,Sertraline,20mg,As needed,36,2024-11-09
+732,253,398,36,Lisinopril,100mg,Twice daily,78,2024-07-01
+733,954,485,48,Sertraline,500mg,Three times daily,22,2025-06-27
+734,1018,785,14,Amoxicillin,50mg,Once daily,66,2023-04-16
+735,375,162,67,Atorvastatin,250mg,Three times daily,49,2025-03-15
+736,543,425,58,Prednisone,25mg,Three times daily,52,2024-08-26
+737,1459,799,57,Metoprolol,100mg,Twice daily,34,2024-08-12
+738,1210,341,66,Albuterol,50mg,Once daily,72,2024-12-31
+739,974,857,24,Lisinopril,250mg,As needed,33,2025-01-15
+740,1190,914,72,Insulin,50mg,Three times daily,17,2025-01-29
+741,435,494,30,Insulin,5mg,Three times daily,10,2025-03-06
+742,1996,228,5,Metformin,500mg,Twice daily,60,2025-01-21
+743,737,999,37,Metoprolol,50mg,Twice daily,46,2025-03-18
+744,1472,187,28,Amlodipine,25mg,Once daily,58,2025-01-04
+745,1854,792,68,Atorvastatin,100mg,Twice daily,83,2024-11-25
+746,1121,565,75,Losartan,250mg,Twice daily,50,2025-04-28
+747,39,984,59,Amoxicillin,500mg,As needed,48,2025-05-05
+748,108,75,57,Albuterol,25mg,Three times daily,59,2025-06-22
+749,1859,393,40,Clopidogrel,50mg,Once daily,78,2024-01-30
+750,1446,106,71,Hydrochlorothiazide,20mg,As needed,88,2025-03-11
+751,1481,959,7,Warfarin,5mg,Once daily,26,2023-11-06
+752,885,426,37,Lisinopril,20mg,Once daily,18,2025-02-05
+753,1101,3,20,Warfarin,20mg,Once daily,36,2025-03-10
+754,1908,171,4,Sertraline,50mg,Once daily,14,2025-06-25
+755,1614,537,31,Metoprolol,10mg,Three times daily,20,2025-04-09
+756,1613,305,45,Furosemide,20mg,Three times daily,25,2024-09-15
+757,488,301,61,Sertraline,250mg,As needed,33,2025-01-20
+758,1138,975,30,Sertraline,100mg,Three times daily,81,2024-10-28
+759,653,883,16,Warfarin,20mg,Twice daily,46,2025-02-20
+760,1481,959,7,Furosemide,250mg,Three times daily,41,2024-03-11
+761,1415,973,63,Sertraline,50mg,Three times daily,51,2025-04-02
+762,239,285,30,Lisinopril,25mg,Three times daily,75,2024-12-28
+763,895,751,29,Losartan,10mg,Three times daily,13,2025-03-02
+764,293,166,10,Amoxicillin,250mg,As needed,87,2024-07-18
+765,1077,108,6,Omeprazole,250mg,Once daily,21,2025-03-23
+766,1662,795,75,Omeprazole,20mg,Once daily,70,2025-04-30
+767,1321,527,48,Losartan,10mg,Once daily,36,2025-03-07
+768,1512,663,53,Metformin,10mg,Once daily,24,2025-03-18
+769,102,947,1,Albuterol,20mg,Twice daily,11,2025-02-22
+770,415,514,1,Insulin,500mg,Twice daily,69,2024-11-12
+771,110,209,44,Acetaminophen,250mg,Three times daily,70,2024-10-05
+772,1212,680,5,Metoprolol,25mg,Once daily,85,2024-10-17
+773,1879,126,33,Atorvastatin,5mg,As needed,60,2025-03-22
+774,31,834,40,Atorvastatin,20mg,Twice daily,50,2024-12-18
+775,1239,516,34,Metoprolol,250mg,Once daily,47,2024-01-06
+776,231,188,40,Losartan,500mg,Twice daily,15,2025-03-25
+777,957,2,28,Prednisone,5mg,Once daily,47,2025-01-05
+778,984,285,41,Omeprazole,20mg,As needed,26,2023-11-11
+779,36,960,52,Sertraline,20mg,Once daily,75,2025-06-17
+780,1079,128,31,Amoxicillin,10mg,Three times daily,84,2024-10-17
+781,1667,497,17,Atorvastatin,500mg,Once daily,69,2025-04-13
+782,907,671,39,Amlodipine,10mg,As needed,45,2025-03-16
+783,494,150,59,Hydrochlorothiazide,10mg,Once daily,70,2024-12-02
+784,1300,389,43,Warfarin,5mg,Twice daily,65,2023-12-21
+785,1752,232,66,Gabapentin,250mg,Twice daily,11,2024-10-29
+786,1189,667,44,Metformin,500mg,Twice daily,29,2025-03-25
+787,1272,508,7,Levothyroxine,50mg,Twice daily,42,2025-05-26
+788,1527,749,80,Amoxicillin,100mg,Once daily,49,2025-06-02
+789,384,890,39,Albuterol,500mg,Twice daily,63,2023-06-20
+790,438,465,73,Metoprolol,500mg,Once daily,39,2025-02-13
+791,920,274,49,Warfarin,500mg,As needed,22,2023-11-14
+792,1667,497,17,Losartan,500mg,Three times daily,16,2025-02-04
+793,1378,208,68,Amoxicillin,250mg,Once daily,79,2023-10-13
+794,1608,528,52,Insulin,5mg,As needed,77,2023-10-08
+795,887,864,70,Gabapentin,250mg,Once daily,29,2024-10-24
+796,137,29,79,Furosemide,100mg,As needed,52,2025-04-15
+797,1490,887,11,Albuterol,50mg,Once daily,86,2025-06-28
+798,1653,769,29,Omeprazole,10mg,As needed,42,2024-08-17
+799,860,897,49,Acetaminophen,50mg,Twice daily,49,2024-10-05
+800,1317,735,47,Amoxicillin,20mg,Once daily,26,2024-01-04
+801,1139,750,18,Amoxicillin,25mg,Once daily,80,2024-10-30
+802,820,70,26,Acetaminophen,500mg,As needed,26,2025-04-23
+803,329,967,74,Gabapentin,25mg,Once daily,45,2024-11-08
+804,1674,397,55,Ibuprofen,250mg,As needed,8,2025-03-03
+805,1850,485,37,Ibuprofen,100mg,As needed,51,2024-07-16
+806,1779,687,63,Losartan,100mg,As needed,69,2024-06-03
+807,343,715,49,Levothyroxine,500mg,Twice daily,7,2025-04-30
+808,841,248,74,Sertraline,50mg,Once daily,66,2025-05-18
+809,1855,852,70,Amlodipine,50mg,As needed,16,2024-12-25
+810,659,749,49,Gabapentin,5mg,Three times daily,44,2025-03-30
+811,1203,948,16,Amlodipine,10mg,Twice daily,27,2024-06-01
+812,1390,223,69,Prednisone,100mg,Three times daily,44,2024-09-09
+813,576,118,27,Metformin,100mg,As needed,48,2025-04-24
+814,1322,385,3,Furosemide,100mg,Twice daily,29,2025-02-08
+815,1956,529,54,Omeprazole,100mg,As needed,79,2024-11-01
+816,976,993,65,Clopidogrel,20mg,Once daily,42,2025-04-16
+817,330,192,26,Omeprazole,20mg,As needed,88,2025-06-04
+818,945,183,66,Clopidogrel,50mg,As needed,47,2025-01-09
+819,1026,345,72,Clopidogrel,50mg,Three times daily,27,2025-04-11
+820,829,302,58,Gabapentin,20mg,Three times daily,24,2024-06-02
+821,1705,800,17,Gabapentin,100mg,Three times daily,15,2024-08-11
+822,1705,800,17,Levothyroxine,50mg,As needed,74,2025-06-05
+823,1463,215,43,Omeprazole,50mg,Twice daily,59,2024-07-14
+824,98,158,10,Amoxicillin,25mg,As needed,47,2025-04-25
+825,1006,144,16,Losartan,250mg,Twice daily,76,2023-08-08
+826,748,826,68,Insulin,20mg,As needed,20,2025-05-21
+827,850,544,6,Insulin,500mg,Three times daily,73,2025-03-15
+828,1805,191,25,Furosemide,100mg,As needed,37,2025-02-27
+829,268,517,19,Albuterol,25mg,Three times daily,38,2025-03-27
+830,1017,767,13,Sertraline,50mg,Once daily,56,2024-12-05
+831,1406,408,50,Sertraline,20mg,Once daily,10,2025-02-11
+832,1335,962,4,Acetaminophen,500mg,As needed,37,2025-04-11
+833,479,271,38,Albuterol,500mg,Twice daily,75,2024-11-27
+834,470,471,54,Acetaminophen,500mg,As needed,77,2025-04-26
+835,377,324,19,Hydrochlorothiazide,100mg,As needed,80,2025-06-25
+836,101,768,51,Acetaminophen,500mg,As needed,83,2025-01-29
+837,68,474,76,Furosemide,250mg,Once daily,24,2025-05-05
+838,1957,682,52,Hydrochlorothiazide,20mg,As needed,50,2023-06-21
+839,1792,321,69,Omeprazole,5mg,Once daily,62,2024-10-24
+840,1422,546,80,Metformin,250mg,Once daily,67,2024-03-06
+841,682,695,79,Levothyroxine,100mg,Three times daily,16,2024-05-12
+842,1126,835,22,Clopidogrel,100mg,As needed,59,2025-03-31
+843,837,327,19,Furosemide,20mg,Once daily,28,2025-02-19
+844,879,842,44,Acetaminophen,250mg,As needed,87,2025-01-13
+845,233,194,11,Ibuprofen,20mg,Three times daily,32,2025-01-02
+846,1411,726,69,Amoxicillin,5mg,Three times daily,11,2023-12-16
+847,1397,242,64,Sertraline,50mg,As needed,85,2024-02-27
+848,482,479,16,Amoxicillin,250mg,As needed,83,2025-04-18
+849,1682,907,56,Acetaminophen,500mg,Three times daily,46,2024-07-22
+850,872,758,61,Metformin,50mg,Once daily,61,2024-07-13
+851,1548,902,77,Furosemide,20mg,Three times daily,45,2024-02-01
+852,1434,720,35,Atorvastatin,20mg,Three times daily,52,2024-11-21
+853,774,829,12,Atorvastatin,20mg,Twice daily,20,2025-02-11
+854,338,542,9,Ibuprofen,25mg,As needed,59,2024-11-19
+855,400,37,27,Acetaminophen,20mg,Twice daily,88,2025-03-08
+856,840,580,23,Lisinopril,500mg,Three times daily,35,2024-04-07
+857,1852,262,41,Sertraline,50mg,Once daily,54,2024-09-21
+858,1109,25,24,Furosemide,5mg,Three times daily,73,2025-02-26
+859,659,749,49,Gabapentin,500mg,Once daily,22,2025-04-16
+860,1477,637,75,Ibuprofen,500mg,Twice daily,67,2024-07-26
+861,432,981,37,Metformin,50mg,Three times daily,19,2024-05-23
+862,597,651,3,Omeprazole,5mg,As needed,23,2024-05-01
+863,1147,725,71,Prednisone,5mg,Once daily,71,2025-04-23
+864,1056,334,24,Albuterol,100mg,Once daily,37,2025-04-08
+865,991,2,24,Sertraline,10mg,Three times daily,19,2025-04-22
+866,996,236,61,Insulin,20mg,As needed,85,2025-01-13
+867,1465,236,73,Furosemide,20mg,Twice daily,73,2025-03-27
+868,223,791,32,Clopidogrel,25mg,As needed,55,2025-04-04
+869,1600,762,41,Sertraline,250mg,Twice daily,31,2024-10-31
+870,1752,232,66,Omeprazole,100mg,Three times daily,41,2024-06-27
+871,123,740,75,Levothyroxine,20mg,As needed,73,2024-09-29
+872,969,257,22,Losartan,5mg,As needed,45,2025-03-20
+873,1637,898,37,Warfarin,25mg,Twice daily,42,2025-06-14
+874,970,125,20,Clopidogrel,25mg,Twice daily,70,2025-06-24
+875,420,128,73,Warfarin,500mg,Once daily,26,2023-08-20
+876,741,84,28,Ibuprofen,100mg,Twice daily,63,2024-09-25
+877,1554,112,50,Levothyroxine,100mg,Once daily,79,2024-09-14
+878,516,678,48,Gabapentin,100mg,Three times daily,60,2025-06-20
+879,213,740,9,Losartan,20mg,Three times daily,44,2025-01-05
+880,1781,415,25,Albuterol,50mg,Once daily,59,2024-01-29
+881,1479,453,26,Amoxicillin,20mg,Once daily,90,2025-03-23
+882,331,263,19,Prednisone,100mg,Once daily,47,2025-04-27
+883,938,381,16,Warfarin,5mg,Twice daily,71,2025-04-18
+884,1536,321,23,Sertraline,25mg,Twice daily,84,2024-07-15
+885,934,719,15,Lisinopril,250mg,Once daily,40,2024-04-25
+886,23,997,13,Gabapentin,250mg,Once daily,32,2024-02-02
+887,1191,997,63,Atorvastatin,10mg,Three times daily,14,2024-05-27
+888,684,1000,67,Omeprazole,10mg,Once daily,44,2025-02-20
+889,1634,889,12,Sertraline,20mg,Once daily,39,2024-10-12
+890,1612,91,23,Albuterol,10mg,As needed,85,2023-12-03
+891,668,28,17,Prednisone,5mg,Three times daily,40,2025-03-22
+892,418,693,26,Amoxicillin,100mg,Twice daily,12,2024-07-15
+893,778,803,32,Clopidogrel,20mg,Twice daily,45,2024-05-26
+894,1542,777,9,Ibuprofen,250mg,As needed,55,2024-02-07
+895,1204,213,66,Acetaminophen,20mg,Once daily,25,2024-11-01
+896,1349,212,25,Amoxicillin,10mg,Twice daily,50,2025-06-27
+897,1794,850,6,Warfarin,100mg,As needed,55,2024-07-29
+898,1362,260,37,Sertraline,250mg,Three times daily,44,2024-08-07
+899,340,831,11,Albuterol,100mg,Three times daily,38,2025-02-11
+900,1829,104,40,Prednisone,250mg,Three times daily,40,2023-04-05
+901,1485,268,55,Warfarin,100mg,Once daily,50,2024-11-01
+902,1554,112,50,Acetaminophen,250mg,Three times daily,27,2025-06-14
+903,1727,22,14,Lisinopril,5mg,Three times daily,57,2024-10-19
+904,1510,368,45,Warfarin,250mg,As needed,19,2025-06-13
+905,472,712,33,Insulin,5mg,Once daily,73,2025-03-08
+906,454,894,21,Insulin,25mg,Three times daily,11,2024-06-22
+907,1465,236,73,Warfarin,500mg,As needed,88,2025-03-12
+908,361,931,41,Sertraline,50mg,Twice daily,38,2024-07-11
+909,421,904,36,Atorvastatin,25mg,As needed,56,2023-11-06
+910,960,696,19,Gabapentin,25mg,Three times daily,75,2024-07-13
+911,743,467,54,Prednisone,500mg,Three times daily,51,2025-03-04
+912,400,37,27,Insulin,10mg,Three times daily,47,2025-03-31
+913,1404,41,43,Furosemide,250mg,Once daily,19,2024-02-24
+914,707,932,35,Furosemide,250mg,Twice daily,35,2024-12-22
+915,109,773,39,Atorvastatin,25mg,Once daily,36,2023-12-08
+916,1409,70,34,Amoxicillin,250mg,Twice daily,46,2025-02-17
+917,1195,614,30,Metoprolol,50mg,As needed,37,2025-02-01
+918,1533,543,26,Amlodipine,25mg,Three times daily,88,2025-04-04
+919,779,77,13,Atorvastatin,50mg,Once daily,69,2025-05-11
+920,1708,129,77,Amoxicillin,500mg,Twice daily,55,2025-05-03
+921,63,506,7,Furosemide,100mg,Three times daily,14,2024-05-30
+922,48,650,28,Acetaminophen,50mg,Once daily,90,2024-01-30
+923,1482,106,1,Lisinopril,50mg,Once daily,33,2025-05-28
+924,1424,166,11,Gabapentin,250mg,Once daily,47,2024-08-09
+925,382,726,64,Levothyroxine,50mg,Once daily,7,2024-09-24
+926,282,298,47,Hydrochlorothiazide,50mg,Twice daily,71,2024-10-11
+927,745,179,30,Acetaminophen,5mg,As needed,51,2025-06-22
+928,73,43,25,Clopidogrel,500mg,As needed,39,2023-11-20
+929,1599,52,12,Metoprolol,250mg,Three times daily,65,2025-06-15
+930,1280,529,19,Gabapentin,25mg,As needed,48,2025-01-16
+931,1427,712,26,Lisinopril,5mg,Three times daily,48,2025-06-07
+932,820,70,26,Prednisone,20mg,As needed,39,2025-02-12
+933,287,823,14,Sertraline,10mg,Twice daily,54,2024-09-16
+934,1772,691,77,Lisinopril,50mg,As needed,62,2023-11-12
+935,297,102,74,Amlodipine,20mg,As needed,89,2024-07-31
+936,954,485,48,Gabapentin,25mg,Once daily,9,2024-11-21
+937,1414,535,28,Lisinopril,20mg,Twice daily,49,2025-06-25
+938,606,315,68,Lisinopril,20mg,As needed,49,2024-12-21
+939,1287,737,72,Prednisone,250mg,Once daily,34,2025-02-21
+940,1838,344,57,Omeprazole,50mg,As needed,57,2024-10-22
+941,1071,233,14,Atorvastatin,500mg,Once daily,10,2025-03-15
+942,1954,920,46,Gabapentin,5mg,As needed,63,2025-03-04
+943,859,966,14,Losartan,50mg,As needed,16,2025-02-10
+944,1867,636,57,Ibuprofen,250mg,Twice daily,50,2023-09-30
+945,1000,912,47,Warfarin,250mg,Twice daily,25,2025-03-08
+946,1430,421,23,Albuterol,5mg,As needed,60,2024-12-19
+947,1833,909,45,Prednisone,100mg,Once daily,30,2023-07-27
+948,989,944,55,Ibuprofen,10mg,As needed,52,2025-05-28
+949,1102,251,27,Clopidogrel,100mg,Three times daily,23,2024-02-20
+950,140,432,21,Amlodipine,250mg,As needed,12,2025-05-19
+951,1146,395,69,Metformin,50mg,Twice daily,79,2024-08-20
+952,1583,791,51,Acetaminophen,500mg,Once daily,30,2024-02-23
+953,1291,431,49,Amlodipine,5mg,Once daily,22,2025-06-26
+954,897,343,60,Gabapentin,25mg,Twice daily,17,2025-05-10
+955,1836,968,10,Metformin,250mg,As needed,22,2025-05-04
+956,1165,280,55,Hydrochlorothiazide,50mg,Twice daily,22,2025-06-24
+957,173,284,50,Atorvastatin,5mg,As needed,53,2025-01-05
+958,1305,503,46,Warfarin,250mg,Twice daily,16,2025-03-11
+959,1639,350,74,Losartan,100mg,Three times daily,24,2025-02-12
+960,744,499,33,Metoprolol,5mg,As needed,90,2025-02-15
+961,397,425,41,Amoxicillin,10mg,Twice daily,87,2025-05-18
+962,1611,547,41,Losartan,250mg,Once daily,40,2024-11-17
+963,1962,967,69,Clopidogrel,10mg,Twice daily,65,2025-03-29
+964,1698,527,30,Clopidogrel,100mg,Three times daily,16,2024-10-04
+965,1607,908,28,Lisinopril,50mg,Twice daily,7,2024-10-23
+966,1770,51,78,Amlodipine,5mg,As needed,79,2024-06-07
+967,351,205,61,Acetaminophen,250mg,Three times daily,43,2023-09-28
+968,1373,962,26,Furosemide,100mg,As needed,88,2025-01-18
+969,572,986,62,Insulin,100mg,Three times daily,73,2024-11-25
+970,795,590,32,Levothyroxine,20mg,Once daily,32,2025-06-03
+971,664,531,31,Clopidogrel,20mg,Once daily,42,2024-07-10
+972,1607,908,28,Warfarin,100mg,Twice daily,11,2025-04-09
+973,832,54,7,Metformin,500mg,Twice daily,28,2025-02-23
+974,734,106,42,Clopidogrel,10mg,As needed,61,2025-01-10
+975,1976,821,24,Albuterol,20mg,Twice daily,86,2025-02-10
+976,497,141,5,Lisinopril,25mg,Twice daily,19,2025-03-21
+977,22,332,50,Amoxicillin,5mg,Once daily,7,2025-05-19
+978,4,744,21,Amlodipine,500mg,Once daily,50,2024-02-03
+979,1710,294,30,Albuterol,100mg,As needed,63,2025-03-29
+980,1110,411,44,Amlodipine,5mg,As needed,9,2024-11-17
+981,635,62,37,Metoprolol,250mg,As needed,66,2024-11-14
+982,146,670,63,Prednisone,10mg,Twice daily,45,2025-06-24
+983,1490,887,11,Lisinopril,5mg,Twice daily,89,2025-06-21
+984,1294,488,45,Clopidogrel,20mg,Twice daily,45,2024-04-29
+985,643,507,76,Losartan,20mg,Twice daily,39,2024-07-30
+986,1119,851,71,Losartan,500mg,As needed,15,2024-04-07
+987,1589,994,65,Sertraline,100mg,As needed,10,2024-10-03
+988,641,721,19,Warfarin,20mg,Three times daily,86,2024-07-27
+989,38,791,32,Warfarin,500mg,Twice daily,63,2024-09-18
+990,821,257,27,Amlodipine,50mg,Twice daily,25,2023-12-20
+991,978,141,56,Furosemide,50mg,As needed,17,2024-07-03
+992,228,192,67,Metformin,5mg,As needed,65,2024-12-26
+993,739,763,40,Metformin,500mg,As needed,47,2025-05-30
+994,739,763,40,Metformin,20mg,Twice daily,15,2025-04-20
+995,209,233,23,Metformin,100mg,Once daily,31,2024-11-11
+996,1348,689,45,Prednisone,50mg,Three times daily,49,2025-06-16
+997,219,780,33,Furosemide,500mg,Twice daily,42,2024-01-11
+998,1100,887,75,Prednisone,250mg,As needed,59,2024-06-30
+999,138,560,12,Insulin,5mg,Three times daily,57,2025-01-27
+1000,1772,691,77,Hydrochlorothiazide,500mg,As needed,80,2024-02-26
+1001,61,605,9,Ibuprofen,20mg,Three times daily,52,2025-02-01
+1002,79,56,74,Levothyroxine,500mg,Three times daily,90,2023-12-25
+1003,1315,16,65,Atorvastatin,50mg,Twice daily,58,2025-05-08
+1004,263,603,27,Prednisone,250mg,Three times daily,26,2024-08-02
+1005,767,166,48,Atorvastatin,5mg,As needed,72,2024-09-10
+1006,1459,799,57,Ibuprofen,500mg,Once daily,30,2024-11-12
+1007,784,766,10,Sertraline,50mg,Twice daily,18,2025-01-11
+1008,705,654,68,Losartan,20mg,As needed,22,2024-11-16
+1009,1162,850,12,Lisinopril,100mg,As needed,61,2025-05-02
+1010,708,990,56,Ibuprofen,5mg,Once daily,71,2024-09-14
+1011,198,12,51,Lisinopril,100mg,Twice daily,83,2024-12-13
+1012,115,685,70,Metoprolol,500mg,Three times daily,36,2024-10-21
+1013,1013,877,68,Amlodipine,500mg,Twice daily,64,2024-06-28
+1014,1305,503,46,Hydrochlorothiazide,10mg,Twice daily,53,2025-06-29
+1015,1970,460,60,Atorvastatin,5mg,Three times daily,8,2025-05-03
+1016,918,345,32,Atorvastatin,500mg,Three times daily,85,2024-12-12
+1017,1174,834,5,Prednisone,5mg,As needed,35,2025-04-03
+1018,102,947,1,Gabapentin,20mg,Twice daily,76,2025-01-14
+1019,727,327,45,Levothyroxine,50mg,As needed,24,2025-02-27
+1020,550,971,23,Clopidogrel,5mg,Three times daily,10,2025-05-22
+1021,1055,620,37,Albuterol,100mg,As needed,85,2025-06-04
+1022,1708,129,77,Insulin,10mg,As needed,23,2025-01-13
+1023,1005,346,59,Furosemide,10mg,Twice daily,13,2025-03-10
+1024,1605,41,79,Furosemide,100mg,Twice daily,39,2025-06-16
+1025,1009,231,31,Omeprazole,250mg,As needed,11,2025-01-23
+1026,1528,969,55,Insulin,250mg,As needed,8,2023-05-01
+1027,1981,649,28,Amoxicillin,10mg,Once daily,34,2024-12-08
+1028,125,712,2,Clopidogrel,100mg,Twice daily,67,2025-03-14
+1029,796,406,70,Levothyroxine,250mg,As needed,77,2025-05-10
+1030,315,415,40,Lisinopril,20mg,Once daily,9,2024-03-24
+1031,628,448,61,Amoxicillin,50mg,Once daily,24,2025-02-02
+1032,502,167,33,Acetaminophen,50mg,Three times daily,38,2024-04-23
+1033,168,893,24,Clopidogrel,50mg,Once daily,62,2025-01-18
+1034,499,810,60,Metformin,500mg,Three times daily,84,2024-04-29
+1035,138,560,12,Furosemide,5mg,As needed,50,2025-06-24
+1036,1121,565,75,Ibuprofen,25mg,Twice daily,59,2025-05-17
+1037,548,552,23,Amoxicillin,250mg,As needed,29,2025-06-22
+1038,1345,330,50,Omeprazole,5mg,Three times daily,56,2023-06-11
+1039,754,749,44,Metoprolol,250mg,Twice daily,86,2024-06-29
+1040,1229,673,10,Omeprazole,10mg,Twice daily,51,2023-11-18
+1041,495,380,46,Amlodipine,10mg,As needed,81,2024-12-25
+1042,641,721,19,Gabapentin,100mg,As needed,13,2024-11-10
+1043,1502,261,25,Acetaminophen,250mg,Once daily,36,2024-08-06
+1044,506,195,33,Amlodipine,50mg,Once daily,11,2024-09-27
+1045,1528,969,55,Albuterol,50mg,As needed,68,2025-05-31
+1046,775,207,66,Warfarin,20mg,Three times daily,83,2025-04-05
+1047,192,220,12,Hydrochlorothiazide,250mg,Three times daily,84,2025-04-27
+1048,407,921,13,Amlodipine,250mg,As needed,62,2025-02-11
+1049,1940,886,35,Albuterol,100mg,Twice daily,24,2025-01-31
+1050,1668,658,3,Metformin,50mg,As needed,82,2025-01-13
+1051,851,631,17,Insulin,500mg,Twice daily,68,2024-12-25
+1052,1021,683,59,Insulin,25mg,Twice daily,43,2024-10-13
+1053,1963,805,71,Furosemide,100mg,As needed,25,2024-09-27
+1054,1246,203,69,Albuterol,5mg,As needed,52,2024-09-11
+1055,1458,154,67,Amoxicillin,20mg,Once daily,69,2024-11-25
+1056,319,39,40,Acetaminophen,250mg,As needed,51,2024-02-25
+1057,415,514,1,Gabapentin,25mg,As needed,23,2025-05-26
+1058,1362,260,37,Hydrochlorothiazide,500mg,Once daily,64,2025-05-07
+1059,719,624,13,Metoprolol,50mg,Twice daily,32,2024-07-21
+1060,1350,970,34,Lisinopril,100mg,Twice daily,83,2025-03-02
+1061,858,189,44,Amlodipine,10mg,Twice daily,11,2024-01-11
+1062,664,531,31,Clopidogrel,10mg,Three times daily,50,2024-10-07
+1063,1730,222,57,Metoprolol,5mg,Once daily,28,2024-12-22
+1064,894,132,24,Clopidogrel,100mg,As needed,63,2024-09-02
+1065,732,593,55,Metformin,500mg,As needed,38,2025-06-28
+1066,1176,10,61,Metformin,25mg,As needed,72,2025-04-30
+1067,1694,302,55,Prednisone,20mg,As needed,71,2025-06-22
+1068,283,577,47,Metoprolol,25mg,Twice daily,15,2025-05-22
+1069,982,198,36,Amoxicillin,250mg,As needed,28,2025-05-01
+1070,582,166,46,Atorvastatin,500mg,Three times daily,88,2024-02-16
+1071,339,746,24,Insulin,25mg,Once daily,26,2024-07-16
+1072,1909,630,49,Acetaminophen,250mg,Twice daily,27,2024-12-26
+1073,389,359,28,Albuterol,250mg,Twice daily,57,2025-01-12
+1074,1703,49,5,Amlodipine,100mg,Three times daily,45,2024-05-09
+1075,28,529,2,Levothyroxine,500mg,As needed,79,2025-04-19
+1076,1265,649,31,Amlodipine,10mg,As needed,30,2023-11-10
+1077,546,803,57,Amoxicillin,25mg,Three times daily,83,2024-09-10
+1078,672,63,65,Metformin,5mg,As needed,18,2023-05-18
+1079,358,946,72,Hydrochlorothiazide,100mg,Once daily,25,2024-07-12
+1080,535,366,17,Levothyroxine,100mg,As needed,46,2025-03-24
+1081,1998,280,78,Metformin,5mg,Three times daily,12,2024-07-15
+1082,1569,241,79,Metformin,20mg,Once daily,28,2023-12-03
+1083,1532,152,69,Hydrochlorothiazide,20mg,Three times daily,34,2024-02-02
+1084,1986,766,18,Insulin,20mg,As needed,28,2023-07-09
+1085,970,125,20,Metoprolol,50mg,Once daily,78,2025-04-04
+1086,512,396,10,Losartan,10mg,Twice daily,33,2025-04-16
+1087,1739,544,7,Clopidogrel,50mg,Once daily,54,2024-09-29
+1088,261,140,54,Amlodipine,10mg,Three times daily,77,2025-04-02
+1089,687,539,25,Clopidogrel,250mg,Once daily,15,2025-06-11
+1090,1656,902,64,Acetaminophen,25mg,Three times daily,68,2024-10-15
+1091,1235,766,77,Sertraline,25mg,Three times daily,62,2025-02-20
+1092,252,435,70,Insulin,5mg,As needed,21,2025-06-22
+1093,1371,834,51,Prednisone,25mg,Twice daily,12,2025-01-17
+1094,1513,578,72,Omeprazole,5mg,As needed,69,2024-05-04
+1095,1183,295,58,Prednisone,100mg,Three times daily,15,2024-04-25
+1096,1443,751,56,Metoprolol,25mg,Once daily,31,2025-03-09
+1097,1928,395,14,Amoxicillin,5mg,As needed,55,2024-09-10
+1098,1574,135,41,Gabapentin,100mg,Three times daily,48,2024-11-17
+1099,917,711,67,Omeprazole,5mg,Once daily,19,2024-12-17
+1100,67,311,8,Hydrochlorothiazide,20mg,Three times daily,43,2024-03-03
+1101,935,157,26,Ibuprofen,50mg,As needed,78,2025-02-03
+1102,260,789,73,Ibuprofen,20mg,Once daily,15,2025-06-02
+1103,654,781,47,Hydrochlorothiazide,250mg,Three times daily,58,2025-01-18
+1104,517,633,37,Furosemide,100mg,Three times daily,73,2024-09-23
+1105,680,881,43,Clopidogrel,25mg,As needed,72,2025-03-18
+1106,1732,974,58,Clopidogrel,5mg,As needed,44,2024-12-27
+1107,1107,385,51,Hydrochlorothiazide,5mg,Once daily,85,2024-09-10
+1108,771,888,32,Prednisone,10mg,Twice daily,13,2024-05-16
+1109,237,43,17,Ibuprofen,10mg,Three times daily,24,2024-06-30
+1110,1391,245,40,Amoxicillin,250mg,Three times daily,35,2024-12-24
+1111,283,577,47,Warfarin,50mg,Three times daily,13,2025-06-11
+1112,1287,737,72,Omeprazole,25mg,Three times daily,8,2025-03-03
+1113,500,747,73,Losartan,20mg,Three times daily,29,2025-03-19
+1114,679,678,16,Gabapentin,250mg,Once daily,87,2024-02-10
+1115,1574,135,41,Acetaminophen,500mg,Three times daily,34,2025-02-16
+1116,1283,380,36,Losartan,100mg,Once daily,70,2023-05-30
+1117,1139,750,18,Ibuprofen,100mg,Three times daily,44,2025-04-06
+1118,406,941,64,Metformin,50mg,Twice daily,25,2023-10-22
+1119,1737,422,38,Hydrochlorothiazide,250mg,As needed,86,2025-04-25
+1120,1265,649,31,Furosemide,100mg,Once daily,20,2024-03-07
+1121,211,517,75,Amlodipine,25mg,Once daily,54,2025-05-03
+1122,1105,458,27,Prednisone,25mg,Once daily,52,2025-05-28
+1123,87,176,74,Metformin,5mg,Three times daily,40,2024-11-03
+1124,751,985,26,Acetaminophen,500mg,Twice daily,47,2025-05-10
+1125,232,738,64,Acetaminophen,20mg,As needed,18,2023-09-11
+1126,728,469,11,Clopidogrel,500mg,Twice daily,87,2025-06-02
+1127,1571,672,73,Amoxicillin,5mg,Three times daily,18,2024-08-29
+1128,1800,184,66,Metformin,10mg,As needed,53,2025-03-01
+1129,1587,415,35,Amlodipine,250mg,Once daily,54,2024-08-01
+1130,1583,791,51,Acetaminophen,100mg,Once daily,61,2024-02-26
+1131,16,334,63,Losartan,100mg,Twice daily,87,2024-07-10
+1132,1570,675,61,Warfarin,20mg,Three times daily,77,2025-04-30
+1133,367,829,63,Warfarin,5mg,Once daily,59,2025-02-22
+1134,961,846,58,Omeprazole,10mg,Three times daily,61,2024-08-16
+1135,371,811,26,Warfarin,500mg,Once daily,70,2023-03-24
+1136,1339,503,62,Metoprolol,25mg,As needed,81,2024-11-03
+1137,415,514,1,Clopidogrel,50mg,Three times daily,73,2025-02-19
+1138,974,857,24,Warfarin,10mg,Three times daily,63,2025-02-19
+1139,557,786,49,Furosemide,20mg,Twice daily,82,2025-05-30
+1140,260,789,73,Ibuprofen,250mg,Once daily,19,2025-04-13
+1141,1594,423,34,Prednisone,5mg,Once daily,77,2025-02-14
+1142,1420,732,11,Metoprolol,20mg,As needed,59,2025-05-03
+1143,425,443,46,Levothyroxine,25mg,Twice daily,58,2024-09-28
+1144,1238,913,79,Insulin,100mg,Once daily,30,2025-01-04
+1145,806,184,45,Prednisone,50mg,Three times daily,20,2024-04-29
+1146,1873,702,3,Albuterol,25mg,Three times daily,87,2024-11-27
+1147,257,875,38,Albuterol,25mg,Once daily,11,2024-05-29
+1148,485,52,53,Ibuprofen,10mg,Once daily,59,2024-12-25
+1149,994,785,75,Losartan,25mg,As needed,10,2025-06-13
+1150,492,341,63,Furosemide,100mg,Three times daily,11,2024-07-06
+1151,1597,31,41,Insulin,25mg,Twice daily,66,2025-04-10
+1152,332,475,50,Hydrochlorothiazide,10mg,Three times daily,89,2023-06-24
+1153,1758,778,15,Sertraline,5mg,As needed,40,2024-11-25
+1154,1794,850,6,Losartan,20mg,As needed,78,2024-07-26
+1155,896,708,68,Lisinopril,250mg,As needed,59,2023-09-25
+1156,700,334,42,Clopidogrel,25mg,Twice daily,48,2025-05-13
+1157,1566,687,68,Omeprazole,50mg,Once daily,39,2024-10-09
+1158,490,640,80,Atorvastatin,5mg,Twice daily,18,2023-08-22
+1159,1865,137,19,Levothyroxine,100mg,Twice daily,18,2025-06-13
+1160,518,100,50,Levothyroxine,250mg,Three times daily,54,2025-04-10
+1161,465,692,49,Levothyroxine,500mg,Twice daily,78,2024-10-11
+1162,777,139,29,Lisinopril,100mg,As needed,15,2025-06-29
+1163,799,957,20,Furosemide,100mg,Twice daily,89,2025-02-12
+1164,1300,389,43,Furosemide,50mg,As needed,83,2023-12-07
+1165,1902,560,6,Hydrochlorothiazide,25mg,Three times daily,30,2024-05-05
+1166,579,68,39,Hydrochlorothiazide,25mg,Once daily,41,2024-01-15
+1167,1540,155,19,Losartan,250mg,Twice daily,80,2025-01-24
+1168,1416,431,26,Ibuprofen,250mg,Once daily,78,2023-12-07
+1169,433,916,8,Insulin,500mg,Twice daily,33,2024-01-02
+1170,1154,331,60,Ibuprofen,5mg,Once daily,75,2025-02-15
+1171,191,623,80,Clopidogrel,25mg,As needed,46,2023-06-16
+1172,1930,986,44,Amlodipine,10mg,Three times daily,8,2025-06-27
+1173,1983,821,16,Albuterol,5mg,Twice daily,14,2025-04-12
+1174,1824,912,71,Lisinopril,250mg,As needed,90,2025-02-04
+1175,57,824,4,Losartan,20mg,As needed,69,2025-05-03
+1176,25,322,7,Sertraline,100mg,Once daily,33,2023-07-22
+1177,477,95,47,Furosemide,250mg,As needed,68,2025-05-28
+1178,1269,836,47,Metoprolol,5mg,Once daily,63,2024-09-03
+1179,12,998,71,Albuterol,100mg,Twice daily,77,2025-05-29
+1180,1207,490,50,Losartan,10mg,As needed,53,2024-05-19
+1181,890,638,28,Acetaminophen,25mg,As needed,52,2025-04-30
+1182,1832,494,35,Prednisone,5mg,Three times daily,47,2025-01-17
+1183,1871,814,26,Clopidogrel,250mg,Once daily,35,2025-02-22
+1184,1577,377,37,Albuterol,500mg,Twice daily,51,2024-02-29
+1185,353,852,25,Ibuprofen,100mg,Twice daily,51,2025-05-02
+1186,1116,355,77,Insulin,10mg,Three times daily,89,2024-04-23
+1187,162,809,2,Metformin,500mg,Three times daily,35,2024-11-02
+1188,1141,449,27,Acetaminophen,100mg,Three times daily,71,2023-12-09
+1189,1250,458,74,Sertraline,250mg,Twice daily,65,2025-04-13
+1190,1836,968,10,Acetaminophen,50mg,Three times daily,53,2025-04-21
+1191,665,907,48,Atorvastatin,500mg,Three times daily,66,2024-09-15
+1192,1392,570,23,Atorvastatin,100mg,Once daily,84,2024-07-12
+1193,152,648,53,Clopidogrel,20mg,Once daily,57,2025-01-06
+1194,1178,247,66,Insulin,5mg,As needed,21,2024-09-07
+1195,1674,397,55,Insulin,5mg,Once daily,30,2025-01-19
+1196,1353,367,56,Hydrochlorothiazide,25mg,Once daily,33,2024-02-28
+1197,1312,967,59,Amlodipine,500mg,Twice daily,65,2024-10-01
+1198,1206,902,37,Amlodipine,20mg,Twice daily,57,2025-06-12
+1199,442,408,41,Acetaminophen,25mg,As needed,88,2024-07-09
+1200,633,461,35,Acetaminophen,100mg,As needed,46,2024-12-12
+1201,969,257,22,Furosemide,50mg,Twice daily,29,2023-12-30
+1202,211,517,75,Losartan,10mg,Three times daily,21,2024-12-08
+1203,429,64,53,Furosemide,25mg,Three times daily,82,2023-12-23
+1204,1887,643,44,Amlodipine,25mg,As needed,37,2025-02-28
+1205,508,27,9,Metoprolol,25mg,Once daily,70,2025-03-28
+1206,748,826,68,Amoxicillin,20mg,Three times daily,75,2025-01-02
+1207,119,194,73,Amlodipine,100mg,Three times daily,54,2025-06-19
+1208,1041,906,56,Gabapentin,10mg,Twice daily,66,2024-10-21
+1209,895,751,29,Hydrochlorothiazide,50mg,As needed,43,2025-03-10
+1210,704,535,69,Furosemide,10mg,As needed,76,2024-04-07
+1211,115,685,70,Hydrochlorothiazide,50mg,Twice daily,61,2023-10-29
+1212,23,997,13,Acetaminophen,5mg,Once daily,85,2023-11-03
+1213,1371,834,51,Amlodipine,25mg,As needed,35,2023-10-15
+1214,26,157,26,Amoxicillin,100mg,Once daily,28,2024-10-13
+1215,1010,862,17,Insulin,100mg,Twice daily,69,2024-09-22
+1216,1646,128,44,Gabapentin,20mg,Three times daily,15,2023-07-05
+1217,210,710,61,Furosemide,10mg,Once daily,89,2025-03-22
+1218,221,397,76,Metoprolol,25mg,As needed,88,2024-10-18
+1219,841,248,74,Losartan,50mg,Once daily,62,2024-03-12
+1220,1542,777,9,Amlodipine,500mg,As needed,21,2025-06-01
+1221,356,127,68,Amlodipine,50mg,Three times daily,84,2025-05-25
+1222,108,75,57,Gabapentin,25mg,Three times daily,42,2025-01-18
+1223,578,479,9,Atorvastatin,250mg,Twice daily,23,2024-08-17
+1224,1573,448,14,Metoprolol,50mg,As needed,55,2025-05-03
+1225,1111,577,54,Clopidogrel,50mg,Three times daily,49,2024-12-31
+1226,189,2,37,Prednisone,250mg,Twice daily,85,2025-02-18
+1227,792,590,49,Losartan,20mg,As needed,51,2024-11-28
+1228,443,595,60,Insulin,5mg,Once daily,84,2025-04-27
+1229,874,578,17,Hydrochlorothiazide,250mg,Once daily,15,2024-03-23
+1230,1774,970,52,Acetaminophen,500mg,Once daily,23,2023-05-05
+1231,1986,766,18,Sertraline,10mg,As needed,58,2023-10-23
+1232,1506,977,5,Acetaminophen,100mg,Twice daily,84,2025-03-15
+1233,1455,439,21,Prednisone,50mg,Three times daily,55,2025-04-28
+1234,1399,561,78,Warfarin,5mg,As needed,66,2025-03-27
+1235,474,941,10,Albuterol,20mg,Once daily,19,2024-03-23
+1236,942,565,32,Atorvastatin,50mg,Three times daily,13,2025-05-11
+1237,401,995,74,Albuterol,5mg,Twice daily,85,2023-09-27
+1238,231,188,40,Albuterol,100mg,Twice daily,71,2024-10-27
+1239,182,34,63,Acetaminophen,250mg,As needed,37,2024-04-07
+1240,1735,154,53,Amlodipine,250mg,Once daily,77,2025-05-03
+1241,1018,785,14,Metformin,100mg,As needed,20,2024-12-26
+1242,371,811,26,Clopidogrel,100mg,As needed,39,2025-05-14
+1243,1708,129,77,Furosemide,5mg,Once daily,8,2025-03-25
+1244,168,893,24,Sertraline,250mg,Three times daily,23,2025-06-26
+1245,1865,137,19,Gabapentin,5mg,As needed,8,2023-03-13
+1246,1615,461,17,Acetaminophen,5mg,Once daily,8,2023-08-06
+1247,1299,30,20,Lisinopril,10mg,Three times daily,38,2024-03-09
+1248,1639,350,74,Sertraline,25mg,Three times daily,18,2024-12-04
+1249,443,595,60,Levothyroxine,20mg,Twice daily,80,2024-08-24
+1250,1243,498,25,Amlodipine,250mg,Twice daily,90,2024-04-26
+1251,1926,520,7,Furosemide,100mg,As needed,58,2024-10-28
+1252,1489,366,50,Metoprolol,50mg,Twice daily,72,2025-06-09
+1253,1692,182,66,Metoprolol,25mg,Once daily,34,2024-05-21
+1254,604,210,32,Furosemide,250mg,Three times daily,23,2023-09-15
+1255,774,829,12,Albuterol,25mg,Twice daily,20,2024-03-10
+1256,1816,617,79,Metformin,500mg,Twice daily,34,2025-01-30
+1257,1647,207,57,Prednisone,5mg,Three times daily,17,2025-04-18
+1258,265,567,74,Hydrochlorothiazide,250mg,Once daily,47,2025-03-17
+1259,1190,914,72,Acetaminophen,500mg,As needed,90,2024-07-30
+1260,1427,712,26,Atorvastatin,20mg,Twice daily,25,2025-04-12
+1261,752,947,66,Hydrochlorothiazide,500mg,Twice daily,79,2024-10-27
+1262,980,134,31,Metformin,25mg,Three times daily,34,2025-06-09
+1263,230,245,62,Hydrochlorothiazide,10mg,As needed,77,2025-04-26
+1264,1448,609,4,Levothyroxine,500mg,As needed,57,2025-05-15
+1265,1963,805,71,Insulin,20mg,Three times daily,82,2024-06-10
+1266,1874,57,18,Hydrochlorothiazide,5mg,Twice daily,33,2025-02-28
+1267,216,45,32,Sertraline,50mg,As needed,19,2023-10-21
+1268,208,961,66,Ibuprofen,500mg,Three times daily,27,2025-01-23
+1269,804,857,32,Amoxicillin,100mg,Twice daily,42,2023-09-09
+1270,560,353,27,Metoprolol,25mg,Twice daily,72,2025-06-04
+1271,162,809,2,Acetaminophen,500mg,Twice daily,24,2024-12-28
+1272,825,781,80,Losartan,50mg,Once daily,89,2025-05-06
+1273,1722,898,39,Warfarin,500mg,Three times daily,73,2025-03-15
+1274,1629,679,32,Metformin,100mg,Three times daily,42,2025-03-17
+1275,1210,341,66,Prednisone,100mg,Three times daily,50,2024-11-19
+1276,1928,395,14,Lisinopril,500mg,Three times daily,82,2024-08-26
+1277,1594,423,34,Prednisone,500mg,Three times daily,78,2024-05-04
+1278,1256,14,55,Atorvastatin,10mg,Once daily,54,2025-02-03
+1279,1941,355,9,Omeprazole,10mg,Three times daily,42,2025-06-18
+1280,1668,658,3,Acetaminophen,10mg,Once daily,40,2025-06-03
+1281,38,791,32,Sertraline,25mg,Three times daily,69,2024-06-26
+1282,1151,802,6,Metoprolol,500mg,Three times daily,63,2023-10-11
+1283,795,590,32,Omeprazole,50mg,As needed,75,2025-06-14
+1284,201,82,56,Hydrochlorothiazide,100mg,Three times daily,74,2024-12-05
+1285,1866,628,38,Metoprolol,20mg,Three times daily,11,2023-11-24
+1286,681,714,51,Acetaminophen,20mg,As needed,61,2024-07-08
+1287,122,605,7,Amlodipine,500mg,As needed,79,2024-07-21
+1288,1193,962,79,Atorvastatin,100mg,Once daily,45,2025-01-01
+1289,1235,766,77,Metoprolol,25mg,Three times daily,79,2024-10-24
+1290,1806,310,51,Ibuprofen,100mg,As needed,90,2025-01-15
+1291,880,406,74,Hydrochlorothiazide,500mg,Once daily,61,2025-04-22
+1292,1770,51,78,Omeprazole,20mg,Twice daily,11,2023-10-12
+1293,362,202,16,Metoprolol,25mg,Twice daily,70,2024-06-28
+1294,890,638,28,Amoxicillin,250mg,Once daily,45,2025-04-20
+1295,1960,408,13,Clopidogrel,50mg,Once daily,56,2025-06-29
+1296,1472,187,28,Metformin,50mg,Once daily,52,2023-03-20
+1297,27,39,76,Amoxicillin,250mg,Twice daily,38,2023-05-31
+1298,1164,145,3,Metformin,10mg,Twice daily,31,2025-06-03
+1299,483,785,78,Insulin,10mg,Once daily,48,2025-04-23
+1300,268,517,19,Acetaminophen,250mg,Once daily,37,2024-12-20
+1301,762,805,79,Lisinopril,25mg,As needed,88,2024-03-17
+1302,415,514,1,Gabapentin,500mg,Three times daily,79,2025-03-31
+1303,949,846,56,Metoprolol,50mg,Once daily,90,2024-05-19
+1304,1372,508,6,Amoxicillin,250mg,Three times daily,58,2024-09-19
+1305,404,635,61,Albuterol,500mg,As needed,13,2025-05-29
+1306,902,464,11,Gabapentin,500mg,Twice daily,40,2024-11-09
+1307,1110,411,44,Metformin,50mg,As needed,65,2023-07-24
+1308,1663,357,58,Clopidogrel,100mg,Three times daily,26,2025-03-05
+1309,580,344,74,Insulin,500mg,Once daily,25,2025-02-20
+1310,1662,795,75,Amoxicillin,50mg,Three times daily,11,2024-11-16
+1311,1740,898,51,Prednisone,5mg,Three times daily,44,2025-01-19
+1312,1613,305,45,Acetaminophen,5mg,Twice daily,31,2024-04-30
+1313,116,380,60,Levothyroxine,5mg,Three times daily,68,2024-05-22
+1314,101,768,51,Losartan,250mg,Three times daily,20,2025-05-17
+1315,497,141,5,Ibuprofen,50mg,As needed,60,2024-10-09
+1316,269,754,47,Omeprazole,500mg,As needed,37,2024-05-30
+1317,105,347,33,Acetaminophen,10mg,Three times daily,65,2025-04-05
+1318,1041,906,56,Acetaminophen,5mg,Twice daily,69,2024-07-24
+1319,890,638,28,Losartan,20mg,Three times daily,39,2025-05-12
+1320,286,44,59,Gabapentin,50mg,Twice daily,76,2025-02-08
+1321,635,62,37,Clopidogrel,25mg,As needed,7,2024-09-08
+1322,369,608,66,Ibuprofen,25mg,Twice daily,63,2025-03-12
+1323,1880,258,79,Clopidogrel,10mg,Twice daily,40,2025-04-14
+1324,1682,907,56,Metformin,10mg,Twice daily,70,2024-05-28
+1325,7,718,1,Clopidogrel,25mg,As needed,12,2024-01-08
+1326,873,638,60,Gabapentin,25mg,Once daily,17,2023-10-26
+1327,1682,907,56,Clopidogrel,20mg,As needed,44,2024-05-11
+1328,930,939,31,Levothyroxine,20mg,Three times daily,17,2024-06-05
+1329,74,604,15,Ibuprofen,100mg,As needed,52,2025-03-12
+1330,120,11,18,Clopidogrel,50mg,As needed,57,2025-04-07
+1331,1245,14,72,Lisinopril,5mg,Twice daily,20,2024-09-10
+1332,1610,730,23,Atorvastatin,20mg,As needed,15,2023-10-02
+1333,1435,314,52,Warfarin,25mg,Three times daily,26,2024-12-03
+1334,1311,373,37,Acetaminophen,500mg,Twice daily,41,2025-04-21
+1335,760,482,11,Furosemide,25mg,Once daily,31,2025-04-07
+1336,189,2,37,Furosemide,50mg,Three times daily,39,2023-11-08
+1337,1303,880,21,Amlodipine,250mg,Three times daily,40,2025-03-01
+1338,1598,189,78,Lisinopril,20mg,Twice daily,85,2024-06-21
+1339,274,871,14,Metformin,5mg,Once daily,88,2025-05-09
+1340,321,390,33,Ibuprofen,250mg,Three times daily,66,2024-08-18
+1341,360,647,66,Levothyroxine,500mg,Once daily,49,2025-01-09
+1342,620,680,34,Acetaminophen,100mg,As needed,79,2024-11-07
+1343,1512,663,53,Metformin,25mg,Once daily,73,2025-04-14
+1344,1312,967,59,Metoprolol,50mg,Once daily,42,2025-06-28
+1345,1339,503,62,Furosemide,20mg,Three times daily,74,2025-06-11
+1346,1036,799,14,Metoprolol,250mg,As needed,70,2024-04-27
+1347,357,212,44,Losartan,20mg,Three times daily,52,2024-11-29
+1348,957,2,28,Gabapentin,500mg,Three times daily,81,2024-05-20
+1349,1255,685,29,Prednisone,50mg,Once daily,52,2025-05-30
+1350,1153,875,62,Atorvastatin,50mg,As needed,75,2023-09-17
+1351,703,226,27,Amlodipine,10mg,Twice daily,71,2025-06-22
+1352,813,421,33,Furosemide,50mg,As needed,89,2024-06-28
+1353,1765,414,40,Amoxicillin,100mg,Twice daily,75,2025-03-02
+1354,1038,145,51,Hydrochlorothiazide,5mg,Three times daily,15,2025-01-21
+1355,1719,221,73,Hydrochlorothiazide,100mg,As needed,34,2025-04-15
+1356,1178,247,66,Furosemide,10mg,Once daily,18,2025-05-24
+1357,1833,909,45,Ibuprofen,5mg,As needed,19,2023-12-07
+1358,1368,589,46,Warfarin,100mg,Twice daily,9,2025-01-08
+1359,923,465,29,Prednisone,20mg,Twice daily,80,2025-06-07
+1360,710,724,21,Prednisone,250mg,Twice daily,30,2023-11-25
+1361,644,837,62,Acetaminophen,25mg,Three times daily,62,2024-07-21
+1362,188,2,24,Levothyroxine,10mg,Twice daily,36,2025-06-15
+1363,304,551,52,Ibuprofen,50mg,Twice daily,57,2025-03-26
+1364,895,751,29,Lisinopril,50mg,Twice daily,36,2024-05-29
+1365,568,50,40,Losartan,50mg,Once daily,80,2024-02-13
+1366,531,407,14,Hydrochlorothiazide,10mg,Three times daily,59,2024-10-11
+1367,1422,546,80,Warfarin,50mg,Twice daily,72,2024-09-26
+1368,145,521,69,Lisinopril,100mg,Three times daily,46,2023-12-21
+1369,1127,297,27,Prednisone,250mg,As needed,42,2025-06-21
+1370,733,399,23,Levothyroxine,5mg,Twice daily,66,2024-01-29
+1371,1677,502,48,Omeprazole,50mg,Three times daily,57,2025-01-04
+1372,319,39,40,Hydrochlorothiazide,20mg,As needed,38,2025-06-03
+1373,619,159,49,Clopidogrel,500mg,Once daily,48,2025-03-12
+1374,1421,484,59,Atorvastatin,25mg,Three times daily,48,2024-11-22
+1375,1044,230,53,Lisinopril,500mg,As needed,17,2025-04-23
+1376,1008,918,10,Clopidogrel,250mg,Once daily,14,2023-11-25
+1377,286,44,59,Hydrochlorothiazide,20mg,Twice daily,25,2025-04-23
+1378,837,327,19,Gabapentin,500mg,As needed,46,2025-05-28
+1379,308,301,25,Sertraline,250mg,Three times daily,86,2025-06-13
+1380,859,966,14,Sertraline,100mg,As needed,13,2024-07-27
+1381,143,854,67,Hydrochlorothiazide,100mg,Once daily,54,2025-02-25
+1382,862,222,75,Lisinopril,5mg,As needed,82,2024-05-26
+1383,895,751,29,Ibuprofen,250mg,Three times daily,63,2025-06-29
+1384,330,192,26,Levothyroxine,100mg,Once daily,31,2025-01-20
+1385,531,407,14,Levothyroxine,10mg,As needed,75,2024-10-03
+1386,405,29,53,Insulin,20mg,Once daily,72,2025-03-24
+1387,199,668,16,Gabapentin,10mg,As needed,73,2024-11-21
+1388,1984,362,28,Acetaminophen,25mg,As needed,62,2023-12-14
+1389,1538,518,13,Amoxicillin,500mg,Twice daily,37,2024-07-25
+1390,434,232,28,Amlodipine,500mg,Twice daily,16,2024-09-10
+1391,150,688,73,Atorvastatin,5mg,As needed,64,2025-03-12
+1392,165,271,36,Losartan,10mg,Once daily,15,2024-08-14
+1393,1948,283,54,Gabapentin,20mg,Three times daily,74,2025-03-21
+1394,521,362,79,Amoxicillin,5mg,Twice daily,87,2025-02-01
+1395,1031,837,28,Omeprazole,50mg,Three times daily,27,2024-02-22
+1396,467,518,49,Amoxicillin,250mg,Once daily,89,2023-11-04
+1397,1875,387,5,Hydrochlorothiazide,100mg,Three times daily,54,2025-06-26
+1398,409,377,73,Furosemide,50mg,As needed,83,2025-05-29
+1399,1182,700,42,Losartan,5mg,Three times daily,61,2024-10-02
+1400,1046,466,74,Omeprazole,10mg,As needed,73,2023-11-05
+1401,1644,770,56,Insulin,10mg,Three times daily,55,2024-09-30
+1402,1697,213,9,Insulin,10mg,Once daily,15,2024-08-25
+1403,1532,152,69,Prednisone,20mg,Twice daily,25,2025-02-18
+1404,977,242,71,Albuterol,500mg,Twice daily,62,2025-01-29
+1405,596,489,43,Losartan,250mg,As needed,48,2025-01-28
+1406,1750,948,24,Metoprolol,20mg,Three times daily,11,2024-08-04
+1407,858,189,44,Insulin,50mg,Three times daily,54,2024-12-04
+1408,510,328,77,Gabapentin,50mg,Three times daily,28,2025-01-22
+1409,1786,963,63,Albuterol,250mg,As needed,22,2024-12-24
+1410,54,642,18,Amlodipine,25mg,As needed,57,2024-10-03
+1411,1696,879,46,Ibuprofen,5mg,As needed,71,2024-09-19
+1412,1479,453,26,Levothyroxine,5mg,Once daily,39,2025-06-03
+1413,1012,1,25,Lisinopril,250mg,Twice daily,84,2023-09-26
+1414,448,359,38,Omeprazole,5mg,Twice daily,64,2024-11-18
+1415,1400,891,66,Albuterol,100mg,Twice daily,86,2024-11-23
+1416,1053,900,76,Omeprazole,50mg,As needed,58,2024-11-28
+1417,1152,240,27,Furosemide,20mg,Twice daily,81,2024-10-05
+1418,1019,337,48,Gabapentin,10mg,Twice daily,51,2024-10-17
+1419,739,763,40,Gabapentin,25mg,Three times daily,72,2024-11-12
+1420,9,352,15,Levothyroxine,10mg,Once daily,85,2023-08-08
+1421,1252,930,67,Prednisone,10mg,Twice daily,73,2025-06-25
+1422,1559,362,32,Lisinopril,50mg,Three times daily,52,2024-05-28
+1423,1717,198,23,Furosemide,20mg,Twice daily,53,2023-11-10
+1424,1408,14,22,Furosemide,5mg,Three times daily,46,2024-07-26
+1425,1680,733,6,Metoprolol,100mg,Twice daily,88,2025-06-11
+1426,348,580,69,Warfarin,50mg,As needed,88,2025-04-18
+1427,512,396,10,Levothyroxine,50mg,As needed,42,2024-10-19
+1428,1939,630,14,Insulin,20mg,Three times daily,52,2025-04-15
+1429,705,654,68,Metformin,500mg,Once daily,48,2025-05-25
+1430,991,2,24,Clopidogrel,20mg,Once daily,28,2024-11-21
+1431,212,180,64,Acetaminophen,100mg,Twice daily,65,2025-06-14
+1432,483,785,78,Amoxicillin,10mg,Once daily,80,2024-09-17
+1433,1906,508,13,Amoxicillin,10mg,Three times daily,80,2024-07-28
+1434,1153,875,62,Amlodipine,50mg,Once daily,71,2024-04-21
+1435,332,475,50,Prednisone,5mg,Three times daily,51,2025-03-19
+1436,1720,162,61,Warfarin,50mg,Twice daily,76,2024-12-03
+1437,1573,448,14,Losartan,250mg,Once daily,46,2025-04-24
+1438,89,537,54,Sertraline,500mg,Three times daily,72,2025-04-25
+1439,1040,436,14,Clopidogrel,5mg,Three times daily,88,2025-04-26
+1440,867,209,16,Omeprazole,500mg,Once daily,66,2025-04-03
+1441,1323,796,65,Insulin,250mg,Once daily,37,2024-07-03
+1442,154,747,63,Furosemide,250mg,Three times daily,43,2024-07-29
+1443,489,4,23,Furosemide,500mg,As needed,79,2024-05-17
+1444,918,345,32,Amoxicillin,10mg,Three times daily,89,2025-03-13
+1445,1044,230,53,Omeprazole,25mg,Twice daily,48,2024-12-23
+1446,574,4,75,Omeprazole,50mg,Twice daily,88,2024-10-01
+1447,1350,970,34,Insulin,25mg,Three times daily,15,2025-05-28
+1448,245,768,10,Hydrochlorothiazide,50mg,Three times daily,42,2025-03-27
+1449,382,726,64,Clopidogrel,25mg,Three times daily,83,2025-04-09
+1450,1574,135,41,Amoxicillin,100mg,Three times daily,12,2024-03-15
+1451,1719,221,73,Gabapentin,10mg,Twice daily,39,2025-01-04
+1452,118,866,75,Amoxicillin,10mg,Twice daily,59,2025-04-12
+1453,733,399,23,Amoxicillin,5mg,As needed,54,2024-03-27
+1454,118,866,75,Amoxicillin,20mg,Three times daily,65,2024-11-22
+1455,1686,864,71,Prednisone,100mg,Three times daily,87,2025-06-16
+1456,104,263,53,Gabapentin,25mg,Twice daily,51,2025-06-18
+1457,1703,49,5,Omeprazole,250mg,Once daily,23,2024-02-26
+1458,1541,485,75,Albuterol,100mg,Twice daily,35,2025-06-06
+1459,863,164,62,Metoprolol,25mg,Once daily,55,2024-05-16
+1460,761,867,5,Losartan,100mg,Three times daily,55,2024-05-22
+1461,25,322,7,Albuterol,25mg,Once daily,82,2023-07-13
+1462,1584,385,48,Amlodipine,250mg,As needed,62,2024-09-13
+1463,1566,687,68,Ibuprofen,100mg,As needed,59,2024-01-03
+1464,1177,242,56,Furosemide,10mg,Once daily,26,2024-09-14
+1465,254,475,47,Lisinopril,100mg,As needed,36,2025-03-29
+1466,726,297,22,Sertraline,20mg,Twice daily,30,2024-03-28
+1467,1196,964,39,Gabapentin,100mg,Three times daily,16,2023-12-12
+1468,166,14,42,Lisinopril,50mg,Three times daily,69,2023-12-30
+1469,281,20,70,Levothyroxine,250mg,Twice daily,47,2023-10-26
+1470,1368,589,46,Metformin,250mg,As needed,21,2025-05-24
+1471,1988,199,59,Omeprazole,10mg,Twice daily,88,2025-05-06
+1472,1322,385,3,Metformin,250mg,As needed,60,2024-09-21
+1473,315,415,40,Albuterol,5mg,Three times daily,81,2024-12-20
+1474,607,677,51,Metformin,500mg,As needed,64,2024-08-14
+1475,942,565,32,Furosemide,5mg,As needed,21,2023-09-15
+1476,1795,214,47,Amlodipine,250mg,Once daily,77,2025-02-20
+1477,505,517,51,Metoprolol,250mg,As needed,79,2025-03-03
+1478,724,720,58,Acetaminophen,250mg,Three times daily,83,2025-05-14
+1479,1174,834,5,Prednisone,5mg,Twice daily,31,2025-06-10
+1480,1107,385,51,Amoxicillin,100mg,Twice daily,66,2024-05-19
+1481,1366,293,78,Omeprazole,10mg,Three times daily,48,2025-06-20
+1482,1703,49,5,Insulin,250mg,Twice daily,79,2024-05-27
+1483,1754,293,28,Hydrochlorothiazide,50mg,Twice daily,79,2025-06-14
+1484,1396,442,56,Ibuprofen,100mg,As needed,61,2024-05-12
+1485,778,803,32,Warfarin,500mg,As needed,44,2025-01-17
+1486,1583,791,51,Hydrochlorothiazide,100mg,As needed,62,2025-01-29
+1487,681,714,51,Warfarin,10mg,Three times daily,16,2024-11-03
+1488,1502,261,25,Amoxicillin,10mg,Twice daily,27,2024-03-09
+1489,1306,19,70,Losartan,100mg,Twice daily,52,2023-09-07
+1490,73,43,25,Hydrochlorothiazide,50mg,Three times daily,83,2024-06-05
+1491,1544,60,21,Losartan,50mg,Once daily,69,2025-03-10
+1492,1876,311,45,Amoxicillin,5mg,As needed,57,2025-05-03
+1493,803,852,49,Albuterol,5mg,Twice daily,51,2023-07-08
+1494,394,582,16,Acetaminophen,250mg,As needed,22,2024-10-12
+1495,520,782,46,Atorvastatin,5mg,Once daily,45,2025-03-23
+1496,966,611,29,Insulin,25mg,Twice daily,29,2025-05-14
+1497,1444,83,20,Warfarin,10mg,Once daily,72,2024-11-01
+1498,870,746,50,Losartan,50mg,Twice daily,62,2024-07-09
+1499,1272,508,7,Losartan,250mg,Three times daily,75,2025-05-10
+1500,1074,249,1,Metformin,50mg,Twice daily,63,2024-06-12
+1501,773,918,16,Prednisone,10mg,Once daily,19,2024-06-18
+1502,1918,111,19,Lisinopril,10mg,Three times daily,89,2025-05-01
+1503,551,34,62,Warfarin,50mg,As needed,65,2025-03-27
+1504,382,726,64,Clopidogrel,250mg,Once daily,56,2025-05-09
+1505,1805,191,25,Hydrochlorothiazide,500mg,As needed,16,2025-06-15
+1506,1382,678,54,Atorvastatin,100mg,Three times daily,55,2025-03-24
+1507,1446,106,71,Omeprazole,25mg,Twice daily,50,2025-03-22
+1508,1668,658,3,Warfarin,50mg,As needed,57,2023-07-02
+1509,1001,767,7,Levothyroxine,25mg,As needed,44,2024-11-09
+1510,1159,914,47,Furosemide,50mg,As needed,71,2023-12-07
+1511,504,772,54,Losartan,250mg,Twice daily,71,2024-08-08
+1512,19,753,44,Atorvastatin,5mg,Once daily,48,2025-04-28
+1513,1752,232,66,Metoprolol,50mg,As needed,43,2024-02-14
+1514,543,425,58,Amlodipine,10mg,Once daily,67,2025-04-15
+1515,1393,704,25,Metoprolol,25mg,Three times daily,13,2024-03-16
+1516,327,463,22,Atorvastatin,25mg,Twice daily,49,2024-11-15
+1517,896,708,68,Amlodipine,500mg,Once daily,52,2023-10-17
+1518,1602,754,50,Amoxicillin,25mg,Three times daily,79,2023-06-25
+1519,738,838,10,Omeprazole,20mg,Once daily,8,2024-01-08
+1520,1534,275,24,Lisinopril,500mg,Three times daily,33,2024-04-19
+1521,39,984,59,Ibuprofen,500mg,Once daily,11,2025-04-25
+1522,122,605,7,Lisinopril,100mg,Twice daily,80,2025-03-25
+1523,1984,362,28,Metformin,500mg,As needed,74,2025-06-20
+1524,755,66,78,Insulin,500mg,Three times daily,31,2024-09-12
+1525,550,971,23,Ibuprofen,500mg,As needed,11,2023-12-24
+1526,1479,453,26,Prednisone,5mg,Twice daily,60,2025-06-14
+1527,1131,291,42,Levothyroxine,20mg,Once daily,84,2025-01-29
+1528,508,27,9,Lisinopril,50mg,As needed,56,2024-06-20
+1529,939,136,79,Sertraline,100mg,Once daily,88,2025-06-21
+1530,415,514,1,Losartan,100mg,Three times daily,63,2024-12-27
+1531,936,771,60,Albuterol,20mg,As needed,40,2025-06-10
+1532,927,807,11,Gabapentin,250mg,Once daily,30,2024-02-22
+1533,1888,817,18,Metformin,25mg,Twice daily,14,2025-01-17
+1534,632,539,5,Amoxicillin,500mg,Three times daily,14,2023-07-07
+1535,356,127,68,Warfarin,5mg,Twice daily,31,2025-06-23
+1536,524,449,65,Hydrochlorothiazide,50mg,Once daily,62,2024-04-27
+1537,323,490,30,Hydrochlorothiazide,250mg,As needed,31,2025-05-23
+1538,13,946,1,Atorvastatin,25mg,Three times daily,73,2025-06-29
+1539,1977,19,39,Losartan,250mg,Twice daily,14,2024-03-11
+1540,1797,131,63,Lisinopril,50mg,Once daily,53,2023-02-26
+1541,1639,350,74,Metformin,20mg,Three times daily,16,2025-01-23
+1542,758,153,38,Lisinopril,100mg,As needed,85,2023-06-30
+1543,159,764,78,Levothyroxine,10mg,Twice daily,56,2023-09-26
+1544,1039,913,45,Atorvastatin,20mg,As needed,25,2024-05-01
+1545,454,894,21,Lisinopril,10mg,As needed,59,2024-12-05
+1546,1950,255,33,Prednisone,25mg,Twice daily,23,2025-03-18
+1547,1516,234,69,Albuterol,5mg,Three times daily,53,2025-04-16
+1548,298,911,77,Insulin,50mg,Once daily,49,2025-05-23
+1549,584,481,71,Metformin,50mg,As needed,31,2025-03-16
+1550,1998,280,78,Losartan,10mg,As needed,89,2024-06-10
+1551,46,867,53,Losartan,250mg,Three times daily,73,2025-05-16
+1552,228,192,67,Amlodipine,10mg,Once daily,37,2024-06-13
+1553,700,334,42,Warfarin,5mg,Twice daily,34,2025-06-03
+1554,1289,582,75,Metoprolol,25mg,Three times daily,55,2023-09-24
+1555,398,182,12,Hydrochlorothiazide,250mg,Twice daily,54,2024-08-09
+1556,1173,488,5,Amlodipine,100mg,Twice daily,83,2025-05-29
+1557,375,162,67,Losartan,25mg,As needed,68,2025-04-03
+1558,1932,401,39,Amlodipine,250mg,Three times daily,33,2025-01-12
+1559,958,814,12,Hydrochlorothiazide,10mg,Twice daily,66,2025-03-16
+1560,1971,66,25,Atorvastatin,5mg,Once daily,38,2025-06-09
+1561,660,5,51,Losartan,50mg,As needed,45,2025-03-31
+1562,352,665,62,Lisinopril,20mg,Once daily,76,2024-02-16
+1563,365,970,21,Clopidogrel,10mg,Twice daily,39,2025-06-17
+1564,1071,233,14,Omeprazole,100mg,Once daily,44,2024-07-20
+1565,1477,637,75,Amoxicillin,100mg,Three times daily,46,2024-10-24
+1566,1946,784,10,Ibuprofen,5mg,Once daily,77,2024-05-03
+1567,1823,38,76,Losartan,500mg,Twice daily,32,2024-06-21
+1568,242,381,72,Lisinopril,5mg,Twice daily,53,2025-06-26
+1569,1023,763,7,Warfarin,10mg,As needed,46,2024-06-01
+1570,1806,310,51,Sertraline,250mg,Twice daily,29,2024-12-09
+1571,1492,762,54,Albuterol,250mg,Twice daily,45,2025-01-05
+1572,697,939,62,Omeprazole,20mg,Twice daily,41,2024-11-15
+1573,1239,516,34,Losartan,250mg,As needed,87,2024-04-02
+1574,1125,480,70,Acetaminophen,250mg,Three times daily,67,2025-03-16
+1575,711,175,17,Metoprolol,50mg,Twice daily,55,2024-11-21
+1576,1277,934,27,Omeprazole,50mg,Once daily,73,2025-02-14
+1577,253,398,36,Atorvastatin,5mg,Twice daily,20,2024-10-18
+1578,1248,167,5,Prednisone,5mg,Twice daily,12,2025-03-30
+1579,968,777,6,Warfarin,20mg,Once daily,75,2023-04-18
+1580,1413,365,66,Amoxicillin,25mg,Once daily,25,2024-11-11
+1581,1186,360,1,Lisinopril,20mg,Once daily,11,2025-05-18
+1582,766,818,23,Amoxicillin,25mg,As needed,59,2024-09-15
+1583,12,998,71,Lisinopril,500mg,Twice daily,66,2024-06-29
+1584,595,129,43,Clopidogrel,20mg,Once daily,22,2023-04-12
+1585,331,263,19,Lisinopril,20mg,As needed,19,2025-05-03
+1586,110,209,44,Prednisone,50mg,Twice daily,23,2025-03-22
+1587,215,181,26,Albuterol,5mg,Once daily,64,2023-11-14
+1588,914,239,65,Omeprazole,50mg,As needed,32,2025-03-19
+1589,329,967,74,Losartan,10mg,As needed,63,2024-10-07
+1590,210,710,61,Metoprolol,250mg,Once daily,64,2025-04-12
+1591,1110,411,44,Ibuprofen,250mg,Twice daily,38,2024-05-16
+1592,1886,7,10,Hydrochlorothiazide,20mg,Once daily,24,2025-02-25
+1593,408,65,25,Omeprazole,50mg,Once daily,86,2025-02-09
+1594,1488,161,59,Gabapentin,500mg,Three times daily,79,2025-03-24
+1595,1136,905,2,Metformin,250mg,Twice daily,33,2025-06-02
+1596,1838,344,57,Furosemide,100mg,Once daily,45,2024-11-12
+1597,1034,742,42,Metformin,500mg,Twice daily,12,2025-06-09
+1598,846,514,63,Metoprolol,250mg,Twice daily,79,2024-07-14
+1599,1103,618,51,Sertraline,10mg,As needed,88,2025-03-30
+1600,8,285,3,Levothyroxine,5mg,Twice daily,84,2025-02-09
+1601,1527,749,80,Atorvastatin,10mg,Once daily,57,2024-05-12
+1602,669,851,79,Metformin,25mg,Three times daily,71,2025-04-24
+1603,1183,295,58,Amlodipine,50mg,Once daily,45,2025-06-29
+1604,420,128,73,Prednisone,5mg,Three times daily,9,2024-12-10
+1605,1726,358,58,Insulin,50mg,Twice daily,55,2025-02-18
+1606,1416,431,26,Insulin,5mg,Three times daily,14,2024-06-28
+1607,1334,855,12,Amlodipine,5mg,Twice daily,23,2024-12-02
+1608,1329,969,48,Ibuprofen,10mg,Twice daily,81,2025-05-29
+1609,433,916,8,Atorvastatin,50mg,Three times daily,67,2024-04-07
+1610,879,842,44,Lisinopril,250mg,Three times daily,30,2025-05-04
+1611,1101,3,20,Metoprolol,100mg,Once daily,89,2024-07-26
+1612,1141,449,27,Metformin,500mg,As needed,54,2024-03-12
+1613,1727,22,14,Ibuprofen,50mg,Three times daily,73,2024-03-16
+1614,819,373,7,Albuterol,25mg,Three times daily,81,2024-12-12
+1615,187,196,75,Warfarin,100mg,Three times daily,20,2024-10-21
+1616,1429,352,42,Atorvastatin,10mg,Three times daily,64,2025-05-27
+1617,381,444,70,Albuterol,25mg,As needed,52,2025-01-10
+1618,664,531,31,Gabapentin,20mg,Twice daily,76,2024-02-01
+1619,710,724,21,Metoprolol,250mg,Twice daily,20,2024-09-19
+1620,1105,458,27,Albuterol,25mg,Twice daily,49,2025-03-21
+1621,267,655,47,Levothyroxine,500mg,Twice daily,35,2025-05-26
+1622,1556,572,51,Sertraline,25mg,Twice daily,90,2024-09-23
+1623,894,132,24,Levothyroxine,5mg,Twice daily,75,2025-05-07
+1624,871,20,5,Ibuprofen,5mg,Three times daily,82,2023-12-28
+1625,567,133,60,Omeprazole,250mg,Three times daily,13,2024-07-19
+1626,1884,194,73,Albuterol,10mg,As needed,72,2023-12-11
+1627,1367,868,57,Omeprazole,5mg,Twice daily,77,2024-09-14
+1628,1138,975,30,Clopidogrel,500mg,Three times daily,56,2024-11-15
+1629,1618,674,70,Clopidogrel,100mg,As needed,68,2024-01-05
+1630,915,185,53,Metoprolol,500mg,Three times daily,32,2025-03-10
+1631,1530,544,1,Amlodipine,20mg,Three times daily,41,2024-08-04
+1632,10,336,77,Insulin,25mg,Once daily,58,2024-10-30
+1633,10,336,77,Clopidogrel,50mg,Once daily,71,2025-02-03
+1634,1396,442,56,Sertraline,10mg,Three times daily,83,2023-04-19
+1635,1609,487,54,Losartan,100mg,Twice daily,87,2025-06-17
+1636,604,210,32,Acetaminophen,250mg,Three times daily,22,2025-01-13
+1637,755,66,78,Atorvastatin,10mg,Three times daily,35,2025-05-27
+1638,1257,388,35,Gabapentin,100mg,As needed,34,2025-06-18
+1639,1600,762,41,Albuterol,20mg,Once daily,22,2024-03-08
+1640,1640,648,14,Losartan,50mg,Twice daily,66,2024-11-11
+1641,698,563,57,Furosemide,10mg,As needed,53,2025-04-09
+1642,1356,981,62,Insulin,500mg,Twice daily,31,2024-07-10
+1643,1305,503,46,Acetaminophen,500mg,As needed,40,2025-02-02
+1644,39,984,59,Furosemide,5mg,As needed,16,2025-03-28
+1645,1375,972,12,Prednisone,5mg,Twice daily,66,2025-04-01
+1646,1975,513,44,Atorvastatin,50mg,As needed,53,2025-05-16
+1647,748,826,68,Sertraline,20mg,Once daily,74,2024-02-29
+1648,895,751,29,Hydrochlorothiazide,100mg,Twice daily,84,2025-05-11
+1649,1172,600,54,Sertraline,250mg,Once daily,82,2024-05-20
+1650,177,269,74,Albuterol,10mg,As needed,87,2024-02-25
+1651,1967,492,31,Albuterol,5mg,Once daily,62,2024-04-03
+1652,1965,952,41,Omeprazole,25mg,Three times daily,21,2024-08-08
+1653,995,552,32,Hydrochlorothiazide,5mg,As needed,14,2024-08-02
+1654,723,676,75,Insulin,250mg,Once daily,28,2025-05-08
+1655,1544,60,21,Albuterol,10mg,Three times daily,77,2024-11-25
+1656,262,967,23,Gabapentin,25mg,Three times daily,72,2025-03-23
+1657,579,68,39,Levothyroxine,5mg,Twice daily,11,2024-11-09
+1658,1690,337,5,Metformin,25mg,Three times daily,84,2025-05-19
+1659,1436,116,70,Acetaminophen,5mg,Three times daily,14,2025-04-15
+1660,1780,546,34,Insulin,50mg,Three times daily,83,2024-12-13
+1661,1147,725,71,Acetaminophen,50mg,As needed,73,2024-11-27
+1662,149,182,65,Prednisone,5mg,As needed,41,2024-08-25
+1663,175,809,71,Ibuprofen,50mg,As needed,89,2024-06-29
+1664,851,631,17,Amoxicillin,25mg,Once daily,18,2024-02-16
+1665,793,38,51,Warfarin,25mg,Twice daily,15,2023-11-19
+1666,723,676,75,Gabapentin,100mg,As needed,79,2024-11-17
+1667,1130,850,22,Warfarin,100mg,Three times daily,49,2025-05-16
+1668,1915,16,45,Metformin,10mg,Three times daily,26,2024-10-25
+1669,1671,683,63,Hydrochlorothiazide,50mg,Twice daily,37,2025-04-03
+1670,112,160,54,Atorvastatin,25mg,Three times daily,54,2025-02-10
+1671,1814,135,39,Acetaminophen,500mg,Three times daily,69,2025-06-07
+1672,1065,52,8,Amoxicillin,50mg,Three times daily,65,2025-03-10
+1673,57,824,4,Furosemide,50mg,As needed,9,2025-01-20
+1674,804,857,32,Omeprazole,10mg,Three times daily,60,2024-08-20
+1675,266,636,59,Metoprolol,10mg,Three times daily,44,2025-05-13
+1676,768,401,29,Prednisone,50mg,As needed,11,2024-09-18
+1677,1751,119,3,Acetaminophen,50mg,Once daily,87,2024-06-02
+1678,1175,394,16,Lisinopril,10mg,As needed,74,2024-02-22
+1679,1385,551,55,Omeprazole,10mg,Three times daily,30,2023-11-16
+1680,1013,877,68,Insulin,500mg,Twice daily,34,2024-05-28
+1681,1654,866,45,Amlodipine,500mg,Twice daily,69,2024-08-28
+1682,485,52,53,Atorvastatin,50mg,As needed,21,2025-04-07
+1683,151,134,1,Metformin,500mg,As needed,63,2025-02-22
+1684,1043,842,5,Albuterol,50mg,Twice daily,61,2024-02-07
+1685,1605,41,79,Albuterol,250mg,Three times daily,45,2025-05-21
+1686,136,554,23,Insulin,25mg,As needed,38,2025-02-04
+1687,866,46,33,Amoxicillin,500mg,Twice daily,53,2024-01-28
+1688,424,26,72,Clopidogrel,100mg,Once daily,59,2025-03-28
+1689,285,800,61,Amoxicillin,250mg,Twice daily,37,2024-12-30
+1690,1440,129,65,Amlodipine,100mg,Once daily,62,2025-06-26
+1691,601,178,63,Ibuprofen,5mg,Twice daily,32,2024-05-31
+1692,1367,868,57,Insulin,500mg,Once daily,90,2025-04-19
+1693,694,303,10,Gabapentin,100mg,Once daily,58,2025-01-15
+1694,1800,184,66,Metformin,500mg,As needed,67,2025-06-01
+1695,1381,88,10,Amlodipine,250mg,Twice daily,37,2024-07-27
+1696,1006,144,16,Sertraline,500mg,Three times daily,28,2024-03-03
+1697,1830,760,67,Amoxicillin,20mg,Three times daily,79,2025-06-26
+1698,825,781,80,Losartan,50mg,Twice daily,77,2025-04-01
+1699,109,773,39,Furosemide,20mg,As needed,49,2024-12-03
+1700,716,318,73,Metoprolol,20mg,As needed,24,2024-07-14
+1701,710,724,21,Ibuprofen,20mg,Twice daily,71,2024-10-17
+1702,1884,194,73,Sertraline,20mg,As needed,69,2025-03-25
+1703,1352,657,29,Hydrochlorothiazide,5mg,Once daily,15,2024-02-29
+1704,680,881,43,Omeprazole,250mg,Once daily,66,2025-05-14
+1705,360,647,66,Ibuprofen,20mg,Once daily,57,2025-05-13
+1706,1993,491,16,Prednisone,10mg,Once daily,23,2023-11-22
+1707,1330,492,37,Amlodipine,10mg,Twice daily,46,2025-05-23
+1708,1920,657,31,Atorvastatin,250mg,Once daily,87,2024-06-27
+1709,1557,549,53,Levothyroxine,20mg,Three times daily,17,2025-03-08
+1710,718,990,22,Omeprazole,250mg,Twice daily,78,2025-01-21
+1711,798,480,19,Metformin,500mg,Twice daily,64,2024-05-18
+1712,1525,526,37,Amoxicillin,100mg,Twice daily,73,2025-05-06
+1713,692,193,20,Prednisone,500mg,Once daily,35,2025-04-13
+1714,1511,457,51,Atorvastatin,20mg,Once daily,11,2025-03-28
+1715,1432,147,66,Warfarin,5mg,As needed,82,2025-02-03
+1716,1711,244,39,Ibuprofen,50mg,Once daily,26,2024-03-26
+1717,1405,282,54,Albuterol,100mg,Once daily,35,2024-06-06
+1718,80,302,45,Atorvastatin,5mg,As needed,33,2023-08-23
+1719,176,796,66,Levothyroxine,250mg,Once daily,15,2024-05-11
+1720,1954,920,46,Acetaminophen,250mg,Three times daily,72,2025-04-12
+1721,1922,892,14,Acetaminophen,50mg,As needed,20,2024-07-16
+1722,988,420,17,Losartan,100mg,Twice daily,60,2024-06-17
+1723,1036,799,14,Lisinopril,100mg,Once daily,56,2025-06-21
+1724,1732,974,58,Hydrochlorothiazide,500mg,Once daily,67,2023-07-06
+1725,298,911,77,Amoxicillin,10mg,Twice daily,28,2025-05-10
+1726,1607,908,28,Atorvastatin,100mg,Once daily,47,2024-11-30
+1727,1882,717,50,Furosemide,500mg,Three times daily,8,2025-05-05
+1728,246,546,65,Prednisone,20mg,Twice daily,82,2024-11-08
+1729,994,785,75,Lisinopril,20mg,As needed,44,2024-08-12
+1730,515,102,5,Gabapentin,10mg,Once daily,59,2023-10-23
+1731,294,164,9,Sertraline,10mg,As needed,30,2025-06-22
+1732,233,194,11,Clopidogrel,20mg,Three times daily,79,2025-05-05
+1733,647,442,32,Amlodipine,50mg,As needed,86,2025-02-07
+1734,10,336,77,Losartan,5mg,Twice daily,25,2024-08-03
+1735,232,738,64,Albuterol,25mg,Once daily,34,2025-04-21
+1736,346,64,35,Omeprazole,50mg,As needed,69,2025-02-10
+1737,957,2,28,Warfarin,10mg,Three times daily,22,2025-03-11
+1738,1858,413,11,Atorvastatin,10mg,As needed,78,2023-08-22
+1739,834,970,70,Levothyroxine,50mg,Three times daily,51,2025-06-20
+1740,842,704,29,Warfarin,10mg,Twice daily,87,2024-10-16
+1741,1836,968,10,Warfarin,25mg,Three times daily,62,2025-01-16
+1742,1619,270,78,Lisinopril,50mg,Twice daily,40,2025-03-27
+1743,201,82,56,Clopidogrel,250mg,As needed,78,2025-01-04
+1744,469,79,40,Omeprazole,250mg,Once daily,71,2025-05-13
+1745,791,94,38,Levothyroxine,250mg,Three times daily,26,2025-01-09
+1746,1970,460,60,Amlodipine,5mg,Three times daily,12,2024-10-28
+1747,1755,482,30,Lisinopril,250mg,Twice daily,71,2023-07-19
+1748,1537,398,20,Metoprolol,250mg,Twice daily,76,2024-12-22
+1749,614,164,43,Sertraline,10mg,As needed,17,2025-05-29
+1750,1945,971,80,Hydrochlorothiazide,50mg,As needed,42,2025-06-01
+1751,454,894,21,Clopidogrel,50mg,Twice daily,78,2024-01-13
+1752,1445,106,17,Metoprolol,20mg,Once daily,67,2025-04-12
+1753,1317,735,47,Albuterol,10mg,Once daily,86,2024-10-19
+1754,1953,938,53,Sertraline,5mg,Once daily,61,2024-08-09
+1755,1172,600,54,Warfarin,50mg,Twice daily,68,2025-03-09
+1756,26,157,26,Amoxicillin,20mg,Twice daily,36,2024-01-29
+1757,1366,293,78,Albuterol,10mg,Twice daily,37,2025-04-10
+1758,100,637,66,Insulin,10mg,Once daily,16,2025-06-27
+1759,1707,791,66,Omeprazole,500mg,Twice daily,45,2025-02-26
+1760,949,846,56,Atorvastatin,5mg,As needed,44,2024-10-12
+1761,1187,804,48,Albuterol,50mg,Once daily,13,2024-10-26
+1762,1982,202,69,Levothyroxine,25mg,As needed,14,2024-09-13
+1763,1639,350,74,Ibuprofen,100mg,Twice daily,57,2025-06-09
+1764,509,998,23,Losartan,50mg,Twice daily,25,2025-05-28
+1765,448,359,38,Metformin,10mg,Three times daily,84,2025-06-28
+1766,728,469,11,Lisinopril,500mg,As needed,77,2025-04-01
+1767,1923,611,69,Metformin,20mg,Three times daily,71,2025-03-12
+1768,824,180,33,Levothyroxine,10mg,Three times daily,77,2024-05-15
+1769,1616,598,32,Gabapentin,100mg,Three times daily,8,2024-05-28
+1770,920,274,49,Sertraline,5mg,As needed,86,2025-03-11
+1771,150,688,73,Lisinopril,10mg,Twice daily,88,2025-06-16
+1772,572,986,62,Clopidogrel,20mg,Once daily,14,2024-05-21
+1773,1813,203,15,Levothyroxine,500mg,Once daily,8,2025-02-14
+1774,737,999,37,Acetaminophen,250mg,Twice daily,32,2025-04-24
+1775,1379,879,67,Insulin,500mg,Once daily,77,2025-02-19
+1776,208,961,66,Acetaminophen,20mg,Once daily,22,2025-03-30
+1777,1778,231,37,Furosemide,50mg,Twice daily,10,2024-09-30
+1778,1846,903,72,Lisinopril,25mg,Once daily,67,2025-05-19
+1779,1458,154,67,Sertraline,25mg,Once daily,78,2023-03-29
+1780,991,2,24,Acetaminophen,500mg,Three times daily,34,2024-09-07
+1781,1688,504,16,Insulin,25mg,Once daily,66,2025-01-30
+1782,1282,920,59,Acetaminophen,25mg,As needed,70,2024-09-15
+1783,402,12,31,Atorvastatin,50mg,Twice daily,75,2025-04-27
+1784,940,415,47,Acetaminophen,250mg,Three times daily,76,2024-09-21
+1785,36,960,52,Levothyroxine,20mg,Twice daily,60,2024-09-13
+1786,1375,972,12,Omeprazole,10mg,Twice daily,31,2025-06-06
+1787,1478,857,17,Sertraline,10mg,Once daily,26,2024-02-09
+1788,1714,572,13,Levothyroxine,100mg,Three times daily,56,2025-06-24
+1789,690,175,2,Atorvastatin,250mg,Once daily,70,2025-04-07
+1790,1965,952,41,Losartan,20mg,As needed,18,2024-10-26
+1791,199,668,16,Metoprolol,500mg,As needed,62,2024-09-19
+1792,905,133,26,Gabapentin,20mg,Twice daily,80,2023-02-22
+1793,1697,213,9,Sertraline,50mg,Once daily,23,2025-06-11
+1794,392,615,57,Lisinopril,500mg,Three times daily,31,2024-06-01
+1795,1504,990,79,Insulin,100mg,Twice daily,74,2025-06-18
+1796,720,634,62,Hydrochlorothiazide,250mg,Once daily,81,2025-02-07
+1797,1441,31,59,Gabapentin,250mg,Three times daily,45,2025-04-22
+1798,796,406,70,Metoprolol,500mg,Twice daily,18,2025-05-04
+1799,958,814,12,Metoprolol,10mg,Twice daily,32,2025-04-02
+1800,1018,785,14,Lisinopril,500mg,Three times daily,39,2024-06-19
+1801,1763,410,63,Amoxicillin,20mg,As needed,79,2024-05-12
+1802,1957,682,52,Amlodipine,100mg,Three times daily,53,2024-11-21
+1803,169,52,59,Losartan,500mg,Twice daily,39,2023-09-30
+1804,1145,510,23,Acetaminophen,250mg,Twice daily,77,2024-10-31
+1805,814,406,65,Metoprolol,10mg,Three times daily,10,2024-12-15
+1806,971,58,61,Losartan,25mg,Once daily,68,2024-07-31
+1807,760,482,11,Acetaminophen,25mg,As needed,65,2025-05-17
+1808,1904,546,42,Insulin,50mg,Three times daily,36,2024-02-14
+1809,1964,476,74,Acetaminophen,100mg,Three times daily,66,2024-08-01
+1810,1485,268,55,Warfarin,5mg,Once daily,9,2024-08-30
+1811,855,277,62,Metoprolol,10mg,Once daily,31,2024-11-23
+1812,678,170,68,Lisinopril,500mg,Once daily,52,2025-02-13
+1813,1532,152,69,Warfarin,25mg,Three times daily,66,2024-08-29
+1814,1325,189,30,Sertraline,25mg,Once daily,19,2024-04-23
+1815,1449,479,79,Gabapentin,20mg,Once daily,46,2025-04-06
+1816,1401,855,21,Prednisone,20mg,Three times daily,46,2025-04-06
+1817,1251,116,62,Albuterol,500mg,Once daily,25,2025-01-02
+1818,1691,877,69,Prednisone,10mg,As needed,54,2024-10-12
+1819,629,668,42,Prednisone,25mg,Three times daily,73,2025-04-08
+1820,1390,223,69,Losartan,20mg,As needed,42,2024-01-22
+1821,1074,249,1,Prednisone,500mg,Once daily,13,2024-03-28
+1822,318,54,15,Warfarin,10mg,Twice daily,45,2023-12-30
+1823,1389,179,51,Amlodipine,25mg,Twice daily,37,2025-04-19
+1824,648,25,78,Amlodipine,500mg,Twice daily,28,2023-10-27
+1825,29,79,30,Furosemide,20mg,Once daily,27,2023-11-30
+1826,1074,249,1,Atorvastatin,5mg,As needed,22,2025-04-03
+1827,1509,566,14,Levothyroxine,50mg,Twice daily,43,2025-04-13
+1828,1811,327,77,Albuterol,10mg,Twice daily,87,2025-06-19
+1829,244,205,61,Omeprazole,10mg,Three times daily,27,2025-06-20
+1830,1486,41,22,Furosemide,10mg,As needed,34,2023-10-15
+1831,1466,857,63,Prednisone,25mg,Three times daily,75,2024-07-30
+1832,223,791,32,Insulin,10mg,As needed,56,2025-04-28
+1833,908,593,42,Clopidogrel,5mg,Twice daily,84,2024-03-10
+1834,471,643,36,Metoprolol,25mg,Three times daily,13,2025-02-11
+1835,1619,270,78,Losartan,100mg,Once daily,30,2025-04-30
+1836,1841,143,11,Sertraline,100mg,As needed,83,2025-02-20
+1837,1140,601,34,Warfarin,25mg,Twice daily,53,2025-01-27
+1838,653,883,16,Metoprolol,5mg,Twice daily,73,2025-05-03
+1839,332,475,50,Hydrochlorothiazide,100mg,Three times daily,38,2024-01-02
+1840,1724,8,34,Sertraline,5mg,Twice daily,74,2024-09-27
+1841,120,11,18,Clopidogrel,250mg,Three times daily,29,2024-08-21
+1842,1197,384,6,Omeprazole,500mg,As needed,75,2024-01-20
+1843,1392,570,23,Omeprazole,5mg,Twice daily,43,2024-09-02
+1844,904,477,75,Atorvastatin,100mg,As needed,73,2025-05-04
+1845,308,301,25,Albuterol,5mg,Once daily,60,2025-01-06
+1846,1094,178,74,Lisinopril,5mg,Twice daily,56,2024-02-09
+1847,209,233,23,Amoxicillin,20mg,Three times daily,62,2024-12-06
+1848,251,645,50,Sertraline,50mg,As needed,35,2024-02-25
+1849,149,182,65,Amoxicillin,10mg,Twice daily,72,2023-10-06
+1850,1452,653,15,Furosemide,500mg,Once daily,72,2025-03-12
+1851,918,345,32,Losartan,10mg,Once daily,71,2025-06-29
+1852,1432,147,66,Insulin,25mg,As needed,71,2023-12-30
+1853,1141,449,27,Amoxicillin,250mg,As needed,90,2025-03-31
+1854,1676,628,23,Omeprazole,5mg,As needed,68,2024-01-24
+1855,1193,962,79,Prednisone,50mg,Three times daily,30,2024-05-07
+1856,1408,14,22,Metformin,10mg,Once daily,80,2024-09-03
+1857,957,2,28,Metoprolol,10mg,Three times daily,29,2025-02-11
+1858,858,189,44,Losartan,250mg,Three times daily,30,2025-06-15
+1859,1579,468,13,Losartan,500mg,Once daily,64,2025-02-07
+1860,539,317,24,Prednisone,20mg,Three times daily,12,2025-06-21
+1861,1800,184,66,Metoprolol,20mg,As needed,24,2025-03-14
+1862,5,594,75,Warfarin,50mg,Once daily,47,2024-07-10
+1863,19,753,44,Insulin,5mg,As needed,27,2023-11-24
+1864,1400,891,66,Hydrochlorothiazide,25mg,Three times daily,49,2025-01-05
+1865,609,966,76,Gabapentin,250mg,Three times daily,58,2024-05-16
+1866,1904,546,42,Gabapentin,100mg,As needed,13,2023-12-14
+1867,1361,987,72,Lisinopril,100mg,Twice daily,11,2025-02-14
+1868,1670,8,26,Furosemide,500mg,Twice daily,72,2024-09-01
+1869,1749,156,8,Furosemide,500mg,As needed,33,2025-03-21
+1870,863,164,62,Prednisone,20mg,Three times daily,11,2024-03-01
+1871,48,650,28,Sertraline,10mg,Three times daily,46,2025-06-08
+1872,173,284,50,Metformin,25mg,Three times daily,85,2025-02-18
+1873,1694,302,55,Metoprolol,10mg,Three times daily,52,2025-03-27
+1874,392,615,57,Levothyroxine,100mg,Twice daily,45,2024-06-11
+1875,1061,380,4,Albuterol,50mg,Three times daily,27,2024-06-17
+1876,86,990,64,Warfarin,5mg,Twice daily,20,2023-12-25
+1877,947,246,72,Atorvastatin,100mg,Once daily,86,2024-11-29
+1878,473,468,1,Insulin,50mg,Once daily,83,2024-11-17
+1879,907,671,39,Amlodipine,250mg,Three times daily,22,2024-02-21
+1880,1056,334,24,Lisinopril,25mg,As needed,88,2025-02-19
+1881,1322,385,3,Metoprolol,10mg,Three times daily,51,2024-09-19
+1882,415,514,1,Prednisone,250mg,As needed,29,2025-04-16
+1883,1471,781,64,Levothyroxine,10mg,As needed,85,2025-02-20
+1884,28,529,2,Lisinopril,5mg,Twice daily,88,2025-04-14
+1885,98,158,10,Albuterol,20mg,Twice daily,24,2025-01-07
+1886,438,465,73,Hydrochlorothiazide,50mg,Twice daily,81,2024-12-30
+1887,899,374,2,Metoprolol,20mg,Three times daily,13,2024-08-11
+1888,975,122,27,Sertraline,250mg,As needed,38,2024-02-08
+1889,470,471,54,Albuterol,250mg,Three times daily,78,2024-10-19
+1890,1077,108,6,Lisinopril,25mg,Three times daily,9,2025-04-13
+1891,1606,755,55,Acetaminophen,25mg,Once daily,85,2025-02-04
+1892,837,327,19,Sertraline,20mg,Three times daily,58,2025-01-18
+1893,1928,395,14,Clopidogrel,10mg,Three times daily,89,2024-11-13
+1894,1138,975,30,Furosemide,25mg,Three times daily,84,2025-04-15
+1895,1660,779,12,Amlodipine,50mg,As needed,57,2025-03-18
+1896,150,688,73,Insulin,5mg,Three times daily,21,2025-05-10
+1897,985,155,17,Insulin,50mg,Once daily,90,2025-05-23
+1898,1880,258,79,Metformin,20mg,Twice daily,74,2025-05-15
+1899,655,332,31,Amlodipine,50mg,Once daily,12,2023-11-05
+1900,1959,573,48,Lisinopril,50mg,As needed,23,2025-04-03
+1901,289,194,64,Amlodipine,5mg,As needed,31,2024-07-30
+1902,1347,694,71,Amlodipine,500mg,As needed,86,2024-01-03
+1903,1414,535,28,Amoxicillin,500mg,Twice daily,16,2025-04-14
+1904,430,740,21,Ibuprofen,25mg,As needed,24,2025-01-15
+1905,1171,12,5,Clopidogrel,10mg,Three times daily,68,2025-04-17
+1906,57,824,4,Amlodipine,25mg,Three times daily,66,2025-01-25
+1907,809,200,23,Prednisone,50mg,Once daily,66,2024-12-27
+1908,1026,345,72,Atorvastatin,10mg,Once daily,10,2025-05-06
+1909,339,746,24,Amoxicillin,25mg,Twice daily,30,2024-09-29
+1910,527,560,44,Clopidogrel,50mg,Three times daily,12,2023-07-23
+1911,764,893,3,Metoprolol,20mg,Twice daily,54,2025-05-20
+1912,1019,337,48,Losartan,100mg,Twice daily,11,2025-04-15
+1913,1519,778,26,Clopidogrel,5mg,Twice daily,66,2025-06-15
+1914,1593,13,33,Gabapentin,10mg,As needed,75,2024-08-25
+1915,519,293,17,Losartan,5mg,Three times daily,66,2025-04-12
+1916,792,590,49,Gabapentin,25mg,Once daily,69,2024-12-09
+1917,1261,791,23,Furosemide,250mg,Twice daily,65,2024-09-28
+1918,647,442,32,Losartan,500mg,Twice daily,26,2024-11-11
+1919,1281,602,19,Amlodipine,250mg,As needed,23,2025-02-05
+1920,1790,556,65,Metoprolol,500mg,As needed,67,2024-10-01
+1921,1677,502,48,Lisinopril,50mg,As needed,62,2025-03-19
+1922,1269,836,47,Levothyroxine,50mg,Three times daily,15,2025-01-13
+1923,1402,709,16,Hydrochlorothiazide,100mg,Once daily,82,2025-04-03
+1924,1332,581,34,Hydrochlorothiazide,250mg,Once daily,10,2023-07-22
+1925,427,153,35,Metformin,500mg,Twice daily,81,2023-03-14
+1926,1319,637,14,Levothyroxine,25mg,As needed,26,2025-05-08
+1927,1719,221,73,Furosemide,250mg,Three times daily,13,2025-06-12
+1928,1723,552,16,Losartan,25mg,Once daily,53,2025-03-09
+1929,1703,49,5,Omeprazole,25mg,Twice daily,76,2024-03-21
+1930,1669,885,77,Warfarin,50mg,Twice daily,49,2023-07-13
+1931,670,647,69,Gabapentin,5mg,Three times daily,9,2024-12-13
+1932,466,854,20,Ibuprofen,500mg,Twice daily,21,2024-10-30
+1933,792,590,49,Prednisone,25mg,Three times daily,22,2024-09-25
+1934,587,315,73,Amlodipine,20mg,Three times daily,14,2025-01-17
+1935,612,789,29,Albuterol,100mg,As needed,68,2025-06-02
+1936,1325,189,30,Metoprolol,100mg,Three times daily,90,2025-05-11
+1937,924,289,5,Metoprolol,25mg,Three times daily,37,2025-03-28
+1938,1468,849,62,Metoprolol,10mg,Three times daily,14,2025-06-09
+1939,484,569,55,Omeprazole,5mg,Three times daily,64,2024-07-27
+1940,1531,967,16,Amoxicillin,10mg,Once daily,83,2025-02-02
+1941,803,852,49,Clopidogrel,250mg,As needed,15,2023-08-05
+1942,1327,679,18,Losartan,250mg,Three times daily,15,2025-03-13
+1943,1211,997,9,Acetaminophen,100mg,As needed,25,2024-12-15
+1944,533,737,18,Atorvastatin,250mg,As needed,28,2025-06-27
+1945,1597,31,41,Atorvastatin,500mg,As needed,23,2025-03-18
+1946,573,273,21,Furosemide,20mg,Once daily,83,2025-02-15
+1947,1624,580,28,Furosemide,100mg,Twice daily,9,2024-05-06
+1948,1195,614,30,Atorvastatin,5mg,Once daily,22,2024-10-10
+1949,129,922,35,Amlodipine,250mg,As needed,74,2024-09-24
+1950,928,108,79,Omeprazole,25mg,Twice daily,83,2025-06-25
+1951,179,431,53,Amlodipine,25mg,Three times daily,88,2024-12-19
+1952,1846,903,72,Levothyroxine,25mg,Three times daily,22,2025-04-20
+1953,1076,474,7,Acetaminophen,20mg,Once daily,8,2024-10-24
+1954,845,284,32,Sertraline,100mg,Twice daily,55,2024-10-18
+1955,1578,29,77,Insulin,10mg,Twice daily,24,2024-11-05
+1956,501,167,42,Atorvastatin,10mg,Three times daily,40,2025-04-04
+1957,1846,903,72,Clopidogrel,500mg,Twice daily,14,2025-01-04
+1958,1262,608,47,Acetaminophen,100mg,Twice daily,79,2024-11-04
+1959,547,523,45,Amlodipine,500mg,Once daily,33,2024-08-04
+1960,179,431,53,Furosemide,250mg,Once daily,73,2024-09-01
+1961,1862,642,5,Omeprazole,100mg,Twice daily,17,2024-06-03
+1962,466,854,20,Insulin,10mg,Twice daily,37,2024-07-16
+1963,410,636,13,Atorvastatin,100mg,Twice daily,18,2023-12-31
+1964,1274,607,3,Sertraline,5mg,Once daily,27,2025-02-27
+1965,278,344,32,Acetaminophen,10mg,Three times daily,87,2025-01-24
+1966,437,457,57,Losartan,5mg,Once daily,21,2024-10-23
+1967,189,2,37,Furosemide,10mg,Twice daily,65,2023-10-11
+1968,326,400,18,Amlodipine,20mg,Three times daily,75,2025-03-20
+1969,111,599,4,Lisinopril,10mg,Once daily,82,2025-01-16
+1970,675,433,72,Warfarin,25mg,Three times daily,13,2024-08-29
+1971,123,740,75,Lisinopril,25mg,Twice daily,66,2025-01-27
+1972,1329,969,48,Furosemide,50mg,Twice daily,61,2024-03-30
+1973,1018,785,14,Furosemide,100mg,Three times daily,75,2023-12-16
+1974,1105,458,27,Furosemide,20mg,Once daily,39,2024-08-26
+1975,1460,570,11,Albuterol,100mg,Twice daily,13,2024-12-06
+1976,149,182,65,Warfarin,20mg,Once daily,72,2024-11-29
+1977,1295,703,78,Prednisone,20mg,Twice daily,77,2024-09-19
+1978,485,52,53,Ibuprofen,20mg,Once daily,24,2024-10-11
+1979,1182,700,42,Metoprolol,20mg,Three times daily,13,2024-08-22
+1980,129,922,35,Lisinopril,10mg,As needed,61,2024-11-15
+1981,1207,490,50,Metoprolol,100mg,Three times daily,78,2024-07-19
+1982,462,430,77,Metoprolol,5mg,Twice daily,27,2025-02-12
+1983,1174,834,5,Warfarin,20mg,As needed,31,2025-05-22
+1984,1881,574,24,Hydrochlorothiazide,100mg,Twice daily,72,2024-12-10
+1985,1215,944,76,Atorvastatin,10mg,As needed,59,2025-06-06
+1986,726,297,22,Omeprazole,100mg,Three times daily,55,2024-07-18
+1987,1434,720,35,Hydrochlorothiazide,50mg,As needed,42,2024-11-14
+1988,711,175,17,Sertraline,250mg,Three times daily,66,2025-03-02
+1989,741,84,28,Clopidogrel,100mg,Once daily,10,2024-03-03
+1990,1308,521,5,Prednisone,500mg,As needed,83,2025-03-14
+1991,1119,851,71,Lisinopril,500mg,Once daily,63,2023-04-21
+1992,369,608,66,Metformin,20mg,Once daily,47,2024-06-25
+1993,1225,570,16,Albuterol,5mg,Three times daily,76,2024-10-15
+1994,30,113,1,Atorvastatin,20mg,As needed,60,2025-02-28
+1995,133,710,71,Prednisone,20mg,As needed,86,2025-02-10
+1996,889,335,53,Metformin,10mg,As needed,16,2023-11-22
+1997,1588,212,58,Atorvastatin,10mg,Three times daily,81,2024-07-24
+1998,968,777,6,Ibuprofen,250mg,Three times daily,75,2024-05-07
+1999,1064,262,47,Amoxicillin,50mg,As needed,84,2023-11-19
+2000,386,443,79,Metoprolol,250mg,Once daily,75,2024-03-03
+2001,106,365,60,Metoprolol,20mg,Twice daily,90,2025-06-14
+2002,1116,355,77,Sertraline,500mg,Twice daily,30,2025-06-18
+2003,1649,220,3,Amoxicillin,10mg,Three times daily,89,2024-11-24
+2004,1913,199,20,Insulin,25mg,Once daily,11,2025-06-22
+2005,787,307,6,Amoxicillin,500mg,Three times daily,43,2025-05-29
+2006,1404,41,43,Ibuprofen,250mg,Once daily,47,2024-12-16
+2007,1333,911,18,Furosemide,10mg,Three times daily,76,2024-11-18
+2008,1052,814,7,Levothyroxine,25mg,Twice daily,42,2024-12-07
+2009,1617,92,34,Levothyroxine,500mg,As needed,39,2025-02-24
+2010,168,893,24,Gabapentin,100mg,Three times daily,55,2024-07-16
+2011,641,721,19,Ibuprofen,25mg,Twice daily,71,2024-12-02
+2012,1651,23,29,Gabapentin,20mg,Once daily,23,2024-08-28
+2013,1601,536,33,Lisinopril,500mg,As needed,80,2024-05-04
+2014,1825,205,37,Ibuprofen,100mg,As needed,26,2024-12-17
+2015,582,166,46,Atorvastatin,5mg,As needed,48,2024-10-27
+2016,964,571,45,Sertraline,250mg,Twice daily,82,2024-03-04
+2017,1521,72,49,Acetaminophen,5mg,Once daily,58,2024-08-31
+2018,1440,129,65,Sertraline,20mg,Twice daily,39,2025-02-19
+2019,1445,106,17,Omeprazole,5mg,As needed,70,2025-01-10
+2020,1363,150,64,Warfarin,100mg,Twice daily,45,2025-06-09
+2021,1484,955,8,Clopidogrel,10mg,Once daily,41,2025-05-09
+2022,1596,935,39,Metformin,25mg,Once daily,22,2025-03-17
+2023,608,234,7,Hydrochlorothiazide,50mg,Twice daily,57,2024-11-23
+2024,495,380,46,Atorvastatin,250mg,Once daily,88,2024-07-16
+2025,318,54,15,Sertraline,10mg,As needed,14,2023-08-18
+2026,1414,535,28,Amlodipine,25mg,As needed,35,2023-11-26
+2027,521,362,79,Metoprolol,25mg,Twice daily,75,2024-12-20
+2028,683,437,52,Gabapentin,250mg,Twice daily,90,2024-11-27
+2029,900,586,74,Gabapentin,50mg,As needed,51,2023-06-25
+2030,1098,682,61,Hydrochlorothiazide,20mg,Three times daily,47,2025-03-25
+2031,1978,406,58,Ibuprofen,50mg,Twice daily,72,2025-04-16
+2032,874,578,17,Sertraline,50mg,As needed,69,2024-08-12
+2033,966,611,29,Amoxicillin,5mg,Twice daily,51,2025-03-10
+2034,1868,281,5,Sertraline,10mg,As needed,61,2024-08-10
+2035,938,381,16,Atorvastatin,20mg,As needed,38,2025-04-29
+2036,1676,628,23,Amoxicillin,5mg,Three times daily,50,2024-12-13
+2037,1185,948,9,Prednisone,250mg,Once daily,68,2025-02-01
+2038,1352,657,29,Hydrochlorothiazide,25mg,Three times daily,61,2024-10-04
+2039,1393,704,25,Lisinopril,20mg,Three times daily,59,2024-08-01
+2040,1010,862,17,Losartan,50mg,Twice daily,69,2025-02-09
+2041,1180,882,66,Furosemide,25mg,Twice daily,8,2024-12-24
+2042,1030,155,27,Atorvastatin,25mg,As needed,67,2024-09-25
+2043,785,408,36,Insulin,50mg,Three times daily,13,2025-05-22
+2044,1356,981,62,Sertraline,500mg,Once daily,60,2024-05-29
+2045,1347,694,71,Atorvastatin,500mg,Twice daily,71,2023-11-03
+2046,1551,670,60,Clopidogrel,250mg,Twice daily,85,2025-02-28
+2047,195,94,42,Lisinopril,250mg,Once daily,82,2025-02-07
+2048,832,54,7,Atorvastatin,50mg,Once daily,74,2025-05-04
+2049,538,201,14,Hydrochlorothiazide,5mg,Twice daily,90,2024-09-29
+2050,560,353,27,Omeprazole,50mg,Twice daily,38,2025-06-06
+2051,1104,460,25,Amlodipine,100mg,Once daily,75,2024-02-09
+2052,1953,938,53,Metoprolol,500mg,As needed,72,2025-03-02
+2053,1395,752,34,Furosemide,20mg,Once daily,47,2024-05-12
+2054,1631,408,60,Atorvastatin,10mg,Once daily,89,2024-08-29
+2055,59,336,30,Acetaminophen,25mg,Twice daily,60,2024-06-27
+2056,1207,490,50,Atorvastatin,100mg,Once daily,65,2024-09-20
+2057,558,176,24,Metoprolol,5mg,Once daily,65,2025-05-29
+2058,1857,623,20,Insulin,20mg,As needed,9,2025-03-25
+2059,1401,855,21,Insulin,500mg,As needed,49,2024-02-05
+2060,74,604,15,Metoprolol,10mg,Three times daily,70,2023-05-06
+2061,1007,721,6,Amoxicillin,500mg,Once daily,22,2024-08-31
+2062,1908,171,4,Clopidogrel,5mg,Twice daily,12,2025-01-02
+2063,1589,994,65,Acetaminophen,100mg,Twice daily,28,2024-09-22
+2064,1044,230,53,Insulin,10mg,Twice daily,89,2025-04-15
+2065,1168,137,33,Albuterol,20mg,Three times daily,65,2024-01-21
+2066,785,408,36,Insulin,500mg,Once daily,11,2025-03-28
+2067,1370,248,39,Hydrochlorothiazide,25mg,As needed,30,2025-06-18
+2068,112,160,54,Gabapentin,250mg,Twice daily,73,2024-11-16
+2069,831,964,13,Omeprazole,5mg,Twice daily,70,2024-07-14
+2070,1869,623,79,Atorvastatin,10mg,Once daily,50,2024-09-08
+2071,1195,614,30,Prednisone,25mg,Three times daily,20,2024-06-26
+2072,741,84,28,Ibuprofen,500mg,Once daily,7,2024-04-17
+2073,1092,732,36,Warfarin,25mg,As needed,9,2024-09-05
+2074,1284,932,61,Furosemide,50mg,Twice daily,36,2024-04-22
+2075,1682,907,56,Insulin,25mg,Once daily,73,2024-08-24
+2076,1296,64,38,Losartan,100mg,Twice daily,65,2024-08-10
+2077,1478,857,17,Atorvastatin,10mg,As needed,57,2023-10-17
+2078,388,749,53,Gabapentin,5mg,Twice daily,57,2023-10-03
+2079,1612,91,23,Insulin,250mg,Three times daily,48,2023-08-16
+2080,253,398,36,Clopidogrel,500mg,Twice daily,20,2024-07-16
+2081,1653,769,29,Albuterol,100mg,As needed,29,2024-07-13
+2082,420,128,73,Albuterol,50mg,Once daily,21,2023-02-14
+2083,114,825,5,Gabapentin,100mg,Three times daily,32,2025-06-25
+2084,244,205,61,Metformin,250mg,Twice daily,36,2024-11-26
+2085,368,851,17,Furosemide,25mg,Three times daily,71,2024-10-30
+2086,64,823,51,Prednisone,500mg,Twice daily,49,2025-05-11
+2087,1545,642,42,Ibuprofen,100mg,Twice daily,23,2025-01-26
+2088,266,636,59,Gabapentin,50mg,Three times daily,10,2024-12-24
+2089,131,153,33,Clopidogrel,50mg,Once daily,7,2024-11-01
+2090,360,647,66,Hydrochlorothiazide,25mg,As needed,61,2025-04-01
+2091,990,727,8,Sertraline,50mg,Twice daily,27,2025-03-06
+2092,1399,561,78,Hydrochlorothiazide,100mg,Three times daily,48,2025-04-11
+2093,1577,377,37,Levothyroxine,500mg,Twice daily,45,2024-09-29
+2094,852,405,69,Insulin,10mg,Once daily,84,2024-11-30
+2095,550,971,23,Losartan,500mg,Once daily,61,2024-11-02
+2096,461,184,63,Hydrochlorothiazide,500mg,Once daily,24,2024-12-13
+2097,91,206,61,Albuterol,250mg,Three times daily,28,2025-03-24
+2098,382,726,64,Metformin,100mg,As needed,58,2025-04-02
+2099,393,390,10,Metoprolol,500mg,Three times daily,32,2023-09-22
+2100,1211,997,9,Prednisone,100mg,As needed,81,2024-03-14
+2101,1694,302,55,Amlodipine,10mg,Twice daily,16,2025-04-22
+2102,543,425,58,Metformin,10mg,Twice daily,11,2025-02-11
+2103,1008,918,10,Ibuprofen,25mg,Three times daily,79,2025-05-22
+2104,1891,474,57,Furosemide,20mg,Three times daily,32,2025-03-22
+2105,1552,801,50,Insulin,20mg,Twice daily,54,2024-12-23
+2106,853,784,79,Albuterol,100mg,As needed,31,2024-06-14
+2107,199,668,16,Atorvastatin,250mg,Once daily,60,2025-02-25
+2108,1647,207,57,Omeprazole,20mg,Once daily,48,2025-05-07
+2109,286,44,59,Amoxicillin,25mg,Once daily,33,2025-02-11
+2110,1681,818,25,Insulin,20mg,Twice daily,18,2025-06-14
+2111,140,432,21,Amlodipine,500mg,Three times daily,83,2025-04-22
+2112,1769,629,43,Acetaminophen,25mg,Twice daily,35,2025-01-22
+2113,227,686,22,Furosemide,20mg,Three times daily,53,2025-02-11
+2114,529,922,56,Gabapentin,10mg,As needed,71,2023-06-23
+2115,88,140,8,Lisinopril,500mg,Once daily,48,2025-04-28
+2116,1948,283,54,Metoprolol,500mg,Once daily,22,2024-10-03
+2117,1261,791,23,Albuterol,500mg,Three times daily,66,2025-02-11
+2118,166,14,42,Lisinopril,500mg,Once daily,24,2024-05-24
+2119,1864,797,75,Levothyroxine,10mg,Once daily,28,2025-04-09
+2120,431,161,10,Clopidogrel,100mg,Once daily,68,2025-05-04
+2121,1182,700,42,Metoprolol,250mg,Twice daily,53,2023-07-08
+2122,737,999,37,Furosemide,50mg,Three times daily,57,2025-04-17
+2123,828,382,17,Amoxicillin,500mg,As needed,21,2025-04-12
+2124,82,505,49,Hydrochlorothiazide,20mg,Once daily,70,2025-02-10
+2125,1747,958,23,Warfarin,500mg,As needed,89,2023-08-17
+2126,1676,628,23,Hydrochlorothiazide,20mg,Once daily,83,2024-09-30
+2127,316,590,25,Amlodipine,500mg,Once daily,30,2025-04-13
+2128,883,911,22,Sertraline,100mg,Twice daily,82,2023-11-21
+2129,681,714,51,Lisinopril,20mg,Once daily,63,2025-01-10
+2130,1905,676,51,Ibuprofen,250mg,Twice daily,78,2024-05-26
+2131,700,334,42,Sertraline,5mg,Three times daily,7,2025-04-13
+2132,995,552,32,Acetaminophen,10mg,Three times daily,87,2024-05-24
+2133,747,170,67,Lisinopril,5mg,Three times daily,67,2025-03-03
+2134,340,831,11,Losartan,20mg,Once daily,88,2024-08-06
+2135,1582,914,52,Clopidogrel,50mg,As needed,20,2025-06-04
+2136,1665,305,18,Metoprolol,20mg,Twice daily,52,2025-03-08
+2137,940,415,47,Albuterol,5mg,Three times daily,10,2025-04-12
+2138,891,147,62,Furosemide,20mg,Once daily,72,2024-09-30
+2139,1372,508,6,Lisinopril,250mg,As needed,14,2025-02-04
+2140,1918,111,19,Lisinopril,5mg,Once daily,31,2025-01-06
+2141,914,239,65,Furosemide,25mg,Three times daily,30,2024-10-19
+2142,249,711,44,Acetaminophen,250mg,Twice daily,81,2024-10-01
+2143,417,896,15,Insulin,5mg,Once daily,83,2024-04-13
+2144,739,763,40,Lisinopril,100mg,Once daily,66,2025-03-15
+2145,1922,892,14,Warfarin,10mg,Twice daily,38,2024-06-22
+2146,71,442,56,Losartan,5mg,Three times daily,58,2024-10-27
+2147,1115,746,12,Gabapentin,50mg,Three times daily,85,2024-05-02
+2148,38,791,32,Insulin,500mg,Three times daily,47,2023-11-21
+2149,888,458,32,Metoprolol,5mg,As needed,66,2025-04-07
+2150,744,499,33,Albuterol,5mg,Once daily,84,2025-03-17
+2151,639,91,61,Gabapentin,20mg,As needed,19,2025-04-23
+2152,487,156,15,Atorvastatin,25mg,Once daily,31,2024-09-22
+2153,1170,631,73,Warfarin,50mg,As needed,68,2025-01-28
+2154,1685,633,19,Warfarin,25mg,Once daily,21,2024-10-09
+2155,1117,795,29,Albuterol,10mg,As needed,70,2023-10-02
+2156,1828,773,65,Albuterol,20mg,Three times daily,59,2025-04-16
+2157,507,790,78,Prednisone,50mg,Three times daily,85,2023-10-11
+2158,1408,14,22,Furosemide,100mg,Three times daily,33,2024-06-29
+2159,264,748,36,Furosemide,20mg,Twice daily,50,2025-06-06
+2160,1787,83,52,Clopidogrel,5mg,Once daily,29,2024-12-25
+2161,1897,206,73,Atorvastatin,20mg,Once daily,48,2025-03-24
+2162,1523,137,10,Ibuprofen,10mg,As needed,18,2024-12-03
+2163,1403,712,11,Clopidogrel,5mg,Once daily,65,2023-10-25
+2164,949,846,56,Warfarin,50mg,Three times daily,78,2024-07-07
+2165,227,686,22,Furosemide,10mg,Once daily,52,2024-03-30
+2166,920,274,49,Levothyroxine,50mg,Twice daily,28,2023-11-13
+2167,726,297,22,Ibuprofen,500mg,Once daily,43,2023-10-20
+2168,1020,230,46,Ibuprofen,25mg,Twice daily,81,2023-08-11
+2169,1557,549,53,Omeprazole,5mg,Twice daily,10,2025-04-09
+2170,1638,584,35,Insulin,5mg,Once daily,39,2025-04-26
+2171,324,348,11,Omeprazole,25mg,Twice daily,75,2025-05-20
+2172,1059,531,51,Hydrochlorothiazide,25mg,Three times daily,17,2025-06-29
+2173,143,854,67,Insulin,20mg,As needed,34,2025-01-28
+2174,199,668,16,Hydrochlorothiazide,500mg,Once daily,90,2023-07-05
+2175,815,611,19,Amlodipine,5mg,Three times daily,73,2023-01-24
+2176,279,220,59,Ibuprofen,5mg,Twice daily,29,2025-02-05
+2177,1995,239,30,Gabapentin,500mg,Once daily,53,2024-06-05
+2178,1492,762,54,Amlodipine,50mg,As needed,60,2024-12-30
+2179,1116,355,77,Losartan,25mg,Twice daily,71,2025-05-03
+2180,264,748,36,Amlodipine,10mg,As needed,53,2025-05-28
+2181,596,489,43,Clopidogrel,5mg,Twice daily,61,2025-01-14
+2182,524,449,65,Omeprazole,250mg,Twice daily,26,2024-05-03
+2183,224,7,43,Albuterol,500mg,As needed,46,2025-01-16
+2184,901,281,69,Losartan,250mg,As needed,78,2024-12-02
+2185,142,210,58,Acetaminophen,10mg,Once daily,82,2025-06-01
+2186,247,524,1,Acetaminophen,100mg,Twice daily,49,2024-09-14
+2187,488,301,61,Clopidogrel,50mg,Three times daily,44,2025-02-11
+2188,611,678,20,Levothyroxine,250mg,Twice daily,75,2023-11-05
+2189,556,153,68,Furosemide,10mg,As needed,14,2023-10-05
+2190,1972,841,44,Sertraline,25mg,Once daily,36,2024-06-30
+2191,1494,304,76,Warfarin,100mg,Twice daily,76,2024-08-01
+2192,1176,10,61,Furosemide,20mg,Twice daily,90,2025-03-27
+2193,1788,215,5,Amlodipine,10mg,Twice daily,48,2025-05-01
+2194,617,579,10,Losartan,500mg,Three times daily,58,2024-08-29
+2195,1536,321,23,Losartan,250mg,Three times daily,74,2023-09-28
+2196,1764,408,25,Acetaminophen,500mg,Twice daily,51,2024-09-24
+2197,1798,73,77,Acetaminophen,10mg,Once daily,66,2025-03-05
+2198,1338,553,41,Albuterol,10mg,As needed,46,2025-06-02
+2199,528,127,43,Metoprolol,50mg,Twice daily,74,2024-12-09
+2200,871,20,5,Acetaminophen,500mg,Three times daily,34,2023-02-24
+2201,401,995,74,Albuterol,25mg,As needed,17,2024-02-28
+2202,1992,677,46,Prednisone,10mg,Three times daily,46,2025-05-06
+2203,1368,589,46,Amoxicillin,20mg,Once daily,32,2025-03-10
+2204,1929,218,17,Clopidogrel,10mg,As needed,86,2025-05-30
+2205,1884,194,73,Gabapentin,250mg,Once daily,42,2024-08-30
+2206,1034,742,42,Hydrochlorothiazide,25mg,As needed,70,2025-06-11
+2207,287,823,14,Warfarin,5mg,Once daily,16,2025-06-14
+2208,151,134,1,Sertraline,500mg,Once daily,86,2024-10-26
+2209,647,442,32,Sertraline,100mg,Three times daily,15,2024-12-28
+2210,1087,147,65,Ibuprofen,25mg,Twice daily,33,2025-06-03
+2211,1659,216,30,Clopidogrel,100mg,As needed,46,2024-04-20
+2212,348,580,69,Atorvastatin,50mg,As needed,65,2025-04-09
+2213,106,365,60,Prednisone,250mg,Once daily,75,2025-05-19
+2214,171,667,39,Ibuprofen,10mg,As needed,72,2025-05-04
+2215,167,72,31,Gabapentin,25mg,Once daily,55,2024-12-25
+2216,592,344,29,Atorvastatin,25mg,As needed,36,2024-06-07
+2217,1557,549,53,Acetaminophen,20mg,Twice daily,32,2024-06-12
+2218,678,170,68,Omeprazole,5mg,As needed,29,2025-05-27
+2219,1819,347,73,Ibuprofen,20mg,Twice daily,41,2024-11-30
+2220,241,761,75,Omeprazole,25mg,Three times daily,80,2025-04-23
+2221,751,985,26,Albuterol,20mg,Three times daily,20,2023-10-02
+2222,826,557,12,Albuterol,5mg,Three times daily,78,2025-03-24
+2223,1619,270,78,Insulin,100mg,Once daily,84,2025-02-27
+2224,29,79,30,Albuterol,20mg,As needed,71,2024-11-12
+2225,300,263,48,Losartan,25mg,Three times daily,18,2025-02-27
+2226,423,146,13,Hydrochlorothiazide,50mg,Three times daily,53,2023-04-05
+2227,960,696,19,Metoprolol,20mg,Once daily,22,2025-05-05
+2228,1890,372,65,Atorvastatin,100mg,Three times daily,55,2024-07-05
+2229,1175,394,16,Sertraline,100mg,As needed,68,2025-05-01
+2230,1738,254,55,Warfarin,20mg,As needed,49,2025-01-02
+2231,1461,730,62,Warfarin,250mg,Once daily,88,2025-04-27
+2232,1038,145,51,Levothyroxine,25mg,Once daily,14,2025-06-04
+2233,1009,231,31,Albuterol,500mg,Twice daily,26,2025-01-05
+2234,1021,683,59,Gabapentin,5mg,Twice daily,75,2024-01-15
+2235,586,536,66,Warfarin,20mg,Three times daily,26,2023-05-06
+2236,1807,396,10,Metformin,10mg,Three times daily,62,2025-01-20
+2237,755,66,78,Losartan,100mg,As needed,47,2024-04-28
+2238,693,197,52,Metoprolol,10mg,Three times daily,80,2024-11-07
+2239,1928,395,14,Gabapentin,100mg,Three times daily,65,2024-06-02
+2240,1136,905,2,Atorvastatin,250mg,Once daily,56,2024-03-27
+2241,1653,769,29,Insulin,500mg,As needed,54,2025-06-01
+2242,696,671,59,Ibuprofen,500mg,Once daily,64,2024-08-06
+2243,1446,106,71,Sertraline,25mg,Once daily,29,2024-09-21
+2244,99,89,56,Metformin,500mg,Twice daily,81,2024-08-23
+2245,979,236,43,Warfarin,10mg,Three times daily,11,2024-12-06
+2246,1737,422,38,Furosemide,250mg,As needed,76,2025-06-05
+2247,709,856,63,Prednisone,10mg,Three times daily,40,2025-04-12
+2248,77,996,25,Clopidogrel,20mg,As needed,54,2024-09-11
+2249,1857,623,20,Gabapentin,50mg,Twice daily,33,2025-02-01
+2250,909,294,23,Metoprolol,250mg,As needed,35,2024-08-02
+2251,930,939,31,Levothyroxine,50mg,As needed,11,2024-08-22
+2252,347,187,39,Amlodipine,5mg,Twice daily,20,2025-04-05
+2253,1687,517,32,Warfarin,50mg,As needed,85,2023-05-08
+2254,1553,306,78,Metformin,500mg,As needed,63,2025-01-31
+2255,1537,398,20,Clopidogrel,10mg,As needed,68,2025-01-31
+2256,1118,848,27,Amlodipine,50mg,As needed,61,2024-08-16
+2257,1644,770,56,Amlodipine,250mg,As needed,21,2025-05-10
+2258,971,58,61,Acetaminophen,50mg,Three times daily,33,2024-12-08
+2259,1677,502,48,Albuterol,25mg,Once daily,31,2025-03-13
+2260,1517,774,68,Amoxicillin,25mg,Once daily,88,2024-03-18
+2261,1052,814,7,Furosemide,50mg,Twice daily,41,2025-01-08
+2262,1281,602,19,Clopidogrel,100mg,Once daily,53,2024-04-15
+2263,152,648,53,Furosemide,250mg,Once daily,7,2025-06-20
+2264,1324,630,67,Levothyroxine,20mg,As needed,79,2025-04-04
+2265,457,389,67,Metformin,5mg,Three times daily,55,2024-09-29
+2266,119,194,73,Omeprazole,25mg,Twice daily,73,2025-05-17
+2267,141,372,37,Levothyroxine,10mg,Three times daily,83,2025-01-14
+2268,824,180,33,Prednisone,250mg,Three times daily,69,2024-09-11
+2269,687,539,25,Hydrochlorothiazide,25mg,Twice daily,16,2024-12-04
+2270,1945,971,80,Omeprazole,100mg,Three times daily,72,2025-03-28
+2271,1398,912,22,Ibuprofen,100mg,Twice daily,31,2024-12-19
+2272,481,711,10,Amoxicillin,20mg,Once daily,43,2025-05-07
+2273,1812,232,32,Atorvastatin,100mg,Twice daily,15,2025-03-30
+2274,1633,289,7,Albuterol,5mg,Once daily,68,2025-05-10
+2275,146,670,63,Amlodipine,100mg,As needed,29,2024-10-22
+2276,1038,145,51,Albuterol,5mg,As needed,84,2024-05-14
+2277,1164,145,3,Amoxicillin,25mg,Twice daily,52,2023-07-29
+2278,1580,609,73,Sertraline,10mg,Three times daily,39,2024-10-31
+2279,1658,5,58,Losartan,250mg,Once daily,74,2025-03-09
+2280,1275,974,7,Lisinopril,20mg,Three times daily,76,2024-11-07
+2281,667,80,66,Furosemide,20mg,Once daily,28,2025-05-15
+2282,850,544,6,Albuterol,20mg,As needed,17,2025-03-17
+2283,1290,746,19,Insulin,5mg,Three times daily,14,2024-02-13
+2284,1306,19,70,Omeprazole,25mg,Three times daily,77,2024-10-01
+2285,720,634,62,Furosemide,250mg,Twice daily,43,2024-02-25
+2286,1326,94,30,Amoxicillin,25mg,As needed,47,2024-01-26
+2287,1795,214,47,Clopidogrel,25mg,Once daily,8,2023-10-11
+2288,1081,368,44,Amlodipine,5mg,As needed,24,2025-03-14
+2289,457,389,67,Warfarin,25mg,Twice daily,76,2024-12-10
+2290,1773,862,64,Clopidogrel,250mg,Once daily,68,2025-06-19
+2291,1506,977,5,Gabapentin,50mg,Once daily,60,2024-09-19
+2292,1709,835,68,Acetaminophen,25mg,Twice daily,41,2025-05-19
+2293,715,665,2,Albuterol,500mg,Twice daily,76,2025-03-05
+2294,1757,262,38,Omeprazole,5mg,Once daily,31,2025-04-29
+2295,1561,919,45,Gabapentin,5mg,Once daily,40,2024-04-28
+2296,453,349,65,Amoxicillin,20mg,Twice daily,47,2024-07-30
+2297,1670,8,26,Gabapentin,10mg,Three times daily,55,2024-11-14
+2298,370,759,44,Gabapentin,250mg,Three times daily,88,2024-10-19
+2299,1181,620,51,Atorvastatin,25mg,Once daily,39,2025-03-24
+2300,710,724,21,Losartan,50mg,As needed,69,2024-06-23
+2301,1143,8,59,Ibuprofen,500mg,Three times daily,45,2024-12-15
+2302,881,609,56,Gabapentin,25mg,Three times daily,89,2025-06-29
+2303,1745,319,80,Hydrochlorothiazide,5mg,Once daily,84,2025-04-27
+2304,1338,553,41,Omeprazole,25mg,Three times daily,73,2024-10-02
+2305,1758,778,15,Amoxicillin,100mg,Three times daily,32,2024-09-13
+2306,222,522,59,Prednisone,25mg,Twice daily,73,2024-09-17
+2307,1682,907,56,Omeprazole,50mg,Three times daily,44,2024-06-28
+2308,709,856,63,Metoprolol,100mg,Twice daily,22,2025-03-28
+2309,1814,135,39,Acetaminophen,5mg,Three times daily,41,2024-09-21
+2310,287,823,14,Atorvastatin,250mg,As needed,87,2024-11-26
+2311,1176,10,61,Atorvastatin,20mg,As needed,88,2024-05-07
+2312,901,281,69,Sertraline,25mg,Three times daily,89,2025-05-28
+2313,1104,460,25,Hydrochlorothiazide,25mg,Once daily,54,2025-03-31
+2314,58,556,8,Insulin,5mg,Three times daily,19,2025-04-13
+2315,684,1000,67,Gabapentin,25mg,As needed,57,2025-06-01
+2316,45,392,29,Metoprolol,100mg,Once daily,75,2025-04-08
+2317,1744,433,60,Levothyroxine,10mg,Once daily,55,2025-05-22
+2318,956,564,7,Albuterol,100mg,As needed,81,2025-04-11
+2319,1855,852,70,Omeprazole,20mg,Three times daily,72,2024-11-17
+2320,1973,46,45,Furosemide,250mg,Three times daily,75,2024-05-28
+2321,1988,199,59,Metformin,10mg,Three times daily,79,2025-03-22
+2322,1512,663,53,Amlodipine,100mg,Once daily,27,2025-05-11
+2323,1084,143,15,Omeprazole,5mg,As needed,20,2024-01-15
+2324,182,34,63,Atorvastatin,250mg,Once daily,12,2025-06-09
+2325,431,161,10,Acetaminophen,20mg,Twice daily,22,2025-06-16
+2326,911,399,15,Amoxicillin,50mg,Three times daily,88,2025-02-05
+2327,1180,882,66,Atorvastatin,500mg,As needed,51,2025-01-24
+2328,674,968,64,Acetaminophen,10mg,Three times daily,52,2024-06-18
+2329,94,481,1,Ibuprofen,500mg,As needed,8,2024-10-23
+2330,1375,972,12,Clopidogrel,10mg,Twice daily,37,2025-05-22
+2331,254,475,47,Furosemide,25mg,As needed,60,2025-02-23
+2332,967,191,21,Furosemide,250mg,Three times daily,55,2024-05-18
+2333,1008,918,10,Prednisone,50mg,Once daily,88,2025-03-28
+2334,366,971,35,Gabapentin,50mg,Once daily,26,2024-06-02
+2335,92,928,20,Insulin,500mg,As needed,72,2024-10-11
+2336,223,791,32,Insulin,25mg,Once daily,11,2025-04-27
+2337,1914,301,38,Gabapentin,25mg,Twice daily,11,2025-02-22
+2338,245,768,10,Furosemide,250mg,Once daily,11,2024-12-31
+2339,347,187,39,Insulin,25mg,Three times daily,87,2025-06-02
+2340,1120,139,10,Albuterol,100mg,Twice daily,36,2024-03-05
+2341,1284,932,61,Losartan,100mg,As needed,23,2025-06-11
+2342,1223,679,78,Ibuprofen,250mg,Twice daily,41,2025-03-09
+2343,183,444,58,Gabapentin,100mg,Twice daily,13,2024-07-07
+2344,1955,400,75,Losartan,50mg,Three times daily,69,2025-03-16
+2345,546,803,57,Furosemide,500mg,Three times daily,29,2024-01-29
+2346,1407,439,39,Acetaminophen,5mg,As needed,80,2024-06-20
+2347,154,747,63,Furosemide,10mg,Once daily,29,2024-09-26
+2348,906,862,15,Losartan,10mg,As needed,22,2025-06-21
+2349,164,347,48,Lisinopril,100mg,Three times daily,74,2024-06-12
+2350,169,52,59,Metoprolol,20mg,As needed,68,2024-08-06
+2351,1077,108,6,Atorvastatin,100mg,Once daily,79,2025-02-07
+2352,444,876,23,Losartan,100mg,Three times daily,37,2025-06-18
+2353,1757,262,38,Warfarin,25mg,Three times daily,37,2025-01-12
+2354,1802,946,77,Atorvastatin,25mg,Three times daily,7,2025-02-17
+2355,894,132,24,Atorvastatin,5mg,Three times daily,31,2025-04-04
+2356,401,995,74,Metoprolol,500mg,Twice daily,9,2024-05-27
+2357,1529,680,69,Losartan,50mg,Twice daily,51,2024-02-28
+2358,1989,949,62,Losartan,5mg,Twice daily,12,2024-03-22
+2359,883,911,22,Insulin,250mg,Once daily,56,2025-06-28
+2360,610,106,53,Gabapentin,100mg,Once daily,72,2023-07-17
+2361,232,738,64,Amoxicillin,20mg,As needed,52,2025-04-26
+2362,1174,834,5,Furosemide,20mg,Once daily,74,2025-03-26
+2363,1473,795,39,Sertraline,5mg,Twice daily,35,2025-01-21
+2364,522,587,3,Atorvastatin,250mg,Once daily,66,2025-02-14
+2365,1771,724,76,Insulin,250mg,Twice daily,89,2024-12-28
+2366,1391,245,40,Prednisone,20mg,Three times daily,12,2024-05-28
+2367,738,838,10,Losartan,20mg,Twice daily,29,2024-02-23
+2368,1956,529,54,Omeprazole,25mg,Once daily,35,2024-10-30
+2369,153,903,45,Metoprolol,5mg,Twice daily,66,2025-04-13
+2370,1869,623,79,Acetaminophen,20mg,Three times daily,17,2024-05-20
+2371,1890,372,65,Metformin,5mg,Twice daily,79,2024-10-05
+2372,1390,223,69,Clopidogrel,5mg,Three times daily,42,2024-03-03
+2373,1451,850,2,Prednisone,100mg,Three times daily,67,2024-01-31
+2374,360,647,66,Metoprolol,500mg,As needed,19,2025-02-20
+2375,1792,321,69,Insulin,100mg,Three times daily,69,2024-10-10
+2376,1690,337,5,Lisinopril,500mg,Twice daily,31,2025-04-29
+2377,488,301,61,Atorvastatin,500mg,Three times daily,22,2025-04-14
+2378,496,183,73,Ibuprofen,500mg,Once daily,76,2023-12-20
+2379,1600,762,41,Levothyroxine,50mg,As needed,83,2024-08-20
+2380,1574,135,41,Sertraline,50mg,As needed,17,2024-09-28
+2381,1587,415,35,Prednisone,10mg,Once daily,44,2024-10-24
+2382,119,194,73,Hydrochlorothiazide,25mg,Twice daily,33,2024-06-26
+2383,397,425,41,Hydrochlorothiazide,250mg,Once daily,36,2025-02-15
+2384,1764,408,25,Prednisone,10mg,As needed,88,2024-10-02
+2385,844,994,36,Metoprolol,5mg,Once daily,74,2025-03-04
+2386,680,881,43,Amlodipine,500mg,Three times daily,55,2025-03-23
+2387,679,678,16,Metformin,20mg,As needed,30,2023-12-19
+2388,1709,835,68,Levothyroxine,250mg,As needed,88,2025-01-29
+2389,905,133,26,Prednisone,100mg,Once daily,14,2024-01-31
+2390,45,392,29,Metoprolol,50mg,Three times daily,29,2025-01-12
+2391,1627,614,18,Levothyroxine,500mg,Three times daily,76,2025-02-21
+2392,1938,618,19,Omeprazole,100mg,Twice daily,7,2023-06-21
+2393,1371,834,51,Atorvastatin,50mg,As needed,56,2025-04-25
+2394,1392,570,23,Losartan,5mg,Twice daily,39,2025-01-30
+2395,1324,630,67,Warfarin,250mg,Three times daily,49,2025-01-19
+2396,1715,265,53,Sertraline,10mg,Three times daily,81,2024-12-08
+2397,1606,755,55,Albuterol,100mg,Once daily,31,2025-01-15
+2398,1402,709,16,Gabapentin,10mg,Once daily,81,2025-06-19
+2399,1405,282,54,Losartan,25mg,Three times daily,20,2024-06-14
+2400,1457,355,3,Lisinopril,10mg,Twice daily,10,2025-02-20
+2401,5,594,75,Sertraline,250mg,As needed,29,2024-12-25
+2402,1803,878,75,Sertraline,20mg,Twice daily,17,2024-11-29
+2403,1292,787,5,Amlodipine,5mg,Once daily,60,2025-01-18
+2404,385,926,70,Prednisone,5mg,Once daily,11,2024-03-14
+2405,135,90,72,Sertraline,250mg,Three times daily,55,2024-02-25
+2406,1559,362,32,Acetaminophen,5mg,Twice daily,84,2024-10-20
+2407,825,781,80,Furosemide,100mg,Twice daily,88,2025-04-13
+2408,1468,849,62,Losartan,10mg,Once daily,40,2025-03-31
+2409,164,347,48,Amlodipine,100mg,As needed,31,2025-04-15
+2410,958,814,12,Ibuprofen,20mg,As needed,54,2025-02-27
+2411,1029,715,26,Amoxicillin,10mg,As needed,15,2024-08-06
+2412,276,185,55,Levothyroxine,25mg,As needed,71,2024-10-11
+2413,1170,631,73,Furosemide,5mg,Once daily,52,2025-02-01
+2414,1727,22,14,Metoprolol,20mg,As needed,52,2025-01-28
+2415,506,195,33,Clopidogrel,500mg,Three times daily,59,2025-02-19
+2416,266,636,59,Gabapentin,100mg,Twice daily,33,2025-03-23
+2417,1328,970,12,Metformin,25mg,As needed,70,2024-10-04
+2418,515,102,5,Ibuprofen,500mg,Three times daily,66,2024-07-09
+2419,204,719,71,Gabapentin,25mg,As needed,36,2025-04-07
+2420,222,522,59,Prednisone,20mg,Twice daily,68,2025-02-19
+2421,1904,546,42,Losartan,20mg,Twice daily,74,2024-01-15
+2422,1216,828,26,Ibuprofen,500mg,Twice daily,43,2025-04-07
+2423,79,56,74,Insulin,5mg,Three times daily,87,2023-09-30
+2424,87,176,74,Prednisone,10mg,Once daily,22,2025-02-21
+2425,408,65,25,Albuterol,5mg,Twice daily,52,2025-03-29
+2426,1435,314,52,Clopidogrel,25mg,Once daily,51,2025-03-16
+2427,1579,468,13,Furosemide,20mg,Three times daily,79,2024-09-23
+2428,1823,38,76,Amoxicillin,50mg,Once daily,84,2024-04-10
+2429,973,701,24,Amoxicillin,20mg,As needed,67,2024-05-31
+2430,427,153,35,Levothyroxine,100mg,Twice daily,86,2024-07-14
+2431,1958,938,74,Metoprolol,10mg,As needed,33,2025-03-26
+2432,382,726,64,Acetaminophen,500mg,Twice daily,9,2024-11-15
+2433,1682,907,56,Albuterol,500mg,Three times daily,18,2024-08-25
+2434,1864,797,75,Amlodipine,5mg,Once daily,68,2025-04-11
+2435,1410,422,60,Metoprolol,50mg,Twice daily,22,2025-02-25
+2436,146,670,63,Hydrochlorothiazide,5mg,Three times daily,45,2025-04-19
+2437,968,777,6,Levothyroxine,250mg,As needed,52,2025-01-14
+2438,938,381,16,Metformin,25mg,Three times daily,78,2025-06-28
+2439,1504,990,79,Insulin,100mg,Twice daily,29,2024-09-02
+2440,160,688,19,Omeprazole,100mg,Once daily,45,2025-06-12
+2441,876,721,37,Acetaminophen,5mg,Twice daily,89,2025-03-13
+2442,1815,487,7,Metformin,500mg,As needed,45,2025-06-04
+2443,1668,658,3,Albuterol,10mg,Twice daily,7,2025-06-03
+2444,888,458,32,Atorvastatin,5mg,As needed,50,2025-04-04
+2445,1731,793,29,Ibuprofen,25mg,Three times daily,35,2023-07-10
+2446,1222,738,47,Metformin,100mg,As needed,48,2025-06-14
+2447,503,826,52,Sertraline,20mg,As needed,52,2025-03-31
+2448,517,633,37,Omeprazole,50mg,As needed,55,2024-07-30
+2449,430,740,21,Warfarin,500mg,Three times daily,53,2024-04-28
+2450,304,551,52,Levothyroxine,500mg,As needed,75,2024-06-11
+2451,327,463,22,Omeprazole,100mg,Twice daily,36,2023-07-04
+2452,1061,380,4,Sertraline,100mg,Twice daily,43,2023-07-31
+2453,263,603,27,Ibuprofen,5mg,Once daily,78,2024-11-27
+2454,785,408,36,Hydrochlorothiazide,5mg,Once daily,25,2025-06-13
+2455,897,343,60,Omeprazole,500mg,Twice daily,48,2025-05-30
+2456,1203,948,16,Insulin,20mg,As needed,52,2024-03-15
+2457,1914,301,38,Clopidogrel,50mg,Twice daily,38,2025-02-07
+2458,1798,73,77,Amlodipine,500mg,As needed,53,2025-06-10
+2459,341,984,66,Metoprolol,100mg,Three times daily,79,2025-06-01
+2460,294,164,9,Ibuprofen,5mg,As needed,68,2025-05-15
+2461,661,934,59,Amoxicillin,20mg,Three times daily,47,2024-09-18
+2462,628,448,61,Acetaminophen,500mg,As needed,61,2024-07-17
+2463,873,638,60,Hydrochlorothiazide,50mg,Once daily,78,2024-03-30
+2464,1271,357,14,Prednisone,50mg,Twice daily,40,2024-04-09
+2465,491,35,37,Hydrochlorothiazide,5mg,Once daily,46,2024-12-30
+2466,767,166,48,Omeprazole,100mg,As needed,57,2025-03-29
+2467,541,47,34,Acetaminophen,500mg,Once daily,45,2023-12-04
+2468,1229,673,10,Sertraline,100mg,Three times daily,34,2023-06-21
+2469,1960,408,13,Metoprolol,20mg,As needed,62,2025-06-06
+2470,1308,521,5,Gabapentin,50mg,As needed,68,2025-03-21
+2471,1033,351,65,Levothyroxine,50mg,Once daily,49,2024-02-06
+2472,959,144,53,Hydrochlorothiazide,500mg,Once daily,21,2025-06-19
+2473,1945,971,80,Amlodipine,100mg,As needed,72,2025-02-26
+2474,1233,500,13,Hydrochlorothiazide,5mg,Twice daily,60,2024-08-16
+2475,1561,919,45,Acetaminophen,500mg,Twice daily,61,2025-04-04
+2476,986,727,64,Gabapentin,500mg,Three times daily,39,2025-02-11
+2477,1267,632,14,Amoxicillin,100mg,Twice daily,84,2024-12-09
+2478,1832,494,35,Warfarin,5mg,Three times daily,26,2025-04-24
+2479,434,232,28,Lisinopril,5mg,Once daily,26,2024-12-11
+2480,1442,793,4,Levothyroxine,250mg,As needed,27,2025-04-02
+2481,292,748,56,Clopidogrel,20mg,Once daily,17,2024-03-08
+2482,1518,643,23,Albuterol,500mg,Once daily,45,2025-04-08
+2483,1373,962,26,Lisinopril,50mg,As needed,45,2025-01-02
+2484,546,803,57,Acetaminophen,500mg,Twice daily,73,2023-06-11
+2485,979,236,43,Lisinopril,500mg,Once daily,69,2025-04-27
+2486,1829,104,40,Hydrochlorothiazide,10mg,Three times daily,19,2023-10-22
+2487,81,197,13,Ibuprofen,10mg,As needed,18,2025-03-15
+2488,267,655,47,Acetaminophen,50mg,As needed,25,2025-05-25
+2489,482,479,16,Furosemide,20mg,Three times daily,24,2025-04-17
+2490,1399,561,78,Prednisone,25mg,Once daily,57,2025-05-29
+2491,1763,410,63,Prednisone,25mg,Three times daily,48,2025-06-27
+2492,1725,277,39,Atorvastatin,100mg,Once daily,80,2025-01-04
+2493,708,990,56,Warfarin,25mg,Once daily,87,2025-05-04
+2494,786,679,49,Albuterol,500mg,Three times daily,44,2023-11-02
+2495,721,969,49,Amoxicillin,10mg,Twice daily,60,2025-06-26
+2496,629,668,42,Furosemide,500mg,Once daily,51,2025-04-25
+2497,433,916,8,Levothyroxine,5mg,Three times daily,84,2023-10-15
+2498,331,263,19,Omeprazole,25mg,Twice daily,72,2025-04-04
+2499,1543,37,69,Amoxicillin,20mg,Once daily,86,2025-04-14
+2500,1333,911,18,Sertraline,500mg,As needed,36,2025-06-15
+2501,1554,112,50,Gabapentin,20mg,Once daily,46,2025-03-16
+2502,1646,128,44,Losartan,5mg,Twice daily,44,2024-04-30
+2503,1921,357,44,Albuterol,10mg,Twice daily,64,2025-02-01
+2504,249,711,44,Insulin,25mg,Twice daily,84,2023-12-18
+2505,993,711,26,Lisinopril,100mg,Twice daily,80,2025-06-10
+2506,1644,770,56,Prednisone,10mg,Twice daily,24,2024-05-28
+2507,284,173,51,Furosemide,50mg,As needed,48,2025-01-05
+2508,790,101,36,Metformin,5mg,Three times daily,18,2024-09-11
+2509,1435,314,52,Atorvastatin,50mg,Three times daily,62,2025-06-06
+2510,948,495,43,Acetaminophen,10mg,Once daily,38,2025-04-15
+2511,1839,763,16,Omeprazole,500mg,Three times daily,18,2025-05-13
+2512,90,466,20,Amoxicillin,20mg,Three times daily,52,2025-06-05
+2513,1333,911,18,Metformin,20mg,Twice daily,62,2024-02-18
+2514,1010,862,17,Prednisone,20mg,Once daily,49,2025-04-21
+2515,249,711,44,Atorvastatin,10mg,Three times daily,23,2023-12-19
+2516,598,289,11,Prednisone,500mg,As needed,7,2024-11-21
+2517,369,608,66,Prednisone,10mg,Three times daily,90,2024-08-29
+2518,1879,126,33,Lisinopril,5mg,As needed,79,2024-09-29
+2519,1207,490,50,Hydrochlorothiazide,100mg,Once daily,66,2025-03-10
+2520,24,392,18,Losartan,100mg,As needed,71,2024-07-21
+2521,770,938,3,Clopidogrel,25mg,Three times daily,11,2025-03-08
+2522,268,517,19,Prednisone,500mg,Three times daily,36,2025-03-22
+2523,1286,694,73,Hydrochlorothiazide,5mg,Twice daily,7,2024-06-18
+2524,582,166,46,Losartan,5mg,Once daily,88,2024-04-26
+2525,1434,720,35,Levothyroxine,500mg,Once daily,13,2025-04-25
+2526,1654,866,45,Ibuprofen,25mg,Three times daily,69,2024-03-13
+2527,1631,408,60,Omeprazole,250mg,Once daily,67,2024-07-28
+2528,228,192,67,Ibuprofen,250mg,As needed,77,2025-03-20
+2529,942,565,32,Lisinopril,5mg,As needed,89,2023-02-06
+2530,195,94,42,Atorvastatin,100mg,As needed,63,2025-04-22
+2531,854,513,41,Ibuprofen,5mg,As needed,11,2025-05-18
+2532,199,668,16,Sertraline,100mg,As needed,31,2024-12-23
+2533,44,767,23,Ibuprofen,100mg,Twice daily,72,2024-02-20
+2534,1725,277,39,Prednisone,100mg,Once daily,14,2025-01-09
+2535,619,159,49,Omeprazole,250mg,As needed,31,2025-06-09
+2536,1634,889,12,Sertraline,100mg,Twice daily,17,2024-09-01
+2537,1691,877,69,Clopidogrel,100mg,Once daily,72,2024-10-18
+2538,1427,712,26,Albuterol,5mg,Once daily,80,2025-05-05
+2539,804,857,32,Hydrochlorothiazide,10mg,As needed,26,2025-01-05
+2540,100,637,66,Furosemide,20mg,Twice daily,72,2025-02-12
+2541,1508,447,69,Furosemide,25mg,Three times daily,24,2025-04-11
+2542,601,178,63,Amlodipine,100mg,As needed,71,2025-02-10
+2543,794,457,42,Albuterol,50mg,Once daily,85,2023-06-21
+2544,1135,742,18,Amoxicillin,50mg,Twice daily,63,2024-05-03
+2545,472,712,33,Prednisone,250mg,Once daily,67,2025-04-17
+2546,12,998,71,Insulin,25mg,Once daily,42,2024-11-19
+2547,988,420,17,Omeprazole,50mg,Twice daily,21,2024-05-15
+2548,642,296,75,Insulin,250mg,As needed,67,2025-03-14
+2549,1984,362,28,Omeprazole,50mg,Once daily,7,2024-01-04
+2550,1977,19,39,Albuterol,250mg,Twice daily,37,2023-06-14
+2551,1849,954,29,Acetaminophen,5mg,As needed,25,2025-03-16
+2552,799,957,20,Prednisone,20mg,As needed,73,2024-12-06
+2553,1710,294,30,Amoxicillin,5mg,As needed,15,2025-06-09
+2554,1987,558,40,Ibuprofen,20mg,Once daily,66,2024-11-10
+2555,677,758,46,Amlodipine,20mg,As needed,78,2024-05-20
+2556,293,166,10,Amoxicillin,25mg,Twice daily,61,2024-11-12
+2557,805,696,66,Hydrochlorothiazide,250mg,As needed,58,2024-09-02
+2558,1933,217,12,Levothyroxine,20mg,Twice daily,79,2024-11-09
+2559,251,645,50,Ibuprofen,100mg,As needed,61,2023-09-07
+2560,233,194,11,Clopidogrel,25mg,Three times daily,81,2025-03-18
+2561,1010,862,17,Metoprolol,50mg,Twice daily,20,2025-05-08
+2562,1661,836,5,Gabapentin,25mg,As needed,72,2024-06-10
+2563,684,1000,67,Losartan,25mg,Once daily,31,2023-10-23
+2564,20,109,36,Levothyroxine,100mg,As needed,90,2024-10-26
+2565,1084,143,15,Amoxicillin,250mg,Three times daily,70,2023-11-15
+2566,1072,435,37,Levothyroxine,25mg,As needed,28,2025-04-23
+2567,1890,372,65,Lisinopril,5mg,Once daily,7,2024-07-08
+2568,844,994,36,Hydrochlorothiazide,10mg,Once daily,73,2024-04-14
+2569,1088,619,28,Gabapentin,5mg,Once daily,56,2025-05-28
+2570,1119,851,71,Omeprazole,250mg,Once daily,65,2024-11-21
+2571,1883,814,4,Acetaminophen,5mg,As needed,42,2023-11-13
+2572,418,693,26,Levothyroxine,50mg,Three times daily,79,2024-04-16
+2573,100,637,66,Amoxicillin,5mg,Once daily,58,2024-09-27
+2574,1158,332,53,Ibuprofen,100mg,Three times daily,50,2024-09-20
+2575,1139,750,18,Warfarin,250mg,As needed,82,2024-12-22
+2576,1772,691,77,Prednisone,500mg,Twice daily,89,2024-09-06
+2577,847,893,25,Clopidogrel,20mg,As needed,63,2024-10-27
+2578,1075,457,73,Prednisone,20mg,Once daily,45,2024-04-08
+2579,648,25,78,Clopidogrel,50mg,As needed,86,2023-04-13
+2580,395,479,45,Clopidogrel,250mg,Three times daily,8,2024-03-13
+2581,1616,598,32,Losartan,5mg,Once daily,61,2024-10-25
+2582,854,513,41,Losartan,100mg,Three times daily,62,2025-06-12
+2583,311,413,44,Metoprolol,5mg,As needed,59,2025-05-01
+2584,1789,652,39,Sertraline,5mg,As needed,64,2024-10-16
+2585,1839,763,16,Albuterol,100mg,Twice daily,54,2024-12-13
+2586,1695,599,51,Losartan,25mg,As needed,33,2025-03-21
+2587,54,642,18,Levothyroxine,50mg,Twice daily,29,2024-10-30
+2588,349,814,40,Ibuprofen,20mg,As needed,57,2025-06-24
+2589,280,165,60,Prednisone,50mg,Three times daily,26,2025-01-16
+2590,1765,414,40,Prednisone,20mg,Twice daily,19,2025-06-17
+2591,693,197,52,Hydrochlorothiazide,20mg,Twice daily,38,2024-11-10
+2592,1239,516,34,Amlodipine,250mg,Three times daily,22,2025-05-12
+2593,740,702,27,Sertraline,25mg,Twice daily,17,2024-12-19
+2594,944,132,46,Sertraline,20mg,Three times daily,77,2024-02-25
+2595,1942,310,50,Warfarin,100mg,As needed,40,2025-06-09
+2596,1468,849,62,Insulin,25mg,Once daily,24,2025-05-19
+2597,1830,760,67,Metoprolol,50mg,As needed,72,2024-11-02
+2598,2,154,5,Metformin,500mg,Twice daily,31,2023-11-23
+2599,624,180,32,Insulin,25mg,As needed,19,2025-04-17
+2600,596,489,43,Gabapentin,10mg,As needed,9,2025-05-15
+2601,15,143,23,Metoprolol,25mg,Three times daily,58,2023-09-12
+2602,1313,136,80,Atorvastatin,500mg,Twice daily,8,2025-06-12
+2603,871,20,5,Acetaminophen,5mg,Three times daily,24,2023-09-14
+2604,225,853,9,Metformin,25mg,Once daily,69,2025-05-23
+2605,1678,96,64,Losartan,5mg,Twice daily,38,2024-12-02
+2606,1083,890,17,Albuterol,250mg,Once daily,45,2025-04-22
+2607,1327,679,18,Insulin,10mg,As needed,81,2025-04-10
+2608,1360,461,27,Metoprolol,250mg,Three times daily,80,2024-05-21
+2609,1619,270,78,Gabapentin,25mg,Twice daily,43,2025-03-01
+2610,509,998,23,Acetaminophen,20mg,Twice daily,72,2025-03-21
+2611,1265,649,31,Atorvastatin,5mg,Once daily,12,2024-06-18
+2612,1672,719,69,Levothyroxine,100mg,As needed,29,2025-02-19
+2613,1846,903,72,Amoxicillin,25mg,Three times daily,68,2024-09-22
+2614,1971,66,25,Clopidogrel,100mg,As needed,9,2025-02-15
+2615,1056,334,24,Warfarin,500mg,Twice daily,27,2025-05-23
+2616,1612,91,23,Insulin,250mg,Twice daily,80,2024-09-07
+2617,1724,8,34,Hydrochlorothiazide,50mg,Twice daily,55,2024-12-17
+2618,883,911,22,Albuterol,25mg,Three times daily,36,2023-09-13
+2619,1288,23,14,Amlodipine,20mg,Once daily,75,2025-04-11
+2620,1385,551,55,Sertraline,500mg,Once daily,64,2024-04-19
+2621,370,759,44,Lisinopril,10mg,As needed,82,2023-10-13
+2622,1206,902,37,Warfarin,100mg,Once daily,38,2024-08-18
+2623,658,157,46,Insulin,10mg,Three times daily,76,2023-11-01
+2624,1262,608,47,Prednisone,10mg,As needed,15,2025-01-06
+2625,1840,383,22,Albuterol,250mg,Twice daily,8,2024-09-12
+2626,1641,41,56,Levothyroxine,250mg,As needed,32,2024-06-18
+2627,1318,15,35,Hydrochlorothiazide,25mg,Once daily,60,2025-04-12
+2628,378,313,14,Atorvastatin,10mg,Twice daily,48,2024-03-03
+2629,1835,636,4,Insulin,20mg,Twice daily,74,2025-05-28
+2630,572,986,62,Hydrochlorothiazide,100mg,Three times daily,37,2024-08-03
+2631,116,380,60,Amoxicillin,20mg,As needed,70,2024-06-04
+2632,1579,468,13,Levothyroxine,20mg,Three times daily,18,2025-04-01
+2633,1043,842,5,Gabapentin,250mg,Twice daily,51,2024-10-07
+2634,1105,458,27,Lisinopril,25mg,Once daily,45,2025-04-08
+2635,963,379,20,Lisinopril,10mg,Three times daily,38,2024-11-16
+2636,1136,905,2,Metoprolol,20mg,Twice daily,76,2024-04-13
+2637,1438,283,27,Insulin,20mg,As needed,12,2025-02-07
+2638,194,75,41,Metformin,10mg,Twice daily,47,2025-02-17
+2639,408,65,25,Prednisone,10mg,Three times daily,66,2025-04-18
+2640,1134,719,34,Amlodipine,250mg,Once daily,8,2023-07-21
+2641,372,309,13,Gabapentin,5mg,Once daily,70,2025-03-15
+2642,892,687,25,Clopidogrel,5mg,Twice daily,25,2025-06-03
+2643,1149,920,61,Levothyroxine,5mg,Twice daily,34,2024-01-10
+2644,934,719,15,Metformin,5mg,Twice daily,64,2024-04-16
+2645,139,495,57,Ibuprofen,100mg,Three times daily,23,2025-04-17
+2646,626,554,80,Ibuprofen,5mg,Three times daily,46,2025-03-30
+2647,1648,192,10,Metformin,100mg,Once daily,87,2024-11-24
+2648,1030,155,27,Lisinopril,500mg,Three times daily,71,2025-02-25
+2649,673,100,45,Metoprolol,10mg,Three times daily,86,2025-06-16
+2650,202,552,56,Warfarin,250mg,Once daily,38,2025-04-27
+2651,1702,6,72,Metoprolol,500mg,As needed,14,2025-01-05
+2652,38,791,32,Atorvastatin,5mg,As needed,73,2024-07-13
+2653,853,784,79,Acetaminophen,5mg,Twice daily,50,2025-01-05
+2654,1705,800,17,Prednisone,20mg,Three times daily,43,2024-08-24
+2655,165,271,36,Metoprolol,500mg,Once daily,19,2025-03-25
+2656,50,881,49,Gabapentin,5mg,Three times daily,54,2025-02-05
+2657,849,702,23,Amoxicillin,500mg,Twice daily,84,2025-05-23
+2658,601,178,63,Metoprolol,500mg,As needed,49,2024-10-26
+2659,1143,8,59,Omeprazole,100mg,Three times daily,15,2024-08-28
+2660,454,894,21,Sertraline,500mg,Three times daily,26,2023-05-21
+2661,550,971,23,Prednisone,20mg,Once daily,71,2025-06-05
+2662,109,773,39,Metoprolol,10mg,Three times daily,33,2024-07-26
+2663,954,485,48,Omeprazole,100mg,Once daily,81,2024-12-23
+2664,210,710,61,Albuterol,10mg,Twice daily,73,2025-02-09
+2665,692,193,20,Metformin,25mg,Twice daily,44,2025-04-09
+2666,506,195,33,Amoxicillin,25mg,As needed,33,2024-12-14
+2667,1963,805,71,Levothyroxine,250mg,As needed,10,2023-10-09
+2668,1262,608,47,Losartan,25mg,Three times daily,30,2024-10-05
+2669,1067,319,23,Hydrochlorothiazide,10mg,Once daily,86,2024-08-17
+2670,1601,536,33,Acetaminophen,5mg,Three times daily,30,2023-09-10
+2671,1885,274,2,Amoxicillin,10mg,As needed,18,2025-06-09
+2672,1359,46,8,Metoprolol,20mg,Once daily,13,2024-06-18
+2673,1595,58,53,Levothyroxine,500mg,Once daily,12,2024-10-16
+2674,18,76,64,Metformin,25mg,Twice daily,60,2024-09-17
+2675,1647,207,57,Amoxicillin,100mg,Three times daily,19,2025-01-25
+2676,1084,143,15,Amlodipine,50mg,Three times daily,7,2025-06-13
+2677,1662,795,75,Amoxicillin,10mg,Three times daily,54,2025-06-06
+2678,958,814,12,Acetaminophen,25mg,Once daily,16,2025-05-12
+2679,1012,1,25,Atorvastatin,100mg,Twice daily,17,2025-04-07
+2680,1061,380,4,Atorvastatin,5mg,Twice daily,80,2025-05-11
+2681,95,238,22,Amoxicillin,500mg,Three times daily,30,2023-12-19
+2682,664,531,31,Metoprolol,500mg,As needed,51,2024-12-24
+2683,1337,142,50,Sertraline,250mg,Three times daily,33,2023-11-21
+2684,1284,932,61,Gabapentin,5mg,Once daily,67,2024-06-27
+2685,1137,362,54,Amoxicillin,20mg,Once daily,49,2025-06-22
+2686,196,663,39,Sertraline,250mg,Once daily,10,2025-05-16
+2687,399,343,63,Omeprazole,500mg,As needed,50,2024-10-31
+2688,1232,514,46,Ibuprofen,25mg,Twice daily,66,2025-05-18
+2689,1554,112,50,Albuterol,100mg,Once daily,10,2025-04-07
+2690,1430,421,23,Lisinopril,250mg,Twice daily,30,2025-05-07
+2691,1796,478,63,Omeprazole,10mg,Three times daily,28,2024-09-15
+2692,1886,7,10,Insulin,5mg,Once daily,33,2025-04-01
+2693,1693,96,65,Albuterol,250mg,Once daily,71,2024-08-05
+2694,1649,220,3,Lisinopril,500mg,Twice daily,11,2024-10-20
+2695,481,711,10,Levothyroxine,500mg,As needed,61,2025-01-16
+2696,1903,594,61,Metoprolol,500mg,Twice daily,58,2023-03-30
+2697,392,615,57,Insulin,5mg,As needed,35,2025-01-15
+2698,558,176,24,Metoprolol,50mg,Twice daily,25,2025-04-07
+2699,1532,152,69,Prednisone,25mg,Three times daily,15,2024-12-24
+2700,822,753,8,Amlodipine,500mg,Twice daily,46,2024-12-04
+2701,235,295,69,Losartan,10mg,As needed,33,2024-10-20
+2702,515,102,5,Warfarin,20mg,Once daily,90,2023-03-05
+2703,1604,191,14,Furosemide,25mg,Once daily,73,2025-03-07
+2704,1804,111,40,Gabapentin,500mg,Twice daily,71,2024-10-26
+2705,1066,952,24,Insulin,500mg,Three times daily,72,2025-03-16
+2706,1251,116,62,Acetaminophen,100mg,Once daily,18,2023-10-22
+2707,1587,415,35,Furosemide,20mg,Once daily,11,2024-11-24
+2708,984,285,41,Atorvastatin,500mg,Three times daily,88,2024-02-13
+2709,923,465,29,Levothyroxine,500mg,Three times daily,74,2025-05-09
+2710,198,12,51,Amoxicillin,10mg,Once daily,40,2025-05-03
+2711,474,941,10,Warfarin,50mg,As needed,23,2024-01-10
+2712,1318,15,35,Clopidogrel,20mg,Once daily,70,2025-06-16
+2713,1752,232,66,Clopidogrel,10mg,Twice daily,79,2025-06-11
+2714,666,853,32,Omeprazole,20mg,Three times daily,79,2024-10-16
+2715,1355,766,26,Gabapentin,100mg,Three times daily,81,2024-12-08
+2716,1962,967,69,Albuterol,250mg,Three times daily,47,2025-06-14
+2717,979,236,43,Amoxicillin,500mg,As needed,41,2024-01-20
+2718,558,176,24,Losartan,5mg,As needed,83,2025-05-24
+2719,505,517,51,Warfarin,10mg,As needed,56,2024-06-29
+2720,1006,144,16,Atorvastatin,10mg,Once daily,49,2025-06-09
+2721,1677,502,48,Gabapentin,50mg,As needed,10,2025-06-16
+2722,319,39,40,Warfarin,10mg,Three times daily,53,2024-12-14
+2723,1932,401,39,Metoprolol,25mg,As needed,82,2023-11-28
+2724,1906,508,13,Gabapentin,100mg,Twice daily,83,2024-03-04
+2725,1388,52,49,Lisinopril,5mg,Three times daily,45,2025-06-19
+2726,458,843,13,Atorvastatin,250mg,Twice daily,30,2024-06-09
+2727,1685,633,19,Acetaminophen,250mg,As needed,74,2024-02-28
+2728,316,590,25,Warfarin,5mg,As needed,23,2025-04-17
+2729,538,201,14,Hydrochlorothiazide,500mg,Twice daily,77,2025-04-09
+2730,1109,25,24,Albuterol,25mg,Once daily,64,2025-06-27
+2731,213,740,9,Sertraline,50mg,Three times daily,14,2025-01-19
+2732,931,687,20,Lisinopril,25mg,Once daily,43,2024-05-17
+2733,1014,314,6,Sertraline,5mg,Three times daily,12,2024-06-27
+2734,55,101,18,Acetaminophen,10mg,Once daily,45,2025-01-15
+2735,1391,245,40,Amlodipine,20mg,Three times daily,42,2025-05-04
+2736,1696,879,46,Atorvastatin,500mg,Once daily,61,2025-01-21
+2737,459,576,18,Metoprolol,10mg,As needed,67,2024-10-31
+2738,484,569,55,Omeprazole,25mg,Twice daily,89,2024-09-13
+2739,1317,735,47,Albuterol,10mg,Once daily,11,2024-08-29
+2740,996,236,61,Prednisone,500mg,Once daily,75,2025-03-18
+2741,1177,242,56,Acetaminophen,250mg,Three times daily,14,2024-12-22
+2742,480,800,65,Ibuprofen,250mg,Three times daily,48,2025-03-16
+2743,1797,131,63,Gabapentin,20mg,Three times daily,67,2024-07-01
+2744,178,779,49,Amlodipine,10mg,As needed,41,2025-06-11
+2745,1618,674,70,Amoxicillin,20mg,As needed,65,2023-05-31
+2746,1863,446,11,Atorvastatin,50mg,Twice daily,90,2023-10-28
+2747,1867,636,57,Omeprazole,10mg,As needed,7,2024-10-26
+2748,356,127,68,Omeprazole,50mg,Once daily,8,2025-05-06
+2749,460,200,20,Amlodipine,25mg,As needed,80,2025-04-16
+2750,1082,585,20,Clopidogrel,500mg,Once daily,75,2024-06-23
+2751,812,363,48,Omeprazole,250mg,As needed,41,2024-09-17
+2752,771,888,32,Clopidogrel,25mg,As needed,87,2024-12-28
+2753,1895,517,4,Atorvastatin,100mg,Once daily,36,2023-12-02
+2754,1815,487,7,Warfarin,250mg,Twice daily,24,2025-06-04
+2755,637,732,35,Clopidogrel,250mg,Once daily,64,2023-06-02
+2756,427,153,35,Clopidogrel,100mg,As needed,66,2024-12-11
+2757,544,679,40,Metformin,20mg,As needed,18,2024-12-16
+2758,369,608,66,Furosemide,20mg,Twice daily,83,2025-05-18
+2759,132,579,77,Lisinopril,100mg,Three times daily,52,2025-05-25
+2760,1550,734,65,Clopidogrel,50mg,Twice daily,76,2025-01-15
+2761,51,964,29,Insulin,100mg,Once daily,39,2024-10-08
+2762,1395,752,34,Metoprolol,25mg,As needed,65,2025-03-08
+2763,50,881,49,Hydrochlorothiazide,10mg,Once daily,19,2023-12-15
+2764,182,34,63,Amoxicillin,100mg,Once daily,10,2024-02-29
+2765,735,324,77,Insulin,50mg,Twice daily,46,2025-01-14
+2766,662,68,54,Amlodipine,100mg,Twice daily,49,2025-02-21
+2767,1423,120,17,Amoxicillin,100mg,Three times daily,11,2025-04-20
+2768,1598,189,78,Metformin,500mg,As needed,55,2024-12-09
+2769,292,748,56,Amoxicillin,20mg,As needed,85,2025-03-17
+2770,1949,535,42,Albuterol,25mg,Twice daily,89,2024-12-25
+2771,1642,521,56,Clopidogrel,100mg,Twice daily,55,2024-07-07
+2772,957,2,28,Ibuprofen,500mg,Once daily,37,2024-06-29
+2773,50,881,49,Insulin,250mg,Once daily,11,2025-04-15
+2774,530,746,50,Warfarin,250mg,Once daily,68,2025-05-04
+2775,1626,212,20,Insulin,250mg,Twice daily,55,2024-08-03
+2776,1048,793,39,Omeprazole,5mg,Once daily,13,2025-03-20
+2777,350,863,76,Warfarin,5mg,Twice daily,12,2025-03-27
+2778,656,12,73,Prednisone,500mg,As needed,38,2024-03-28
+2779,356,127,68,Amlodipine,10mg,As needed,64,2025-05-18
+2780,1383,310,73,Insulin,50mg,Once daily,53,2025-06-06
+2781,1931,712,4,Clopidogrel,20mg,As needed,84,2024-07-02
+2782,1991,230,34,Gabapentin,50mg,Twice daily,24,2024-03-16
+2783,481,711,10,Gabapentin,100mg,Once daily,10,2023-02-02
+2784,1358,391,64,Levothyroxine,100mg,As needed,75,2024-12-23
+2785,1587,415,35,Atorvastatin,25mg,Once daily,71,2024-07-31
+2786,1583,791,51,Prednisone,20mg,Three times daily,61,2025-06-05
+2787,258,943,39,Metformin,25mg,As needed,66,2025-05-27
+2788,1071,233,14,Prednisone,5mg,Once daily,31,2024-12-25
+2789,670,647,69,Metformin,500mg,Twice daily,76,2025-02-18
+2790,1812,232,32,Metformin,50mg,Three times daily,30,2024-12-04
+2791,808,409,61,Clopidogrel,25mg,Twice daily,43,2024-05-18
+2792,1032,822,40,Levothyroxine,10mg,Once daily,85,2024-10-24
+2793,363,888,71,Omeprazole,100mg,Three times daily,42,2025-03-31
+2794,1445,106,17,Amoxicillin,250mg,As needed,81,2025-04-24
+2795,1543,37,69,Albuterol,20mg,Three times daily,71,2025-05-04
+2796,659,749,49,Acetaminophen,250mg,Three times daily,47,2025-03-29
+2797,1656,902,64,Warfarin,50mg,Twice daily,50,2025-04-28
+2798,1248,167,5,Albuterol,5mg,As needed,80,2025-05-21
+2799,76,504,70,Insulin,20mg,Twice daily,44,2024-06-21
+2800,392,615,57,Metoprolol,10mg,Once daily,70,2024-08-30
+2801,1111,577,54,Warfarin,20mg,Twice daily,85,2024-09-16
+2802,1002,183,65,Gabapentin,20mg,As needed,70,2024-11-08
+2803,1575,365,9,Amlodipine,500mg,As needed,77,2024-07-23
+2804,1531,967,16,Furosemide,25mg,Twice daily,7,2025-05-26
+2805,1000,912,47,Sertraline,20mg,Twice daily,79,2025-02-06
+2806,1333,911,18,Gabapentin,20mg,Twice daily,87,2025-05-15
+2807,1281,602,19,Insulin,50mg,Once daily,59,2024-07-07
+2808,7,718,1,Metformin,100mg,As needed,62,2025-06-03
+2809,1469,757,78,Albuterol,500mg,As needed,47,2024-04-30
+2810,1152,240,27,Levothyroxine,20mg,Twice daily,46,2024-05-14
+2811,1384,720,36,Atorvastatin,50mg,Three times daily,78,2025-02-28
+2812,1329,969,48,Metoprolol,10mg,As needed,46,2025-04-15
+2813,1925,135,76,Sertraline,50mg,Once daily,62,2023-09-04
+2814,1418,550,42,Omeprazole,20mg,Twice daily,38,2025-04-10
+2815,70,11,23,Losartan,20mg,Three times daily,39,2023-10-01
+2816,276,185,55,Metformin,50mg,As needed,40,2024-12-02
+2817,613,939,32,Amlodipine,100mg,As needed,47,2025-01-31
+2818,743,467,54,Metoprolol,5mg,As needed,87,2024-11-10
+2819,403,55,43,Warfarin,5mg,Once daily,23,2024-06-16
+2820,121,439,25,Prednisone,250mg,Three times daily,42,2025-04-27
+2821,1731,793,29,Metformin,5mg,As needed,28,2023-12-11
+2822,1370,248,39,Clopidogrel,10mg,Once daily,84,2024-07-16
+2823,1580,609,73,Levothyroxine,50mg,Twice daily,56,2025-02-12
+2824,475,852,59,Levothyroxine,500mg,Twice daily,14,2024-06-19
+2825,1472,187,28,Metoprolol,250mg,Once daily,85,2023-03-17
+2826,893,850,20,Amlodipine,20mg,Three times daily,37,2025-04-30
+2827,363,888,71,Insulin,250mg,Three times daily,21,2024-11-26
+2828,1338,553,41,Albuterol,250mg,Once daily,18,2024-07-28
+2829,1274,607,3,Metformin,10mg,As needed,34,2025-05-13
+2830,988,420,17,Acetaminophen,20mg,Three times daily,35,2024-03-05
+2831,1233,500,13,Metformin,500mg,Three times daily,52,2024-04-16
+2832,256,545,50,Albuterol,100mg,Three times daily,73,2023-09-25
+2833,249,711,44,Metoprolol,5mg,Three times daily,38,2023-05-19
+2834,909,294,23,Lisinopril,250mg,Three times daily,61,2025-06-25
+2835,1490,887,11,Levothyroxine,50mg,Twice daily,7,2025-04-01
+2836,1227,129,23,Atorvastatin,250mg,Once daily,31,2025-03-09
+2837,325,865,80,Sertraline,500mg,Twice daily,22,2024-09-05
+2838,752,947,66,Lisinopril,10mg,Three times daily,10,2025-04-05
+2839,720,634,62,Metformin,5mg,Once daily,64,2025-05-12
+2840,613,939,32,Furosemide,25mg,As needed,31,2024-11-25
+2841,926,734,41,Warfarin,20mg,Twice daily,25,2024-09-27
+2842,1265,649,31,Furosemide,250mg,Twice daily,38,2023-10-29
+2843,440,584,49,Ibuprofen,25mg,Three times daily,20,2024-02-05
+2844,720,634,62,Metformin,100mg,Three times daily,75,2024-05-10
+2845,1751,119,3,Lisinopril,100mg,Three times daily,78,2024-05-30
+2846,615,907,60,Amoxicillin,500mg,Three times daily,19,2025-02-22
+2847,167,72,31,Prednisone,10mg,Once daily,55,2025-06-14
+2848,1098,682,61,Lisinopril,500mg,As needed,17,2024-11-23
+2849,388,749,53,Omeprazole,25mg,Three times daily,38,2025-01-19
+2850,619,159,49,Prednisone,20mg,Three times daily,42,2024-12-20
+2851,1021,683,59,Atorvastatin,50mg,Three times daily,62,2024-11-04
+2852,888,458,32,Insulin,10mg,Three times daily,64,2025-03-23
+2853,547,523,45,Insulin,500mg,As needed,66,2024-10-11
+2854,1341,173,49,Sertraline,25mg,As needed,30,2024-12-09
+2855,1179,513,27,Albuterol,500mg,Twice daily,71,2025-04-06
+2856,1004,607,11,Furosemide,100mg,As needed,46,2025-06-26
+2857,1587,415,35,Metformin,250mg,As needed,89,2024-09-19
+2858,1298,915,52,Losartan,500mg,Once daily,81,2023-12-10
+2859,1647,207,57,Lisinopril,5mg,Three times daily,84,2025-01-18
+2860,689,475,9,Clopidogrel,100mg,Twice daily,22,2024-02-22
+2861,154,747,63,Omeprazole,250mg,Twice daily,81,2024-12-17
+2862,1077,108,6,Lisinopril,250mg,Twice daily,46,2024-08-23
+2863,43,185,24,Losartan,500mg,Once daily,18,2024-12-22
+2864,948,495,43,Levothyroxine,20mg,As needed,51,2025-05-04
+2865,344,338,21,Insulin,50mg,As needed,25,2024-10-22
+2866,834,970,70,Losartan,10mg,As needed,37,2025-03-27
+2867,73,43,25,Gabapentin,100mg,As needed,76,2024-10-14
+2868,463,785,19,Hydrochlorothiazide,50mg,Once daily,53,2025-03-11
+2869,1569,241,79,Prednisone,5mg,Twice daily,52,2023-07-12
+2870,547,523,45,Hydrochlorothiazide,5mg,As needed,51,2024-08-28
+2871,1289,582,75,Atorvastatin,5mg,As needed,8,2025-04-18
+2872,166,14,42,Metformin,25mg,Three times daily,32,2023-11-29
+2873,1926,520,7,Atorvastatin,50mg,Once daily,87,2025-06-12
+2874,971,58,61,Amoxicillin,50mg,As needed,65,2025-02-23
+2875,1183,295,58,Acetaminophen,25mg,As needed,11,2024-04-27
+2876,1900,311,11,Acetaminophen,250mg,As needed,44,2025-04-06
+2877,1121,565,75,Ibuprofen,100mg,Three times daily,86,2025-05-11
+2878,1807,396,10,Warfarin,100mg,Three times daily,12,2024-07-22
+2879,1654,866,45,Clopidogrel,250mg,Once daily,63,2025-01-26
+2880,1602,754,50,Amlodipine,50mg,Once daily,14,2025-01-20
+2881,1626,212,20,Metoprolol,5mg,Twice daily,77,2024-12-24
+2882,1415,973,63,Gabapentin,100mg,Twice daily,14,2025-02-08
+2883,1891,474,57,Hydrochlorothiazide,5mg,Twice daily,42,2025-02-18
+2884,1987,558,40,Atorvastatin,10mg,As needed,81,2024-11-29
+2885,392,615,57,Levothyroxine,100mg,Twice daily,41,2025-04-03
+2886,989,944,55,Metformin,500mg,Twice daily,9,2025-03-29
+2887,1938,618,19,Prednisone,500mg,Twice daily,10,2025-04-17
+2888,1139,750,18,Albuterol,50mg,Once daily,58,2025-02-28
+2889,1813,203,15,Hydrochlorothiazide,5mg,Twice daily,65,2024-01-17
+2890,1961,237,62,Omeprazole,100mg,Twice daily,85,2025-04-11
+2891,150,688,73,Gabapentin,50mg,Once daily,49,2025-06-25
+2892,1127,297,27,Metoprolol,5mg,Three times daily,65,2025-05-30
+2893,977,242,71,Ibuprofen,20mg,Three times daily,30,2025-03-14
+2894,1340,389,32,Warfarin,20mg,Once daily,32,2025-03-03
+2895,240,625,11,Omeprazole,250mg,Three times daily,13,2024-10-18
+2896,1133,920,60,Omeprazole,100mg,Twice daily,88,2024-03-22
+2897,1517,774,68,Losartan,5mg,As needed,68,2024-11-16
+2898,1259,299,44,Insulin,25mg,Twice daily,19,2025-04-24
+2899,1042,183,68,Furosemide,50mg,As needed,11,2025-04-29
+2900,1971,66,25,Amlodipine,250mg,Twice daily,87,2025-01-02
+2901,319,39,40,Furosemide,500mg,Twice daily,75,2024-07-19
+2902,556,153,68,Clopidogrel,20mg,Three times daily,73,2024-03-19
+2903,482,479,16,Sertraline,100mg,Twice daily,23,2025-04-20
+2904,507,790,78,Metformin,100mg,As needed,44,2024-12-14
+2905,1859,393,40,Furosemide,50mg,Twice daily,84,2024-07-31
+2906,570,789,75,Gabapentin,20mg,Three times daily,72,2024-03-24
+2907,1556,572,51,Prednisone,5mg,As needed,80,2024-08-04
+2908,65,702,18,Omeprazole,20mg,Twice daily,67,2023-01-24
+2909,155,9,14,Clopidogrel,50mg,Twice daily,23,2025-01-15
+2910,1045,44,65,Ibuprofen,500mg,Three times daily,76,2024-12-26
+2911,1974,152,2,Metformin,25mg,As needed,34,2024-03-04
+2912,703,226,27,Ibuprofen,5mg,Twice daily,63,2024-10-01
+2913,269,754,47,Albuterol,100mg,Once daily,48,2025-01-06
+2914,242,381,72,Insulin,20mg,Three times daily,12,2024-05-11
+2915,681,714,51,Metoprolol,100mg,Twice daily,76,2024-06-14
+2916,1157,154,4,Omeprazole,50mg,Once daily,26,2025-02-04
+2917,935,157,26,Sertraline,250mg,Twice daily,16,2024-02-28
+2918,366,971,35,Warfarin,50mg,Once daily,31,2024-07-20
+2919,1876,311,45,Atorvastatin,100mg,Three times daily,82,2024-10-19
+2920,1631,408,60,Furosemide,20mg,As needed,47,2024-09-18
+2921,1751,119,3,Lisinopril,100mg,As needed,87,2024-03-27
+2922,283,577,47,Amlodipine,100mg,Three times daily,63,2025-04-02
+2923,1705,800,17,Prednisone,50mg,Twice daily,61,2024-04-10
+2924,788,954,43,Metformin,50mg,Once daily,37,2023-06-02
+2925,1816,617,79,Acetaminophen,100mg,Three times daily,11,2024-02-12
+2926,1480,854,79,Losartan,10mg,As needed,46,2024-05-04
+2927,1494,304,76,Atorvastatin,5mg,Once daily,13,2024-06-01
+2928,1922,892,14,Prednisone,10mg,As needed,56,2024-12-30
+2929,1809,279,47,Levothyroxine,100mg,Three times daily,74,2024-11-01
+2930,74,604,15,Metoprolol,100mg,Once daily,71,2025-03-02
+2931,387,194,76,Albuterol,20mg,Twice daily,87,2024-12-10
+2932,1672,719,69,Amlodipine,25mg,Three times daily,77,2025-05-28
+2933,1480,854,79,Warfarin,10mg,As needed,43,2025-05-06
+2934,336,431,21,Losartan,50mg,Twice daily,61,2024-08-31
+2935,900,586,74,Ibuprofen,25mg,As needed,71,2025-05-02
+2936,246,546,65,Metformin,20mg,Once daily,20,2025-01-27
+2937,1186,360,1,Albuterol,250mg,Once daily,59,2025-04-17
+2938,769,57,72,Amlodipine,20mg,As needed,86,2023-12-10
+2939,1526,706,74,Gabapentin,10mg,Twice daily,86,2024-08-24
+2940,1735,154,53,Omeprazole,250mg,Once daily,72,2023-12-30
+2941,821,257,27,Gabapentin,10mg,Twice daily,43,2024-01-26
+2942,1169,187,17,Omeprazole,100mg,Once daily,15,2024-11-26
+2943,597,651,3,Gabapentin,25mg,Three times daily,40,2025-05-19
+2944,917,711,67,Acetaminophen,25mg,Three times daily,7,2025-04-05
+2945,1129,46,38,Clopidogrel,250mg,Three times daily,81,2024-01-15
+2946,778,803,32,Hydrochlorothiazide,10mg,As needed,54,2025-01-18
+2947,37,481,25,Gabapentin,100mg,Three times daily,38,2025-04-24
+2948,1080,6,46,Amoxicillin,20mg,Once daily,87,2024-03-27
+2949,1618,674,70,Albuterol,25mg,Three times daily,58,2023-09-22
+2950,127,970,62,Prednisone,25mg,Once daily,75,2025-04-23
+2951,234,526,11,Hydrochlorothiazide,50mg,Twice daily,84,2024-12-18
+2952,224,7,43,Acetaminophen,5mg,Once daily,86,2025-03-17
+2953,1169,187,17,Clopidogrel,50mg,Three times daily,60,2024-12-10
+2954,1590,949,20,Metoprolol,50mg,Twice daily,78,2023-06-05
+2955,503,826,52,Gabapentin,100mg,Twice daily,32,2025-04-16
+2956,383,148,29,Amoxicillin,20mg,Twice daily,85,2025-06-18
+2957,465,692,49,Furosemide,5mg,Three times daily,26,2024-01-31
+2958,468,415,22,Clopidogrel,10mg,As needed,30,2024-04-04
+2959,1512,663,53,Atorvastatin,25mg,Three times daily,53,2025-03-12
+2960,1984,362,28,Metoprolol,500mg,Twice daily,19,2024-01-22
+2961,1728,401,13,Insulin,10mg,Twice daily,36,2023-12-14
+2962,1414,535,28,Losartan,500mg,Once daily,84,2024-11-06
+2963,383,148,29,Ibuprofen,25mg,Twice daily,45,2025-05-06
+2964,1251,116,62,Acetaminophen,20mg,As needed,13,2023-12-21
+2965,159,764,78,Gabapentin,25mg,Once daily,11,2024-02-16
+2966,1917,328,32,Losartan,5mg,Twice daily,11,2024-11-26
+2967,1739,544,7,Clopidogrel,500mg,Twice daily,46,2025-05-10
+2968,1400,891,66,Levothyroxine,10mg,Three times daily,47,2025-05-20
+2969,691,561,28,Prednisone,100mg,Once daily,70,2025-04-29
+2970,1003,675,55,Clopidogrel,100mg,Once daily,18,2025-03-20
+2971,1626,212,20,Metformin,50mg,Once daily,41,2024-07-25
+2972,87,176,74,Atorvastatin,500mg,Twice daily,30,2025-03-18
+2973,1416,431,26,Omeprazole,10mg,Twice daily,14,2024-04-25
+2974,1772,691,77,Clopidogrel,25mg,Three times daily,52,2024-04-13
+2975,96,859,42,Warfarin,20mg,Once daily,18,2024-12-09
+2976,1321,527,48,Albuterol,250mg,Twice daily,16,2025-05-23
+2977,1534,275,24,Metformin,5mg,As needed,81,2024-08-04
+2978,1064,262,47,Metformin,500mg,Once daily,68,2024-09-29
+2979,1067,319,23,Clopidogrel,20mg,Twice daily,33,2025-04-24
+2980,888,458,32,Insulin,5mg,Once daily,39,2025-04-26
+2981,1736,70,63,Metoprolol,5mg,Twice daily,29,2025-02-27
+2982,1563,326,36,Levothyroxine,250mg,Twice daily,33,2024-09-07
+2983,215,181,26,Lisinopril,5mg,As needed,39,2024-08-21
+2984,1423,120,17,Insulin,100mg,Three times daily,24,2024-01-01
+2985,944,132,46,Furosemide,20mg,As needed,22,2024-07-07
+2986,1044,230,53,Warfarin,250mg,Twice daily,13,2025-04-19
+2987,1294,488,45,Acetaminophen,5mg,As needed,45,2024-09-16
+2988,1933,217,12,Amoxicillin,250mg,As needed,22,2023-12-09
+2989,826,557,12,Prednisone,50mg,Once daily,57,2024-11-03
+2990,64,823,51,Insulin,250mg,Twice daily,38,2025-04-24
+2991,1105,458,27,Clopidogrel,5mg,As needed,46,2024-10-31
+2992,1304,581,52,Warfarin,10mg,As needed,83,2024-10-21
+2993,216,45,32,Sertraline,10mg,Three times daily,23,2024-02-08
+2994,924,289,5,Atorvastatin,100mg,Three times daily,46,2025-03-29
+2995,127,970,62,Warfarin,20mg,Once daily,54,2025-05-17
+2996,935,157,26,Albuterol,100mg,Three times daily,51,2023-09-09
+2997,968,777,6,Losartan,500mg,Twice daily,78,2024-06-25
+2998,407,921,13,Omeprazole,20mg,As needed,66,2025-01-14
+2999,129,922,35,Prednisone,500mg,As needed,63,2025-02-28
+3000,1235,766,77,Amoxicillin,50mg,Three times daily,59,2024-02-20

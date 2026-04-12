@@ -1,0 +1,81 @@
+doctor_id,doctor_name,specialization,department,years_experience,degree
+1,Dr. Joseph Allen,Neurology,Oncology,11,MD
+2,Dr. Emily Chen,General Surgery,Emergency,10,MD
+3,Dr. Daniel Wilson,Gastroenterology,Psychiatry,22,DO
+4,Dr. Anna Garcia,Gastroenterology,Radiology,19,DO
+5,Dr. Maria Scott,Pediatrics,Emergency,10,DO
+6,Dr. Anna Wilson,Oncology,Internal Medicine,7,DO
+7,Dr. Maria Harris,Dermatology,Cardiology,27,MD
+8,Dr. Andrew Kim,General Medicine,Oncology,6,MD
+9,Dr. Rachel Walker,General Surgery,Oncology,8,DO
+10,Dr. William Chen,Neurology,Neurology,9,MD
+11,Dr. James Allen,Cardiology,Cardiology,9,MD
+12,Dr. Michael Clark,Neurology,Emergency,2,MD
+13,Dr. Michelle Wilson,Gastroenterology,Psychiatry,29,DO
+14,Dr. Daniel Allen,Pediatrics,Oncology,26,MD
+15,Dr. William Thompson,General Surgery,Internal Medicine,32,MD
+16,Dr. David Young,General Surgery,Radiology,31,MD
+17,Dr. Christopher Kim,Gastroenterology,Emergency,29,DO
+18,Dr. Amanda Allen,Pediatrics,Orthopedics,30,DO
+19,Dr. Joseph Lee,Radiology,Cardiology,26,DO
+20,Dr. Lisa Martinez,Neurology,Emergency,32,DO
+21,Dr. Michelle Lee,Gastroenterology,Surgery,31,DO
+22,Dr. Jennifer White,Gastroenterology,Neurology,3,DO
+23,Dr. David Garcia,Dermatology,Radiology,22,DO
+24,Dr. Joseph Thompson,Radiology,Surgery,27,MD
+25,Dr. Robert Thompson,General Medicine,Internal Medicine,12,MD
+26,Dr. William Wilson,General Medicine,Psychiatry,3,MD
+27,Dr. Emily Kim,Orthopedics,Radiology,4,MD
+28,Dr. Jennifer Walker,Internal Medicine,Internal Medicine,17,DO
+29,Dr. James Martinez,General Surgery,Oncology,2,DO
+30,Dr. Sarah King,General Surgery,Neurology,5,DO
+31,Dr. Christopher Lewis,Gastroenterology,Pediatrics,3,MD
+32,Dr. Andrew Patel,Radiology,Radiology,4,DO
+33,Dr. William Lewis,General Surgery,Internal Medicine,11,DO
+34,Dr. Amanda Patel,Orthopedics,Surgery,19,MD
+35,Dr. Karen Thompson,Pediatrics,Pediatrics,15,MD
+36,Dr. Maria Clark,Internal Medicine,Psychiatry,7,DO
+37,Dr. Robert Lee,General Surgery,Oncology,6,DO
+38,Dr. Karen Martinez,Internal Medicine,Cardiology,13,MD
+39,Dr. Daniel Thompson,General Surgery,Internal Medicine,30,DO
+40,Dr. Amanda Walker,Radiology,Orthopedics,11,DO
+41,Dr. Rachel Thompson,General Surgery,Oncology,17,MD
+42,Dr. Karen Wright,Radiology,Orthopedics,6,MD
+43,Dr. Michael Brown,Orthopedics,Oncology,15,DO
+44,Dr. William Brown,Oncology,Psychiatry,24,DO
+45,Dr. Thomas Martinez,Radiology,Psychiatry,21,DO
+46,Dr. Michelle Thompson,Radiology,Internal Medicine,17,MD
+47,Dr. Michelle Young,Gastroenterology,Cardiology,14,MD
+48,Dr. Emily Robinson,Psychiatry,Cardiology,17,DO
+49,Dr. Joseph King,Cardiology,Radiology,28,DO
+50,Dr. Thomas King,Cardiology,Internal Medicine,20,DO
+51,Dr. James Young,Cardiology,Emergency,35,DO
+52,Dr. Jennifer Clark,Oncology,Emergency,31,DO
+53,Dr. Anna White,Internal Medicine,Radiology,31,MD
+54,Dr. Joseph Lee,Psychiatry,Radiology,17,DO
+55,Dr. Emily Lewis,Neurology,Surgery,26,MD
+56,Dr. Rachel Lewis,General Surgery,Psychiatry,6,MD
+57,Dr. Lisa Robinson,Cardiology,Internal Medicine,17,MD
+58,Dr. Emily Walker,Dermatology,Oncology,8,MD
+59,Dr. William Lee,Orthopedics,Psychiatry,10,DO
+60,Dr. Sarah Allen,Radiology,Neurology,11,DO
+61,Dr. Christopher King,Internal Medicine,Surgery,2,MD
+62,Dr. Michael Patel,Internal Medicine,Cardiology,26,MD
+63,Dr. Daniel Patel,General Medicine,Pediatrics,13,DO
+64,Dr. Michelle Lee,Internal Medicine,Orthopedics,25,MD
+65,Dr. Thomas Chen,Orthopedics,Internal Medicine,12,MD
+66,Dr. Andrew Allen,Gastroenterology,Radiology,12,DO
+67,Dr. Michael Patel,Cardiology,Orthopedics,12,MD
+68,Dr. Andrew Harris,General Surgery,Orthopedics,10,DO
+69,Dr. Thomas Patel,Gastroenterology,Surgery,5,DO
+70,Dr. Michael Thompson,Pediatrics,Internal Medicine,10,MD
+71,Dr. Anna Lee,General Surgery,Emergency,15,MD
+72,Dr. Thomas Clark,General Medicine,Internal Medicine,2,DO
+73,Dr. Michael Chen,Cardiology,Pediatrics,23,DO
+74,Dr. Thomas Wilson,Psychiatry,Internal Medicine,22,DO
+75,Dr. James Lee,General Surgery,Neurology,9,DO
+76,Dr. Sarah Allen,Neurology,Psychiatry,24,DO
+77,Dr. Daniel Chen,Radiology,Oncology,9,MD
+78,Dr. Robert Walker,Gastroenterology,Pediatrics,23,MD
+79,Dr. Emily Clark,Pediatrics,Emergency,12,DO
+80,Dr. Karen Wilson,Orthopedics,Radiology,32,MD

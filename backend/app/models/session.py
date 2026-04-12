@@ -14,7 +14,7 @@ class DBType(str, Enum):
 class SessionState(BaseModel):
     id: str
     db_type: DBType = DBType.POSTGRESQL
-    model: str = "gpt-4o"
+    model: str = "gemini/gemini-2.5-flash"
     created_at: datetime = Field(default_factory=datetime.utcnow)
     last_active: datetime = Field(default_factory=datetime.utcnow)
     conversation_history: list[dict] = Field(default_factory=list)

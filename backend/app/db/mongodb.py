@@ -104,10 +104,19 @@ class MongoDB:
                         "type": type(value).__name__,
                         "nullable": True,
                     })
+            # Fetch sample rows to help LLM understand column content
+            sample_docs = await self.db[col_name].find().to_list(length=3)
+            sample_data = []
+            for doc in sample_docs:
+                row = {}
+                for k, v in doc.items():
+                    row[k] = str(v) if k == "_id" else v
+                sample_data.append(row)
             result.append({
                 "name": name,
                 "columns": columns,
                 "row_count": count,
+                "sample_rows": sample_data,
             })
         return result
 

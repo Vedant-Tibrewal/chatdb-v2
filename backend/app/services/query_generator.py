@@ -25,6 +25,9 @@ For delete requests, use DELETE. For update requests, use UPDATE.
 - Do NOT use DROP, TRUNCATE, ALTER, CREATE, or any DDL statements.
 - Use double quotes for identifiers only if needed (mixed case or reserved words).
 - Return a single statement only — no semicolons at the end.
+- When filtering text columns by a user-provided name or keyword, use \
+ILIKE with wildcards for partial, case-insensitive matching, e.g. WHERE name ILIKE '%value%'. \
+Do NOT use exact equality (=) unless the user explicitly asks for an exact match.
 - If the user's request is ambiguous, make a reasonable assumption and generate the query.
 """
 
@@ -44,6 +47,9 @@ updateOne|updateMany>", "collection": "<name>", "query": <query_doc>, \
 - Include only the fields relevant to the operation type.
 - Use only the collections and fields listed in the schema above.
 - Do NOT use $where, $function, $accumulator, or eval-style operators.
+- When filtering string fields by a user-provided name or keyword, use \
+case-insensitive regex for partial matching, e.g. {{"field": {{"$regex": "value", "$options": "i"}}}}. \
+Do NOT use exact string equality unless the user explicitly asks for an exact match.
 - If the user's request is ambiguous, make a reasonable assumption and generate the query.
 """
 
@@ -57,6 +63,13 @@ def _format_schema_for_prompt(tables: list[dict], db_type: DBType) -> str:
         for col in table.get("columns", []):
             nullable = ", nullable" if col.get("nullable") else ""
             lines.append(f"  - {col['name']}: {col['type']}{nullable}")
+        # Include sample rows so the LLM understands column content
+        sample_rows = table.get("sample_rows", [])
+        if sample_rows:
+            lines.append(f"  Sample data ({len(sample_rows)} rows):")
+            for row in sample_rows:
+                parts = [f"{k}={v}" for k, v in row.items() if k != "_id"]
+                lines.append(f"    {', '.join(parts)}")
         lines.append("")
     return "\n".join(lines)
 

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSessionStore } from '../../store/sessionStore';
+import { useChatStore } from '../../store/chatStore';
 
 const PROVIDER_DISPLAY: Record<string, string> = {
   openai: 'OpenAI',
@@ -8,7 +9,7 @@ const PROVIDER_DISPLAY: Record<string, string> = {
 };
 
 export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
-  const { session, models, reinitialize, updateModel, loading } = useSessionStore();
+  const { session, models, reinitialize, updateModel, loading, initSession } = useSessionStore();
   const [showConfirm, setShowConfirm] = useState(false);
   const [countdown, setCountdown] = useState('');
 
@@ -111,18 +112,24 @@ export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
             {(['postgresql', 'mongodb'] as const).map((type) => (
               <button
                 key={type}
-                disabled
+                onClick={() => {
+                  if (session?.db_type !== type) {
+                    useChatStore.getState().clearMessages();
+                    initSession(type);
+                  }
+                }}
+                disabled={loading}
                 className={`flex-1 px-2 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
                   session?.db_type === type
                     ? 'border-blue-200 bg-blue-50 text-blue-700'
-                    : 'border-gray-200 bg-gray-50 text-gray-400'
-                }`}
+                    : 'border-gray-200 bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600'
+                } disabled:opacity-50`}
               >
                 {type === 'postgresql' ? 'PostgreSQL' : 'MongoDB'}
               </button>
             ))}
           </div>
-          <p className="text-[10px] text-gray-400 mt-1">Set at session creation</p>
+          <p className="text-[10px] text-gray-400 mt-1">Switching creates a new session</p>
         </div>
       </div>
 

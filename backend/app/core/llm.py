@@ -10,9 +10,9 @@ from app.core.config import settings
 logger = logging.getLogger(__name__)
 
 AVAILABLE_MODELS = [
+    {"id": "gemini/gemini-2.5-flash", "name": "Gemini 2.5 Flash", "provider": "google"},
     {"id": "gpt-4o", "name": "GPT-4o", "provider": "openai"},
     {"id": "anthropic/claude-haiku-4-5-20251001", "name": "Claude Haiku 4.5", "provider": "anthropic"},
-    {"id": "gemini/gemini-2.5-flash", "name": "Gemini 2.5 Flash", "provider": "google"},
 ]
 
 # Map provider to settings key

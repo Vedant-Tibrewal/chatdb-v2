@@ -1,0 +1,301 @@
+vuln_id,cve_id,vuln_type,severity,cvss_score,exploit_available
+1,CVE-2023-16494,Information Disclosure,High,2.1,No
+2,CVE-2025-7081,Cryptographic Failure,High,0.2,Yes
+3,CVE-2025-7031,Security Misconfiguration,Medium,4.5,Yes
+4,CVE-2020-25015,Remote Code Execution,Medium,6.1,No
+5,CVE-2024-34989,Broken Access Control,Low,7.9,No
+6,CVE-2024-90510,Insecure Deserialization,Medium,6.4,No
+7,CVE-2024-10099,SSRF,High,0.1,No
+8,CVE-2025-43901,Information Disclosure,Informational,2.0,No
+9,CVE-2025-98354,CSRF,Medium,5.8,No
+10,CVE-2021-6676,XSS,Critical,9.0,No
+11,CVE-2022-33107,SQL Injection,Medium,4.1,No
+12,CVE-2025-41139,Remote Code Execution,Informational,6.4,No
+13,CVE-2021-36026,CSRF,Medium,4.0,No
+14,CVE-2024-10431,Privilege Escalation,Critical,6.2,No
+15,CVE-2024-7646,Information Disclosure,Low,2.4,Yes
+16,CVE-2021-60244,Information Disclosure,Medium,9.3,Yes
+17,CVE-2020-83340,Broken Access Control,Low,8.5,No
+18,CVE-2025-76468,DoS,Medium,2.3,Yes
+19,CVE-2022-31328,SQL Injection,High,9.9,No
+20,CVE-2023-24211,XSS,High,4.4,Yes
+21,CVE-2025-68699,Security Misconfiguration,High,2.4,Yes
+22,CVE-2020-63492,SQL Injection,Informational,3.6,No
+23,CVE-2025-61501,Information Disclosure,High,0.9,No
+24,CVE-2025-40384,SQL Injection,Medium,3.4,No
+25,CVE-2021-2474,Privilege Escalation,Informational,2.9,No
+26,CVE-2022-2229,DoS,Medium,6.9,Yes
+27,CVE-2025-14761,Authentication Bypass,High,8.0,No
+28,CVE-2022-11331,Insecure Deserialization,Medium,8.4,No
+29,CVE-2025-70299,SQL Injection,Medium,5.5,No
+30,CVE-2023-5537,DoS,Low,7.2,No
+31,CVE-2020-87769,Authentication Bypass,Medium,6.6,Yes
+32,CVE-2022-95356,CSRF,Medium,0.7,Yes
+33,CVE-2022-43612,DoS,High,9.2,Yes
+34,CVE-2020-58543,Authentication Bypass,High,5.2,No
+35,CVE-2024-68642,DoS,Low,7.2,Yes
+36,CVE-2025-67083,CSRF,High,9.4,Yes
+37,CVE-2021-93062,XSS,Medium,3.2,Yes
+38,CVE-2021-22404,XSS,Medium,4.5,No
+39,CVE-2021-4170,DoS,Low,3.2,Yes
+40,CVE-2021-21596,DoS,High,5.4,No
+41,CVE-2020-72767,SQL Injection,Medium,4.3,No
+42,CVE-2025-82849,Remote Code Execution,High,5.2,Yes
+43,CVE-2023-85397,Insecure Deserialization,Low,0.5,Yes
+44,CVE-2024-91217,Information Disclosure,Low,5.3,Yes
+45,CVE-2022-16456,Broken Access Control,Low,2.1,No
+46,CVE-2021-43395,Broken Access Control,Informational,6.5,Yes
+47,CVE-2020-5697,DoS,High,5.2,Yes
+48,CVE-2022-82860,SQL Injection,Low,2.0,Yes
+49,CVE-2023-59878,SQL Injection,High,8.1,Yes
+50,CVE-2021-67785,Privilege Escalation,Medium,1.7,No
+51,CVE-2022-36206,CSRF,Medium,3.6,No
+52,CVE-2020-23278,Buffer Overflow,Informational,4.5,No
+53,CVE-2021-36702,Authentication Bypass,Medium,7.4,Yes
+54,CVE-2025-40316,XSS,High,9.5,Yes
+55,CVE-2024-73826,SQL Injection,Low,0.9,Yes
+56,CVE-2024-81064,Broken Access Control,High,1.5,Yes
+57,CVE-2021-62914,Security Misconfiguration,Medium,1.6,No
+58,CVE-2023-1201,Authentication Bypass,Low,4.6,No
+59,CVE-2025-66056,Authentication Bypass,Critical,4.7,No
+60,CVE-2022-29921,XSS,Critical,1.0,No
+61,CVE-2020-32104,CSRF,High,0.3,Yes
+62,CVE-2022-5340,Broken Access Control,Low,7.3,Yes
+63,CVE-2023-88619,Buffer Overflow,Low,0.4,No
+64,CVE-2023-8485,XSS,Critical,1.3,Yes
+65,CVE-2023-27910,Path Traversal,Medium,0.4,No
+66,CVE-2022-5222,Information Disclosure,High,6.5,Yes
+67,CVE-2023-26119,XSS,Medium,3.7,Yes
+68,CVE-2023-3994,DoS,Medium,4.2,No
+69,CVE-2024-90162,Insecure Deserialization,Medium,3.9,No
+70,CVE-2021-81708,SSRF,High,1.5,Yes
+71,CVE-2021-84880,DoS,Low,0.7,No
+72,CVE-2025-93824,Security Misconfiguration,Low,2.9,Yes
+73,CVE-2023-58238,Broken Access Control,Medium,7.8,Yes
+74,CVE-2021-39867,Privilege Escalation,Medium,2.8,No
+75,CVE-2020-31305,Remote Code Execution,Medium,0.1,No
+76,CVE-2024-66194,Broken Access Control,High,2.4,Yes
+77,CVE-2023-83890,SQL Injection,Low,9.0,No
+78,CVE-2020-52175,SSRF,Medium,0.8,No
+79,CVE-2023-93672,Privilege Escalation,High,9.0,No
+80,CVE-2020-42291,DoS,Critical,9.5,Yes
+81,CVE-2020-25544,SSRF,Medium,7.5,Yes
+82,CVE-2021-82776,Insecure Deserialization,High,5.9,Yes
+83,CVE-2020-10901,SQL Injection,Medium,9.3,Yes
+84,CVE-2023-48561,Path Traversal,Medium,0.4,No
+85,CVE-2025-56045,Insecure Deserialization,Medium,5.1,Yes
+86,CVE-2022-61446,Privilege Escalation,Low,0.1,No
+87,CVE-2020-18181,Buffer Overflow,High,3.4,Yes
+88,CVE-2024-87787,Broken Access Control,High,1.7,Yes
+89,CVE-2023-31770,Remote Code Execution,Medium,5.6,No
+90,CVE-2025-55072,Remote Code Execution,Informational,1.8,No
+91,CVE-2024-56582,Buffer Overflow,Critical,3.8,Yes
+92,CVE-2023-61829,Privilege Escalation,Medium,2.8,Yes
+93,CVE-2021-53764,SQL Injection,Low,3.5,Yes
+94,CVE-2023-88702,Privilege Escalation,Critical,1.2,Yes
+95,CVE-2025-97742,Information Disclosure,Low,3.5,Yes
+96,CVE-2020-57199,Buffer Overflow,Medium,0.3,Yes
+97,CVE-2021-48394,Information Disclosure,Medium,8.7,No
+98,CVE-2023-84477,Cryptographic Failure,Critical,4.4,No
+99,CVE-2023-33597,SQL Injection,High,3.3,Yes
+100,CVE-2021-89924,Privilege Escalation,Medium,5.9,Yes
+101,CVE-2023-23223,SQL Injection,High,1.8,Yes
+102,CVE-2025-43441,Buffer Overflow,Critical,3.7,Yes
+103,CVE-2023-99025,Cryptographic Failure,Critical,6.1,Yes
+104,CVE-2024-3858,SQL Injection,Low,9.0,Yes
+105,CVE-2025-68233,Privilege Escalation,Medium,8.8,No
+106,CVE-2024-44117,Security Misconfiguration,Medium,6.9,No
+107,CVE-2020-38999,SQL Injection,High,9.9,No
+108,CVE-2025-16682,Insecure Deserialization,Medium,0.3,No
+109,CVE-2024-5103,Buffer Overflow,Medium,3.8,No
+110,CVE-2021-34689,Insecure Deserialization,Low,4.8,No
+111,CVE-2024-24247,Path Traversal,High,8.7,Yes
+112,CVE-2020-1697,Information Disclosure,High,9.3,Yes
+113,CVE-2023-56493,Remote Code Execution,High,4.7,No
+114,CVE-2020-32535,Insecure Deserialization,Medium,0.2,No
+115,CVE-2020-76417,Remote Code Execution,High,7.1,No
+116,CVE-2021-21735,SQL Injection,Low,5.5,No
+117,CVE-2023-7527,Privilege Escalation,Critical,9.1,No
+118,CVE-2021-33815,Cryptographic Failure,Medium,8.6,No
+119,CVE-2022-9640,Buffer Overflow,Medium,8.0,No
+120,CVE-2020-60958,SQL Injection,Medium,5.7,Yes
+121,CVE-2024-89313,SQL Injection,Low,5.4,Yes
+122,CVE-2022-22069,Insecure Deserialization,High,7.6,Yes
+123,CVE-2023-39648,SQL Injection,Medium,3.6,No
+124,CVE-2020-2847,Broken Access Control,Low,8.8,No
+125,CVE-2025-78006,CSRF,Medium,9.8,No
+126,CVE-2023-71396,Privilege Escalation,High,1.0,No
+127,CVE-2023-42344,Buffer Overflow,Low,6.5,Yes
+128,CVE-2025-42715,DoS,Medium,2.6,No
+129,CVE-2020-9481,SSRF,Critical,5.4,Yes
+130,CVE-2022-85399,SSRF,Critical,1.7,No
+131,CVE-2021-14886,Cryptographic Failure,Medium,4.3,No
+132,CVE-2022-77215,XSS,Low,0.2,No
+133,CVE-2020-28553,Buffer Overflow,Low,6.9,No
+134,CVE-2025-29704,Security Misconfiguration,Low,0.5,No
+135,CVE-2023-80494,Remote Code Execution,Informational,9.7,Yes
+136,CVE-2020-17997,Path Traversal,High,0.8,Yes
+137,CVE-2020-56162,Insecure Deserialization,Informational,3.6,No
+138,CVE-2021-78331,DoS,Medium,9.7,No
+139,CVE-2021-48047,Privilege Escalation,Medium,1.8,No
+140,CVE-2020-2154,Remote Code Execution,High,9.5,No
+141,CVE-2024-1184,Path Traversal,High,2.0,Yes
+142,CVE-2022-91504,CSRF,Low,6.7,No
+143,CVE-2024-27922,Insecure Deserialization,Medium,1.3,No
+144,CVE-2025-3346,Security Misconfiguration,Medium,5.6,No
+145,CVE-2021-32493,Cryptographic Failure,Informational,6.0,Yes
+146,CVE-2024-5677,Security Misconfiguration,High,7.8,Yes
+147,CVE-2024-3920,Broken Access Control,Medium,3.2,Yes
+148,CVE-2022-5223,Authentication Bypass,Medium,3.4,Yes
+149,CVE-2021-46205,Cryptographic Failure,High,0.7,Yes
+150,CVE-2020-66428,XSS,Medium,1.8,Yes
+151,CVE-2021-21705,SSRF,Low,1.8,Yes
+152,CVE-2025-29497,Authentication Bypass,Medium,9.1,Yes
+153,CVE-2020-75948,Security Misconfiguration,Low,8.4,No
+154,CVE-2021-37998,Privilege Escalation,High,8.4,Yes
+155,CVE-2022-2313,Privilege Escalation,Medium,2.0,No
+156,CVE-2023-13230,Information Disclosure,High,7.1,Yes
+157,CVE-2023-29729,XSS,High,7.1,No
+158,CVE-2022-77950,Security Misconfiguration,Informational,5.3,No
+159,CVE-2022-81547,DoS,High,4.3,Yes
+160,CVE-2023-25193,SQL Injection,High,10.0,No
+161,CVE-2021-13894,Privilege Escalation,Medium,6.6,No
+162,CVE-2022-70458,Insecure Deserialization,Informational,9.7,Yes
+163,CVE-2024-25271,Authentication Bypass,Critical,4.5,No
+164,CVE-2022-40850,Remote Code Execution,Low,4.7,No
+165,CVE-2022-79686,Path Traversal,Critical,4.1,Yes
+166,CVE-2021-30874,Broken Access Control,Informational,1.8,Yes
+167,CVE-2020-54313,CSRF,Medium,9.9,Yes
+168,CVE-2022-9057,SSRF,Low,5.2,No
+169,CVE-2022-60067,Buffer Overflow,Medium,3.4,Yes
+170,CVE-2020-14093,Broken Access Control,High,4.2,No
+171,CVE-2022-49533,Remote Code Execution,Critical,3.4,No
+172,CVE-2022-21134,CSRF,Medium,5.5,No
+173,CVE-2020-59792,Remote Code Execution,Medium,7.2,Yes
+174,CVE-2021-87380,Path Traversal,Informational,8.9,Yes
+175,CVE-2023-5154,Path Traversal,High,0.2,No
+176,CVE-2020-71579,Remote Code Execution,Low,1.6,Yes
+177,CVE-2023-18699,Security Misconfiguration,Critical,0.9,No
+178,CVE-2022-32700,XSS,Medium,6.5,Yes
+179,CVE-2020-42985,XSS,Informational,3.2,Yes
+180,CVE-2020-74681,Information Disclosure,Medium,3.8,No
+181,CVE-2022-24264,SQL Injection,Low,8.5,Yes
+182,CVE-2023-57661,Insecure Deserialization,Medium,5.2,Yes
+183,CVE-2023-23506,Authentication Bypass,High,1.6,No
+184,CVE-2024-76444,Path Traversal,Low,5.1,Yes
+185,CVE-2020-25176,Path Traversal,Low,4.5,No
+186,CVE-2022-50997,Cryptographic Failure,Low,9.7,Yes
+187,CVE-2020-42766,SSRF,Critical,7.2,No
+188,CVE-2023-29973,Cryptographic Failure,Low,6.7,No
+189,CVE-2024-21901,XSS,High,7.9,Yes
+190,CVE-2024-22953,Information Disclosure,Critical,8.3,Yes
+191,CVE-2024-80747,Insecure Deserialization,Medium,0.2,No
+192,CVE-2024-93397,DoS,Informational,1.3,Yes
+193,CVE-2020-64873,CSRF,Medium,0.1,Yes
+194,CVE-2020-7561,Path Traversal,High,4.0,Yes
+195,CVE-2024-85746,Remote Code Execution,Medium,2.9,No
+196,CVE-2023-44581,Path Traversal,High,2.4,No
+197,CVE-2020-59651,Cryptographic Failure,Low,3.1,Yes
+198,CVE-2021-45017,XSS,Medium,4.3,Yes
+199,CVE-2023-50991,Broken Access Control,Critical,0.4,Yes
+200,CVE-2025-35251,Authentication Bypass,Informational,9.8,No
+201,CVE-2020-91407,Cryptographic Failure,Low,7.2,Yes
+202,CVE-2020-65938,Privilege Escalation,Medium,3.9,No
+203,CVE-2021-61532,Path Traversal,Informational,2.7,Yes
+204,CVE-2024-22269,Security Misconfiguration,Medium,8.1,Yes
+205,CVE-2023-73572,Cryptographic Failure,Medium,4.9,No
+206,CVE-2024-5444,Remote Code Execution,High,5.5,Yes
+207,CVE-2021-57472,Path Traversal,Medium,1.9,No
+208,CVE-2024-22390,Remote Code Execution,Low,1.1,No
+209,CVE-2020-77253,SSRF,Critical,6.6,Yes
+210,CVE-2025-52119,Cryptographic Failure,Medium,8.5,No
+211,CVE-2025-72399,DoS,Medium,7.3,Yes
+212,CVE-2021-22064,Cryptographic Failure,Medium,1.9,No
+213,CVE-2022-97251,Authentication Bypass,Low,9.2,No
+214,CVE-2023-29141,Broken Access Control,High,0.1,Yes
+215,CVE-2023-47290,XSS,High,3.1,No
+216,CVE-2020-74342,DoS,Medium,2.8,Yes
+217,CVE-2025-93684,Privilege Escalation,Informational,4.5,No
+218,CVE-2021-15776,SQL Injection,Informational,0.3,No
+219,CVE-2023-84591,Cryptographic Failure,High,5.1,Yes
+220,CVE-2022-49182,DoS,Medium,4.7,Yes
+221,CVE-2020-93057,Broken Access Control,Critical,0.1,No
+222,CVE-2020-66712,Broken Access Control,Medium,3.1,No
+223,CVE-2024-18610,Broken Access Control,High,6.9,No
+224,CVE-2023-97669,Authentication Bypass,Informational,8.4,Yes
+225,CVE-2022-59087,Information Disclosure,Medium,1.9,Yes
+226,CVE-2022-34511,Buffer Overflow,High,4.5,No
+227,CVE-2023-30973,XSS,Informational,9.8,Yes
+228,CVE-2025-74129,Buffer Overflow,Informational,3.3,No
+229,CVE-2022-67250,Security Misconfiguration,Low,2.8,Yes
+230,CVE-2023-59884,Buffer Overflow,High,7.6,No
+231,CVE-2021-48710,Buffer Overflow,High,9.2,Yes
+232,CVE-2025-53562,DoS,Critical,1.2,Yes
+233,CVE-2021-8050,XSS,Low,3.6,Yes
+234,CVE-2020-21190,Cryptographic Failure,Critical,2.0,Yes
+235,CVE-2022-45460,XSS,High,1.3,Yes
+236,CVE-2023-62096,Insecure Deserialization,High,6.1,Yes
+237,CVE-2020-84913,Cryptographic Failure,High,9.9,No
+238,CVE-2024-57421,SQL Injection,High,4.3,Yes
+239,CVE-2021-49746,Remote Code Execution,Medium,2.5,No
+240,CVE-2020-78785,DoS,Low,3.1,No
+241,CVE-2024-7693,Buffer Overflow,Medium,9.4,Yes
+242,CVE-2025-88619,Remote Code Execution,High,5.0,No
+243,CVE-2022-94359,Authentication Bypass,High,1.6,No
+244,CVE-2022-6673,Cryptographic Failure,Low,0.5,No
+245,CVE-2022-6494,SSRF,Critical,1.0,No
+246,CVE-2020-63957,Remote Code Execution,Informational,5.9,No
+247,CVE-2024-27037,Authentication Bypass,Medium,4.0,No
+248,CVE-2025-48023,CSRF,Informational,0.6,Yes
+249,CVE-2022-6504,XSS,Critical,7.0,No
+250,CVE-2021-75315,Insecure Deserialization,Low,4.1,Yes
+251,CVE-2023-26194,XSS,Medium,1.6,Yes
+252,CVE-2022-2966,Broken Access Control,Medium,8.7,Yes
+253,CVE-2021-14663,SQL Injection,Low,3.1,Yes
+254,CVE-2020-50715,Buffer Overflow,High,2.9,Yes
+255,CVE-2023-29498,SQL Injection,Medium,2.8,No
+256,CVE-2025-40368,Cryptographic Failure,Low,3.9,No
+257,CVE-2020-53836,Insecure Deserialization,Low,1.8,No
+258,CVE-2021-50722,Insecure Deserialization,High,4.3,No
+259,CVE-2025-92470,Cryptographic Failure,Medium,5.9,No
+260,CVE-2023-52793,Information Disclosure,Low,2.6,No
+261,CVE-2021-46204,Path Traversal,Medium,2.5,No
+262,CVE-2023-78262,Insecure Deserialization,Critical,3.8,Yes
+263,CVE-2023-25226,SSRF,Low,1.4,No
+264,CVE-2025-11658,Insecure Deserialization,Low,4.6,Yes
+265,CVE-2025-7848,Security Misconfiguration,Medium,9.9,Yes
+266,CVE-2022-62458,SSRF,Low,2.9,No
+267,CVE-2021-34774,Path Traversal,Medium,2.1,Yes
+268,CVE-2023-38779,XSS,Low,2.1,Yes
+269,CVE-2023-35325,Remote Code Execution,Low,9.0,No
+270,CVE-2022-35124,Insecure Deserialization,Medium,9.7,No
+271,CVE-2025-39584,XSS,Low,2.1,Yes
+272,CVE-2022-92221,Privilege Escalation,Informational,1.0,Yes
+273,CVE-2021-99439,SSRF,High,8.0,Yes
+274,CVE-2021-25509,SSRF,Critical,5.1,No
+275,CVE-2020-83294,Path Traversal,High,5.7,Yes
+276,CVE-2021-34795,Remote Code Execution,High,7.4,Yes
+277,CVE-2023-39155,Broken Access Control,Medium,0.6,No
+278,CVE-2022-25666,Broken Access Control,High,9.5,Yes
+279,CVE-2021-37233,Authentication Bypass,Medium,7.1,No
+280,CVE-2020-65189,Authentication Bypass,Medium,2.9,Yes
+281,CVE-2025-93054,SSRF,High,8.6,No
+282,CVE-2022-83897,DoS,High,5.9,No
+283,CVE-2020-8367,Remote Code Execution,High,0.1,No
+284,CVE-2023-87224,Insecure Deserialization,Low,6.2,Yes
+285,CVE-2023-59827,Authentication Bypass,Medium,3.9,No
+286,CVE-2023-46480,Insecure Deserialization,Low,1.3,No
+287,CVE-2025-97458,Remote Code Execution,Low,2.0,Yes
+288,CVE-2021-32586,CSRF,Informational,3.8,No
+289,CVE-2021-93913,Security Misconfiguration,Medium,3.1,No
+290,CVE-2024-26293,Insecure Deserialization,Medium,2.0,No
+291,CVE-2024-58913,Insecure Deserialization,Critical,8.1,No
+292,CVE-2020-96424,Privilege Escalation,Medium,5.6,No
+293,CVE-2020-61138,Buffer Overflow,Low,4.4,Yes
+294,CVE-2021-66676,DoS,High,6.4,No
+295,CVE-2022-48515,Privilege Escalation,Informational,0.9,No
+296,CVE-2021-4456,Privilege Escalation,High,1.8,Yes
+297,CVE-2024-84805,DoS,Informational,1.2,Yes
+298,CVE-2022-37693,CSRF,Low,6.1,No
+299,CVE-2024-73750,Privilege Escalation,High,8.7,No
+300,CVE-2025-60955,Security Misconfiguration,Medium,5.4,No

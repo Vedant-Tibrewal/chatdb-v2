@@ -1,0 +1,51 @@
+product_id,product_name,category,list_price
+1,CloudSync Pro,SaaS,61670.13
+2,DataFlow,SaaS,33370.77
+3,SecureVault,SaaS,73274.16
+4,AnalyticsHub,SaaS,34649.36
+5,DevOps Suite,SaaS,37929.44
+6,CRM Enterprise,SaaS,48853.75
+7,HRCloud,SaaS,55549.46
+8,FinanceAI,SaaS,80160.13
+9,MarketPulse,SaaS,55186.54
+10,ProjectTrack,SaaS,96183.88
+11,ServerX 3000,Hardware,21722.57
+12,NetworkSwitch Pro,Hardware,72199.43
+13,StorageArray 500,Hardware,6600.89
+14,WorkStation Elite,Hardware,25402.7
+15,RackMount Unit,Hardware,33552.69
+16,UPS Backup 2000,Hardware,71086.74
+17,NAS Drive 10TB,Hardware,20431.5
+18,Firewall Appliance,Hardware,23131.49
+19,Load Balancer LB-8,Hardware,44888.15
+20,Router Enterprise,Hardware,44710.97
+21,Strategy Workshop,Consulting,60997.5
+22,Migration Service,Consulting,71280.37
+23,Security Audit,Consulting,67802.95
+24,Performance Review,Consulting,20448.25
+25,Architecture Design,Consulting,68931.42
+26,Compliance Assessment,Consulting,28763.72
+27,Data Strategy,Consulting,32578.24
+28,Cloud Readiness,Consulting,18531.92
+29,Digital Transformation,Consulting,78226.8
+30,AI Readiness,Consulting,74113.03
+31,Premium Support 24/7,Support,49578.86
+32,Standard Support,Support,15136.65
+33,Extended Warranty,Support,73698.44
+34,Managed Service,Support,3129.38
+35,Incident Response,Support,34515.04
+36,Monitoring Service,Support,15434.29
+37,Backup Service,Support,24272.33
+38,Disaster Recovery,Support,51171.85
+39,SLA Upgrade,Support,12718.5
+40,Dedicated Engineer,Support,76039.19
+41,Admin Bootcamp,Training,27939.76
+42,Developer Workshop,Training,7497.6
+43,Security Certification,Training,37215.02
+44,Cloud Fundamentals,Training,16774.84
+45,Advanced Analytics,Training,67250.14
+46,Data Engineering,Training,41033.51
+47,ML Practitioner,Training,39215.59
+48,DevOps Essentials,Training,19979.71
+49,Leadership Program,Training,30826.54
+50,Sales Enablement,Training,45680.13
