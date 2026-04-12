@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { api, type SessionResponse } from '../services/api';
+import { useChatStore } from './chatStore';
 
 export interface SchemaTable {
   name: string;
@@ -71,6 +72,7 @@ export const useSessionStore = create<SessionStore>((set, get) => ({
       await api.reinitialize(session.id);
       const updated = await api.getSession(session.id);
       set({ session: updated, loading: false });
+      useChatStore.getState().clearMessages();
       get().fetchSchema();
     } catch (e) {
       set({ loading: false, error: (e as Error).message });

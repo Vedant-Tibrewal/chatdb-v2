@@ -321,26 +321,59 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 8 · Chat Interface
-**Status:** NOT STARTED  
+## Checkpoint 8 · Chat Interface ✅
+**Status:** COMPLETE  
 **Commit:** `feat: full chat interface with query display, editing, and result tables`
 
-**Pickup context:** Schema panel shows live metadata. Frontend talks to backend. Need the core chat experience.
+**What was done:**
+- Created `frontend/src/store/chatStore.ts` — zustand store for chat state:
+  - `ChatMessage` type: `user` | `query` | `result` | `error`, with `status` for query messages (`pending` | `confirmed` | `cancelled` | `editing`)
+  - `sendQuestion(sessionId, question)` → appends user bubble, calls `POST /api/query/generate`, appends query block with `pending` status
+  - `confirmQuery(sessionId, messageId, question)` → calls `POST /api/query/execute` with the (possibly edited) query, appends result message
+  - `cancelQuery(messageId)` → marks query as cancelled
+  - `updateQueryText(messageId, text)` → updates query content for edit mode
+  - `setQueryStatus(messageId, status)` → toggles between pending/editing
+  - `clearMessages()` → resets on reinitialize
+  - State: `messages`, `generating`, `executing`
+- Rewrote `frontend/src/components/chat/ChatPanel.tsx` with full chat experience:
+  - **Chat thread:** user bubbles (right-aligned, blue), query blocks, result tables, error banners
+  - **Query block (`QueryBlock` component):**
+    - Collapsible query display with chevron toggle
+    - SQL/MongoDB label based on db_type
+    - Copy button with ✓ feedback
+    - Edit mode: switches to textarea for inline editing
+    - Action buttons: Run (confirms and executes), Edit (toggles edit mode), Cancel (dismisses query)
+    - Status badges: "✓ Executed" for confirmed, "Cancelled" for dismissed
+  - **Result table (`ResultTable` component):**
+    - Paginated data table (100 rows/page) with horizontal scroll
+    - Sticky header row, row count + execution time display
+    - Page navigation (‹ ›) when results exceed page size
+    - Single-value results rendered as metric card (large number + column name)
+    - Write operations show "{n} rows affected" card
+    - Null values displayed with gray "null" text
+  - **Input bar:** submit on Enter or Send button, disabled during generate/execute
+  - **Auto-scroll:** `useRef` + `scrollIntoView` on message updates
+  - **Loading states:** spinning indicators for "Generating query..." and "Running query..."
+  - **Empty state:** centered prompt when no messages
+  - Suggestion chip integration preserved (pendingInput → input field + focus)
+- Updated `sessionStore.ts`:
+  - Imports `useChatStore` and calls `clearMessages()` on reinitialize
+  - Chat thread resets when user reinitializes session
 
-**What to implement:**
-- Chat input bar at bottom of center panel (submit on Enter or button click)
-- Send NL question to `POST /api/query/generate`, receive query back
-- Render chat thread: user bubble → generated query block → result block
-- Query block: syntax-highlighted SQL/MongoDB (use a lightweight highlighter like `prism-react-renderer`), collapsible, copy button
-- Edit toggle on query block: switch to editable textarea, user can modify before confirming
-- Confirm / Cancel / Edit action buttons on the query block
-- On confirm: call `POST /api/query/execute` with the (possibly edited) query
-- Result rendering: paginated table (100 rows default), row count header, copy-to-clipboard per row
-- If result is single value: render as a metric card instead of table
-- Auto-scroll to latest message
-- Loading spinner while LLM generates / query executes
+**Key decisions:**
+- Separate `chatStore` from `sessionStore` — chat state is UI-local, session state is server-synced
+- No syntax highlighting library — uses `<pre>` with monospace font; keeps bundle small, avoids prism-react-renderer dependency
+- Query block shows Run/Edit/Cancel only while `pending` or `editing`; once confirmed or cancelled, only the query text and status badge remain
+- Edited query is what gets sent to execute endpoint (via `updateQueryText`) — matches PRD requirement
+- `fetchSchema()` called after every query execution to keep schema panel up-to-date after mutations
+- Message IDs use simple counter (`msg-1`, `msg-2`, ...) — sufficient for single-session UI
 
-**Per PRD:** The edited query (not the original LLM output) is what gets stored in conversation history. No warning on edit.
+**Files created:**
+- `frontend/src/store/chatStore.ts`
+
+**Files modified:**
+- `frontend/src/components/chat/ChatPanel.tsx` — complete rewrite
+- `frontend/src/store/sessionStore.ts` — clearMessages on reinitialize
 
 ---
 
