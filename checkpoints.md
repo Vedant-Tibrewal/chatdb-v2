@@ -232,23 +232,53 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 6 · Frontend Shell
-**Status:** NOT STARTED  
+## Checkpoint 6 · Frontend Shell ✅
+**Status:** COMPLETE  
 **Commit:** `feat(frontend): React app shell with three-panel layout and routing`
 
-**Pickup context:** Backend is fully functional (session mgmt, DB, query gen, security with sqlglot AST validation). Query validation blocks DDL (DROP/CREATE/ALTER/TRUNCATE) and dangerous Mongo operators ($where/$function). Rate limiter (20 queries/min/session) wired into generate + execute endpoints. Frontend has a basic three-panel layout shell. Components exist as stubs: `SchemaPanel.tsx`, `ChatPanel.tsx`, `SettingsPanel.tsx`, `DashboardPanel.tsx`. API client at `src/services/api.ts`. Types at `src/types/index.ts`. Vite dev server proxies `/api` to `http://localhost:8000`.
+**What was done:**
+- Installed `zustand` for state management
+- Created `frontend/src/store/sessionStore.ts` — zustand store with:
+  - `initSession(dbType?)` → calls `POST /api/session`, stores response
+  - `refreshSession()` → calls `GET /api/session/{id}`
+  - `reinitialize()` → calls `POST /api/session/{id}/reinitialize`, refreshes session
+  - `updateModel(model)` → calls `PUT /api/session/{id}/model`
+  - `fetchModels()` → calls `GET /api/query/models`
+  - State: `session`, `dbType`, `models`, `loading`, `error`
+- Updated `frontend/src/services/api.ts`:
+  - Added typed `SessionResponse` interface
+  - Added `getModels()`, `updateModel()`, `reinitialize()` with proper return types
+  - Better error handling: extracts `detail` from JSON error responses
+- Updated `App.tsx`:
+  - Session auto-initializes on page load (`useEffect` → `initSession()`)
+  - Three-panel layout with collapsible left (schema) and right (settings) panels
+  - Top header bar with ChatDB title, DB type badge, collapse/expand buttons
+  - Error banner with dismiss button
+  - Loading state indicator
+- Updated `SettingsPanel.tsx`:
+  - Model selector dropdown (fetches from `GET /api/query/models`, shows display names)
+  - Session info: ID, database type, expiry countdown timer (updates every second)
+  - DB type indicator (PostgreSQL / MongoDB) — visual only, set at session creation
+  - Reinitialize button with confirmation dialog ("Reset all data and chat history?")
+  - Collapse button
+- Updated `SchemaPanel.tsx`:
+  - DB type badge
+  - Collapse button
+  - Placeholder for schema data (Checkpoint 7)
+- Updated `ChatPanel.tsx`:
+  - Session-aware: shows spinner while session creates, empty state when ready
+  - Input bar with Send button, disabled until session is active
+  - Clean empty state with icon and descriptive text
+- Applied consistent visual theming: white panels, subtle borders, blue-500 accent, rounded-lg elements
 
-**What to implement:**
-- Make sidebar panels collapsible (toggle buttons)
-- Session initialization on page load (call `POST /api/session`, store session ID in state)
-- Model selector dropdown in SettingsPanel (fetch from `GET /api/query/models`, call `PUT /api/session/{id}/model` on change)
-- Session info display (session ID, created time, expiry countdown timer)
-- Reinitialize button wired to `POST /api/session/{id}/reinitialize` with confirmation dialog
-- Basic theming — clean, demo-quality appearance
-- Loading/error states for API calls
-- Global state management (React context or zustand — decide at implementation time)
+**Key decisions:**
+- Zustand for state management (lightweight, no boilerplate vs Context or Redux)
+- Model display names mapped from LiteLLM IDs (e.g. `anthropic/claude-haiku-4-5-20251001` → "Claude Haiku 4.5")
+- Expiry countdown uses `setInterval(1000)` in SettingsPanel — simple and effective
+- DB type selector is visual-only (disabled) — type is set at session creation, changing it requires a new session
+- Panels collapse via parent state in App.tsx, expand buttons appear in the header bar
 
-**Existing frontend setup:** Vite dev server on port 5173 (dev) / nginx on port 3000 (Docker). Tailwind v4 via `@import "tailwindcss"` in `index.css`. No `tailwind.config.js`.
+**Existing frontend setup:** Vite dev server on port 3000 (dev) / nginx on port 3000 (Docker). Tailwind v4 via `@import "tailwindcss"` in `index.css`. Vite proxies `/api` to `http://localhost:8000`.
 
 ---
 
@@ -256,7 +286,7 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 **Status:** NOT STARTED  
 **Commit:** `feat(frontend): schema preview sidebar with live table metadata`
 
-**Pickup context:** Frontend shell is functional — session creates on load, model selector works, panels collapse. SchemaPanel is a stub.
+**Pickup context:** Frontend shell is functional — session creates on load, model selector works (fetches available models via `GET /api/query/models`, updates via `PUT /api/session/{id}/model`), panels collapse/expand, expiry countdown ticks, reinitialize button has confirmation dialog. State managed via zustand (`useSessionStore`). SchemaPanel shows DB type badge but no table data yet. Vite proxies `/api` to backend.
 
 **What to implement:**
 - Fetch schema from `GET /api/schema/{sessionId}` on session create and after mutations
