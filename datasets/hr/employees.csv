@@ -1,0 +1,26 @@
+employee_id,first_name,last_name,department,job_title,hire_date,salary,status,manager_name,location
+1,Alice,Johnson,Engineering,Software Engineer,2020-03-15,95000,Active,Bob Smith,New York
+2,Bob,Smith,Engineering,Engineering Manager,2018-06-01,130000,Active,,New York
+3,Carol,White,Marketing,Marketing Specialist,2021-01-10,72000,Active,David Brown,Chicago
+4,David,Brown,Marketing,Marketing Director,2017-09-20,140000,Active,,Chicago
+5,Eve,Davis,Sales,Sales Representative,2022-05-01,65000,Active,Frank Miller,San Francisco
+6,Frank,Miller,Sales,Sales Manager,2019-02-14,110000,Active,,San Francisco
+7,Grace,Wilson,HR,HR Coordinator,2021-07-01,68000,Active,Henry Moore,New York
+8,Henry,Moore,HR,HR Director,2016-11-30,125000,Active,,New York
+9,Ivy,Taylor,Engineering,Senior Software Engineer,2019-08-15,115000,Active,Bob Smith,New York
+10,Jack,Anderson,Finance,Financial Analyst,2020-10-01,82000,Active,Karen Thomas,Chicago
+11,Karen,Thomas,Finance,Finance Manager,2017-04-15,120000,Active,,Chicago
+12,Leo,Jackson,Engineering,DevOps Engineer,2021-03-20,98000,Active,Bob Smith,San Francisco
+13,Mia,Harris,Sales,Sales Representative,2023-01-15,62000,Active,Frank Miller,San Francisco
+14,Nathan,Clark,Marketing,Content Writer,2022-08-01,58000,Inactive,David Brown,Chicago
+15,Olivia,Lewis,Engineering,QA Engineer,2020-12-01,85000,Active,Bob Smith,New York
+16,Peter,Walker,Finance,Senior Analyst,2019-05-10,95000,Active,Karen Thomas,Chicago
+17,Quinn,Hall,HR,Recruiter,2022-03-15,65000,Active,Henry Moore,New York
+18,Rachel,Allen,Engineering,Data Engineer,2021-09-01,105000,Active,Bob Smith,San Francisco
+19,Sam,Young,Sales,Account Executive,2020-06-20,78000,Inactive,Frank Miller,New York
+20,Tina,King,Marketing,Social Media Manager,2023-04-01,60000,Active,David Brown,Chicago
+21,Uma,Wright,Engineering,Frontend Developer,2022-11-15,92000,Active,Bob Smith,New York
+22,Victor,Scott,Finance,Accountant,2021-02-01,75000,Active,Karen Thomas,San Francisco
+23,Wendy,Green,HR,Training Specialist,2020-08-10,70000,Active,Henry Moore,Chicago
+24,Xavier,Adams,Engineering,Backend Developer,2019-12-01,108000,Active,Bob Smith,San Francisco
+25,Yara,Baker,Sales,Sales Representative,2023-06-01,60000,Active,Frank Miller,Chicago

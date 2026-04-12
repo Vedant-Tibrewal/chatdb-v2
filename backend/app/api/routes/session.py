@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from fastapi import APIRouter, Depends
 
 from app.api.deps import get_session_manager
@@ -16,7 +14,7 @@ async def create_session(
 ):
     """Create a new session with isolated database scope."""
     db_type = body.db_type if body else None
-    session = sm.create_session(db_type=db_type) if db_type else sm.create_session()
+    session = await (sm.create_session(db_type=db_type) if db_type else sm.create_session())
     return SessionResponse(
         id=session.id,
         db_type=session.db_type,
@@ -48,7 +46,7 @@ async def delete_session(
     sm: SessionManager = Depends(get_session_manager),
 ):
     """Delete session and clean up scoped data."""
-    sm.delete_session(session_id)
+    await sm.delete_session(session_id)
     return {"detail": "Session deleted"}
 
 
@@ -58,7 +56,8 @@ async def reinitialize_session(
     sm: SessionManager = Depends(get_session_manager),
 ):
     """Drop and re-clone session data from base snapshot."""
-    session = sm.get_session(session_id)
-    session.conversation_history.clear()
-    session.last_active = datetime.utcnow()
-    return {"detail": "Session reinitialized"}
+    session = await sm.reinitialize_session(session_id)
+    return {
+        "detail": "Session reinitialized",
+        "expires_at": sm.get_expiry(session).isoformat(),
+    }

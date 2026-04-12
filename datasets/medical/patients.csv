@@ -1,0 +1,26 @@
+patient_id,patient_name,age,gender,diagnosis,department,admission_date,discharge_date,treatment_type,doctor_name,total_cost
+1,John Adams,45,Male,Hypertension,Cardiology,2024-01-05,2024-01-08,OPD,Dr. Smith,1500.00
+2,Mary Baker,32,Female,Fracture,Orthopedics,2024-01-10,2024-01-20,IPD,Dr. Jones,8500.00
+3,Robert Clark,67,Male,Pneumonia,Pulmonology,2024-01-12,2024-01-22,IPD,Dr. Lee,12000.00
+4,Sarah Davis,28,Female,Migraine,Neurology,2024-01-15,,OPD,Dr. Patel,800.00
+5,James Evans,55,Male,Diabetes,Endocrinology,2024-01-20,,OPD,Dr. Smith,1200.00
+6,Linda Foster,41,Female,Appendicitis,Surgery,2024-02-01,2024-02-05,IPD,Dr. Kim,15000.00
+7,Michael Green,73,Male,Heart Attack,Cardiology,2024-02-05,2024-02-18,IPD,Dr. Smith,35000.00
+8,Emma Harris,36,Female,Pregnancy Checkup,OB-GYN,2024-02-10,,OPD,Dr. Martinez,600.00
+9,William Irving,50,Male,Back Pain,Orthopedics,2024-02-15,,OPD,Dr. Jones,900.00
+10,Jessica Johnson,29,Female,Anxiety,Psychiatry,2024-02-20,,OPD,Dr. Brown,500.00
+11,Thomas King,62,Male,Knee Replacement,Orthopedics,2024-03-01,2024-03-10,IPD,Dr. Jones,28000.00
+12,Amanda Lee,44,Female,Thyroid,Endocrinology,2024-03-05,,OPD,Dr. Smith,1100.00
+13,Christopher Moore,58,Male,Bypass Surgery,Cardiology,2024-03-10,2024-03-25,IPD,Dr. Smith,45000.00
+14,Rachel Nelson,35,Female,Asthma,Pulmonology,2024-03-15,,OPD,Dr. Lee,700.00
+15,Daniel Owen,48,Male,Gallstones,Surgery,2024-04-01,2024-04-05,IPD,Dr. Kim,18000.00
+16,Sofia Parker,52,Female,Diabetes,Endocrinology,2024-04-10,,OPD,Dr. Smith,1200.00
+17,Andrew Quinn,70,Male,Stroke,Neurology,2024-04-15,2024-05-01,IPD,Dr. Patel,42000.00
+18,Olivia Roberts,33,Female,Fracture,Orthopedics,2024-04-20,2024-04-28,IPD,Dr. Jones,7500.00
+19,Kevin Scott,46,Male,Hypertension,Cardiology,2024-05-01,,OPD,Dr. Smith,1500.00
+20,Natalie Turner,39,Female,Depression,Psychiatry,2024-05-10,,OPD,Dr. Brown,600.00
+21,Brian Underwood,61,Male,Hernia Surgery,Surgery,2024-05-15,2024-05-19,IPD,Dr. Kim,16000.00
+22,Diana Vance,27,Female,Pregnancy Checkup,OB-GYN,2024-06-01,,OPD,Dr. Martinez,600.00
+23,Edward Walsh,54,Male,Lung Cancer,Pulmonology,2024-06-10,2024-07-10,IPD,Dr. Lee,55000.00
+24,Fiona Xavier,43,Female,Migraine,Neurology,2024-06-15,,OPD,Dr. Patel,800.00
+25,George Young,66,Male,Hip Replacement,Orthopedics,2024-07-01,2024-07-12,IPD,Dr. Jones,32000.00
