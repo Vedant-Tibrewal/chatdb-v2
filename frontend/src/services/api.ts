@@ -38,7 +38,7 @@ export const api = {
     }),
 
   // Query
-  getModels: () => request<string[]>('/query/models'),
+  getModels: () => request<{ id: string; name: string; provider: string }[]>('/query/models'),
   generateQuery: (body: { session_id: string; question: string }) =>
     request<{ query: string; db_type: string }>('/query/generate', {
       method: 'POST',

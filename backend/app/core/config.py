@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     base_dataset_path: str = "./datasets"
 
     # CORS
-    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:3001", "http://localhost:5173"]
 
     # Rate limiting
     max_queries_per_minute: int = 20

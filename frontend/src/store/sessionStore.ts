@@ -5,7 +5,7 @@ interface SessionStore {
   // Session state
   session: SessionResponse | null;
   dbType: 'postgresql' | 'mongodb';
-  models: string[];
+  models: { id: string; name: string; provider: string }[];
   loading: boolean;
   error: string | null;
 

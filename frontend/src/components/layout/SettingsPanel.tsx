@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSessionStore } from '../../store/sessionStore';
 
-const MODEL_DISPLAY_NAMES: Record<string, string> = {
-  'gpt-4o': 'GPT-4o',
-  'anthropic/claude-haiku-4-5-20251001': 'Claude Haiku 4.5',
-  'gemini/gemini-2.5-flash': 'Gemini 2.5 Flash',
+const PROVIDER_DISPLAY: Record<string, string> = {
+  openai: 'OpenAI',
+  anthropic: 'Anthropic',
+  google: 'Google',
 };
 
 export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
@@ -51,9 +51,9 @@ export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
       </div>
 
       <div className="space-y-5 flex-1">
-        {/* Model Selector */}
+        {/* Provider Selector */}
         <div>
-          <label className="block text-xs font-medium text-gray-500 mb-1.5">LLM Model</label>
+          <label className="block text-xs font-medium text-gray-500 mb-1.5">LLM Provider</label>
           <select
             value={session?.model ?? ''}
             onChange={(e) => updateModel(e.target.value)}
@@ -61,12 +61,12 @@ export function SettingsPanel({ onCollapse }: { onCollapse: () => void }) {
             className="w-full px-2.5 py-1.5 text-sm border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
           >
             {models.map((m) => (
-              <option key={m} value={m}>
-                {MODEL_DISPLAY_NAMES[m] ?? m}
+              <option key={m.id} value={m.id}>
+                {PROVIDER_DISPLAY[m.provider] ?? m.provider}
               </option>
             ))}
             {models.length === 0 && (
-              <option value="">No models available</option>
+              <option value="">No providers available</option>
             )}
           </select>
         </div>
