@@ -1,0 +1,152 @@
+[
+  {
+    "sensor_id": "S001",
+    "location": "Downtown",
+    "city": "Austin",
+    "type": "temperature",
+    "reading": 32.5,
+    "unit": "celsius",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 92
+  },
+  {
+    "sensor_id": "S002",
+    "location": "Airport",
+    "city": "Austin",
+    "type": "humidity",
+    "reading": 65.2,
+    "unit": "percent",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 87
+  },
+  {
+    "sensor_id": "S003",
+    "location": "Park",
+    "city": "Denver",
+    "type": "air_quality",
+    "reading": 42.0,
+    "unit": "aqi",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 78
+  },
+  {
+    "sensor_id": "S004",
+    "location": "Highway",
+    "city": "Denver",
+    "type": "temperature",
+    "reading": 28.1,
+    "unit": "celsius",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 95
+  },
+  {
+    "sensor_id": "S001",
+    "location": "Downtown",
+    "city": "Austin",
+    "type": "temperature",
+    "reading": 34.8,
+    "unit": "celsius",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 90
+  },
+  {
+    "sensor_id": "S002",
+    "location": "Airport",
+    "city": "Austin",
+    "type": "humidity",
+    "reading": 58.4,
+    "unit": "percent",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 85
+  },
+  {
+    "sensor_id": "S003",
+    "location": "Park",
+    "city": "Denver",
+    "type": "air_quality",
+    "reading": 55.0,
+    "unit": "aqi",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 76
+  },
+  {
+    "sensor_id": "S004",
+    "location": "Highway",
+    "city": "Denver",
+    "type": "temperature",
+    "reading": 31.3,
+    "unit": "celsius",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 93
+  },
+  {
+    "sensor_id": "S005",
+    "location": "School",
+    "city": "Portland",
+    "type": "noise",
+    "reading": 72.1,
+    "unit": "decibels",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 81
+  },
+  {
+    "sensor_id": "S005",
+    "location": "School",
+    "city": "Portland",
+    "type": "noise",
+    "reading": 65.8,
+    "unit": "decibels",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 79
+  },
+  {
+    "sensor_id": "S006",
+    "location": "Marina",
+    "city": "Seattle",
+    "type": "wind_speed",
+    "reading": 18.5,
+    "unit": "kmh",
+    "timestamp": "2025-01-15T08:00:00Z",
+    "battery_pct": 88
+  },
+  {
+    "sensor_id": "S006",
+    "location": "Marina",
+    "city": "Seattle",
+    "type": "wind_speed",
+    "reading": 22.3,
+    "unit": "kmh",
+    "timestamp": "2025-01-15T12:00:00Z",
+    "battery_pct": 86
+  },
+  {
+    "sensor_id": "S001",
+    "location": "Downtown",
+    "city": "Austin",
+    "type": "temperature",
+    "reading": 30.2,
+    "unit": "celsius",
+    "timestamp": "2025-01-15T18:00:00Z",
+    "battery_pct": 88
+  },
+  {
+    "sensor_id": "S003",
+    "location": "Park",
+    "city": "Denver",
+    "type": "air_quality",
+    "reading": 38.0,
+    "unit": "aqi",
+    "timestamp": "2025-01-15T18:00:00Z",
+    "battery_pct": 74
+  },
+  {
+    "sensor_id": "S005",
+    "location": "School",
+    "city": "Portland",
+    "type": "noise",
+    "reading": 45.2,
+    "unit": "decibels",
+    "timestamp": "2025-01-15T18:00:00Z",
+    "battery_pct": 77
+  }
+]

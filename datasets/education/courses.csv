@@ -1,0 +1,16 @@
+course_id,course_name,department,credits,instructor,max_enrollment,semester
+101,Intro to CS,Computer Science,3,Dr. Sarah Mitchell,120,Fall 2024
+102,Data Structures,Computer Science,4,Dr. Raj Gupta,80,Fall 2024
+103,Calculus I,Mathematics,4,Dr. Emily Foster,150,Fall 2024
+104,Organic Chemistry,Chemistry,4,Dr. Michael Park,60,Fall 2024
+105,American Literature,English Literature,3,Dr. Laura Chen,45,Fall 2024
+106,General Physics I,Physics,4,Dr. James Wilson,100,Fall 2024
+107,Intro to Psychology,Psychology,3,Dr. Karen Adams,200,Fall 2024
+108,Cell Biology,Biology,4,Dr. Priya Shah,90,Fall 2024
+109,Linear Algebra,Mathematics,3,Dr. Thomas Reed,70,Fall 2024
+110,World History,History,3,Dr. Ana Lopez,80,Fall 2024
+111,Machine Learning,Computer Science,3,Dr. Raj Gupta,50,Spring 2025
+112,Calculus II,Mathematics,4,Dr. Emily Foster,130,Spring 2025
+113,Biochemistry,Chemistry,4,Dr. Michael Park,55,Spring 2025
+114,Quantum Mechanics,Physics,4,Dr. James Wilson,40,Spring 2025
+115,Developmental Psych,Psychology,3,Dr. Karen Adams,120,Spring 2025

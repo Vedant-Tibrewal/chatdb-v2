@@ -37,13 +37,17 @@ class MongoDB:
     def _session_collection(self, session_id: str, name: str) -> str:
         return f"sess_{session_id}_{name}"
 
-    async def create_session_collections(self, session_id: str) -> None:
+    async def create_session_collections(
+        self, session_id: str, table_filter: list[str] | None = None
+    ) -> None:
         # Find all base_ prefixed collections and clone them
         all_collections = await self.db.list_collection_names()
         base_collections = [c for c in all_collections if c.startswith("base_")]
 
         for base_col in base_collections:
             name = base_col[len("base_"):]  # strip "base_" prefix
+            if table_filter and name not in table_filter:
+                continue
             target = self._session_collection(session_id, name)
             # Copy docs from base to session collection
             cursor = self.db[base_col].find({}, {"_id": 0})
@@ -117,6 +121,36 @@ class MongoDB:
                 "columns": columns,
                 "row_count": count,
                 "sample_rows": sample_data,
+            })
+        return result
+
+    async def get_all_collection_data(self, session_id: str) -> list[dict]:
+        """Get schema info plus ALL docs for analytics computation."""
+        prefix = f"sess_{session_id}_"
+        all_collections = await self.db.list_collection_names()
+        session_collections = [c for c in all_collections if c.startswith(prefix)]
+
+        result = []
+        for col_name in session_collections:
+            name = col_name[len(prefix):]
+            count = await self.db[col_name].count_documents({})
+            sample = await self.db[col_name].find_one()
+            columns = []
+            if sample:
+                for key, value in sample.items():
+                    if key == "_id":
+                        continue
+                    columns.append({
+                        "name": key,
+                        "type": type(value).__name__,
+                        "nullable": True,
+                    })
+            all_docs = await self.db[col_name].find({}, {"_id": 0}).to_list(length=None)
+            result.append({
+                "name": name,
+                "columns": columns,
+                "row_count": count,
+                "rows": all_docs,
             })
         return result
 

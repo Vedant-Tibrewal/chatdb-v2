@@ -15,6 +15,7 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
 export interface SessionResponse {
   id: string;
   db_type: 'postgresql' | 'mongodb';
+  dataset: string | null;
   model: string;
   created_at: string;
   expires_at: string;
@@ -22,10 +23,12 @@ export interface SessionResponse {
 
 export const api = {
   // Session
-  createSession: (dbType?: 'postgresql' | 'mongodb') =>
+  getDatasets: () =>
+    request<{ name: string; tables: string[] }[]>('/session/datasets'),
+  createSession: (dbType?: 'postgresql' | 'mongodb', dataset?: string) =>
     request<SessionResponse>('/session', {
       method: 'POST',
-      body: dbType ? JSON.stringify({ db_type: dbType }) : undefined,
+      body: JSON.stringify({ db_type: dbType ?? 'postgresql', dataset: dataset ?? null }),
     }),
   getSession: (id: string) => request<SessionResponse>(`/session/${id}`),
   deleteSession: (id: string) => request(`/session/${id}`, { method: 'DELETE' }),

@@ -1,0 +1,26 @@
+enrollment_id,student_id,course_id,grade,semester,status
+1,1,101,A,Fall 2024,completed
+2,1,102,A-,Fall 2024,completed
+3,2,103,B+,Fall 2024,completed
+4,2,109,A,Fall 2024,completed
+5,3,108,A,Fall 2024,completed
+6,3,104,B+,Fall 2024,completed
+7,4,105,A-,Fall 2024,completed
+8,4,110,B,Fall 2024,completed
+9,5,101,A,Fall 2024,completed
+10,5,103,A,Fall 2024,completed
+11,6,106,C+,Fall 2024,completed
+12,6,114,C,Spring 2025,enrolled
+13,7,104,B+,Fall 2024,completed
+14,7,108,A-,Fall 2024,completed
+15,8,110,B+,Fall 2024,completed
+16,9,101,B+,Fall 2024,completed
+17,9,111,A-,Spring 2025,enrolled
+18,10,103,A,Fall 2024,completed
+19,10,109,A-,Fall 2024,completed
+20,11,108,B,Fall 2024,completed
+21,12,102,B,Fall 2024,completed
+22,12,111,A,Spring 2025,enrolled
+23,13,107,A,Fall 2024,completed
+24,13,115,A-,Spring 2025,enrolled
+25,14,106,B+,Fall 2024,completed

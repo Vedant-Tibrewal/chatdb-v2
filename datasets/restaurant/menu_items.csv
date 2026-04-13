@@ -1,0 +1,16 @@
+item_id,name,category,price,cost,is_vegetarian,is_gluten_free,calories,prep_time_min
+1,Classic Burger,Mains,14.99,5.20,false,false,680,12
+2,Margherita Pizza,Mains,16.99,4.80,true,false,750,18
+3,Caesar Salad,Starters,11.99,3.10,true,false,420,8
+4,Grilled Salmon,Mains,24.99,10.50,false,true,520,20
+5,Chicken Wings,Starters,13.49,4.40,false,true,610,15
+6,Mushroom Risotto,Mains,18.99,5.60,true,true,580,22
+7,Tiramisu,Desserts,9.99,2.80,true,false,380,5
+8,French Fries,Sides,6.99,1.50,true,true,340,10
+9,Garlic Bread,Sides,5.99,1.20,true,false,290,7
+10,Chocolate Lava Cake,Desserts,11.99,3.50,true,false,450,15
+11,Fish Tacos,Mains,15.99,5.80,false,false,490,14
+12,Garden Salad,Starters,9.99,2.40,true,true,180,5
+13,Pasta Carbonara,Mains,17.99,4.90,false,false,720,16
+14,Iced Tea,Beverages,3.99,0.60,true,true,80,2
+15,Craft Beer,Beverages,7.99,2.50,true,true,190,1

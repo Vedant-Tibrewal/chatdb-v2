@@ -14,6 +14,7 @@ class DBType(str, Enum):
 class SessionState(BaseModel):
     id: str
     db_type: DBType = DBType.POSTGRESQL
+    dataset: str | None = None
     model: str = "gemini/gemini-2.5-flash"
     created_at: datetime = Field(default_factory=datetime.utcnow)
     last_active: datetime = Field(default_factory=datetime.utcnow)
@@ -22,6 +23,7 @@ class SessionState(BaseModel):
 
 class SessionCreate(BaseModel):
     db_type: DBType = DBType.POSTGRESQL
+    dataset: str | None = None
 
 
 class ModelUpdate(BaseModel):
@@ -31,6 +33,7 @@ class ModelUpdate(BaseModel):
 class SessionResponse(BaseModel):
     id: str
     db_type: DBType
+    dataset: str | None = None
     model: str
     created_at: datetime
     expires_at: datetime

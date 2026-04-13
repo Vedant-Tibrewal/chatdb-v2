@@ -1,0 +1,7 @@
+agent_id,first_name,last_name,email,phone,brokerage,license_number,years_experience,commission_rate
+1,Rachel,Foster,rachel.f@realty.com,512-555-0101,Austin Realty Group,TX-88421,8,0.03
+2,David,Chang,david.c@realty.com,303-555-0202,Mile High Properties,CO-54312,12,0.025
+3,Sarah,Mitchell,sarah.m@realty.com,503-555-0303,Rose City Realtors,OR-77865,5,0.03
+4,Kevin,O'Brien,kevin.o@realty.com,206-555-0404,Emerald City Homes,WA-91204,15,0.025
+5,Maria,Gonzalez,maria.g@realty.com,512-555-0505,Austin Realty Group,TX-88422,3,0.035
+6,Robert,Kim,robert.k@realty.com,303-555-0606,Mile High Properties,CO-54313,9,0.03

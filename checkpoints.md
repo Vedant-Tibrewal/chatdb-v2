@@ -410,29 +410,48 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 10 · Analytics Dashboard
-**Status:** NOT STARTED  
+## Checkpoint 10 · Analytics Dashboard ✅
+**Status:** COMPLETE  
 **Commit:** `feat: pinned analytics dashboard with domain-specific metrics`
 
-**Pickup context:** Full CRUD works. Data can be uploaded, queried, inserted, deleted. Need the pinned analytics panel.
+**What was done:**
+- Implemented `backend/app/models/analytics.py` — Pydantic models:
+  - `ChartCard` (id, title, type, data, value, subtitle)
+  - `AnalyticsResponse` (domain, cards)
+- Implemented `backend/app/services/analytics.py`:
+  - Domain detection via fuzzy keyword matching against table/column names (ecommerce, sales, medical, hr, sports, cybersecurity, generic fallback)
+  - Domain-specific analytics handlers:
+    - **E-Commerce:** total revenue, total orders, orders by payment method, orders by status, products by category, avg price, total customers
+    - **Sales:** pipeline value, total deals, deals by stage, deals by source, reps by region
+    - **Medical:** total patients, by diagnosis, by insurance, total visits, by department, avg visit cost, doctors by specialization
+    - **HR:** headcount, by department, by location, avg salary, by status, reviews by rating
+    - **Sports:** total teams, by conference, total players, by position, avg salary, total games
+    - **Cybersecurity:** total vulnerabilities, by severity, total assets, by criticality, total events, by type
+    - **Generic fallback:** row counts, null %, top 5 categorical frequencies
+  - All computation in pure Python (no LLM dependency)
+- Added `get_all_table_data()` to `backend/app/db/postgres.py` — fetches schema + all rows for analytics
+- Added `get_all_collection_data()` to `backend/app/db/mongodb.py` — fetches schema + all docs for analytics
+- Implemented `backend/app/api/routes/analytics.py` — `GET /api/analytics/{session_id}` returns domain + chart cards
+- Rewrote `frontend/src/components/dashboard/DashboardPanel.tsx`:
+  - Fetches analytics on session init via `api.getAnalytics()`
+  - Renders metric cards (large numbers) in a responsive grid row
+  - Chart cards rendered via Recharts: BarChart, PieChart, LineChart, AreaChart
+  - Domain header with card count
+  - Loading spinner and error states
+- Installed `recharts` npm package
+- Added `./backend/app:/app/app:ro` volume mount to `docker-compose.yml` for development hot-reload
 
-**What to implement:**
-- **Backend:** `backend/app/services/analytics.py`:
-  - Domain detection: fuzzy match column names against known patterns (revenue/price/product → sales, patient/diagnosis → medical, employee/salary/department → HR)
-  - Compute metrics per domain using pandas (see PRD §6 for exact metrics per domain)
-  - Generic fallback: row count, null %, top 5 categorical frequencies, numeric distributions
-  - `GET /api/analytics/{sessionId}` returns list of chart cards with type + data
-- **Frontend:** `DashboardPanel.tsx`:
-  - Fetch analytics on session create and after reinitialize
-  - Render chart cards at top of center panel (above chat thread)
-  - Metric cards for single values, Recharts for bar/line/pie/area/histogram
-  - Install Recharts: `npm install recharts`
-- Recalculate on reinitialize
+**Key decisions:**
+- Analytics computed from actual row data (fetched via `get_all_table_data`), not from LLM — as specified in PRD
+- Domain detection is keyword-based (no ML), matching table/column names against known patterns
+- Each domain handler falls back to generic analytics if no relevant data found
+- Chart types: metric (single value), bar, pie, line, area — mapped to Recharts components
+- Backend volume mount added for faster development iteration (avoids rebuild on every code change)
 
 ---
 
-## Checkpoint 11 · Auto Visualization
-**Status:** NOT STARTED  
+## Checkpoint 11 · Auto Visualization ✅
+**Status:** COMPLETE  
 **Commit:** `feat: auto-suggested charts on query results with export`
 
 **Pickup context:** Analytics dashboard shows pinned domain metrics. Need per-query chart suggestions.
@@ -445,6 +464,32 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 - Download chart as PNG (Recharts' `toDataURL` or html2canvas)
 - 1–2 line LLM auto-summary of the result (toggleable — small "Show insight" link)
 - This is a second LLM call per query (chart suggestion + insight), so make it non-blocking
+
+**What was done:**
+- Client-side chart suggestion in `ResultChart` component (no extra LLM call — analyzes column types/data shape):
+  - Detects category vs numeric columns from result data
+  - Auto-selects chart type: pie (≤6 categories), bar/horizontal_bar (≤20), area/line (many points)
+  - Returns `none` for single-value results, write ops, empty results, or >200 rows
+- Chart type switcher toolbar: Bar, H-Bar, Pie, Line, Area buttons
+- Auto-generated text insight (e.g., "Offline leads at 36% of the total")
+- Show/hide insight toggle
+- Renders inline below ResultTable using Recharts with theme-consistent colors
+- Fixed `affected_rows` null vs undefined bug: Pydantic sends `null` in JSON, JS needed `!= null` (loose equality) instead of `!== undefined`
+
+**Bug fixes included in this checkpoint:**
+- Timestamp type inference: added `_TIMESTAMP_RE` and `_DATE_RE` regex to `data_loader._infer_type()` — columns like `event_timestamp` now created as `TIMESTAMPTZ` instead of `TEXT`
+- Base data schema recreation: changed `postgres.py` startup from `CREATE SCHEMA IF NOT EXISTS` to `DROP SCHEMA CASCADE` + `CREATE SCHEMA` so type changes take effect on restart
+- Query execution error handling: wrapped `_execute_pg`/`_execute_mongo` in try/except returning 400 with actual DB error instead of unhandled 500
+- Dataset selector "All Datasets": changed `initSession` signature to accept `string | null`, so selecting "All" properly passes `null` instead of `undefined` (which fell back to current dataset)
+- Int/float type promotion: if a column has any float values alongside ints, the whole column is promoted to `float`
+- Cast fallback: `_cast_value` for `int` catches ValueError and falls back to `float`
+
+**Additional work:**
+- Generated test datasets for upload pipeline testing:
+  - `datasets/education/` — students.csv, courses.csv, enrollments.csv
+  - `datasets/real_estate/` — properties.csv, agents.csv, transactions.csv
+  - `datasets/restaurant/` — menu_items.csv, orders.csv, order_details.csv
+  - `datasets/iot/` — sensor_readings.json (JSON format)
 
 ---
 

@@ -19,9 +19,10 @@ class PostgresDB:
             min_size=2,
             max_size=10,
         )
-        # Ensure base schema exists
+        # Recreate base schema fresh on every startup so type changes take effect
         async with self._pool.acquire() as conn:
-            await conn.execute("CREATE SCHEMA IF NOT EXISTS base_data")
+            await conn.execute("DROP SCHEMA IF EXISTS base_data CASCADE")
+            await conn.execute("CREATE SCHEMA base_data")
 
     async def close(self) -> None:
         if self._pool:
@@ -34,16 +35,20 @@ class PostgresDB:
             raise RuntimeError("PostgresDB not connected")
         return self._pool
 
-    async def create_session_schema(self, session_id: str) -> None:
+    async def create_session_schema(
+        self, session_id: str, table_filter: list[str] | None = None
+    ) -> None:
         schema = f"s_{session_id}"
         async with self.pool.acquire() as conn:
             await conn.execute(f'CREATE SCHEMA IF NOT EXISTS "{schema}"')
-            # Clone all tables from base_data into session schema
+            # Clone tables from base_data into session schema
             tables = await conn.fetch(
                 "SELECT tablename FROM pg_tables WHERE schemaname = 'base_data'"
             )
             for row in tables:
                 table = row["tablename"]
+                if table_filter and table not in table_filter:
+                    continue
                 await conn.execute(
                     f'CREATE TABLE "{schema}"."{table}" '
                     f'(LIKE "base_data"."{table}" INCLUDING ALL)'
@@ -115,6 +120,47 @@ class PostgresDB:
                     ],
                     "row_count": count_row,
                     "sample_rows": sample_data,
+                })
+            return result
+
+    async def get_all_table_data(self, session_id: str) -> list[dict]:
+        """Get schema info plus ALL rows for analytics computation."""
+        schema = f"s_{session_id}"
+        async with self.pool.acquire() as conn:
+            tables = await conn.fetch(
+                "SELECT tablename FROM pg_tables WHERE schemaname = $1", schema
+            )
+            result = []
+            for row in tables:
+                table = row["tablename"]
+                columns = await conn.fetch(
+                    """
+                    SELECT column_name, data_type, is_nullable
+                    FROM information_schema.columns
+                    WHERE table_schema = $1 AND table_name = $2
+                    ORDER BY ordinal_position
+                    """,
+                    schema,
+                    table,
+                )
+                count_row = await conn.fetchval(
+                    f'SELECT COUNT(*) FROM "{schema}"."{table}"'
+                )
+                all_rows = await conn.fetch(
+                    f'SELECT * FROM "{schema}"."{table}"'
+                )
+                result.append({
+                    "name": table,
+                    "columns": [
+                        {
+                            "name": c["column_name"],
+                            "type": c["data_type"],
+                            "nullable": c["is_nullable"] == "YES",
+                        }
+                        for c in columns
+                    ],
+                    "row_count": count_row,
+                    "rows": [dict(r) for r in all_rows],
                 })
             return result
 

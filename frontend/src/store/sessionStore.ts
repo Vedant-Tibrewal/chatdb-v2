@@ -12,6 +12,8 @@ interface SessionStore {
   // Session state
   session: SessionResponse | null;
   dbType: 'postgresql' | 'mongodb';
+  dataset: string | null;
+  datasets: { name: string; tables: string[] }[];
   models: { id: string; name: string; provider: string }[];
   schema: SchemaTable[] | null;
   pendingInput: string | null;
@@ -19,12 +21,13 @@ interface SessionStore {
   error: string | null;
 
   // Actions
-  initSession: (dbType?: 'postgresql' | 'mongodb') => Promise<void>;
+  initSession: (dbType?: 'postgresql' | 'mongodb', dataset?: string | null) => Promise<void>;
   refreshSession: () => Promise<void>;
   reinitialize: () => Promise<void>;
   updateModel: (model: string) => Promise<void>;
   fetchModels: () => Promise<void>;
   fetchSchema: () => Promise<void>;
+  fetchDatasets: () => Promise<void>;
   setDbType: (dbType: 'postgresql' | 'mongodb') => void;
   setPendingInput: (input: string | null) => void;
   setError: (error: string) => void;
@@ -34,18 +37,21 @@ interface SessionStore {
 export const useSessionStore = create<SessionStore>((set, get) => ({
   session: null,
   dbType: 'postgresql',
+  dataset: null,
+  datasets: [],
   models: [],
   schema: null,
   pendingInput: null,
   loading: false,
   error: null,
 
-  initSession: async (dbType) => {
+  initSession: async (dbType, dataset) => {
     const type = dbType ?? get().dbType;
+    const ds = dataset === undefined ? get().dataset : dataset;
     set({ loading: true, error: null });
     try {
-      const session = await api.createSession(type);
-      set({ session, dbType: type, loading: false });
+      const session = await api.createSession(type, ds ?? undefined);
+      set({ session, dbType: type, dataset: ds, loading: false });
       // Fetch models and schema in background
       get().fetchModels();
       get().fetchSchema();
@@ -106,6 +112,15 @@ export const useSessionStore = create<SessionStore>((set, get) => ({
     try {
       const data = await api.getSchema(session.id);
       set({ schema: data.tables });
+    } catch (e) {
+      set({ error: (e as Error).message });
+    }
+  },
+
+  fetchDatasets: async () => {
+    try {
+      const datasets = await api.getDatasets();
+      set({ datasets });
     } catch (e) {
       set({ error: (e as Error).message });
     }

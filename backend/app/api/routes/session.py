@@ -1,10 +1,20 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Request
 
 from app.api.deps import get_session_manager
 from app.db.session import SessionManager
 from app.models.session import ModelUpdate, SessionCreate, SessionResponse
 
 router = APIRouter()
+
+
+@router.get("/datasets")
+async def list_datasets(request: Request):
+    """Return available datasets and their tables."""
+    dataset_map: dict[str, list[str]] = getattr(request.app.state, "dataset_map", {})
+    return [
+        {"name": name, "tables": tables}
+        for name, tables in sorted(dataset_map.items())
+    ]
 
 
 @router.post("", response_model=SessionResponse)
@@ -14,10 +24,12 @@ async def create_session(
 ):
     """Create a new session with isolated database scope."""
     db_type = body.db_type if body else None
-    session = await (sm.create_session(db_type=db_type) if db_type else sm.create_session())
+    dataset = body.dataset if body else None
+    session = await sm.create_session(db_type=db_type, dataset=dataset)
     return SessionResponse(
         id=session.id,
         db_type=session.db_type,
+        dataset=session.dataset,
         model=session.model,
         created_at=session.created_at,
         expires_at=sm.get_expiry(session),
@@ -34,6 +46,7 @@ async def get_session(
     return SessionResponse(
         id=session.id,
         db_type=session.db_type,
+        dataset=session.dataset,
         model=session.model,
         created_at=session.created_at,
         expires_at=sm.get_expiry(session),
@@ -75,6 +88,7 @@ async def update_model(
     return SessionResponse(
         id=session.id,
         db_type=session.db_type,
+        dataset=session.dataset,
         model=session.model,
         created_at=session.created_at,
         expires_at=sm.get_expiry(session),

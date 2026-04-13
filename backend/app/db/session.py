@@ -14,24 +14,30 @@ logger = logging.getLogger(__name__)
 
 
 class SessionManager:
-    def __init__(self, pg=None, mongo=None) -> None:
+    def __init__(self, pg=None, mongo=None, dataset_map: dict[str, list[str]] | None = None) -> None:
         self._sessions: dict[str, SessionState] = {}
         self._cleanup_task: asyncio.Task | None = None
         self.pg = pg
         self.mongo = mongo
+        self.dataset_map = dataset_map or {}
 
-    async def create_session(self, db_type: DBType = DBType.POSTGRESQL) -> SessionState:
+    async def create_session(
+        self, db_type: DBType = DBType.POSTGRESQL, dataset: str | None = None
+    ) -> SessionState:
         session_id = uuid.uuid4().hex[:12]
-        session = SessionState(id=session_id, db_type=db_type)
+        session = SessionState(id=session_id, db_type=db_type, dataset=dataset)
         self._sessions[session_id] = session
+
+        # Determine which tables to clone
+        table_filter = self.dataset_map.get(dataset) if dataset else None
 
         # Create session-scoped DB schema/collections
         if db_type == DBType.POSTGRESQL and self.pg:
-            await self.pg.create_session_schema(session_id)
-            logger.info("Created PG session schema for %s", session_id)
+            await self.pg.create_session_schema(session_id, table_filter=table_filter)
+            logger.info("Created PG session schema for %s (dataset=%s)", session_id, dataset)
         elif db_type == DBType.MONGODB and self.mongo:
-            await self.mongo.create_session_collections(session_id)
-            logger.info("Created Mongo session collections for %s", session_id)
+            await self.mongo.create_session_collections(session_id, table_filter=table_filter)
+            logger.info("Created Mongo session collections for %s (dataset=%s)", session_id, dataset)
 
         return session
 
@@ -57,14 +63,15 @@ class SessionManager:
 
     async def reinitialize_session(self, session_id: str) -> SessionState:
         session = self.get_session(session_id)
+        table_filter = self.dataset_map.get(session.dataset) if session.dataset else None
 
         # Drop and re-clone
         if session.db_type == DBType.POSTGRESQL and self.pg:
             await self.pg.drop_session_schema(session_id)
-            await self.pg.create_session_schema(session_id)
+            await self.pg.create_session_schema(session_id, table_filter=table_filter)
         elif session.db_type == DBType.MONGODB and self.mongo:
             await self.mongo.drop_session_collections(session_id)
-            await self.mongo.create_session_collections(session_id)
+            await self.mongo.create_session_collections(session_id, table_filter=table_filter)
 
         session.conversation_history.clear()
         session.last_active = datetime.utcnow()

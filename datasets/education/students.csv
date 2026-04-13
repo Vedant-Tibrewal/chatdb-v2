@@ -1,0 +1,16 @@
+student_id,first_name,last_name,email,enrollment_date,major,gpa,year,status
+1,Emma,Rodriguez,emma.rod@university.edu,2022-08-20,Computer Science,3.72,3,active
+2,Liam,Chen,liam.chen@university.edu,2021-08-18,Mathematics,3.45,4,active
+3,Sophia,Patel,sophia.p@university.edu,2023-08-22,Biology,3.88,2,active
+4,Noah,Williams,noah.w@university.edu,2022-08-20,English Literature,3.15,3,active
+5,Olivia,Kim,olivia.k@university.edu,2024-08-19,Computer Science,3.91,1,active
+6,James,Brown,james.b@university.edu,2021-08-18,Physics,2.95,4,probation
+7,Ava,Garcia,ava.g@university.edu,2023-08-22,Chemistry,3.60,2,active
+8,Lucas,Martinez,lucas.m@university.edu,2020-08-17,History,3.30,4,graduated
+9,Mia,Johnson,mia.j@university.edu,2022-08-20,Computer Science,3.55,3,active
+10,Ethan,Lee,ethan.l@university.edu,2023-08-22,Mathematics,3.78,2,active
+11,Charlotte,Davis,charlotte.d@university.edu,2024-08-19,Biology,3.42,1,active
+12,Benjamin,Taylor,ben.t@university.edu,2021-08-18,Computer Science,3.10,4,graduated
+13,Amelia,Nguyen,amelia.n@university.edu,2022-08-20,Psychology,3.65,3,active
+14,Mason,Anderson,mason.a@university.edu,2023-08-22,Physics,3.20,2,active
+15,Harper,Thomas,harper.t@university.edu,2024-08-19,English Literature,3.80,1,active

@@ -4,6 +4,8 @@ import csv
 import json
 import logging
 import math
+import re
+from datetime import datetime
 from pathlib import Path
 
 from app.core.config import settings
@@ -18,7 +20,16 @@ _PG_TYPE_MAP = {
     "float": "DOUBLE PRECISION",
     "str": "TEXT",
     "bool": "BOOLEAN",
+    "timestamp": "TIMESTAMPTZ",
+    "date": "DATE",
 }
+
+_TIMESTAMP_RE = re.compile(
+    r'^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}'
+)
+_DATE_RE = re.compile(
+    r'^\d{4}-\d{2}-\d{2}$'
+)
 
 
 def _infer_type(value: str) -> str:
@@ -36,6 +47,10 @@ def _infer_type(value: str) -> str:
         pass
     if value.lower() in ("true", "false"):
         return "bool"
+    if _TIMESTAMP_RE.match(value):
+        return "timestamp"
+    if _DATE_RE.match(value):
+        return "date"
     return "str"
 
 
@@ -43,11 +58,18 @@ def _cast_value(value: str, dtype: str):
     if value == "":
         return None
     if dtype == "int":
-        return int(value)
+        try:
+            return int(value)
+        except ValueError:
+            return float(value)
     if dtype == "float":
         return float(value)
     if dtype == "bool":
         return value.lower() == "true"
+    if dtype == "timestamp":
+        return value  # PG will parse ISO strings into TIMESTAMPTZ
+    if dtype == "date":
+        return value  # PG will parse YYYY-MM-DD into DATE
     return value
 
 
@@ -72,12 +94,15 @@ def _parse_csv(filepath: Path) -> tuple[list[dict], list[list], list[str]]:
     sample = raw_rows[: min(100, len(raw_rows))]
     col_types = ["str"] * len(headers)
     for col_idx in range(len(headers)):
-        type_votes = {}
+        type_votes: dict[str, int] = {}
         for row in sample:
             if col_idx < len(row) and row[col_idx].strip():
                 t = _infer_type(row[col_idx].strip())
                 type_votes[t] = type_votes.get(t, 0) + 1
         if type_votes:
+            # Promote int→float if column has any floats (int is a subset)
+            if type_votes.get("int", 0) and type_votes.get("float", 0):
+                type_votes["float"] = type_votes.pop("int") + type_votes["float"]
             col_types[col_idx] = max(type_votes, key=type_votes.get)
 
     columns = [
@@ -98,21 +123,29 @@ def _parse_csv(filepath: Path) -> tuple[list[dict], list[list], list[str]]:
     return columns, rows, headers
 
 
-async def load_base_datasets(pg: PostgresDB, mongo: MongoDB) -> None:
-    """Load all CSV files from datasets/ subdirectories into base PG schema and Mongo."""
+async def load_base_datasets(pg: PostgresDB, mongo: MongoDB) -> dict[str, list[str]]:
+    """Load all CSV files from datasets/ subdirectories into base PG schema and Mongo.
+
+    Returns a mapping of dataset name → list of table names.
+    """
+    dataset_map: dict[str, list[str]] = {}
     dataset_path = Path(settings.base_dataset_path)
     if not dataset_path.exists():
         logger.warning("Dataset path %s does not exist, skipping base data load", dataset_path)
-        return
+        return dataset_map
 
     csv_files = sorted(dataset_path.rglob("*.csv"))
     if not csv_files:
         logger.info("No CSV files found in %s", dataset_path)
-        return
+        return dataset_map
 
     for csv_file in csv_files:
         table_name = csv_file.stem.lower()
+        dataset_name = csv_file.parent.name.lower()
         logger.info("Loading base dataset: %s from %s", table_name, csv_file)
+
+        # Track dataset → table mapping
+        dataset_map.setdefault(dataset_name, []).append(table_name)
 
         columns, rows, _headers = _parse_csv(csv_file)
         if not rows:
@@ -142,3 +175,5 @@ async def load_base_datasets(pg: PostgresDB, mongo: MongoDB) -> None:
             logger.info("Mongo: loaded %d docs into %s", len(docs), base_col)
         except Exception as e:
             logger.error("Mongo load failed for %s: %s", table_name, e)
+
+    return dataset_map

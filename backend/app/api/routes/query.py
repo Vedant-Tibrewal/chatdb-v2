@@ -49,6 +49,7 @@ async def generate(
     mongo = request.app.state.mongo
     schema_info = await get_schema(session.id, session.db_type, pg, mongo)
 
+    available_tables = [t["name"] for t in schema_info]
     try:
         query = await generate_query(
             question=body.question,
@@ -56,6 +57,18 @@ async def generate(
             db_type=session.db_type,
             model=session.model,
             conversation_history=session.conversation_history,
+        )
+    except ValueError as e:
+        # Empty LLM response — likely the question doesn't match the schema
+        logger.error("LLM returned empty: %s", e)
+        raise HTTPException(
+            status_code=502,
+            detail=(
+                f"Could not generate a query. Your session has these tables: "
+                f"{', '.join(available_tables)}. "
+                f"If you're asking about a different domain, "
+                f"switch to the correct dataset in Settings."
+            ),
         )
     except Exception as e:
         logger.error("LLM call failed: %s", e)
@@ -95,10 +108,13 @@ async def execute(
 
     start = time.perf_counter()
 
-    if session.db_type == DBType.POSTGRESQL:
-        result = await _execute_pg(pg, session.id, body.query)
-    else:
-        result = await _execute_mongo(mongo, session.id, body.query)
+    try:
+        if session.db_type == DBType.POSTGRESQL:
+            result = await _execute_pg(pg, session.id, body.query)
+        else:
+            result = await _execute_mongo(mongo, session.id, body.query)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Query execution failed: {e}")
 
     elapsed_ms = (time.perf_counter() - start) * 1000
 

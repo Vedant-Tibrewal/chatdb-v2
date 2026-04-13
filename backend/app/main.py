@@ -28,13 +28,14 @@ async def lifespan(app: FastAPI):
     logger.info("MongoDB connected")
 
     # Load base datasets
-    await load_base_datasets(pg, mongo)
+    dataset_map = await load_base_datasets(pg, mongo)
     logger.info("Base datasets loaded")
 
-    sm = SessionManager(pg=pg, mongo=mongo)
+    sm = SessionManager(pg=pg, mongo=mongo, dataset_map=dataset_map)
     app.state.session_manager = sm
     app.state.pg = pg
     app.state.mongo = mongo
+    app.state.dataset_map = dataset_map
     app.state.rate_limiter = RateLimiter(max_per_minute=settings.max_queries_per_minute)
     await sm.start_cleanup_task()
 

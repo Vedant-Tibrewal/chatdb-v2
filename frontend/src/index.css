@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+  --font-display: "Fraunces", Georgia, serif;
+
+  --color-cream: #F7F4EF;
+  --color-surface: #EDEAE4;
+  --color-surface-2: #E4E0D9;
+  --color-navy: #1B2D50;
+  --color-navy-mid: #3B4D62;
+  --color-steel: #3A5F8A;
+  --color-muted: #7A8696;
+  --color-pill: #E3EBF4;
+  --color-pill-text: #1E3D5C;
+  --color-warm-border: #D6D2CC;
+}

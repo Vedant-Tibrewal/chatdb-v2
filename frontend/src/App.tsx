@@ -8,29 +8,30 @@ import { useSessionStore } from './store/sessionStore'
 type ActiveView = 'chat' | 'dashboard'
 
 function App() {
-  const { loading, error, initSession, clearError } = useSessionStore()
+  const { loading, error, initSession, fetchDatasets, clearError } = useSessionStore()
   const [leftCollapsed, setLeftCollapsed] = useState(false)
   const [rightCollapsed, setRightCollapsed] = useState(false)
   const [activeView, setActiveView] = useState<ActiveView>('chat')
 
   useEffect(() => {
+    fetchDatasets()
     initSession()
-  }, [initSession])
+  }, [initSession, fetchDatasets])
 
   return (
-    <div className="flex h-screen bg-gray-50 text-gray-900">
+    <div className="flex h-screen bg-cream text-navy">
       {/* Left sidebar */}
       {!leftCollapsed && <SchemaPanel onCollapse={() => setLeftCollapsed(true)} />}
 
       {/* Main content */}
       <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Top bar */}
-        <header className="flex items-center justify-between border-b border-gray-200 bg-white px-3 py-1.5">
+        <header className="flex items-center justify-between border-b border-warm-border bg-cream px-3 py-1.5">
           {/* Left: sidebar toggle */}
           <div className="flex items-center gap-2 w-40">
             <button
               onClick={() => setLeftCollapsed(!leftCollapsed)}
-              className="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 transition-colors"
+              className="p-1.5 rounded-md hover:bg-surface text-muted transition-colors"
               title={leftCollapsed ? 'Show sidebar' : 'Hide sidebar'}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,15 +41,15 @@ function App() {
           </div>
 
           {/* Center: view switcher */}
-          <div className="flex items-center bg-gray-100 rounded-lg p-0.5">
+          <div className="flex items-center bg-surface rounded-lg p-0.5">
             {(['chat', 'dashboard'] as const).map((view) => (
               <button
                 key={view}
                 onClick={() => setActiveView(view)}
                 className={`px-4 py-1 text-sm font-medium rounded-md transition-all ${
                   activeView === view
-                    ? 'bg-white text-gray-900 shadow-sm'
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? 'bg-navy text-white shadow-sm'
+                    : 'text-muted hover:text-navy-mid'
                 }`}
               >
                 {view === 'chat' ? 'Chat' : 'Dashboard'}
@@ -59,11 +60,11 @@ function App() {
           {/* Right: settings toggle */}
           <div className="flex items-center justify-end gap-2 w-40">
             {loading && (
-              <span className="text-xs text-gray-400 animate-pulse">Loading...</span>
+              <span className="text-xs text-muted animate-pulse">Loading...</span>
             )}
             <button
               onClick={() => setRightCollapsed(!rightCollapsed)}
-              className="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 transition-colors"
+              className="p-1.5 rounded-md hover:bg-surface text-muted transition-colors"
               title={rightCollapsed ? 'Show settings' : 'Hide settings'}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

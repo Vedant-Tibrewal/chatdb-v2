@@ -63,4 +63,6 @@ async def llm_completion(
         max_tokens=2048,
     )
     content = response.choices[0].message.content
+    if not content:
+        raise ValueError("LLM returned an empty response")
     return content.strip()

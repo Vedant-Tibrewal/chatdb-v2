@@ -1,0 +1,16 @@
+property_id,address,city,state,zip_code,bedrooms,bathrooms,sqft,listing_price,property_type,year_built,status
+1,123 Oak Lane,Austin,TX,78701,3,2,1850,425000,single_family,2005,active
+2,456 Elm Street,Denver,CO,80202,2,1,1100,310000,condo,2018,active
+3,789 Maple Ave,Portland,OR,97201,4,3,2400,575000,single_family,1998,pending
+4,321 Pine Road,Seattle,WA,98101,1,1,750,389000,condo,2020,active
+5,654 Birch Blvd,Austin,TX,78704,3,2.5,2100,485000,townhouse,2015,sold
+6,987 Cedar Drive,Denver,CO,80203,5,4,3200,720000,single_family,2010,active
+7,111 Walnut St,Portland,OR,97205,2,2,1350,340000,condo,2016,active
+8,222 Willow Way,Seattle,WA,98103,3,2,1600,510000,single_family,2003,pending
+9,333 Spruce Ct,Austin,TX,78745,4,3,2800,620000,single_family,2012,active
+10,444 Aspen Ln,Denver,CO,80210,2,1,980,275000,condo,2019,sold
+11,555 Redwood Pl,Portland,OR,97214,3,2.5,1900,450000,townhouse,2017,active
+12,666 Cypress Dr,Seattle,WA,98115,4,3,2600,680000,single_family,2008,active
+13,777 Magnolia St,Austin,TX,78702,2,2,1200,355000,condo,2021,active
+14,888 Juniper Ave,Denver,CO,80204,3,2,1750,420000,townhouse,2014,pending
+15,999 Sequoia Rd,Portland,OR,97202,5,4,3500,790000,single_family,2006,active

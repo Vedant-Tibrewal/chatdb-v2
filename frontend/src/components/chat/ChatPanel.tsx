@@ -1,7 +1,193 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Highlight, themes } from 'prism-react-renderer';
+import {
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  PieChart, Pie, Cell,
+  LineChart, Line,
+  AreaChart, Area,
+} from 'recharts';
 import { useSessionStore } from '../../store/sessionStore';
-import { useChatStore, type ChatMessage } from '../../store/chatStore';
+import { useChatStore, type ChatMessage, type QueryResult } from '../../store/chatStore';
+
+// ── Chart colors ──────────────────────────────────────────────
+const CHART_COLORS = ['#3A5F8A', '#5E7D5F', '#6B93B5', '#9BBAD1', '#C5D9E8', '#B5705A', '#D4A574', '#8B6F5C'];
+const GRID_STROKE = 'rgba(212,207,200,0.5)';
+const TIP_STYLE = { fontSize: 12, borderRadius: 8, border: '1px solid #D6D2CC', background: '#EDEAE4' };
+
+type ChartType = 'bar' | 'horizontal_bar' | 'pie' | 'line' | 'area' | 'none';
+
+// ── Auto chart suggestion ─────────────────────────────────────
+
+function suggestChart(result: QueryResult): { type: ChartType; labelCol: string; valueCol: string; insight: string } {
+  const { columns, rows } = result;
+  const none = { type: 'none' as ChartType, labelCol: '', valueCol: '', insight: '' };
+
+  if (!rows.length || !columns.length || columns.length < 2) return none;
+  if (result.affected_rows != null) return none;
+  if (rows.length > 200) return none;
+
+  // Identify column roles
+  const numericCols: string[] = [];
+  const categoryCols: string[] = [];
+
+  for (const col of columns) {
+    const sample = rows.slice(0, 20).map(r => r[col]).filter(v => v != null);
+    const numCount = sample.filter(v => typeof v === 'number' || (typeof v === 'string' && !isNaN(Number(v)) && v.trim() !== '')).length;
+    if (numCount > sample.length * 0.7) {
+      numericCols.push(col);
+    } else {
+      categoryCols.push(col);
+    }
+  }
+
+  if (!numericCols.length || !categoryCols.length) return none;
+
+  const labelCol = categoryCols[0];
+  const valueCol = numericCols[0];
+  const uniqueLabels = new Set(rows.map(r => String(r[labelCol])));
+
+  // Generate insight
+  const values = rows.map(r => Number(r[valueCol])).filter(v => !isNaN(v));
+  const total = values.reduce((s, v) => s + v, 0);
+  const maxIdx = values.indexOf(Math.max(...values));
+  const topLabel = rows[maxIdx]?.[labelCol];
+  const topVal = values[maxIdx];
+
+  let insight = '';
+  let type: ChartType = 'bar';
+
+  if (uniqueLabels.size <= 6 && rows.length <= 6) {
+    // Few categories — pie
+    type = 'pie';
+    const pct = total > 0 ? ((topVal / total) * 100).toFixed(0) : '0';
+    insight = `${topLabel} leads at ${pct}% of the total.`;
+  } else if (uniqueLabels.size <= 20) {
+    // Moderate categories — horizontal bar if labels are long
+    const avgLabelLen = rows.reduce((s, r) => s + String(r[labelCol]).length, 0) / rows.length;
+    type = avgLabelLen > 8 ? 'horizontal_bar' : 'bar';
+    insight = `${topLabel} has the highest ${valueCol} (${typeof topVal === 'number' ? topVal.toLocaleString() : topVal}).`;
+  } else {
+    // Many data points — line/area
+    type = 'area';
+    const avg = total / values.length;
+    insight = `Average ${valueCol}: ${avg.toLocaleString(undefined, { maximumFractionDigits: 1 })} across ${rows.length} entries.`;
+  }
+
+  return { type, labelCol, valueCol, insight };
+}
+
+// ── Result Chart ──────────────────────────────────────────────
+
+function ResultChart({ result }: { result: QueryResult }) {
+  const suggestion = suggestChart(result);
+  const [chartType, setChartType] = useState<ChartType>(suggestion.type);
+  const [showInsight, setShowInsight] = useState(true);
+
+  if (suggestion.type === 'none') return null;
+
+  const { labelCol, valueCol, insight } = suggestion;
+  const data = result.rows.map(r => ({
+    name: String(r[labelCol] ?? ''),
+    value: Number(r[valueCol]) || 0,
+  }));
+
+  const chartOptions: { value: ChartType; label: string }[] = [
+    { value: 'bar', label: 'Bar' },
+    { value: 'horizontal_bar', label: 'H-Bar' },
+    { value: 'pie', label: 'Pie' },
+    { value: 'line', label: 'Line' },
+    { value: 'area', label: 'Area' },
+  ];
+
+  return (
+    <div className="rounded-xl border border-warm-border bg-surface shadow-sm overflow-hidden mt-2">
+      {/* Header */}
+      <div className="flex items-center justify-between px-4 py-2.5 border-b border-warm-border">
+        <span className="text-[11px] text-muted uppercase tracking-wide font-mono">Auto Chart</span>
+        <div className="flex items-center gap-1">
+          {chartOptions.map(opt => (
+            <button
+              key={opt.value}
+              onClick={() => setChartType(opt.value)}
+              className={`px-2 py-0.5 text-[10px] rounded-md font-mono transition-colors ${
+                chartType === opt.value
+                  ? 'bg-navy text-white'
+                  : 'text-muted hover:text-navy-mid hover:bg-cream'
+              }`}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Chart */}
+      <div className="p-4">
+        <ResponsiveContainer width="100%" height={220}>
+          {chartType === 'bar' ? (
+            <BarChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={GRID_STROKE} />
+              <XAxis dataKey="name" tick={{ fontSize: 10 }} angle={-25} textAnchor="end" height={50} />
+              <YAxis tick={{ fontSize: 10 }} />
+              <Tooltip contentStyle={TIP_STYLE} />
+              <Bar dataKey="value" radius={[4, 4, 0, 0]}>
+                {data.map((_e, i) => <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />)}
+              </Bar>
+            </BarChart>
+          ) : chartType === 'horizontal_bar' ? (
+            <BarChart data={[...data].sort((a, b) => a.value - b.value)} layout="vertical" margin={{ top: 0, right: 40, left: 0, bottom: 0 }}>
+              <CartesianGrid horizontal={false} stroke={GRID_STROKE} />
+              <XAxis type="number" tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+              <YAxis type="category" dataKey="name" tick={{ fontSize: 10 }} width={100} axisLine={false} tickLine={false} />
+              <Tooltip contentStyle={TIP_STYLE} />
+              <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={20}
+                label={{ position: 'right', fontSize: 10, fill: '#7A8696' }}
+              >
+                {data.map((_e, i) => <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />)}
+              </Bar>
+            </BarChart>
+          ) : chartType === 'pie' ? (
+            <PieChart>
+              <Pie data={data} cx="50%" cy="50%" innerRadius={50} outerRadius={80} dataKey="value" paddingAngle={2}
+                label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`} labelLine={false} style={{ fontSize: 10 }}>
+                {data.map((_e, i) => <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />)}
+              </Pie>
+              <Tooltip contentStyle={TIP_STYLE} />
+            </PieChart>
+          ) : chartType === 'line' ? (
+            <LineChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={GRID_STROKE} />
+              <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+              <YAxis tick={{ fontSize: 10 }} />
+              <Tooltip contentStyle={TIP_STYLE} />
+              <Line type="monotone" dataKey="value" stroke="#3A5F8A" strokeWidth={2} dot={{ r: 3 }} />
+            </LineChart>
+          ) : (
+            <AreaChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={GRID_STROKE} />
+              <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+              <YAxis tick={{ fontSize: 10 }} />
+              <Tooltip contentStyle={TIP_STYLE} />
+              <Area type="monotone" dataKey="value" fill="#3A5F8A" fillOpacity={0.12} stroke="#3A5F8A" strokeWidth={2} />
+            </AreaChart>
+          )}
+        </ResponsiveContainer>
+      </div>
+
+      {/* Insight */}
+      {insight && (
+        <div className="px-4 pb-3">
+          <button onClick={() => setShowInsight(!showInsight)} className="text-[10px] text-steel hover:text-navy-mid font-mono transition-colors">
+            {showInsight ? 'Hide insight' : 'Show insight'}
+          </button>
+          {showInsight && (
+            <p className="text-xs text-navy-mid mt-1 leading-relaxed">{insight}</p>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
 
 // ── Result Table ──────────────────────────────────────────────
 
@@ -21,20 +207,20 @@ function ResultTable({ columns, rows, rowCount, executionTimeMs, affectedRows }:
   if (columns.length === 1 && rows.length === 1) {
     const value = rows[0][columns[0]];
     return (
-      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
-        <p className="text-[11px] text-gray-400 uppercase tracking-wide mb-1">{columns[0]}</p>
-        <p className="text-3xl font-bold text-gray-900">{String(value)}</p>
-        <p className="text-[10px] text-gray-400 mt-2">{executionTimeMs.toFixed(0)}ms</p>
+      <div className="rounded-xl border border-warm-border bg-gradient-to-br from-cream to-surface p-5 inline-block shadow-sm">
+        <p className="text-[11px] text-muted uppercase tracking-wide mb-1 font-mono">{columns[0]}</p>
+        <p className="text-3xl font-bold text-navy">{String(value)}</p>
+        <p className="text-[10px] text-muted mt-2 font-mono">{executionTimeMs.toFixed(0)}ms</p>
       </div>
     );
   }
 
   // Write operation result
-  if (columns.length === 0 && affectedRows !== undefined) {
+  if (affectedRows != null) {
     return (
-      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
-        <p className="text-sm font-medium text-gray-700">{affectedRows} row{affectedRows !== 1 ? 's' : ''} affected</p>
-        <p className="text-[10px] text-gray-400 mt-1">{executionTimeMs.toFixed(0)}ms</p>
+      <div className="rounded-xl border border-warm-border bg-gradient-to-br from-cream to-surface p-5 inline-block shadow-sm">
+        <p className="text-sm font-medium text-navy-mid">{affectedRows} row{affectedRows !== 1 ? 's' : ''} affected</p>
+        <p className="text-[10px] text-muted mt-1 font-mono">{executionTimeMs.toFixed(0)}ms</p>
       </div>
     );
   }
@@ -42,41 +228,41 @@ function ResultTable({ columns, rows, rowCount, executionTimeMs, affectedRows }:
   // Empty result set (e.g. find with no matches)
   if (columns.length === 0 && rows.length === 0) {
     return (
-      <div className="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 inline-block shadow-sm">
-        <p className="text-sm font-medium text-gray-500">No results found</p>
-        <p className="text-[10px] text-gray-400 mt-1">{executionTimeMs.toFixed(0)}ms</p>
+      <div className="rounded-xl border border-warm-border bg-gradient-to-br from-cream to-surface p-5 inline-block shadow-sm">
+        <p className="text-sm font-medium text-muted">No results found</p>
+        <p className="text-[10px] text-muted mt-1 font-mono">{executionTimeMs.toFixed(0)}ms</p>
       </div>
     );
   }
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm">
+    <div className="rounded-xl border border-warm-border bg-cream overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="px-4 py-2 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-        <span className="text-xs text-gray-500 font-medium">{rowCount} row{rowCount !== 1 ? 's' : ''} · {executionTimeMs.toFixed(0)}ms</span>
+      <div className="px-4 py-2 bg-surface border-b border-warm-border flex items-center justify-between">
+        <span className="text-xs text-muted font-mono font-medium">{rowCount} row{rowCount !== 1 ? 's' : ''} · {executionTimeMs.toFixed(0)}ms</span>
         {totalPages > 1 && (
           <div className="flex items-center gap-1.5">
-            <button disabled={page === 0} onClick={() => setPage(page - 1)} className="px-2 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded-md disabled:opacity-30 transition-colors">‹</button>
-            <span className="text-[11px] text-gray-400 tabular-nums">{page + 1} / {totalPages}</span>
-            <button disabled={page >= totalPages - 1} onClick={() => setPage(page + 1)} className="px-2 py-0.5 text-xs text-gray-500 hover:bg-gray-200 rounded-md disabled:opacity-30 transition-colors">›</button>
+            <button disabled={page === 0} onClick={() => setPage(page - 1)} className="px-2 py-0.5 text-xs text-muted hover:bg-surface-2 rounded-md disabled:opacity-30 transition-colors">‹</button>
+            <span className="text-[11px] text-muted tabular-nums font-mono">{page + 1} / {totalPages}</span>
+            <button disabled={page >= totalPages - 1} onClick={() => setPage(page + 1)} className="px-2 py-0.5 text-xs text-muted hover:bg-surface-2 rounded-md disabled:opacity-30 transition-colors">›</button>
           </div>
         )}
       </div>
       {/* Table */}
       <div className="overflow-x-auto max-h-96">
-        <table className="w-full text-[13px]">
-          <thead className="bg-gray-50/80 sticky top-0 z-10">
+        <table className="w-full text-[13px] font-mono">
+          <thead className="bg-surface/80 sticky top-0 z-10">
             <tr>
               {columns.map((col) => (
-                <th key={col} className="text-left px-4 py-2 font-semibold text-gray-600 border-b border-gray-200 whitespace-nowrap">{col}</th>
+                <th key={col} className="text-left px-4 py-2 font-semibold text-navy-mid border-b border-warm-border whitespace-nowrap">{col}</th>
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-100">
+          <tbody className="divide-y divide-warm-border/50">
             {pageRows.map((row, i) => (
-              <tr key={i} className={`hover:bg-blue-50/40 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
+              <tr key={i} className={`hover:bg-pill/40 transition-colors ${i % 2 === 0 ? 'bg-cream' : 'bg-surface/30'}`}>
                 {columns.map((col) => (
-                  <td key={col} className="px-4 py-2 text-gray-700 whitespace-nowrap max-w-[300px] truncate font-mono text-xs">{row[col] == null ? <span className="text-gray-300 italic">null</span> : String(row[col])}</td>
+                  <td key={col} className="px-4 py-2 text-navy-mid whitespace-nowrap max-w-[300px] truncate text-xs">{row[col] == null ? <span className="text-muted/50 italic">null</span> : String(row[col])}</td>
                 ))}
               </tr>
             ))}
@@ -112,35 +298,35 @@ function QueryBlock({ msg, onConfirm, onCancel, onEdit, onUpdateText, onSetStatu
   const isCancelled = msg.status === 'cancelled';
 
   return (
-    <div className={`rounded-xl overflow-hidden border border-gray-200 shadow-sm ${isPending || isEditing ? 'ring-1 ring-blue-300' : isCancelled ? 'opacity-50' : ''}`}>
+    <div className={`rounded-xl overflow-hidden border border-warm-border shadow-sm ${isPending || isEditing ? 'ring-1 ring-steel/40' : isCancelled ? 'opacity-50' : ''}`}>
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-2 bg-gray-50 border-b border-gray-200">
+      <div className="flex items-center justify-between px-4 py-2 bg-surface border-b border-warm-border">
         <div className="flex items-center gap-2">
-          <button onClick={() => setCollapsed(!collapsed)} className="text-gray-400 hover:text-gray-600 transition-colors">
+          <button onClick={() => setCollapsed(!collapsed)} className="text-muted hover:text-navy-mid transition-colors">
             <svg className={`w-3 h-3 transition-transform ${collapsed ? '' : 'rotate-90'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-500">
+          <span className="text-[11px] font-semibold uppercase tracking-wide text-muted font-mono">
             {msg.dbType === 'postgresql' ? 'SQL' : 'MongoDB'}
           </span>
           {isConfirmed && <span className="text-[10px] text-green-600 font-medium">✓ Executed</span>}
-          {isCancelled && <span className="text-[10px] text-gray-400">Cancelled</span>}
+          {isCancelled && <span className="text-[10px] text-muted">Cancelled</span>}
         </div>
-        <button onClick={handleCopy} className="px-2 py-0.5 text-[11px] text-gray-400 hover:text-gray-700 hover:bg-gray-200 rounded-md transition-colors" title="Copy">
+        <button onClick={handleCopy} className="px-2 py-0.5 text-[11px] text-muted hover:text-navy-mid hover:bg-surface-2 rounded-md transition-colors font-mono" title="Copy">
           {copied ? '✓ Copied' : 'Copy'}
         </button>
       </div>
 
       {/* Query content */}
       {!collapsed && (
-        <div className="bg-white">
+        <div className="bg-cream">
           {isEditing ? (
             <div className="px-4 py-3">
               <textarea
                 value={msg.content}
                 onChange={(e) => onUpdateText(e.target.value)}
-                className="w-full font-mono text-sm bg-gray-50 text-gray-800 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-y min-h-[60px]"
+                className="w-full font-mono text-sm bg-surface text-navy border border-warm-border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-steel resize-y min-h-[60px]"
                 rows={Math.min(msg.content.split('\n').length + 1, 12)}
               />
             </div>
@@ -164,20 +350,20 @@ function QueryBlock({ msg, onConfirm, onCancel, onEdit, onUpdateText, onSetStatu
 
       {/* Action buttons */}
       {(isPending || isEditing) && (
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border-t border-gray-200">
-          <button onClick={onConfirm} className="px-4 py-1.5 text-xs font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors shadow-sm">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-surface border-t border-warm-border">
+          <button onClick={onConfirm} className="px-4 py-1.5 text-xs font-semibold bg-steel text-white rounded-lg hover:bg-steel/90 transition-colors shadow-sm">
             ▶ Run
           </button>
           {isEditing ? (
-            <button onClick={() => onSetStatus('pending')} className="px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            <button onClick={() => onSetStatus('pending')} className="px-3 py-1.5 text-xs font-medium text-navy-mid bg-cream border border-warm-border rounded-lg hover:bg-surface transition-colors">
               Cancel edit
             </button>
           ) : (
-            <button onClick={onEdit} className="px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            <button onClick={onEdit} className="px-3 py-1.5 text-xs font-medium text-navy-mid bg-cream border border-warm-border rounded-lg hover:bg-surface transition-colors">
               Edit
             </button>
           )}
-          <button onClick={onCancel} className="px-3 py-1.5 text-xs font-medium text-red-600 bg-white border border-gray-200 rounded-lg hover:bg-red-50 transition-colors">
+          <button onClick={onCancel} className="px-3 py-1.5 text-xs font-medium text-red-600 bg-cream border border-warm-border rounded-lg hover:bg-red-50 transition-colors">
             Cancel
           </button>
         </div>
@@ -249,13 +435,13 @@ export function ChatPanel() {
           /* Empty state */
           <div className="flex items-center justify-center h-full">
             <div className="text-center max-w-md">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-blue-50 flex items-center justify-center">
-                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-pill flex items-center justify-center">
+                <svg className="w-6 h-6 text-steel" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
               </div>
-              <h2 className="text-lg font-medium text-gray-700 mb-1">Ask a question about your data</h2>
-              <p className="text-sm text-gray-400">
+              <h2 className="text-lg font-medium text-navy mb-1">Ask a question about your data</h2>
+              <p className="text-sm text-muted">
                 Type a question in plain English below and ChatDB will generate and run the query for you.
               </p>
             </div>
@@ -267,7 +453,7 @@ export function ChatPanel() {
               if (msg.type === 'user') {
                 return (
                   <div key={msg.id} className="flex justify-end">
-                    <div className="bg-blue-600 text-white px-4 py-2 rounded-2xl rounded-br-md max-w-[80%] text-sm">
+                    <div className="bg-steel text-white px-4 py-2 rounded-2xl rounded-br-md max-w-[80%] text-sm">
                       {msg.content}
                     </div>
                   </div>
@@ -299,6 +485,7 @@ export function ChatPanel() {
                       executionTimeMs={msg.result.execution_time_ms}
                       affectedRows={msg.result.affected_rows}
                     />
+                    <ResultChart result={msg.result} />
                   </div>
                 );
               }
@@ -306,8 +493,15 @@ export function ChatPanel() {
               if (msg.type === 'error') {
                 return (
                   <div key={msg.id} className="max-w-[90%]">
-                    <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-2 text-sm text-red-700">
-                      {msg.content}
+                    <div className="rounded-xl border border-warm-border bg-surface px-4 py-3 shadow-sm">
+                      <div className="flex items-start gap-2.5">
+                        <span className="text-amber-500 mt-0.5 shrink-0">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                          </svg>
+                        </span>
+                        <p className="text-sm text-navy-mid leading-relaxed">{msg.content}</p>
+                      </div>
                     </div>
                   </div>
                 );
@@ -318,16 +512,16 @@ export function ChatPanel() {
 
             {/* Generating indicator */}
             {generating && (
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <div className="w-4 h-4 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
+              <div className="flex items-center gap-2 text-sm text-muted">
+                <div className="w-4 h-4 border-2 border-steel border-t-transparent rounded-full animate-spin" />
                 Generating query...
               </div>
             )}
 
             {/* Executing indicator */}
             {executing && (
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <div className="w-4 h-4 border-2 border-green-400 border-t-transparent rounded-full animate-spin" />
+              <div className="flex items-center gap-2 text-sm text-muted">
+                <div className="w-4 h-4 border-2 border-green-500 border-t-transparent rounded-full animate-spin" />
                 Running query...
               </div>
             )}
@@ -338,7 +532,7 @@ export function ChatPanel() {
       </div>
 
       {/* Input bar */}
-      <div className="border-t border-gray-200 bg-white p-4">
+      <div className="border-t border-warm-border bg-surface p-4">
         <div className="max-w-3xl mx-auto flex gap-2">
           <input
             ref={inputRef}
@@ -348,12 +542,12 @@ export function ChatPanel() {
             onKeyDown={handleKeyDown}
             placeholder={session ? 'Ask a question in plain English...' : 'Waiting for session...'}
             disabled={!session || generating || executing}
-            className="flex-1 px-4 py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white disabled:opacity-50 transition-colors placeholder:text-gray-400"
+            className="flex-1 px-4 py-2.5 rounded-lg border border-warm-border bg-cream text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent disabled:opacity-50 transition-colors placeholder:text-muted"
           />
           <button
             onClick={handleSend}
             disabled={!session || !input.trim() || generating || executing}
-            className="px-4 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-4 py-2.5 rounded-lg bg-steel text-white text-sm font-medium hover:bg-steel/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             Send
           </button>

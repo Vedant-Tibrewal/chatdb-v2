@@ -21,6 +21,7 @@ services:
       - .env
     volumes:
       - ./datasets:/app/datasets:ro
+      - ./backend/app:/app/app:ro
 
   postgres:
     image: pgvector/pgvector:pg16
