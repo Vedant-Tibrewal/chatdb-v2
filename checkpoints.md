@@ -493,9 +493,19 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 
 ---
 
-## Checkpoint 12 · Polish & Deployment
-**Status:** NOT STARTED  
+## Checkpoint 12 · Polish & Deployment ✅
+**Status:** COMPLETE  
 **Commit:** `chore: Docker optimization, final polish, and deployment-ready packaging`
+
+**What was done:**
+- `.dockerignore` files for backend and frontend (smaller build contexts)
+- Docker Compose production config: `restart: unless-stopped`, `deploy.resources.limits.memory` for all services
+- LLM privacy notice in chat input footer: "Your schema metadata is sent to the selected LLM provider"
+- Error banner auto-dismiss after 8s via `ErrorBanner` component with `useEffect` timer
+- Loading states verified: schema panel skeleton loaders, dashboard spinner, chat generating/executing indicators
+- Empty states verified: schema "No tables found", dashboard "No analytics data", chat "Ask a question about your data"
+- Pre-loaded sample datasets: 9 domains (ecommerce, sports, medical, sales, cybersecurity, hr, education, real_estate, restaurant) + 1 JSON (iot)
+- Final `README.md`: architecture diagram, full feature list, tech stack, project structure, dev setup, environment variables
 
 **Pickup context:** All features work. Need production-readiness and polish.
 

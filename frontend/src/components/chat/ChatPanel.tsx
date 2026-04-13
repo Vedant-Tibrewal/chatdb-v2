@@ -532,7 +532,7 @@ export function ChatPanel() {
       </div>
 
       {/* Input bar */}
-      <div className="border-t border-warm-border bg-surface p-4">
+      <div className="border-t border-warm-border bg-surface px-4 pt-3 pb-2">
         <div className="max-w-3xl mx-auto flex gap-2">
           <input
             ref={inputRef}
@@ -552,6 +552,9 @@ export function ChatPanel() {
             Send
           </button>
         </div>
+        <p className="max-w-3xl mx-auto text-[10px] text-muted mt-1.5 text-center">
+          Your schema metadata is sent to the selected LLM provider for query generation.
+        </p>
       </div>
     </div>
   );

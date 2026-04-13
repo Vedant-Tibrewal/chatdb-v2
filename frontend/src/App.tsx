@@ -7,6 +7,24 @@ import { useSessionStore } from './store/sessionStore'
 
 type ActiveView = 'chat' | 'dashboard'
 
+function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => void }) {
+  useEffect(() => {
+    const t = setTimeout(onDismiss, 8000);
+    return () => clearTimeout(t);
+  }, [error, onDismiss]);
+
+  return (
+    <div className="mx-4 mt-2 px-3 py-2 bg-red-50 border border-red-200 rounded-lg flex items-center justify-between animate-in">
+      <span className="text-sm text-red-700">{error}</span>
+      <button onClick={onDismiss} className="text-red-400 hover:text-red-600 ml-2">
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
 function App() {
   const { loading, error, initSession, fetchDatasets, clearError } = useSessionStore()
   const [leftCollapsed, setLeftCollapsed] = useState(false)
@@ -75,16 +93,9 @@ function App() {
           </div>
         </header>
 
-        {/* Error banner */}
+        {/* Error banner — auto-dismiss after 8s */}
         {error && (
-          <div className="mx-4 mt-2 px-3 py-2 bg-red-50 border border-red-200 rounded-lg flex items-center justify-between">
-            <span className="text-sm text-red-700">{error}</span>
-            <button onClick={clearError} className="text-red-400 hover:text-red-600 ml-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+          <ErrorBanner error={error} onDismiss={clearError} />
         )}
 
         {/* View content */}
