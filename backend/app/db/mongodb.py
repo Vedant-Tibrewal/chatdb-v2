@@ -43,7 +43,7 @@ class MongoDB:
         return f"sess_{session_id}_{name}"
 
     async def create_session_collections(
-        self, session_id: str, table_filter: list[str] | None = None
+        self, session_id: str, table_filter: dict[str, str] | None = None
     ) -> None:
         # Find all base_ prefixed collections and clone them
         all_collections = await self.db.list_collection_names()
@@ -51,9 +51,13 @@ class MongoDB:
 
         for base_col in base_collections:
             name = base_col[len("base_"):]  # strip "base_" prefix
-            if table_filter and name not in table_filter:
-                continue
-            target = self._session_collection(session_id, name)
+            if table_filter is not None:
+                if name not in table_filter:
+                    continue
+                session_name = table_filter[name]
+            else:
+                session_name = name
+            target = self._session_collection(session_id, session_name)
             # Copy docs from base to session collection
             cursor = self.db[base_col].find({}, {"_id": 0})
             docs = await cursor.to_list(length=None)

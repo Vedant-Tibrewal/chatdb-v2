@@ -10,10 +10,10 @@ router = APIRouter()
 @router.get("/datasets")
 async def list_datasets(request: Request):
     """Return available datasets and their tables."""
-    dataset_map: dict[str, list[str]] = getattr(request.app.state, "dataset_map", {})
+    dataset_map = getattr(request.app.state, "dataset_map", {})
     return [
-        {"name": name, "tables": tables}
-        for name, tables in sorted(dataset_map.items())
+        {"name": name, "tables": list(table_map.values())}
+        for name, table_map in sorted(dataset_map.items())
     ]
 
 

@@ -36,7 +36,7 @@ class PostgresDB:
         return self._pool
 
     async def create_session_schema(
-        self, session_id: str, table_filter: list[str] | None = None
+        self, session_id: str, table_filter: dict[str, str] | None = None
     ) -> None:
         schema = f"s_{session_id}"
         async with self.pool.acquire() as conn:
@@ -46,16 +46,20 @@ class PostgresDB:
                 "SELECT tablename FROM pg_tables WHERE schemaname = 'base_data'"
             )
             for row in tables:
-                table = row["tablename"]
-                if table_filter and table not in table_filter:
-                    continue
+                base_table = row["tablename"]
+                if table_filter is not None:
+                    if base_table not in table_filter:
+                        continue
+                    session_table = table_filter[base_table]
+                else:
+                    session_table = base_table
                 await conn.execute(
-                    f'CREATE TABLE "{schema}"."{table}" '
-                    f'(LIKE "base_data"."{table}" INCLUDING ALL)'
+                    f'CREATE TABLE "{schema}"."{session_table}" '
+                    f'(LIKE "base_data"."{base_table}" INCLUDING ALL)'
                 )
                 await conn.execute(
-                    f'INSERT INTO "{schema}"."{table}" '
-                    f'SELECT * FROM "base_data"."{table}"'
+                    f'INSERT INTO "{schema}"."{session_table}" '
+                    f'SELECT * FROM "base_data"."{base_table}"'
                 )
 
     async def drop_session_schema(self, session_id: str) -> None:

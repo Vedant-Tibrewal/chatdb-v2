@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 class SessionManager:
-    def __init__(self, pg=None, mongo=None, dataset_map: dict[str, list[str]] | None = None) -> None:
+    def __init__(self, pg=None, mongo=None, dataset_map: dict[str, dict[str, str]] | None = None) -> None:
         self._sessions: dict[str, SessionState] = {}
         self._cleanup_task: asyncio.Task | None = None
         self.pg = pg
