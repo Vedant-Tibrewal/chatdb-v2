@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     session_ttl_minutes: int = 30
 
     # Dataset
-    base_dataset_path: str = "./datasets"
+    base_dataset_path: str = "../datasets"
 
     # CORS
     cors_origins: list[str] = [
