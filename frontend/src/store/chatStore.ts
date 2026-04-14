@@ -21,10 +21,20 @@ export interface ChatMessage {
   result?: QueryResult;
 }
 
+// Saved query — persists in-session only (lost on refresh/close)
+export interface SavedQuery {
+  id: string;
+  question: string;
+  resultPreview: string;
+  fullResult: QueryResult | null;
+  savedAt: Date;
+}
+
 interface ChatStore {
   messages: ChatMessage[];
   generating: boolean;
   executing: boolean;
+  savedQueries: SavedQuery[];
 
   sendQuestion: (sessionId: string, question: string) => Promise<void>;
   confirmQuery: (sessionId: string, messageId: string, question: string) => Promise<void>;
@@ -32,6 +42,8 @@ interface ChatStore {
   updateQueryText: (messageId: string, text: string) => void;
   setQueryStatus: (messageId: string, status: 'pending' | 'confirmed' | 'cancelled' | 'editing') => void;
   clearMessages: () => void;
+  saveQuery: (question: string, result: QueryResult) => void;
+  removeSavedQuery: (id: string) => void;
 }
 
 let msgCounter = 0;
@@ -41,6 +53,7 @@ export const useChatStore = create<ChatStore>((set, get) => ({
   messages: [],
   generating: false,
   executing: false,
+  savedQueries: [],
 
   sendQuestion: async (sessionId, question) => {
     const userMsg: ChatMessage = { id: nextId(), type: 'user', content: question };
@@ -107,4 +120,26 @@ export const useChatStore = create<ChatStore>((set, get) => ({
   },
 
   clearMessages: () => set({ messages: [] }),
+
+  // Save a query+result pair for later reference
+  saveQuery: (question: string, result: QueryResult) => {
+    const preview = result.rows.length > 0
+      ? result.columns.slice(0, 3).map(c => `${c}: ${result.rows[0][c]}`).join(', ') + (result.rows.length > 1 ? ` (+${result.rows.length - 1} more)` : '')
+      : result.affected_rows != null
+        ? `${result.affected_rows} row${result.affected_rows !== 1 ? 's' : ''} affected`
+        : 'No results';
+
+    const saved: SavedQuery = {
+      id: `saved-${Date.now()}`,
+      question,
+      resultPreview: preview,
+      fullResult: result,
+      savedAt: new Date(),
+    };
+    set((s) => ({ savedQueries: [...s.savedQueries, saved] }));
+  },
+
+  removeSavedQuery: (id: string) => {
+    set((s) => ({ savedQueries: s.savedQueries.filter((q) => q.id !== id) }));
+  },
 }));

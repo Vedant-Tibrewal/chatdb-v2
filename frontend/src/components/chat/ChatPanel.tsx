@@ -9,6 +9,41 @@ import {
 import { useSessionStore } from '../../store/sessionStore';
 import { useChatStore, type ChatMessage, type QueryResult } from '../../store/chatStore';
 
+// ── Save button for query results ────────────────────────────
+
+function SaveQueryButton({ question, result }: { question: string; result: QueryResult }) {
+  const { saveQuery, savedQueries } = useChatStore();
+  const [justSaved, setJustSaved] = useState(false);
+
+  // Check if this question is already saved (simple dedup by question text)
+  const alreadySaved = savedQueries.some((sq) => sq.question === question);
+
+  const handleSave = () => {
+    if (alreadySaved) return;
+    saveQuery(question, result);
+    setJustSaved(true);
+    setTimeout(() => setJustSaved(false), 2000);
+  };
+
+  return (
+    <button
+      onClick={handleSave}
+      disabled={alreadySaved}
+      className={`flex items-center gap-1 px-2.5 py-1 mt-1.5 text-[11px] rounded-md border transition-colors ${
+        alreadySaved || justSaved
+          ? 'border-green-200 bg-green-50 text-green-600 cursor-default'
+          : 'border-warm-border bg-surface text-muted hover:text-navy-mid hover:border-steel'
+      }`}
+      title={alreadySaved ? 'Already saved' : 'Save this query and result'}
+    >
+      <svg className="w-3.5 h-3.5" fill={alreadySaved ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+      </svg>
+      {justSaved ? 'Saved!' : alreadySaved ? 'Saved' : 'Save'}
+    </button>
+  );
+}
+
 // ── Chart colors ──────────────────────────────────────────────
 const CHART_COLORS = ['#3A5F8A', '#5E7D5F', '#6B93B5', '#9BBAD1', '#C5D9E8', '#B5705A', '#D4A574', '#8B6F5C'];
 const GRID_STROKE = 'rgba(212,207,200,0.5)';
@@ -404,6 +439,15 @@ export function ChatPanel() {
     return '';
   }, [messages]);
 
+  // Find the user question that led to a result message
+  const getQuestionForResult = useCallback((resultMsgId: string) => {
+    const idx = messages.findIndex((m) => m.id === resultMsgId);
+    for (let i = idx - 1; i >= 0; i--) {
+      if (messages[i].type === 'user') return messages[i].content;
+    }
+    return '';
+  }, [messages]);
+
   const handleSend = () => {
     if (!session || !input.trim() || generating || executing) return;
     sendQuestion(session.id, input.trim());
@@ -486,6 +530,7 @@ export function ChatPanel() {
                       affectedRows={msg.result.affected_rows}
                     />
                     <ResultChart result={msg.result} />
+                    <SaveQueryButton question={getQuestionForResult(msg.id)} result={msg.result} />
                   </div>
                 );
               }

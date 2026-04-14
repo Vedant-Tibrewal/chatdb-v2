@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { SchemaPanel } from './components/schema/SchemaPanel'
 import { ChatPanel } from './components/chat/ChatPanel'
 import { DashboardPanel } from './components/dashboard/DashboardPanel'
@@ -25,6 +25,67 @@ function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => voi
   );
 }
 
+// Expandable "About" dropdown — shows a plain-English description of the app
+function AppDescription() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!open) return;
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('mousedown', handleClick);
+    document.addEventListener('keydown', handleKey);
+    return () => {
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1 text-[11px] text-muted hover:text-navy-mid transition-colors"
+      >
+        Query your database in plain English — no SQL required.
+        <svg
+          className={`w-3 h-3 transition-transform ${open ? 'rotate-180' : ''}`}
+          fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute top-full left-0 mt-2 w-80 rounded-xl border border-warm-border bg-cream shadow-lg p-4 z-50 text-sm text-navy-mid leading-relaxed space-y-3">
+          <div>
+            <p className="font-semibold text-navy mb-1">What is this?</p>
+            <p>A tool that lets you ask questions about your data in <strong>plain English</strong>. No SQL, no code — just type what you want to know and get instant answers.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-navy mb-1">How does it work?</p>
+            <p>Your question is sent to an <strong>AI model</strong> (GPT-4o, Claude, or Gemini) which converts it into a database query. The query runs on your <strong>PostgreSQL</strong> or <strong>MongoDB</strong> database, and the results are shown as tables and charts — all in real time.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-navy mb-1">Who is it for?</p>
+            <p><strong>Business teams</strong>, analysts, and stakeholders who need data access without writing code. Think of it as a bridge between your data and the people who make decisions with it.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-navy mb-1">Why does it matter?</p>
+            <p>It removes the bottleneck of waiting for data engineers to run queries. Anyone can <strong>self-serve</strong> their data needs — faster decisions, fewer handoffs.</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function App() {
   const { loading, error, initSession, fetchDatasets, clearError } = useSessionStore()
   const [leftCollapsed, setLeftCollapsed] = useState(false)
@@ -45,8 +106,8 @@ function App() {
       <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Top bar */}
         <header className="flex items-center justify-between border-b border-warm-border bg-cream px-3 py-1.5">
-          {/* Left: sidebar toggle */}
-          <div className="flex items-center gap-2 w-40">
+          {/* Left: sidebar toggle + app subtitle */}
+          <div className="flex items-center gap-2 min-w-[240px]">
             <button
               onClick={() => setLeftCollapsed(!leftCollapsed)}
               className="p-1.5 rounded-md hover:bg-surface text-muted transition-colors"
@@ -56,6 +117,7 @@ function App() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
+            <AppDescription />
           </div>
 
           {/* Center: view switcher */}
