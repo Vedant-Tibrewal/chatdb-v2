@@ -44,7 +44,6 @@ const SUGGESTIONS: Record<string, string[]> = {
   ],
   player_stats: [
     'Top scorers this season',
-    'Players averaging 10+ assists',
     'Points per game ranking',
   ],
   // Medical
@@ -90,11 +89,9 @@ const SUGGESTIONS: Record<string, string[]> = {
     'Online vs offline assets',
   ],
   vulnerabilities: [
-    'Critical vulnerabilities with exploits',
     'Vulnerability count by severity',
   ],
   security_events: [
-    'Events by type this month',
     'Top 10 source IPs by event count',
     'Alert status breakdown',
   ],
