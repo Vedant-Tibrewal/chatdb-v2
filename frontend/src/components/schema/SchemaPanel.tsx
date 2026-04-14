@@ -18,6 +18,11 @@ const SUGGESTIONS: Record<string, string[]> = {
     'Orders by payment method',
     'Average order value by shipping method',
   ],
+  ecommerce_orders: [
+    'Monthly revenue trend',
+    'Orders by payment method',
+    'Average order value by shipping method',
+  ],
   order_items: [
     'Best selling products by quantity',
     'Revenue by product category',
@@ -111,6 +116,47 @@ const SUGGESTIONS: Record<string, string[]> = {
     'Biggest salary increases',
     'Promotions per year',
   ],
+  // Restaurant (prefixed — collision with ecommerce orders)
+  restaurant_orders: [
+    'Orders by table number',
+    'Average order total',
+    'Orders by payment method',
+  ],
+  // Education
+  students: [
+    'Student count by major',
+    'Average GPA by department',
+  ],
+  courses: [
+    'Courses by department',
+    'Highest enrollment courses',
+  ],
+  enrollments: [
+    'Enrollments per semester',
+    'Average grade by course',
+  ],
+  // Real Estate
+  properties: [
+    'Properties by type',
+    'Average listing price by city',
+  ],
+  agents: [
+    'Agent count by office',
+    'Top performing agents by sales',
+  ],
+  transactions: [
+    'Total transaction volume by month',
+    'Sales vs rentals',
+  ],
+  // Restaurant
+  menu_items: [
+    'Menu items by category',
+    'Average price per category',
+  ],
+  order_details: [
+    'Most ordered items',
+    'Average quantity per order',
+  ],
 };
 
 const TABLE_DOMAINS: Record<string, string> = {
@@ -118,6 +164,7 @@ const TABLE_DOMAINS: Record<string, string> = {
   products: 'E-Commerce',
   orders: 'E-Commerce',
   order_items: 'E-Commerce',
+  ecommerce_orders: 'E-Commerce',
   teams: 'Sports',
   players: 'Sports',
   games: 'Sports',
@@ -137,9 +184,19 @@ const TABLE_DOMAINS: Record<string, string> = {
   employees: 'HR',
   performance_reviews: 'HR',
   salary_history: 'HR',
+  students: 'Education',
+  courses: 'Education',
+  enrollments: 'Education',
+  properties: 'Real Estate',
+  agents: 'Real Estate',
+  transactions: 'Real Estate',
+  menu_items: 'Restaurant',
+  order_details: 'Restaurant',
+  restaurant_orders: 'Restaurant',
+  sensor_readings: 'IoT',
 };
 
-const DOMAIN_ORDER = ['E-Commerce', 'Sports', 'Medical', 'Sales', 'Cybersecurity', 'HR'];
+const DOMAIN_ORDER = ['E-Commerce', 'Sports', 'Medical', 'Sales', 'Cybersecurity', 'HR', 'Education', 'Real Estate', 'Restaurant', 'IoT'];
 
 export function SchemaPanel({ onCollapse: _onCollapse }: { onCollapse: () => void }) {
   const { session, schema, setPendingInput } = useSessionStore();

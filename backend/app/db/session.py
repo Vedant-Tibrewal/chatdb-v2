@@ -21,6 +21,27 @@ class SessionManager:
         self.mongo = mongo
         self.dataset_map = dataset_map or {}
 
+    def _build_table_filter(self, dataset: str | None) -> dict[str, str] | None:
+        """Build base→session table name mapping for a dataset (or all datasets)."""
+        if dataset:
+            return self.dataset_map.get(dataset)
+        if not self.dataset_map:
+            return None
+        # Merge all datasets; detect collisions by session name
+        seen: dict[str, int] = {}  # session_name → occurrence count
+        for ds_tables in self.dataset_map.values():
+            for session_name in ds_tables.values():
+                seen[session_name] = seen.get(session_name, 0) + 1
+        combined: dict[str, str] = {}
+        for ds_tables in self.dataset_map.values():
+            for base_name, session_name in ds_tables.items():
+                if seen[session_name] > 1:
+                    # Collision — keep the prefixed base name
+                    combined[base_name] = base_name
+                else:
+                    combined[base_name] = session_name
+        return combined
+
     async def create_session(
         self, db_type: DBType = DBType.POSTGRESQL, dataset: str | None = None
     ) -> SessionState:
@@ -29,7 +50,7 @@ class SessionManager:
         self._sessions[session_id] = session
 
         # Determine which tables to clone
-        table_filter = self.dataset_map.get(dataset) if dataset else None
+        table_filter = self._build_table_filter(dataset)
 
         # Create session-scoped DB schema/collections
         if db_type == DBType.POSTGRESQL and self.pg:
@@ -63,7 +84,7 @@ class SessionManager:
 
     async def reinitialize_session(self, session_id: str) -> SessionState:
         session = self.get_session(session_id)
-        table_filter = self.dataset_map.get(session.dataset) if session.dataset else None
+        table_filter = self._build_table_filter(session.dataset)
 
         # Drop and re-clone
         if session.db_type == DBType.POSTGRESQL and self.pg:
