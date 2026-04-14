@@ -519,3 +519,36 @@ Each checkpoint represents a meaningful, working milestone. Commits are made at 
 - Empty states: no data, no chat history, no analytics
 - Final `README.md` with setup instructions, screenshots, architecture diagram
 - End-to-end smoke test: `docker compose up` → create session → upload data → query → see results + analytics
+
+---
+
+## Checkpoint 13 · Docker Removal & pm2-ci Deployment ✅
+**Status:** COMPLETE  
+**Commit:** `chore: remove Docker, migrate to pm2-ci with shared Postgres/MongoDB`
+
+**What was done:**
+- **Removed all Docker files:** `docker-compose.yml`, `backend/Dockerfile`, `frontend/Dockerfile`, `frontend/nginx.conf`, `nginx.prod.conf`
+- **Backend route prefix change:** Removed `/api` prefix from all FastAPI route registrations in `main.py` — nginx strips `/api/` before forwarding so backend routes must be root-level (`/session`, `/query`, `/schema`, `/upload`, `/analytics`)
+- **Backend config (`config.py`):** Updated defaults to use `localhost` for both databases, added `mongo_user`, `mongo_password`, `mongo_auth_source` fields for MongoDB authentication, updated CORS origins to `http://localhost:6009` and `https://chatdb.vtibrewal.com`, changed env_file to `["../.env", ".env"]` so it works from both project root and backend dir
+- **MongoDB auth (`mongodb.py`):** Updated `connect()` to pass `username`, `password`, `authSource` when credentials are configured
+- **Frontend Vite config:** Changed port from `3001` to `6009`, proxy target from `:8000` to `:6008`, added `rewrite` to strip `/api` prefix (matching nginx behavior)
+- **Frontend `package.json`:** Added `start` script using `npx serve -s dist -l 6009` for production static serving
+- **`.env.example`:** Updated with new structure — `vedant` user credentials, MongoDB auth fields, CORS origins
+- **Database setup scripts:**
+  - `scripts/setup_postgres.sh` — Creates `vedant` role + `chatdb` database with full privileges
+  - `scripts/setup_mongo.sh` — Creates `vedant` user with `readWrite` on `chatdb` database using admin credentials
+- **`ecosystem.config.cjs`:** pm2 process configuration for backend (uvicorn on :6008) and frontend (serve on :6009)
+- **`deploy.sh`:** Rewritten for pm2-ci — installs deps, builds frontend, starts processes via `pm2-ci start ecosystem.config.cjs`
+- **`README.md`:** Updated architecture diagram, quick start, service URLs, tech stack, project structure, dev/prod commands, environment variables, nginx section
+
+**Port mapping (chatdb.vtibrewal.com):**
+- Backend (FastAPI): `:6008`
+- Frontend (React): `:6009`
+- Nginx: `/api/*` → `:6008` (strips /api), everything else → `:6009`
+
+**Key decisions:**
+- No Docker at all — databases are shared instances managed by network admin
+- Dedicated `vedant` database user for both PostgreSQL and MongoDB (principle of least privilege)
+- `serve` package used for production frontend serving (SPA-safe with `-s` flag)
+- pm2-ci used instead of pm2 (as per admin instructions for shared server)
+- Environment variables loaded from `.env` at project root via pydantic-settings

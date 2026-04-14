@@ -11,10 +11,15 @@ class MongoDB:
         self._db: AsyncIOMotorDatabase | None = None
 
     async def connect(self) -> None:
-        self._client = AsyncIOMotorClient(
-            host=settings.mongo_host,
-            port=settings.mongo_port,
-        )
+        kwargs: dict = {
+            "host": settings.mongo_host,
+            "port": settings.mongo_port,
+        }
+        if settings.mongo_user and settings.mongo_password:
+            kwargs["username"] = settings.mongo_user
+            kwargs["password"] = settings.mongo_password
+            kwargs["authSource"] = settings.mongo_auth_source
+        self._client = AsyncIOMotorClient(**kwargs)
         self._db = self._client[settings.mongo_db]
         # Verify connection
         await self._client.admin.command("ping")
