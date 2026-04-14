@@ -5,7 +5,7 @@ import json
 import logging
 import math
 import re
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from app.core.config import settings
@@ -175,7 +175,11 @@ async def load_base_datasets(pg: PostgresDB, mongo: MongoDB) -> dict[str, dict[s
             for row in rows:
                 doc = {}
                 for i, col_name in enumerate(col_names):
-                    doc[col_name] = row[i]
+                    val = row[i]
+                    # BSON doesn't support datetime.date — promote to datetime
+                    if isinstance(val, date) and not isinstance(val, datetime):
+                        val = datetime(val.year, val.month, val.day)
+                    doc[col_name] = val
                 docs.append(doc)
             base_col = mongo._base_collection(table_name)  # base_{dataset}_{table}
             # Drop existing to avoid duplicates on restart
